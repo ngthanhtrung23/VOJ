@@ -97,17 +97,19 @@ def extract4Sections():
         # print(parts)
 
         for i in range(1, len(parts), 2):
-            subsectionName = format(parts[i])
+            subsectionName = parts[i].strip()
+            formattedSubsectionName = format(subsectionName)
             subsectionContent = parts[i + 1].strip() + '\n'
 
-            if subsectionName in statementKeywords:
-                statement += subsectionContent
-            elif subsectionName in inputKeywords:
-                input += subsectionContent
-            elif subsectionName in outputKeywords:
-                output += subsectionContent
+            content = subsectionName + '\n' + subsectionContent
+            if formattedSubsectionName in statementKeywords:
+                statement += content
+            elif formattedSubsectionName in inputKeywords:
+                input += content
+            elif formattedSubsectionName in outputKeywords:
+                output += content
             else:
-                notes += subsectionContent
+                notes += content
 
         if not (statement and input and output and notes):
             print("Couldn't find 4 parts for " + name)
