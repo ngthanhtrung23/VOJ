@@ -1,0 +1,65 @@
+
+
+Có N thành phố và M đường 1 chiều  trực tiếp giữa chúng. Các thành phố được đánh số từ 1 đến N, một du khác ở thành phố thứ 1 tại thời điểm 0 và muốn đến thành phố P để dự tiệc với thời gian chính xác là T. Nếu ông ấy đến sớm hơn, ông ấy phải đứng đợi. Với mỗi tuyến xe buýt, ta biêt thành phố khởi đầu U và thành phố đến V, xe sẽ khởi hành ở U trong khoảng thời gian [A..B] và đến V trong khoảng thời gian [C..D] (0 $<$= A $<$= B $<$ C $<$= D). Ông chỉ có thể bắt kịp chuyến xe buýt tiếp theo khi và chỉ khi thời gian đến trễ nhất của chuyến ông đang đi không được lớn hơn thời gian khởi hành sớm nhất của chuyến xe kế tiếp, và lúc này thì thời gian ông cần đợi nhiều nhất sẽ là hiệu của thời gian khởi hành chậm nhất của chuyến xe buýt kế tiếp với thời gian đến sớm nhất của chuyến xe ông đang đi.
+
+\subsubsection{Yêu cầu}
+
+Vị du khách này rất ghét việc chờ đợi. Hãy viết chương trình để đưa ra tổng thời gian phải đợi ít nhất của ông.
+
+\subsubsection{Input}
+
+Dòng đầu chứa 4 số nguyên N , M , P , T
+
+M dòng tiếp , mỗi dòng chứa U[i] , V[i] , A[i] , B[i] , C[i] , D[i]
+
+\subsubsection{Output}
+
+Một dòng duy nhất ghi tổng thời gian đợi ít nhất của du khách (Nếu ông ấy không thể đến P trong thời gian T thì in ra -1)
+
+\subsubsection{Giới hạn}
+\begin{itemize}
+	\item 1 $<$= N $<$= 5 * 10\textasciicircum4
+	\item 1 $<$= M $<$= 10\textasciicircum5
+	\item 0 $<$= T $<$= 10\textasciicircum9
+	\item 1 $<$= U[i] , V[i] $<$= N
+	\item 0 $<$= A[i] $<$= B[i] $<$ C[i] $<$= D[i] $<$= 10\textasciicircum9
+\end{itemize}
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+3 6 2 100
+1 3 10 20 30 40
+3 2 32 35 95 95
+1 1 1 1 7 8
+1 3 8 8 9 9
+2 2 98 98 99 99
+1 2 0 0 99 101
+\textbf{Output:}
+32\end{verbatim}
+
+ 
+
+\textbf{Giải thích:}
+\\- Từ 0..1 : Đợi ở thành phố 1
+\\- Từ 1..7 : Dùng tuyến thứ 3 để đi từ thành phố 1 đến thành phố 1
+\\- Từ 7..8 : Đợi ở thành phố 1
+\\- Từ 8..9 : Dùng tuyến thứ 4 để đi từ thành phố 1 đến thành phố 3
+\\- Từ 9..35 : Đợi ở thành phố 3
+\\- Từ 35..95 : Dùng tuyến thứ 2 để đi từ thành phố 3 đến thành phố 2
+\\- Từ 95..98 : Đợi trong thành phố 2
+\\- Từ 98..99 : Dùng tuyến thử 5 để đi từ thành phố 2 đến thành phố 2
+\\- Từ 99..100 : Đợi ở thành phố 2
+\\\textbf{Tổng thời gian đợi : 1 + 1 + 26 + 3 + 1 = 32}
+
+ 
+\begin{verbatim}
+\textbf{Input:
+}3 2 2 100
+1 3 0 0 49 51
+3 2 50 51 100 100
+\textbf{Output:
+}-1
+\end{verbatim}
+
+ 

@@ -1,0 +1,73 @@
+
+
+
+
+   Ai cũng biết Alex là một người rất giàu có, anh có đến   \emph{    N (N$<$=1155)   }   căn nhà (các nhà được đánh số từ   \emph{    1--$>$N   }   ). Trước kia, do không chú ý trong lúc xây dựng,   \emph{    nên mỗi nhà đã bị sơn một màu khác nhau,   }   không có nhà nào giống nhà nào . Là một người sống đơn giản, không thích màu mè, nên Alex muốn các căn nhà của mình không được sơn quá nhiều màu.  
+
+   Để làm đươc như vậy, anh đã chia   \emph{    N   }   căn nhà của mình vào   \textbf{\emph{}}\emph{    K (K$<$=15)   }   nhóm (mỗi nhà chỉ thuộc một nhóm, và mỗi nhóm chứa ít nhất một căn nhà).   \emph{    Các căn nhà trong cùng một nhóm sẽ được sơn màu giống nhau.   }   Nhưng không bắt buộc hai căn nhà khác nhóm phải được sơn khác màu.   \emph{
+\\}
+
+   Nhưng do sở hữu quá nhiều nhà, và Alex chỉ muốn kết thúc các việc một cách nhanh gọn. Nên Alex đã tìm đến một nhà thông thái. Ông là một người tài ba, thông thạo đến   \emph{    M (M$<$=1555)   }   phép thần thông biến hóa. Khi xài phép thứ i (i$<$=M), ông chỉ tốn C[i] giây để có thể   \emph{    biến tất cả các nhà có màu A[i] thành màu B[i] và ngược lại.   }   Trong cùng một lúc, ông chỉ đọc được một câu thần chú của một phép biến hóa nào đó.   \emph{}   Nhưng bù lại ông luôn biết cách tối ưu hóa trong mọi công việc của mình.   \emph{
+\\}
+
+\textbf{    Yêu cầu:   }   Cho biết số nhóm và các căn nhà trong mỗi nhóm. Hãy cho biết thời gian ít nhất để nhà thông thái biến các căn nhà thuộc mỗi nhóm về cùng một màu.  
+
+\emph{    Biết ban đầu nhà thứ i có màu i.    
+\\}
+
+\subsubsection{   Input  }
+
+   \_ Dòng đầu tiến chưa 3 số nguyên dương:   \emph{    N   }   - số lượng nhà hiện có,   \emph{    K   }   - số nhóm phải chia   \emph{    .   }
+
+   \_ Dòng thứ hai gồm   \emph{    N   }   số, số thứ i có giá trị   \emph{    e[i] (1 $<$= i $<$= N; 1 $<$= e[i] $<$= K)   }   nếu nhà thứ i thuộc nhóm   \emph{    e[i]   }   .  
+
+   \_ Dòng thứ ba là số phép biến hóa có thể sử dụng -   \emph{    M   }   .  
+
+   \_ M dòng cuối cùng, mỗi dòng chứa bộ 3 các số nguyên không âm   \emph{    A[i], B[i], C[i] (1 $<$= i $<$= M; 1 $<$= A[i], B[i] $<$= N ; C[i] $<$= 1000000000)   }   miêu tả một phép biến hóa.  
+
+\subsubsection{   Output  }
+
+   \_ In ra thời gian ít nhất cần cho vị pháp sư thực hiện ý muốn của Alex (dữ liệu đảm bảo luôn có kết quả).  
+
+
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input 1:}
+\\4 2 
+\\1 1 1 2
+\\4
+\\1 2 3
+\\1 3 3
+\\2 4 2
+\\3 4 2
+\\
+\\\textbf{Output 1:}
+6
+\\
+\\\textbf{Giải thích 1: }cần biến đổi các nhà số 1, 2, 3 về cùng một màu
+\\(1, 2, 3, 4)
+\\(1, 1, 3, 4)  Biến nhà có màu 2 thành 1, tốn 3s
+\\(1, 1, 1, 4)  Biến nhà có màu 3 thành 1, tốn 3s
+\\--$>$ 3 + 3 = 6
+\\
+\\
+\\\textbf{Input 2:}
+4 2 
+\\1 1 1 2
+\\4
+\\1 2 3
+\\1 3 3
+\\2 4 1
+\\3 4 1
+\\\textbf{Output 2:}
+5 
+\\
+\\\textbf{Giải thích 2: } cần biến đổi các nhà số 1, 2, 3 về cùng một màu.
+\\(1, 2, 3, 4)
+\\(2, 2, 3, 4) Biến nhà có màu 1 thành màu 2, tốn 3s
+\\(4, 4, 3, 4) Biến các nhà có màu 2 thành màu 4, tốn 1s
+\\(3, 3, 3, 3) Biến các nhà có màu 4 thành màu 3, tốn 1s
+\\--$>$ 3 + 1 + 1 = 5\end{verbatim}
+
+\emph{\textbf{      Giới hạn:     }\textbf{}     Có 20\% số test có số nhóm là 1.    }

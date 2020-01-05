@@ -1,0 +1,76 @@
+
+
+
+
+   Quang Đạt được cho một danh sách F chuyến bay một chiều giữa C thành phố (đánh số từ 0 đến C-1). Anh ta muốn thăm T thành phố đầu tiên (từ 0 đến T-1). Nhiệm vụ của bạn là tìm số lần di chuyển ít nhất giữa các thành phố để Quang Đạt hoàn thành mục tiêu.  
+
+   Quang Đạt sống ở thành phố 0. Do đó chuyến đi của anh ta phải bắt đầu và kết thúc ở thành phố 0. Một thành phố có thể được thăm nhiều lần.  
+
+   Dữ liệu đảm bảo luôn bạn luôn tìm được đường bắt đầu và kết thúc tại thành phố 0 và đi qua tất cả các thành phố từ 0 đến T-1.  
+
+\subsubsection{   Input  }
+
+   Dòng đầu chứa 3 số nguyên C, T và F.  
+
+   F dòng tiếp chứa 2 số nguyên a, b thể hiện đường đi một chiều từ a đến b.  
+
+\subsubsection{   Output  }
+
+   In ra số nguyên duy nhất là số lần di chuyển ít nhất để Quang Đạt hoàn thành mục tiêu.  
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+
+7 4 12
+
+0 5
+
+0 4
+
+1 0
+
+1 2
+
+2 6
+
+3 0
+
+3 6
+
+4 3
+
+4 5
+
+6 1
+
+6 26 5\end{verbatim}
+\begin{verbatim}
+\textbf{Output:}\end{verbatim}
+\begin{verbatim}
+7\end{verbatim}
+
+\textbf{      Giải thích     }     :    
+
+
+\includegraphics{https://dl.dropboxusercontent.com/u/44735005/C11%20Contest/25.jpg}
+
+    Trong ví dụ, có 7 thành phố, Fred chỉ cần thăm các thành phố 0, 1, 2, 3. Nếu anh ta thăm theo thứ tự:   
+
+    0 → 4 → 3 → 6 → 2 → 6 → 1 → 0   
+
+    Anh ta chỉ cần di chuyển 7 lần, và đây chính là lộ trình ngắn nhất có thể để thăm hết các thành phố từ 0 đến 3.   
+\begin{verbatim}
+
+
+\textbf{Giới hạn dữ liệu}:
+
+3$<$=T$<$=8
+
+T$<$=C$<$=5000
+
+C$<$=F$<$=100000
+
+Trong 60% test: C$<$=80
+
+Trong 30% test: T$<$=5, C$<$=10\end{verbatim}

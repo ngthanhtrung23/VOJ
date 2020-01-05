@@ -1,0 +1,78 @@
+
+
+
+
+\subsubsection{   Đề bài  }
+
+   Cho N điểm cách đều nhau trên một vòng tròn được đánh số từ 0 đến N-1 theo chiều kim đồng hồ, trong đó có P điểm được sơn màu đỏ. Hãy đếm số tam giác vuông có 3 đỉnh đều được sơn màu đỏ.  
+
+   Biết rằng P điểm màu đỏ được tạo thành như sau, cho trước 3 số nguyên a, b, c. Với i = 0, 1, 2, 3, ..., P - 1, thực hiện các bước sau:  
+\begin{itemize}
+	\item     Tính P[i] = (a*i*i + b*i + c) mod N   
+	\item     Bắt đầu từ P[i], tìm điểm đầu tiên theo chiều kim đồng hồ mà chưa được sơn đỏ và sơn đỏ điểm đó   
+\end{itemize}
+
+\subsubsection{   Dữ liệu  }
+\begin{itemize}
+	\item     Mỗi test bắt đầu bằng thẻ "[CASE]", các test cách nhau bởi một dòng trắng. Thẻ "[END]" báo hiệu kết thúc file input.   
+	\item     Mỗi test gồm 5 dòng chứa các số N, P, a, b, c   
+\end{itemize}
+
+\subsubsection{   Kết quả  }
+\begin{itemize}
+	\item     Với mỗi test in ra số tam giác vuông tìm được.   
+\end{itemize}
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     1 $<$= N $<$= 1 000 000   
+	\item     0 $<$= P $<$= 100 000   
+	\item     0 $<$= a, b, c $<$= 1 000 000   
+\end{itemize}
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu
+[CASE]
+9
+3
+0
+3
+0
+
+[CASE]
+40
+3
+5
+0
+0
+
+[CASE]
+4
+4
+16
+24
+17
+    	
+[CASE]
+1000000
+47000
+0
+2
+5
+
+[CASE]
+200000
+700
+123456
+789012
+345678
+
+[END]
+Kết quả
+0
+1
+4
+0
+6980
+\end{verbatim}

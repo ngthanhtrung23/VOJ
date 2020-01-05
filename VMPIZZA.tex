@@ -1,0 +1,61 @@
+
+
+
+
+
+
+    Linh đang sống trên tầng 5 ở East Campus, một trong những kí túc lâu đời nhất của MIT. Một điểm bất tiện của kí túc này là không có thang máy, dẫn đến sự đi lại khó khăn.   
+
+
+
+   Sau một buổi làm việc căng thẳng, Linh quyết định đặt pizza thay cho bữa tối. Để thay đổi khẩu vị, cậu đặt   \textbf{    N   }   pizza tại   \textbf{    N   }   cửa hàng khác nhau. Pizza thứ i được chở đến tại thời điểm   \textbf{    t    $_     i    $}   , cung cấp   \textbf{    a    $_     i    $}   năng lượng nếu ăn ngay. Tuy nhiên, Pizza sẽ mất dần độ nóng hổi cũng như năng lượng theo thời gian: qua mỗi thời điểm, pizza thứ i mất   \textbf{    b    $_     i    $}   năng lượng.  
+
+     Linh biết trước thời điểm và giá trị của     \textbf{      N     }     loại pizza, và cậu muốn đạt được càng nhiều năng lượng càng tốt. Mỗi lần, Linh có thể chạy xuống nhận pizza, mang về phòng và ăn hết số pizza trong thời gian không đáng kể. Tuy nhiên, nên nhớ rằng Linh sống ở tầng 5, mỗi chuyến đi sẽ tiêu tốn của cậu     \textbf{      B     }     năng lượng. Linh không thích phí phạm đồ ăn (mặc dù đã sống gần 2 năm ở Mỹ), cậu sẽ luôn ăn hết pizza, kể cả khi năng lượng của nó xuống dưới 0 (khi ăn thì Linh sẽ bị cộng thêm một lượng âm năng lượng, hay nói cách khác là bị giảm năng lượng).    
+
+      Xác định lượng năng lượng tối đa Linh sẽ có với chiến thuật chạy tối ưu.     
+
+\subsubsection{   Input  }
+
+   Dòng 1: 2 số nguyên   \textbf{    N   }   và   \textbf{    B   }   .  
+
+   Dòng 2..N + 1: mỗi dòng chứa 3 số nguyên   \textbf{    t    $_     i    $}   ,   \textbf{    a    $_     i    $}   ,   \textbf{    b    $_     i    $}   (1 ≤   \textbf{    t    $_     i    $}   ,   \textbf{    a    $_     i    $}   ,   \textbf{    b    $_     i    $}   ≤ 10   $^    5   $   )  
+
+\subsubsection{   Output  }
+
+   Một dòng duy nhất: năng lượng tối đa với chiến thuật chạy tối ưu. Kết quả nằm trong phạm vi số nguyên 64-bit (   \emph{    int64   }   trên Pascal hoặc   \emph{    long long   }   trên C++).  
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     1         ≤     \textbf{      N     }      ≤ 10      $^       5      $      .     
+	\item     1 ≤    \textbf{     B    }    ≤ 10    $^     5.    $
+	\item     Trong ít nhất 30\% số test, tương ứng với 30\% số điểm,    \textbf{     N    }    ≤ 1000   
+	\item     Trong quá trình thi, bài của bạn chỉ được chấm với 2 test ví dụ. Kết quả sẽ hiện 100 nếu bài của bạn chạy đúng cả 2 test.   
+\end{itemize}
+
+\subsubsection{   Ví dụ  }
+
+\textbf{    Input 1:   }
+\begin{verbatim}
+2 5
+\\1 4 1
+\\2 6 1\end{verbatim}
+
+\textbf{    Output 1:   }
+\begin{verbatim}
+4\end{verbatim}
+
+\textbf{    Input 2:   }
+\begin{verbatim}
+2 3
+\\1 1 100
+\\2 10 1\end{verbatim}
+
+\textbf{    Output 2:   }
+\begin{verbatim}
+5\end{verbatim}
+
+\subsubsection{   Giải thích  }
+\begin{itemize}
+	\item     Trong test 1, phương án tối ưu là chạy xuống 1 lần tại thời điểm 2, lấy cả 2 pizza lên và ăn ngay. Kết quả = (4 - 1) + (6 - 0) - 5 = 4.   
+	\item     Trong test 2, phương án tối ưu là chạy xuống 2 lần tại thời điểm 1 và 2. Kết quả = (1 - 0) - 3 + (10 - 0) - 3 = 5.   
+\end{itemize}

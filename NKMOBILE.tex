@@ -1,0 +1,46 @@
+
+
+Các trạm di động thế hệ 4 ở Tampere hoạt động như sau. Cả khu vực được chia thành các ô vuông. Các ô vuông tạo thành một bảng SxS với các dòng và cột đánh số từ 0 đến S-1. Mỗi ô vuông chứa một trạm di động. Số điện thoại di động hoạt động trong một ô vuông có thể thay đổi vì điện thoại có thể chuyển sang ô vuông khác hoặc thay đổi trạng thái bật/tắt. Khi có thay đổi, mỗi trạm di động sẽ thông báo cho trung tâm. Tại một số thời điểm, trung tâm cần truy vấn tổng số điện thoại đang hoạt động trong một vùng diện tích hình chữ nhật nào đó.
+
+Hãy giúp trung tâm nhận các thông báo từ trạm và trả lời các truy vấn.
+
+\subsubsection{Dữ liệu}
+
+Gồm nhiều dòng, mỗi dòng chứa các chỉ thị cho chương trình. Có 3 loại chỉ thị 0, 1, 2, 3 nhận các tham số và thực hiện các nhiệm vụ tương ứng như sau:
+\begin{itemize}
+	\item 0 S: Khởi tạo bảng SxS chứa toàn bộ số 0. Chỉ thị này chỉ được cho một lần duy nhất ở đầu chương trình.
+	\item 1 X Y A: Cộng A và số điện thoại hoạt động ở ô vuông (X, Y). A có thể âm hoặc dương.
+	\item 2 L B R T: Truy vấn tổng số điện thoại hoạt động ở các ô vuông (X, Y) với L ≤ X ≤ R, B ≤ Y ≤ T
+	\item 3 . Kết thúc chương trình. Chỉ thị này chỉ được cho một lần duy nhất ở cuối chương trình.
+\end{itemize}
+
+Giá trị của một ô luôn không âm tại mỗi thời điểm. Các chỉ số bắt đầu từ 0, nghĩa là với một bảng 4x4, ta có 0 ≤ X ≤ 3, 0 ≤ Y ≤ 3.
+
+\subsubsection{Kết qủa}
+
+Với mỗi chỉ thị loại 2, in ra một dòng gồm một số nguyên dương trả lời cho truy vấn tương ứng.
+
+\subsubsection{Giới hạn}
+\begin{itemize}
+	\item 1 ≤ S ≤ 1024
+	\item Giá trị của một ô tại mọi thời điểm luôn thuộc phạm vi [0, 32767].
+	\item -32768 ≤ A ≤ 32767
+	\item Số chỉ thị thuộc phạm vi [3, 60002].
+	\item Tổng số điện thoại trên toàn bộ bảng không vượt quá 2 $^ 30 $ .
+\end{itemize}
+
+\subsubsection{Ví dụ}
+\begin{verbatim}
+Dữ liệu
+0 4  		
+1 1 2 3  		
+2 0 0 2 2
+1 1 1 2
+1 1 2 -1
+2 1 1 2 3
+3
+
+Kết qủa
+3
+4
+\end{verbatim}

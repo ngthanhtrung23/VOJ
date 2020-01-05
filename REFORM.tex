@@ -1,0 +1,65 @@
+
+
+Mạng giao thông của thành phố NВ có \emph{ n } nút giao thông và \emph{ m } đoạn đường phố hai chiều nối các nút giao thông. Các nút giao thông được đánh số từ 1 đến \emph{ n } . Các đoạn đường phố được đánh số từ 1 đến \emph{ m } . Mạng giao thông của thành phố có tính chất sau đây:
+\begin{itemize}
+	\item Giữa hai nút giao thông bất kỳ có không quá một đoạn đường phố nối chúng;
+	\item Không có đoạn đường phố nào nối một nút giao thông với chính nó.
+\end{itemize}
+
+Vấn đề giao thông là thách thức với chính quyền thành phố từ nhiều năm. Với mong muốn đảm bảo việc đi lại thuận lợi hơn cho người dân, chính quyền thành phố quyết định tiến hành cải tổ mạng giao thông, trước hết nhằm đảm bảo có thể đi từ một nút giao thông bất kỳ đến tất cả các nút còn lại. (Lưu ý là mạng giao thông trước khi cải tổ có thể không đảm bảo yêu cầu này.) Tuy nhiên, do hạn hẹp về nguồn kinh phí, trước mắt kế hoạch cải tổ chỉ có thể bao gồm 2 công việc:
+\begin{itemize}
+	\item Loại bỏ một đoạn đường phố hiện có khỏi mạng giao thông;
+	\item Xây dựng một đoạn đường chưa từng có trước đó nối hai nút giao thông khác nhau.
+\end{itemize}
+
+Đồng thời, sau khi thực hiện cải tổ, mạng giao thông phải đảm bảo có thể đi từ một nút giao thông bất kỳ đến tất cả các nút còn lại.
+
+ 
+
+\textbf{Yêu }\textbf{}\textbf{ cầu: }\textbf{} Giúp chính quyền thành phố xác định xem có bao nhiêu cách khác nhau để thực hiện kế hoạch cải tổ thỏa mãn các yêu cầu đặt ra. (Hai kế hoạch cải tổ là khác nhau nếu có ít nhất một trong hai đoạn đường được lựa chọn loại bỏ hay xây dựng mới là khác nhau.)
+
+\textbf{Dữ liệu vào: }
+\begin{itemize}
+	\item Dòng đầu tiên chứa hai số nguyên \emph{ n } và \emph{ m }(m ≤ 10 $^5$, n ≤ 2*10 $^5$)
+	\item Dòng thứ \emph{ i } trong số \emph{ m } dòng tiếp theo chứa hai số nguyên \emph{ u }\emph{$_i $} và \emph{ v }\emph{$_i $}\emph{} (1 ≤ \emph{ u $_i$}, \emph{ v }\emph{$_i  $}≤ \emph{ n}, \emph{ u }\emph{$_i  $} ≠ \emph{ v }\emph{$_i $} ) là chỉ số của hai nút giao thông được nối bởi đoạn đường \emph{ i } (\emph{i }\emph{} = 1, 2, …, \emph{ m}).
+\end{itemize}
+
+Hai số liên tiếp trên cùng dòng được ghi cách nhau bởi dấu cách.
+
+\textbf{Dữ liệu ra: }
+\begin{itemize}
+	\item Ghi ra một số nguyên là số cách thực hiện kế hoạch cải tổ mạng giao thông thỏa mãn các yêu cầu đặt ra.
+\end{itemize}
+
+\textbf{Ví dụ: }
+\begin{verbatim}
+\textbf{Input 1}
+4 4
+1 2
+2 3
+2 4
+3 4
+\textbf{Output 1}
+8\end{verbatim}
+
+Hình vẽ minh họa: (ví dụ 1)
+
+
+\includegraphics{https://lh5.googleusercontent.com/-THg5ZS30VnA/VLdzJQIbb7I/AAAAAAAAAJ0/N9yOd--UFTE/w175-h151-no/REFORM1.png}
+
+ 
+\begin{verbatim}
+\textbf{Input 2}
+7 5
+1 2
+3 4
+5 6
+5 7
+6 7
+\textbf{Output 2}
+0\end{verbatim}
+
+Hình vẽ minh họa: (ví dụ 2)
+
+
+\includegraphics{https://lh3.googleusercontent.com/-gInsijOAP1A/VLd0Krf3pGI/AAAAAAAAAKM/FrQpBQHedzA/w358-h159-no/REFORM2.png}

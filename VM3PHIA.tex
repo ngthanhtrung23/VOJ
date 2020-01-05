@@ -1,0 +1,34 @@
+
+
+
+
+   Một đồ thị vô hướng được gọi là đồ thị 3 phía nếu tồn tại một cách chia tập đỉnh V thành 3 tập V1, V2, V3 khác rỗng sao cho mọi cặp đỉnh u v có cạnh nối thì u, v thuộc 2 tập con khác nhau. Cho đồ thị G=$<$V,E$>$ là một đồ thị 3 phía, tìm cách chia tập V thành 3 tập V1, V2, V3 khác rỗng thỏa mãn.  
+
+\subsubsection{   Input  }
+\begin{itemize}
+	\item     Dòng đầu tiên ghi hai số N và M  trong đó N là số đỉnh của đồ thị, M là số cạnh của đồ thị.   
+	\item     M dòng tiếp theo, mỗi dòng ghi 2 số u v thể hiện cạnh nối giữa u và v. (u $<$$>$ v)   
+\end{itemize}
+
+\subsubsection{   Output  }
+\begin{itemize}
+	\item     In ra xâu N kí tự. Kí tự thứ i là 1/2/3 tương ứng với đỉnh i thuộc tập V1/V2/V3.   
+	\item     Dữ liệu đảm bảo luôn có đáp án. Bạn chỉ cần đưa ra một đáp án bất kỳ.   
+\end{itemize}
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+5 6
+1 2
+1 5
+1 4
+2 3
+3 5
+5 4
+\end{verbatim}
+\begin{verbatim}
+\textbf{Output:}
+12132\end{verbatim}
+\begin{verbatim}
+\textbf{Giới hạn}: 3$<$=N$<$=200, trong 20% số test, N $<$= 15.\end{verbatim}

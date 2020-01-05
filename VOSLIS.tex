@@ -1,0 +1,40 @@
+
+
+Cho 2 dãy a[1..N] và b[1..M]. Gọi c[1..k] là 1 dãy con chung (không cần liên tiếp) bất kì của 2 dãy này. Đặt f(c) = abs(c[2] - c[1]) + abs(c[3] - c[2]) + .. + abs(c[k] - c[k - 1]). Nếu số phần tử của c $<$ 2 thì f(c) = 0.
+
+Xác định dãy con chung có giá trị f lớn nhất và in ra giá trị đó.
+
+\subsubsection{Input}
+\begin{itemize}
+	\item Dòng 1: 2 số nguyên N và M
+	\item Dòng 2: N số nguyên biểu diễn dãy A
+	\item Dòng 3: M số nguyên biểu diễn dãy B
+\end{itemize}
+
+\subsubsection{Output}
+
+Một dòng duy nhất ghi số nguyên kết quả.
+
+\subsubsection{Giới hạn:}
+\begin{itemize}
+	\item 20\% số test có 1 $<$= N, M $<$= 20
+	\item 40\% số test có 1 $<$= N, M $<$= 200
+	\item 60\% số test có 1 $<$= N, M $<$= 2000
+\end{itemize}
+
+Trong tất cả các test 1$<$= N, M $<$= 5000
+
+Trong tất cả các test -10\textasciicircum9 $<$= a[i], b[i] $<$= 10\textasciicircum9
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:} 
+4 4
+1 15 8 7
+15 1 7 8 
+\textbf{Output:
+}8\end{verbatim}
+
+\textbf{Giải thích:}
+
+Dãy 15 7

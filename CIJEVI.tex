@@ -1,0 +1,75 @@
+
+
+
+
+
+
+
+
+   Để giúp thiết kế một hệ thống ống dẫn dầu mới mà sẽ được dùng để vận chuyển dầu từ Nga đến Croatia, Zagreb và Moscow đang sử dụng một trò chơi có tên là Pipe Mania. Trong trò chơi này, Châu Âu được chia thành R dòng và C cột. Mỗi ô vuông có thể là ô trống hoặc chứa một trong số bảy loại ống dẫn sau:  
+
+
+\includegraphics{http://vn.spoj.pl/content/civ1.jpg}
+
+   Dầu chảy từ Moscow đến Zagreb. Dầu có thể chảy theo cả hai chiều theo các ống dẫn. Ống loại '+' là một loại đặc biệt mà dầu chỉ có thể chảy theo hai hướng (một là dọc, hai là ngang), như trong ví dụ sau:  
+
+
+\includegraphics{http://vn.spoj.pl/content/civ2.jpg}
+
+   Khi các ống dẫn dầu được đưa vào sử dụng, người ta phát hiện ra rằng các hackers xấu tính đã phá đi đúng một ống dẫn (thay nó bằng một ô trống).  
+
+   Viết chương trình tìm xem ống bị phá nằm ở đâu và là loại nào.  
+
+\subsubsection{   Input  }
+
+   Dòng đầu chứa hai số nguyên R và C, là kích thước của Châu Âu (1 ≤ R, C ≤ 25)  
+
+   Tiếp theo là R dòng chứa sơ đồ mô tả hệ thống ống dẫn, mỗi dòng chứa đúng C kí tự. Các kí tự là:  
+\begin{itemize}
+	\item     Dấu chấm ('.'), mô tả một ô trống;   
+	\item     Các kí tự '|' (ASCII 124), '-', '+', '1', '2', '3', '4', mô tả các loại ống dẫn;   
+	\item     Các chữ cái 'M' và 'Z', thể hiện Moscow và Zagreb. Mỗi chữ chỉ xuất hiện đúng một lần trong sơ đồ.   
+\end{itemize}
+
+   Dòng chảy của dầu đảm bảo là duy nhất; chính xác một ống dẫn nằm kề với Moscow cũng như Zagreb. Thêm vào đó, sơ đồ không hề có ống dẫn nào thừa (tất cả các ống dẫn trong sơ đồ đều phải được sử dụng sau khi thêm vào ống dẫn bị mất).  
+
+   Dữ liệu đảm bảo luôn tồn tại lời giải, và lời giải đó là duy nhất.  
+
+\subsubsection{   Output  }
+
+   In ra cột và dòng của ống dẫn bị phát, và loại của ống dẫn đó (một trong số bay kí tự như trong dữ liệu).  
+
+\subsubsection{   Example  }
+\begin{verbatim}
+Input
+3 7
+.......
+.M-.-Z.
+.......
+Output
+2 4 -
+
+
+Input
+3 5
+..1-M
+1-+..
+Z.23.
+
+Output
+2 4 4
+
+
+Input
+6 10
+Z.1----4..
+|.|....|..
+|..14..M..
+2-+++4....
+..2323....
+..........
+
+Output
+3 3 |
+\end{verbatim}
+

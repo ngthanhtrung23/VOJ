@@ -1,0 +1,46 @@
+
+
+Cho một bảng kích thước MxN được chia thành MxN ô, mỗi ô có 1 viên bi được đánh số từ 1 đến M*N-1, không có 2 viên bi nào có số giống nhau, có duy nhất 1 ô trống, được kí hiệu bằng số 0. Ban đầu, các viên được sắp xếp theo thứ tự từ trái sang phải, từ trên xuống dưới, ô ở vị trí [M,N] là ô trống.
+
+VD: M=N=3
+
+1 2 3
+
+4 5 6
+
+7 8 0
+
+Một viên bi có thể di chuyển sang 1 trong 4 ô kề cạnh nếu ô đó là ô trống và không được di chuyển ra khỏi bảng. Người ta di chuyển một số viên bi của bảng. Hãy tính xem cần ít nhất bao nhiêu lần di chuyển để bảng trở về lại như ban đầu.
+
+\textbf{Input}
+
+ Dòng đầu gồm 2 số M,N.
+
+ M dòng sau, mỗi dòng gồm N số là trạng thái của bảng hiện tại.
+
+\textbf{Output}
+
+ Gồm 1 dòng duy nhất là số lần di chuyển ít nhất để bảng trở về trạng thái ban đầu.
+
+\textbf{Giới hạn}
+
+ M, N ≤ 100, trong đó 60\% số test có M,N≤10.
+
+\textbf{Examples}
+\begin{verbatim}
+\textbf{Input: }
+3 3
+1 2 3
+5 0 6
+4 7 8
+
+\textbf{Output: }
+4
+
+\textbf{Giải thích: }\end{verbatim}
+
+1 2 3            1 2 3            1 2 3            1 2 3            1 2 3
+
+5 0 6   -$>$      0 5 6   -$>$     4 5 6   -$>$      4 5 6   -$>$      4 5 6
+
+4 7 8            4 7 8            0 7 8            7 0 8            7 8 0

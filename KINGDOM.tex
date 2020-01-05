@@ -1,0 +1,57 @@
+
+
+Thời xưa có N đế chế tọa lạc trên một vùng đất xa xăm nọ, chiến đấu tranh giành lẫn nhau. Vua của đế chế hùng mạnh nhất quyết định chinh phục các đế chế khác để tìm kiếm nguồn dầu hỏa! Kho tàng của đế chế này bị hạn chế vì tiền đã được đổ vào chiến dịch tranh cử mới nhất của nhà vua. Kho tàng ban đầu có giá trị là M.
+
+Các đế chế được đánh số từ 1 đến N. Đế chế 1 là đế chế hùng mạnh nhất. Các đế chế được nối với nhau bởi các đường nối hai chiều trong đó chỉ có đúng một đường đi giữa hai đế chế bất kỳ.
+
+Nhà vua thuê bạn để hoạch địch chiến lược cho ông. Các điệp viên của nhà vua cho bạn hai thông số đối với mỗi đất nước i (i$>$1):
+\begin{itemize}
+	\item V $_ i $ = giá trị của nguồn dầu hỏa của nước i
+	\item C $_ i $ = chi phí để chinh phục nước i
+\end{itemize}
+
+Một đế chể chỉ có thể bị chinh phục khi nó kề với đế chế 1 hoặc đế chế 1 đã chinh phục một đế chế kề với nó (nối với nó qua một con đường).
+
+Bạn hãy hoạch địch một chiến lược chinh phục các đế chế khác sao cho tổng giá trị thu được từ nguồn dầu hỏa là lớn nhất. Không được sử dụng quá giới hạn của kho tàng!
+
+\subsubsection{Dữ liệu}
+\begin{itemize}
+	\item Dòng đầu tiên chứa số nguyên N (1 ≤ N ≤ 100) và M (0 ≤ M ≤ 2000).
+	\item Dòng thứ hai chứa N-1 số nguyên V $_ 2 $ , V $_ 3 $ ..., V $_ N $ (1 ≤ V $_ i $ ≤ 100).
+	\item Dòng thứ ba chứa N-1 số nguyên C $_ 2 $ , C $_ 3 $ ,..., C $_ N $ (0 ≤ C $_ i $ ≤ 30).
+	\item Mỗi dòng trong N-1 dòng tiếp theo chứa hai số nguyên u, v thể hiện một đường nối.
+\end{itemize}
+
+\subsubsection{Kết quả}
+
+Một số nguyên duy nhất là tổng giá trị lớn nhất từ nguồn dầu hỏa mà đế chế hùng mạnh nhất có thể thu được bằng việc chinh phục các nước khác.
+
+\subsubsection{Ví dụ}
+\begin{verbatim}
+Dữ liệu
+10 3
+10 10 10 9 5 8 8 7 10
+0 0 0 0 0 3 2 2 0
+1 2
+1 3
+1 4
+2 5
+3 6
+4 7
+5 8
+6 9
+8 10
+
+Kết quả
+62
+
+Dữ liệu
+3 1
+1 1
+1 0
+1 2
+2 3
+
+Kết quả
+2
+\end{verbatim}

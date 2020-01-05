@@ -1,0 +1,39 @@
+
+
+
+
+   Bờm có một bộ bài Tây, nhưng trong đó thiếu mất một quân Joker Rô. Bờm có một mảnh giấy hình chữ nhật mà từ đó có thể cắt ra một mảnh để làm thành quân Joker bị thiếu.  
+
+   Mỗi ô trong mảnh giấy được sơn bởi một trong 26 màu, quân Joker phải có dạng một hình thoi bao gồm các ô cùng màu (không nhất thiết phải là màu đỏ; một quân Joker màu đen hay xanh sẽ không bị lầm lẫn vào đâu được!)  
+
+   Trong bài toán này, một hình thoi có tâm tại (r   $_    0   $   , c   $_    0   $   ) (r - chỉ số dòng, c - chỉ số cột) và bán kính R là tập hợp các ô (r   $_    i   $   , c   $_    i   $   ) thỏa mãn |r   $_    i   $   - r   $_    0   $   | + |c   $_    i   $   - c   $_    0   $   | ≤ R. Vì quân Joker đem lại nhiều lợi thế khi chơi bài nên Bờm muốn cắt ra hình thoi gồm nhiều ô cùng màu nhất từ tờ giấy. Hãy viết chương trình giúp Bờm thực hiện điều này.  
+
+\subsubsection{   Dữ liệu  }
+
+   Dòng đầu tiên chứa hai số m và n (1 ≤ m, n ≤ 500) - kích thước của tờ giấy hình chữ nhật, cách nhau bởi khoảng trắng.  
+
+   Mỗi trong số m dòng tiếp theo chứa n ký tự Latin in hoa, mỗi ký tự tương ứng với một màu, mô tả tờ giấy hình chữ nhật.  
+
+\subsubsection{   Kết quả  }
+
+   Gồm một dòng duy nhất in ra ba số r   $_    0   $   , c   $_    0   $   , R là tọa độ và bán kính của hình thoi tìm được. Nếu có nhiều hình thoi cùng thỏa mãn yêu cầu, hãy chọn hình thoi có chỉ số hàng nhỏ nhất. Nếu vẫn còn nhiều kết quả, trong số các kết quả có thể, hãy chọn hình thoi có chỉ số cột nhỏ nhất. Các giá trị r   $_    0   $   , c   $_    0   $   , R phải thỏa mãn bất đẳng thức:  
+
+   1 + R ≤ r   $_    0   $   ≤ m - R, 1 + R ≤ c   $_    0   $   ≤ n - R  
+
+   để đảm bảo hình thoi nằm hoàn toàn trong tờ giấy.  
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu
+4 5
+АВААА
+ААААА
+ААААА
+ААААА
+
+
+Kết quả
+2 3 1
+\end{verbatim}
+
+   Nguồn: II Кубок математико-механического факультета СПбГУ по программированию для школьников  

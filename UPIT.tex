@@ -1,0 +1,59 @@
+
+
+
+
+   Cho một dãy số và các loại truy vấn sau:  
+
+   1 A B X: gán các phần từ thứ A đến thứ B trong dãy bằng X.  
+
+   2 A B X: cộng phần tử thứ A cho X, thứ A + 1 cho 2X,... , thứ B cho (B - A + 1) * X.  
+
+   3 C X: chèn X vào trước phần tử thứ C của dãy hiện thời.  
+
+   4 A B: tính tổng từ phần tử thứ A đến thứ B.  
+
+\subsubsection{   Input  }
+\begin{itemize}
+	\item     Dòng đầu ghi hai số nguyên N và Q, số phần tử của dãy ban đầu và số truy vấn (1 ≤ N, Q ≤ 10    $^     5    $    ).   
+	\item     Dòng tiếp theo mô tả dãy số. Mỗi số không vượt quá 10    $^     5    $    .   
+	\item     Q dòng tiếp theo mô tả các truy vấn theo định dạng như trong đề bài. Trong mọi truy vấn, 0 ≤ X ≤ 100, 1 ≤ A ≤ B ≤ độ dài dãy hiện thời, 1 ≤ C ≤ độ dãy dãy hiện thời + 1.   
+\end{itemize}
+
+\subsubsection{   Output  }
+\begin{itemize}
+	\item     In ra trên từng dòng câu trả lời cho mỗi truy vấn loại 4.   
+\end{itemize}
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input 1:}
+5 5 
+\\1 2 3 4 5 
+\\1 5 5 0 
+\\4 4 5 
+\\4 5 5 
+\\2 1 5 1 
+\\4 1 5
+
+\textbf{Output 1:}
+4
+\\0
+\\25 
+\\
+\\\textbf{Input 2:}
+\\1 7 
+\\100 
+\\3 1 17 
+\\3 2 27 
+\\3 4 37 
+\\4 1 1 
+\\4 2 2 
+\\4 3 3 
+\\4 4 4
+\\
+\\\textbf{Output 2:}
+\\17 
+\\27 
+\\100
+\\37
+\\\end{verbatim}

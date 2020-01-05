@@ -1,0 +1,56 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   Những con bò của Farmer John thích chơi những trò chơi liên quan đến tiền nên FJ mời chúng chơi 1 trò chơi mới gồm 2 người gọi là Xoinc.  
+
+   Cho 1 ngăn xếp có N đồng tiền (5 $<$= N $<$= 2000). Đồng thứ i chứa 1 số nguyên C   $_    i   $   là giá trị của đồng xu đó (1 $<$= C   $_    i   $   $<$= 100000).  
+
+   Người chơi 1 bắt đầu trò chơi bằng cách lấy từ ngăn xếp 1 hoặc 2 đồng tiền (C   $_    1   $   hoặc C   $_    1   $   + C   $_    2   $   ). Nếu người đầu tiên chỉ lấy 1 đồng, người thứ 2 có thể lấy 1 hoặc 2 đồng tiền trong lượt tiếp theo. Nếu người thứ nhất lấy 2 đồng tiền thì người thứ 2 có thể lấy tiếp 1, 2, 3 hoặc 4 đồng tiền tiếp theo từ ngăn xếp. Trong mỗi lượt chơi, người chơi phải lấy ra ít nhất 1 đồng và tối đa là gấp đôi số đồng tiền mà người kia đã lấy ở lượt chơi trước đó. Trò chơi kết thúc khi ngăn xếp không còn đồng tiền nào.  
+
+   Mục tiêu của mỗi người chơi là lấy được những đồng tiền sao cho tổng giá trị của chúng là lớn nhất có thể. Coi người thứ 2 luôn chơi tối ưu, số tiền tối đa mà người chơi thứ nhất có thể đạt được sau khi trò chơi kết thúc là bao nhiêu?  
+
+
+
+\textbf{    Input   }
+
+   Dòng 1: 1 số nguyên N  
+
+   Dòng 2..N+1: Dòng i+1 chứa 1 số nguyên C   $_    i   $
+
+\textbf{    Output   }
+
+   1 số nguyên duy nhất là giá trị tối đa mà người chơi thứ nhất có thể đạt được.  
+
+\textbf{    Example   }
+
+\textbf{    Input:   }
+\\
+\\   5   
+\\   1   
+\\   3   
+\\   1   
+\\   7   
+\\   2   
+\\
+\\\textbf{    Output:   }
+\\   9   
+\\
+\\\textbf{}
+
+\textbf{     Giải thích:    }
+
+   Người chơi 1 bắt đầu bằng cách lấy đồng tiền 1 (giá trị là 1). Người chơi 2 sẽ lấy 1 đồng tiền tiếp theo (giá trị là 3). Người chơi thứ nhất tiếp tục lấy 2 đồng tiền (giá trị 1 và giá trị 7). Người thứ 2 lấy nốt đồng tiền còn lại (giá trị 2). Kết thúc trò chơi, người 1 sẽ bốc được tối đa là: 1 + 1 + 7 = 9  
+

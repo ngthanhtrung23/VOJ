@@ -1,0 +1,43 @@
+
+
+Ezio needs to kill \textbf{ N } targets located in \textbf{ N } different cities. The cities are connected by some one way roads. As time is short, Ezio can send a massage along with the map to the assassin's bureau to send some assassins who will start visiting cities and killing the targets. An assassin can start from any city, he may visit any city multiple times even the cities that are already visited by other assassins. Now Ezio wants to find the minimum number of assassins needed to kill all the targets.
+
+\section{Input}
+
+Input starts with an integer \textbf{ T ( }\textbf{ ≤ 70) } , denoting the number of test cases.
+
+Each case starts with a blank line. Next line contains two integers \textbf{ N (1 ≤ N ≤ 1000) } and \textbf{ M (0 ≤ M ≤ 10000) } , where \textbf{ N } denotes the number of cities and \textbf{ M } denotes the number of one way roads. Each of the next \textbf{ M } lines contains two integers \textbf{ u v (1 ≤ u, v ≤ N, u ≠ v) } meaning that there is a road from \textbf{ u } to \textbf{ v } . Assume that there can be at most one road from a city \textbf{ u } to \textbf{ v } .
+
+\section{Output}
+
+For each case, print the case number and the minimum number of assassins needed to kill all targets.
+\begin{verbatim}
+\textbf{Sample Input}
+3
+
+5 4
+1 2
+1 3
+4 1
+5 1
+
+7 0
+
+8 8
+1 2
+2 3
+3 4
+4 1
+1 6
+6 7
+7 8
+8 6
+
+\textbf{Sample Output}
+Case 1: 2
+Case 2: 7
+Case 3: 2\end{verbatim}
+
+\section{Note}
+
+Dataset is huge, use faster I/O methods.

@@ -1,0 +1,34 @@
+
+
+Một bộ bài gồm 2n quân bài được đưa vào máy tráo bài, trên các lá bài từ trên xuống dưới, người tag hi lần lượt các số từ 1 tới 2n. Máy tráo bài thực hiện một dãy m lệnh biểu diễn bởi m số nguyên k1,k2,…,km, mỗi lệnh ki (1$<$=|ki|$<$n) chỉ thị cho máy tráo bài theo cách sau:
+\begin{itemize}
+	\item Nếu ki$>$0: Máy lấy 2ki lá bài ở chính giữa bộ bài và đặt chúng lên trên cùng của bộ bài.
+\end{itemize}
+\begin{itemize}
+	\item Nếu ki$<$0: Máy lấy -2ki lá bài ở chính giữa bộ bài và chèn chúng xuống dưới cùng bộ bài.
+\end{itemize}
+
+Giáo sư X nhận lại bộ bài sau khi đã được tráo bởi m lệnh k1,k2,…,km. Ông ta muốn rút bỏ vài lá bài ở trong bộ bài sao cho các số ghi trên các quân bài từ trên xuống dưới có thứ tự tăng dần.
+
+Nhiệm vụ của bạn là hãy giúp giáo sư X xác định số lượng ít nhất các lá bài phải trút bỏ.
+\includegraphics{../../../content/huy391992:shufflek}
+
+\textbf{Input}
+
+Dòng 1 chứa 2 số nguyên dương n,m (2 $<$= n $<$= 10\textasciicircum9; m $<$= 10\textasciicircum5),
+
+Dòng 2 chứa m số nguyên dương k1,k2,…,km (1 $<$= |ki| $<$ n).
+
+Các số trên một dòng được ghi cách nhau bởi một dấu cách.
+
+\textbf{Output}
+
+Một số nguyên là số lượng ít nhất các lá bài phải rút bỏ
+\begin{verbatim}
+Sample input
+3 2
+-2 1
+Sample Output
+2\end{verbatim}
+
+ 

@@ -1,0 +1,43 @@
+
+
+Cho \emph{ A } là lưới ô vuông gồm \emph{ m } dòng và \emph{ n } cột. Các dòng của lưới được đánh số từ 1 đến \emph{ m } , từ trên xuống dưới. Các cột của lưới được đánh số từ 1 đến \emph{ n } , từ trái sang phải. Ô nằm trên giao của dòng \emph{ i } và cột \emph{ j } của lưới, được gọi là ô ( \emph{ i } , \emph{ j } ), chứa số nguyên không âm \emph{ a }\emph{$_ i,j $} có giá trị không vượt quá 10 $^ 6 $ .
+
+Các lưới ô vuông như vậy luôn là đối tượng cho nhiều nghiên cứu thú vị. Vừa qua, trong giờ học ôn luyện cho kỳ thi học sinh giỏi Tin học, Hùng được cô giáo giao cho giải quyết bài toán trả lời truy vấn sau đây đối với bảng đã cho:
+
+Cho một hình chữ nhật con có ô trái trên là ô ( \emph{ x,y } ) và ô phải dưới là ô ( \emph{ u,v } ), cần đưa ra chênh lệch nhỏ nhất trong số các chênh lệch giữa hai tổng các số trong hai hình chữ nhật thu được bằng việc cắt ngang hoặc cắt dọc hình chữ nhật đã cho dọc theo đường kẻ của lưới. Giả thiết ( \emph{ x,y } ) và ( \emph{ u,v } ) là hai ô khác nhau trên lưới.
+
+Bạn hãy giúp Hùng giải quyết bài toán đặt ra.
+
+\textbf{Yêu }\textbf{}\textbf{ cầu: }\textbf{} Cho lưới \emph{ A } và \emph{ k } bộ \emph{ x }\emph{$_ q $} , \emph{ y }\emph{$_ q $}\emph{} , \emph{ u }\emph{$_ q $} , \emph{ v }\emph{$_ q $}\emph{} ( \emph{ q }\emph{} = 1, 2, ..., \emph{ k } ) tương ứng với \emph{ k } truy vấn, hãy đưa ra các câu trả lời cho \emph{ k } truy vấn.
+
+\textbf{Dữ liệu vào: }
+\begin{itemize}
+	\item Dòng đầu tiên chứa ba số nguyên \emph{ m } , \emph{ n } , \emph{ k } ( \emph{ k } ≤ \emph{ m } × \emph{ n } );
+	\item \emph{m } dòng tiếp theo, dòng thứ \emph{ i } chứa \emph{ n } số nguyên không âm \emph{ a }$_\emph{ i } 1 $ , \emph{ a }$_\emph{ i } 2 $ , ..., \emph{ a }\emph{$_ in $} ;
+	\item Dòng thứ \emph{ q } trong số \emph{ k } dòng tiếp theo chứa 4 số nguyên \emph{ x }\emph{$_ q $} , \emph{ y }\emph{$_ q $} , \emph{ u }\emph{$_ q $} , \emph{ v }\emph{$_ q $}\emph{} ( \emph{ q }\emph{} = 1, 2, ..., \emph{ k } ).
+\end{itemize}
+
+\textbf{Dữ liệu ra: }
+
+Gồm \emph{ k } dòng, mỗi dòng chứa một số là câu trả lời cho một truy vấn theo thứ tự xuất hiện trong file dữ liệu vào.
+
+\textbf{Ràng buộc: }
+\begin{itemize}
+	\item Có 30\% số test ứng với 30\% số điểm của bài có \emph{ m } , \emph{ n } ≤ 10.
+	\item Có 30\% số test khác ứng với 30\% số điểm của bài có \emph{ m } , \emph{ n } ≤ 100.
+	\item Có 40\% số test  ứng với 40\% số điểm còn lại của bài có \emph{ m } , \emph{ n } ≤ 1000.
+\end{itemize}
+
+\subsubsection{Ví dụ:}
+\begin{verbatim}
+\textbf{Input:
+}3 3 2
+1 1 1
+1 1 1
+1 1 1
+1 1 3 3
+1 1 3 2
+\textbf{Output:}
+3
+0
+\end{verbatim}

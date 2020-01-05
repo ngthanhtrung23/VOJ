@@ -1,0 +1,48 @@
+
+
+Cho 2 xâu ký tự S và T trong đó S chỉ bao gồm các ký tự 'a' -$>$ 'z' còn T chỉ bao gồm các ký tự 'a' -$>$ 'z' và 2 ký tự đặc biệt là '?' và '*'.
+\\Một ký tự '*' trong xâu T có thể đại diện cho 1 số lượng bất kỳ (có thể bằng 0) các ký tự 'a' -$>$ 'z'.
+\\Một ký tự '?' trong xâu T có thể đại diện cho \textbf{ đúng 1 } ký tự trong số các ký tự 'a' -$>$ 'z'.
+\\Một xâu X gọi là thỏa mãn định dạng T nếu ta có thể thay các ký tự '*' và '?' trong xâu T để thu được xâu X.
+
+
+\\\textbf{Ví dụ}
+\\T = '*bc?' sẽ có các xâu X thỏa mãn như 'abca' , 'bca', 'bcd', 'aaaaabcz', ...
+\\Trọng số của một xâu được tính bằng tổng trọng số của các ký tự có trong đó với quy ước 'a' = 1, 'b' = 2, 'c' = 3, ... 'z' = 26.
+
+\textbf{Yêu cầu}
+
+Hãy tìm xâu X là xâu con liên tiếp của xâu S mà X thỏa mãn định dạng T và có trọng số là nhỏ nhất.
+
+\textbf{Input }
+\begin{itemize}
+	\item 
+
+Gồm 1 dòng chứa 2 xâu T và S ( 1 ≤ |S| ≤ 10000, |T| ≤ 1000 )
+\end{itemize}
+
+\textbf{Output }
+\begin{itemize}
+	\item 
+
+Ghi ra trọng số của xâu X tìm được, hoặc ghi ra -1 nếu không có xâu X nào thỏa mãn.
+\end{itemize}
+
+\textbf{Ví dụ}
+\begin{verbatim}
+\textbf{Input}
+a?a alabala
+
+\textbf{Output}
+4
+
+\textbf{Giải thích}\emph{aba} là xâu có trọng số nhỏ nhất tìm được.
+
+
+\textbf{Input}
+a*c?a axcbaabcbax
+
+\textbf{Output}
+9
+
+\textbf{Giải thích}\emph{abcba} có trọng số nhỏ hơn \emph{axcba}\end{verbatim}

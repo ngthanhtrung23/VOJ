@@ -1,0 +1,68 @@
+
+
+Lão phù thủy ác độc Gargamel đã đuổi các Xì trum nhỏ bé ra khỏi ngôi làng của họ, khiến họ phải vượt qua ranh giới giữa thế giới Xì trum huyền diệu để lọt vào thế giới hiện đại.
+
+
+\includegraphics{../../../content/voj:smurfs.jpg}
+
+Các Xì trum cần phải tìm mọi cách để đánh bại Gargamel và trở về ngôi làng xinh đẹp của mình. Họ quyết định … đến Trung Quốc học võ Thiếu Lâm.
+
+Trụ Trì của Thiếu Lâm Tự rất khâm phục ý chí chiến đấu của các Xì trum, tuy nhiên để được nhận làm đệ tử Thiếu Lâm, các Xì trum cần phải vượt qua vòng thử thách trí tuệ của ngài, bằng cách giành chiến thắng trong trò chơi với các chuỗi tràng hạt. Sau khi bàn bạc, các Xì trum quyết định cử Brainy Smurf – người nổi tiếng thông thái của thế giới Xì trum – đứng ra thi đấu với Trụ Trì.
+
+Các chuỗi tràng hạt trong thiếu Lâm tự là các chuỗi vòng được kết lại một cách ngẫu nhiên từ 3 loại hạt bằng gỗ quý, mỗi loại mang một màu sắc riêng: màu nâu, màu đỏ, và màu vàng. Trong trò chơi, trụ trì sẽ có \textbf{ N } chuỗi tràng hạt. Hai người chơi sẽ lần lượt thực hiện lượt đi của mình, \textbf{ Brainy được ưu tiên đi trước } .
+
+Tại mỗi lượt đi, người chơi sẽ được lần lượt lấy ra \textbf{ tối thiểu là một } , và \textbf{ tối đa là 3 đoạn } gồm các hạt \textbf{ cùng màu }\textbf{ liên tiếp } trong một hoặc một số chuỗi tràng hạt. Người chơi phải lấy ra \textbf{ ít nhất là 1 hạt } .
+
+Tất nhiên, để lấy được các hạt ra khỏi chuỗi thì người chơi sẽ phải \textbf{ cắt chuỗi tràng hạt } tại một vị trí thích hợp. Trong trò chơi này, quy định rằng nhát cắt chuỗi tràng hạt phải được thực hiện ở vị trí dây \textbf{ nằm giữa 2 hạt khác màu nhau } (trừ trường hợp chuỗi chỉ có 1 hạt), và chỉ được cắt ở \textbf{ đầu đoạn hạt cần lấy } . Sau khi cắt dây thì chuỗi tràng hạt được duỗi ra thành một dây tràng hạt, và người chơi có thể lấy được các hạt cần lấy ở \textbf{ 1 trong 2 đầu dây } . Ở những lần lấy hạt tiếp theo, để lấy các hạt ở 2 đầu dây thì người chơi không cần cắt, nhưng nếu muốn lấy các hạt ở giữa dây thì người chơi vẫn phải thực hiện một nhát cắt với quy định như trên.
+
+Lưu ý: người chơi \textbf{ không được phép nối } dây tràng hạt đã bị cắt trong bất kỳ trường hợp nào, mà trò chơi được thực hiện tiếp với dây tràng hạt thu được sau khi cắt.
+
+Ai không thể thực hiện được lượt đi của mình nữa là người thua cuộc. Người còn lại sẽ giành phần thắng.
+
+Hai người chơi, một là Trụ Trì Thiếu Lâm không những tinh thông võ học, mà còn mưu lược bậc thầy, người kia là Brainy Smurfs thông thái nổi danh khắp giới Xì trum, đều đi những nước đi tối ưu. Ai sẽ là người chiến thắng? Liệu Brainy có giúp các Xì trum vượt qua thử thách khó khăn này hay không?
+
+\section{Dữ liệu}
+
+- Dòng đầu chứa một số nguyên \textbf{ T } là số lượng trận đấu, tiếp theo là mô tả của các trận đấu.
+
+- Mỗi trận đấu được mô tả như sau:
+\begin{itemize}
+	\item Dòng đầu chứa một số nguyên \textbf{ N } , thể hiện số chuỗi tràng hạt dùng trong trò chơi.
+	\item \textbf{N } dòng tiếp theo, mỗi dòng mô tả một chuỗi tràng hạt. Đầu tiên là một số nguyên \textbf{ L } thể hiện số lượng hạt trong chuỗi, tiếp theo là 1 dấu cách, sau đó là một chuỗi gồm \textbf{ L } kí tự thuộc một trong 3 loại: ‘N’, ‘D’, ‘V’, mỗi kí tự thể hiện màu của một hạt trong chuỗi tràng hạt (nâu, đỏ, vàng). Các hạt được liệt kê \textbf{ theo thứ tự } tương ứng trong chuỗi tràng hạt, theo \textbf{ chiều kim đồng hồ } .
+\end{itemize}
+
+\section{Kết quả}
+
+- Gồm \textbf{ T } dòng, mỗi dòng ghi kết quả của trận đấu tương ứng: in ra “Brainy” nếu Brainy giành chiến thắng, “Tru Tri” nếu Trụ Trì giành chiến thắng.
+
+\section{Giới hạn}
+
+- Trong tất cả các test: 1 ≤ \textbf{ T } ≤ 10
+
+- Trong 10\% số test: \textbf{ N } = 1, và 1 ≤ \textbf{ L } ≤ 10.
+
+- Trong 20\% số test: 1 ≤ \textbf{ N } ≤ 100, và 1 ≤ \textbf{ L } ≤ 100.
+
+- Trong 70\% số test: 1 ≤ \textbf{ N } ≤ 1000, và 1 ≤ \textbf{ L } ≤ 1000.
+
+\section{Ví dụ}
+\begin{verbatim}
+\textbf{Input}
+2
+1
+5 NNDND
+1
+4 NDVD
+
+\textbf{Output}
+Brainy
+Tru Tri
+\end{verbatim}
+
+ 
+
+\subsection{Giải thích:}
+
+- Ở trận đấu thứ nhất: Brainy ở nước đi đầu tiên của mình chỉ cần lấy đi 1 hạt màu nâu (N) trong 2 hạt liên tiếp nhau, thì cho dù ở nước thứ hai, Trụ Trì có lấy được 1, 2, hay 3 hạt thì tại nước thứ 3 Brainy luôn lấy được hết số hạt còn lại. (Trụ Trì không thể lấy được cả 4 hạt trong nước đi thứ hai, vì 2 hạt màu đỏ không nằm kề nhau).
+
+- Ở trận đấu thứ hai: Ở nước đi đầu tiên, Brainy chỉ có thể lấy được 1, 2, hoặc 3 hạt. Ở nước thứ hai, Trụ Trì luôn lấy được hết số hạt còn lại.

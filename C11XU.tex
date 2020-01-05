@@ -1,0 +1,58 @@
+
+
+
+
+\emph{    alex   }   có một bộ sưu tập đồng xu rất đẹp.   \emph{    yenthanh132   }   cũng thích những đồng xu nhưng do lười nên không có sưu tầm xu và kết quả là tới giờ vẫn không có đồng xu nào cả. Thấy   \emph{    yenthanh132   }   có vẻ thích bộ sưu tập đồng xu của mình nên một hôm   \emph{    alex   }   quyết định sẽ tặng cho   \emph{    yenthanh132   }   một số đồng xu trong bộ sưu tập. Nhưng vốn biết tính tham lam của   \emph{    yenthanh132   }   , nếu cho anh ta tùy ý lựa chọn thì thế nào anh ta cũng sẽ lấy hết tất cả đồng xu trong bộ sưu tập của   \emph{    alex.   }   Thế là   \emph{    alex   }   đã nghĩ ra một cách để   \emph{    yenthanh132   }   không thể lấy hết được các đồng xu của mình…  
+
+   Trong bộ sưu tập đồng xu của   \emph{    alex   }   có tất cả   \textbf{    M   }   loại khác nhau (được đánh số từ 1 đến M). Đầu tiên   \emph{    alex   }   chọn ra   \textbf{    N   }   đồng xu trong bộ sưu tập đồng xu của mình (không phải chọn ra tất cả). Biết rằng   \textbf{    N   }   là một số nguyên dương và luôn chia hết cho 4. Các đồng xu được đánh số từ 1 đến   \textbf{    N   }   , sau đó anh ta lấy ra   \textbf{    N/2   }   bao thư, đánh số từ 1 đến   \textbf{    N/2   }   , mỗi bao thư bỏ 2 đồng xu liên tiếp vào. Nói cách khác bao thư thứ nhất chứa đồng xu 1, 2; bao thư thứ 2 chứa đồng xu 3,4;… bao thư thứ   \textbf{    N/2   }   chứa đồng xu (n-1) và n. Cuối cùng   \emph{    alex   }   để n bao thư này lên bàn và bảo với   \emph{    yenthanh132   }   được phép chọn một số bao thư với điều kiện sau:  
+\begin{itemize}
+	\item     Với mỗi cặp bao thư được đánh số k*2-1 và k*2 (k từ 1 đến    \textbf{     N/4    }    ) thì    \emph{     yenthanh132    }    hoặc không chọn cả 2 hoặc chỉ có thể chọn một trong 2 bao thư.   
+	\item     Với mỗi bao thư mà    \emph{     yenthanh132    }    được chọn, thì    \emph{     yenthanh132    }    sẽ được phải lấy cả 2 đồng xu trong bao thơ đó.   
+	\item     Sau khi    \emph{     yenthanh132    }    đã lấy xong các đồng xu thì nếu như: trong số các bao thư mà    \emph{     yenthanh132    }    lấy được,    \emph{     alex    }    có thể chọn ra 1 tập các bao thư (khác rỗng) sao cho với mỗi loại trong    \textbf{     M    }    loại đồng xu khác nhau trong bộ sưu tập của anh ta thì tổng số lượng đồng xu loại đó trong tập các bao thư    \emph{     alex    }    chọn sẽ: hoặc bằng    \textbf{     0    }    hoặc là một số    \textbf{     chẵn    }    . Thì    \emph{     yenthanh132    }    phải trả lại toàn bộ những đồng xu đó cho    \emph{     alex    }    (tất nhiên trong quá trình chọn các bao thư chứa đồng xu    \emph{     yenthanh132    }    sẽ phải chọn như thế nào đó để tránh gặp kết quả như vậy)    \emph{     .    }
+\end{itemize}
+
+   Vốn tính tham lam nên mặt dù   \emph{    alex   }   cho điều kiện ngặc nghèo như vậy nhưng   \emph{    yenthanh132   }   vẫn cố gắng để làm sao có thể lấy được càng nhiều đồng xu càng tốt từ   \emph{    alex.   }
+
+\textbf{    Yêu cầu:   }   Hãy giúp   \emph{    yenthanh132   }   tính xem anh ta có thể lấy được nhiều nhất bao nhiêu đồng xu từ bộ sưu tập các đồng xu của   \emph{    alex   }   . Nếu bạn giúp được, có thể anh ta sẽ chia cho bạn vài đồng đấy :)  
+
+\subsubsection{   Dữ liệu vào  }
+\begin{itemize}
+	\item     Dòng đầu tiên chứa số 2 số nguyên    \textbf{     N, M    }    lần lượt là số lượng đồng xu    \emph{     alex    }    chọn ra để bỏ vào bao thư và số loại đồng xu khác nhau.   
+	\item     Dòng thứ 2 chứa    \textbf{     N    }    số nguyên a[i] (1 ≤ a[i] ≤    \textbf{     M;    }    i từ 1 đến n). Là loại của đồng xu thứ i. Lưu ý có thể có những loại đồng xu mà không xuất hiện trong    \textbf{     N    }    đồng xu mà    \emph{     alex    }    chọn ra, bởi vì đó chỉ là một phần trong bộ sưu tập của anh ta mà thôi.   
+\end{itemize}
+
+\subsubsection{   Dữ liệu ra  }
+\begin{itemize}
+	\item     Một số nguyên duy nhất là số lượng đồng xu tối đa mà    \emph{     yenthanh132    }    có thể lấy được từ    \emph{     alex    }    .   
+\end{itemize}
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     10\% số test có 4 ≤ n ≤ 100.   
+	\item     Trong tất cả các test có 4 ≤ n ≤ 2000.   
+	\item     1 ≤ M ≤ 10000.   
+\end{itemize}
+\begin{itemize}
+\end{itemize}
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+\textbf{Input 2:
+\\}4 3
+\\1 2 3 3
+\\(Giải thích: Có 4 đồng xu, 2 bao thư, bao đầu tiên chứa đồng xu 1,2; bao thứ 2 chứa đồng xu 3,4).\textbf{
+\\
+\\Output 1:}
+2
+\\(Giải thích: Chỉ có thể chọn bao thư 1. Nếu chọn bao thư 2 thì khi alex chọn bao thư này sẽ có tập 2 đồng xu loại 3)
+\\
+\\
+\\\textbf{Input 2:
+\\}16 10
+\\1 2 1 6 6 2 1 6 2 3 1 2 2 6 3 1
+\\\textbf{
+\\Output 2:}
+\\6
+\\(Giải thích: Chọn bao thư 1, 3 và 5)\end{verbatim}
+
+\emph{    (Trong lúc thi sẽ chấm trước 2 test (bao gồm test ví dụ)).   }

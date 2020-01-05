@@ -1,0 +1,72 @@
+
+
+Bạn có một chiếc bản đồ cũ kỹ được vẽ bởi tên cướp biển nổi tiếng "Captain Q". Nó chỉ ra vị trí của rất nhiều kho báu được chôn trên một hòn đảo.
+
+Bản đồ được chia thành các ô vuông đơn vị, mỗi ô có chứa một chữ số hoặc không chứa chữ số. Chữ số thể hiện số lượng kho báu ở trong 9 ô lân cận (nó và 8 ô xung quanh). Bạn có thể yên tâm rằng chỉ có tối đa 1 kho báu tại mỗi ô vuông.
+
+Mặc dù bạn có bản đồ, nhưng bạn không thể xác định được vị trí của các kho báu. Bạn cũng không biết tổng số kho báu được chôn trên hòn đảo. Nhưng số lượng kho báu ít nhất trên hòn đảo thì có thể tính được. Nhiệm vụ của bạn là viết chương trình để tính giá trị đó.
+
+\subsubsection{Input}
+
+Dữ liệu vào gồm có nhiều bộ test. Mỗi bộ test có cấu trúc như sau: h w map Dòng đầu tiên của bộ test chứa 2 số nguyên h và w. h là chiều cao và w là chiều rộng của bản đồ. 1$<$=h$<$=15 và 1$<$=w$<$=15.
+
+h dòng tiếp theo mô tả bản đồ. Mỗi dòng chứa w kí tự, tương ứng với một hàng ngang của bản đồ. Mỗi kí tự biểu diễn trạng thái của một ô vuông như sau:
+\begin{itemize}
+	\item '.': Ô vuông không phải là 1 phần của đảo (là ô nước). Không có kho báu nào ở ô này.
+	\item '*': Ô vuông là một phần của đảo, số lượng kho báu ở 9 ô lân cận của nó là chưa biết.
+	\item '0' .. '9': Ô vuông là một phần của đảo, và chữ số mô tả số lượng kho báu ở 9 ô lân cận của nó.
+\end{itemize}
+
+Dữ liệu đảm bảo luôn có ít nhất một phương án sắp xếp các kho báu thoả mãn. Có tối thiểu là 1 và tối đa 15 ô chứa sữ số. Một dòng chứa 2 số 0 đánh dấu hết dữ liệu.
+
+\subsubsection{Output}
+
+Với mỗi bộ dữ liệu, in ra 1 dòng chứa số lượng kho báu tối thiểu.
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input}
+5 6
+*2.2**
+..*...
+..2...
+..*...
+*2.2**
+6 5
+.*2*.
+..*..
+..*..
+..2..
+..*..
+.*2*.
+5 6
+.1111.
+**...*
+33....
+**...0
+.*2**.
+6 9
+....1....
+...1.1...
+....1....
+.1..*..1.
+1.1***1.1
+.1..*..1.
+9 9
+*********
+*4*4*4*4*
+*********
+*4*4*4*4*
+*********
+*4*4*4*4*
+*********
+*4*4*4***
+*********
+0 0
+
+\textbf{Output}
+6
+5
+5
+6
+23\end{verbatim}

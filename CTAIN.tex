@@ -1,0 +1,50 @@
+
+
+Cho n bình chứa nước (1 $<$= n $<$= 4). Ban đầu, mỗi bình đều chứa đầy nước. Bình i có dung lượng là \emph{o}$_\emph{i}$\emph{, với 1 $<$= o}$_\emph{i}$\emph{ $<$= 49.}
+
+Bạn có thể thực hiện 1 trong 3 thao tác sau:
+\begin{enumerate}
+	\item Đổ tất cả nước ở trong bình A sang bình B. Thao tác này chỉ được thực hiện nếu bình B có đủ chỗ trống.
+	\item Lấy 1 lượng nước ở bình A và đổ đầy hoàn toàn bình B.
+	\item Đổ tất cả nước mà 1 bình đang chứa.
+\end{enumerate}
+
+\textbf{Yêu cầu: }
+\begin{itemize}
+	\item Cho 1 dãy w$_i$. Hỏi có tồn tại 1 dãy thao tác đổ nước để từ trạng thái ban đầu (mỗi bình chứa đầy nước), ta đến được trạng thái mà bình i chứa w$_i$ nước.
+	\item Nếu tồn tại dãy thao tác đổ nước, tìm số lượng thao tác ít nhất.
+\end{itemize}
+
+\textbf{Input}
+
+Dòng đầu: số lượng test T (T $<$= 20).
+
+Mỗi test gồm:
+\begin{itemize}
+	\item 1 dòng trống
+	\item 1 dòng chứa số nguyên dương n (n $<$= 4).
+	\item 1 dòng chứa n số \emph{o}$_\emph{i}$\emph{, với 1 $<$= o}$_\emph{i}$\emph{ $<$= 49.}
+	\item 1 dòng chứa n số w$_\emph{i}$\emph{, với 1 $<$= w}$_\emph{i}$\emph{ $<$= o$_i$.}
+\end{itemize}
+
+\textbf{Output}
+
+Nếu tồn tại 1 dãy thao tác, in ra số thao tác ít nhất, ngược lại in ra NO.
+
+\textbf{Ví dụ}
+\begin{verbatim}
+Input:
+2
+
+3
+3 5 5
+0 0 4
+
+2
+20 25
+10 16
+
+Output:
+6
+NO
+\end{verbatim}

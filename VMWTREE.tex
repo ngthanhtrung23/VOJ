@@ -1,0 +1,58 @@
+
+
+Bạn được cho một đồ thị liên thông có V đỉnh và V-1 cạnh, với mỗi đỉnh sẽ có một trọng số tương ứng (các đỉnh khác nhau có thể có trọng số bằng nhau). Lần này, w có một số thao tác trên cây muốn nhờ bạn xử lí như sau:
+\begin{itemize}
+	\item 1 u v: hỏi trọng số bé nhất trong số các đỉnh trên đường đi từ u đến v.
+	\item 2 u v: hỏi trọng số lớn nhất trong số các đỉnh trên đường đi từ u đến v.
+	\item 3 u v: đảo ngược trọng số các đỉnh trên đường đi từ u đến v.
+\end{itemize}
+
+Giả sử các đỉnh trên đường đi từ u đến v lần lượt là: u, u $_ 1 $ , u $_ 2, $ u $_ 3,... $ u $_ k $$_ , $ v.
+
+Trọng số tương ứng là: w $_ u, $ w $_ u1, $ w $_ u2, $ w $_ u3,... $ w $_ uk, $ w $_ v. $
+
+Thì sau khi thực hiện thao tác loại 3 trọng số các đỉnh sẽ trở thành w $_ v, $ w $_ uk,... $ w $_ u2, $ w $_ u1, $ w $_ u $ .
+
+\subsubsection{Input}
+
+Dòng đầu tiên chứa 2 số tự nhiên V và Q - số đỉnh của đồ thị và số truy vấn.
+
+Dòng tiếp theo chứa V số tự nhiên là trọng số của các đỉnh 1, 2, 3,..., V.
+
+V-1 dòng tiếp theo mỗi dòng chứa 2 số tự nhiên u v - có cạnh nối từ u đến v.
+
+Q dòng tiếp theo mỗi dòng là một trong 3 loại truy vấn nêu trên.
+
+\subsubsection{Giới hạn}
+\begin{itemize}
+	\item Trong tất cả các test: V,Q ≤ 10 $^ 5 $ , trọng số các đỉnh ≤ 10 $^ 9 $ .
+	\item Trong 20\% các test: V,Q ≤ 10 $^ 3 $ .
+	\item Trong 40\% các test tiếp theo: số lượng truy vấn loại "3 u v" ≤ 100.
+\end{itemize}
+
+\subsubsection{Output}
+
+Với mỗi truy vấn loại 1 và 2 in ra một dòng tương ứng chứa kết quả truy vấn đó.
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{\textbf{Input}}
+8 4
+2 4 1 4 7 5 2 3
+1 2
+1 3
+2 4
+2 5
+3 6
+3 7
+3 8
+2 6 4
+1 4 1
+3 7 2
+1 6 8
+\end{verbatim}
+\begin{verbatim}
+\textbf{\textbf{Output}}
+5
+2
+2\end{verbatim}

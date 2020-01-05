@@ -1,0 +1,97 @@
+
+
+Chúng ta đã khá quen với khái niệm toán học các đa giác cũng như các hình khối ở trong không gian 2 chiều và ba chiều. Các nghiên cứu mới đây đang tìm hiểu về chiều thứ tư trong không gian và có một lý thuyết cho rằng chiều thứ tư là chiều thời gian. Benjamin khi đọc những tài liệu này đã tỏ ra rất hứng thú và cậu bắt đầu nghiên cứu về phiên bản bốn chiều của hình chữ nhật mà trong đó tesseract là trường hợp đặc biệt với số đỉnh là 16 và kích thước các cạnh, độ đo các góc đều bằng nhau.
+
+ 
+
+
+\includegraphics{https://lh4.googleusercontent.com/zRVMnyzU81srUL88XOcMBuMqokNceUxIq_wNM-JucWtsttssl51b4TNyf0vGxGpZAl9JjgPrF38NSt7f5O9KZhDyjsGCLS5YAlfPFQP1FoOkovle9vxw0WsNt-4OelzqNw}
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Ngày nọ benjamin đã nghĩ ra một bài toán như sau:
+
+Trên trục tọa độ trong không gian bốn chiều, \textbf{ một số điểm } có tọa độ nguyên sẽ được Benjamin gán trong số là 0 hoặc 1. Benjamin chỉ gán trọng số cho các tọa độ (x, y, z, t) thỏa điều kiện sau:
+\begin{itemize}
+	\item 
+
+x , y, z, t $>$ 0 .
+	\item 
+
+x $<$= X, y $<$= Y, z $<$= Z, t $<$= T;
+\end{itemize}
+
+\textbf{Yêu cầu: } Đếm số lượng tesseract thỏa điều kiện sau:
+\begin{itemize}
+	\item 
+
+Các cạnh song song với các trục tọa độ.
+	\item 
+
+Tọa độ các đỉnh nguyên và đều được gán trọng số.
+	\item 
+
+Tổng trọng số các điểm trong hình và trên các cạnh của hình $>$= C.
+\end{itemize}
+
+\textbf{Dữ liệu vào: }
+\begin{itemize}
+	\item 
+
+Dòng đầu chứa 5 số X, Y, Z, T, C.
+	\item 
+
+Tiếp theo là X khối dữ liệu, khối thứ i sẽ chứa dữ liệu của các điểm có tọa độ (i, y, z, t).
+	\item 
+
+Mỗi khối dữ liệu sẽ chứa Y cái ma trận, trong đó ma trận thứ j chứa dữ liệu của các điểm có toạ độ (i, j, z, t).
+	\item 
+
+Ký tự thứ k của chuỗi thứ e từ trái sáng phải từ trên xuống dưới của ma trận thứ j sẽ là '0' hoặc '1' tương ứng với trọng số 0 hoặc 1 của điểm có tọa độ (i, j, e, k).
+\end{itemize}
+
+ 
+
+\textbf{Dữ liệu ra: }
+\begin{itemize}
+	\item 
+
+Gồm một dòng chứa kết quả bài toán.
+\end{itemize}
+
+\textbf{Ràng buộc: }
+\begin{itemize}
+	\item 0 $<$ X, Y, Z, T $<$= 50.
+	\item 0 $<$= C $<$= 10 $^ 9 $ .
+	\item 25\% số test có X, Y, Z, T $<$= 5.
+\end{itemize}
+
+\textbf{Ví dụ: }
+\begin{verbatim}
+\textbf{Dữ liệu vào:}
+2 2 2 2 16
+11
+11
+
+11
+
+11
+
+11
+
+11
+
+11
+11
+
+\textbf{Dữ liệu ra:}
+1
+\end{verbatim}

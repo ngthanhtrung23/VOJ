@@ -1,0 +1,76 @@
+
+
+
+
+\subsubsection{   Đề bài  }
+
+   Bờm vẽ một hình chữ nhật. Ở cạnh trên của hình, Bờm vẽ n điểm và đánh số 1..n từ trái sang phải. Ở cạnh dưới, Bờm cũng vẽ n điểm và đánh số 1..n từ trái sang phải.  
+
+   Bờm sẽ vẽ n đoạn thẳng. Với mỗi đoạn, Bờm sẽ chọn một điểm chưa chọn ở cạnh trên, sau đó sẽ chọn một điểm chưa chọn ở cạnh dưới. Cuối cùng Bờm nối hai điểm với nhau để tạo thành đoạn thẳng.  
+
+   Bờm đã vẽ được một số đoạn thẳng rồi. Với các đoạn còn lại, Bờm sẽ chọn ngẫu nhiên một điểm ở cạnh trên và một điểm ở cạnh dưới để nối lại với nhau. Hãy tính giá trị kỳ vọng (expected value) của số cặp đoạn thẳng cắt nhau sau khi Bờm hoàn thành bức vẽ.  
+
+\subsubsection{   Dữ liệu  }
+\begin{itemize}
+	\item     Mỗi test bắt đầu bằng thẻ "[CASE]", các test cách nhau bởi một dòng trắng. Thẻ "[END]" báo hiệu kết thúc file input.   
+	\item     Với mỗi test, dòng đầu tiên chứa N   
+	\item     Tiếp theo là dòng "$<$$<$".   
+	\item     Các dòng tiếp theo chứa số hiệu các điểm ở cạnh trên của các đoạn thẳng mà Bờm đã vẽ.   
+	\item     Tiếp theo là dòng "$>$$>$'.   
+	\item     Tiếp theo là dòng "$<$$<$".   
+	\item     Các dòng tiếp theo chứa số hiệu các điểm ở cạnh dưới của các đoạn thẳng mà Bờm đã vẽ.   
+	\item     Tiếp theo là dòng "$>$$>$'.   
+\end{itemize}
+
+\subsubsection{   Kết quả  }
+\begin{itemize}
+	\item     Với mỗi test, in ra giá trị kỳ vọng tìm được, với sai số không quá 1E-6.   
+\end{itemize}
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     N nằm trong phạm vi từ 1..10000.   
+	\item     Số đoạn thẳng Bờm đã vẽ từ 1..50.   
+\end{itemize}
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu
+[CASE]
+3
+$<$$<$
+2
+$>$$>$
+$<$$<$
+3
+$>$$>$
+
+[CASE]
+5
+$<$$<$
+1
+4
+$>$$>$
+$<$$<$
+3
+1
+$>$$>$
+
+[END]
+Kết quả
+1.5
+5.5
+\end{verbatim}
+
+   Ví dụ 1:  
+\includegraphics{http://www.topcoder.com/contest/problem/DrawingLines/drawinglinesnew.png}
+
+   Có 4 cách để Bờm chọn các điểm  
+\begin{verbatim}
+[Trên 1]-[Dưới 1] [Trên 3]-[Dưới 2]
+[Trên 1]-[Dưới 2] [Trên 3]-[Dưới 1]
+[Trên 3]-[Dưới 1] [Trên 1]-[Dưới 2]
+[Trên 3]-[Dưới 2] [Trên 1]-[Dưới 1]
+\end{verbatim}
+
+   Cách 1 và 4 tương ứng với hình bên trái. Cách 2 và 3 tương ứng với hình bên phải. Đoạn thẳng xanh là đoạn thẳng vẽ ban đầu bởi Bờm. Trong hình trái, có 1 cặp đoạn thẳng cắt nhau. Trong hình phải, có 2 cặp đoạn thẳng cắt nhau. Do đó giá trị kỳ vọng của số cặp đoạn thẳng cắt nhau là 1.5.  

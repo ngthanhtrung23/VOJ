@@ -1,0 +1,69 @@
+
+
+
+
+
+
+   Cho bộ N số nguyên không âm (a   $_    1   $   , a   $_    2   $   , …, a   $_    N   $   ) và một danh sách gồm M bộ quy tắc biến đổi.       Ta định nghĩa một quy tắc biến đổi (u, oper, v) là phép biến đổi dãy số A gồm N phần tử (a1, a2, ... , aN) thành một dãy số B gồm N phần tử (b1, b2, ..., bN)       Với dãy b thỏa mãn       bi = au oper av. Oper chỉ gồm \{and, or, xor\}    
+
+   Ta định nghĩa một bộ quy tắc biến đổi gồm N quy tắc biến đổi (u, oper, v). Những quy tắc này sẽ biến đổi dãy số A gồm N phần tử (a   $_    1   $   , a   $_    2   $   , …, a   $_    N   $   ) thành dãy số B cũng gồm N phần tử (b   $_    1   $   , b   $_    2   $   , ... , b   $_    N   $   ). Trong đó, quy tắc thứ i như sau:  
+
+   b   $_    i   $   = a   $_    u   $   oper a   $_    v   $   , với oper là 1 trong 3 phép toán and, or, xor.  
+
+
+\\   Yêu cầu: Cho bộ (a   $_    1   $   , a   $_    2   $   , ... , a   $_    N   $   ) ban đầu, M bộ quy tắc biến đổi và số K. Ta lần lượt biến đổi dãy A ban đầu thông qua các bộ quy tắc theo thứ tự sau: 1, 2, …, M, 1, 2, …,M, 1, 2, ... Hãy xác định giá trị cuối cùng của (a   $_    1   $   , a   $_    2   $   , …, a   $_    N   $   ) sau K lần biến đổi.  
+
+\subsubsection{   Input  }
+
+
+
+   Gồm một dòng ghi 3 số N, M và K.  
+
+   Dòng thứ 2 ghi N số ban đầu a   $_    1   $   , a   $_    2   $   , …, a   $_    N   $
+
+    Tiếp theo là M nhóm dòng mô tả M bộ quy tắc biến đổi; mỗi bộ quy tắc được ghi trên N dòng gồm 3 giá trị u oper v. Các bộ quy tắc biến đổi được ghi cách nhau một dòng trống.   
+
+\subsubsection{   Output  }
+
+     In ra N số nguyên là bộ số thu được sau K lần biến đổi.    
+
+\subsubsection{     Giới hạn    }
+
+
+
+   1 ≤ M ≤ 100 cho tất cả các test.  
+\begin{itemize}
+	\item      Trong 30\% test đầu tiên: 1 ≤ N ≤ 10; 0 ≤ a    $_     i    $     ≤ 10    $^     9    $     ; 0 ≤ K ≤ 100.    
+	\item      Trong 30\% test tiếp theo: 1 ≤ N ≤ 3; 0 ≤ a     $_      i     $     ≤ 100; 0 ≤ K ≤ 10     $^      9     $     .    
+	\item      Trong 40\% test tiếp theo: 1 ≤ N ≤ 10; 0 ≤ a     $_      i     $      ≤ 10     $^      9     $     , K ≤ 10     $^      9     $     .    
+\end{itemize}
+
+   Thời gian chạy: 0.5s cho mỗi test  
+
+\subsubsection{   Chú ý:  }
+\begin{itemize}
+	\item     Trong thời gian thi, bài của bạn chỉ được chấm với test đề bài.   
+	\item     Nếu bài của bạn chạy đúng trên máy mình, nhưng sai khi nộp lên SPOJ, bạn có thể kiểm tra ở    \href{https://ideone.com}{     ideone    }    . Chú ý khi submit lên ideone, để chế độ Secret để người khác không đọc được code của bạn.   
+\end{itemize}
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+2 3 5
+1 2
+1 and 2
+1 or 2
+
+1 or 2
+1 xor 2
+
+1 xor 2
+1 and 2 
+
+\textbf{Output:}
+3 3
+\end{verbatim}
+
+\subsubsection{     Giải thích    }
+
+     (1, 2) ⇒ (0, 3) ⇒ (3, 3) ⇒ (0, 3) ⇒ (0, 3) ⇒ (3, 3)    

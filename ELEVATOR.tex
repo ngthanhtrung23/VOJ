@@ -1,0 +1,32 @@
+
+
+Những con bò muốn đi vào vũ trụ! Chúng muốn đến được quỹ đạo bằng cách xây một kiểu thang máy: một cái tháp khổng lồ làm bằng các khối chồng lên nhau. Chúng có K (1 ≤ K ≤ 400) loại khối có thể xây tháp. Mỗi khối loại i có chiều cao h\_i (1 ≤ h\_i ≤ 100) và có số lượng c\_i (1 ≤ c\_i ≤ 10). Do khả năng bị phá hủy bởi các tia vũ trụ, không có phần nào của khối loại i có thể vượt qua độ cao a\_i (1 ≤ a\_i ≤ 40000).
+
+Giúp những con bò xây thang máy cao nhất có thể bằng cách chồng các khối lên nhau theo luật trên.
+
+\subsubsection{Input}
+\begin{itemize}
+	\item Dòng 1: Một số nguyên: K
+	\item Dòng 2..K+1: Mỗi dòng chứa 3 số nguyên được phân cách bởi khoảng trắng: h\_i, a\_i, và c\_i. Dòng i+1 miêu tả loaị khối i.
+\end{itemize}
+
+\subsubsection{Output}
+
+Dòng 1: Một số nguyên H, chỉ độ cao lớn nhất của tháp có thể xây được.
+
+\subsubsection{Example}
+\begin{verbatim}
+Input:
+3
+7 40 3
+5 23 8
+2 52 6
+
+
+Output:
+48
+\end{verbatim}
+
+\emph{GIẢI THÍCH: }
+
+Từ dưới lên: 3 khối loại 2, 3 khối loại 1, 6 khối loại 3. Chồng 4 khối loại 2 \& 3 loại 1 không hợp lệ vì đỉnh của khối loại 1 vượt quá độ cao 40.

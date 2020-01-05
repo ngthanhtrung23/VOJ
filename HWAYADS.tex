@@ -1,0 +1,53 @@
+
+
+
+
+
+
+
+
+   Sau nhiều năm chuẩn bị kĩ càng về cơ sở vật chất, IOI2023 được chọn tổ chức tại Việt Nam, đây quả là một sự kiện lớn cho giới hâm mộ tin học nước nhà! Thi tài là một chuyện, không thể để các vị khách quý tới thăm Việt Nam mà không đi thăm N điểm du lịch (đánh số từ 0..N-1) vốn từ lâu đã nổi tiếng ở cả trong và ngoài nước. Tất nhiên, thủ đô Hà Nội của chúng ta (được đánh số 0) là nơi khởi hành của tour du lịch đặc biệt này! Sau nhiều năm xây dựng, hệ thống giao thông ở Việt Nam đã hiện đại tới mức chỉ cần đúng N-1 con đường cao tốc một chiều nối các điểm du lịch là các vị du khách đã có thể đi tới cả N điểm du lịch trên hành trình. Chưa hết, bộ Văn hóa Thể thao \& Du lịch còn nảy ra ý tưởng sơn lên các con đường những câu khẩu hiệu nhằm quảng bá cho kì thi IOI lần này, cũng như giới thiệu tới các du khách về đất nước Việt Nam xinh đẹp. KTuấn vốn là vCoder máu mê mấy sự kiện này nên đã trở về Việt Nam từ sớm, trong mấy ngày ở Hà Nội, KTuấn tình cờ gặp AnhDQ (vốn là đệ tử ruột của mình ;)) ), lại được nghe thông tin về ý tưởng hay ho kia, KTuấn liền nảy ra ý định thử tài nhóc đệ tử bằng cách phán một câu khẩu hiệu và hỏi AnhDQ xem:   \textbf{    nếu đi từ Hà Nội tới các điểm du lịch thì KTuấn có thể nhìn thấy câu khẩu hiệu đó bao nhiêu lần?   }   . Lâu ngày gặp lại, AnhDQ (vốn hay ngứa chân đi khắp đất Việt) mà lúng túng trước câu hỏi đơn giản của KTuấn thì ngại lắm :"$>$ Cho trước dữ liệu về các con đường, bạn hãy giúp AnhDQ giữ thể diện xem sao nhé!  
+
+\subsubsection{   Dữ liệu  }
+
+   - Dòng thứ nhất chứa số N.   
+\\   - N-1 dòng sau, mỗi dòng chứa 2 số u, v và xâu kí tự S, thể hiện con đường cao tốc từ u tới v, trên đó có sơn xâu S theo chiều từ u-$>$v.   
+\\   - Dòng cuối cùng chứa câu khẩu hiệu mà KTuấn thách đố AnhDQ.  
+
+\subsubsection{   Kết quả  }
+
+   - Gồm một số duy nhất là câu trả lời của AnhDQ.  
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+\textbf{Dữ liệu:}
+\\11
+\\0 2 Welcom
+\\0 7 VietN
+\\2 8 nauTK
+\\7 3 am
+\\7 9 nauTK
+\\2 5 eKTuan
+\\5 4 IOIKTuanIO
+\\7 1 IOI
+\\5 6 IOI23
+\\4 10 I2023
+\\KTuanIOI
+\\
+\\\textbf{Kết quả:}
+\\3
+\\
+\\*** Giải thích:
+\\Trên đường 0-2-5-6: Welcome\textbf{KTuanIOI}23
+\\Trên đường 0-2-5-4-10: Welcome\textbf{KTuanIOIKTuanIOI}2023
+\\\end{verbatim}
+
+
+\includegraphics{../../../content/anhdq:hwayads_sample_test_1.jpg}
+
+\subsubsection{   Giới hạn  }
+
+   - N ≤ 17032.   
+\\   - Độ dài các xâu ≤ 1000.   
+\\   - Độ dài câu khẩu hiệu của KTuấn ≤ 70.  
+

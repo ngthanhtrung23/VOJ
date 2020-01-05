@@ -1,0 +1,62 @@
+
+
+Vùng đất huyền thoại Gondor có một hệ thống truyền tin gồm các tháp canh để báo hiệu trong trường hợp khẩn cấp.
+
+Khi mỗi tháp canh được báo hiệu, nhân viên truyền tin ở tháp đó sẽ ngay lập tức truyền thông tin đến tất cả các tháp chưa được nhận thông tin, và theo 1 thứ tự cho trước. Việc truyền tin xảy ra đồng thời (xem ví dụ 2: ngay khi tháp 1 nhận được tin, thông tin được truyền đến cả tháp 2 và 4 -$>$ thời gian tháp 2 nhận được tin là 2). Tuy nhiên nhân viên truyền tin ở tháp i chỉ có thể truyền thông tin tới không quá s[i] tháp khác. Thời gian để truyền tin giữa 2 tháp bằng khoảng cách giữa 2 tháp đó. Tại thời điểm 0, thông tin bắt đầu được truyền từ tháp 1. Tính thời gian để mỗi tháp nhận được thông tin.
+
+\subsubsection{Input}
+
+Dòng đầu tiên: N (1 $<$= N $<$= 100) là số lượng tháp. Các tháp đánh số từ 1 đến N.
+
+N dòng tiếp theo, dòng thứ i gồm:
+\begin{itemize}
+	\item Số nguyên X và Y (1$<$=X,Y$<$=1000) là tọa độ của tháp trong hệ toạ độ
+	\item Số nguyên S (1$<$=S$<$=100) là số tháp mà tháp đó có thể truyền tin đi
+	\item N-1 số nguyên phân biệt trong khoảng 1 đến N, là danh sách các tháp mà nhân viên ở tháp i được yêu cầu truyền tin. Nhân viên truyền tin ở tháp này sẽ phải lần lượt truyền thông tin đi theo thứ tự trong danh sách. Không có 2 số nào trùng nhau trong danh sách, và trong danh sách thứ i không chứa số i
+\end{itemize}
+
+Dữ liệu đảm bảo không có 2 tháp nào nhận được tin tại cùng 1 thời điểm.
+
+\subsubsection{Output}
+
+Gồm N dòng, mỗi dòng chứa một số thực. Dòng thứ i chứa thời gian mà tháp thứ i nhận được thông tin. Kết quả của bạn sẽ được tính là chính xác nếu kết quả sai khác không quá 0.01 so với đáp án.
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+4
+1 1 1 2 3 4
+1 2 1 4 1 3
+2 1 1 2 1 4
+2 2 1 3 2 1
+
+
+\textbf{Output:}
+0.000000
+1.000000
+3.000000
+2.000000
+
+\end{verbatim}
+\begin{verbatim}
+\textbf{Input:}
+5
+4 3 2 5 2 4 3
+4 5 1 4 1 5 3
+4 4 1 1 4 5 2
+2 4 1 5 2 3 1
+3 4 2 2 4 3 1
+
+
+\textbf{Output:}
+0.000000
+2.000000
+4.414214
+2.414214
+1.414214
+
+\end{verbatim}
+
+\subsubsection{ }
+
+ 

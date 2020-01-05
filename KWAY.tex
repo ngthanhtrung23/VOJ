@@ -1,0 +1,42 @@
+
+
+Cho một mạng thông tin gồm n trạm và m đường nối hai chiều giữa các trạm. Trạm s là trạm chỉ huy, trạm f là trạm điều khiển. Sau một lần bị tin tặc tấn công lấy mất dữ liệu từ trạm chỉ huy chuyển đến trạm điều khiển, chỉ huy mạng quyết định chia thông tin chuyển đi thành k đơn vị thông tin để chuyển theo k đường đến trạm điều khiển. Mà hai đường truyền bất kỳ không được chung bất kỳ một đường nào.
+\\Hãy tìm cách truyền k đơn vị thông tin sao cho tổng chi phí là nhỏ nhất.
+
+\subsubsection{Input}
+\begin{itemize}
+	\item Dòng đầu là n, m, k, s, f (n ≤ 100).
+	\item m dòng tiếp là u, v, c cho biết có đường từ u -$>$ v và v -$>$ u với chi phí là c.
+\end{itemize}
+
+\subsubsection{Output}
+\begin{itemize}
+	\item Dòng đầu ghi –1 nếu không thể chuyển k đơn vị thông tin theo cách trên, ngược lại ghi chi phi để chuyển.
+	\item k dòng tiếp lần lượt ghi cách chuyển của từng đơn vị thông tin. Số đầu là số lượng trạm trên đường truyền, tiếp đó là dãy các trạm trên đường truyền (bắt đầu từ s, kết thúc ở f)
+\end{itemize}
+
+Chú ý: \emph{ Phạm vi tính toán là Longint. }
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input}
+8 11 3 1 8
+1 2 1
+1 4 1
+1 5 1
+2 3 1
+2 4 1
+2 7 1
+3 8 1
+3 6 1
+3 5 1
+6 8 1
+7 8 1
+
+\textbf{Output}
+11
+4 1 2 3 8
+5 1 5 3 6 8
+5 1 4 2 7 8
+
+\end{verbatim}

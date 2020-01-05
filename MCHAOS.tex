@@ -1,0 +1,63 @@
+
+
+Lovro thích chơi với các từ và nhận thấy một số từ có vẻ không thích nhau.
+
+
+\\Hai từ A và B không thích nhau nếu A đứng trước B (thứ tự từ điển), nhưng B' lại đứng trước A', với X' từ viết ngược của X (ví dụ X="kamen" thì X'="nemak"). VD, hai từ "lova" và "novac" thích nhau, nhưng hai từ "aron" và "sunce" thì không.
+
+Cho một tập các từ, ta định nghĩa mức hỗn loạn của tập là số cặp từ không thích nhau.
+
+Tính số cặp này.
+
+\subsubsection{Input}
+
+Dòng đầu là số nguyên N, 2 ≤ N ≤ 100 000.
+
+Sau đó N dòng chứa các từ, mỗi từ có nhiều nhất 10 chữ cái thường, 'a'-'z'. Không có 2 từ giống nhau.
+
+\subsubsection{Output}
+
+Mức hỗn loạn của tập từ này.
+
+Kết quả là số 64 bit  (int64 với Pascal, long long với C/C++).
+
+\subsubsection{Sample}
+\begin{verbatim}
+\textbf{input}  
+2 
+lopta 
+kugla 
+ 
+\textbf{output }
+0
+
+\textbf{input } 
+4 
+lova 
+novac 
+aron 
+sunce 
+ 
+\textbf{output }
+3
+
+\textbf{input } 
+14 
+branimir 
+vladimir 
+tom 
+kruz 
+bred 
+pit 
+zemlja 
+nije 
+ravna 
+ploca 
+ko 
+je 
+zapalio 
+zito 
+ 
+\textbf{output } 
+48
+\end{verbatim}

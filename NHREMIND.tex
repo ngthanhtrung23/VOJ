@@ -1,0 +1,39 @@
+
+
+
+
+   Bờm có một mật khẩu rất rất là dài, và nó được ghi trong một tờ giấy.  
+
+   Thật là lộ liệu và nguy hiểm nếu tờ giấy đó lọt vào tay người khác. Để dấu xâu mật khẩu A của mình, Bờm đã ghi thêm N xâu khác – gọi đó là các xâu B[1], B[2], … B[N]. Và ghi nhớ một xâu con E (gồm các kí tự liên tiếp) của A mà không là xâu con (gồm các kí tự liên tiếp) của bất cứ xâu B nào. Để khi nhìn lại tờ giấy, Bờm còn biết được đâu mới là mật khẩu của mình.  
+
+   Tất nhiên là Bờm sẽ tìm xâu E có độ dài nhỏ nhất vì tính dễ quên của mình.  
+
+\subsubsection{   Input  }
+\begin{itemize}
+	\item     Dòng đầu tiên là số lượng xâu ghi thêm - N;   
+	\item     N dòng tiếp theo, dòng thứ i ghi xâu B[i] khác rỗng;   
+	\item     Dòng cuối cùng là xâu A - mật khẩu của Bờm;   
+\end{itemize}
+
+\subsubsection{   Output  }
+\begin{itemize}
+	\item     Một dòng duy nhất là xâu E cần tìm - nếu có nhiều xâu thỏa, hãy in ra xâu có thứ tự từ điển nhỏ nhất.   
+\end{itemize}
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+1
+\\abacad
+\\abbcaaa
+\\
+\\\textbf{Output:}
+aa\end{verbatim}
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     LA = Length(A) $<$= 1000000 (Length(A) là độ dài xâu A);   
+	\item     S = Length(B[1]) + Length(B[2]) + ... + Length(B[n]) $<$= 1000000;   
+	\item     Các xâu chỉ gồm chữ cái la tin 'a'..'z';   
+	\item     Có 50\% số test LA, S $<$= 100;   
+\end{itemize}

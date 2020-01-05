@@ -1,0 +1,63 @@
+
+
+
+
+   Bé năm nay 16 tuổi, học hết lớp 10, giải toán bây giờ đã trở thành một phần không thể thiếu trong cuộc sống của Bé. Hàng ngày, Bé luôn mơ ước được ngắm nhìn  những bài toán hóc búa, quyến rũ. Biết Bé đam mê giải toán, cô giáo vui  lắm. Hôm nay cô cho Bé một bài toán:  
+
+   Cho một số nguyên dương S. Bé cần tìm tất cả các cặp số (x, y) thỏa mãn bội chung nhỏ nhất của x và y là S. Do giá trị của S có thể rất lớn:  
+\begin{itemize}
+	\item     Số S sẽ được cho dưới dạng tích các thừa số nguyên tố và số mũ. Cụ thể hơn, nếu    \textbf{     S = p     $_      1     $$^      k      $_       1      $$     p     $_      2     $$^      k      $_       2      $$     ...p     $_      n     $$^      k      $_       n      $$}    với p    $_     1    $    , p    $_     2    $    , ..., p    $_     n    $    là các số nguyên tố phân biệt thì các giá trị p    $_     1    $    , p    $_     2    $    , ..., p    $_     n    $    và k    $_     1    $    , k    $_     2    $    , ..., k    $_     n    $    sẽ được cho trước.   
+	\item     Thay vì liệt kê ra tất cả các cặp số (x, y) thỏa mãn, Bé chỉ cần tính tổng ước chung lớn nhất của các cặp số đó theo module 10    $^     9    $    + 7. Lưu ý nếu x khác y, (x, y) và (y, x) là 2 cặp số khác nhau.   
+\end{itemize}
+
+\subsubsection{   Input  }
+\begin{itemize}
+	\item     Dòng 1 chứa số nguyên    \textbf{     N    }    là số lượng thừa số nguyên tố phân biệt của S.   
+	\item     Dòng thứ i trong số N dòng tiếp theo chứa 2 số nguyên    \textbf{     p     $_      i     $}    và    \textbf{     k     $_      i     $}    , tương ứng với một thừa số nguyên tố và số mũ của nó.   
+\end{itemize}
+
+\subsubsection{   Output  }
+\begin{itemize}
+	\item     Một số nguyên duy nhất là kết quả của bài toán.   
+\end{itemize}
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     1 ≤ N ≤ 16   
+	\item     1 ≤ p    $_     i    $    , k    $_     i    $    ≤ 10    $^     9    $
+	\item     Dữ liệu đảm bảo p    $_     i    $    là các số nguyên tố phân biệt.   
+	\item     Subtask 1 (30\%): S ≤ 10    $^     12    $
+	\item     Subtask 2 (30\%): S ≤ 10    $^     18    $
+	\item     Subtask 3 (40\%): Không có giới hạn về giá trị của S.   
+	\item     Thời gian chạy cho subtask 1 và 2 là    \textbf{     2s    }    , subtask 3 là    \textbf{     4s    }    .   
+\end{itemize}
+
+\subsubsection{   Chấm bài  }
+
+   Bài của bạn sẽ được chấm trên thang điểm 100. Điểm mà bạn nhận được sẽ tương ứng với \% test mà bạn giải đúng.  
+
+   Trong quá trình thi, bài của bạn sẽ chỉ được chấm với 1 test ví dụ.  
+
+   Khi vòng thi kết thúc, bài của bạn sẽ được chấm với bộ test đầy đủ.  
+\begin{itemize}
+\end{itemize}
+\begin{itemize}
+\end{itemize}
+
+\subsubsection{   Example  }
+
+\textbf{    Input:   }
+\begin{verbatim}
+2
+\\2 2
+\\3 1 
+\\\end{verbatim}
+
+\textbf{    Output:   }
+\begin{verbatim}
+50
+\end{verbatim}
+
+\subsubsection{   Giải thích  }
+
+   S = 2   $^    2   $   x 3 = 12. Các cặp (x, y) thỏa mãn là (1, 12), (2, 12), (3, 4), (3, 12), (4, 3), (4, 6), (4, 12), (6, 4), (6, 12), (12, 1), (12, 2), (12, 3), (12, 4), (12, 6), (12, 12).  

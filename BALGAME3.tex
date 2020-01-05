@@ -1,0 +1,52 @@
+
+
+
+
+
+
+
+
+\textbf{\emph{     Bài này do RomanD3 sưu tầm, trong khi bứt rứt vì chưa làm được BALLGAME và BALGAME2 :))    }}
+
+\textbf{\emph{     Được AnhDQ cải tiến, trong khi bức xúc vì ra đề BALLGAME mà không làm được BALGAME2 =))    }}
+
+   Cho N quả bóng (đánh số 1..N) có màu được đánh dấu bởi một trong các kí tự thuộc bảng mã ASCII, xếp thành một hàng. Bạn hãy viết một chương trình làm các công việc sau:  
+\begin{enumerate}
+	\item     Lấy ra một đoạn liên tiếp dài nhất các quả bóng có cùng màu, nếu có nhiều đoạn thỏa mãn thì lấy đoạn trái nhất.   
+	\item     Nếu đoạn lấy ra có số lượng bóng lớn hơn 1 thì in ra trên một dòng theo định dạng:    
+\\\textbf{\emph{      C P      $_       1      $      P      $_       2      $      P      $_       3      $      ...     }}
+\\    trong đó C là màu của đoạn bóng được lấy ra, tập P gồm chỉ số của các quả được lấy ra theo thứ tự tăng dần; giữa C và các P    $_     i    $    cách nhau bởi đúng 1 dấu trống và không có dấu trống hay kí tự thừa.   
+	\item     Nếu đoạn lấy ra có số lượng bóng bằng 1 thì kết thúc chương trình.   
+	\item     Nếu dãy còn lại rỗng thì kết thúc chương trình.   
+	\item     Nếu dãy còn lại không rỗng thì tiến hành ghép phần bên trái và bên phải đoạn vừa lấy ra tạo thành dãy mới, các quả bóng được giữ nguyên chỉ số ban đầu.   
+	\item     Lặp lại bước 1.   
+\end{enumerate}
+
+\subsubsection{   Yêu cầu  }
+
+   Viết một chương trình thỏa mãn lưu đồ trên, đáp ứng thời gian thực hiện tỉ lệ thuận với kích thước của output đáp án.  
+
+\subsubsection{   Dữ liệu  }
+
+   - Gồm một dòng duy nhất chứa N kí tự viết liên tiếp thể hiện dãy bóng ban đầu.  
+
+\subsubsection{   Kết quả  }
+
+   In ra như hướng dẫn của đề bài.  
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+\textbf{Dữ liệu:}
+XDDTVXXXDVVVD
+
+\textbf{Kết quả:}
+X 6 7 8
+V 10 11 12
+D 2 3
+D 9 13
+\end{verbatim}
+
+\subsubsection{   Giới hạn  }
+
+   - N ≤ 500,000.  
+

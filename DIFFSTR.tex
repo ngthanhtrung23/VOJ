@@ -1,0 +1,62 @@
+
+
+
+
+   hgminh là một thành viên mới của tập đoàn trách nhiệm hữu hạn nhiều thành viên phi lợi nhuận đào tạo coder: Cờ Một Một.  
+
+   Không may thay, khi vừa vào anh bị tổ trưởng điểm danh Cà Dốt chơi khó, anh cần tìm số thứ tự trong danh sách nhân viên. Cà Dốt cho anh một xâu S độ dài n, tên của hgminh trong danh sách là xâu B độ dài m. Để tìm ra số thứ tự của mình, hgminh cần phải đếm số xâu con (định nghĩa xâu con xem ở dưới) phân biệt của xâu S thỏa mãn:  
+\begin{itemize}
+	\item     2 ký tự kề nhau trong xâu con phải khác nhau   
+	\item     Có thứ tự từ điển không nhỏ hơn xâu B   
+\end{itemize}
+
+   Vì kết quả rất to mà hgminh chưa học số lớn nên Cà Dốt quyết định sẽ yêu cầu hgminh đưa ra kết quả sau khi mod 1000000007 (10   $^    9   $   + 7)  
+
+
+
+   Xâu a gọi là xâu con của S nếu tồn tại 1 dãy x thỏa mãn 0 $<$ x   $_    1   $   $<$ x   $_    2   $   $<$ ...$<$ x   $_    length(a)   $   $<$= length(S) và a   $_    i   $   = S   $_    Xi   $   với mọi i từ 1 đến length(a).  
+
+   Ví dụ xâu "aba" có 6 xâu con phân biệt khác rỗng là: "a", "b", "ab", "ba", "aa", "aba"  
+
+
+
+\subsubsection{   Input  }
+\begin{itemize}
+	\item     Dòng 1: số nguyên dương t là số test (t $<$= 5)   
+	\item     Mỗi test có định dạng như sau:    
+\begin{itemize}
+	\item       Dòng 1: xâu S độ dài n     
+	\item       Dòng 2: xâu B độ dài m     
+\end{itemize}
+\end{itemize}
+
+\subsubsection{   Output  }
+\begin{itemize}
+	\item     Gồm t dòng, dòng thứ i là kết quả của test thứ i sau khi mod 1000000007 (10    $^     9    $    + 7)   
+\end{itemize}
+
+
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+2
+\\bab
+\\aa
+\\cac
+\\b
+\\\textbf{Output:}
+4
+\\3
+\\\textbf{Giải thích:}
+\\Xâu "bab" có 4 xâu con thỏa mãn là: "b", "ab", "ba", "bab"
+\\Xâu "cac" có 3 xâu con thỏa mãn là: "c", "ca", "cac" \end{verbatim}
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     Trong tất cả các test n, m $>$= 1,   
+	\item \textbf{     Xâu S, B chỉ gồm chữ thường từ 'a'..'z'    }
+	\item     Trong 20\% số test, n, m $<$= 20   
+	\item     Trong 40\% số test tiếp theo, n, m $<$= 1.000 (10    $^     3    $    )   
+	\item     Trong 40\% số test tiếp theo, n, m $<$= 100.000 (10    $^     5    $    )   
+\end{itemize}

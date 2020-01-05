@@ -1,0 +1,84 @@
+
+
+
+
+   Nhà của Bờm có nuôi một bầy heo. Hiện có một con heo đã nuổi đủ ngày tuổi và cần xẻ thịt đem bán. Trước tiên Bờm cần phải biết được cân nặng chính xác của nó. Nhưng cái cân ở nhà đã hỏng mất ròi, nên chỉ biết được nó nặng không nhỏ hơn L (Kg) và không lớn hơn R (Kg). Vậy là Bờm phải chạy sang mượn cân của nhà Phú Ông kế bên.  
+
+   Bộ cân nhà Phú Ông rất đặc biệt, bao gồm :  
+\begin{itemize}
+	\item     Một cân đĩa thăng bằng: Cân sẽ cho biết mối quan hệ của 2 khối lượng trong một lần cân - bé hơn, lớn hơn hoặc bằng nhau.   
+	\item     Một dãy vô tận các quả cân có dạng 1, 3, 9, 27, ..., 3    $^     i    $    , ... theo Kilogram. Nhưng mỗi dạng chỉ có đúng một quả.   
+\end{itemize}
+
+   Phú Ông muốn lợi dụng cơ hội này để kiếm ít tiền từ Bờm, nên đặt ra điều kiện: "   \emph{    Với mỗi quả cân Bờm đặt lên cân một lần phải tốn 1 đồng. Chi phí một lần cân sẽ bằng số quả cân sử dụng trong lần đó. Và chi phí để xác định được trọng lượng của một con heo chính là tổng chi phí các lần cân   }   ".  
+
+   Bờm nhà ta rất thông minh, sau một hồi suy nghĩ, Bờm bảo với Phú Ông rằng: "   \emph{    Bờm chắc chắn 100\% rằng Phú Ông sẽ chỉ lấy được tối đa là E đồng mà thôi   }   ".  
+
+   Bạn hãy cho biết số E đó nhỏ nhất có thể là bao nhiêu? Biết rằng:  
+\begin{itemize}
+	\item     Con heo nhà Bờm có cân nặng là một số nguyên dương theo Kilogram;   
+	\item     Bờm sẽ không xẻ nhỏ con heo đến khi xác định được cân nặng chính xác của nó;   
+	\item     Có thể đặt các quả cân tùy ý lên hai đĩa cân;   
+	\item     Trong một lần cân, phải đặt các quả cân trước khi đặt heo lên;   
+	\item     Sau một lần cân bắt buộc phải lấy xuống tất cả những quả cân đang ở trên  các đĩa (nên khi bắt đầu một lần cân mới, hai đĩa cân đều không chứa  vật);   
+\end{itemize}
+
+\subsubsection{   Input  }
+\begin{itemize}
+	\item     Dòng đầu tiên là số nguyên dương Q cho biết số trường hợp bạn cần phải tính toán;   
+	\item     Q dòng tiếp theo, mỗi dòng là một cặp số nguyên dương L và R cho biết giới hạn cân nặng con heo của Bờm.   
+\end{itemize}
+
+\subsubsection{   Output  }
+\begin{itemize}
+	\item     Gồm Q dòng là số E tương ứng với mỗi trường hợp.   
+\end{itemize}
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     Q ≤ 1000000;   
+	\item     1 ≤ L ≤ R ≤ 10000;   
+	\item     20\% số test có R ≤ 500;   
+	\item     40\% số test có R ≤ 5000;   
+\end{itemize}
+
+\subsubsection{   Chấm điểm  }
+
+   Bài của bạn sẽ được chấm trên thang điểm 100. Điểm mà bạn nhận được sẽ tương ứng với \% test mà bạn giải đúng.  
+
+   Trong quá trình thi, bài của bạn sẽ chỉ được chấm với 1 test ví dụ có trong đề bài.  
+
+   Khi vòng thi kết thúc, bài của bạn sẽ được chấm với bộ test đầy đủ.  
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+3
+\\1 3
+\\3 13
+\\15 20
+
+\textbf{Output:}
+2
+\\5
+\\6\end{verbatim}
+
+\subsubsection{   Giải thích  }
+
+   Trong trường hợp đầu tiên, con heo nhà Bờm nặng trong khoản [1;3] (Kg). Có nhiều cách để Bờm chỉ tốn tối đa 2 đồng. Và đây là một trong những cách đó:  
+\begin{itemize}
+	\item     Đặt lên đĩa bên TRÁI: quả cân 1 (Kg);   
+	\item     Đặt lên đĩa bên PHẢI: quả cân 3 (Kg);   
+	\item     Cuối cùng đặt heo lên đĩa bên TRÁI;   
+\end{itemize}
+
+   Nếu:  
+\begin{itemize}
+	\item     Trái $>$ Phải : heo nặng 3 (Kg);   
+	\item     Trái = Phải : heo nặng 2 (Kg);   
+	\item     Trái $<$ Phải : heo nậng 1 (Kg);   
+\end{itemize}
+\begin{itemize}
+\end{itemize}
+
+   Cân một lần và sử dụng 2 quả cân, nên tốn đúng 2 đồng.  

@@ -1,0 +1,76 @@
+
+
+Sàn nhà là hình chữ nhật, chia thành ô. Trên đó có các ô sạch, bẩn và robot có thể dọn các ô bẩn thành ô sạch nếu nó ở ô đó. Robot có thể di chuyển qua các ô kề cạnh. Xác định số bước di chuyển ít nhất để có thể dọn sạch sàn nếu có thể.
+
+\href{http://tinypic.com}{
+\includegraphics{http://i41.tinypic.com/29f33f4.jpg}}
+
+\subsubsection{Input}
+\begin{verbatim}
+Gồm nhiều test. Dòng đầu mỗi test là 2 số w,h là chiểu rộng và dài của sàn nhà. 
+
+    w h
+    c11 c12 c13 ... c1w
+    c21 c22 c23 ... c2w
+    ...
+    ch1 ch2 ch3 ... chw
+
+1$<$=w,h$<$=20.
+
+Các ô của sàn có 4 giá trị sau:
+    '.' : sạch
+    '*' : bẩn
+    'x' : vật cản.
+    'o' : robot (1 con)
+
+Có không quá 10 ô bẩn trên sàn. 
+
+Kết thúc test là 2 số 0 0.
+
+SAMPLE INPUT
+7 5
+.......
+.o...*.
+.......
+.*...*.
+.......
+15 13
+.......x.......
+...o...x....*..
+.......x.......
+.......x.......
+.......x.......
+...............
+xxxxx.....xxxxx
+...............
+.......x.......
+.......x.......
+.......x.......
+..*....x....*..
+.......x.......
+10 10
+..........
+..o.......
+..........
+..........
+..........
+.....xxxxx
+.....x....
+.....x.*..
+.....x....
+.....x....
+0 0
+
+\end{verbatim}
+
+\subsubsection{Output}
+\begin{verbatim}
+ 
+In ra số bước di chuyển ít nhất cần sử dụng. Nếu không thể làm sạch sàn, 
+in ra -1. 
+
+SAMPLE OUTPUT
+8
+49
+-1
+\end{verbatim}

@@ -1,0 +1,37 @@
+
+
+Ngôn ngữ của một bộ lạc cổ xưa chỉ sử dụng hai chữ cái \emph{ a } và \emph{ b } để tạo ra các từ có nghĩa. Để tạo thành một câu, người ta sử dụng thêm dấu cách để phân tách các từ. Như vậy mỗi dãy các ký tự \emph{ a } và \emph{ b } liên tiếp nhau và không thể mở rộng được về hai bên sẽ tạo thành một từ. Một câu không thể chứa từ vô nghĩa. Người trong bộ lạc quan niệm mỗi từ có một giá trị may mắn. Giá trị may mắn của một câu là tổng giá trị may mắn của các từ trong câu. Bạn được sử dụng tối đa x ký tự \emph{ a } , y ký tự \emph{ b } và z dấu cách, hãy tạo ra câu có trọng số lớn nhất. Trong trường hợp có nhiều kết quả, hãy in ra câu có thứ tự từ điển nhỏ nhất.
+
+\subsubsection{Input}
+
+ 
+\begin{itemize}
+	\item Dòng đầu ghi số N, số từ có nghĩa trong ngôn ngữ.(1 ≤ N ≤ 50)
+	\item Dòng sau ghi 3 số x , y , z như trong đề bài.( 0 ≤ x, y, z ≤ 50)
+	\item N dòng sau, mỗi dòng ghi một từ thuộc ngôn ngữ và giá trị của nó, cách nhau bởi một dấu cách. Giá trị của một từ là một số nguyên dương không vượt quá 50.
+\end{itemize}
+
+\subsubsection{Output}
+
+Gồm một dòng duy nhất ghi ra câu có thứ tự từ điển nhỏ nhất tìm được.
+
+\subsubsection{Example}
+\begin{verbatim}
+Input:
+4
+3 3 1
+abb 3
+baa 3
+aaa 4
+bbb 1
+
+Output:
+abb baa
+\end{verbatim}
+
+\subsubsection{Chú ý}
+
+ 
+\begin{itemize}
+	\item Câu s1 được gọi là có thứ tự từ điển nhỏ hơn s2 nếu xâu biểu diễn s1 nhỏ hơn s2. Thứ tự từ điển của các ký tự là: dấu cách, \emph{ a } , \emph{ b } .
+\end{itemize}

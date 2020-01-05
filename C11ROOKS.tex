@@ -1,0 +1,64 @@
+
+
+Hai quân xe được đặt tại hai ô khác nhau trên một bàn cờ vua có NxN ô. Mỗi ô của bàn cờ có một giá trị từ 0 đến 1000.
+
+Một ô trong bàn cờ được gọi là \textbf{ bị tấn công } nếu ô đó \textbf{ cùng hàng hoặc cùng cột } với ít nhất một quân xe. Hai ô vuông có chứa quân xe được xem như \textbf{ không bị tấn công } .
+
+Bài toán đặt ra là tìm cách đặt hai quân xe lên bàn cờ, để tổng giá trị các ô bị tấn công là \textbf{ lớn nhất } .
+
+\subsubsection{Dữ liệu}
+\begin{itemize}
+	\item Dòng 1: Số nguyên dương N (2 ≤ N ≤ 300).
+	\item N dòng tiếp theo, mỗi dòng gồm N số. Đây là giá trị của các ô trên bàn cờ.
+\end{itemize}
+
+\subsubsection{Kết quả}
+\begin{itemize}
+	\item Tổng lớn nhất tìm được.
+\end{itemize}
+
+\subsubsection{Ví dụ}
+\begin{verbatim}
+\textbf{Input}
+3
+0 1 4
+3 0 2
+1 4 1
+
+\textbf{Output}
+15
+
+\textbf{Input}
+4
+0 1 1 1
+1 0 4 3
+0 1 3 5
+0 0 2 5
+
+\textbf{Output}
+23
+
+\textbf{Input}
+5
+4 2 2 3 3
+4 2 1 4 0
+1 3 4 0 1
+4 3 0 2 3
+0 0 3 0 4
+
+\textbf{Output}
+40\end{verbatim}
+
+ 
+
+\subsubsection{Giải thích}
+\begin{itemize}
+	\item Vị trí đặt hai quân xe trong ví dụ 1 là (1, 1) và (2, 2)
+	\item Vị trí đặt hai quân xe trong ví dụ 2 là (1, 3) và (1, 4)
+	\item Vị trí đặt hai quân xe trong ví dụ 3 là (2, 5) và (4, 3)
+\end{itemize}
+
+\subsubsection{Giới hạn}
+\begin{itemize}
+	\item Có 60\% số test, 2 ≤ N ≤ 100
+\end{itemize}

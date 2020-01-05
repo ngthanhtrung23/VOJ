@@ -1,0 +1,77 @@
+
+
+
+
+   Cho một cột N số thẳng đứng, phần tử dưới cùng ở độ cao 1, phần tử trên cùng ở độ cao N. Có 2 loại truy vấn   
+\\   \_ S x: xóa đi phần tử ở độ cao x, sau đó các phần tử phía trên sẽ dồn xuống và tất nhiên các phần tử bị dồn xuống sẽ giảm một đơn vị độ cao (x không vượt quá số phần tử hiện tại của dãy số)   
+\\   \_ Q x y: trong các phần tử thuộc các nhóm từ x đến y, hãy tìm phần tử có giá trị lớn nhất (x$<$=y)   
+\\
+\\   Nhóm được định nghĩa như sau: Tại một thời điểm nào đó, ta nói phần tử ở độ cao i thuộc nhóm x nếu độ cao phần tử đó đã giảm x đơn vị so với độ cao ban đầu  
+
+\subsubsection{   Input  }
+
+   \_ Dòng đầu chứa số N là số phần tử ban đầu của dãy số (1$<$=N$<$=100000)   
+\\   \_ N dòng sau chứa N số nguyên là giá trị của các phần tử (0$<$=A\_i$<$=10\textasciicircum9)   
+\\   \_ Dòng tiếp theo chứa số M là số truy vấn (1$<$=M$<$=100000)   
+\\   \_ M dòng tiếp theo chứa một trong hai loại truy vấn như định dạng trên. Chú ý là với truy vấn x..y thì x và y có thể âm hoặc dương   
+\\
+
+\subsubsection{   Output  }
+
+   \_ In ra kết quả cho các truy vấn Q (mỗi số in trên một dòng). Nếu trong dãy số không tồn tại phần tử nào thuộc nhóm từ x đến y thì in ra “NONE”  
+
+\subsubsection{   Example  }
+\begin{verbatim}
+Input:
+5
+1
+2
+3
+4
+5
+5
+Q 0 0
+S 3
+Q 0 0
+S 3
+Q 2 2
+
+Output:
+5
+2
+5
+\end{verbatim}
+\begin{verbatim}
+Input:
+8
+1
+5
+7
+2
+6
+4
+5
+3
+10
+S 5
+Q 0 1
+Q 0 1
+Q 2 2
+S 5
+Q 1 2
+Q 1 1
+Q 2 3
+S 4
+Q 1 1
+
+Output:
+7
+7
+NONE
+5
+NONE
+5
+NONE
+\end{verbatim}
+
+   Giải thích: ban đầu các phần tử theo thứ tự từ dưới lên trên mang giá trị 1 2 3 4 5. Ban đầu các số chưa bị thay đổi vị trí nên tất cả đều thuộc nhóm 0. Q 0 0 =$>$ 5 Sau khi bắn ptử thứ 3 dãy còn lại là 1 2 4 5 với (1 2) thuộc nhóm 0 và (4 5) thuộc nhóm 1. Khi đó thực hiện Q 0 0 =$>$ 2 Tiếp tục bắn ptử thứ 3, dãy còn lại 1 2 5 với (1 2) thuộc nhóm 0 và (5) thuộc nhóm 2 nên Q 2 2 =$>$ 5  

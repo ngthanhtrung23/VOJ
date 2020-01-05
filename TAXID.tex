@@ -1,0 +1,72 @@
+
+
+Để thực hiện luật Thuế thu nhập cá nhân, Tổng cục thuế phải cấp cho mỗi người có thu nhập một mã số thuế sao cho không có hai người nào có mã số thuế trùng nhau. Tổng cục thuế quyết định chọn mã số thuế từ tập S bao gồm các biểu diễn trong hệ đếm cơ số 36 của tất cả các số nguyên dương trong phạm vi từ 1 đến n (36 ≤ n ≤ 10 $^ 16 $ ). Để biểu diễn các chữ số trong hệ đếm cơ số 36, Tổng cục thế sử dụng các kí tự từ 0 đến 9 và 26 chữ cái latinh từ a đến z theo quy tắc chỉ ra trong bảng 1. Một số trong hệ đếm cơ số 36 có thể hiểu là số biểu diễn trong hệ đếm cơ số q (2 ≤ q ≤ 36) nếu nó chỉ chứa các các chữ số trong q chữ số đầu tiên trong hệ đếm cơ số 36.
+
+ 
+
+
+\includegraphics{http://i228.photobucket.com/albums/ee103/AnhDQ/img131.jpg}
+
+ 
+
+Có tất cả m Cục thuế được đánh số từ 1 đến m làm nhiệm vụ duyệt hồ sơ và cấp mã số thuế (3 ≤ m ≤ 70).
+
+Để việc cấp mã số thuế có thể được tiến hành song song ở tất cả các Cục thuế, trước hết Tổng cục thuế chọn dãy số nguyên c $_ 1 $ , c $_ 2 $ , ..., c $_ k $ thỏa mãn 1 $<$ c $_ 1 $ $<$ c $_ 2 $ $<$ ... $<$ c $_ k $ $<$ 36, trong đó k = [(m-1)/2] (kí hiệu [α] là số nguyên lớn nhất bé hơn hoặc bằng α) và sau đó tiến hành phân phối mã số thuế cho các Cục thuế như sau: đầu tiên, từ tập S lọc ra tất cả các số có thể hiểu như là số trong hệ đếm cơ số c $_ 1 $ , chuyển cho các Cục thuế thứ nhất và thứ hai sử dụng, sau đó loại bỏ tất cả các số này khỏi tập S; tiếp đến, lọc ra tất cả các số còn lại trong S có thể hiểu như số đếm ở hệ đếm cơ số c $_ 2 $ chuyển cho các Cục thuế thứ 3 và thứ 4 sử dụng, sau đó loại bỏ tất cả các số này khỏi tập S; ... Cục thuế cuối cùng (nếu m lẻ) hoặc 2 Cục thuế cuối cùng (nếu m chẵn) được sử dụng các mã còn lại trong tập S.
+
+Tại các Cục thuế, mã số thuế được cấp theo quy tắc sau: các Cục thuế với số hiệu lẻ cấp mã số thuế theo tứ tự từ nhỏ đến lớn, còn các Cục thuế với số hiệu chẵn cấp mã số thuế theo thứ tự từ lớn đến nhỏ trong tập các mã số được phân phối.
+
+Ví dụ, với n = 50, m = 3 và c $_ 1 $ = 16. Ta có tập mã số thuế ban đầu S = \{1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 1a, 1b, 1c, 1d, 1e\}. Khí đó các Cục thuế 1 và 2 được sử dụng các mã trong tập \{1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 1a, 1b, 1c, 1d, 1e\}; Cục thuế 3 được sử dụng các mã \{g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z\}. Người thứ nhất đến Cục thuế 2 được cấp mã số thuế 1e, người thứ hai đến Cục thuế này được cấp mã số thuế 1d, ...
+
+ 
+
+\subsection{\textbf{Yêu cầu }}
+
+ 
+
+Cho ở dạng hệ đếm cơ số 10 các số nguyên dương n, m, c $_ 1 $ , c $_ 2 $ , ..., c $_ k $ , p và q. Hãy xác định mã số thuế của người thứ q ở Cục thuế p.
+
+ 
+
+\subsection{\textbf{Dữ liệu }}
+
+ 
+
+ 
+\begin{itemize}
+	\item Dòng thứ nhất chứa các số nguyên n, m, p, q.
+	\item Dòng thứ hai chứ k số nguyên c $_ 1 $ , c $_ 2 $ , ..., c $_ k $ (k = [(m-1)/2]).
+\end{itemize}
+
+ 
+
+Các số trên một dòng được ghi cách nhau một dấu cách. Dữ liệu đảm bảo tồn tại mã số thuế.
+
+ 
+
+\subsection{\textbf{Kết quả }}
+
+ 
+
+Đưa ra mã số thuế tìm được.
+
+ 
+
+\subsection{\textbf{Ví dụ }}
+
+ 
+\begin{verbatim}
+Input:
+30 5 2 2
+16
+
+Output:
+1d
+\end{verbatim}
+
+ 
+
+\subsection{\textbf{Ràng buộc }}
+
+ 
+
+60\% số tests ứng với 60\% số điểm của bài có 36 ≤ n ≤ 10000.

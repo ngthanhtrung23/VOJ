@@ -1,0 +1,93 @@
+
+
+                     Chú ý : C,S,B được sử dụng thay cho H,F,I, trong các test     
+
+   Hal và Dave chơi game trên bảng RxC. Quy tắc như sau:  
+
+   • Thay nhau di chuyển 1 quân cờ.  
+
+   • Quân cờ chỉ di chuyển theo quy tắc : xuông dưới hoặc sang phải  hoặc xuống dưới và sang phải.  
+
+   • Một số ô cấm, không thể di chuyển vào ô đó.  
+
+   • Một ô có thể có 1 trong 3 loại đồ vật H,F,I. Đi vào ô chứa  H thu được 1 điểm, F-3 điểm và I-5 điểm.  
+
+   • Game kết thúc khi không di chuyển được quân cờ nữa (ra ngoài  bảng hoặc gặp toàn ô cấm).  
+
+   • Nếu 2 người bằng điểm thì người không đi được nữa thua.  
+
+   • Nếu điểm khác nhau thì ai nhiều điểm hơn thắng.  
+
+   • Điểm ban đầu của 2 người là 0. Hal đi trước. Vị trí ô xuất phát  là bất kỳ và không chứa H, F, I.  
+
+   Cho một bảng và một số vị trí xuất phát, xác định người thắng.  
+
+\subsubsection{   Input  }
+
+   Dòng đầu gồm hai số R, C, (2 ≤ R ≤ 100), (2 ≤ C ≤ 100) , số hàng, cột. Sau đó là R dòng C kí tự.Ô cấm là '\#', ô có đồ vật là H hoặc F hoặc I.  Ô rỗng là '.'  
+
+   Tiếp theo là N, 1 ≤ N ≤ 100, số vị trí xuất phát có thể. N dòng tiếp theo mỗi dòng hai số A (1 ≤ A ≤ R) và B (1 ≤ B ≤ C),  hàng, cột của vị trí xuất phát thứ i.  Hàng, cột đánh số từ 1.  
+
+\subsubsection{   Output  }
+
+   In ra N dòng, dòng i là tên người chiến thắng ở lần chơi thứ i.  
+
+\subsubsection{   Sample  }
+\begin{verbatim}
+GAME.IN
+
+3 4
+.H#.
+I...
+##H.
+3
+1 1
+1 4
+2 3
+
+GAME.OUT
+
+HAL
+DAVE
+HAL
+
+GAME.IN
+
+4 5
+.#...
+#.#.F
+.#..F
+.#...
+3
+3 1
+3 3
+1 5
+
+GAME.OUT
+
+HAL
+HAL
+HAL
+
+GAME.IN
+
+5 6
+##..#.
+..#FH#
+..#..#
+###...
+.....I
+4
+2 1
+5 1
+1 4
+1 6
+
+GAME.OUT
+
+HAL
+HAL
+DAVE
+DAVE
+
+\end{verbatim}

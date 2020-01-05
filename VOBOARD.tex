@@ -1,0 +1,66 @@
+
+
+ 
+
+\subsubsection{Truyền thuyết}
+
+Nhắc đến vương quốc Đồng Dư K, chắc hẳn không ai là không biết đến truyền thuyết nổi tiếng "Hàng Tinh, Cột Tinh", bởi nó gắn liền với câu đố mà nhiều năm nay chưa có ai giải được:
+
+\emph{"Ngày xửa ngày xưa, khi người ta còn chưa biết Trái Đất hình cầu, vương quốc Đồng Dư K là một mảnh đất yên bình hình chữ nhật, được chia thành M hàng, N cột. Một ngày nọ, vị vua của vương quốc Đồng Dư K muốn kén rể cho người con gái vừa dễ thương vừa học giỏi của mình - Công chúa Mị Yến. Sau nhiều ngày tháng chọn lựa kĩ càng, kiểm tra các hoàng tử bằng toán học, tin học, vật lý, hóa học, lịch sử..., cuối cùng Mị Yến được gả cho Hàng Tinh. }
+
+\emph{Sau khi hoàng tử Hàng Tinh lấy được công chúa Mị Yến, hoàng tử Cột Tinh - vốn nghĩ mình đã chắc chắn sẽ lấy được công chúa - đùng đùng nổi giận, đem quân tấn công vương quốc Đồng Dư K. Mỗi lần tấn công, Cột Tinh chọn một cột trên mảnh đất Đồng Dư K, và nâng độ cao của các ô trên cột đó thêm 1 đơn vị. Để chống lại sự tấn công của Cột Tinh, Hàng Tinh cũng phải dùng sức mạnh của mình để chống trả. Hàng Tinh có thể chọn một hàng trên vương quốc, và nâng độ cao tất cả các ô thêm 1 đơn vị. Bạn cần chú ý rằng đây là vương quốc Đồng Dư K, nên khi độ cao của một ô đang là K-1 đơn vị, thì độ cao sau khi nâng sẽ là 0 đơn vị. }
+
+\emph{Cuộc chiến kéo dài triền miên, khiến đời sống của dân chúng lầm than, mọi người không dám ra khỏi nhà vì sợ địa hình thay đổi không còn đường về. }
+
+\emph{Giữa lúc chiến tranh loạn lạc, một lời tiên tri được đưa ra: Khi tất cả các ô trên vương quốc Đồng Dư K đều có độ cao 0, chiến tranh sẽ chấm dứt, vương quốc sẽ trở lại yên bình. }
+
+\emph{Câu đố đặt ra là: cho biết độ cao các ô trên vương quốc Đồng Dư K tại thời điểm hiện tại, bạn hãy cho biết sau ít nhất bao nhiêu lần tấn công của Hàng Tinh và Cột Tinh, vương quốc Đồng Dư K mới trở lại trạng thái yên bình (tất cả các ô đều có độ cao 0)" }
+
+Tuy đã trải qua rất nhiều năm, nhưng không có ai ngó ngàng đến việc giải quyết câu đố trong truyền thuyết. Nhưng giờ đã là thế kỷ 21 rồi, với sự trợ giúp của máy tính, chắc chắn không còn câu đố nào là ngoài sức của chúng ta. Nhiệm vụ của các bạn là tìm lời giải cho câu đố này.
+
+\subsubsection{Đề bài}
+
+Cho một bảng số A kích thước M*N (M hàng, N cột), thể hiện độ cao của các ô trên vương quốc Đồng Dư K. Độ cao của mỗi ô là một số nguyên từ 0 đến K-1. Các hàng được đánh số từ 1 đến M. Các cột được đánh số từ 1 đến N. Ô nằm ở hàng i, cột j được kí hiệu là ô A(i,j).
+
+Bạn được phép thực hiện 2 loại thao tác trên bảng:
+\begin{itemize}
+	\item Cộng 1 đơn vị tất cả các số trên hàng R, với R do bạn lựa chọn (phép cộng được thực hiện trên module K). Nói cách khác, bạn chọn R, và với mỗi ô A(R,j) trên bảng, gán A(R,j) = ( A(R,j) + 1 ) mod K.
+	\item Cộng 1 đơn vị tất cả các số trên cột C, với C do bạn lựa chọn (phép cộng được thực hiện trên module K). Nói cách khác, bạn chọn C, và với mỗi ô A(i,C) trên bảng, gán A(i,C) = ( A(i,C) + 1 ) mod K.
+\end{itemize}
+
+Nhiệm vụ của bạn là tìm một dãy biến đổi gồm ít thao tác nhất để biến bảng về toàn số 0. Dữ liệu đảm bảo luôn tồn tại kết quả.
+
+\subsubsection{Input}
+
+Dòng đầu gồm 3 số nguyên dương M, N, K
+
+M dòng tiếp theo, mỗi dòng gồm N số nguyên dương, là các số trên bảng.
+
+\subsubsection{Output}
+
+Dòng đầu ghi số phép biến đổi ít nhất.
+
+Dòng thứ 2 gồm M số, số thứ i là số lần thực hiện phép biến đổi trên hàng i.
+
+Dòng thứ 3 gồm N số, số thứ j là số lần thực hiện phép biến đổi trên cột j.
+
+\subsubsection{Giới hạn}
+\begin{itemize}
+	\item Trong 20\% test đầu tiên, K = 2, 1 ≤ M, N ≤ 1000
+	\item Trong 20\% test tiếp theo, 2 ≤ M, N, K ≤ 200
+	\item Trong 30\% test tiếp theo, 2 ≤ M, N, K ≤ 1000
+	\item Trong 30\% test còn lại, 2 ≤ K ≤ 10 $^ 9 $ , 2 ≤ M, N ≤ 1000
+\end{itemize}
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+3 3 2
+0 0 0
+1 1 1
+1 1 1
+
+\textbf{Output:}
+2
+0 1 1
+0 0 0\end{verbatim}

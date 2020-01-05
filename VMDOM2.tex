@@ -1,0 +1,59 @@
+
+
+
+
+   Bé năm nay 15 tuổi, học hết lớp 9, ở cái tuổi mà Bé đã bắt đầu có những tò mò về chuyện giải toán. Hàng ngày, Bé luôn mơ ước được ngắm nhìn những bài toán hóc búa, quyến rũ. Biết Bé đam mê giải toán, cô giáo vui lắm. Hôm nay cô cho Bé một bài toán:  
+
+   Cho một bảng ô vuông kích thước   \textbf{    M   }   x   \textbf{    N   }   (M và N chẵn). Trên bảng có 2 ô cấm (   \textbf{    x   }   ,   \textbf{    y   }   ) và (   \textbf{    u   }   ,   \textbf{    v   }   ). Yêu cầu: đặt các quân domino lên bảng, sao cho mỗi ô trên bảng có đúng 1 viên domino đặt lên, và không có quân domino đặt lên ô cấm. Quân domino có dạng hình chữ nhật 1 x 2 hoặc 2 x 1.   
+\\
+\\   Dĩ nhiên, việc tìm 1 cách đặt với Bé là quá dễ, vì vậy, cô yêu cầu Bé phải tìm được 10 cách đặt khác nhau thì mới được điểm 10 (mỗi cách 1 điểm). Bạn có thể giúp bé được bao nhiêu điểm? Hai cách đặt được gọi là khác nhau nếu tồn tại hai quân domino (mỗi quân thuộc một cách) có đúng 1 ô chung. Ví dụ quân domino đặt ở vị trí (1, 1) - (1, 2) và quân domino đặt ở vị trí (1, 2) - (2, 2) là hai quân domino có đúng 1 ô chung (1, 2).  
+
+\subsubsection{   Input  }
+\begin{itemize}
+	\item     Dòng 1 chứa 2 số nguyên M và N.   
+	\item     Dòng 2 chứa 2 số nguyên x và y.   
+	\item     Dòng 3 chứa 2 số nguyên u và v.   
+\end{itemize}
+
+\subsubsection{   Output  }
+\begin{itemize}
+	\item     Dòng 1 in ra K là số cách bạn tìm được. (0 ≤ K ≤ 10)   
+	\item     K nhóm dòng sau, mỗi nhóm chứa M x N / 2 - 1 dòng, dòng thứ i in ra 4 số x1, y1, x2 và y2 tương ứng với 2 ô bạn đặt quân domino thứ i là (x1, y1) và (x2, y2).   
+\end{itemize}
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     10 ≤ M, N ≤ 100   
+	\item     1 ≤ x, u ≤ M   
+	\item     1 ≤ y, v ≤ N   
+	\item     2 ô cấm là 2 ô khác nhau.   
+	\item     Dữ liệu đảm bảo tồn tại ít nhất 10 cách đặt.   
+\end{itemize}
+
+\subsubsection{   Chấm điểm  }
+\begin{itemize}
+	\item     Bài của bạn sẽ được chấm trên thang điểm 100. Bộ test chính thức gồm 20 test, mỗi test tương ứng với 5 điểm, với một cách đặt đúng trong mỗi test bạn sẽ được 0.5 điểm. Điểm mà bạn nhận được sẽ tương ứng với tổng số điểm bạn đạt được ở mỗi test.   
+	\item \textbf{     Nếu bạn xuất ra một cách không hợp lệ (đặt domino lên ô cấm, đặt 2  quân domino lên cùng 1 ô, ...) hoặc trong output của bạn có 2 cách đặt  giống nhau, bạn sẽ không được điểm cho toàn bộ test đó.    }
+	\item     Trong quá trình thi, bài của bạn sẽ được chấm với 10 test trong bộ test chính thức. Điểm tối đa bạn có thể đạt được là 50.   
+	\item     Khi vòng thi kết thúc, bài của bạn sẽ được chấm với bộ test đầy đủ.   
+\end{itemize}
+\begin{itemize}
+\end{itemize}
+\begin{itemize}
+\end{itemize}
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+2 4
+\\1 3
+\\2 1
+\\
+\\\textbf{Output:}
+1
+\\1 1 1 2
+\\2 2 2 3
+\\1 4 2 4
+\\\end{verbatim}
+
+   Lưu ý, test ví dụ chỉ giúp các bạn hình dung về định dạng của input và output, tất cả các test trong bộ test chính thức đều thỏa điều kiện đã nêu trong đề bài.  

@@ -1,0 +1,66 @@
+
+
+
+
+   Có một chú ếch con trong hồ . Hồ được miêu tả như lưới tọa độ Oxy . Có n tảng đá trên hồ . Các tảng đá được đánh số từ 1..N . Ban đầu chú ếch đang ở tảng số 1 .  
+
+   Từ tảng đá có tọa độ (x,y) ,chú ếch có thể nhảy đến tảng đá có tọa độ  
+
+   1, (x+P,y+P) với P là số nguyên dương bất kỳ.Ta gọi hướng này là hướng A  
+
+   2, (x+P,y-P) với P là số nguyên dương bất kỳ.Ta gọi hướng này là hướng B  
+
+   3, (x-P,y+P) với P là số nguyên dương bất kỳ.Ta gọi hướng này là hướng C  
+
+   4, (x-P,y-P) với P là số nguyên dương bất kỳ.Ta gọi hướng này là hướng D  
+
+   Chú ếch sẽ nhảy đến ô có tọa độ gần nhất theo hướng đã chọn . Nếu không có ô nào  
+
+   trên hướng nhảy thì chú ếch sẽ đứng yên và chuẩn bị nhảy theo hướng tiếp theo.Sau khi nhảy thì tảng đá (x,y) sẽ biến mất.  
+
+   Tính tọa độ cuối cùng của chú ếch với K bước nhảy cho trước  
+
+\subsubsection{   Input  }
+
+   Dòng đầu chứa 2 số N và K. (1$<$=N,K$<$=10   $^    5   $   )  
+
+   Dòng thứ 2 chứa K kí tự A,B,C hoặc D mô tả hướng nhảy của chú ếch.  
+
+   N dòng tiếp theo ghi tọa độ của N tảng đá theo thứ tự từ 1..N  
+
+   Tọa đô của các tảng đá có trị tuyệt đối không vượt quá 10   $^$_     9    $$
+
+\subsubsection{   Output  }
+
+   Đưa ra tọa độ cuối cùng của chú ếch  
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+\\
+
+6 8
+\\
+
+AAAABCDA
+\\
+
+1 1
+\\
+
+2 2
+\\
+
+5 5
+\\
+
+8 2
+\\
+
+3 3
+\\
+
+7 3
+\\\textbf{Output:}
+\\
+\\7 3\end{verbatim}

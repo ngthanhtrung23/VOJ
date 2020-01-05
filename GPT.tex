@@ -1,0 +1,52 @@
+
+
+
+
+   Tam giác Pascal là một cách sắp xếp hình học của các hệ số nhị thức vào một tam giác. Hàng thứ n (n ≥ 0) của tam giác bao gồm các hệ số trong khai triển của đa thức f(x,y) = (x + y)   $^    n   $   . Hay nói cách khác, phần tử tại cột thứ k, hàng thứ n của Tam giác Pascal là C(n, k), tức tổ hợp chập k của tập n phần tử (với 0 ≤ k ≤ n).  
+
+   Dưới đây là hình vẽ thể hiện các hàng từ 0 đến 16 của Tam giác Pascal:  
+
+
+\includegraphics{http://vn.spoj.pl/content/pascal.jpg}
+
+
+
+   Cho số tự nhiên n. Hãy tính GPT(n) là ước chung lớn nhất của các số nằm giữa hai số 1 trên hàng thứ n của Tam giác Pascal.  
+
+\subsubsection{   Input  }
+
+   Dòng đầu ghi T là số lượng Test. T dòng tiếp theo, mỗi dòng ghi một số nguyên n.  
+
+\textbf{    Output   }
+
+   Gồm T dòng, mỗi dòng ghi GPT(n) tương ứng.  
+
+\subsubsection{\textbf{    Giới hạn   }}
+
+   -       1 ≤ T ≤ 20.  
+
+   -       2 ≤ n ≤ 10   $^    9   $   .  
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+
+5
+
+2
+
+3
+
+4
+
+56
+
+\textbf{Output:}
+
+2
+
+3
+
+2
+
+51\end{verbatim}

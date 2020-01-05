@@ -1,0 +1,98 @@
+
+
+Để chuẩn bị cho ASIAD 2010, thành phố Quảng Châu, Trung Quốc dự định lắp đặt 1 số trạm thu tín hiệu từ các địa điểm thi đấu trên khắp thành phố. Có N địa điểm thi đấu, có thể biểu thị bằng N điểm trên mặt phẳng. Trạm thu tín hiệu là 1 đường tròn đi qua 3 địa điểm thi đấu, và nó sẽ nhận thông tin từ \emph{ tất cả các địa điểm thi đấu nằm trong hình tròn đó. }
+
+Xét ví dụ sau:
+
+
+\includegraphics{https://drive.google.com/uc?export=view&amp;id=1T_v4HBpaB33VLwcH1sEK6AT-IoSEXxYm}
+
+Trong hình, ta có 4 địa điểm thi đấu nằm tại A,B,C,D. Khi đó, trạm thu tín hiệu đi qua A,C,D (kí hiệu là (ACD)) và (ABD) chỉ chứa 3 điểm, trong khi (ABC) và (BCD) chứa cả 4 điểm. Như vậy, trung bình 1 trạm thu tín hiệu sẽ thu được (4 + 4 + 3 + 3)/4 = 3.5 địa điểm thi đấu.
+
+ 
+
+Yêu cầu:
+\begin{itemize}
+	\item 
+
+Cho biết tọa độ của N điểm trên mặt phẳng, xác định số địa điểm thi đấu trung bình mà 1 trạm thu tín hiệu có thể nhận được
+\end{itemize}
+
+Input:
+\begin{itemize}
+	\item 
+
+Dòng đầu tiên ghi số nguyên dương N là số địa điểm thi đấu
+	\item 
+
+N dòng sau, mỗi dòng gồm 2 số nguyên x[i],y[i] là tọa độ của điểm thi đấu thứ i
+\end{itemize}
+
+Output:
+\begin{itemize}
+	\item 
+
+Gồm 1 dòng duy nhất ghi 1 số thực: kết quả bài toán. Kết quả cần được viết chính xác đến 6 chữ số sau dấu phẩy thập phân
+\end{itemize}
+
+Giới hạn:
+\begin{itemize}
+	\item 
+
+3 $<$= N $<$= 1500
+	\item 
+
+-10\textasciicircum6 $<$= x[i],y[i] $<$= 10\textasciicircum6
+	\item 
+
+Không có 3 điểm nào thẳng hàng
+	\item 
+
+Không có 4 điểm nào nằm trên cùng 1 đường tròn
+\end{itemize}
+
+Ví dụ:
+\begin{verbatim}
+Input
+
+4
+
+0 2
+
+4 4
+
+0 0
+
+2 0
+
+Output
+
+3.500000
+
+Input
+
+10
+
+-50 46
+
+12 -45
+
+-75 -9
+
+63 -90
+
+-55 58
+
+34 -93
+
+12 -56
+
+-39 -92
+
+-94 2
+
+-97 56
+
+Output
+
+5.916667\end{verbatim}

@@ -1,0 +1,54 @@
+
+
+Hàng trăm năm về trước, vua Arthur và các kị sĩ của Hội Bàn Tròn thường gặp gỡ vào ngày đầu năm mới để kỉ niệm mối giao hảo của họ. Để tưởng nhớ những sự kiện này, chúng ta lập ra một trò chơi với bàn cờ và một người chơi, trên đó một quân vua và nhiều quân mã được đặt trên các ô, không có quân mã nào nằm trên cùng một ô.
+
+Bàn cờ ví dụ dưới đây là một bàn cờ chuẩn 8x8:
+
+
+\includegraphics{http://www.ioinformatics.org/locations/ioi98/contest/day2/camelot/camelot-1.gif}
+
+Quân vua có thể di chuyển đến bất kì ô liền kề nào từ đến miễn là nó không rơi ra khỏi bàn:
+
+
+\includegraphics{http://www.ioinformatics.org/locations/ioi98/contest/day2/camelot/camelot-2.gif}
+
+Quân mã có thể nhảy theo đường chéo của HCN 1*2, miễn là nó không rơi ra khỏi bàn:
+
+
+\includegraphics{http://www.ioinformatics.org/locations/ioi98/contest/day2/camelot/camelot-3.gif}
+
+Trong quá trình chơi, người chơi có thể đặt nhiều hơn một quân cờ trên cùng một ô. Các ô trên bàn cờ được xem như đủ rộng để không có quân cờ nào trở thành chướng ngại vật khiến quân cờ khác không thể di chuyển dễ dàng.
+
+Mục đích của người chơi là di chuyển các quân cờ về cùng một ô - với số bước đi ít nhất. Để đạt được điều này, người chơi phải di chuyển các quân cờ như chỉ dẫn ở trên. Thêm nữa, khi con vua và một hoặc nhiều con mã được đặt trong cùng một ô, người chơi có thể chọn để di chuyển vua với một con mã cùng nhau từ ô đó trở về sau, như là một con mã, cho đến điểm tập hợp. Di chuyển con mã cùng con vua sẽ được tính là một bước đi.
+
+Viết một chương trình tính số bước ít nhất mà người chơi cần để tập hợp các quân cờ vào cùng một ô. Dĩ nhiên là các quân cờ có thể tập hợp ở bất kì ô nào.
+
+\subsubsection{Input}
+
+Dòng 1: Hai số nguyên cách nhau bởi khoảng trắng: R,C, số dòng và cột của bàn cờ. Sẽ không có nhiều hơn 26 cột và nhiều hơn 40 dòng. Dòng 2..cuối: Tập tin input chứa một chuỗi các cặp chữ cái/chữ số cách nhau bởi khoảng trắng, 1 hoặc nhiều hơn 1 dòng. Cặp đầu tiên mô tả vị trí trên bàn cờ của con vua; các cặp tiếp theo mô tả vị trí của các con mã. Có thể không có con mã nào hoặc các con mã phủ kín bàn cờ. Các dòng được đánh số từ 1; các cột được mô tả bằng chữ cái in hoa bắt đầu bằng A
+
+\subsubsection{Output}
+
+Một dòng ghi số bước đi cần thiết để tập hợp các quân cờ.
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+8 8
+D 4
+A 3 A 8
+H 1 H 8
+
+\textbf{Output:}
+10\end{verbatim}
+
+ 
+
+\emph{Giải thích: }
+
+\emph{Các quân cờ tập hợp tại B5.
+\\Con mã 1: A3 - B5 (1 bước)
+\\Con mã 2: A8 - C7 - B5 (2 bước)
+\\Con mã 3: H1 - G3 - F5 - D4 (đón con vua) - B5 (4 bước)
+\\Con mã 4: H8 - F7 - D6 - B5 (3 bước)
+\\1 + 2 + 4 + 3 = 10 bước. }

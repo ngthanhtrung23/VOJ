@@ -1,0 +1,50 @@
+
+
+
+
+   LC muốn trở thành người làm vườn. Anh ta đã tậu được một mảnh đất khá rộng và muốn rào mảnh đất đó lại làm khu vườn để tránh sự phá hoại của thú hoang. Sau khi đi xem phong thủy, LC đã có trong tay bản thiết kế của hàng rào là 1 đường gấp khúc kín được thầy địa lý thể hiện dưới dạng 1 danh sách gồm có n điểm liệt kê ngược chiều kim đồng hồ. Tuy thế, LC vẫn không tin tưởng ông thầy này lắm, anh ta muốn kiểm tra xem "hàng rào" mà ông ta đưa cho anh có thỏa mãn là một hàng rào không. Hơn nữa, LC muốn biết nếu có hàng rào thì từ nhà của mình có nhìn được tất cả các cạnh của hàng rào không. (Giả sử rằng mắt LC rất tinh, tầm nhìn xa không hạn chế :D)  
+
+\emph{    Một đường gấp khúc kín được coi là hàng rào nếu nó không tự cắt. Một cạnh được coi là nhìn thấy được nếu có ít nhất 1 điểm thuộc cạnh đó (trừ 2 đầu mút) có thể nhìn thấy được từ nhà của LC.   }
+
+\subsubsection{   Input  }
+\begin{itemize}
+	\item     Dòng đầu tiên là số nguyên dương n (n≤200).   
+	\item     Dòng thứ hai là 2 số (x,y) là tọa độ ngôi nhà chưa xây của LC   
+	\item     n dòng tiếp theo mỗi dòng ghi môt cặp số (x,y) là tọa độ 1 đỉnh của đường gấp khúc. Các đỉnh được liệt kê ngược chiều kim đồng hồ. Các tọa độ đều là các số nguyên 16-bit   
+\end{itemize}
+
+\subsubsection{   Output  }
+\begin{itemize}
+	\item     Nếu đường gấp khúc đó không thỏa mãn là hàng rào, in ra 1 dòng duy nhất "NOFENCE"   
+	\item     Ngược lại, nếu đường gấp khúc đó là hàng rào thì dòng đầu tiên ghi số p là số lượng các cạnh của hàng rào mà từ nhà của LC có thể nhìn thấy được. p dòng tiếp theo, mỗi dòng ghi 4 số thể hiện tọa độ 2 đầu 1 cạnh nhìn thấy được của hàng rào. Các cạnh được liệt kê theo thứ tự xuất hiện trong input. Trong mỗi dòng, các đỉnh cũng được liệt kê theo thứ tự xuất hiện trong input.   
+\end{itemize}
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+\\13
+\\5 5
+\\0 0
+\\7 0
+\\5 2
+\\7 5
+\\5 7
+\\3 5
+\\4 9
+\\1 8
+\\2 5
+\\0 9
+\\-2 7
+\\0 3
+\\-3 1
+\\
+\\\textbf{Output:}
+\\7
+\\0 0 7 0
+\\5 2 7 5
+\\7 5 5 7
+\\5 7 3 5
+\\-2 7 0 3
+\\0 0 -3 1
+\\0 3 -3 1
+\\\end{verbatim}

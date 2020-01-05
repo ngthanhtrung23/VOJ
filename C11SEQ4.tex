@@ -1,0 +1,51 @@
+
+
+
+
+   Sau khi được đố câu hỏi Violympic: “Có bao nhiêu số lẻ có 6 chữ số, các chữ số đứng cạnh nhau thì khác nhau”, Songuku95 nghĩ ra một bài toán mở rộng hơn:   
+\\   Cho 2 số tự nhiên N, M. Tập hợp A=\{0,1,2,…,n\}. Câu hỏi đặt ra là có bao nhiêu dãy X gồm k phần tử: \{x1,x2,x3,…,xk\} thỏa mãn:  
+
+   -          Xi thuộc tập hợp A ( 1 $<$= i $<$= k )  
+
+   -          Xk là số lẻ  
+
+   -          X1 khác 0  
+
+   -          Xi và X(i+1) là 2 số khác nhau ( với 1 $<$=  i  $<$ k )   
+
+    -      1 $<$= k $<$= N  
+
+   Do kết quả có thể rất lớn nên các bạn chỉ cần in ra Kết quả mod M.  
+
+   Lưu ý: 2 dãy X,Y khác nhau nếu tồn tại 1 vị trí p sao cho Xp khác Yp  
+
+\textbf{    Giới hạn:   }
+
+   -          20\% số test có n,m $<$= 1000  
+
+   -          20\% số test tiếp theo có n,m $<$= 10\textasciicircum6  
+
+   -          20\% số test tiếp theo có n $<$= 10\textasciicircum6, m $<$= 10\textasciicircum15  
+
+   -          20\% số test tiếp theo có n $<$= 10\textasciicircum15, m $<$= 1000  
+
+   -          20\% số test còn lại có n,m $<$= 10\textasciicircum15  
+
+\subsubsection{   Input  }
+
+   Gồm 1 dòng duy nhất chứa hai số N,M ( 3 $<$= N,M $<$= 10\textasciicircum15 )  
+
+\textbf{     Output    }
+
+   Gồm 1 dòng duy nhất là kết quả bài toán  
+
+
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+3 123456
+\textbf{Output:}
+20\end{verbatim}
+\begin{verbatim}
+\textbf{Giải thích: }Có 20 số thỏa mãn là: 1, 3, 13, 21, 23, 31, 101, 103, 121, 123, 131, 201, 203, 213, 231, 301, 303, 313, 321, 323\end{verbatim}

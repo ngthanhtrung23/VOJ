@@ -1,0 +1,39 @@
+
+
+
+
+   Một đội thợ sơn gồm K người cần thực hiện sơn một bức pano dành cho quảng cáo có dạng một hình chữ nhật kích thước 1xN được chia ra làm N vạch kích thước 1x1. Các vạch được đánh số từ trái   sang phải bắt đầu từ 1. Thợ i (1 ≤ i ≤ K) đang ngồi trước vạch S   $_    i   $   của pano và anh ta chỉ có thể sơn một dãy các vạch liên tiếp của pano trong đó phải có vạch S   $_    i   $   . Thợ i chỉ có thể   sơn không quá L   $_    i   $   vạch và tiền công mà anh ta nhận được từ việc sơn một vạch là P   $_    i   $   . Mỗi vạch được sơn bởi không quá một thợ.  
+
+   Yêu cầu: Tìm cách phân công thợ sơn các vạch của pano sao cho tổng tiền công của tất cả các thợ nhận được là lớn nhất.  
+
+\subsubsection{   Dữ liệu  }
+\begin{itemize}
+	\item     Dòng đầu tiên chứa hai số nguyên dương N, K (N ≤ 16000; K ≤ 100).   
+	\item     Dòng thứ i trong số K dòng tiếp theo chứa ba số nguyên  L    $_     i    $    , P    $_     i    $    , S    $_     i    $    (i = 1, 2, … K) được ghi cách nhau bởi dấu cách (1 ≤  P    $_     i    $    ≤ 10000, 1 ≤   L    $_     i    $    , S    $_     i    $    ≤  N ).   
+\end{itemize}
+
+   Chú ý:  
+\begin{itemize}
+	\item     Cách phân công tìm được không nhất thiết phải đảm bảo sơn hết tất cả các vạch của pano.   
+	\item     Nếu thợ i không sơn vạch nào cả thì việc sơn vạch S    $_     i    $    có thể được phân công cho thợ khác.   
+	\item     Các số S    $_     1    $    , S    $_     2    $    , . . . S    $_     K    $    giả thiết là khác nhau từng đôi.   
+\end{itemize}
+
+\subsubsection{   Kết quả  }
+
+   Ghi ra tổng tiền công nhận được từ cách phân công thợ tìm được.  
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu:
+8 4
+3 2 2
+3 2 3
+3 3 5
+1 1 7  
+
+Kết qủa
+17
+\end{verbatim}
+
+   (Cách phân công: Thợ 1 sơn các vạch 1, 2; thợ 2 sơn các vạch 3, 4; thợ 3 sơn các vạch 5, 6, 7; thợ 4 không sơn vạch nào).  

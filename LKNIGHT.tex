@@ -1,0 +1,58 @@
+
+
+Vậy là kỳ thi IOI 2011 đã kết thúc được vài tháng, mục tiêu lên đỏ topcoder cũng hoàn thành, đề bài VO12 cũng đã chuẩn bị xong. Không còn việc gì làm, ll931110 quay lại với bài toán chưa giải được của mình, bài toán \href{http://en.wikipedia.org/wiki/Knights_tour}{ mã đi tuần } trên bàn cờ N*N.
+
+Mã đi tuần (hay còn gọi là hành trình của quân mã), là bài toán về việc di chuyển một quân mã trên bàn cờ N*N. Quân mã được đặt ở trên một bàn cờ trống và phải di chuyển theo nguyên tắc của cờ vua để đi qua mỗi ô trên bàn cờ đúng một lần.
+
+Trong bài toán này, ta tạm bỏ qua việc một ô chỉ được đi qua đúng một lần.
+
+Để thuận tiện, chúng ta sẽ đánh số các nước đi mà quân mã có thể thực hiện bằng các số nguyên từ 1 đến 8 như sau (M thể hiện vị trí ban đầu của quân mã):
+
+
+\includegraphics{https://drive.google.com/uc?export=view&amp;id=1n-wF9MhJYq0Lzo2QYUxPdcYrbATcvB1h}
+
+Bất chợt, ll931110 nhận ra rằng mình đã quên không ghi lại bất kỳ thông tin nào về lời giải mình đang xây dựng dở vì phải vội vã tham gia \href{http://www.usaco.org/current/data/dec11_gold_results.html}{ USACO December } . Tuy nhiên, là một người có trí nhớ phi thường (có thể nhớ được tất cả các đề bài, lời giải cũng như các test khó của tất cả các bài mình đã làm), ll931110 đã thuộc chính xác tất cả các nước đi của quân mã mà mình đã thực hiện. Khi đi theo các nước đi này, quân mã sẽ không đi ra ngoài bàn cờ. Tuy nhiên, ll931110 không nhớ vị trí xuất phát của quân mã (dĩ nhiên, nhớ một dãy số dài luôn đơn giản hơn nhớ 1 2 con số vô nghĩa :) ).
+
+Nhiệm vụ của bạn là giúp ll931110 đếm xem sau các nước đi mà cậu đã thực hiện, quân mã có thể ở bao nhiêu vị trí khác nhau, nếu quân mã có thể đi vào một vị trí nhiều lần.
+
+\subsubsection{Input}
+
+Input gồm 2 dòng:
+\begin{itemize}
+	\item Dòng thứ nhất ghi 2 số nguyên N và K (8 ≤ N ≤ 1000, 1 ≤ K ≤ 1000), lần lượt là kích thước bàn cờ và số nước đi mà ll931110 đã thực hiện
+	\item Dòng thứ hai ghi K chữ số, mỗi chữ số trong khoảng từ 1 đến 8, thể hiện các bước di chuyển mà ll931110 đã thực hiện (không có dấu cách ở giữa các chữ số)
+\end{itemize}
+
+\subsubsection{Output}
+
+Output gồm một số nguyên duy nhất là kết quả của bài toán
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+8 2
+11\end{verbatim}
+\begin{verbatim}
+\textbf{Output:}
+24\end{verbatim}
+
+
+\\\textbf{​Giải thích:}
+
+Đánh số các hàng từ 1 đến N từ trên xuống, đánh số các cột từ 1 đến N từ trái sang phải.
+
+Các vị trí của quân mã sau 2 nước đi có thể là:
+
+(1,3), (1,4), (1,5), (1,6), (1,7), (1,8),
+
+(2,3), (2,4), (2,5), (2,6), (2,7), (2,8),
+
+(3,3), (3,4), (3,5), (3,6), (3,7), (3,8),
+
+(4,3), (4,4), (4,5), (4,6), (4,7), (4,8).
+
+ 
+
+Chú ý:
+
+Trong 60\% test, N ≤ 300 và K ≤ 600

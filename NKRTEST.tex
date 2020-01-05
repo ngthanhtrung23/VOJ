@@ -1,0 +1,85 @@
+
+
+ 
+
+Bờm là người rất yêu thích Khoa học - Kĩ thuật, đặc biệt là về Robot. Bờm hay theo dõi cuộc thi ROBOCON. Các chú robot tự động không những di chuyển nhanh, mà còn biết chọn đường ngắn nhất để đi. Những điều này khiến Bờm rất thích thú. Nhưng do ko biết gì về máy móc, nên một ngày nọ Bờm đến gặp Cuội (một người cũng rất yêu thích khoa học - kĩ thuật và rất giỏi về máy) để nhờ anh ta phụ lắp cho mình một con robot. Thế là Cuội đã đồng ý tham gia.
+
+Vì là lần đầu tiên tham gia chế tạo robot, nên Bờm chỉ yêu cầu ROBOT của mình biết cách chọn ra con đường ngắn nhất để đi giữa 2 điểm xác định là được. Nhưng cũng muốn tạo một chút nét riêng cho mình, Bờm muốn con ROBOT của mình phải đi con đường đẹp nhất trong những đường ngắn nhất. \emph{ Theo Bờm, đường đi A đẹp hơn đường đi B khi chuỗi viết liền tên các đoạn đường con của A có thứ tự từ điển nhỏ hơn so với của B. }
+
+Bài toán trên Bờm đã giải quyết được từ thuở nào \textbf{ (NKTABLE) } . Nhưng việc đưa mã điều khiển vào ROBOT lại do Cuội làm, mà Cuội thì rất là ẩu. Nên để chắc chắn hơn Bờm đã tạo một khu gồm \emph{ N } phòng và \emph{ M } hành lang để kiểm tra. Mỗi hành lang sẽ có một tên, Bờm đặt \emph{ 0 } hoặc \emph{ 1 } cho đơn giản. Các phòng được đánh dấu từ \emph{ 1 --$>$ N } .
+
+Trong một lượt thí nghiệm, ROBOT sẽ hoạt động như sau :
+
+- Xuất phát tại phòng 1.
+
+- Chọn 1 phòng \textbf{ bất kì }\emph{ có thể đến được } làm điểm đến (gọi đó là phòng X).
+
+- Bắt đầu đi đến phòng X và ghi lại tên của những hành lang đã qua vào trong bộ nhớ. Theo dự tính, robot phải đi con đường đẹp nhất trong những con đường ngắn nhất giữa phòng 1 và phòng X.
+
+Sau nhiều thí nghiêm, Bờm thu được các bản ghi dưới dạng chuỗi (chỉ gồm các kí tự 0 và 1) cho biết tên các hành lang ROBOT đã đi qua. Bước tiếp theo, Bờm muốn biết ROBOT đã có thể chạy đúng bao nhiêu lần.
+
+Nhưng sau khi suy nghĩ một hồi thì Bờm mới biết bài toán này không đơn giản tí nào.
+
+\subsubsection{\textbf{Yêu cầu }}
+
+Với mỗi bản ghi:
+\begin{enumerate}
+	\item Kiểm tra robot đã chạy đúng hay sai .
+	\item Cho biết giá trị của 2 số nguyên không âm \textbf{ K } và \textbf{ S } , biết:
+\end{enumerate}
+\begin{enumerate}
+\end{enumerate}
+\begin{itemize}
+	\item \textbf{K } là số lớn nhất, sao cho tồn tại đỉnh \textbf{ U } và đường đi ngắn nhất và đẹp nhất từ \textbf{ 1 --$>$ U } trùng với các kí tự từ \textbf{ 1 --$>$ K } trong bản ghi.
+	\item \textbf{S } là số lượng phòng có thể là phòng \textbf{ U } (Phòng đang chứa Robot sau bước đi thứ \textbf{ K } ).
+\end{itemize}
+
+\subsubsection{Input}
+
+- Dòng đầu chứa hai số \emph{ N } và \emph{ M (N $<$= 200000, M $<$= 400000) }
+
+- M dòng tiếp theo, mỗi dòng chứa bộ 3 số \emph{ (u, v, c) } , cho biết có hành lang tên c giữa 2 phòng u và v. Không có quá 1 hành lang giữa 2 phòng bất kì.
+
+- Dòng tiếp theo là \emph{ Q (Q $<$= 1000000) } , cho biết tổng số lần đã thí nghiệm.
+
+- Q dòng tiếp theo, mỗi dòng 1 sâu cho biết hành trình robot đã đi. \emph{ Biết tổng độ dài các sâu không quá 1000000. }
+
+\subsubsection{Output}
+
+- Với mỗi lượt thí nghiệm, in ra dấu '+' (hoặc '-') nếu ROBOT đẵ chạy đúng (hoặc sai) và cặp số (K, S) theo yêu cầu đề bài (Xem phần ví dụ để biết thêm).
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+4 4
+1 2 0
+1 3 0
+3 4 0
+2 4 1
+3
+0
+00
+01\end{verbatim}
+
+\textbf{Output:}
+\\+1 2
+\\+2 1
+\\-1 2
+
+\textbf{Giải thích: } Trong 2 lần thí nghiệm cuối robot đã chọn phòng 4 làm đích đến. Có 2 đường đi ngắn nhất giữa 1 và 4 :
+
+1 --(0)--$>$ 3 --(0)--$>$ 4
+
+1 --(0)--$>$ 2 --(1)--$>$ 4
+
+Trong đó 1, 3, 4 là đường có thứ tự từ điển nhỏ hơn.
+
+00 --$>$ chạy đúng, robot đi được độ dài K=2 và dừng tại S=1 phòng (phòng số 4).
+
+01 --$>$ mặc dù vẫn đi được đến phòng số 4, nhưng không phải là đường đẹp nhất. Nên robot sẽ chạy đúng đến sau bước thứ K=1 , sau bước đó số phòng có thể có chứa Robot là S=2 phòng (phòng số 2 và 3).
+
+\textbf{Giới hạn: }
+
+- 25\% số test đồ thị có dạng cây khung.
+
+- 40\% số test N$<$=100 và M$<$=200.

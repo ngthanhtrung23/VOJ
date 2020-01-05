@@ -1,0 +1,49 @@
+
+
+
+
+   Một TV có N phím bấm đánh số 1..N. Trước đây TV còn tốt, khi ấn 1 phím xuống mọi phím khác đều tắt và chỉ có phím vừa ấn là bật. Bây giờ TV đã cũ, khi ấn 1 phím,chỉ có 1 số phím khác tắt(nếu nó đang bật), các phím khác không đổi  
+
+   Một phím dù đang bật hay tắt khi ta ấn nó thì phím này sẽ bật. Các phím bị nó tác động sẽ tắt nếu đang bật.  
+
+   Bạn được cho biết kết quả bấm của mỗi phím và 1 hiện trạng của các phím. Hãy tìm 1 dãy bấm liên tiếp 1 số ít nhất phím sao cho cuối cùng chỉ còn lại phím K, 1 $<$= K $<$= N, là bật các phím còn lại đều tắt.  
+
+\subsubsection{   Input  }
+
+   - Gồm 1 test duy nhất:  
+
+   - Dòng đầu là 2 số nguyên N, K ( 3 ≤ N ≤ 20 )  
+
+   - N dòng tiếp theo, dòng thứ i:  
+
+   * Đầu tiên là số S ( số phím mà phím i tác động ) . Tiếp theo S số là dãy phím mà phím i tác động khi bật nó  
+
+   - Dòng cuối là N số 0 or 1 mô tả hiện trạng bàn phím đang tắt or bật  
+
+\subsubsection{   Output  }
+
+   - Gồm 1 số nguyên duy nhất là số lần bấm phím ít nhất. Nếu ko có đáp án ghi ra -1  
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+3 3
+2 2 3
+2 1 3
+2 1 2
+1 1 0
+\textbf{Output:}
+1
+
+
+\textbf{Input:}
+4 3
+3 2 3 4
+1 1
+1 1
+0
+0 1 0 1
+\textbf{Output:}
+2
+
+\end{verbatim}

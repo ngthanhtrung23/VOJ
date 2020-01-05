@@ -1,0 +1,37 @@
+
+
+Chính phủ nước x vừa có một quyết định kỳ lạ ! Họ muốn mỗi tỉnh phải có một lá cờ riêng. Và Ctna được giao nhiệm vụ thiết kế những lá cờ đó. Có tất cả N loại vải được đánh số 1 đến N sử dụng để may cờ. Theo kế hoạch của chính phủ, hai lá cờ bất kỳ trong số những lá cờ được thiết kế phải có ít nhất một loại vải được dùng chung .Và để tránh sự nhàm chán, mỗi loại vải chỉ được sử dụng tối đa hai lần . Cuối cùng , Số loại vài được dùng để may mỗi lá cờ phải bằng nhau. Hãy giúp Ctna tính xem anh ấy sẽ may được tối đa bao nhiêu lá cờ với những yêu cầu khắt khe như thế !
+
+\subsubsection{Input}
+
+Gồm một dòng là N (3 $<$= N $<$= 1000)
+
+\subsubsection{Output}
+
+Dòng đầu tiên là K, số loại cờ tối đa mà Ctna may được.
+
+K dòng tiếp theo , mỗi dòng là một số số tự nhiên mô tả lá cờ ở dòng đó, mỗi số cách nhau một dấu cách.
+
+Có thể có nhiều cách , nhưng bạn cần in ra K lá cờ có sao cho nếu ghép chúng lại, ta sẽ được dãy số có thứ tự từ điển nhỏ nhất có thể.
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+4
+\textbf{Output:}
+3
+1 2
+1 3
+2 3\end{verbatim}
+
+
+\\\textbf{Giải thích:}
+
+Có tối đa 3 lá cờ được tạo ra.
+\\Cách để có kết quả tối ưu là :
+\begin{itemize}
+	\item Lá cờ thứ nhất sử dụng loại vải 1 và 2
+	\item Lá cờ thứ hai sử dụng loại vải 1 và 3
+	\item Lá cờ thứ ba sử dụng loại vải 2 và 3
+	\item Sau khi ghép lại ta sẽ được dãy số 1 2 1 3 2 3.
+\end{itemize}

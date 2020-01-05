@@ -1,0 +1,52 @@
+
+
+                 Người cổ đại có một trò chơi vẫn còn lưu truyền tới ngày nay ở   Việt Nam.   
+\\   Diễn đạt 1 cách ngắn gọn, trò chơi như sau :   
+\\   Người chơi được cho 1 ngọn tháp được xây dựng bởi N cái   hộp với rất nhiều màu sắc, đỏ, tím, vàng, xanh, ...   
+\\   Họ được yêu cầu phải dỡ ngọn tháp này ra và biến nó thành   hình 1 bông hoa, bông hoa là 1 hình đa giác đều với các cánh   hoa chính là các hộp (xem hình vẽ dưới).   
+\\
+\includegraphics{http://vn.spoj.pl/content/flower.gif}
+\\
+
+   Các thao tác mà người chơi có thể thực hiện là như sau :   
+\\
+\begin{itemize}
+	\item     Dỡ chiếc hộp ở trên cùng của ngọn tháp ra và đặt vào 1 cái   giỏ.   
+	\item     Trong các hộp có trong các giỏ, chọn 1 chiếc, rút nó ra   khỏi giỏ và xếp nó vào bên trái/phải các cánh hoa đã xếp trước   đó.   
+	\item     Dỡ chiếc hộp ở trên cùng của ngọn tháp ra nhưng không   đặt chiếc hộp vào giỏ mà xếp nó luôn vào bên trái/phải các   cánh hoa đã xếp trước đó.   
+\end{itemize}
+
+   Điểm của người chơi tính bằng số lượng những chiếc giỏ cần   dùng.   
+\\   Hãy tính xem điểm nhỏ nhất mà người chơi có thể đạt được là   bao nhiêu ?   
+\\
+\\       Chú ý      : Khi rút hộp ra khỏi giỏ thì giỏ lại có thể tiếp   tục dùng để đựng các hộp khác và một giỏ chỉ chứa được   không quá 1 hộp.   
+\\
+
+\subsubsection{   Dữ liệu  }
+
+   Dòng 1 : số nguyên dương N.   
+\\   Dòng 2 : N số nguyên dương mô tả màu của các khối hộp ( từ   trên xuống ).   
+\\   Dòng 3 : N số nguyên mô tả màu của các cánh hoa ( theo chiều   kim đồng hồ ).  
+
+\subsubsection{   Kết quả  }
+
+   Số lượng giỏ cần thiết, biết rằng luôn luôn xếp được.  
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     N ≤ 1000.   
+	\item     Màu của các hộp không vượt quá N.   
+\end{itemize}
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu
+5
+2 1 2 3 4
+2 3 1 4 2
+
+Kết quả
+1
+\end{verbatim}
+
+\textit{    Giải thích   }   : Đầu tiên ta rút hộp màu 2 ra, đặt nó vào vị   trí ở dưới ( hình vẽ ), sau đó rút hộp màu 1 ra và cho vào giỏ ( vì không thể đặt vào bên trái/phải của hộp màu 2 ), sau đó rút được hộp màu 2 nữa ra, ta đặt nó vào bên phải hộp màu 2 đã xếp trước đó. Tiếp tục rút hộp 3 ra và cho vào bên phải hộp 2 ( hộp ở trên ), sau đó rút hộp 1 (từ trong giỏ) ra cho vào bên phải hộp 3 hoặc rút hộp 4 ra cho vào bên trái hộp 2 ( hộp ở dưới ), còn lại 1 hộp đặt nó vào vị trí cuối cùng.  

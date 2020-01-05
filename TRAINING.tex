@@ -1,0 +1,74 @@
+
+
+
+
+   Mirko và Slavko đang luyện tập vất vả cho kỳ thi xe đạp đôi hàng năm ở Croatia. Họ cần lựa một lộ trình để luyện tập.  
+
+   Có N thành phố và M con đường hai chiều trên đất nước. Có đúng N-1 con đường được trải nhựa. Thật may là luôn có cách di chuyển giữa hai thành phố bất kỳ mà chỉ đi qua các con đường trải nhựa.  
+
+   Thêm vào đó, có nhiều nhất là 10 con đường nối với mỗi thành phố.  
+
+   Một lộ trình luyện tập bắt đầu từ một thành phố, đi theo một số con đường và trở về thành phố ban đầu. Mirko và Slavko muốn thăm thú các địa điểm mới, do đó họ sẽ không bao giờ đi qua một thành phố hoặc theo một con đường hai lần.  
+
+   Lộ trình luyện tập có thể bắt đầu từ bất kỳ thành phố nào và không nhất thiết phải thăm tất cả các thành phố.  
+
+   Đạp xe ở yên sau dễ hơn vì người đạp được che gió bởi người ngồi trước. Do đó, Mirko và Slavko đổi chỗ ở mỗi thành phố. Để đảm bảo cùng thời lượng luyện tập, họ sẽ chọn một lộ trình với số đường là số chẵn.  
+
+   Các đối thủ của Mirko và Slavko quyết định chặn một số con đường không được trải nhựa để họ không thể tìm một lộ trình thỏa mãn các yêu cầu trên. Mỗi con đường không trải nhựa tốn một chi phí để chặn con đường đó.  
+
+\subsubsection{   Yêu cầu  }
+
+   Viết chương trình nhập mạng lưới thành phố và các con đường, tìm tổng chi phí nhỏ nhất để chặn các con đường sao cho không tồn tại lộ trình luyện tập nào thỏa mãn các ràng buộc nêu trên.  
+
+\subsubsection{   Dữ liệu  }
+
+   Dòng đầu tiên chứa hai số N và M (2 ≤ N ≤ 1 000, N−1 ≤ M ≤ 5 000), số thành phố và số con đường.  
+
+   Mỗi trong số M dòng tiếp theo chứa 3 số nguyên A, B, C (1 ≤ A ≤ N, 1 ≤ B ≤ N, 0 ≤ C ≤ 10 000) mô tả một con đường. A, B là hai số phân biệt mô tả chỉ số của hai thành phố ở hai đầu con đường. Nếu C = 0, con đường được trải nhựa; nếu không, con đường không được trải nhựa và C là chi phí để chặn con đường. Mỗi thành phố nối với nhiều nhất 10 con đường. Không bao giờ có nhiều hơn một con đường nối trực tiếp giữa hai thành phố.  
+
+\subsubsection{   Kết quả  }
+
+   Trả về một số nguyên duy nhất là tổng chi phí nhỏ nhất tìm được.  
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu
+5 8
+2 1 0
+3 2 0
+4 3 0
+5 4 0
+1 3 2
+3 5 2
+2 4 5
+2 5 1
+
+Kết quả
+5
+
+Dữ liệu
+9 14
+1 2 0
+1 3 0
+2 3 14
+2 6 15
+3 4 0
+3 5 0
+3 6 12
+3 7 13
+4 6 10
+5 6 0
+5 7 0
+5 8 0
+6 9 11
+8 9 0
+
+Kết quả
+48
+\end{verbatim}
+\includegraphics{http://www.spoj.pl/OI/content/TRAINING1.jpg}
+
+   Hình vẽ trên mô tả mạng lưới đường và thành phố trong ví dụ 1. Các đường trải nhựa được tô đậm. Có 5 lộ trình Mirkov và Slavko có thể chọn. Nếu các con đường 1-3, 3-5 và 2-5 bị chặn, Mirko và Slavko sẽ không dùng được 5 lộ trình này. Tổng chi phí để chặn các con đường này là 5.  
+\includegraphics{http://www.spoj.pl/OI/content/TRAINING2.jpg}
+
+   Ta cũng có thể chỉ chặn 2 con đường, 2-4 và 2-5, tuy nhiên làm như vậy sẽ mất tổng chi phí cao hơn là 6.  

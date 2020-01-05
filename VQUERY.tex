@@ -1,0 +1,65 @@
+
+
+ 
+
+Cho một dãy số A gồm N phần tử. Các phần tử được đánh số từ 1 đến N. Phần tử thứ i được kí hiệu là A(i).
+
+Người ta cần thực hiện R*Q truy vấn với dãy số, mỗi truy vấn thuộc 1 trong 3 dạng:
+\begin{itemize}
+	\item 1 u k: Gán A(u) = k.
+	\item 2 u v: Tìm giá trị của phần tử lớn nhất trong các phần tử có chỉ số từ u đến v.
+	\item 3 x: Lấy lại dãy số ở version thứ x. Các version được đánh số bằng các số nguyên từ 0 trở đi. Version đầu tiên (lúc chưa thực hiện thao tác 1 hoặc 3 nào) có số thứ tự 0. Version thứ x là version sau khi đã áp dụng x thao tác 1 và 3.
+\end{itemize}
+
+\subsubsection{Input}
+\begin{itemize}
+	\item Dòng 1: Số nguyên dương N duy nhất
+	\item Dòng 2: N số nguyên dương thể hiện dãy A.
+	\item Dòng 3: Gồm hai số nguyên dương R và Q, chương trình của bạn sẽ lần lượt chạy Q truy vấn này R lần.
+	\item Q dòng tiếp theo, mỗi dòng gồm 5 số nguyên dương r, a, b, c, d mô tả một truy vấn:
+\begin{itemize}
+	\item Đặt L là kết quả của truy vấn 2 gần nhất. Nếu chưa có truy vấn 2 nào, L = 0.
+	\item Nếu r = 1, truy vấn bạn cần trả lời là 1 u k với u = (L*a+c) mod N + 1, k = (L*b+d) mod 10 $^ 9 $ + 1.
+	\item Nếu r = 2, truy vấn bạn cần trả lời là 2 u v với u = (L*a+c) mod N + 1, v = (L*b+d) mod N + 1. Chú ý rằng trong trường hợp này, u có thể lớn hơn v, và bạn cần tìm số lớn nhất trong các phần tử có chỉ số từ v đến u.
+	\item Nếu r = 3, truy vấn bạn cần trả lời là 3 x với x = (L*a + c) mod (P+1), với P là số truy vấn 1 và 3 đã được thực hiện.
+\end{itemize}
+	\item Chú ý rằng theo cách xây dựng truy vấn được mô tả phía dưới, thì Q truy vấn đầu tiên bạn trả lời sẽ khác Q truy vấn tiếp theo, và Q truy vấn này lại khác Q truy vấn sau đó...
+\begin{itemize}
+\end{itemize}
+\end{itemize}
+
+\subsubsection{Output}
+
+Với mỗi truy vấn loại 2, in ra một dòng duy nhất là kết quả của truy vấn.
+
+\subsubsection{Giới hạn:}
+\begin{itemize}
+	\item 20\% test đầu tiên có 1 $<$= N, R*Q $<$= 1000
+	\item 20\% test tiếp theo không có truy vấn loại 3, 1 $<$= N, R*Q $<$= 10 $^ 5 $ .
+	\item 30\% test tiếp theo có số lượng truy vấn loại 3 không quá 100, 1 $<$= N, R*Q $<$= 10 $^ 5 $
+	\item 30\% test cuối cùng có 1 $<$= N, R*Q $<$= 10 $^ 5 $ .
+	\item 1 $<$= Ai, a, b, c, d $<$= 10 $^ 9 $
+	\item R, Q $<$= 5000
+\end{itemize}
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+5
+4 3 7 2 6
+1 8
+1 0 0 2 4
+2 0 0 0 4
+3 0 0 0 0
+2 0 0 4 0
+3 0 0 1 0
+2 0 0 1 3
+3 0 0 2 0
+2 0 0 3 1
+
+\textbf{Output:}
+6
+7
+5
+7
+\end{verbatim}

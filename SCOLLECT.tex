@@ -1,0 +1,48 @@
+
+
+
+
+   Năm nào Nuga cũng đi xem Lễ hội ở Đền thờ Hai Bà Trưng. Ngoài việc thắp hương cầu phúc cho năm mới, Nuga còn hay tham gia các trò chơi vô cùng hấp dẫn ở đó. Năm nay có một trò chơi mới mà Nuga rất thích.  
+
+   Có một bảng ô vuông lớn trên sân cỏ, kích thước H*W. Mỗi ô vuông có thể là ô trống, ô có đặt một món quà, hoặc có chướng ngại vật. Người chơi xuất phát từ ô (1, 1), đi qua các ô không có chướng ngại vật của bảng đến ô (H, W), tuy nhiên, từ ô (i, j) chỉ được đi tới ô (i+1, j) hoặc (i, j+1). Sau đó người chơi lại tiếp tục đi từ ô (H, W) qua các ô không có chướng ngại vật để trở về ô xuất phát, nhưng lần này, từ ô (i, j) chỉ được đi tới ô (i-1, j) hoặc (i, j-1). Trong cả 2 lượt đi và về, nếu đi đến ô nào có quà, người chơi sẽ được nhặt món quà ở ô đó.  
+
+   Nuga muốn tìm một hành trình để thu được nhiều món quà nhất. Nuga hứa sẽ tặng bạn một món quà trong số đó nếu như bạn giúp bạn ấy giải được bài toán khó này.  
+
+\subsubsection{   Dữ liệu  }
+
+   Dòng đầu tiên ghi 2 số nguyên dương W, H. Sau đó là H dòng, mỗi dòng chứa một chuỗi kí tự độ dài W thể hiện một dòng của bảng. Trong đó, các kí tự có ý nghĩa như sau:  
+\begin{verbatim}
+     -	‘.’ Thể hiện một ô trống.
+     -	‘*’ Thể hiện một ô có món quà.
+     -	‘#’ Thể hiện ô có chướng ngại vật.
+\end{verbatim}
+
+
+
+\subsubsection{   Kết quả  }
+
+   Một dòng duy nhất chứa một số nguyên thể hiện số món quà lớn nhất có thể thu được.  
+
+\subsubsection{   Kết quả  }
+\begin{verbatim}
+1 ≤ W, H ≤ 128
+\end{verbatim}
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu:
+9 7
+*........
+.....**#.
+..**...#*
+..####*#.
+.*.#*.*#.
+...#**...
+*........
+
+
+Kết quả:
+7
+
+
+\end{verbatim}

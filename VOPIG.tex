@@ -1,0 +1,105 @@
+
+
+Nông dân John có một cậu con trai là Benjamin, đang học ở thành phố, là một học sinh rất giỏi toán. Năm nay cậu cũng đã hơn 18 tuổi và nông dân John đã già nên ông quyết định để lại trang trại cho cậu con trai. Benjamin mặc dù rất tiếc việc học hành dở dang ở trên thành phố nhưng vì ba già yếu nên cậu phải về quê để giúp cha minh. Nhưng Benjamin đã nghĩ cho dù về nông thôn làm việc nhưng cậu vẫn sẽ cố gắng theo đuổi đam mê của mình.
+
+Khi về phụ giúp cha cậu, cậu thấy rằng việc chăm sóc những con bò quá mệt nhọc nên cậu đã quyết định bán hết toàn bộ số bò và mua N con heo về và rắc rồi bắt đầu từ đây. Mỗi con khi mua được dán một mã số - \textbf{ index[i] } là số cho biết chủ cũ của con heo thứ i. Các con heo khi được nuôi cùng nhau thì sẽ có một số con bị bắt nạt bởi một số con khác và những con bị bắt nạt sẽ bị ức chế sinh trưởng. Vấn đề trên đúng là một vấn đề nan giải. Sau một thời gian quan sát cậu thấy mỗi con sẽ có một chỉ số sức mạnh và được tính bằng công thức như sau:
+
+Strength[i] = index[i] AND M. (Với M là một số nguyên)
+
+Hơn nữa cậu còn biết rằng nếu như Strength[i] OR Strength[j] = Strength[i] thì con heo thứ \textbf{ j } sẽ bị con heo thứ \textbf{ i } bắt nạt.
+
+\emph{AND và OR là phép tính thông thường trong PASCAL/C++. Bạn nào chưa biết thì có thể đọc trong hai đường dẫn dưới đây. }
+\begin{itemize}
+	\item \href{http://vi.wikipedia.org/wiki/Ph%C3%A9p_to%C3%A1n_thao_t%C3%A1c_bit#AND}{Phép AND }
+	\item \href{http://vi.wikipedia.org/wiki/Ph%C3%A9p_to%C3%A1n_thao_t%C3%A1c_bit#OR}{Phép OR }
+\end{itemize}
+
+Giải pháp của Benjamin là sẽ phân các con heo vào các chuồng khác nhau sao cho trong mỗi chuồng thì không có con heo nào bị bắt nạt. Benjamin đã dùng khá nhiều tiền để mua lại đàn heo nên chi phí xây dựng chuồng phải càng ít càng tốt. Điều đó có nghĩa là số lượng chuồng phải là ít nhất có thể.
+
+ 
+
+\subsubsection{Input}
+
+Đối với \textbf{ subtask 1 } và \textbf{ subtask 2 } :
+\begin{itemize}
+	\item Input gồm một dòng chứa 2 số N và M.
+\end{itemize}
+
+Đối với \textbf{ subtask 3 } và \textbf{ subtask 4 } :
+\begin{itemize}
+	\item Input gồm N+1 dòng.
+	\item Dòng đầu chứa 2 số N và M.
+	\item Dòng thứ i trong N dòng tiếp theo chứa số index[i] là mã số của con heo thứ i.
+\end{itemize}
+\begin{itemize}
+\end{itemize}
+
+\subsubsection{Output}
+
+Dòng đầu chứa số K là số lượng chuồng ít nhất có thể.
+\begin{itemize}
+\end{itemize}
+
+\subsubsection{Giới hạn:}
+
+\textbf{Subtask 1 ( 16\% số test ) : }
+\begin{itemize}
+	\item 
+
+10 $^ 9 $ ≤ N ≤ 10 $^ 18; $ M = 2 $^ 60 $ -1
+	\item 
+
+index[i] = i, với i = 1..N.
+\end{itemize}
+
+\textbf{Subtask 2 ( 20\% số test ) : }
+\begin{itemize}
+	\item 
+
+10 $^ 9 $ ≤ N, M ≤ 10 $^ 18 $ .
+	\item 
+
+N có dạng: N = 2 $^ x $ - 1.
+	\item 
+
+index[i] = i, với i = 1..N.
+\end{itemize}
+
+\textbf{Subtask 3 ( 24\% số test ) : }
+\begin{itemize}
+	\item 
+
+1 ≤ N ≤ 5000; 1 ≤ M $<$ 2 $^ 31 $ .
+	\item 
+
+0 ≤ index[i] $<$ 2 $^ 31 $ .
+\end{itemize}
+
+\textbf{Subtask 4 ( 40\% số test ) : }
+\begin{itemize}
+	\item 
+
+1 ≤ N ≤ 100,000; M = 1037536599.
+	\item 
+
+0 ≤ index[i] $<$ 2 $^ 31 $ .
+\end{itemize}
+
+Thời gian chạy: 1s cho mỗi test. Riêng test đề bài có giới hạn thời gian chạy là 0.5s.
+
+\subsubsection{Example:}
+\begin{verbatim}
+\textbf{Input:}
+8 3
+0
+1
+2
+3
+4
+5
+6
+7
+
+\textbf{Output:}
+6
+\end{verbatim}

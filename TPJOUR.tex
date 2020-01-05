@@ -1,0 +1,70 @@
+
+
+Cho 1 đồ thị có N đỉnh, M cạnh 2 chiều. 2 đỉnh được nối với nhau nhiều nhất là 1 cạnh.
+
+1 đường đi là 1 chuỗi các đỉnh sao cho các đỉnh kề nhau có cạnh nối với nhau.
+
+1 đường đi đẹp phải thỏa mãn:
+\begin{itemize}
+	\item Chuỗi đỉnh có độ dài là D.
+	\item Các đỉnh từ 1 đến K phải xuất hiện ít nhất 1 lần.
+\end{itemize}
+
+\textbf{Yêu cầu}: Tính số đường đi đẹp mod 10\textasciicircum9 + 9.
+
+\textbf{Giới hạn}:
+\begin{itemize}
+	\item N $<$= 20,
+	\item D $<$= 10\textasciicircum9.
+	\item K $<$= 7.
+\end{itemize}
+
+\textbf{Input}
+\begin{itemize}
+	\item 4 số N,M,K,D
+	\item M dòng mỗi dòng 2 số u,v cho biết có đường đi 2 chiều cạnh nỗi 2 đỉnh u và v
+\end{itemize}
+
+\textbf{Output}
+
+Số đường đi đẹp mod 1000000009.
+
+\textbf{Sample input}
+
+4 4 2 3
+
+1 2
+
+2 3
+
+3 1
+
+2 4
+
+\textbf{Sample output}
+
+10
+
+\textbf{Giải thích}
+
+Các đường đi có thể là:
+\begin{itemize}
+	\item 1\_2\_1
+	\item 1\_2\_3
+	\item 1\_2\_4
+	\item 1\_3\_2
+	\item 2\_1\_2
+	\item 2\_1\_3
+	\item 2\_3\_1
+	\item 3\_1\_2
+	\item 3\_2\_1
+	\item 4\_2\_1
+\end{itemize}
+
+ 
+
+ 
+
+ 
+
+ 

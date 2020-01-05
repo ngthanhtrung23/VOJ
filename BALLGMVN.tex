@@ -1,0 +1,43 @@
+
+
+ 
+
+Trong một hội thi Ballgame, ban tổ chức chuẩn bị một bàn lớn. Trên mặt bàn có n bi xanh đánh số từ 1 đến n và n bi đỏ đánh số từ n + 1 đến 2n. Mỗi trận đấu, các vận động viên sẽ chơi luân phiên nhau. Đến lượt chơi của mình, Hùng cần tìm 3 bi mà vị trí của chúng là thằng hàng hanu và sao cho trong số đó có hai bi đỏ và 1 bi xanh (khi đó ăn được một bi đỏ), hoặc là có hai bi xanh và 1 bi đỏ (khi đó được ăn 1 bi xanh).
+
+\subsubsection{Yêu cầu}
+
+Cho biết tọa độ trên mặt phẳng tọa độ Đề-các của vị trí và màu của các bi hiện tại trên bàn, bạn hãy giúp Hùng chọn 3 bi để chơi.
+
+\subsubsection{Input}
+\begin{itemize}
+	\item Dòng đầu ghi số nguên dương n.
+	\item Dòng thứ i trong số n dòng tiếp theo ghi hai số nguyên là hoành độ và tung độ trên mặt phẳng tọa độ Đề-các của vị trí đặt bi xanh với chỉ sô i.
+	\item Dòng thứ i trong số n dòng cuối cùng ghi hai số nguyên là hoàng độ và tung độ trên mặt phẳng tọa độ Đề-các của vị trí đặt bi đỏ với chỉ số n + i.
+	\item Hoàng độ và tung độ không vượt quá 10\textasciicircum6, vị trí các bi là đôi một phân biệt.
+\end{itemize}
+
+\subsubsection{Giới hạn}
+\begin{itemize}
+	\item 30\% số test có n $<$= 2;
+	\item 30\% số test khác có n $<$= 100.
+	\item 40\% số test còn lại có n $<$= 1000.
+\end{itemize}
+
+\subsubsection{Output}
+
+Ghi ra 3 chỉ số của các viên bi mà Hùng cần chọn, nếu không thể chọn được 3 bi nào, ghi ra -1. Nếu có nhiều đáp án, ghi ra một đáp án bất kì.
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+3
+1 1
+2 2
+4 9
+3 3
+6 20
+8 100
+
+\textbf{Output:}
+1 2 4
+\end{verbatim}

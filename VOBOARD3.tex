@@ -1,0 +1,60 @@
+
+
+
+
+   Tuy mới 10 tuổi, nhưng Bé đã rất thích chơi với các số nhị phân. Hàng ngày, Bé thường lấy 1 tấm bảng kích thước M*N và chơi một trò chơi như sau:  
+\begin{itemize}
+	\item     Ban đầu, trên mỗi ô của bảng ghi một bit 0 hoặc 1.   
+	\item     Mỗi nước đi, Bé chọn một vùng hình chữ nhật nằm hoàn toàn trong bảng, có các cạnh song song với các cạnh của bảng, và có kích thước R*C, và đảo bit tất cả các ô trong vùng đó.   
+	\item     Mục tiêu của Bé là đưa tất cả các ô trên bảng về bit 0.   
+	\item     Bé không thích sự lặp lại, vì thế Bé sẽ không bao giờ thực hiện 2 nước đi (R1, C1) và (R2, C2) mà R1 = R2 và C1 = C2 (Nói cách khác, Bé không bao giờ thực hiện 2 nước đi có cùng cả R và C).   
+\end{itemize}
+
+   Hôm nay Bé bị ốm, không thể chơi được. Bạn hãy giúp bé chơi trò chơi này nhé.  
+
+   Các hàng của bảng được đánh số từ 1 đến M từ trên xuống dưới, các cột của bảng được đánh số từ 1 đến N từ trái sang phải. Ô ở hàng i, cột j của bảng được kí hiệu là ô (i, j).  
+
+\subsubsection{   Input  }
+\begin{itemize}
+	\item     Dòng 1: Gồm 2 số nguyên dương M và N, là kích thước của bảng.   
+	\item     M dòng tiếp theo, mỗi dòng gồm đúng N kí tự 0 hoặc 1, thể hiện trạng thái ban đầu của bảng.   
+\end{itemize}
+
+\subsubsection{   Output  }
+\begin{itemize}
+	\item     Dòng 1: Gồm số nguyên dương Q duy nhất là số nước đi mà bạn thực hiện.   
+	\item     Q dòng tiếp theo, mỗi dòng gồm đúng 4 số nguyên dương x, y, R, C thể hiện vùng mà bạn chọn, trong đó (x, y) là tọa độ ô trái trên của vùng được chọn, R và C là kích thước của vùng được chọn.   
+\end{itemize}
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     Trong 40\% số test, 1 ≤ M, N ≤ 5   
+	\item     Trong 60\% test còn lại, 1 ≤ M, N ≤ 1000   
+\end{itemize}
+
+\subsubsection{   Chấm điểm  }
+\begin{itemize}
+	\item     Bạn chỉ được điểm nếu dãy các nước di chuyển của bạn đưa bảng về gồm toàn bit 0.   
+\end{itemize}
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+\textbf{Input:}
+3 4
+1000
+0110
+0000
+\end{verbatim}
+\begin{verbatim}
+\textbf{Output:}
+2
+1 1 1 1
+2 2 1 2
+\end{verbatim}
+\begin{verbatim}
+\textbf{Output sau KHÔNG hợp lệ }\textbf{(vùng kích thước 1*1 bị dùng 3 lần)}\textbf{:}
+3
+1 1 1 1
+2 2 1 1
+2 3 1 1
+\end{verbatim}

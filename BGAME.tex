@@ -1,0 +1,52 @@
+
+
+
+
+   Hai người chơi A và B chơi một trò chơi trên một bảng hình vuông kích thước n*n. Các ô vuông đơn vị của bảng có thể có màu trắng hoặc đen. Trò chơi chỉ được chơi trên các ô vuông màu trắng, không được động đến các ô màu đen. Mỗi người chơi có một quân cờ, ban đầu được đặt tại một ô gọi là ô xuất phát – một trong số các ô màu trắng của bảng. Ô xuất phát của A khác ô xuất phát của B.  
+
+   Tại mỗi lượt đi, người chơi sẽ di chuyển quân cờ của mình sang một trong số các ô trắng hàng xóm của nó (có thể là phía trên, phía dưới, bên phải, hoặc bên trái). Nếu người chơi di chuyển quân cờ của mình đến ô vuông đang bị chiếm bởi quân cờ của đối phương thì anh ta sẽ được thêm một lượt đi tiếp. Chú ý rằng trong trường hợp này, hướng di chuyển ở lượt đi thứ hai có thể khác lượt đi trước đó.  
+
+   Người chơi A đi trước, sau đó các người chơi luân phiên nhau thực hiện lượt đi. Mục tiêu của trò chơi là di chuyển quân cờ của mình đến được ô xuất phát của đối phương. Người chơi nào di chuyển quân cờ của mình đến ô xuất phát của đối thủ trước thì sẽ giành chiến thắng. Ngay cả khi ở lượt đi cuối cùng của người chơi chứa 2 bước di chuyển, và anh ta chỉ nhảy qua ô xuất phát của đối thủ (khi ô đó đang bị chiếm bởi quân cờ của đối phương), thì anh ta vẫn giành chiến thắng. Chúng ta muốn tính xem người chơi nào có chiến lược để giành chiến thắng (mà không cần quan tâm xem đối thủ của mình có chơi tốt đến đâu).  
+
+\subsubsection{   Task  }
+
+   Viết chương trình:  
+\begin{itemize}
+	\item     Đọc vào cách bố trí bảng ô vuông và các ô xuất phát của 2 người chơi từ standard input.   
+	\item     Tìm xem người nào sẽ có một chiến lược để giành thắng lợi.   
+	\item     Viết kết quả ra standard output   
+\end{itemize}
+
+
+
+\subsubsection{   Input  }
+
+   Dòng đầu tiên của standard input chứa một số nguyên t là số lượng test ( 1 ≤ t ≤ 10). Sau đó sẽ là mô tả lần lượt của t test. Mỗi test được mô tả như sau: Trên dòng đầu tiên của bộ test là số nguyên n ( 2 ≤ n ≤ 300), là độ dài của bảng ô vuông. N dòng tiếp theo chứa thông tin về bảng ô vuông. Mỗi dòng chứa n kí tự (không có dấu cách ở giữa). Mỗi kí tự có thể là ‘.’ (ô màu trắng), ‘\#’ (ô màu đen), ‘A’ (ô xuất phát của A), hoặc ‘B’ (ô xuất phát của B).  
+
+   Bạn có thể chắc chắn rằng sẽ tồn tại một đường đi gồm các ô trắng giữa điểm xuất phát của A và điểm xuất phát của B.  
+
+\subsubsection{   Output  }
+
+   Với mỗi test, in ra trên đúng 1 dòng của standard output một kí tự ‘A’ hoặc ‘B’ chỉ ra người nào sẽ có chiến lược giành chiến thắng.  
+
+\subsubsection{   Example  }
+\begin{verbatim}
+Input:
+2
+4
+A...
+.#..
+....
+...B
+4
+A...
+....
+..#.
+...B
+
+
+Output:
+B
+A
+
+\end{verbatim}

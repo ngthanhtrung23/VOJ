@@ -1,0 +1,53 @@
+
+
+ 
+
+Sau khi tham dự IOI và OLPSV, Nguyên chuyển đến một ngôi nhà mới. Khu nhà mới của Nguyên có \textbf{ N } người bạn hàng xóm ( \textbf{ N } ≤ 200000). Vì dễ bị nhầm nên Nguyên đánh số các bạn ấy từ 1 đến \textbf{ N } . Giữa các ngôi nhà có đường đi tạo thành cây. Khoảng cách giữa hai căn nhà kề nhau là 1 đơn vị. Có \textbf{ K } cuộc hẹn ( \textbf{ K } ≤ \textbf{ N } /2) được Nguyên đưa ra để làm quen với các bạn mới. Để tính toán chi phí mời các bạn, Nguyên muốn biết xem khoảng cách xa nhất của 2 ngôi nhà trong một cuộc hẹn là bao nhiêu ? Bạn hãy giúp Nguyên giải quyết vấn đề này.
+
+\subsubsection{Input}
+
+- Dòng 1 gồm 2 số \textbf{ N } và \textbf{ K } .
+
+- \textbf{ N } dòng tiếp theo, dòng thứ \emph{ i } gồm 2 số x y. Trong đó x là thứ tự của cuộc hẹn mà bạn thứ \emph{ i }\emph{ tham gia } , y là nhà hàng xóm của bạn thứ \emph{ i } . Nếu y = 0 thì đó là gốc của khu dân cư (có thể hiểu là gốc của cây).
+
+\subsubsection{Output}
+
+Gồm \textbf{ K } dòng, dòng thứ \emph{ i } thể hiện đường đi xa nhất tìm được giữa 2 ngôi nhà của 2 người bạn trong cuộc hẹn thứ \emph{ i } .
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+6 2
+1 3
+2 1
+1 0
+2 1
+2 1
+1 5
+\textbf{Output:}
+3
+2
+\textbf{Giải thích:}\end{verbatim}
+
+
+\texttt{  -3-
+\\   |
+\\  -1-
+\\/ | $\backslash$
+\\2  4  5
+\\      |
+\\     -6-}
+\\
+\\​Trong cuộc hẹn thứ 1 gồm 3 bạn là bạn số 1, số 3 và số 6. Khoảng cách xa nhất giữa 2 ngôi nhà trong cuộc hẹn thứ 1 là 3 ( giữa nhà bạn số 3 và số 6). Tương tự, cuộc hẹn thứ 2 gồm 3 bạn số 2, số 4 và số 5, khoảng cách  xa nhất là 2.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 

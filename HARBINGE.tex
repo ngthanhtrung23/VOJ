@@ -1,0 +1,47 @@
+
+
+Ngày xửa ngày xưa, có \textbf{\emph{ N }} thị trấn kiểu trung cổ trong khu tự trị Moldavian. Các thị trấn này được đánh số từ \textbf{ 1 } đến \textbf{\emph{ N }} . Thị trấn \textbf{ 1 } là thủ đô. Các thị trấn được nối với nhau bằng \textbf{\emph{ N }} -1 con đường hai chiều, mỗi con đường có độ dài được đo bằng km. Có duy nhất một tuyến đường nối giữa hai điểm bất kỳ (đồ thị các con đường là hình cây). Mỗi thị trấn không phải trung tâm có một người truyền tin.
+
+Khi một thị trấn bị tấn công, tình hình chiến sự cần được báo về thủ đô càng sớm càng tốt. Một thông điệp được truyền bằng các người truyền tin. Mỗi người truyền tin được đặc trưng bởi lượng thời gian khởi động và vận tốc không đổi sau khi xuất phát.
+
+Thông điệp luôn được truyền trên con đường ngắn nhất đến trung tâm. Ban đầu, thông tin chiến sự được đưa cho người truyền tin tại thị trấn bị tấn công. Từ thị trấn đó người truyền tin sẽ đi theo con đường về gần thủ đô hơn. Khi đến một thị trấn mới, người truyền tin có thể đi tiếp hoặc chuyển cho người truyền tin tại thị trấn mới vừa đến. Lưu ý rằng khi chuyển sang người truyền tin mới thì người này cần một lượng thời gian để khởi động rồi mới đi chuyển tin. Như vậy, thông điệp sẽ được chuyển bằng một số người truyền tin trước khi đến thủ đô.
+
+Hãy xác định thời gian ít nhất cần chuyển tin từ các thị trấn về thủ đô.
+
+Input
+
+Dòng đầu ghi số \textbf{\emph{ N }} . Trong \textbf{\emph{ N }} -1 dòng tiếp theo, mỗi dòng ghi ba số \textbf{ u } , \textbf{ v } và \textbf{ d } thể một con đường nối từ \textbf{ u } đến \textbf{ v } với độ dài bằng \textbf{ d } . Trong \textbf{\emph{ N }} -1 dòng tiếp theo, dòng thứ \textbf{\emph{ i }} ghi hai số \textbf{\emph{ S $_ i $}} và \textbf{\emph{ V $_ i $}} thể hiện thời gian cần để khởi động và số lượng phút để đi được 1 km của người truyền tin ở thị trấn ( \textbf{\emph{ i }} +1).
+
+Output
+
+Ghi \textbf{\emph{ N }} -1 số trên một dòng. Số thứ i thể hiện thời gian ít nhất cần truyền tin từ thành phố ( \textbf{\emph{ i }} +1) về thủ đô.
+\begin{verbatim}
+INPUT
+
+5
+
+1 2 20
+
+2 3 12
+
+2 4 1
+
+4 5 3
+
+26 9
+
+1 10
+
+500 2
+
+2 30
+
+OUTPUT
+
+206 321 542 328\end{verbatim}
+
+\textbf{Giới hạn:}
+\begin{itemize}
+	\item 3 ≤ N ≤ 100 000, 0 ≤ S $_ i $ ≤ 10 $^ 9 $ , 1 ≤ V $_ i $ ≤ 10 $^ 9 $
+	\item Độ dài không vượt quá 10 000.
+\end{itemize}

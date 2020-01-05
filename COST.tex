@@ -1,0 +1,27 @@
+
+
+
+
+   Có N chuyên viên lập trình và M công việc. Nếu chuyên viên thứ i mà làm j công việc thì sẽ tốn chi phí là C[i] * j * j .   
+\\   Người ta cho bạn N xâu ký tự , ký tự thứ j của xâu i là 'Y' tức là chuyên viên thứ i có thể làm được công việc thứ j và 'N' trong trường hợp ngược lại. Bạn hãy lập trình tính xem tổng chi phí phải trả nhỏ nhất là bao nhiêu ?  
+
+\subsubsection{   Input  }
+
+   Dòng 1 : số nguyên dương N ( 0 $<$ N $<$ 51 ) .   
+\\   Dòng 2 : N số nguyên dương là C[1] , ... , C[N] ( 0 $<$ C[i] $<$ 50000 ) . N dòng tiếp theo , mỗi dòng gồm 1 xâu M ký tự mô tả như ở trên. ( 0 $<$ M $<$ 41 ) .  
+
+\subsubsection{   Output  }
+
+   Gồm 1 số nguyên duy nhất là chi phí nhỏ nhất. Trong trường hợp không thể hoàn thành M công việc này được thì ghi ra -1 .  
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Input:
+3
+2 3 4
+YYN
+YNY
+NNN
+Output:
+11
+\end{verbatim}

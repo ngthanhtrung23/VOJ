@@ -1,0 +1,37 @@
+
+
+Cây nhị phân là cây mà mỗi nút có tối đa 2 con, thường được gọi là con trái và con phải. 3 phép duyệt cây nhị phân thông thường là tiền thứ tự (preorder), trung thứ tự (inorder) và hậu thứ tự (postorder):
+\begin{itemize}
+	\item Duyệt tiền thứ tự cây gốc A: thăm gốc A, thăm cây con trái của A, thăm cây con phải của A.
+	\item Duyệt trung thứ tự cây gốc A: thăm cây con trái của A, thăm gốc A, thăm cây con phải của A.
+	\item Duyệt hậu thứ tự cây gốc A: thăm cây con trái của A, thăm cây con phải của A, thăm gốc A.
+\end{itemize}
+
+Cho danh sách duyệt tiền thứ tự và trung thứ tự của 1 cây nhị phân N đỉnh, các đỉnh được đánh số từ 1 đến N.
+
+Yêu cầu hãy xây dựng lại cây và in ra danh sách duyệt hậu thứ tự.
+
+\subsubsection{Input \href{http://vi.wikipedia.org/wiki/Duy%E1%BB%87t_c%C3%A2y}{}}
+
+Dòng đầu ghi số N là số đỉnh (N $<$= 50 000, 40\% số test N $<$= 1000).
+
+Dòng thứ hai ghi N số là danh sách duyệt preorder.
+
+Dòng thứ ba ghi N số là danh sách duyệt inorder.
+
+\subsubsection{Output}
+
+In ra N số là danh sách duyệt postorder của cây.
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+6
+1 5 3 4 6 2
+5 1 4 6 3 2
+
+\textbf{Output:}
+5 6 4 2 3 1\end{verbatim}
+\begin{verbatim}
+
+\includegraphics{http://i37.photobucket.com/albums/e81/beo_chay_so/bintree.png}\end{verbatim}

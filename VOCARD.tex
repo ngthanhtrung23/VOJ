@@ -1,0 +1,57 @@
+
+
+
+
+\emph{    RR   }   và   \emph{    pirate   }   là hai cao thủ chơi bài. Bài gì họ cũng đã từng chơi qua và lần nào cũng ngang tài ngang sức với nhau. Bây giờ thì họ đã chơi tất cả các thể loại bài rồi mà vẫn chưa phân được thắng bại. Vì vậy họ tìm gặp pháp sư   \emph{    flashmt   }   để nhờ anh ta sáng chế ra một kiểu chơi bài mới để họ tranh tài tranh sức với nhau.  
+
+\emph{    flashmt   }   vốn cũng thích chơi bài từ nhỏ nên anh ấy đã nhanh chóng nghĩ ra được một trò chơi như sau: Vị pháp sư lấy từ túi quần ra 1 bộ bài   \textbf{    N   }   lá, và đặt xuống bàn.       Các lá bài được đánh số từ 1 đến    \textbf{     N    }    từ dưới lên      . Mỗi lượt chơi, người chơi phải chọn lấy ít nhất là 1 lá bài và nhiều nhất là   \textbf{    K   }   lá bài từ trên xuống, tức là đầu tiên lá bài N sẽ được lấy, rồi đến N-1, N-2,..., tất nhiên số lượng bài được chọn không vượt quá số lượng lá bài còn lại. Trong các lá bài đó có một số lá bài màu đen, còn một số khác thì màu đỏ.   \emph{    RR   }   và   \emph{    pirate   }   được biết trước vị trí của những lá bài màu đen và đỏ trên bộ bài, người nào bốc được 1 lá bài màu đen tương ứng với 1 điểm. Hai người sẽ lần lượt lấy các lá bài cho tới khi nào tất cả   \textbf{    N   }   lá bài đều được lấy hết. Cuối cùng ai được nhiều điểm hơn sẽ thắng.  
+
+\emph{    RR   }   và   \emph{    pirate   }   chơi bài rất giỏi nên cho dù với trò chơi mới này họ cũng luôn biết cách chơi tối ưu, nghĩa là họ sẽ luôn cố gắng để được nhiều điểm nhất có thể. Nhưng họ đang thắc mắc liệu trò chơi mới này có giúp họ phân thắng bại hay không? Hay kết quả lại hòa như những lần trước? Điều này thì ngay cả pháp sư   \emph{    flashmt   }   cũng không biết được. Bạn là một lập trình viên giỏi, hãy giúp   \emph{    RR   }   ,   \emph{    pirate   }   và   \emph{    flashmt   }   trả lời câu hỏi này nhé.  
+
+\subsubsection{\textbf{    Yêu cầu   }}
+
+   Cho số N, K, trạng thái màu của từng lá bài từ 1 đến   \textbf{    N   }   . Hãy trả lời xem liệu khi kết thúc trò chơi thì hai người chơi có thể phân được thắng bại hay không? Nếu câu trả lời là có thì người       thua      sẽ được bao nhiêu điểm? Chú ý: Chúng ta không quan tâm đến người nào đi trước người nào đi sau mà chỉ quan tâm đến điểm của người thắng và người thua sau khi trò chơi kết thúc.  
+
+\subsubsection{   Input  }
+\begin{itemize}
+	\item     Dòng đầu tiên chứa 2 số N, K   
+	\item     Dòng thứ 2 chứa N kí tự '0' hoặc '1' (không có dấu ngoặc dơn) mô tả trạng thái màu của các lá bài từ dưới lên. Kí tự thứ i là '0' nếu lá bài được đánh số i màu đỏ. Kí tự thứ i là '1' nếu lá bài được đánh số i màu đen.   
+\end{itemize}
+
+\subsubsection{   Output  }
+\begin{itemize}
+	\item     Dòng đầu tiên là "YES" (không có dấu hoặc kép) nếu sau khi kết thúc trò chơi thì hai người chơi có thể phân biệt được thắng bại. Hoặc là "NO" nếu trò chơi kết thúc với kết quả hòa.   
+	\item     Nếu dòng đầu tiên là "YES" thì dòng này sẽ là số điểm cao nhất mà người         thua        đạt được.   
+\end{itemize}
+
+\subsubsection{   Giới hạn:  }
+\begin{itemize}
+	\item     40\% số test có 1 ≤ K ≤ N ≤ 5000.   
+	\item     Trong tất cả các test có 1 ≤ K ≤ N ≤ 2.10    $^     6    $    (2 triệu)   
+\end{itemize}
+\begin{itemize}
+\end{itemize}
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input 1:
+\\}5 3
+\\10110
+\\\textbf{
+\\Output 1:}
+YES
+\\1
+\\
+\\\textbf{
+\\Input 2:
+\\}4 2
+\\1111
+\\\textbf{
+\\Output 2:}
+\\NO\end{verbatim}
+
+\textbf{    Giải thích:   }
+
+   - Ví dụ 1: Nếu người đi đầu bốc 3 lá bài trên cùng (lá 5, 4 và 3) thì sẽ được 2 điểm (ở lá 3 và lá 4), người đi sau bốc 2 lá bài còn lại (lá 2 và 1) thì được 1 điểm (ở lá 1). Như vậy người đi trước đã thắng người đi sau. Người đi sau là người thua có thể có nhiều nhất là 1 điểm.  
+
+   - Ví dụ 2: Sau khi kết thúc trò chơi cả 2 người đều ghi được nhiều nhất là 2 điểm. Vì vậy hai người không phân được thắng bại.  

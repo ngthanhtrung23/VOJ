@@ -1,0 +1,39 @@
+
+
+
+
+   Để đối phó với tình hình biến động của giá xăng dầu, nước X quyết định xây dựng một kho dự trữ dầu với quy mô cực lớn. Kho chứa dầu sẽ bao gồm N bể chứa dầu hình trụ tròn mà ta sẽ biểu diễn trên bản đồ bằng N hình tròn, hình tròn thứ i có tọa độ là (X   $_    i   $   , Y   $_    i   $   ) và bán kính R   $_    i   $   , các hình tròn không có điểm chung trong với nhau (nhưng có thể tiếp xúc).  
+
+   Để đảm bảo an toàn phòng cháy chữa cháy, người ta cần xác định 2 bể chứa dầu gần nhau nhất để tăng cường cách ly khi xảy ra hỏa hoạn.  
+
+   Biết rằng khoảng cách giữa 2 bể chứa dầu thứ i và thứ j chính bằng khoảng cách giữa 2 đường tròn tương ứng và bằng D   $_    ij   $   – R   $_    i   $   – R   $_    j   $   , trong đó D   $_    ij   $   là khoảng cách Euclide giữa 2 điểm (X   $_    i   $   , Y   $_    i   $   ) và (X   $_    j   $   , Y   $_    j   $   ).  
+
+   Bạn hãy giúp những người quản lý tìm ra 2 bể chứa dầu này.  
+
+\subsubsection{   Input  }
+
+   Dòng thứ nhất ghi số nguyên dương N là số bể chứa dầu.  
+
+   Dòng thứ i trong N dòng tiếp theo ghi 3 số nguyên X   $_    i   $   , Y   $_    i   $   , R   $_    i   $   là tọa độ và bán kính bể chứa dầu thứ i.  
+
+\subsubsection{   Output  }
+
+   Gồm 1 dòng duy nhất là khoảng cách của 2 bể chứa dầu bé nhất tìm được.  
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+3
+0 0 1
+4 0 2
+5 5 3
+
+\textbf{Output:}
+0.0990
+
+\textbf{Giới hạn:}
+2 ≤ N ≤ 10000. 
+|X$_i$|, |Y$_i$| ≤ 10$^6$.
+0 $<$ R$_i$ ≤ 10$^6$. 
+Kết quả ghi chính xác đến 4 chữ số sau dấu phẩy.
+\end{verbatim}

@@ -1,0 +1,55 @@
+
+
+
+
+      Hè đã về! Nhân dịp  tết thiếu nhi, trường mầm non Sao Mai tổ chức cho  N bé thiếu nhi đi thăm quan vườn bách thú. Trong vườn  thú có M chuồng liên tiếp nhau, được đánh  số liên tiếp từ 1 tới M. Ở mỗi chuồng  có đúng một con thú được biểu diễn bởi một số  tự nhiên trong khoảng từ 1 tới K. Sau khi đi thăm vườn  thú về, N bé lần lượt kể cho cô giáo nghe về quan sát  của mình. Mỗi bé kể lại: “Ở chuồng thứ i có con vật  v1 và ở chuồng thứ i+1 có con vật v2”. Tuy nhiên, cô giáo  biết chắc chắn có chính xác L bé nói dối trong N bé. Một  bé nói thật sẽ nói đúng tên con vật ở cả 2 chuồng  trong khi một bé nói dối sẽ nói sai tên con vật ở ít  nhất một chuồng.     
+
+      Cô giáo đưa ra  Q phán đoán, mỗi phán đoán có dạng: “Ở  chuồng thứ i là con vật v”. Hỏi trong trường  hợp tốt nhất và xấu nhất, cô giáo có bao  nhiêu câu đoán đúng?     
+
+\subsubsection{     Dữ liệu    }
+\begin{itemize}
+	\item        Dòng đầu ghi    các số N, M, K, L, Q. ( L $<$= N $<$= 200, M, K, Q $<$= 10000    )      
+	\item        N dòng sau, mỗi    dòng ghi 3 số i, v1, v2.      
+	\item        Q dòng cuối,    mỗi dòng ghi 2 số i, v.      
+\end{itemize}
+
+\subsubsection{     Kết quả    }
+\begin{itemize}
+	\item        Số câu đoán    đúng tối thiểu và tối đa của cô giáo.      
+\end{itemize}
+
+\subsubsection{     Ví dụ    }          Dữ liệu                   Kết quả                   3 4 5 1 4         
+
+           1 1 1          
+
+           2 2 1          
+
+           3 2 2          
+
+           1 1          
+
+           2 1          
+
+           3 1          
+
+           4 2                    3 3                   1 2 2 1 2         
+
+           1 1 1          
+
+           1 2          
+
+           2 2                    1 2         
+\\
+
+\subsubsection{     Giới hạn    }
+\begin{itemize}
+	\item        30\% số test có    N, M, K $<$= 10.      
+	\item        70\% số test có    N, M, K $<$= 100.      
+	\item        Thời gian cho    mỗi test là 2s.      
+\end{itemize}
+
+\subsubsection{     Giải thích    }
+
+      Ở ví dụ 1, bé 1 và bé  2 không thể cùng nói thật (do nói khác nhau về chuồng 2).  Tương tự bé 2 và bé 3 không thể cùng nói thật. Do có  đúng 1 bé nói dối nên bé 2 là bé nói dối, bé 1 và bé  3 là 2 bé nói thật, con vật trong 4 chuồng lần lượt là:  1, 1, 2, 2. Vì thế, cô giáo luôn đoán đúng 3 câu.     
+
+      Ở ví dụ 2, em bé duy  nhất đã nói dối. Vì vậy ít nhất 1 trong 2 chuồng không  có con vật 1. Vì chỉ có 2 loại con vật nên ít nhất 1  trong 2 chuồng có con vật 2. Cô giáo đoán đúng 1 câu trong  trường hợp tệ nhất và 2 câu trong trường hợp tốt nhất.     

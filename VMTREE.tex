@@ -1,0 +1,44 @@
+
+
+
+
+   Cho một cây   \textbf{    N   }   đỉnh (N ≤ 50,000). Mỗi cạnh của cây có một trọng số nguyên dương   \textbf{    c   }   (1 ≤ c ≤ 10   $^    6   $   ).  
+
+   Cho 2 số nguyên dương   \textbf{    L   }   ,   \textbf{    R   }   . Tìm một đường đi không lặp có độ dài trong khoảng [L,R] sao cho trung bình cộng trọng số các cạnh trên đường đi đó là lớn nhất.  
+
+\subsubsection{   Input  }
+
+   Dòng đầu chứa số nguyên dương   \textbf{    T   }   - số test trong 1 file.  
+
+   Tiếp theo là T test, mỗi test gồm:  
+\begin{itemize}
+	\item     Dòng đầu tiên chứa số nguyên dương N là số đỉnh của cây.   
+	\item     N-1 dòng tiếp theo, mỗi dòng gồm 3 số nguyên dương u, v, c cho biết có một cạnh nối 2 cạnh u và v, với trọng số là c.   
+	\item     Dòng tiếp theo ghi 2 số nguyên dương L, R, không vượt quá 10    $^     12    $    .   
+\end{itemize}
+
+\subsubsection{   Output  }
+
+   Gồm T dòng, mỗi dòng gồm số thực duy nhất là trung bình cộng lớn nhất tìm được. Bài của bạn được coi là đưa ra kết quả đúng nếu sai số giữa đáp số của bạn và đáp số của ban tổ chức không quá 10   $^    -2   $   .  
+
+\subsubsection{   Chấm điểm  }
+
+   Trong quá trình thi, bài của bạn sẽ được chấm với   \textbf{    50\%   }   bộ test, và điểm mà bạn đạt được thể hiện phần trăm test mà bạn giải đúng trong các test đó (trên thang điểm   \textbf{    100   }   ).  
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+1
+7
+1 2 1
+2 3 5
+2 4 1
+1 5 7
+4 6 3
+4 7 7
+13 15
+
+\textbf{Output:}
+4.3333
+
+\end{verbatim}

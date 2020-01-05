@@ -1,0 +1,53 @@
+
+
+ 
+
+Cho một đồ thị cây có N đỉnh N-1 cạnh, mỗi đỉnh của cây có một giá trị là A $_ i $ , Người ta tiến hành thao tác sau:
+
+Bước 1: Chọn một cây con có gốc là đỉnh 1, gọi là cây con T, sao cho khoảng cách từ các đỉnh của cây con T tới đỉnh 1 có thể tạo thành một dãy tăng nghiêm ngặt.
+
+Bước 2: Tiến hành tăng hoặc giảm giá trị tất cả các đỉnh của cây con T đã chọn ở bước 1 đi 1 đơn vị.
+
+Nhiệm vụ của bạn tính số thao tác nhỏ nhất để tất cả các đỉnh của cây đều có giá trị bằng 0.
+
+\subsubsection{Input}
+
+Dòng 1: Một số nguyên T, số test đề bài (1≤T≤10).
+
+T bộ test tiếp theo có dạng:
+
+Dòng 1: Số nguyên N, số đỉnh của cây (1≤N≤10 $^ 5 $ ).
+
+N-1 dòng tiếp theo, mỗi dòng gồm hai số nguyên u và v cho biết cạnh nối giữa hai đỉnh u và v (1≤u,v≤N).
+
+Dòng tiếp theo: Gồm  N số nguyên A $_ 1 $ ... A $_ N $ (1≤|A $_ i $ |≤10 $^ 5 $ ).
+
+\subsubsection{Output}
+
+Gồm T dòng, mỗi dòng một số nguyên là số thao tác ít nhất ứng với bộ test đó
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:
+}1
+3
+1 2
+1 3
+-1 -1 -1
+\textbf{Output:}
+3
+\end{verbatim}
+
+\textbf{Giải thích test:}
+
+Thao tác 1: Chọn cây con T gồm hai đỉnh 1 và 2, tăng giá trị tất cả các đỉnh lên 1, mảng A=[0,0,-1].
+
+Thao tác 2: Chọn cây con T gồm hai đỉnh 1 và 3, tăng giá trị tất cả các đỉnh lên 1, mảng A=[1,0,0].
+
+Thao tác 3, chọn cây con T gồm đỉnh 1, giảm giá trị các đỉnh đi 1, mảng A=[0,0,0].
+
+Bạn không thể chọn cây con T gồm 3 đỉnh 1, 2, 3 bởi vì khi đó khoảng cách từ các đỉnh tới 1 sẽ lần lượt là 0,1,1
+
+-$>$không tạo thành một dãy tăng.
+
+Thông tin về tree cho các bạn chưa biết: http://en.wikipedia.org/wiki/Tree\_(data\_structure)

@@ -1,0 +1,39 @@
+
+
+Năm 2050, lúc này Lê Đôn Khuê đã trở thành Thủ tướng Việt Nam. Ông nhận được một đề nghị cho phép khai thác K m $^ 3 $ gỗ ở một khu rừng để xuất khẩu. Khu rừng này có dạng hình chữ nhật MxN km $^ 2 $ . Để tiện quản lý thì người ta chia khu vực thành MxN vùng (M hàng, N cột) và lượng gỗ tại mỗi khu vực (tính theo m $^ 3 $ ) đã được biết. Các hàng được đánh số 1 đến M từ trên xuống dưới. Các cột được đánh số từ 1 đến N từ trái sang phải. Tọa độ của vùng nằm tại hàng i, cột j là (i, j).
+
+Ngài Thủ tướng quyết định cho phép khai thác và vùng khai thác để dễ quản lý nên là một vùng hình chữ nhật. Ngài Thủ tướng muốn tìm một phương án khai thác gỗ sao cho diện tích khai thác là nhỏ nhất và vẫn đủ lượng gỗ cần thiết để xuất khẩu.
+
+Do lâu ngày không lập trình nên ngài Thủ tướng cần đến sự giúp đỡ của các bạn. Các bạn hãy giúp ngài Thủ tướng nào.
+
+
+\includegraphics{http://vn.spoj.pl/VM08/content/HELPPM.jpg}
+
+ 
+
+\subsubsection{Dữ liệu}
+\begin{itemize}
+	\item Dòng thứ nhất ghi ba số M, N, K (1 ≤ M, N ≤ 500, 1 ≤ K ≤ 10 $^ 9 $ ).
+	\item Dòng thứ i trong M dòng tiếp theo ghi N số nguyên không âm, trong đó số thứ j cho biết lượng gỗ tại khu vực (i, j). Biết lượng gỗ tại mỗi khu vực không vượt quá 10 $^ 4 $ m $^ 3 $ .
+\end{itemize}
+
+\subsubsection{Kết quả}
+
+Nếu không tồn tại vùng khai thác gỗ nào cho đủ gỗ xuất khẩu, in ra -1. Ngược lại in ra:
+\begin{itemize}
+	\item Dòng thứ nhất ghi diện tích nhỏ nhất có thể của vùng khai thác gỗ.
+	\item Dòng tiếp theo ghi bốn số là chỉ số của góc trái trên và góc phải dưới của vùng khai thác gỗ. Nếu có nhiều vùng cùng thỏa mãn thì in ra tọa độ của một vùng bất kỳ.
+\end{itemize}
+
+\subsubsection{Ví dụ}
+\begin{verbatim}
+Dữ liệu
+3 3 19
+5 4 0
+4 7 0
+0 0 2
+
+Kết quả
+4
+1 1 2 2
+\end{verbatim}

@@ -1,0 +1,75 @@
+
+
+
+
+   Mirko vừa giặt ga trải giường và đang trên đường đi phơi chúng ở trước nhà. Tuy nhiên, những cơn gió mạnh đã kéo đứt dây phơi quần áo nên Mirko tạm thời phải đặt các tấm ga trên cỏ.  
+
+   Mặt cỏ có thể coi như một lưới ô vuông vô tận, trong đó mỗi ô vuông đơn vị được biểu diễn bởi một cặp tọa độ. Các tấm ga là các hình chữ nhật trong lưới ô vuông, với các cạnh song song với trục tọa độ. Các tấm ga có thể đè lên nhau.  
+
+   Trong nỗ lực để nối lại dây phơi, Mirko đã làm đổ bình dầu ở tọa độ (0, 0), và dầu bắt đầu lan ra khắp mặt đất. Cú sốc đã khiến Mirko ngất xỉu. Trong khi Mirko nằm bất tỉnh, dầu loang ra đến các tấm ga của cậu.  
+
+   Thời gian được tính bắt đầu từ thời điểm dầu bắt đầu loang – tại thời điểm 0 chỉ có hình vuông (0, 0) vị dầu phủ. Dầu đang lan ra với tốc độ 1 ô vuông 1 giây theo cả 8 hướng, như trong hình vẽ phía dưới. Khi dầu lan tới một ô vuông có ga giường, nó thấm vào tất cả các ô vuông vải trên tất cả các tấm ga đang che phủ ô vuông đó.  
+\includegraphics{http://vn.spoj.pl/content/plahte.jpg}
+
+   Viết chương trình, cho M thời điểm, tính tổng diện tích của các ô vuông vải bị dính dầu trên tất cả các tấm ga tại thời điểm đó.  
+
+\subsubsection{   Input  }
+
+   Dòng đầu chứa số nguyên N (1 ≤ N ≤ 100 000), số lượng tấm ga.  
+
+   Mỗi dòng trong số N dòng tiếp theo chứa 4 số nguyên x1, y1, x2 và y2 (−1 000 000 ≤ x1 ≤ x2 ≤ 1 000 000), (−1 000 000 ≤ y1 ≤ y2 ≤ 1 000 000). Tọa độ (x1, y1) và (x2, y2) biểu diễn hai đỉnh đối diện theo đường chéo của tấm ga (nhắc lại, các tọa độ này là tọa độ của các ô vuông, không phải tọa độ các điểm trên mặt phẳng). Không có tấm ga nào phủ lên ô vuông (0, 0).  
+
+   Dòng tiếp theo chứa số nguyên M (1 ≤ M ≤ 100 000), số lượng thời điểm.  
+
+   Dòng tiếp theo chứa M số nguyên trong khoảng từ 0 đến 1 000 000, là các thời điểm. Chúng được cho theo thứ tự tăng dần.  
+
+\subsubsection{   Output  }
+
+   Với mỗi thời điểm, in ra trên một dòng, tổng diện tích của các ô vuông vải bị dính dầu trên tất cả các tấm ga.  
+
+\subsubsection{   Example  }
+\begin{verbatim}
+Input:
+3
+-2 1 1 2
+1 0 2 1
+-3 -3 -2 0
+2
+1 2
+
+Output:
+5
+15
+
+Input:
+4
+5 1 8 4
+-8 1 -5 4
+-10 2 10 3
+6 0 8 10
+6
+1 2 3 4 7 9
+
+Output:
+0
+5
+14
+18
+70
+100
+
+
+Input:
+1
+1 1 1000000 1000000
+3
+100 10000 1000000
+
+Output:
+10000
+100000000
+1000000000000
+
+\end{verbatim}
+
+   P.s: Bài này hơi khó dịch nên bản dịch không hoàn toàn đúng từng câu từng chữ như nguyên bản tiếng Anh. Nếu có gì không đúng, mọi người cứ góp ý, mình sẽ sửa lại. :)  

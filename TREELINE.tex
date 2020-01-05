@@ -1,0 +1,36 @@
+
+
+Một trang trại lớn có n cây cảnh với độ cao khác nhau từng đôi một. Các cây này được xếp theo một hàng dọc. Ông chủ trang trại là một người có đầu óc thẩm mỹ nên hàng cây được bố trí có tính chất không đơn điệu sau đây: “Đi từ đầu hàng đến cuối hàng không có 3 cây (không nhất thiết phải liên tiếp) có chiều cao giảm dần”.
+
+Một hôm ông chủ mua them một cây cảnh mới có chiều cao lớn hơn chiều cao tất cả các cây đã có. Ông muốn xếp cây cảnh mới vào trong n + 1 vị trí có thể của hàng cây đang có (vào vị trí đầu hàng, vị trí sau cây thứ nhất, vị trí sau cây thứ hai, … , vị trí sau cây thứ n của hàng) sao cho hàng cây thu được vẫn thỏa mãn yêu cầu về tính không đơn điệu nêu trên.
+
+\textbf{Yêu cầu }\textbf{ : }
+\begin{itemize}
+	\item Hãy cho biết có bao nhiêu cách xếp cây cảnh cao nhất mới mua vào hàng cây sao cho vẫn đảm bảo điều kiện về tính không đơn điệu.
+	\item Giả sử mỗi ngày ông chủ muốn xếp n+1 cây đã có thành hàng cây đảm bảo yêu cầu về tính không đơn điệu và hai hàng cây của hai ngày khác nhau là không giống trùng nhau, hãy giúp ông chủ tính xem việc đó có thể diễn ra nhiều nhất là bao nhiêu ngày.
+\end{itemize}
+
+\textbf{Dữ liệu: }
+
+Dòng thứ nhất chứa hai số nguyên dương n và h tương ứng là số lượng cây và chiều cao của cây cao nhất. Biết rằng n $<$= 10\textasciicircum5, h $<$= 10\textasciicircum6.
+
+Dòng thứ hai chứa n số nguyên dương (mỗi số đều nhỏ hơn h) tương ứng là dãy chiều cao của n cây được xếp ban đầu.
+
+Các số trên cùng một dòng được ghi cách nhau ít nhất một dấu cách.
+
+\textbf{Kết quả: }
+\begin{itemize}
+	\item Dòng thứ nhất ghi một số nguyên là số cách sắp xếp cây cao nhất vào hàng cây.
+	\item Dòng thứ hai ghi một số nguyên là phần dư trong phép chia số ngày lớn nhất tìm được cho 10\textasciicircum9.
+\end{itemize}
+
+\textbf{Ví dụ: }\textbf{}
+\begin{verbatim}
+\textbf{Input}
+2 2011
+11 1
+\textbf{Output}
+2
+5
+
+\textbf{Ràng buộc: } 50% số tests ứng với 50% số điểm của bài có 2 $<$= n $<$= 15\end{verbatim}

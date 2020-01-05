@@ -1,0 +1,81 @@
+
+
+
+
+   Bạn ninja   \emph{    Rantaro   }   đang chăm chỉ luyện khinh công. Một ngày,   \emph{    Rantaro   }   cắm các cọc tre từ bờ bên trái sang bờ bên phải của một con sông và luyện tập như sau:   \emph{    Rantaro   }   sẽ nhảy lên cọc đầu tiên bên trái, nhảy qua một số cọc tre về phía bên phải trước khi nhảy lên cọc cuối cùng và sang bờ bên kia.   \emph{    Rantaro   }   luôn nhảy hướng về đích chứ không bao giờ nhảy lùi, đồng thời, một số cọc có thể bị nhảy qua, nhưng   \emph{    Rantaro   }   luôn nhảy lên cọc đầu tiên và cuối cùng.  
+
+   Giả sử độ cao hiện tại của các cọc tre lần lượt là   \textbf{    H    $_     1    $    , H    $_     2    $    , …, H    $_     n    $}   từ trái qua phải. Ở mỗi bước,   \emph{    Rantaro   }   có thể lựa chọn:  
+\begin{itemize}
+	\item     Nhảy cao đến cọc kế tiếp và mất    \textbf{     x    }    năng lượng cho mỗi đơn vị độ cao. Nói cách khác,    \emph{     Rantaro    }    có thể nhảy từ cọc    \textbf{     i    }    sang cọc    \textbf{     i+1    }    và mất max(    \textbf{     H     $_      i+1     $}    -    \textbf{     H     $_      i     $}    , 0) *    \textbf{     x    }    năng lượng.   
+	\item     Nhảy xa đến một cọc khác nếu cọc đó và tất cả các cọc ở giữa đều thấp hơn cọc đang đứng. Mỗi đơn vị độ dài sẽ làm cho    \emph{     Rantaro    }    mất    \textbf{     y    }    năng lượng. Nói cách khác,    \emph{     Rantaro    }    có thể nhảy từ cọc    \textbf{     i    }    sang cọc    \textbf{     j    }    nếu    \textbf{     H     \textbf{$_       i+1      $}     , H     $_      i+2     $     , …, H     $_      j     $     $<$ H     $_      i     $}    và mất (    \textbf{     j    }    -    \textbf{     i    }    ) *    \textbf{     y    }    năng lượng.   
+\end{itemize}
+
+   Mỗi khi   \emph{    Rantaro   }   nhảy lên một cọc tre, cọc tre sẽ bị lún và độ cao của cọc đó sẽ giảm đi 1 trước khi   \emph{    Rantaro   }   thực hiện bước nhảy tiếp theo. Ví dụ, nếu có 2 cọc tre với độ cao là (3, 5).   \emph{    Rantaro   }   sẽ nhảy lên cọc đầu tiên và làm độ cao của cọc đó giảm xuống 2. Khi   \emph{    Rantaro   }   nhảy lên cọc cuối sẽ mất (5 - 2) *   \textbf{    x   }   năng lượng. Sau khi sang bờ bên kia, độ cao của 2 cọc sẽ là (2, 4). Trong bài này, chúng ta bỏ qua năng lượng để nhảy từ bờ lên cọc đầu tiên và từ cọc cuối cùng xuống bờ bên kia.  
+
+   Sau khi sang bờ bên phải,   \emph{    Rantaro   }   lại nhảy lại về bờ bên trái theo cách tương tự. Tuy nhiên,   \emph{    Rantaro   }   sẽ mất   \textbf{    u   }   năng lượng cho mỗi đơn vị độ cao và   \textbf{    v   }   năng lượng cho mỗi đơn vị độ dài. Bạn cần giúp Rantaro tính tổng số năng lượng ít nhất cần dùng cho cả hai lượt nhảy.  
+
+   Ví dụ, nếu   \textbf{    x   }   = 2,   \textbf{    y   }   = 1,   \textbf{    u   }   = 5,   \textbf{    v   }   = 50, độ cao các cọc là (9, 2, 6, 2, 4). Ở lần nhảy từ trái qua phải,   \emph{    Rantaro   }   có thể chỉ mất 4 năng lượng nếu nhảy từ cọc 1 đến cọc 5. Sau khi sang bờ bên phải, độ cao các cọc lần lượt là (8, 2, 6, 2, 3). Ở lần nhảy về,   \emph{    Rantaro   }   sẽ nhảy 5 → 4 → 3 → 2 → 1 và mất ((6-1) + (8-1)) * 5 = 60 năng lượng. Tổng cộng   \emph{    Rantaro   }   sẽ mất 64 năng lượng. Nếu ở lần nhảy từ trái qua phải,   \emph{    Rantaro   }   nhảy 1 → 3 → 5 sẽ mất 4 năng lượng và độ cao các cọc sau khi nhảy là (8, 2, 5, 2, 3). Ở lần nhảy về,   \emph{    Rantaro   }   sẽ chỉ mất 55 năng lượng và tổng cộng sẽ là 59 năng lượng.  
+
+\subsubsection{   Dữ liệu  }
+\begin{itemize}
+	\item     Dòng đầu ghi số    \textbf{     N    }    .   
+	\item     Dòng sau ghi 4 số nguyên    \textbf{     x    }    ,    \textbf{     y    }    ,    \textbf{     u    }    ,    \textbf{     v    }    .   
+	\item     Dòng tiếp theo ghi    \textbf{     N    }    số nguyên thể hiện độ cao ban đầu của các cọc tre.   
+\end{itemize}
+
+\subsubsection{   Kết quả  }
+\begin{itemize}
+	\item     Một số duy nhất thể hiện tổng số năng lượng ít nhất mà    \emph{     Rantaro    }    phải dùng.   
+\end{itemize}
+
+\subsubsection{   Lưu ý  }
+\begin{itemize}
+	\item     Các giá trị của H ở công thức nhảy cao và nhảy xa thể hiện độ cao ở thời điểm nhảy, không phải độ cao ban đầu.   
+	\item     Ở lần nhảy về, hướng nhảy thay đổi và bạn không thể áp dụng y nguyên công thức của lần nhảy đi (ví dụ, bạn có thể đánh lại chỉ số các cọc từ phải qua trái trước khi áp dụng công thức nhảy cao và nhảy xa).   
+	\item     Trong thời gian thi, bài nộp của bạn sẽ được chấm với cả 4 ví dụ bên dưới.   
+\end{itemize}
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     2 ≤    \textbf{     N    }    ,    \textbf{     H     $_      i     $}    ≤ 100; 1 ≤    \textbf{     x    }    ,    \textbf{     y    }    ,    \textbf{     u    }    ,    \textbf{     v    }    ≤ 100.   
+	\item     50\% số test có N ≤ 20.   
+	\item     70\% số test có N ≤ 40.   
+\end{itemize}
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+\textbf{Dữ liệu 1:}
+5
+2 1 5 50
+9 2 6 2 4\end{verbatim}
+\begin{verbatim}
+\textbf{Kết quả 1:}
+59
+\emph{Cách nhảy: 1 → 3 → 5, 5 → 4 → 3 → 2 → 1}\end{verbatim}
+\begin{verbatim}
+\textbf{Dữ liệu 2:}
+2
+5 1 3 1
+11 11\end{verbatim}
+\begin{verbatim}
+\textbf{Kết quả 2:}
+8
+\emph{Cách nhảy: 1 → 2, 2 → 1}\end{verbatim}
+\begin{verbatim}
+\textbf{Dữ liệu 3:}
+7
+1 1 100 1
+7 2 2 2 2 2 4
+
+\textbf{Kết quả 3:}
+612
+\emph{Cách nhảy: 1 → 2 → 3 → 4 → 5 → 6 → 7, 7 → 2 → 1}\textbf{Dữ liệu 4:}
+6
+5 1 20 1
+9 5 2 7 2 5
+
+\textbf{Kết quả 4:}
+207
+\emph{Cách nhảy: 1 → 6, 6 → 5 → 4 → 2 → 1}\end{verbatim}
+\begin{verbatim}
+Dữ liệu 2:11 11Cách nhảy: 1 -$>$ 6, 6 -$>$ 5 -$>$ 4 -$>$ 2 -$>$ \end{verbatim}

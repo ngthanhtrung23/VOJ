@@ -1,0 +1,44 @@
+
+
+
+
+   Palindrome là xâu đọc từ trái qua phải giống như đọc từ phải qua trái, ví dụ xâu ‘abba’ hoặc ‘madam’.  
+
+   Với xâu s bất kỳ người ta xác định phép chia đôi ký hiệu là half(s) và định nghĩa như sau:   
+\\   • Nếu s không phải là palindrome thì half(s) không xác định,   
+\\   • Nếu s có độ dài bằng 1 thì half(s) không xác định,   
+\\   • Nếu s là palindrome độ dài n thì half(s) là xâu k ký tự đầu của s, trong đó k = (n+1) div 2.  
+
+   Ví dụ, half(informatics) và half(i) là không xác định, half(abba) = ‘ab’, half(madam) =’mad’.  
+
+   Bậc palindrome (ta sẽ gọi ngắn gọn là bậc) của xâu s là số lần tối đa có thể áp dụng phép chia đôi mà kết quả vẫn xác định. Ví dụ, các xâu ‘informatics’ và ‘i’ có bậc bằng 0 vì không thể áp dụng phép chia đôi một lần nào, các xâu ‘abba’, ‘madam’ có bậc bằng 1, còn xâu ‘totottotot’ có bặc bằng 3: ‘totottotot’ -$>$ ‘totot’ -$>$ ‘tot’ -$>$ ‘to’.       Yêu cầu:      Xét tất cả các xâu độ dài n chỉ chứa các chữ cái la tinh thường và có bậc palindrome bằng p. Hãy xác định xâu thứ k theo thứ tự từ điển (1 ≤ n ≤ 200, 0 ≤ p ≤ 8, 1 ≤ k ≤10\textasciicircum9). Dữ liệu đảm bảo tồn tại xâu cần tìm.  
+
+\subsubsection{   Input  }
+
+   Gồm một dòng duy nhất chứa 3 số n, p, k.  
+
+\subsubsection{   Output  }
+
+   In ra xâu tìm đựơc  
+
+\subsubsection{   Example  }
+\begin{verbatim}
+Input:
+4 1 1
+Output:
+abba
+
+
+
+Input:
+10 3 490
+Output:
+totottotot
+
+
+
+Input:
+5 0 6597777
+Output:
+olymp
+\end{verbatim}

@@ -1,0 +1,40 @@
+
+
+
+
+   Cho một ma trận A kích thước n*n chỉ gồm các giá trị \{ -1 , -2 , 0 , 1 , 2 , 3 \}   
+\\   Giả thiết 2 $<$= n $<$= 300.   
+\\   Bảng A gọi là tương thích với dãy T = (t1, t2, ..., tn), hay dãy T tương thích với bảng A nếu:   
+\\   • Aij = 0  :   ti = tj   
+\\   • Aij = 1  :   ti $<$ tj   
+\\   • Aij = -1 :   ti $>$ tj   
+\\   • Aij = 2  :  ti $<$= tj   
+\\   • Aij = -2 :   ti $>$= tj   
+\\   • Aij = 3  :   ti khác tj   
+\\   (Với mọi i, j: 1 $<$= i, j $<$= n)   
+\\   Yêu cầu : cho trước bảng quan hệ A, hãy tìm dãy số nguyên dương T = (t1, t2, ..., tn) tương thích với bảng A mà max(T) là bé nhất có thể. Biết rằng luôn tồn tại một dãy như vậy .  
+
+\subsubsection{   Input  }
+
+   Dòng đầu tiên là số nguyên N .   
+\\   N dòng sau mỗi dòng gồm N số nguyên mô tả ma trận A.  
+
+\subsubsection{   Output  }
+
+   Dòng đầu tiên ghi ra max( T ) . Dòng thứ 2 ghi ra dãy số T1 , T2 , .. Tn . Mỗi số ghi cách nhau ít nhất một dấu cách .  
+
+\subsubsection{   Example  }
+\begin{verbatim}
+Input:
+6
+ 0  1  1  1  2  2
+-2  0  1  0  2  2
+-2 -1  0  3  0  1
+-2 -2  3  0  1  1
+-1 -2  0 -1  0  1
+-1 -2 -1 -1 -1  0
+
+Output:
+4
+1 2 3 2 3 4 
+\end{verbatim}

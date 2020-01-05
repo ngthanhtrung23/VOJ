@@ -1,0 +1,51 @@
+
+
+
+
+   Bạn là giám đốc một công ti quảng cáo được giao trọng trách phục vụ kì thi JCIOI. BTC đặt hàng công ti bạn làm một tấm biển quảng cáo cho kì thi, tấm biển này là một tấm gỗ lớn có hình chữ nhật, BTC yêu cầu nội dung của tấm biển (vùng màu xám trong ảnh dưới) phải được thể hiện bằng màu nguyên thủy của tấm gỗ (do đây là một loại gỗ rất đẹp!), để làm được như vậy thì các vùng xung quanh (vùng màu trắng trong ảnh dưới) phải được sơn màu khác biệt để làm bổi bật nội dung cần thể hiện. Để làm tấm biển này, thợ sơn sẽ dán lên đó các miếng đề can để che đi phần không được sơn, sau đó họ có thể thao tác thoải mái và cuối cùng chỉ cần bóc các miếng đề can ra là xong, do vậy mà các miếng đề can này cũng không cần đẹp hay phải cắt đúng hình dạng cần dán, thay vào đó những người thợ sơn đã tận dụng các miếng đề can cũ (có dạng là các hình chữ nhật) để dán lên tấm biển (chúng có thể chồng lên nhau, miễn sao được việc!). Và để cho tấm biển thêm phần sinh động, bạn quyết định sơn mỗi vùng được bao bởi cạnh của tấm biển gỗ hoặc các miếng đề can bằng một màu khác nhau!   
+\\   Trong hình dưới đây, cần sử dụng 5 màu khác nhau để sơn tấm biển này.  
+
+
+\includegraphics{http://www.spoj.pl/content/anhdq:masktape_samp_test_11.jpg}
+
+
+
+   Cho dữ liệu về tấm biển gỗ trước khi sơn (để tiện thao tác trên máy tính, tất cả các hình chữ nhật được mô tả đều có cạnh song song với các trục tọa độ), bạn hãy viết chương trình tính toán xem cần bao nhiêu màu khác nhau để sơn tấm biển đó!  
+
+\subsubsection{   Dữ liệu  }
+
+   - Dòng đầu tiên chứa 2 số nguyên w, h là kích thước của tấm biển.   
+\\   - Dòng thứ hai chứa số n là số miếng đề can được sử dụng.   
+\\   - Dòng thứ 2 + i (1 ≤ i ≤ n) chứa 4 số nguyên x   $_    1   $   ， y   $_    1   $   ， x   $_    2   $   ， y   $_    2   $   (0 ≤ x   $_    1   $   $<$ x   $_    2   $   ≤ w，0 ≤ y   $_    1   $   $<$ y   $_    2   $   ≤ h). Trong đó (x   $_    1   $   , y   $_    1   $   ) và (x   $_    2   $   , y   $_    2   $   ) thể hiện tọa độ đỉnh trái dưới và đỉnh phải trên của miếng đề can thứ i.   
+\\\textit{     Chú ý rằng đỉnh trái dưới của tấm biển có tọa độ (0, 0) và đỉnh phải trên có tọa độ (w, h).    }
+
+\subsubsection{   Kết quả  }
+
+   - Chứa một số nguyên duy nhất là số màu sơn cần phải sử dụng.  
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu:
+15 6
+10
+1 4 5 6
+2 1 4 5
+1 0 5 1
+6 1 7 5
+7 5 9 6
+7 0 9 2
+9 1 10 5
+11 0 14 1
+12 1 13 5
+11 5 14 6
+
+Kết quả:
+5
+\end{verbatim}
+\includegraphics{http://www.spoj.pl/content/anhdq:masktape_samp_test_12.jpg}
+
+\subsubsection{   Giới hạn  }
+
+   - 1 ≤ n ≤ 1000.   
+\\   - 1 ≤ w, h ≤ 10   $^    6   $   .   
+\\\textit{     30\% số test (ứng với 30\% số điểm) của bài có  w ≤ 100, h ≤ 100, n ≤ 100.    }

@@ -1,0 +1,46 @@
+
+
+\textbf{Sau khi C11 chính thức mang tên mới là VOS - VNOI ONLINE SERIES, các admin VOS của chúng ta quyết định ăn mừng bằng cách tổ chức đi du lịch ở... vương quốc dừa của \emph{ pirakute. } Lại nói về vương quốc dừa của pirakute, cả vương quốc bao gồm \textbf{ N }\textbf{}\textbf{ hòn đảo được nói với nhau bởi }\textbf{\textbf{ N-1 }}\textbf{ cây cầu dừa, sao cho từ bất kì hòn đảo nào cũng tồn tại duy nhất một đường đi đến các hòn đảo khác. }}
+
+Đoàn du lịch các admin của chúng ta đã tham gia rất nhiều tour tham quan trên vương quốc dừa, mỗi tour bao gồm việc xuất phát từ một hòn đảo u, qua một dãy các hòn đảo bằng các cây cầu dừa sao cho mỗi hòn đảo chỉ đi qua một lần duy nhất, và kết thúc ở hòn đảo v.
+
+Sau chuyến du lịch dài ngày, cả đoàn của chúng ta đã vui chơi thỏa thích, có điều do mãi vui chơi nên chả ai nhớ được tổng cộng đoàn đã tham gia tất cả bao nhiêu tour du lịch. Rất may là mỗi cây cầu dừa ở vương quốc dừa đều có gắng máy ghi hình để đếm số lần đoàn chúng ta đi qua cây cầu dừa đó. Nghĩa là mỗi lần đoàn tham quan tham gia 1 tour tham quan từ đảo u đến đảo v thì các cây cầu dừa trên đường đi từ đảo u đến đảo v sẽ đếm thêm 1 lần đoàn đi qua. Dựa vào số liệu hệ thống các hòn đảo, các cây cầu dừa và số lần đoàn du lịch đã đi qua các cây cầu đó, hãy đếm số lượng tour du lịch ít nhất mà đoàn tham quan đã tham gia.
+
+Ví dụ, ta có sơ đồ vương quốc dừa như bên dưới với 6 hòn đảo. Trong đó đoàn tham quan đã đi qua cây cầu dừa 3-4 được 2 lần, đi qua các cây cầu dừa 1-2, 4-5, 4-6 được 1 lần, và chưa đi qua cây cầu dừa 2-3 lần nào. Trong trường hợp này, đoàn tham quan của chúng ta phải tham gia ít nhất là 3 tour tham quan:
+\begin{itemize}
+	\item Tour thứ 1: 1 - 2
+	\item Tour thứ 2: 3 - 4 - 5
+	\item Tour thứ 3: 3 - 4 - 6
+\end{itemize}
+
+\subsubsection{Input}
+\begin{itemize}
+	\item Dòng đầu tiên có số N là số hòn đảo.
+	\item N-1 dòng tiếp theo, mỗi dòng chứa 3 số u, v, w cách nhau bởi 1 dấu cách, có nghĩa là có 1 cây cầu dừa nối hòn đảo u, v và đoàn tham quan đã đi qua cây cầu dừa đó tổng cộng w lần.
+\end{itemize}
+
+\subsubsection{Output}
+\begin{itemize}
+	\item Một số duy nhất là số lượng tour tham quan ít nhất mà đoàn của chúng ta đã tham gia.
+\end{itemize}
+
+\subsubsection{Giới hạn:}
+\begin{itemize}
+	\item Trong 20\% số test có n $<$= 10, 0 $<$= w $<$= 5
+	\item Trong 20\% số test kết tiếp có n $<$= 100, 0 $<$= w $<$= 100
+	\item Trong 20\% số test kế tiếp có n $<$= 10000, 0 $<$= w $<$= 10000
+	\item Trong 40\% số test còn lại có n $<$= 10 $^ 6 $ , 0 $<$= w $<$= 10 $^ 12 $
+\end{itemize}
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+6
+1 2 1
+2 3 0
+3 4 2
+4 5 1
+4 6 1
+
+\textbf{Output:}
+3\end{verbatim}

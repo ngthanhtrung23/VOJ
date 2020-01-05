@@ -1,0 +1,51 @@
+
+
+ 
+
+Nhà của \emph{ yenthanh132 } dạo này có rất nhiều kiến, mua bao nhiêu quà bánh, kẹo mức gì về chưa kịp ăn là đã bị chúng bu lạ xơi tái ngay. Khổ nổi chúng dường như biết tổ chức theo kiểu quân đội, hay đi kiếm ăn theo từng cụm, lại thường kết hợp với đánh du kích. Nhớ lúc nào đang thấy chúng bò đầy nhà, thế mà sau khi \emph{ yenthanh132 } đi mua bình xịt kiến về là chúng biến mất tâm. @@
+
+Quyết không chịu thua, \emph{ yenthanh132 } quyết tâm tiêu diệt hết lũ kiến trong nhà "một lần và mãi mãi". Thế là \emph{ yenthanh132 } đã nghĩ ra được một kế sách hoàn hảo... đầu tiên anh ta mua một sợi dây dài vô tận và căn ra giữa nhà (nhà \emph{ yenthanh132 } rộng lắm nên dây dài cỡ nào mắc từ đầu nhà đến cuối nhà vẫn còn đc :) ) và sau đó phủ một lớp đường lên sợi dây. Xong việc, \emph{ yenthanh132 } bỏ ra ngoài đi ăn KFC với bạn bè. Đến lúc về, không ngoài dự đoán của \emph{ yenthanh132 } lũ kiến háu ăn đang bu đầy trên sợi dây. Lần này đã có chuẩn bị từ trước nên \emph{ yenthanh132 } lúc về đã tranh thủ mượn được từ \emph{ tohuuquan } một chai thuốc xịt kiến xịn rồi, đảm bảo xịt 1 lần là chết ngay.
+
+Sau khi quan sát thì \emph{ yenthanh132 } đã tính được có tất cả \textbf{ N } con kiến trên sợi dây, nếu ta xem sợi dây là trục Ox, nút trái của sợi dây là –oo, nút phải sợi dây là +oo thì con thứ i hiện tại đang ở tọa độ a[i]. Mỗi con kiến đang bò theo 1 hướng với một vận tốc cố định v[i]. v[i] là số dương nếu con kiến đang bò từ trái sang phải với vận tốc là v[i] (đơn vị/s), v[i] là số âm nếu con kiến đang bò từ phải sang trái với vận tốc là –v[i]. Như vậy tại thời điểm t nào đó thì con kiến thứ i sẽ có vị trí là p[i] = a[i] + t*v[i]. \emph{ yenthanh132 } chỉ có thể dùng chai thuốc xịt kiến để xịt một lần lên một vị trí nào đó trên sợi dây để giết chết toàn bộ các con kiến một lượt (vì nếu sau lần đầu xịt mà còn các con kiến còn sống thì chúng sẽ phát hiện ra mai phục và chạy trốn ngay). Giả sử \emph{ yenthanh132 } xịt thuốc lên điểm có tọa độ x với liều lượng thuốc là E vào một thời điểm nào đó thì các con kiến có tọa độ nằm trong đoạn [x – E; x + E] sẽ bị tiêu diệt, nếu một thời điểm nào đó cả \textbf{ N } con kiến đều đến cùng một vị trí thì ta chỉ cần xịt lên đúng 1 điểm đó với một lượng thuốc rất nhỏ, trường hợp này ta có thể xem như E = 0 (Xem ví dụ để hiểu rõ hơn). Do chai thuốc xịt kiến này là đồ mượn nên \emph{ yenthanh132 } cũng muốn xài tiết kiệm…
+
+\textbf{Yêu cầu: } Hãy giúp \emph{ yenthanh132 } tính xem liều lượng thuốc tối thiểu E mà anh ta cần dùng để tiêu diệt được toàn bộ lũ kiến, biết rằng \emph{ yenthanh132 } có thể xịt thuốc ngay lập tức hoặc quyết định đợi một khoảng thời gian thích hợp để xịt thuốc tiêu diệt toàn bộ lũ kiến.
+
+\subsubsection{\textbf{Dữ liệu vào }}
+\begin{itemize}
+	\item Dòng đầu tiên chứa số \textbf{ N } là số lượng các con kiến.
+	\item Dòng thứ 2 chứa \textbf{ N } số nguyên a[i] (i từ 1 đến \textbf{ N) } là vị trí hiện thời của \textbf{ N } con kiến
+	\item Dòng thứ 3 chứa \textbf{ N } số nguyên v[i] (i từ 1 đến \textbf{ N) } là vận tốc của \textbf{ N } con kiến.
+\end{itemize}
+
+\subsubsection{\textbf{Dữ liệu ra }}
+\begin{itemize}
+	\item Một số thực duy nhất là giá trị liều lượng E nhỏ nhất mà \emph{ yenthanh132 } cần sử dụng. In ra kết quả làm tròn đến 3 chữ số thập phân.
+\end{itemize}
+
+\subsubsection{Giới hạn}
+\begin{itemize}
+	\item Trong 50\% số test có 2 ≤ \textbf{ N } ≤ 100.
+	\item Trong tất cả các test có 2 ≤ \textbf{ N } ≤ 10 $^ 5 $ .
+	\item -10 $^ 9 ≤ $ a[i], v[i] ≤ 10 $^ 9 $
+\end{itemize}
+\begin{itemize}
+\end{itemize}
+
+\subsubsection{\textbf{Ví dụ }}
+\begin{verbatim}
+\textbf{Input:}
+2
+1 2
+1 -1
+\end{verbatim}
+\begin{verbatim}
+\textbf{Output:}
+0.000\end{verbatim}
+
+\subsubsection{Giải thích}
+\begin{itemize}
+	\item Ban đầu, 2 con kiến đang ở tại vị trí 1 và 2
+	\item Sau 0.5s, 2 con kiến gặp nhau tại vị trí 1.5
+	\item Tận dụng lúc đó \emph{ yenthanh132 } đã xịt một phát với lượng thuốc E = 0 (rất nhỏ, xem như gần bằng 0) tại X = 1.5
+	\item Thế là anh đã giết được một lúc 2 con kiến.
+\end{itemize}

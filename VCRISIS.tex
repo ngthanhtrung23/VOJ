@@ -1,0 +1,66 @@
+
+
+
+
+   Nông dân John và đàn bò ngốc nghếch của ông ta đang tập luyện cho vở  nhạc kịch mới, "The Street Cow Named Desire". Tại một thời điểm trong  lúc diễn tập, đàn bò của John chồng lên nhau thành N (1 $<$= N $<$= 1,000)  cột, mỗi cột có 30 con, con nọ đứng lên lưng con kia (mấy con bò này thật  thú vị). Vì thế mà trên đồng cỏ các cột bò này coi như là các ô nhỏ và  bên cạnh đó còn có M ô (1 $<$= M $<$= 1,000) là các đống cỏ khô.  
+
+   Dưới đây là ví dụ về một đồng cỏ :  
+\begin{verbatim}
+                8 .........
+                7 ....CH.H.         C = cột 30 con bò
+                6 .........
+                5 .........         H = đống cỏ khô
+                4 ..C.HH...
+                3 .........
+                2 .....C.HH
+                1 .........
+                  123456789
+\end{verbatim}
+
+   Là người chỉ đạo buổi nhạc kịch, John có 4 cái còi với 4 âm thanh khác nhau. Một cái còi sẽ ra lệnh cho tất cả các con bò ở dưới cùng của mỗi cột bò  di chuyển ( tất cả các con bò ở cột đó tất nhiên cũng bị di chuyển theo )về phía  bắc 1 đơn vị, cái khác lại ra lệnh cho di chuyển về phía nam, 1 cái  về phía đông và cái còn lại về hướng tây.  
+
+   Mỗi lần các cột bò đi vào một ô mà có cỏ khô, con bò trên cùng của cột  bò ( kể cả nếu cột bò chỉ còn mỗi một con ) sẽ nhảy vào đống cỏ khô trong  khi số còn lại sẽ tiếp tục di chuyển vào ô có đống cỏ đó. Vì vậy, nếu con  bò ở dưới cùng mà đi qua 30 đống cỏ khô ( các đống cỏ có thể khác nhau  hoặc không khác nhau ) thì cột bò sẽ hết sạch bò. Giả sử rằng các đống cỏ  khô có sức chịu đựng là không giới hạn, bao nhiêu bò ở trên cũng được.  
+
+   Nông dân John liếc qua đồng cỏ của mình nhìn về phía khu vắt sữa bò  của nông dân Don và kinh hoàng khi thấy một thùng chứa sữa khổng lồ  bị nổ tung, sữa đổ tràn ra ngoài thành một cơn lũ sữa và nó đang  tràn về phía các con bò của John. Các con bò ở trên các đống cỏ khô  thì sẽ an toàn, John cần phải làm tất cả để cứu được nhiều con bò nhất  có thể bằng cách sử dụng các cái còi để ra lệnh cho đàn bò.  
+
+   Cho số nguyên K ( 1 $<$= K $<$= 30 ) là số giây John có thể thổi còi cho  đến khi lũ sữa ập tới và các tọa độ X\_i, Y\_i (1 $<$= X\_i $<$= 1,000;  1 $<$= Y\_i $<$= 1,000) của N cột bò và M đống cỏ khô ( trên các đống  cỏ khô hiện thời chưa có con bò nào ), hãy cho biết số lượng lớn nhất bò  có thể cứu được và trình tự thổi còi ra sao. Trình tự thổi còi sẽ  là một xâu ký tự bao gồm 4 loại ký tự tương ứng với 4 hướng, ‘E’ là  hướng Đông, ‘N’ là hướng Bắc, ‘W’ là hướng Tây, ‘S’ là phía Nam.  Trong tất cả các trình tự thoả mãn thì ghi ra trình tự có thứ tự từ điển nhỏ nhất.  
+
+   Vị trí lúc đầu của các con bò và các đống cỏ là khác nhau.  
+
+   Các con bò có thể di chuyển tới bất kỳ vị trí nào, kể cả ra ngoài cánh đồng.  
+
+\subsubsection{   Dữ liệu  }
+\begin{itemize}
+	\item     Dòng 1: 3 số nguyên cách nhau bởi dấu cách: N, M, và K   
+	\item     Dòng 2..N+1: Dòng i+1 mô tả tọa độ X,Y của 1 cột bò         bằng 2 số nguyên cách nhau bởi dấu cách: X\_i và Y\_i   
+	\item     Dòng N+2..N+M+1: Dòng i+N+1 mô tả tọa độ X,Y của một         đống cỏ khô bằng 2 số nguyên cách nhau bởi dấu cách: X\_i and Y\_i   
+\end{itemize}
+
+\subsubsection{   Kết quả  }
+\begin{itemize}
+	\item     Dòng 1: Một số nguyên cho biết số lượng nhiều nhất bò có thể cứu được.   
+	\item     Dòng 2: K ký tự, trình tự ra lệnh có thứ tự từ điển nhỏ nhất mà John có thể thực hiện nhằm cứu được nhiều con bò nhất.   
+\end{itemize}
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu
+3 6 3
+3 4
+6 2
+5 7
+8 2
+9 2
+6 4
+5 4
+6 7
+8 7
+
+Kết quả
+6
+EEE
+\end{verbatim}
+
+\subsubsection{   Giải thích  }
+
+   Sử dụng còi ‘Đông’ 3 lần, lúc mà cơn lũ sữa tràn đến  thì ở mỗi đống cỏ cứu được 1 con bò.  

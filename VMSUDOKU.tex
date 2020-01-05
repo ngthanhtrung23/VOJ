@@ -1,0 +1,63 @@
+
+
+ 
+
+Sudoku là một trò chơi trí tuệ dành cho 1 người, được chơi trên bảng 9x9, chia thành 9 hình vuông nhỏ 3x3.
+
+
+\includegraphics{http://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Sudoku-by-L2G-20050714.svg/500px-Sudoku-by-L2G-20050714.svg.png}
+
+Ban đầu có một số ô của bảng chứa các chữ số 1 đến 9. Những ô còn lại rỗng.
+
+Nhiệm vụ của người chơi Sudoku là điền các chữ số từ 1 đến 9 vào bảng, sao cho trong mỗi hàng, mỗi cột, và trong 9 ô vuông 3x3 của bảng có đủ tất cả các chữ số từ 1 đến 9 (nói cách khác, mỗi chữ số từ 1 đến 9 xuất hiện đúng một lần trong mỗi hàng, mỗi cột, và trong 9 ô vuông 3x3).
+
+Nhiệm vụ của bạn trong bài toán này hơi khác một chút: thay vì điền tiếp các chữ số vào bảng Sudoku, bạn cần tạo ra 1 bảng Sudoku hợp lệ (nghĩa là mỗi hàng, mỗi cột, và 9 ô vuông 3x3 đều có đủ các chữ số từ 1 đến 9).
+
+\subsubsection{Input}
+
+Bài này không có input
+
+\subsubsection{Output}
+
+In ra đúng 9 dòng, mỗi dòng gồm 9 ký tự là 9 chữ số của dòng tương ứng.
+
+\subsubsection{Cách tính điểm}
+\begin{itemize}
+	\item Nếu bạn đưa ra một bảng Sudoku không hợp lệ, bạn được 0 điểm.
+	\item Ngược lại, điểm của bạn được tính như sau:
+\begin{itemize}
+	\item Gọi ô ở hàng u, cột v là ô (u, v).
+	\item Với mỗi số i từ 1 đến 9, ta định nghĩa
+\\
+\includegraphics{../../../content/voj:VMSUDOKU2.png}
+\\với tất cả các cặp ô (u, v) và (x, y) chứa số i.
+	\item Điểm của bạn được tính theo công thức:
+\\
+\includegraphics{../../../content/voj:VMSUDOKU1.png}
+\end{itemize}
+	\item Điểm càng cao càng tốt. Vì đây là bài challenge, điểm cuối cùng mà bạn nhận được trong VM14 sẽ được tính theo công thức:
+\begin{itemize}
+	\item Giả sử bạn đứng thứ i (nghĩa là có i-1 người điểm cao hơn bạn).
+	\item Điểm của bạn nhận được sẽ là
+\\
+\includegraphics{../../../content/voj:VMSUDOKU3.png}
+\\với log là log cơ số e.
+\end{itemize}
+\end{itemize}
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Output:}
+683459172
+241673859
+759182364
+492836715
+536217498
+817594236
+928361547
+174925683
+365748921
+
+
+Với output này, sum(1) = 398, sum(2) = 404, ..., sum(9) = 374, tổng(i * sum(i)) = 17056. Điểm bạn nhận được là 56.
+\end{verbatim}

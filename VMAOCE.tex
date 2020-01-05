@@ -1,0 +1,55 @@
+
+
+
+
+   Vào năm 2410, sau khi Pirate vĩ đại của vương quốc Dừa đã không còn, cảnh chọi dừa đổ máu xảy ra như cơm bữa. Dân chúng ngày càng lầm than vì dừa, là lương thực chính của mọi người, đã bị mang đi chọi gần hết. Tuy nhiên , một số kẻ khôn ngoan đi nhặt dừa về tích trữ. Họ trở nên giàu có và hùng mạnh đến mức mỗi người chiếm lấy một hòn đảo để thành lập vương quốc riêng. Sử gọi đây là thời đại của các đế chế dừa (Age of Coconut Empires).  
+
+   Quần đảo dừa gồm N hòn đảo. Vì xung quanh đảo (dĩ nhiên) tòan nước nên từ xa xưa Pirate đã cho xây các cầu dừa để nối các cặp hòn đảo lại với nhau. Nhắc đến đây phải kể đến sự thiên tài lỗi lạc của Pirate trong việc tính toán xây cầu: hệ thống cầu được thiết kế sao cho hai hòn đảo bất kì đến đi đến đựơc nhau, nhưng nếu bất kì một cây cầu nào đó bị hỏng thì lập tức điều đó sẽ không được đảm bảo.  
+
+   Các quốc gia sau nhiều năm chọi dừa đã trở nên kiệt quệ. Lý do là vì mỗi đảo cùng lúc phải chọi và hứng dừa của N - 1 đảo khác. Thời thế tạo anh hùng, Pirakute (cháu 10 đời của Pirate) du thuyết N đảo về kế sách "tam phân thiên hạ" với ước mong giúp giảm bớt nạn binh đao chọi dừa.  
+
+   Pirakute giảng giải: "Tam phân thiên hạ thật chẳng có gì khó, chỉ cần tam phân một hòn đảo là đủ. Có nghĩa ta sẽ phân chia hòn đảo đó làm ba lãnh địa, là ranh giới của ba đế chế mới.   \emph{    Không có ai thể đi lại tự do từ đế chế này sang đế chế khác   }   . Tiếp theo, các nước có cầu dừa nối đến hòn đảo bị phân chia phải lựa chọn đế chế nào để liên minh, rồi phá bỏ cây cầu cũ nối đến hòn đảo bị phân chia để xây dựng cây cầu mới nối đến lãnh địa của đế chế mình trên hòn đảo này. Chuyện còn lại là tất yếu, các hòn đảo còn lại buộc lòng phải gia nhập vào đế chế mà mình có thể tự do đi đến được (tức là   \emph{    không phải băng qua ranh giới   }   nằm trên hòn đảo bị phân chia). Tuy nhiên, hòn đảo bị phân chia sẽ bị tiêu diệt, sau này chỉ đóng vai trò làm ranh giới và   \emph{    không thuộc vào vương quốc nào cả   }   ."  
+
+   "Chỉ có điều, phân chia hòn đảo nào, việc này tôi cũng không rõ. Nhưng ngu kiến của tôi là sau khi hoàn thành viêc phân chia thiên hạ, mỗi đế chế mới sẽ gồm ít nhất một đảo và không quá một nửa số đảo trong quần đảo (N/2). Như vậy cục diện mới cân bằng, thiên hạ mới thái bình dài lâu."  
+
+   Bạn hãy giúp Pirakute tìm một phương án để tam phân thiên hạ nhé.  
+
+\subsubsection{   Inpute  }
+\begin{itemize}
+	\item     Dòng thứ nhất chứ một số nguyên N, số đảo trong quần đảo.   
+	\item     Các dòng tiếp theo, mỗi dòng chứa hai số nguyên, mô tả một cặp đảo đựơc nối bởi một cây cầu dừa. Các đảo được đánh số từ 1 đến N.   
+\end{itemize}
+
+\subsubsection{   Output  }
+\begin{itemize}
+	\item     Gồm 1 dòng chứa N số, số thứ i là 0 nếu i là hòn đảo bị phân chia, ngược lại là 1, 2 hoặc 3 tương ứng với vương quốc của hòn đảo đó. Nếu không thể tam phân thiên hạ, xuất ra duy nhất một số -1.   
+\end{itemize}
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     1 ≤ N ≤ 100000.   
+	\item     30\% số test có 1 ≤ N ≤ 1000.   
+	\item     Hệ thống đường mô tả trong input đảo bảm tính chất được nêu ra ở đề bài.   
+\end{itemize}
+
+\subsubsection{   Chấm bài  }
+
+   Bài của bạn sẽ được chấm trên thang điểm 100. Điểm mà bạn nhận được sẽ tương ứng với \% test mà bạn giải đúng.  
+
+   Trong quá trình thi, bài của bạn sẽ chỉ được chấm với test ví dụ có trong đề bài.  
+
+   Khi vòng thi kết thúc, bài của bạn sẽ được chấm với bộ test đầy đủ.  
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+6
+\\1 2
+\\1 3
+\\3 4
+\\3 5
+\\5 6
+\\
+\\\textbf{Output:}
+1 1 0 2 3 3
+\end{verbatim}

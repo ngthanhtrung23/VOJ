@@ -1,0 +1,70 @@
+
+
+ 
+
+Năm học kết thúc cũng là lúc các sinh viên như Raldono và Balitello tìm kiếm công việc thực tập ở các công ty lớn trong hè. Và thành tích hai người bạn của chúng ta đạt được trong kì thi Virtual Marathon 2012 (VM12) đã gây ấn tượng mạnh với Neki, một trong những nhà sản xuất dụng cụ thể thao nổi tiếng nhất trên thế giới, nên Raldono và Balitello đã nhận được cơ hội thực tập trong bộ phận IT của công ty này.
+
+Để chuẩn bị cho mùa giải mới 2012 - 2013 sắp khởi tranh, Neki quyết định triển khai một dự án tài trợ hoàn toàn mới cho các đội bóng với số tiền \textbf{ S } cho mỗi đội bóng và họ đã nhận được lời đề nghị tài trợ từ \textbf{ N } đội bóng (được đánh số từ 1 đến N). Đội thứ i đề nghị nhận hợp đồng tài trợ với số tiền \textbf{ A $_ i $} trong một năm. Trước khi quyết định chuyện kí hợp đồng, trưởng phòng kinh doanh của Neki muốn chọn ra một shortlist của các đội để việc lựa chọn được dễ dàng hơn. Để thu được shortlist, ta sẽ loại bớt một số đội trong danh sách N đội ban đầu, shortlist có thể bao gồm cả N đội, tuy nhiên phải có ít nhất 1 đội. Đặc biệt, một công ty lớn như Neki luôn muốn đảm bảo công việc được thực hiện một cách có hiệu quả nhất nên \textbf{ shortlist hiệu quả } phải thỏa 2 yêu cầu sau:
+\begin{itemize}
+	\item Nếu kí hợp đồng với 1 đội bất kì trong shortlist thì phải đảm bảo số tiền S được sử dụng hết nếu hợp đồng được kí theo từng năm (số tiền tài trợ trong một năm dành cho đội bóng đó sẽ đúng bằng con số đã ghi trong hợp đồng, không thừa cũng không thiếu). Ví dụ, nếu số tiền S là 12 thì các đội đề nghị hợp đồng \textbf{ khác } 1, 2, 3, 4, 6, 12 sẽ không được nằm trong shortlist.
+\end{itemize}
+\begin{itemize}
+	\item Không tồn tại 1 số tiền nguyên dương S' $<$ S mà S' thỏa điều kiện trên. Ví dụ nếu số tiền S là 12 thì shortlist gồm 2 đội đề nghị hợp đồng là 2 và 3 sẽ không thỏa yêu cầu vì tồn tại S' = 6.
+\end{itemize}
+
+Công việc chọn shortlist được giao cho Raldono và Balitello. Cụ thể là họ sẽ \textbf{ lần lượt } chọn các đội bóng có tiềm năng để đưa vào shortlist và gửi lên cho trưởng phòng kinh doanh. Mỗi lượt, một người sẽ chọn 1 đội trong các đội bóng chưa được chọn ở các lượt trước. Raldono được ưu tiên chọn trước. Việc lựa chọn này sẽ được tiến hành cho tới khi danh sách các đội trưởng phòng đã nhận được từ \textbf{ cả hai người } tạo thành shortlist hiệu quả \textbf{ hoặc } danh sách này đã bao gồm N đội. Khi đó, người cuối cùng đề xuất ý kiến lên trưởng phòng kinh doanh sẽ được nhận một món quà đặc biệt hứa hẹn rất hấp dẫn từ trưởng phòng. Cả Raldono và Balitello đều muốn nhận món quà đó nên hai người luôn tìm cách lựa chọn tối ưu, hãy xác định ai sẽ là người nhận được quà.
+
+Lưu ý, Raldono và Balitello sẽ ưu tiên cho việc nhận được quà chứ không phải tìm ra một shortlist hiệu quả.
+
+\subsubsection{Input}
+\begin{itemize}
+	\item Dòng 1 chứa 2 số nguyên dương \textbf{ N } và \textbf{ S } .
+	\item Dòng 2 chứa N số nguyên dương \textbf{ A $_ 1 $} , \textbf{ A $_ 2 $} , ..., \textbf{ A $_ N $}
+\end{itemize}
+
+\subsubsection{Output}
+\begin{itemize}
+	\item Dòng 1 ghi "Raldono" hoặc "Balitello" (không có dấu ngoặc kép) tương ứng với người nhận được quà.
+	\item Dòng 2:
+\begin{itemize}
+	\item Nếu Raldono nhận được quà, ghi ra tất cả chỉ số của các đội theo thứ tự tăng dần mà nếu chọn 1 trong các đội đó ở lượt đầu tiên, Raldono có thể nhận được quà.
+	\item Ngược lại nếu Balitello nhận được quà, ghi ra N số M $_ 1 $ , M $_ 2 $ , ..., M $_ N $ (2 số cách nhau ít nhất 1 khoảng trắng), trong đó M $_ i $ là số nhỏ nhất thỏa điều kiện nếu Raldono chọn đội i ở lượt đầu tiên thì Balitello có thể nhận được quà nếu chọn đội M $_ i $ ở lượt thứ hai.
+\end{itemize}
+\end{itemize}
+
+\subsubsection{Giới hạn}
+
+Trong tất cả các test:
+\begin{itemize}
+	\item N ≤ 50
+	\item S ≤ 10 $^ 12 $
+	\item A $_ i $ ≤ 10 $^ 9 $
+\end{itemize}
+
+Trong 30\% số test, N ≤ 10.
+
+Trong 60\% số test, N ≤ 20.
+
+\subsubsection{Example}
+
+\textbf{Input }
+\begin{verbatim}
+5 12
+2 2 3 4 5\end{verbatim}
+
+\textbf{Output }
+\begin{verbatim}
+Raldono
+1 2 5\end{verbatim}
+
+ 
+
+\textbf{Input }
+\begin{verbatim}
+4 60
+3 4 5 2\end{verbatim}
+
+\textbf{Output }
+\begin{verbatim}
+Balitello
+4 4 4 1\end{verbatim}

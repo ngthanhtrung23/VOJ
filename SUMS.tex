@@ -1,0 +1,48 @@
+
+
+
+
+   Cho tập số nguyên A gồm n phần tử, A=\{a1, a2,..., an\}. Số k được gọi là phụ thuộc vào tập A, nếu k được tạo thành bằng cách cộng các phần tử của tập A(mỗi phần tử có thể cộng nhiều lần).  
+
+   Ví dụ  cho A=\{2,5,7\}.  Các số như 2, 4(2+2), 12(5+7 hoặc 2+2+2+2+2) được gọi là phụ thuộc vào tập A. Số 0 cũng gọi là phụ thuộc vào tập A.  
+
+\subsubsection{   Yêu cầu:  }
+
+   Cho một dãy B, hãy kiểm tra xem bi có phải là số phụ thuộc vào tập A hay không .  
+
+\subsubsection{   Dữ liệu:  }
+\begin{itemize}
+	\item     Dòng đầu tiên chứa số nguyên n (1 ≤ n ≤ 5000).   
+	\item     N dòng tiếp theo chứa các phân tử của tập A, a1 $<$ a2 $<$ ... $<$ an  (1  ≤ ai  ≤ 50000 ).   
+	\item     Dòng thứ N+2 chứa số nguyên m (1 ≤ m ≤ 10000 ).   
+	\item     M dòng tiếp theo chứa dãy số nguyên b1, b2, ..., bm (0 ≤ bi ≤ 1000000000 ).   
+\end{itemize}
+
+\subsubsection{   Kết quả:  }
+
+   Gồm m dòng, dòng thứ i ghi ra TAK nếu bi là số phụ thuôc vào tập A và NIE nếu không phải là số phụ thuộc.  
+
+\subsubsection{   Ví dụ:  }
+\begin{verbatim}
+Dữ liệu :
+3
+2
+5
+7
+6
+0
+1
+4
+12
+3
+2
+
+Kết quả :
+TAK
+NIE
+TAK
+TAK
+NIE
+TAK
+
+\\\end{verbatim}

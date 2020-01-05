@@ -1,0 +1,57 @@
+
+
+
+
+   Dãy ngoặc đúng được định nghĩa như sau:  
+\begin{itemize}
+	\item     Biểu thức rỗng là biểu thức ngoặc đúng có bậc bằng 0.   
+	\item     Nếu A là biểu thức ngoặc đúng có bậc bằng k thì (A), [A], \{A\} cũng là biểu thức ngoặc đúng có bậc k+1.   
+	\item     Nếu A và B tương ứng là hai biểu thức ngoặc đúng có bậc là kA, kB thì AB cũng là một biểu thức ngoặc đúng có bậc bằng max(kA, kB).   
+\end{itemize}
+
+   Ví dụ "()[()]" là một biểu thức ngoặc đúng có bậc bằng 2.  
+
+   Với hai số n, k người ta tiến hành tạo ra tất cả các biểu thức ngoặc đúng có độ dài đúng bằng n và có bậc không quá k. Sắp xếp các biểu thức ngoặc này theo thứ tự từ điển, chú ý: '(' $<$ ')' $<$ '[' $<$ ']' $<$ '\{' $<$ '\}'.  
+
+\textbf{      Yêu cầu     }   : Cho n, k và S là một biểu thức ngoặc đúng độ dài n và có bậc không quá k, hãy tìm thứ tự của S.  
+
+\textbf{     Input    }   :  
+\begin{itemize}
+	\item     Dòng đầu chứa hai số nguyên n, k.   
+	\item     Dòng thứ hai chứa xâu S.   
+\end{itemize}
+
+\textbf{      Output     }   :  
+\begin{itemize}
+	\item     Một dòng duy nhất chứa một số nguyên là thứ tự của biểu thức ngoặc đúng S.   
+\end{itemize}
+
+\textbf{      Example     }   :  
+
+    INPUT      :   
+\\   6 2   
+\\   (())\{\}  
+
+    OUTPUT      :   
+\\   4  
+
+   Giải thích:   
+\\   1. "(()())"   
+\\   2. "(())()"   
+\\   3. "(())[]"   
+\\   4. "(())\{\}"  
+
+\textbf{      Ràng buộc     }   :  
+\begin{itemize}
+	\item     n chẵn   
+	\item     2*k $<$= n   
+\end{itemize}
+
+\textbf{      Giới hạn     }   :  
+\begin{itemize}
+	\item     Trong 10\% test đầu tiên: n, k $<$= 10.   
+	\item     Trong 20\% test tiếp theo: n $<$= 20, k $<$= 5.   
+	\item     Trong 30\% test tiếp theo: n $<$= 100, k $<$= 5.   
+	\item     Trong 40\% test còn lại: n, k $<$= 100.   
+\end{itemize}
+

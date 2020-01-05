@@ -1,0 +1,37 @@
+
+
+Cho một bàn cờ vua kích thước nxn, trên mỗi ô của bàn cờ có ghi một con số. Biết ô trên trái của bàn cờ vua là ô trắng (các ô của bàn cờ vua có dạng xen kẽ trắng đen). Các cột được đánh số từ 1 đến n từ trái sang phải, các hàng được đánh số từ 1 đến n từ trên xuống dưới. Ô ở hàng i, cột j của bàn cờ được ký hiệu là ô (i, j).
+
+Cuội đưa ra những câu đố cho Bờm như sau: Cuội sẽ cho Bờm biết các vùng hình chữ nhật trên bàn cờ, nhiệm vụ của Bờm là phải tính giá trị tuyệt đối của độ chênh lệch giữa tổng giá trị các ô trắng và tổng giá trị các ô đen trên vùng hình chữ nhật đó. Bạn hãy lập trình giúp Bờm trả lời các câu đố của Cuội.
+
+\subsubsection{Dữ liệu}
+\begin{itemize}
+	\item Dòng đầu tiên: chứa số nguyên n (1 ≤ n ≤ 500).
+	\item Dòng thứ i trong số n dòng tiếp theo chứa n số nguyên a $_ i1 $ , a $_ i2 $ , ..., a $_ ij $ , cho biết các số trên hàng i của bàn cờ (0 ≤ a $_ ij $ $<$ 100).
+	\item Dòng thứ n+2: chứa số q, cho biết số câu đố của Cuội (1 ≤ q ≤ 10000).
+	\item q dòng tiếp theo, mỗi dòng chứa 4 số nguyên i $_ 1 $ , j $_ 1 $ , i $_ 2 $ , j $_ 2 $ cho biết các tọa độ của vùng hình nhật trong một câu đố của Cuội: tọa độ đỉnh trái trên là (i $_ 1 $ , j $_ 1 $ ) và đỉnh dưới phải là (i $_ 2 $ , j $_ 2 $ ).
+\end{itemize}
+
+\subsubsection{Kết quả}
+
+In ra q dòng, mỗi dòng cho biết đáp án của Bờm đối với câu đố tương ứng của Cuội.
+
+\subsubsection{Giới hạn}
+
+Có 50\% số test, tương ứng với 50\% số điểm, trong đó 1 ≤ n ≤ 100 và 1 ≤ q ≤ 2000.
+
+\subsubsection{Ví dụ}
+\begin{verbatim}
+Dữ liệu
+3 
+1 3 5
+2 4 6
+0 10 5
+2
+1 1 2 2
+1 2 3 3
+
+Kết quả
+0
+5
+\end{verbatim}

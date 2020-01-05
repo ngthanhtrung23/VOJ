@@ -1,0 +1,54 @@
+
+
+Đất nước Megaland rộng lớn có địa hình hiểm trở, giao thông đi lại khá khó khăn. N thành phố ở quốc gia này (được đánh số từ 1 đến N) phân bố rải rác khắp đất nước. Hệ thống giao thông cả nước chỉ gồm N-1 đoạn đường, mỗi đoạn đường này là đường đi hai chiều nối trực tiếp hai thành phố nào đó.  Thú vị là ở chỗ, chỉ với các đoạn đường đó, cư dân từ mỗi thành phố đều có thể đến được bất kỳ thành phố nào khác trong đất nước rộng lớn này.
+
+Với việc thủ đô hiện tại là thành phố P (1 ≤ P ≤ N), chính quyền Megaland nhận thấy có những thành phố khác phải mất một chặng đường dài tới K mile (mile - một đơn vị tính chiều dài được sử dụng tại đây) để đến được thủ đô và điều này đã gây không ít ảnh hưởng đến sự phát triển của đất nước. Bởi vậy, chính quyền có dự định thực hiện một dự án theo đó sẽ chọn một thành phố Q thích hợp (1 ≤ Q ≤ N, Q ≠ P) để nâng cấp thành một đơn vị hành chính ngang tầm thủ đô (xem như là thủ đô thứ hai). Nếu dự án được thực hiện thì từ thành phố bất kỳ, chỉ mất một chặng đường không quá L mile để đến được một trong hai thủ đô P hoặc Q.
+
+Giới đầu tư cho dự án quan tâm đến mức độ hiệu quả của dự án là bao nhiêu nếu hiệu quả này được đặc trưng bởi hiệu số M = K - L.
+
+ 
+
+\textbf{Yêu cầu : } Xác định giá trị lớn nhất của M
+
+\textbf{Dữ liệu vào: }
+
+- Dòng thứ nhất ghi số nguyên N (3 ≤ N ≤ 10000) và số P
+
+- N-1 dòng tiếp theo, mỗi dòng ghi ba số nguyên I, J, D với ý nghĩa: có đoạn đường nối
+
+trực tiếp hai thành phố I, J và chiều dài đoạn đường này là D mile (1 ≤ I, J ≤ N, 1 ≤ D ≤ 10 $^ 6 $ )
+
+ 
+
+\textbf{Kết quả: } Ghi ra  số M tìm được.
+
+ 
+
+\textbf{Ví dụ: }
+\begin{verbatim}
+\textbf{Input}
+10 2
+10 3 2
+10 4 1
+4 2 9
+9 5 4
+6 2 8
+7 10 8
+9 10 7
+8 6 1
+1 10 5
+
+\textbf{Output}
+10\end{verbatim}
+
+ 
+
+\textbf{Ràng buộc : }
+
+- Có 40\% số test ứng với 40\% số điểm của bài ứng với N ≤ 100.
+
+- Có 60\% số test ứng với 60\% số điểm của bài ứng với N ≤ 1000.
+
+- Có 80\% số test ứng với 80\% số điểm của bài ứng với N ≤ 5000.
+
+ 

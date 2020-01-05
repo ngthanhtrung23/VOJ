@@ -1,0 +1,100 @@
+
+
+
+
+\textbf{}   Đội tuyển Việt Nam trở về sau thất bại ê chề tại AFF Cup 2012 bị dư luận ném đá dữ dội. Sau sự kiện này, VFF cam kết cải tổ và đưa Việt Nam trở lại nền bóng đá mạnh trong khu vực. Cuối cùng điều đó cũng thành hiện thực! Năm 2112, đội tuyển quốc gia Việt Nam không chỉ đứng đầu Đông Nam Á mà còn cạnh tranh sòng phẳng với các quốc gia khác ở châu Á.  
+
+   Vòng loại World Cup châu Á đã đến. Đây là thời cơ chín muồi để Việt Nam giành một vé dự World Cup, vốn là giấc mơ của bao thế hệ. Năm 2112 vòng loại châu Á được tổ chức theo thể thức đá vòng tròn, gồm N đội, mỗi đội sẽ đá với một đội khác đúng M trận, có nghĩa là mỗi đội sẽ đá tổng cộng (N-1) x M trận. Trong một trận, đội thắng giành 2 điểm, hòa được 1 điểm và không giành điểm nào nếu thua.Đội vô địch là đội có số điểm cao nhất. Có thể không có đội vô địch, trong trường hợp có hơn một đội có tổng điểm cao nhất.  
+
+   Giả sử đội Việt Nam có số thứ tự 1 và có G trận đấu đã diễn ra. Hãy cho biết trong trường hợp thuận lợi nhất, Việt Nam có khả năng vô địch châu Á và giành chắc suất dự World Cup hay không.  
+
+\subsubsection{   Input  }
+
+   Mỗi bộ test gồm nhiều testcase, trong đó :   \textbf{
+\\}   Dòng đầu tiên là T – số testcase. Mỗi testcase gồm một số dòng, trong đó :   
+\\   Dòng đầu gồm 3 số N, M, G.   
+\\   Dòng i trong G dòng sau, mỗi dòng có dạng“A c B”, trong đó A B là số thứ tự của 2 đội đã đấu trận i còn c là một kí tự. c là ‘$<$’ tức đội A thua đội B còn c là ‘=’ tức 2 đội hòa nhau.  
+
+\emph{    Giới hạn   }   :    1$<$= T $<$= 6   
+\\   2 $<$= N $<$= 40,     1 $<$= M $<$= 4.   
+\\   Trong 40\% số bộ test T=1  
+
+\subsubsection{   Output  }
+
+   In ra T dòng tương ứng với từng test ‘Y’ nếu Việt Nam có thể vô địch hoặc ‘N’ nếu không.  
+
+\subsubsection{   Example  }
+
+\emph{    Lưu ý :   }   Trong bộ test thật giữa các test không có dòng trống.  
+\begin{verbatim}
+\textbf{Input:}
+
+6
+
+4 1 2
+
+1 $<$ 3
+
+1 $<$ 2
+
+ 
+
+4 2 6
+
+4 = 3
+
+1 $<$ 4
+
+3 $<$ 1
+
+2 $<$ 1
+
+4 $<$ 1
+
+3 = 1
+
+ 
+
+4 1 5
+
+1 $<$ 2
+
+2 = 4
+
+3 = 1
+
+3 $<$ 2
+
+1 $<$ 4
+
+ 
+
+4 2 5
+
+3 = 1
+
+1 $<$ 2
+
+3 $<$ 2
+
+2 = 4
+
+1 $<$ 4
+
+2 1 1
+
+2 $<$ 1
+
+4 1 11 $<$ 2
+
+\textbf{Output:}
+
+N
+
+Y
+
+N
+
+Y
+
+YY\end{verbatim}

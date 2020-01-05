@@ -1,0 +1,91 @@
+
+
+
+
+
+
+   Cho 1 bảng   \textbf{    M   }   x   \textbf{    N   }   số 0 hoặc 1, các dòng và cột được đánh số từ trái sang phải, từ trên xuống dưới. Chỉ số của hàng hoặc cột đều bắt đầu từ 1. Ta có 2 thao tác là   \textbf{    swapCol   }   (   \textbf{    i   }   ,   \textbf{    j   }   ) và   \textbf{    swapRow   }   (   \textbf{    i   }   ,   \textbf{    j   }   ) trong đó   \textbf{    swapCol   }   (   \textbf{    i   }   ,   \textbf{    j   }   ) sẽ đổi chỗ 2 cột   \textbf{    i   }   và   \textbf{    j   }   cho nhau còn   \textbf{    swapRow   }   (   \textbf{    i   }   ,   \textbf{    j   }   ) sẽ đổi chỗ 2 hàng   \textbf{    i   }   và   \textbf{    j   }   cho nhau. Ta có hàm   \textbf{    valid   }   (   \textbf{    x1   }   ,   \textbf{    y1   }   ,   \textbf{    x2   }   ,   \textbf{    y2   }   ), hàm này sẽ trả về   \textbf{    true   }   nếu hình chữ nhật có góc trái trên là (   \textbf{    x1   }   ,   \textbf{    y1   }   ) và góc phải dưới là (   \textbf{    x2   }   ,   \textbf{    y2   }   ) chỉ chứa toàn số 1, ngược lại sẽ trả về   \textbf{    false   }   . Giá trị của một bảng bằng với giá trị   \textbf{\textbf{     x0    }    +    \textbf{     y0    }}   lớn nhất sao cho   \textbf{    valid   }   (   \textbf{    1   }   ,   \textbf{    1   }   ,   \textbf{    x0   }   ,   \textbf{    y0   }   ) =   \textbf{    true   }   .  
+
+\textbf{    Yêu cầu:   }   Tìm cách thực hiện 2 loại thao tác trên không quá   \textbf{    10    $^     5    $}   lần để sao cho bảng được tạo ra có giá trị lớn nhất và lớn hơn   \textbf{    max   }   (   \textbf{    M   }   ,   \textbf{    N   }   )  
+
+\subsubsection{   Input  }
+\begin{itemize}
+	\item     Dòng 1: Chứa 2 số nguyên dương    \textbf{     M    }    và    \textbf{     N    }    .   
+	\item \textbf{     M    }    dòng tiếp theo: mỗi dòng chứa    \textbf{     N    }    số    \textbf{     0    }    hoặc    \textbf{     1    }\textbf{     .    }
+\end{itemize}
+
+\subsubsection{   Output  }
+\begin{itemize}
+	\item     Nếu không đưa được bảng về giá trị lớn hơn    \textbf{     max    }    (    \textbf{     M    }    ,    \textbf{     N    }    ), in ra 2 số    \textbf{     0 0    }    .   
+	\item     Nếu đưa được bảng về giá trị lớn hơn    \textbf{     max    }    (    \textbf{     M    }    ,    \textbf{     N    }    ) thì in ra như sau:    
+\begin{itemize}
+	\item       Dòng 1: 2 số nguyên dương      \textbf{       x0      }      ,      \textbf{       y0      }
+	\item       Dòng 2: Số nguyên      \textbf{       K      }      là số thao tác thực hiện     
+	\item \textbf{       K      }      dòng sau ghi ra thao tác thực hiện dưới dạng      
+\begin{itemize}
+	\item         "        \textbf{         R i j        }        ": thực hiện phép        \textbf{         swapRow        }        (        \textbf{         i        }        ,        \textbf{         j        }        )       
+	\item         "        \textbf{         C i j        }        ": thực hiện phép        \textbf{         swapCol        }        (        \textbf{         i        }        ,        \textbf{         j        }        )       
+\end{itemize}
+\end{itemize}
+\end{itemize}
+
+
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     Tất cả các test có    \textbf{     1    }    ≤    \textbf{     M    }    ,    \textbf{     N    }    ≤    \textbf{     1000    }
+	\item     Trong 40\% test (tương ứng với 40\% số điểm),    \textbf{     1    }    ≤    \textbf{     M    }    ,    \textbf{     N    }    ≤    \textbf{     20    }
+	\item      Trong quá trình thi, bài của bạn chỉ được chấm với 2 test ví dụ. Nếu được chấm đúng, kết quả sẽ được hiện là 100.    
+\end{itemize}
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+\textbf{Input 1:}
+3 3
+\\0 1 1
+\\1 1 0
+\\1 1 1
+\end{verbatim}
+\begin{verbatim}
+\textbf{Output 1}
+1 3
+\\1
+\\R 1 3
+\end{verbatim}
+\begin{verbatim}
+\textbf{Input 2
+\\}3 1
+\\0
+\\1
+\\1\end{verbatim}
+\begin{verbatim}
+\textbf{Output 2
+\\}0 0\end{verbatim}
+
+\subsubsection{   Giải thích  }
+
+   Ở ví dụ 1, ta sẽ tiến hành đảo 2 hàng 1 và 3 cho nhau.  
+
+    0 1 1      -$>$   \emph{    1 1 1   }
+
+   1 1 0  -$>$  1 1 0  
+
+\emph{    1 1 1   }   -$>$       0 1 1   
+
+   Sau khi thực hiện thao tác trên ta có:  
+\begin{itemize}
+	\item     Hình chữ nhật có góc trái trên là (1, 1) và góc phải dưới là (1, 3) chỉ chứa toàn số 1.   
+\end{itemize}
+
+   =$>$   \textbf{    valid   }   (   \textbf{    1   }   ,   \textbf{    1   }   ,   \textbf{    1   }   ,   \textbf{    3   }   ) = true.  
+\begin{itemize}
+	\item     Hình chữ nhật này sẽ cho ra tổng    \textbf{     x0    }    +    \textbf{     y0    }    (= 1 + 3 = 4) là lớn nhất.   
+\end{itemize}
+
+   Nên 4 sẽ là giá trị của bảng sau khi đảo.  
+
+   Trong ví dụ này ta sẽ không tìm được cách làm khác cho ra bảng có giá trị lớn hơn.  
+
+   Ở ví dụ 2, vì không có cách biến đổi nào cho ra bảng với giá trị   \textbf{}\textbf{    $>$   }\textbf{    max   }   (3, 1) = 3.  
+
+   Nên kết quả xuất ra là   \textbf{    0 0   }   .  

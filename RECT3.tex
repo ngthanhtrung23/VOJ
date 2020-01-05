@@ -1,0 +1,82 @@
+
+
+
+
+   Cho bảng chữ nhật MxN (1 ≤ M, N ≤ 200) gồm các số 0 và 1. Ta gọi một       khối tam chữ nhật      là một hình gồm ba hình chữ nhật, mỗi hình chữ nhật gồm toàn số 1, xếp chồng lên nhau sao cho hình chữ nhật ở giữa phải rộng hơn về mỗi phía của hai hình chữ nhật trên và dưới ít nhất một ô.  
+
+   Ví dụ, các hình sau đây là các khối tam chữ nhật:  
+\begin{verbatim}
+ 1	
+111
+ 1	
+ 
+ 11		
+ 11		
+11111
+   1		
+   1		
+\end{verbatim}
+
+   Các hình sau đây không phải là khối tam chữ nhật:  
+\begin{verbatim}
+ 111
+	 				
+11111
+ 111	
+ 111	
+(Ba hình chữ nhật không liên thông)
+
+ 1111
+ 1111
+11111
+ 111	
+ 111	
+(Hình chữ nhật ở giữa không rộng hơn hình chữ nhật phía trên một ô về bên phải)
+\end{verbatim}
+
+   Trong bài toán này, bạn cần tìm khối tam chữ nhật có diện tích lớn nhất.  
+
+\subsubsection{   Dữ liệu  }
+\begin{itemize}
+	\item     Dòng đầu tiên: hai số nguyên M, N.   
+	\item     M dòng tiếp theo, mỗi dòng gồm N số 0 hoặc 1 (viết liền nhau) mô tả bảng chữ nhật.    
+
+
+\end{itemize}
+
+\subsubsection{   Kết quả  }
+
+   In ra diện tích của khối tam chữ nhật lớn nhất, hoặc 0 nếu không tìm được khối tam chữ nhật nào.  
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu
+6 8
+00000110
+00111000
+00110100
+01111001
+01111110
+00111010
+
+Kết quả
+15
+
+Giải thích
+Khối tam chữ nhật:
+00000110
+00111000
+00110100
+01111001
+01111110
+00111010  
+Có diện tích là 15
+
+Khối tam chữ nhật khác có diện tích 14:
+00000110
+00111000
+00110100
+01111001
+01111110
+00111010 
+\end{verbatim}

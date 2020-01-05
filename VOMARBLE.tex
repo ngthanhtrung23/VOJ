@@ -1,0 +1,45 @@
+
+
+ 
+
+Một quốc gia được thành lập với 17 triệu dân sinh sống. Đây là thế giới của ma thuật, là nơi pháp thuật được mua bán trao đổi như hàng hóa và điều đó hiển nhiên là rất bình thường. Cũng giống như những quốc gia khác, các viên bi là món đồ chơi rất phổ biến với những đứa trẻ ở đây. Tuy nhiên các viên bi ở đây đã được truyền vào một lượng ma thuật.
+
+Một bộ trò chơi sẽ gồm 62 hộp bi mang các đặc tính khác nhau. Các hộp được gán nhãn bằng các ký tự khác nhau thuộc các đoạn từ ‘a’ tới ‘z’, từ ‘A’ tới ‘Z’ và từ ‘0’ tới ‘9’ và số lượng viên bi trong mỗi hộp là vô tận. Các viên bi trong một hộp mang đặc tính giống như đặc tính của hộp đó. Cách chơi chung cho các bộ trò chơi là những đứa trẻ sẽ cố gắng xếp các viên bi này thành một dãy N viên bi. Các bộ trò chơi khác nhau sẽ có những luật chơi khác nhau. Thông thường, tùy vào mỗi bộ trò chơi mà sẽ có một số hộp viên bi khắc nhau tức có nghĩa là 2 viên bi thuộc 2 hộp khắc nhau sẽ không thể nào đặt cạnh nhau. Mức độ khó hơn của trò chơi là sẽ có thêm một số vị trí trong dãy N viên bi phải thỏa mãn một số yêu cầu thuộc các dạng như sau:
+\begin{itemize}
+	\item Dạng 0: Tại vị trí x thì không được đặt viên bi của hộp mang nhãn là y.
+	\item Dạng 1: Tại vị trí x thì buộc phải là viên bi thuộc hộp mang nhãn là y.
+\end{itemize}
+
+\emph{Lưu ý: các viên bi trong dãy được đánh số thứ tự từ 1 -$>$ N từ trái sang phải. }
+
+Nobita nhờ vào bảo bối của Doraemon đã tới được vương quốc pháp thuật và khám phá ra trò chơi thú vị này. Vốn bản tính tò mò cậu tự hỏi rằng có thể xếp được tối đa là bao nhiêu dãy bi khác nhau ở mức độ khó.
+
+\subsubsection{\textbf{Input }}
+
+Dòng đầu chứa 3 số N, M, K tương ứng là độ dài của dãy các viên bi, số lượng ràng buộc ở mức độ thông thường và số lượng ràng buộc ở mức độ khó.
+\\M dòng tiếp theo, mỗi dòng chứa 2 ký tự x và y với ý nghĩa viên bi ở hộp mang nhãn x không được đặt kề viên bi của hộp mang nhãn y.
+\\K dòng tiếp sau đó, mỗi dòng chứa 3 số k, x, y với k = 0..1 – cho biết dạng của ràng buộc, x và y cho biêt thông tin chi tiết của ràng buộc này.
+
+\subsubsection{Ouput}
+
+Một dòng chứa phần dư của phép chia số lượng dãy thỏa mãn mức độ khó cho 1000 000 007.
+
+\subsubsection{Ràng buộc}
+\begin{itemize}
+	\item Trong tất cả các test, N M K ≥ 0.
+	\item 30\% đầu tiên của bộ test có N ≤ 1000, M ≤ 100 và K ≤ 100.
+	\item 20\% tiếp theo của bộ test có N ≤ 10 $^ 18 $ , M = 0 và K ≤ 1000.
+	\item 20\% tiếp theo của bộ test có N ≤ 10 $^ 18 $ , M ≤ 500 và K = 0.
+	\item 30\% cuối cùng của bộ test có N ≤ 10 $^ 18 $ , M ≤ 1953 và K ≤ 1000.
+\end{itemize}
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+2 1 1
+a A
+1 1 a
+
+\textbf{Output:}
+61
+\end{verbatim}

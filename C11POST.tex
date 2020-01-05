@@ -1,0 +1,61 @@
+
+
+ 
+
+Santa Khánh được giao nhiệm vụ đi phát quà trong một ngôi làng được biểu diễn bởi ma trận có độ lớn MxN từ nhà Santa Khánh đến những trẻ em trong làng. Trong ma trận có duy nhất 1 điểm là nhà của Santa Khánh ký hiệu là ‘P’, những ngôi nhà của các đứa trẻ ký hiệu là ‘K’, những điểm trống được ký hiệu là ‘.’ .Mỗi điểm được đặc trưng bởi độ cao là H[i][j]. Mỗi bước, Santa Khánh có thể đi đến những ô có điểm chung với ô đang đứng. Độ mệt mỏi bằng hiệu chênh lệch độ cao giữa điểm cao nhất và điểm thấp nhất trên đường đi. Khánh đi từ nhà của Santa Khánh đến tất cả các ngôi nhà khác của trẻ em. Do Santa Khánh phải cưỡi tuần lộc để đi phát quà, mà lũ tuần lộc ăn rất nhiều Carrot khi phải chịu độ mệt mỏi cao. Do đó Santa Khánh muốn tìm độ mệt mỏi nhỏ nhất để tích kiệm tiền mua carrot cho tuần lộc.
+
+\subsubsection{Input}
+
+ 
+
+Dòng 1: Gồm 2 số M và N ( M,N $<$= 100 )
+
+M dòng tiếp theo, mỗi dòng gồm N ký tự dạng ‘P’ , ’K’ , ’.’
+
+M dòng tiếp theo, mỗi dòng gồm N số chỉ độ cao ( 0 $<$= H[i][j] $<$= 10\textasciicircum9 )
+
+ 
+
+ 
+
+ 
+
+\subsubsection{Output}
+
+ 
+
+Gồm 1 số duy nhất là kết quả cần tìm.
+
+ 
+
+ 
+
+ 
+
+\subsubsection{Example}
+
+ 
+\begin{verbatim}
+\textbf{Input:}
+8 88 8
+...K....
+..K.....
+........
+........
+K....P..
+........
+........
+........
+6 2 2 4 3 1 9 10 
+10 6 8 10 7 6 2 6 
+4 8 9 3 6 10 7 5 
+5 10 7 0 6 5 2 2 
+0 1 2 2 3 3 5 3 
+2 6 9 9 5 5 9 9 
+7 4 7 5 7 7 6 0 
+4 2 3 1 6 8 1 7 
+
+\textbf{Output:}
+8\end{verbatim}
+\begin{verbatim}
+\textbf{Giới hạn: 50% số test có N,M$<$=60 và N*M $<$= 2500}\end{verbatim}

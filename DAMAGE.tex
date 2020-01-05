@@ -1,0 +1,39 @@
+
+
+
+
+   Một trận động đất vừa xảy ra ở Wisconsin và tàn phá trang trại của nông dân John. Trận động đất đã phá hủy một số cánh đồng khiến cho đàn bò không thể đặt chân lên cánh đồng đó. Một điều khác thường là tất cả con đường nối các cánh đồng đều không bị tàn phá.  
+
+   Như thường lệ, trang trại được xem là một tập hợp các P cánh đồng (1$<$=P$<$=30000) được đánh số từ 1 đến P và được nối với nhau bằng C đường đi hai chiều (1$<$=C$<$=100000) đánh số từ 1 đến C. Đường đi thứ i nối hai cánh đồng a\_i và b\_i (1$<$=a\_i b\_i$<$=P). Chú ý là các đường đi có thể nối cánh đồng a\_i với chính nó hoặc giữa 2 cánh đồng có thể có nhiều đường đi. Chuồng bò được đặt ở cánh đồng 1.  
+
+   Có N con bò (1$<$=N$<$=P) ở các cánh đồng khác nhau gọi về cho FJ và thông báo 1 số nguyên report\_j (2$<$=report\_j$<$=P) có nghĩa là cánh đồng report\_j thỏa 2 điều kiện: + Cánh đồng report\_j không bị tàn phá + Con bò đứng ở cánh đồng report\_j không thể về được cánh đồng 1 vì trên đường đi có một số cánh đồng bị tàn phá và không thể đi qua các cánh đồng đó  
+
+   Cho biết thông tin của N con bò, hãy xác định số lượng ít nhất các cánh đồng sao cho từ các cánh đồng đó không thể về được cánh đồng 1 (bao gồm luôn những cánh đồng bị phá hủy)  
+
+\subsubsection{   Dữ liệu  }
+\begin{itemize}
+	\item     Dòng đầu chứa 3 số nguyên: P, C và N   
+	\item     C dòng sau mỗi dòng chứa 2 số a\_i và b\_i mô tả đường nối thứ i nối hai cánh đồng a\_i và b\_i   
+	\item     N dòng sau mỗi dòng chứa một số nguyên là thông tin của các con bò   
+\end{itemize}
+
+\subsubsection{   Kết quả  }
+
+   Gồm 1 dòng duy nhất là số lượng ít nhất các cánh đồng không về được cánh đồng 1.  
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu
+4 3 1
+1 2
+2 3
+3 4
+3
+
+Kết quả
+3
+\end{verbatim}
+
+\subsubsection{   Giải thích  }
+
+   Cánh đồng 2 bị phá hủy, vậy các con bò ở cánh đồng 2,3,4 sẽ không thể về chuồng  

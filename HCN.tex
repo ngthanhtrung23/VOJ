@@ -1,0 +1,57 @@
+
+
+ 
+
+Một cách chia hình chữ nhật đúng được định nghĩa như sau:
+\begin{enumerate}
+	\item Không chia gì cả
+	\item Chia hình chữ nhật thành 2 nữa trên và dưới. 2 nửa này lại được chia tiếp
+	\item Chia hình chữ nhật thành 2 nửa trái và phải. 2 nửa này lại được chia tiếp
+\end{enumerate}
+
+Cho 2 cách chia hình chữ nhật A và B, 2 hình chữ nhật này có cùng kích thước.
+\begin{itemize}
+	\item Tìm cách chia đúng C sử dụng ít lần chia nhất, sao cho mỗi đường chia của A và B đều có trong cách chia C
+	\item Tìm cách chia đúng D sử dụng nhiều lần chia nhất, sao cho mỗi đường chia của D đều có trong cả A và B
+\end{itemize}
+
+\subsubsection{Input}
+
+Gồm nhiều bộ test, mỗi bộ: Dòng 1: M, N (1$<$=M,N$<$=20) lần lượt là số cột và số hàng của hình chữ nhật ban đầu N+1 dòng tiếp, mỗi dòng 4*M + 3 kí tự mô tả cách chia (các cách chia đều chính xác và có dạng hoàn toàn giống phía dưới) . Riêng dòng đầu tiên của mỗi mô tả chỉ có 4*M + 2 kí tự.
+
+\subsubsection{Output}
+
+Với mỗi test in ra : Dòng 1: "Case X", trong đó X là số thứ tự của bộ test, đánh số từ 1. N+1 dòng tiếp: 2 cách chia giống dạng như input
+
+\subsubsection{Example}
+\begin{verbatim}
+Input:
+4 3
+ _ _ _ _   _ _ _ _ 
+|_ _ _ _| |_|_ _ _|
+|   |   | |       |
+|_ _|_ _| |_ _ _ _|
+3 4
+ _ _ _   _ _ _ 
+| |   | | |   |
+| |   | |_|_ _|
+|_|_ _| |   | |
+|_ _|_| |_ _|_|
+0 0
+
+Output:
+Case 1:
+ _ _ _ _   _ _ _ _ 
+|_|_ _ _| |_ _ _ _|
+|   |   | |       |
+|_ _|_ _| |_ _ _ _|
+Case 2:
+ _ _ _   _ _ _ 
+| |   | |     |
+|_|_ _| |     |
+|_|_|_| |     |
+|_ _|_| |_ _ _|
+
+\end{verbatim}
+
+Note: unofficial test data

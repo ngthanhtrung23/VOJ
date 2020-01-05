@@ -1,0 +1,47 @@
+
+
+Yến là một người rất mê tín. Mỗi sáng thức dậy, việc đầu tiên Yến làm là tung đi tung lại đồng xu sao cho đạt được kết quả mình mong muốn. Chỉ khi đạt được kết quả đó, Yến mới tự tin rằng hôm nay là một ngày may mắn với mình; còn nếu không đạt được kết quả mong muốn, đó sẽ là một ngày đen đủi.
+
+Mỗi lần tung đồng xu, kết quả sẽ là xấp hoặc ngửa (head or tail). Yến ghi lại kết quả của những lần tung đồng xu liên tiếp như vậy. Ví dụ tung đồng xu 4 lần với kết quả: xấp, xấp, xấp, ngửa; Yến sẽ ghi lại bằng xâu kí tự HHHT. Việc tung đồng xu sẽ dừng lại ngay khi xâu kí tự có đoạn cuối cùng trùng với đoạn kết quả mong muốn. Ví dụ, xâu kết quả mong muốn là HT, Yến sẽ tung đồng xu cho đến khi đạt được xâu có kết thúc bằng HT.
+
+Mỗi ngày lại có một xâu may mắn khác nhau nhưng chúng luôn luôn có dạng HTHTHT...HT (2N kí tự). Mỗi lần tung đồng xu chỉ mất 1 giây mà Yến lại không muốn dành quá S giây một ngày cho việc tung đồng xu. Bạn hãy tính:
+\begin{enumerate}
+	\item Có bao nhiêu khả năng khác nhau để tung được kết quả mong muốn.
+	\item Trung bình, cần bao nhiêu thời gian để tung được kết quả mong muốn. (Tính kỳ vọng - expected value)
+\end{enumerate}
+
+Bạn có thể trả lời 1 trong 2 câu hỏi hoặc cả 2 câu hỏi.
+
+\subsubsection{Input}
+
+Ghi duy nhất 2 số N và S.
+
+\subsubsection{Output}
+\begin{itemize}
+	\item Dòng thứ nhất ghi số T là số câu hỏi mà bạn trả lời.
+	\item Tiếp theo là T dòng, mỗi dòng ghi hai số X Y với ý nghĩa đáp án cho câu hỏi thứ X là Y. Với X=2, in ra đáp số với độ chính xác 0.01 (làm tròn tới số gần nhất). Luôn luôn in ra đúng 2 chữ số sau dấu phẩy (10 phải là in là 10.00)
+	\item Mỗi câu hỏi chỉ được trả lời 1 lần. Nếu trả lời 1 câu 2 lần sẽ bị 0 điểm.
+	\item Trả lời đúng câu hỏi 1 được 80\% số điểm.
+	\item Trả lời đúng câu hỏi 2 được 20\% số điểm.
+\end{itemize}
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+1 4
+\textbf{Output:}
+2
+1 6
+2 4.00\end{verbatim}
+
+\subsubsection{Giải thích}
+
+6 cách tung được dãy HT và không quá 4 lần tung là: \textbf{\emph{ HT }} , H \textbf{\emph{ HT }} , T \emph{\textbf{ HT } , } HH \textbf{\emph{ HT }} , TH \textbf{\emph{ HT }} , TT \emph{\textbf{ HT }} . Lưu ý rằng, dãy HTHT không được tính vì sau 2 lần tung đã thu được kết quả mong muốn và Yến sẽ dừng lại ngay.
+
+\subsubsection{Giới hạn}
+\begin{itemize}
+	\item 1 $<$= N $<$= 50
+	\item 2N $<$= S $<$= 1000
+\end{itemize}
+
+\subsubsection{ }

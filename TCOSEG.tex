@@ -1,0 +1,79 @@
+
+
+Cho N điểm trên mặt phẳng sao cho không có 3 điểm nào đoạn thẳng.
+
+Yêu cầu: hãy đếm số cặp đoạn thẳng thỏa mãn 2 điều kiện:
+\begin{itemize}
+	\item 
+
+Đầu mút của chúng thuộc N điểm đã cho, và 2 đoạn thẳng không có chung đầu mút
+	\item 
+
+2 đoạn thẳng cắt nhau.
+\end{itemize}
+
+Để giảm kích thước input, dữ liệu được đưa vào như sau:
+
+Sinh ra dãy số x1,…,xN theo công thức:
+
+x1 = xFirst
+
+x(k) = (x(k – 1) * xProd + xAdd) \% xMod với 2 $<$= k $<$= N (lưu ý tràn số)
+
+Dãy số y1,…,yN được sinh tương tự
+
+N điểm trên mặt phẳng là (x1,y1), (x2,y2), …, (xN, yN)
+
+\textbf{Input}
+\begin{itemize}
+	\item 
+
+9 số nguyên N, xFirst, xAdd, xProd, xMod, yFirst, yAdd, yProd, yMod. Giới hạn :
+	\item 
+
+2 $<$= N $<$= 1200
+	\item 
+
+0 $<$ xMod, yMod $<$= 10\textasciicircum6
+	\item 
+
+0 $<$= xFirst,xAdd,xProd $<$ xMod
+	\item 
+
+0 $<$= yFirst,yAdd,yProd $<$ yMod
+\end{itemize}
+
+\textbf{Output}
+\begin{itemize}
+	\item 
+
+Đưa ra số cặp đoạn thẳng cắt nhau như trong đề bài
+\end{itemize}
+
+\textbf{Example}
+
+ 
+\begin{verbatim}
+\textbf{Input}
+5
+1 1 1 3
+4 3 2 5
+
+\textbf{Output}
+3
+
+\textbf{Input}
+6
+1 3 1 5
+1 2 1 3
+
+\textbf{Output}
+11
+
+\textbf{Input}
+6
+215657 553897 915611 930784
+193666 323425 130393 654599
+
+\textbf{Output}
+15\end{verbatim}

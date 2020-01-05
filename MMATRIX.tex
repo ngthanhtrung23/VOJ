@@ -1,0 +1,42 @@
+
+
+Cho ma trận A kích thước nxn gồm các số nguyên, (0 ≤ i $<$ n, 0 ≤ j $<$ n).
+
+Thao tác SHIFT tại hàng i (0 ≤ i $<$ n) sẽ dịch các số ở hàng i sang phải 1 vị trí và số ở cột cuối cùng sẽ trở về đầu tiên.
+
+\href{http://tinypic.com}{
+\includegraphics{http://i42.tinypic.com/29ff6u8.jpg}}
+
+Bạn có thể thực hiện SHIFT bao nhiêu lần cũng được.
+
+
+\\Đặt Cj=A(0,j) + A(1,j) + ... + A(n-1,j)
+
+và M = max \{Cj|0$<$=j $<$ n \} sau mỗi lần dịch chuyển.
+
+Tìm giá trị bé nhất của M.
+
+\subsubsection{Input}
+
+Gồm một vài test, dòng đầu mỗi test là số nguyên n. n dòng tiếp theo mỗi dòng chứa n số nguyên. Kết thúc các bộ test là số -1.
+
+Giả thiết là 1 ≤ n ≤ 7 và |Ai,j| $<$ 10\textasciicircum4.
+
+\subsubsection{Output}
+\begin{verbatim}
+Với mỗi bộ test, in ra giá trị nhỏ nhất của giá trị lớn nhất của tổng các
+số trên 1 cột.
+
+​Sample Input
+2
+4 6
+3 7
+3
+1 2 3
+4 5 6
+7 8 9
+-1
+
+Sample output
+11
+15\end{verbatim}

@@ -1,0 +1,50 @@
+
+
+
+
+   Bắn bi là một trò chơi yêu thích của Raldono và Balitello và hai người bạn của chủng ta vừa mua được   \textbf{    N   }   hộp bi gồm các viên bi với   \textbf{    M   }   màu khác nhau. Ban đầu, mỗi hộp có thể chứa các viên bi với nhiều màu khác nhau; hộp thứ i sẽ chứa   \textbf{    A    $_     i, j    $}   viên bi màu j. Hai người bạn của chúng ta muốn phân loại các viên bi sao cho không có 2 viên bi khác màu nào nằm trong cùng 1 hộp. Các viên bi sẽ được chuyển giữa các hộp. Để đảm bảo các viên bi không bị hư hại, mỗi lần chỉ chuyển tối đa   \textbf{    K   }   viên bi từ 1 hộp sang 1 hộp khác.  
+
+   Cả hai dự định sẽ cùng nhau phân loại bi. Tuy nhiên, với bản tính lười biếng của mình, Raldono bảo với Balitello rằng nếu cậu ta có thể tìm ra cách phân loại bi với ít lần chuyển bi nhất thì Balitello sẽ là người phải thực hiện công việc phân loại, ngược lại Raldono sẽ phải làm. Hãy giúp Raldono tìm số lần chuyển bi ít nhất để phân loại bi.  
+
+\subsubsection{   Input  }
+\begin{itemize}
+	\item     Dòng 1 chứa 3 số nguyên    \textbf{     N    }    ,    \textbf{     M    }    và    \textbf{     K    }
+	\item     N dòng tiếp theo, dòng thứ i chứa M số nguyên    \textbf{     A     $_      i, 1     $}    ,    \textbf{     A     $_      i,2     $}    , ...,    \textbf{     A     $_      i,M     $}
+\end{itemize}
+
+\subsubsection{   Output  }
+\begin{itemize}
+	\item     Một số nguyên là số lần chuyển bi ít nhất   
+\end{itemize}
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     0 ≤ A    $_     i, j    $    ≤ 10    $^     5    $
+	\item     Subtask 1 (30\%): 1 ≤ N ≤ 1000, 1 ≤ M ≤ 10, K = 1   
+	\item     Subtask 2 (70\%): 1 ≤ N ≤ 50, 1 ≤ M ≤ 3, K = 2   
+	\item     M ≤ N   
+\end{itemize}
+
+\subsubsection{   Example  }
+
+\textbf{    Input:   }
+
+   3 2 1  
+
+   5 3  
+
+   4 6  
+
+   1 9  
+
+\textbf{    Output:   }
+
+   8  
+
+\subsubsection{   Giải thích  }
+
+   Chuyển 3 viên bi màu 2 từ hộp 1 sang hộp 3.  
+
+   Chuyển 4 viên bi màu 1 từ hộp 2 sang hộp 1.  
+
+   Chuyển 1 viên bi màu 1 từ hộp 3 sang hộp 1.  

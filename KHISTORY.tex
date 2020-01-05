@@ -1,0 +1,78 @@
+
+
+
+
+   Pirate rất thích học môn Sử. Một hôm, anh tình cờ tìm được một cuốn sách sử địa phương. Chăm chú đọc, Pirate phát hiện ra rằng quần đảo của mình có một lịch sử rất huy hoàng...  
+
+   Vào năm XYZ trước Công Nguyên, quần đảo của Pirate được gồm nhiều hòn đảo nhỏ ở gần nhau. Khi kinh tế của mỗi hòn đảo ngày càng phát triển dẫn đến nhu cầu các hòn đảo phải trao đổi hàng hóa. Vậy là những cây cầu dừa được xây dựng ở một số cặp hòn đảo để có thể được từ đảo này sang đảo kia và ngược lại. Theo quy luật tự nhiên, khi có trao đổi hàng hóa nhảy vọt sẽ dẫn đến nhu cầu liên kết và mở rộng thị trường. Vì vậy, các hòn đảo dần tập hợp lại và mở ra một thời đại mới, thời đại của các quốc gia trên biển.  
+
+   Một quốc gia là tập hợp của một số hòn đảo, mỗi hòn đảo chỉ thuộc vào một quốc gia. Nhận thấy rằng các cây cầu dừa rất mỏng manh nhưng lại vô cùng trọng yếu, các hòn đảo chỉ liên kết lại thành một quốc gia khi và chỉ khi chúng vẫn đi được đến nhau nếu có bất cứ một cây cầu dừa nào nối hai hòn đảo thành viên không sử dụng được.  
+
+   Sự phân chia này dẫn đến việc các hòn đảo có nền kinh tế tương đương có điều kiện vô cùng thuận lợi để phát triển. Hệ quả tất yếu là sự phân hóa giữa các nước quốc gia. Một số quốc gia trở nên hùng mạnh hơn hẳn các quốc gia khác. Ta gọi đó là các siêu cường.  
+
+   Sách sử ghi lại rằng một quốc gia hoặc là một siêu cường, hoặc có cầu dừa nối trực tiếp tới một siêu cường. Hơn nữa, sách có lưu ý rằng số siêu cường là ít nhất có thể nhưng không có ghi chép nào khác nữa về chúng. Dựa vào sơ đồ các cây cầu dừa của khác hòn đảo khi xưa, Pirate muốn xác định xem vào thuở sơ khai, quần đảo có bao nhiêu siêu cường. Bạn hãy giúp anh ấy nhé.  
+
+\subsubsection{   Input  }
+\begin{itemize}
+	\item     Dòng 1: Hai số nguyên N - số hòn đảo, M - số lượng các cây cầu dừa.   
+	\item     M dòng tiếp theo: Mỗi dòng chứa hai số nguyên, mô tả các cặp hòn đảo có cầu dừa nối với nhau.   
+\end{itemize}
+
+\subsubsection{   Output  }
+\begin{itemize}
+	\item     Một số nguyên duy nhất là số siêu cường.   
+\end{itemize}
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     1 ≤ N, M ≤ 10    $^     5    $    .   
+	\item     30\% số test có 1 ≤ N, M ≤ 20.   
+	\item     Giữa một cặp hòn đảo chỉ có tối đa một cây cầu dừa nối chúng.   
+\end{itemize}
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+6 7
+\\1 2
+\\2 3
+\\3 1
+\\4 5
+\\5 6
+\\6 4
+\\1 4
+\\
+\\\textbf{Output:}
+1
+\\\end{verbatim}
+
+\emph{    Giải thích: có hai quốc gia là (1, 2, 3) và (4, 5, 6). Chúng có đường nối trực tiếp với nhau, vì vậy siêu cường có thể là một trong hai.   }
+\begin{verbatim}
+\textbf{
+\\Input:}
+15 19
+\\1 2
+\\2 3
+\\3 1
+\\4 5
+\\5 6
+\\6 4
+\\7 8
+\\8 9
+\\9 7
+\\10 11
+\\11 12
+\\12 10
+\\13 14
+\\14 15
+\\15 13
+\\1 4
+\\1 7
+\\1 10
+\\1 13
+\\
+\\\textbf{Output:}
+1
+\\\end{verbatim}
+
+\emph{    Giải thích: có năm quốc gia là (1, 2, 3), (4, 5, 6), (7, 8, 9), (10, 11, 12), (13, 14, 15). Để số siêu cường là ít nhất thì chỉ có thể có một siêu cường là (1, 2, 3) vì mọi quốc gia khác điều có cầu dừa nối trực tiếp đến nó.   }

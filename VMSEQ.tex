@@ -1,0 +1,41 @@
+
+
+
+
+   Dãy con khác rỗng của một dãy số là dãy số thu được khi ta xóa một số phần tử (có thể không xóa phần tử nào và không được xóa hết) và giữ nguyên thứ tự các phần tử còn lại trong dãy. Ví dụ với dãy số \{3, 1, 1, 2, 3\}, ta có \{3, 1, 1, 2, 3\}, \{3, 1, 3\}, \{2, 3\}, ... là các dãy con khác rỗng; \{3, 3, 1\}, \{2, 1\}, \{4\}, \{\}, ... không phải là dãy con khác rỗng.  
+
+   Hai dãy số được gọi là phân biệt nếu chúng có số phần tử khác nhau hoặc tồn tại một vị trí mà phần tử của hai dãy khác nhau. Ví dụ \{1\} và \{2\}, \{1\} và \{1, 1\}, \{1, 2\} và \{2, 1\} là các cặp dãy số phân biệt.  
+
+   Hãy đếm số lượng dãy số có đúng   \textbf{    S   }   dãy con khác rỗng phân biệt, biết rằng mỗi phần tử trong dãy là một số nguyên dương không lớn hơn   \textbf{    T   }   . Trong các dãy số thỏa điều kiện trên, tìm dãy có   \textbf{    ít phần tử nhất   }   . Nếu có nhiều dãy có cùng số phần tử là ít nhất, tìm dãy có   \textbf{    thứ tự từ điển   }\textbf{    nhỏ nhất   }   .  
+
+\subsubsection{   Input  }
+\begin{itemize}
+	\item     Một dòng chứa 2 số nguyên    \textbf{     S    }    và    \textbf{     T    }    .   
+\end{itemize}
+
+\subsubsection{   Output  }
+\begin{itemize}
+	\item     Dòng 1 ghi ra số lượng dãy số tìm được.   
+	\item     Dòng 2 ghi ra một số L là số phần tử của dãy số tìm được.   
+	\item     Dòng 3 ghi ra L số nguyên dương tương ứng với L phần tử của dãy số tìm được.   
+\end{itemize}
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     1 ≤ S ≤ 1500   
+	\item     1 ≤ T ≤ 10    $^     9    $
+	\item     Dữ liệu đảm bảo tồn tại ít nhất một dãy số thỏa mãn.   
+\end{itemize}
+
+\subsubsection{   Example  }
+
+\textbf{    Input:   }
+\begin{verbatim}
+5 2\end{verbatim}
+
+\textbf{    Output:   }
+\begin{verbatim}
+6
+\\3
+\\1 1 2 
+\\\end{verbatim}

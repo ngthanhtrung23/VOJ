@@ -1,0 +1,130 @@
+
+
+
+
+
+
+
+
+     Sau bao ngày ôn thi VOI mệt mỏi, nhân dịp Giáng Sinh thầy giao cho Tèo một bài toán cơ bản để vừa giải trí và vừa ôn lại kiến thức trước khi thi VOI. Thầy cho Tèo 1 dãy A gồm N số. Để bài toán đơn giản thầy cho các phần tử của dãy số là số nguyên không âm có giá trị  $<$ K . Vì biết tính Tèo nếu gặp bài dễ quá sẽ không làm và bỏ đi chơi ngay nên thầy cho thêm Q truy vấn ,mỗi truy vấn thuộc vào 3 loại truy vấn sau để Téo thêm hứng thú trong việc ôn tập :3.    
+
+
+\\
+
+     Truy vấn thứ nhất: Với L $<$= i $<$= R, Ai = ( Ai + C + |C|*K ) mod K.    
+
+     Truy vấn thứ hai: cho tập S gồm m phần tử. Đếm số lượng dãy con liên tiếp kết thúc tại R và bắt đầu tại L (L $<$= R) sao cho tập S là tập con của tập các giá trị của dãy con liên tiếp  từ L -$>$ R.    
+
+     Truy vấn thứ ba: đếm xem tập các giá trị của dãy con liên tiếp từ L -$>$ R có bao nhiêu giá trị khác nhau.    
+
+
+\\
+
+     Vì quá buồn do bị bạn gái bỏ ngay ngày Giáng Sinh nên Tèo không còn nghĩ được gì nữa :(, các bạn hãy giúp đỡ Tèo làm xong bài tập này nhé.    
+
+
+\\
+
+     Dữ liệu vào    
+\begin{itemize}
+	\item      Dòng đầu chứa 3 số nguyên đương N, Q, K.    
+	\item      Dòng tiếp theo chứa N số nguyên dương là dãy số A ban đầu.    
+	\item      Q dòng tiếp theo dòng thứ i biểu diễn truy vấn thứ i:    
+\end{itemize}
+
+     ADD L R C: Trong đó L R C là 3 số nguyên tương ứng với truy vấn 1     
+\\     COUNT R m S1 S2 S3 .. Sm: miêu tả loại truy vấn thứ 2, đầu tiên là R cho biết vị trí kết thúc theo sau là m cho biết số phần tử của tập S và m phần từ của tập S (nếu i $<$$>$ j thì Si $<$$>$ Sj)    
+
+     DIFF L R: trong đó L R là số nguyên miêu tả cho truy vấn thứ 3.    
+
+
+\\
+
+     Giới hạn    
+\begin{itemize}
+	\item      0 $<$ N $<$= 10\textasciicircum5    
+	\item      0 $<$ Q $<$= 3*10\textasciicircum5    
+	\item      0 $<$ K $<$= 60    
+	\item      0 $<$ L $<$= R $<$= n    
+	\item      |C| $<$= 10\textasciicircum7    
+	\item      Tổng số lượng phẩn tử của tập S trong tất cả các truy vấn thuộc loại 2 $<$= 10\textasciicircum5.    
+	\item      40\% số test N $<$= 10\textasciicircum4.    
+\end{itemize}
+
+
+\\
+
+     Dữ liệu ra    
+\begin{itemize}
+	\item      Gồm T dòng với T là số lượng truy vấn loại 2 và loại 3.    
+	\item      Dòng thứ i tương ứng là kết quả của truy vấn thứ i trong T truy vấn thuộc loại 2 và 3.    
+\end{itemize}
+
+
+\\
+
+     Ví dụ    
+
+\textbf{      Dữ liệu vào:     }
+\begin{verbatim}
+14 30 10
+2 4 5 8 6 0 0 1 9 8 6 6 5 9 
+DIFF 13 14
+DIFF 12 12
+DIFF 9 14
+ADD 3 12 15
+COUNT 12 2 6 2 
+COUNT 3 2 0 2 
+ADD 9 12 21
+DIFF 11 13
+ADD 13 13 15
+DIFF 13 13
+DIFF 9 11
+DIFF 6 13
+DIFF 11 13
+COUNT 1 1 2 
+DIFF 2 9
+COUNT 3 1 0 
+DIFF 4 11
+DIFF 4 5
+ADD 2 7 -21
+DIFF 4 9
+ADD 14 14 -18
+COUNT 3 1 2 
+ADD 8 8 -24
+ADD 14 14 -18
+COUNT 5 2 9 0 
+DIFF 6 8
+ADD 1 12 18
+DIFF 5 10
+DIFF 8 11
+DIFF 10 11\end{verbatim}
+
+
+\\
+
+\textbf{      Dữ liệu ra:     }
+\begin{verbatim}
+2
+1
+4
+1
+1
+2
+1
+3
+5
+2
+1
+6
+3
+6
+2
+5
+1
+3
+2
+4
+3
+2\end{verbatim}
+

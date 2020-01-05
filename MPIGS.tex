@@ -1,0 +1,72 @@
+
+
+
+
+   Mirko làm việc ở nông trại có M chuồng lợn, nhưng anh ta không có khóa  để mở cửa chuồng lợn. Khách hàng lần lượt đến nông trại và họ có khóa một số chuồng lợn. Mỗi khách hàng đến, họ sẽ mở cửa mọi chuồng lợn mà họ có chìa khóa, và  họ có thể mua một số lượng lợn nào đó trong các chuồng này.  
+
+   Dữ liệu về khách hàng được gửi đến Mirko và buổi sáng, và Mirko muốn bán  được nhiều lợn nhất. Sau khi bán một số lợn ở các chuồng này cho họ, Mirko có thể  chuyển lợn còn lại giữa các chuồng đã mở.  Mỗi chuồng chứa bao nhiêu lợn cũng được.  
+
+   Xác định số lợn nhiều nhất có thể bán.  
+
+
+
+\subsubsection{   Input  }
+
+   Dòng đầu là hai số M và N, 1 ≤ M ≤ 1000, 1 ≤ N ≤ 100, số chuồng lợn và khách hàng.  
+
+   Dòng tiếp theo ghi M số là số lợn trong mỗi chuồng (1,2..,M), số lợn thỏa mãn $>$=0 và $<$=1000.  
+
+   N dòng tiếp theo lưu thông tin về khách hàng và có dạng:  
+
+   A K1 K2 ... KA B  
+
+   Nghĩa là anh ta có A cái khóa K1,..,KA và muốn mua B lợn (các khóa sắp  tăng dần). A, B có thể bằng 0.  
+
+\subsubsection{   Output  }
+
+   Số lợn nhiều nhất có thể bán.  
+
+\subsubsection{   Sample  }
+\begin{verbatim}
+pigs.in 
+ 
+3 3 
+3 1 10 
+2 1 2 2 
+2 1 3 3 
+1 2 6 
+ 
+pigs.out
+ 
+7 
+
+pigs.in 
+ 
+6 6 
+6 3 2 0 1 3 
+2 1 2 0 
+1 3 3 
+1 1 1 
+2 2 3 8 
+2 4 5 2 
+2 4 6 6 
+ 
+pigs.out 
+ 
+15 
+
+pigs.in 
+ 
+11 5 
+1 2 2 1 0 2 4 1 1 1 2 
+5 1 2 3 4 5 3 
+4 1 2 6 7 5 
+2 3 8 1 
+3 3 6 11 5 
+3 8 9 10 3 
+ 
+pigs.out 
+ 
+17  
+
+\end{verbatim}

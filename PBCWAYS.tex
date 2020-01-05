@@ -1,0 +1,40 @@
+
+
+
+
+   Cho một bảng hình chữ nhật được chia ra thành NxM ô vuông(gồm N dòng và M cột). Một con tốt sau một nước đi có thể di chuyển từ 1 ô ở cột này sang 1 ô ở cột kế tiếp. Đối với mỗi ô vuông, cho biết số hiệu các ô ở cột kế tiếp mà con tốt có thể di chuyển đến sau 1 nước đi. Con tốt không thể di chuyển đến ô nó đã đi qua trước đó. Thoạt đầu con tốt được đặt ở một ô nào đó của cột thứ nhất. Sau đó nó di chuyển về phía cột cuối cùng. Khi con tốt đã đến cột cuối cùng, người ta lại đặt nó vào một ô nào đó ở cột đầu tiên mà trước nó chưa hề đặt nó và tiếp tục di chuyển.  
+
+   Trò chơi kết thúc khi không thể thực hiện nước đi.  
+
+\subsubsection{   Yêu cầu  }
+
+   Xác định xem có thể thực hiện nhiều nhất bao nhiêu lần di chuyển con tốt từ cột đầu tiên đến cột cuối cùng.  
+
+\subsubsection{   Input  }
+
+   Dòng đầu tiên chứa 2 số nguyên dương N,M(1$<$=N$<$=50,1$<$=M$<$=10).  
+
+   Tiếp theo là M-1 nhóm dòng, mỗi nhóm gồm N dòng, mô tả khả năng di chuyển của con tốt từ mỗi ô của bảng. Dòng thứ i của nhóm dòng j mô tả khả năng di chuyển của con tốt từ ô ở dòng i cột j của bảng bao gồm: Số đầu tiên cho biết khả năng di chuyển, tiếp theo là toạ độ dòng của các ô trong cột kế tiếp mà con tốt có thể di chuyển sang(các toạ độ được liệt kê theo thứ tự tăng dần).  
+
+\subsubsection{   Output  }
+
+   Gồm 1 dòng duy nhất là kết quả bài toán.  
+
+\subsubsection{   Example  }
+\begin{verbatim}
+Input
+4 3 
+2 1 3 
+3 1 2 4
+0
+2 2 3 
+1 2 
+1 2 
+1 3 
+2 2 4 
+
+Output
+3
+\end{verbatim}
+
+   Ghi chú: Trong ví dụ có thể thực hiện nhiều nhất 3 lần con tốt từ cột đầu tiên đến cột cuối cùng. Chẳng hạn: (1-$>$3-$>$3; 2-$>$4-$>$4; 4-$>$2-$>$2).  

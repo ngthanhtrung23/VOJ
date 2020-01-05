@@ -1,0 +1,64 @@
+
+
+
+
+   Cho một đồ thị vô hướng, không trọng số. Mỗi đỉnh có một khối lượng dương. Khối lượng của một tập hợp các đỉnh được định nghĩa là bằng tổng khối lượng của tất cả các đỉnh thuộc tập đó.  
+
+   Một tập đỉnh được gọi là tập độc lập nếu như không có cạnh nào của đồ thị mà cả hai đỉnh đầu mút của nó đều thuộc tập đỉnh đó.  
+
+   Một đồ thị con được sinh ra bởi một tập đỉnh cho trước là một đồ thị với các đỉnh nằm trong tập đó, và các cạnh là các của đồ thị gốc mà cả 2 đầu mút nằm trong tập đã cho.  
+
+   Nếu s là một tập các đỉnh, ta gọi Query(s, G) = tập độc lập có khối lượng cực đại trong đồ thị con được sinh ra bởi tập s.  
+
+   Cho q câu hỏi và mô tả của đồ thị gốc, bạn cần tính khối lượng của tập độc lập có khối lượng cực đại của từng câu hỏi.  
+
+\subsubsection{   Input  }
+
+   Dòng đầu chứa T, số lượng test.  
+
+   Mỗi test bắt đầu bằng một dòng chứa 2 số nguyên n và  m, thể hiện số lượng đỉnh và số lượng cạnh của đồ thị.  
+
+   Dòng tiếp theo chứa n số nguyên thể hiện khối lượng của các đỉnh lần lượt từ 0 đến n - 1.  
+
+   m dòng tiếp theo, mỗi dòng chứa 2 số nguyên u và v ( u != v, 0 ≤ u,v $<$ n ), thể hiện một cạnh vô hướng từ u đến v.  
+
+   Dòng tiếp theo chứa q, số lượng câu hỏi.  
+
+   q dòng tiếp theo chứa mô tả của một câu hỏi. Bắt đầu bằng một số nguyên thể hiện số lượng phần tử của tập s, theo sau là các đỉnh thuộc tập s.  
+
+\subsubsection{   Output  }
+
+   Với mỗi test, in ra q dòng, chứa câu trả lời cho từng câu hỏi. In ra một dòng trống giữa các test.  
+
+\subsubsection{   Example  }
+\begin{verbatim}
+Input:
+2
+5 1
+1 2 3 4 5
+0 1
+3
+3 0 1 2
+3 1 2 3
+2 0 1
+3 3
+1 2 3
+0 1
+0 2
+1 2
+1
+3 0 1 2
+
+Output:
+5
+9
+2
+
+3 
+\end{verbatim}
+
+\subsubsection{   Constraints  }
+
+   Dataset 1: T ≤ 20, n ≤ 30 , m ≤ 1000, q ≤ 1000 , khối lượng của một đỉnh ≤ 1000 Time limit: 5s  
+
+   Dataset 2: T ≤ 10, n ≤ 40, m ≤ 1000, q ≤ 100, khối lượng của một đỉnh ≤ 1000 Time limit: 5s  

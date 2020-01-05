@@ -1,0 +1,124 @@
+
+
+
+
+\emph{    "Bubba là người Bubbabian ở nước Bubbabic, người Bubba nói tiếng Bubba, tiếng Bubba nói ra không ai hiểu, người Bubba nói chuyện với nhau cũng không hiểu, thế là sinh ra mâu thuẫn chiến tranh, toàn bộ dân tộc Bubba bị hủy diệt, chỉ còn mỗi Bubba là còn sống. Lí do sống sót là khi có chiến tranh, người Bubba chia cặp ra quyết đấu, dân số lẻ, thế là thoát.   }
+
+\emph{    [...]   }
+
+    Lại nói chuyện người Bubba bị tuyệt chủng, ở trên vừa nói nguyên nhân do nội chiến là nói phét đấy, thực ra chuyện là thế này. Không biết ở đâu, tự nhiên lại xuất hiện một con quái vật Heo Ăn Thịt Người (... khi phát âm phải kèm theo "aaaaaaaaaaa" ...). Con heo có thân hình khổng lồ, vừa đi vừa kể truyện cười, người nào nghe thấy mà cất tiếng cười thì đều hóa thành đá rồi bị nuốt chửng, rất là đáng sợ..."   
+
+\emph{    - Truyền thuyết Bubba -   }
+
+   Nhiệm vụ lần này của bạn là giúp quái vật Heo Ăn Thịt Người.  
+
+   Vương quốc Bubbabic có N người. Người thứ i sống ở điểm có tọa độ (xi, yi). (Vì thời đó, người ta chưa biết trái đất hình cầu, nên người ta coi thế giới như một mặt phẳng 2 chiều OXY).  
+
+   Nhiệm vụ của Heo Ăn Thịt Người là phải di chuyển đến tất cả N người. Heo xuất phát từ nhà của mình tại địa điểm (ui, vi). Trong một đơn vị thời gian, Heo có thể di chuyển đến 9 điểm: 1 điểm là vị trí hiện tại và 8 điểm xung quanh (cụ thể: từ (u,v) có thể di chuyển đến (u', v') nếu |u'-u| ≤ 1 và |v'-v| ≤ 1). Hành trình vất vả của Heo như sau: đầu tiên, Heo cần di chuyển đến điểm (x1, y1) để hóa đá người thứ nhất. Sau đó, Heo cần trở về nhà của mình nghỉ ngơi và nghĩ truyện cười mới. Thời gian để Heo nghĩ truyện cười mới là 2 đơn vị thời gian. Tiếp theo, Heo di chuyển đến vị trí người thứ 2, rồi quay về nhà của mình nghĩ truyện cười mới. Quá trình trên lặp lại cho đến người thứ N. Chú ý là sau khi trở về nhà mình từ nhà người thứ N, Heo chỉ cần trở về nhà nghỉ ngơi mà không cần nghĩ truyện cười mới.  
+
+   Giờ heo có một số câu hỏi. Câu hỏi thứ i có dạng (ui, vi), nghĩa là nếu heo xây nhà ở (ui,vi) thì tổng thời gian chuyến hành trình của mình là bao nhiêu (giả sử Heo luôn chọn con đường ngắn nhất, trên các con đường không có chướng ngại vật và Heo không dừng lại nghỉ ngơi hay ngắm cảnh giữa đường). Tuy nhiên, việc trả lời những câu hỏi này vô cùng khó, do khi Heo còn đang mải đặt câu hỏi, thì người dân Bubbabic đã di chuyển khắp bản đồ rồi. (Tuy nhiên điều rất may mắn là khi Heo di chuyển thì tất cả mọi người đều đứng yên một chỗ để ẩn nấp). Bạn hãy giúp Heo trả lời các câu hỏi này nhé!  
+
+\subsubsection{   Input  }
+
+   Dòng đầu ghi 3 số nguyên N, Q và BASE. N là số người, Q là số truy vấn và BASE được dùng cho việc tính toán phía dưới.  
+
+   N dòng tiếp theo, dòng thứ i ghi 2 số xi, yi là tọa độ người thứ i.  
+
+   Q dòng tiếp theo mô tả các truy vấn (gồm câu hỏi của Heo, hoặc mô tả việc di chuyển của một người dân nước Bubbabic).  
+
+   Đặt T = câu trả lời của câu hỏi gần nhất. Trước câu hỏi đầu tiên, T = 0. Mỗi truy vấn thuộc 1 trong 2 dạng:  
+\begin{itemize}
+	\item     0 i a1 b1 a2 b2: Người thứ i di chuyển đến vị trí ( (a1*T + b1) MOD BASE, (a2*T+b2) MOD BASE ). Chú ý rằng truy vấn này không làm thay đổi T.   
+	\item     1 a1 b1 a2 b2: Nếu heo xây nhà của mình ở ( (a1*T + b1) MOD BASE, (a2*T + b2) MOD BASE ), thì tổng thời gian chuyến hành trình của heo là bao nhiêu. Sau truy vấn này, T bị thay đổi. (Giá trị mới của T = kết quả của truy vấn này)   
+\end{itemize}
+
+   Chú ý: a MOD b được hiểu là phần dư của phép chia a cho b. Ví dụ 7 MOD 4 = 3, 12 MOD 5 = 2  
+
+\subsubsection{   Giới hạn  }
+
+   Trong tất cả các test:  
+\begin{itemize}
+	\item     0 $<$ N, Q  ≤ 10    $^     5    $
+	\item     0 $<$ BASE ≤ 10    $^     9    $
+	\item     0 ≤ Tọa độ ban đầu của N người ≤ BASE   
+	\item     0 ≤ a1, b1, a2, b2 ≤ 10    $^     9    $
+	\item     1 ≤ i ≤ N   
+	\item     Các số trong đề bài đều là số nguyên.   
+\end{itemize}
+
+   Trong 30\% test đầu tiên:  
+\begin{itemize}
+	\item     0 $<$ N, Q ≤ 10    $^     3    $
+\end{itemize}
+
+   Trong 50\% test tiếp theo:  
+\begin{itemize}
+	\item     a1 = a2 = 0   
+\end{itemize}
+
+   Trong 10\% test tiếp theo:  
+\begin{itemize}
+	\item     BASE ≤ 10    $^     6    $
+\end{itemize}
+
+   Trong 10\% test cuối cùng:  
+\begin{itemize}
+	\item     N, Q ≤ 5*10    $^     4    $
+\end{itemize}
+
+\subsubsection{   Output  }
+
+   Với mỗi truy vấn dạng 1, in ra 1 dòng chứa số nguyên T.  
+
+\subsubsection{   Example  }
+
+
+\begin{verbatim}
+\textbf{Input}
+3 4 1000000000
+2 2
+3 1
+7 0
+1 2 4 3 5
+0 3 1 1 7 3
+1 4 3 2 6
+0 2 2 7 4 1
+
+\textbf{Output}
+28
+728\end{verbatim}
+
+\subsubsection{   Giải thích test ví dụ:  }
+
+   Ban đầu có 3 người ở vị trí (2,2), (3,1), (7,0).  
+
+   Trong câu hỏi thứ nhất, Heo Ăn Thịt Người xây nhà ở vị trí (4,5). Tổng thời gian chuyến hành trình của heo bao gồm:  
+\begin{itemize}
+	\item     3 đơn vị thời gian để di chuyển đến vị trí của người thứ nhất   
+	\item     3 đơn vị thời gian để quay trở về nhà mình   
+	\item     2 đơn vị thời gian để nghỉ ngơi và nghĩ truyện cười mới   
+	\item     4 đơn vị thời gian để di chuyển đến vị trí người thứ hai   
+	\item     4 đơn vị thời gian để di chuyển về nhà mình   
+	\item     2 đơn vị thời gian để nghỉ ngơi và nghĩ truyện cười mới   
+	\item     5 đơn vị thời gian để di chuyển đến vị trí người thứ ba   
+	\item     5 đơn vị thời gian để quay trở về nhà của mình   
+\end{itemize}
+
+   Tổng cộng: 3 + 3 + 2 + 4 + 4 + 2 + 5 + 5 = 28 đơn vị thời gian  
+
+   Sau câu hỏi này, T = 28.  
+
+   Tiếp đó, người thứ ba di chuyển đến vị trí (29, 199).  
+
+   Trong câu hỏi tiếp theo, Heo xây nhà ở vị trí (115, 62). Tính toán tương tự như phần trên, các bạn có thể tìm được đáp số của câu hỏi này là 728.  
+
+\subsubsection{   Chú ý với C/C++:  }
+\begin{itemize}
+	\item     Độ lớn của file input khá lớn (file nặng nhất xấp xỉ 5MB). Đối với C++, các bạn cần cẩn thận với cách input/output của mình.   
+	\item     Để input/output số 64-bit có dấu trên hệ thống SPOJ, các bạn cần sử dụng \%lld.   
+\end{itemize}
+
+\subsubsection{   Giới hạn thời gian chạy:  }
+\begin{itemize}
+	\item     4s đến 5s, tùy độ lớn và độ khó của test.   
+\end{itemize}

@@ -1,0 +1,46 @@
+
+
+
+
+   Tết năm nay Nuga cùng bạn đi xem lễ hội hoa ở Hà Nội. Nuga rất hứng thú với hàng trăm loài hoa đẹp được trình diễn ở đây, đặc biệt là cuộc thi Đào – Mai để chọn ra một cây hoa đẹp nhất.  
+
+   Có D cây đào (đánh số từ 1 .. D) và M cây mai (đánh số từ 1 .. M) tham gia cuộc thi. Vòng đầu tiên sẽ do khán giả bình chọn. Có N khán giả, mỗi người sẽ bỏ một lá phiếu. Điều đặc biệt là mỗi lá phiếu chỉ thuộc một trong 2 dạng:  
+\begin{verbatim}
+     - “Chọn cây đào I, không chọn cây mai J”, hoặc
+     - “Chọn cây mai I, không chọn cây đào J”.
+\end{verbatim}
+
+
+
+   Ban tổ chức muốn chọn ra danh sách một số cây lọt vào vòng 2 sao cho số khán giả có lá phiếu đúng (chính xác cả cây được chọn và cây không được chọn) là nhiều nhất.  
+
+   Biết Nuga giỏi lập trình nên BTC vừa nhờ bạn ấy giải quyết bài toán khó này. Nhưng do mải ngắm hoa quá nên Nuga quên hết kiến thức mất rồi. Các bạn hãy giúp bạn ấy với nhé!  
+
+\subsubsection{   Dữ liệu  }
+
+   Dòng đầu ghi T là số bộ test. Mỗi bộ test bắt đầu bằng 3 số nguyên dương D, M, N. Sau đó là N dòng, dòng thứ k mô tả lá phiếu do khán giả thứ k bình chọn. Lá phiếu có dạng “Di Mj” (Chọn cây đào i, không chọn cây mai j) hoặc “Mi Dj” (Chọn cây mai i, không chọn cây đào j), trong đó i và j là 2 số nguyên dương.  
+
+\subsubsection{   Kết quả  }
+
+   Một dòng duy nhất chứa một số nguyên thể hiện số lượng nhiều nhất khán giả có lá phiếu đúng.  
+
+\subsubsection{   Giới hạn  }
+\begin{verbatim}
+T ≤ 30
+1 ≤ D, M, N ≤ 500
+\end{verbatim}
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu:
+1
+1 2 4
+D1 M1
+D1 M1
+D1 M2
+M2 D1
+
+Kết quả:
+3
+
+\end{verbatim}

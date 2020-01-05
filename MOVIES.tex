@@ -1,0 +1,77 @@
+
+
+
+
+\subsubsection{   Đề bài  }
+
+   Bờm và Cuội đi xem phim trong một rạp có n hàng ghế, mỗi hàng có m ghế. Hàng đánh số từ 1..n từ đầu đến cuối rạp, và ghế đánh số 1..m từ trái sang phải. Một số ghế đã có người mua vé.  
+
+   Tính số cách để Bờm và Cuội có thể mua 2 ghế cạnh nhau trên cùng một hàng.  
+
+\subsubsection{   Dữ liệu  }
+\begin{itemize}
+	\item     Mỗi test bắt đầu bằng thẻ "[CASE]", các test cách nhau bởi một dòng trắng. Thẻ "[END]" báo hiệu kết thúc file input.   
+	\item     Với mỗi test, dòng đầu tiên chứa số n, dòng thứ hai chứa số m.   
+	\item     Tiếp theo là dòng "$<$$<$".   
+	\item     Các dòng tiếp theo chứa số hiệu hàng của các ghế đã có người ngồi   
+	\item     Kết thúc bằng dòng "$>$$>$'.   
+	\item     Tiếp theo là dòng "$<$$<$".   
+	\item     Các dòng tiếp theo chứa số hiệu ghế của các ghế đã có người ngồi   
+	\item     Kết thúc bằng dòng "$>$$>$'.   
+\end{itemize}
+
+\subsubsection{   Kết quả  }
+\begin{itemize}
+	\item     Với mỗi test in ra số lượng cách để Bờm và Cuội mua được hai vé ngồi cạnh nhau.   
+\end{itemize}
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     1 $<$= n $<$= m $<$= 10\textasciicircum9   
+	\item     Số ghế đã có người ngồi nằm trong phạm vi từ 1..47.   
+\end{itemize}
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu
+[CASE]
+2
+3
+$<$$<$
+1
+2
+$>$$>$
+$<$$<$
+2
+3
+$>$$>$
+
+[CASE]
+2
+3
+$<$$<$
+1
+1
+1
+2
+2
+2
+$>$$>$
+$<$$<$
+1
+2
+3
+1
+2
+3
+$>$$>$
+
+[END]
+Kết quả
+1
+0
+\end{verbatim}
+
+   Ví dụ 1: Ghế 1 và 2 ở hàng 2 là hai ghế cạnh nhau duy nhất còn trống.  
+
+   Ví dụ 2: Tất cả các ghế đều đã có người ngồi.  

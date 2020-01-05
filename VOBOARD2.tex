@@ -1,0 +1,61 @@
+
+
+ 
+
+"Ngày xửa ngày xưa, ở một vương quốc nọ, có một hoàng tử bị quái vật giam giữ trong một mê cung tăm tối. Hàng ngày hoàng tử phải nghe quái vật than thở, chơi với quái vật, nấu ăn, giặt giũ cho quái vật, vô cùng khổ sở. Nhưng vì là hoàng tử, nên không ai có ý định đi cứu chàng cả. Vì vậy hoàng tử phải tự mình tìm đường thoát thân. Dù ngày đêm lo lắng quên ăn quên ngủ, nhưng đã biết bao ngày trôi qua mà hoàng tử vẫn không thể thoát khỏi mê cung. Bỗng một hôm, có một bà tiên xinh đẹp xuất hiện, đưa cho hoàng tử một xâu dài miên man, và bảo hoàng tử cứ đi theo chỉ dẫn của xâu này là sẽ thoát khỏi mê cung. Hoàng tử vui mừng lắm, quyết định mỗi ngày sẽ đi theo một ký tự của xâu. Tuy nhiên có nhiều ngày vì mải chơi nên đã quên mất không di chuyển. Cuối cùng hoàng tử mãi mãi không thể rời khỏi mê cung".
+
+Nhiệm vụ của bạn là cho bản đồ của mê cung, vị trí ban đầu của hoàng tử và xâu chỉ dẫn độ dài L. Hãy tìm tất cả các vị trí của mê cung, mà sau đúng L ngày, hoàng tử có thể ở đó. Chú ý là vào ngày thứ i, hoàng tử chỉ có thể di chuyển theo ký tự thứ i của xâu, hoặc là không di chuyển do mải chơi.
+
+\subsubsection{Đề bài}
+
+Cho một mê cung kích thước \textbf{ M*N } , được chia thành các hình vuông đơn vị cạnh 1*1. Các hàng của mê cung được đánh số từ 1 đến M từ trên xuống dưới, các cột của mê cung được đánh số từ 1 đến N từ trái sang phải. Ô ở hàng i, cột j được kí hiệu là ô (i, j). Mỗi ô của mê cung là tường hoặc ô trống.
+
+Cho một xâu \textbf{ S } độ dài \textbf{ L } là chỉ dẫn đường đi, gồm các chữ số từ 1 đến 8, tương ứng với các hướng từ 1 đến 8 như bảng sau:
+\begin{verbatim}
+
+\texttt{8 1 2
+7   3
+6 5 4}\end{verbatim}
+
+Vào ngày thứ i (1 ≤ i ≤ L), hoàng tử sẽ đứng im, hoặc là di chuyển sang một ô kề cạnh hoặc kề đỉnh, theo hướng là ký tự thứ i của xâu S (các ký tự của xâu S được đánh số từ 1 đến L).
+
+Cho biết vị trí ban đầu của hoàng tử (vị trí này luôn luôn là ô trống). Tìm tất cả các ô (i, j), mà sau đúng L ngày, hoàng tử có thể ở ô đó. Chú ý rằng hoàng tử chưa bao giờ thoát khỏi mê cung, nên bạn có thể bỏ qua tất cả các nước đi khiến hoàng tử đi ra ngoài mê cung. Bạn cũng cần bỏ qua tất cả các nước di chuyển vào những ô tường, vì hoàng tử không có khả năng đi xuyên tường.
+
+\subsubsection{Input}
+\begin{itemize}
+	\item Dòng 1: Gồm hai số nguyên dương M và N - kích thước của mê cung.
+	\item Dòng 2: Gồm 2 số nguyên u, v, là vị trí ban đầu của hoàng tử.
+	\item M dòng tiếp theo, mỗi dòng gồm đúng N ký tự, thể hiện mê cung. Ký tự thứ j của hàng i là '\#' nếu ô (i, j) là tường (không thể đi vào được), và là '.' nếu ô (i, j) là ô trống (có thể đi vào được).
+	\item Dòng cuối cùng là xâu S độ dài L, gồm các chữ số từ 1 đến 8.
+\end{itemize}
+
+\subsubsection{Output}
+
+Gồm M dòng, mỗi dòng gồm đúng N ký tự. Ký tự thứ j của dòng i là 0 nếu hoàng tử không thể ở ô (i, j) sau L ngày, và 1 trong trường hợp ngược lại.
+
+\subsubsection{Giới hạn}
+\begin{itemize}
+	\item 40\% test có M, N, L ≤ 100.
+	\item 60\% test còn lại có M, N ≤ 10 $^ 3 $ , L ≤ 10 $^ 6 $
+\end{itemize}
+
+\subsubsection{Chấm điểm}
+\begin{itemize}
+	\item Trong thời gian thi, bài của bạn sẽ chỉ được chấm với duy nhất 1 test có trong đề bài.
+\end{itemize}
+
+\subsubsection{Ví dụ}
+\begin{verbatim}
+\textbf{Input:}
+3 4
+2 3
+....
+....
+....
+37\end{verbatim}
+\begin{verbatim}
+\textbf{Output:}
+0000
+0111
+0000
+\end{verbatim}

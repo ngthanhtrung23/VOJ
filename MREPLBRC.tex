@@ -1,0 +1,52 @@
+
+
+Dãy ngoặc hợp lệ gồm:
+\begin{itemize}
+	\item Xâu rỗng.
+	\item A hợp lệ thì (A), [A] và \{A\} cũng thế.
+	\item A, B hợp lệ thì AB cũng thế.
+\end{itemize}
+
+Ví dụ : [(\{\})], []()\{\} và [\{\}]()[\{\}] là hợp lệ, [(\{\{([, [](\{)\} và [\{\}])([\{\}] không hợp lệ.
+
+Cho một xâu chỉ gồm ( ) \{ \} [ ] và ?. Dấu ? có thể thay thế bằng ngoặc bất kỳ. Tính số cách thay thế mà thu được 1 dẫy ngoặc hợp lệ. Chỉ hiện 5 chữ số cuối cùng.
+
+\subsubsection{Input}
+
+Dòng đầu là N, độ dài xâu (2 $<$= N $<$= 200), Dòng thứ hai là xâu mô tả.
+
+\subsubsection{Output}
+
+5 chữ số cuối cùng của dẫy ngoặc hợp lệ thu được. ($<$= 5 chữ số thì in ra hết cả kết quả).
+
+\subsubsection{Sample}
+\begin{verbatim}
+input 
+
+6 
+()()() 
+ 
+output 
+ 
+1 
+
+input 
+ 
+10 
+(?([?)]?}? 
+ 
+output 
+ 
+3
+
+input 
+ 
+16 
+???[???????]???? 
+ 
+output 
+ 
+92202
+
+Ví dụ thứ hai, 3 dãy ngoặc hợp lệ là  ({([()])}), ()([()]{}) và ([([])]{}).
+\end{verbatim}

@@ -1,0 +1,33 @@
+
+
+
+
+   Cho một dãy số nguyên gồm N phần tử A[1], A[2], ... A[N].   
+\\   Biết rằng dãy con tăng đơn điệu là 1 dãy A[i   $_    1   $   ],... A[i   $_    k   $   ] thỏa mãn   
+\\   i   $_    1   $   $<$ i   $_    2   $   $<$ ... $<$ i   $_    k   $   và A[i   $_    1   $   ] $<$ A[i   $_    2   $   ] $<$ .. $<$ A[i   $_    k   $   ]. Hãy cho biết dãy con tăng đơn điệu dài nhất của dãy này có bao nhiêu phần tử?   
+\\
+\\\textit{    Download test và solution (C/C++, Pascal) tại    \href{https://vn.spoj.pl/content/liq.zip}{     đây    }}   .  
+
+\subsubsection{   Input  }
+\begin{itemize}
+	\item     Dòng 1 gồm 1 số nguyên là số N (1 ≤ N ≤ 1000).   
+	\item     Dòng thứ 2 ghi N số nguyên A[1], A[2], .. A[N] (1 ≤ A[i] ≤ 10000).   
+\end{itemize}
+
+\subsubsection{   Output  }
+
+   Ghi ra độ dài của dãy con tăng đơn điệu dài nhất.  
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Input:
+6
+1 2 5 4 6 2 
+
+Output:
+4
+\end{verbatim}
+
+       Giải thích test ví dụ:      Dãy con dài nhất là dãy A[1] = 1 $<$ A[2] = 2 $<$ A[4] = 4 $<$ A[5] = 6, độ dài dãy này là 4.  
+
+       Gợi ý:      Sử dụng phương pháp Quy Hoạch Động. F[i]: Độ dài dãy con đơn điệu tăng dài nhất mà phần tử cuối cùng là số A[i] này.  

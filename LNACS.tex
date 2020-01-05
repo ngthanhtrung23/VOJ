@@ -1,0 +1,53 @@
+
+
+Dãy C = c $_ 1 $ , c $_ 2 $ , ..., c $_ k $ là dãy con không liền kề của dãy A = a $_ 1 $ , a $_ 2 $ , ..., a $_ m $ nếu C có thể nhận được bằng cách chọn một dãy các phần tử không liền kề của A, nghĩa là tìm dược dãy các chỉ số i $_ 1 $ , i $_ 2 $ , ..., i $_ k $ sao cho:
+
+1 ≤ i $_ 1 $ , i $_ 2 $ , ..., i $_ k $ ≤ m;
+\\i $_ 1 $ $<$ i $_ 2 $ - 1, i $_ 2 $ $<$ i $_ 3 $ - 1, ..., i $_ k - 1 $ $<$ i $_ k $ - 1;
+\\c $_ 1 $ = a $_ i1 $ , c $_ 2 $ = a $_ i2 $ , c $_ k $ = a $_ ik $ .
+
+Ta gọi độ dài của dãy số là số phần tử của nó.
+
+Cho hai dãy:
+\\A = a $_ 1 $ , a $_ 2 $ , ..., a $_ m $
+\\và
+\\B = b $_ 1 $ , b $_ 2 $ , ..., b $_ n $
+
+Dãy C được gọi là dãy con chung không liền kề của hai dãy A và B nếu như nó vừa là dãy con không liền kề của A, vừa là dãy con không liền kề của B.
+
+\subsection{Yêu cầu}
+
+Cho hai dãy số A và B. Hãy tìm độ dài của dãy con chung không liền kề dài nhất của hai dãy đã cho.
+
+\subsection{Dữ liệu}
+
+ 
+\begin{itemize}
+	\item Dòng đầu tiên chứa hai số nguyên dương m và n (2 ≤ m, n ≤ 10 $^ 3 $ ) được ghi cách nhau bởi dấu cách, lần lượt là số lượng phần tử của dãy A và dãy B.
+	\item Dòng thứ i trong m dòng tiếp theo chứa số nguyên không âm a $_ i $ (a $_ i $ ≤ 10 $^ 4 $ ), i = 1, 2, ..., m.
+	\item Dòng thứ j trong n dòng tiếp theo chứa số nguyên không âm b $_ j $ (b $_ j $ ≤ 10 $^ 4 $ ), j = 1, 2, ..., n.
+\end{itemize}
+
+ 
+
+\subsection{Kết quả}
+
+Ghi ra trên một dòng duy nhất độ dài của dãy con chung không liền kề dài nhất của hai dãy A và B.
+
+\subsection{Ví dụ}
+\begin{verbatim}
+Input:
+4 5
+4
+9
+2
+4
+1
+9
+7
+3
+4
+
+Output:
+2
+\end{verbatim}

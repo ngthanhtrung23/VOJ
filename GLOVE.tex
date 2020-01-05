@@ -1,0 +1,44 @@
+
+
+
+
+
+
+
+
+   Trong tầng hầm tối tăm tại căn nhà của giáo sư hóa học Acidrain, có 2 ngăn kéo đựng toàn găng tay – một chứa găng tay trái và cái còn lại chứa găng tay phải. Trong mỗi ngăn kéo đều có những chiếc găng tay với n màu khác nhau. Giáo sư biết có bao nhiêu chiếc găng tay của mỗi màu trong mỗi ngăn kéo (số lượng găng tay cùng màu có thể khác nhau trong cả 2 ngăn). Ông cũng biết chắc chắn rằng có thể tìm được một cặp găng tay cùng màu.  
+
+   Thí nghiệm của giáo sự chỉ có thể thành công nếu như ông sự dụng đúng đôi găng tay cùng màu (không quan trọng là màu gì), cho nên trước mỗi cuộc thí nghiệm, giáo sự đi xuống tầng hầm và chọn găng tay từ 2 ngăn kéo, hi vọng rằng sẽ có ít nhất một cặp găng cùng màu. Tầng hầm quá tối đến nỗi không thể nhận ra được màu của bất kỳ chiếc găng tay nào mà không phải đi ra khỏi đó. Giáo sư rất ghét việc phải đi vào tầng hầm hơn một lần (trong trường hợp không có cặp găng nào cùng màu), cũng như việc mang theo một lượng quá lớn những chiếc găng không cần thiết đến phòng thí nghiệm.  
+
+\subsubsection{   Task  }
+
+   Viết chương trình:  
+\begin{itemize}
+	\item     Đọc vào số lượng màu và số lượng găng tay của mỗi màu trong mỗi ngăn kéo từ standard input,   
+	\item     Tính số găng tay nhỏ nhất cần phải lấy để chắc chắn rằng trong số chúng có thể tìm được ít nhất một cặp găng tay cùng màu (cần phải chỉ rõ số lượng găng phải lấy ở mỗi ngăn kéo)   
+	\item     Viết kết quả ra standard output   
+\end{itemize}
+
+
+
+\subsubsection{   Input  }
+
+   Dòng đầu tiên của standard input chứa một số nguyên dương n ( 1 ≤ n ≤ 20), mô tả số lượng màu khác nhau. Các màu được đánh số từ 1 đến n. Dòng thứ 2 chứa n số nguyên không âm 0 ≤ a1, a2, …, an ≤ 10\textasciicircum8, với ai là số lượng găng tay màu i trong ngăn kéo chứa găng tay trái. Cuối cùng, dòng thứ 3 của input chứa n số nguyên không âm 0 ≤ b1, b2, …, bn ≤ 10\textasciicircum8, với bi là số lượng găng tay màu i trong ngăn kéo chứa găng tay phải.  
+
+\subsubsection{   Output  }
+
+   Dòng đầu tiên của standard output chứa một số nguyên – số lượng găng tay phải lấy từ ngăn kéo chứa găng tay trái. Dòng thứ 2 của output chứa một số nguyên – số lượng găng tay phải lấy từ ngăn kéo chứa găng tay phải. Tổng của 2 số này là nhỏ nhất có thể. Nếu có vài kết quả đúng, bạn chỉ cần in ra một trong số đó.  
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+4
+0 7 1 6
+1 5 0 6
+
+
+\textbf{Output:}
+2
+8
+
+\end{verbatim}

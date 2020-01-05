@@ -1,0 +1,42 @@
+
+
+
+
+   Sau khi phân chia đất nước thành các thành phố, đảo khỉ lại nảy sinh vấn đề mới: phải ngăn chặn việc vận chuyển chuối! Đảo khí có N thành phố đánh số từ 1 đến N nối với nhau bởi M đường nối hai   chiều. Giữa hai thành phố có nhiều nhất một con đường. Giữa hai thành phố bất kỳ có ít nhất một đường đi (tạo bởi một hoặc nhiều con đường). Đảo khỉ có hai thủ đô là thành phố 1 và thành phố N.  
+
+   Gần đây, việc vận chuyển chuối giữa hai thủ đô tăng vọt. Để tấn công việc vận chuyển, tổng thống huy động G binh lính, mỗi binh lính có thể đặt tại vị trí bất kỳ trên một con đường, có thể gần thành phố   tùy ý, nhưng không được nằm trong thành phố. Trong trường hợp có lệnh tấn công vào một trong hai thủ đô, tất cả binh lính phải di chuyển đến thủ đô đó. Các binh lính di chuyển với vận tốc không đổi. Thời   gian cần thiết để huy động một cuộc tấn công như vậy bằng khoảng cách lớn nhất từ các binh lính đến một trong hai thủ đô.  
+
+   Yêu cầu: xác định một cách bố trí các binh lính sao cho mọi đường đi từ thủ đô này đến thủ đô kia đều đi qua ít nhất một con đường có binh lính gác và thời gian huy động tấn công trong trường hợp xấu   nhất là nhỏ nhất.  
+
+\subsubsection{   Dữ liệu  }
+\begin{itemize}
+	\item     Dòng đầu tiên chứa 3 số nguyên N, M, G cách nhau bởi khoảng trắng.   
+	\item     Mỗi dòng trong số M dòng sau chứa 3 số nguyên a, b, c cách nhau bởi khoảng trắng, cho biết có một đường nối hai chiều giữa thành phố a và b với độ dài c.   
+\end{itemize}
+
+\subsubsection{   Kết qủa  }
+
+   In ra một số nguyên duy nhất là thời gian nhỏ nhất để tất cả các binh lính có thể di chuyển đến một thủ đô, với đúng một chữ số thập phân. Nếu không có lời giải, in ra -1.  
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     2 $<$ N $<$ 155   
+	\item     2 $<$ M $<$ 5055   
+	\item     0 $<$ độ dài của một con đường $<$ 1024   
+	\item     2 $<$ G $<$ 4096   
+\end{itemize}
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu:
+6 6 2
+1 2 1
+2 3 2
+3 6 1
+1 4 1
+4 5 3
+5 6 1
+
+Kết qủa
+2.5
+\end{verbatim}

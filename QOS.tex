@@ -1,0 +1,55 @@
+
+
+ 
+
+Bài toán định tuyến kèm theo chất lượng dịch vụ bảo đảm trong các ứng dụng đa phương tiện như tuyến tính hình ảnh và âm thanh theo yêu cầu là vấn đề thời sự trong những năm gần đây. Trong bài toán này, chúng ta quan tâm đến độ trễ của các đường truyền tin.
+
+Công ty cung cấp dịch vụ mạng ESI vừa thiết lập một mạng truyền thông giữa các điểm cung cấp dịch vụ và khách hàng, bao gồm n nút và m kênh nối trực tiếp một chiều giữa hai nút. Các nút được đánh số từ 1 đến n, trong đó nút 1 là nút nguoif. Các kênh nối được đánh số từ 1 đến m. kênh nối thứ i cho phép truyền tin (một chiều) từ nút ui tới nút vi và có độ trễ là c(ui, vi). Có không quá một kênh truyền tin từ một nút đến một nút khác. Một đường truyền tin từ nút nguồn đến nút t được biểu diễn dưới dạng một dãy liên tiếp các chỉ số cảu các nút, xuất phát từ 1 và kết thúc tại t. Dộ trễ của đường truyền tin được định nghĩa là tổng độ trễ của các kênh nối trực tiếp trên đường truyền tin đó. Để khảo sát các đường truyền tin từ nút nguồn đến một nút i trong mạng, công ty ESI xác định Cmin là độ trễ nhỏ nhất trong tất cả các độ trêc của các kênh trong mạng và Tmin là độ trễ của đường truyền tin từ nút nguồn đến nút t với độ trễ nhỏ nhất. Để đảm bảo dịch vụ đường truyền với chất lượng cao, đường truyền tin từ nút nguồn đến nút t phải thỏa mãn điều kiện QoS (Quality of Service) sau đây: độ trễ của đường truyền tin phải nhỏ hơn hoặc bằng tổng số Tmin + Cmin Sau đó ESI sắp xếp tất cả các đường truyền tin từ nút nguồn đến nút t thỏa mãn điều kiện QoS theo thứ tự từ điển. Theo định nghĩa của công ty ESI, đường truyền tin (x1, x2, .., xp) được gọi là có thứ tự từ điển nhỏ hơn đường truyền tin (y1, y2, ...yq) nếu:
+\begin{itemize}
+	\item hoặc x1 $<$ y1
+	\item hoặc là p $<$ q và xi = yi với mọi i = 1, 2,.., p
+	\item hoặc là tồn tại một chỉ số u (1 $<$ u $<$= p) sao cho xi = yi với mọi i = 1, 2, .. u - 1 và xu $<$ yu.
+\end{itemize}
+
+\subsubsection{Yêu cầu}
+
+Cho trước số nguyên dương k, hãy tìm đường truyền tin từ 1 đến t thỏa mãn điều kiện QoS thứ k trong thứ tự từ điển
+
+\subsubsection{Input}
+\begin{itemize}
+	\item Dòng đầu tiên chứa 4 số nguyên dương n, m, t, k (k $<$= 10\textasciicircum9).
+	\item Dòng thứ i trong số m dòng tiếp theo ghi ba số nguyên dương ui, vi, c(ui, vi) lần lượt là chỉ số đầu, chỉ số cuối và độ trễ cảu kênh thứ i. Độ trễ cảu các kênh là nhỏ hơn 100.
+\end{itemize}
+
+\subsubsection{Output}
+
+Ghi ra -1 nếu không tìm được đường truyền tin thỏa mãn yêu cầu đặt ra, trái lại cần ghi thông tin về đường truyền tin tìm được bao gồm:
+\begin{itemize}
+	\item Dòng đầu ghi số nguyên dương s là số luwognj nút trên đường truyền tìm được;
+	\item Dòng thứ hai ghi s số lần lượt là chỉ số của các nút theo thứ tự mà đường truyền tìm được đi qua, bắt đầu từ nút 1 kết thúc ở nút t.
+\end{itemize}
+
+\subsubsection{Giới hạn}
+\begin{itemize}
+	\item 30\% số test có n $<$= 10.
+	\item có 30\% số test khác có n $<$= 100.
+	\item có 40\% số test còn lại n $<$= 10\textasciicircum3, m $<$= 10\textasciicircum5.
+\end{itemize}
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+7 8 7 2
+1 2 1
+1 5 1
+2 3 1
+2 4 1
+3 7 2
+4 7 2
+5 6 1
+6 7 1
+
+\textbf{Output:}
+4
+1 2 4 7
+\end{verbatim}

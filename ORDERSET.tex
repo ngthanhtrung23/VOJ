@@ -1,0 +1,49 @@
+
+
+
+
+\subsubsection{   Tập hợp thứ tự  }
+
+   Bạn cần quản lý một tập hợp động các số, hỗ trợ hai thao tác cơ bản:  
+\begin{itemize}
+	\item     INSERT(S,x): nếu x không thuộc S, thêm x vào S   
+	\item     DELETE(S,x): nếu x thuộc S, xóa x khỏi S   
+\end{itemize}
+
+   và hai loại truy vấn  
+\begin{itemize}
+	\item     K-TH(S) : trả về số bé thứ k của S   
+	\item     COUNT(S,x): đếm số lượng số thuộc S bé hơn x   
+\end{itemize}
+
+\subsubsection{   Dữ liệu  }
+\begin{itemize}
+	\item     Dòng 1: Q (1 ≤ Q ≤ 200000), số thao tác   
+	\item     Q dòng sau, đầu mỗi dòng chứa ký tự I, D, K hoặc C cho biết thao tác tương ứng là INSERT, DELETE, K-TH hay COUNT. Tiếp theo là một khoảng trắng và một số nguyên là tham số cho thao tác đó.   
+\end{itemize}
+
+   Nếu tham số là giá trị x, dữ liệu bảo đảm 0 ≤ |x| ≤ 10   $^    9   $   . Nếu tham số là chỉ số k, dữ liệu bảo đảm 1 ≤ k ≤ 10   $^    9   $   .  
+
+\subsubsection{   Kết quả  }
+
+   Với mỗi truy vấn, in ra kết quả tương ứng trên một dòng. Với truy vấn K-TH, nếu k lớn hơn số phần tử của S, in ra 'invalid'.  
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu
+8
+I -1
+I -1
+I 2
+C 0
+K 2
+D -1
+K 1
+K 2
+
+Kết quả
+1
+2
+2
+invalid
+\end{verbatim}

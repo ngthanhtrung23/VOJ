@@ -1,0 +1,37 @@
+
+
+
+
+   Cho một dãy số là một hoán vị của 12 số tự nhiên đầu tiên (từ 0 đến 11). Giả sử số 0 ở vị trí thứ i trong dãy số (vị trí được đánh số từ 0 đến 11, từ trái sang phải) thì bạn có thể đổi chỗ số 0 với số ở vị trí thứ j nếu thỏa mãn cả hai điều kiện sau:  
+\begin{itemize}
+	\item     | i – j | = d    $_     k    $    , với k=1..3 và (d    $_     1    $    ,d    $_     2    $    ,d    $_     3    $    ,d    $_     4    $    )=(1;3;6;12)    
+
+
+	\item     [i/d    $_     k+1    $    ]=[j/d    $_     k+1    $    ], với [] là hàm phần nguyên   
+\end{itemize}
+
+   Bạn hãy tìm số phép đổi chỗ ít nhất để có thể sắp xếp dãy số theo thứ tự tăng dần  
+
+\subsubsection{   Dữ liệu vào  }
+
+   Dòng đầu tiên là một số nguyên t cho biết số lượng test (t$<$=20)  
+
+   Mỗi bộ test bao gồm một dòng là dãy bao gồm các số từ 0 đến 11, mỗi số ngăn cách bởi một khoảng trắng.  
+
+   Biết rằng mỗi dãy số cho trước luôn luôn có thể sắp xếp tăng dần bằng phép đổi chỗ đã quy định  
+
+\subsubsection{   Kết qủa  }
+
+   Với mỗi bộ test, in ra số phép đổi chỗ ít nhất để sắp xếp dãy số đã cho theo thứ tự tăng dần  
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu mẫu
+2
+1 10 2 3 0 5 7 4 8 6 9 11
+6 4 1 0 3 5 9 7 2 10 11 8
+
+Kết qủa
+8
+9
+\end{verbatim}

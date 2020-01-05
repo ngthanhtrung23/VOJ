@@ -1,0 +1,56 @@
+
+
+Hòn đảo Paccimic ở giữa Thái Bình Dương là một hòn đảo nổi tiếng với những lễ hội. Đảo Paccimic là hòn đảo được chia thành một hình 4 × 4. Được đánh số thứ 1 đến 16 như hình vẽ dưới đây. 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 Có một đám mây 2 × 2 và đám mây này nằm trong khu vực đảo Paccimic và các nhà khoa học có những phương pháp để đám mây di chuyển theo ý muốn. Đám mây này rất quan trọng vì nó sẽ gây mưa ở vị trí nào nó đang bao phủ. Vì vậy ta cần tính toán xem di chuyển đám mây và làm mưa thế nào để không ảnh hưởng đến lễ hội của người Paccimic. Biết rằng ban đầu đám mây ở vị trí 6, 7, 10, 11. Sau mỗi ngày, đám mây có thể di chuyển theo 4 hướng đông tây nam bắc một hoặc hai bước. Và đầu năm, người dân đã lên kế hoạch lịch tổ chức các lễ hội. Người dân nơi đây vẫn sống chủ yếu dựa vào nông nghiệp, bạn không được phép để một khu vực nào không mưa trong 1 tuần (chỉ để một khu vực không mưa nhiều nhất 6 ngày).
+
+Hòn đảo Paccimic ở giữa Thái Bình Dương là một hòn đảo nổi tiếng với những lễ hội. Đảo Paccimic là hòn đảo được chia thành một hình 4 × 4. Được đánh số thứ 1 đến 16 như hình vẽ dưới đây.
+\begin{verbatim}
+
+\texttt{1	2	3	4
+5	6	7	8
+9	10	11	12
+13	14	15	16}\end{verbatim}
+
+Có một đám mây 2 × 2 và đám mây này nằm trong khu vực đảo Paccimic và các nhà khoa học có những phương pháp để đám mây di chuyển theo ý muốn. Đám mây này rất quan
+
+trọng vì nó sẽ gây mưa ở vị trí nào nó đang bao phủ. Vì vậy ta cần tính toán xem di chuyển đám mây và làm mưa thế nào để không ảnh hưởng đến lễ hội của người Paccimic. Biết rằng ban đầu đám mây ở vị trí 6, 7, 10, 11. Sau mỗi ngày, đám mây có thể di chuyển theo 4 hướng đông tây nam bắc một hoặc hai bước. Và đầu năm, người dân đã lên kế hoạch lịch tổ chức các lễ hội.
+
+Người dân nơi đây vẫn sống chủ yếu dựa vào nông nghiệp, bạn không được phép để một khu vực nào không mưa trong 1 tuần (chỉ để một khu vực không mưa nhiều nhất 6 ngày).
+
+\subsubsection{Input}
+
+Gồm nhiều test, mỗi test bắt đầu bằng số ngày n (n$<$366).
+
+Tiếp theo là N dòng, mỗi dòng ghi 16 số 0/1 tương ứng với việc không có / có tổ chức lễ hội.
+
+File input kết thúc với số 0.
+
+\subsubsection{Output}
+
+với mỗi test, ghi 0 / 1 tương ứng với việc không thể / có thể đáp
+
+ứng được mọi yêu cầu của người dân.
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+7
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+1 0 0 0 0 0 1 0 0 0 0 1 1 0 0 1
+0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 1
+0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0
+0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1
+0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 0
+7
+0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0
+0 0 1 0 0 0 0 1 0 0 0 0 0 1 0 0
+0 0 0 1 0 0 0 0 0 0 1 0 1 0 0 0
+0 1 0 0 0 0 0 1 0 0 0 0 1 0 0 0
+0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 1 1 0 1 0 0 0 0 1
+0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0
+0
+
+\textbf{Output:}
+1
+0\end{verbatim}

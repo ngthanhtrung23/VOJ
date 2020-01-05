@@ -1,0 +1,57 @@
+
+
+
+
+
+
+
+
+   Cho một bảng kích thước   \textbf{    M * N   }   . Các hàng được đánh số từ 1 đến   \textbf{    M   }   từ trên xuống dưới. Các cột được đánh số từ 1 đến   \textbf{    N   }   từ trái sang phải. Mỗi ô của bảng có giá trị là   \textbf{    0   }   hoặc   \textbf{    1   }   . Bạn được thực hiện thao tác: Chọn một hình vuông   \textbf{    3*3   }   nằm trọn vẹn trong bảng và đảo bit tất cả các ô trong hình vuông đó (từ   \textbf{    1   }   chuyển về   \textbf{    0   }   , hoặc từ   \textbf{    0   }   chuyển về   \textbf{    1   }   ). Mỗi hình vuông 3*3 không được chọn quá một lần.  
+
+   Nhiệm vụ của bạn là tìm một dãy ít thao tác nhất sao cho sau khi thực hiện thì bảng chỉ còn chứa số   \textbf{    0   }   . In ra tọa độ ô trái trên của các hình vuông   \textbf{    3*3   }   với tọa độ hàng tăng dần (nếu hai ô có cùng tọa độ hàng thì hình vuông nào có tọa độ cột của ô trái trên nhỏ hơn sẽ được in trước). Nếu không thể đưa bảng về toàn số   \textbf{    0   }   thì in ra   \textbf{    -1   }   . Nếu có nhiều phương án, bạn có thể in ra phương án bất kỳ.  
+
+\subsubsection{    Input   }
+\begin{itemize}
+	\item     Dòng 1: Chứa 2 số nguyên    \textbf{     M    }    và    \textbf{     N    }    (    \textbf{     M,    }\textbf{     N    }\textbf{     ≤ 100    }    ).   
+	\item \textbf{     M    }    dòng tiếp theo: mỗi dòng chứa    \textbf{     N    }    số    \textbf{     0    }    hoặc    \textbf{     1    }\textbf{     .    }
+\end{itemize}
+
+\subsubsection{    Output   }
+\begin{itemize}
+	\item     Dòng đầu chứa số    \textbf{     K    }    - số thao tác bạn thực hiện (nếu không tồn tại dãy thao tác thỏa mãn yêu cầu thì chỉ in ra duy nhất số    \textbf{     -1    }    ).   
+	\item \textbf{     K    }    dòng tiếp theo mô tả    \textbf{     K    }    thao tác được thực hiện, mỗi dòng chứa  2 số nguyên dương là tọa độ ô trái trên của các hình vuông    \textbf{     3*3    }    .   
+\end{itemize}
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item      Tất cả các test có M, N           ≤          100.    
+	\item      Trong 40\% test (tương ứng với 40\% số điểm), M*N           ≤          18.    
+	\item     Trong quá trình thi, bài của bạn chỉ được chấm với test ví dụ. Nếu được chấm đúng, kết quả sẽ được hiện là 100.   
+\end{itemize}
+
+\subsubsection{    Ví dụ   }
+
+\paragraph{    Input:   }
+\begin{verbatim}
+5 5
+1 1 0 1 1
+1 1 0 1 1
+1 0 1 0 1
+0 1 1 1 0
+0 1 1 1 0\end{verbatim}
+
+\paragraph{\textbf{    Output:   }}
+\begin{verbatim}
+3
+1 1
+1 3
+3 2\end{verbatim}
+
+\subsubsection{   Giải thích  }
+
+   Ở test ví dụ này chỉ có 1 cách duy nhất thỏa mãn: Bạn cần đảo bit 3 hình vuông:  
+\begin{itemize}
+	\item     Hình có góc trên trái ở (1, 1)   
+	\item     Hình có góc trên trái ở (1, 3)   
+	\item     Hình có góc trên trái ở (3, 2)   
+\end{itemize}

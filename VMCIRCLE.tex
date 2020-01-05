@@ -1,0 +1,46 @@
+
+
+
+
+   Bọn trẻ con trong xóm của Dũng đang thách đố nhau một trò rất quái dị. Bọn con gái dùng phấn trắng vẽ   \textbf{    N   }   vòng tròn nhỏ (đánh số từ   \textbf{    1 đến N ngược chiều kim đồng hồ   }   ) xung quanh 1 vòng tròn lớn. Sau đó chúng đố bọn con trai dùng ít loại phấn màu nhất để vẽ   \textbf{    2N   }   đoạn nối: N đoạn nối vòng tròn to với N vòng tròn nhỏ và N đoạn nối vòng tròn nhỏ số i với vòng tròn nhỏ số   \textbf{    (i mod N)+1   }   , sao cho giữa 2 vòng tròn (i,j) bất kì luôn tồn tại một đường đi từ vòng tròn i đến vòng tròn j đi qua các đoạn nối mà không có 2 đoạn nối nào có màu giống nhau.  
+
+   Với những trường hợp N nhỏ, bọn trẻ không gặp vấn đề gì. Nhưng với N lớn, bọn con trai không tìm ra cách giải, bọn con gái cũng không đủ sức mà vẽ hết N vòng tròn. Cuối cùng chúng nhờ Dũng tìm xem có thuật toán nào giải được trò chơi của chúng với mọi N hay không. Nếu có, chúng sẽ không cần phải chơi làm gì nữa cho mệt.  
+
+   Dũng đang rất bận nên nhờ bạn tìm hộ thuật toán. Nếu có, Dũng cũng không cần phải nghĩ làm gì nữa cho mệt.  
+
+\subsubsection{   Input  }
+
+   Một số nguyên dương N (3 ≤ N ≤ 300).  
+
+\subsubsection{   Output  }
+
+   Dòng đầu tiên là số K- số loại phấn màu ít nhất cần dùng. Màu của phấn được đánh số từ 1 đến K.  
+
+   Dòng thứ hai gồm N số, số thứ i là màu của đoạn nối vòng tròn nhỏ thứ i với vòng tròn to.  
+
+   Dòng thứ hai gồm N số, số thứ i là màu của đoạn nối vòng tròn nhỏ thứ i với vòng tròn nhỏ thứ (i mod N)+1.  
+
+    Sau khi kết thúc kỳ thi, kết quả của bạn là kết quả lần nộp bài cuối cùng   
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+3
+\end{verbatim}
+\begin{verbatim}
+\textbf{Output:}
+1
+1 1 1
+1 1 1\end{verbatim}
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+5
+\end{verbatim}
+\begin{verbatim}
+\textbf{Output:}
+2
+1 1 2 2 2
+2 1 2 1 2\end{verbatim}
+

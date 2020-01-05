@@ -1,0 +1,78 @@
+
+
+Cuộc thi lập trình sắp tới mà Byteman tham gia sẽ có M thí sinh đánh số từ 1 đến M, Byteman mang số 1. Được biết có N bài toán được chọn, mỗi bài thuộc 1 trong K dạng đã được công bố trước kì thi (nhiều bài có thể thuộc cùng 1 dạng). Dạng bài và độ khó của các bài này đang được ban giám khảo xác định.
+
+Byteman, thay vì luyện tập giải bài, cậu quyết định đi tìm hiểu đối thủ. Cậu biết được các thông số Axy là khả năng của người x tại dạng bài y. Cụ thể, nếu độ khó của 1 bài dạng y được chọn là c:
+\begin{itemize}
+	\item Nếu Axy $<$ c, người x không giải được bài này.
+	\item Nếu Axy $>$= c, người x giải được và có Axy – c điểm thưởng. Điểm thưởng cuối cùng của 1 người bằng tổng điểm thưởng có được từ những bài giải được.
+\end{itemize}
+
+ 
+
+Bảng xếp hạng được tính như sau:
+\begin{itemize}
+	\item Người nào giải được nhiều bài hơn sẽ xếp trên
+	\item Nếu 2 người giải được cùng số bài, người có nhiều điểm thưởng hơn sẽ xếp trên.
+\end{itemize}
+
+Byteman muốn xác định xem liệu có cách lựa chọn bài nào cho phép cậu ta đứng nhất (đồng hạng nhất không tính) trong cuộc thi hay không.
+
+\textbf{Input}
+\begin{itemize}
+	\item Dòng 1 chứa số T (0 $<$ T $<$= 10) là số bộ test
+	\item Với mỗi test, dòng đầu chứa 3 số N, M, K (0 $<$ N $<$= 400 ; 0 $<$ k.m $<$= 400)
+	\item Tiếp đó là M dòng, mỗi dòng chứa K số nguyên mô tả các giá trị Axy (các số nằm trong khoảng [1,1000])
+\end{itemize}
+
+\textbf{Output}
+
+Mỗi test ghi ra 1 dòng : TAK ứng với việc Byteman có thể thắng và NIE nếu không.
+
+\textbf{Example}
+\begin{verbatim}
+\textbf{Input}
+2
+3 6 5
+70 100 100 70 100
+205 180 70 200 150
+180 200 30 25 45
+75 45 80 180 180
+120 10 120 90 10
+15 110 135 150 210
+2 2 2
+12 12
+20 20
+
+\textbf{Output}
+TAK
+NIE
+\end{verbatim}
+
+ 
+
+\emph{Một cách lựa chọn cho trường hợp 1 : }
+
+\emph{3 bài được chọn : dạng 1 với độ khó 5, dạng 2 với độ khó 20 và dạng 3 với độ khó 75. }
+
+\emph{Bảng xếp hạng : }
+\begin{enumerate}
+	\item 
+
+\emph{Byteman (\#1) : 3 bài, 170 điểm }
+	\item 
+
+\emph{\#6 : 3 bài, 160 điểm }
+	\item 
+
+\emph{\#4 : 3 bài, 100 điểm }
+	\item 
+
+\emph{\#2 : 2 bài, 360 điểm }
+	\item 
+
+\emph{\#3 : 2 bài, 355 điểm }
+	\item 
+
+\emph{\#5 : 2 bài, 160 điểm }
+\end{enumerate}

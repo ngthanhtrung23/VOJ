@@ -1,0 +1,57 @@
+
+
+Một thành phố gồm n địa điểm và n-1 con đường nối chúng .Từ mỗi địa điểm có thể đi đến các địa điểm còn lại qua đúng 1 tuyến đường.
+\\Mùa đông,các con đường bị phủ bởi lớp tuyết rất dày nên giao thông bị tắc nghẽn.Ngài thị trưởng thành phố đã cho 2 xe ủi để ủi tuyết.
+\\Ban đầu 2 xe đứng ở địa điểm X. Chi phí di chuyển trên con đường đúng bằng độ dài con đường đó . Một con đường được ủi nếu có ít nhất con xe di chuyển qua con đường đó .Hai xe sẽ dừng lại nếu tất cả các con đường đã được ủi.
+
+
+\\\textbf{Yều cầu}: Tìm cách ủi sao cho tổng chi phí nhỏ nhất
+\\ 
+
+\subsubsection{Input}
+
+Dòng đầu chứa số nguyên N và X (N $<$= 10 $^ 5 $ )
+\\N-1 tiếp theo, mỗi dòng chứa ba số nguyên u, v và t có nghĩa có tuyến đường nối 2 địa điểm u và v với chi phí t (t $<$= 10 $^ 3 $ )
+\\ 
+
+\subsubsection{Output}
+
+Xuất ra tổng chi phí nhỏ nhất
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:} 
+4 1
+1 3 2
+1 2 3
+1 4 4
+\textbf{Output:}
+11
+\end{verbatim}
+\begin{verbatim}
+\textbf{Input:} 
+6 1
+1 2 1
+2 3 1
+1 4 1
+4 5 1000
+4 6 1000
+\textbf{Output:}
+2006\end{verbatim}
+
+
+\\
+\\Ở ví dụ 1 : xe 1 di chuyển sang địa điểm 3 rồi sang lại địa điểm 1
+\\                  (chi phí = 2+2).
+\\Sau đó xe 1 sang địa điểm 2 ,xe 2 sang địa điểm 4 (chi phí =3+4)
+\\Tổng chi phí là 2+2+3+4=11
+\\Ở ví dụ 2 : xe 1 di chuyển sang địa điểm 2 rồi sang địa điểm 3,
+\\sau đó sang lại địa điểm 2 rồi sang lại địa điểm 1.(chi phí = 1+1+1+1)
+\\Sau đó 2 xe cùng di chuyển sang địa điểm 4 (chi phí = 1+1)
+\\Rồi xe 1 di chuyển sang địa điểm 5 và xe 2 di chuyển
+\\     sang địa điểm 6 (chi phí = 1000+1000)
+\\Tổng chi phí = 1+1+1+1+1+1+1000+1000=2006
+\\
+\\ 
+
+ 

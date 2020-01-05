@@ -1,0 +1,45 @@
+
+
+
+
+   Cho một cây tam phân đầy đủ, mỗi nút có đúng 3 nút con: nút con trái, nút con giữa và nút con phải. Mỗi nút ghi một số nguyên theo quy tắc sau:  
+\begin{itemize}
+	\item     Nút gốc ghi số 1.   
+	\item     Nếu một nút ghi số X thì nút con trái của nó ghi số 3X, nút giữa ghi số 3X+1, nút phải ghi số 3X+2.   
+\end{itemize}
+\includegraphics{http://vn.spoj.pl/content/treepath.jpg}
+
+   Để di chuyển trên cây từ một nút người ta dùng một trong 4 lệnh sau:  
+\begin{itemize}
+	\item     L: Di chuyển đến nút con trái,   
+	\item     C: Di chuyển đến nút con giữa,   
+	\item     R: Di chuyển đến nút con phải,   
+	\item     S: Đứng nguyên tại nút hiện thời.   
+\end{itemize}
+
+   Một khuôn mẫu đường đi từ nút gốc là một xâu gồm các ký tự : ‘L’, ‘C’, ‘R’, ‘S’ và ‘*’ trong đó dấu ‘*’ có thể được thay thế bởi 1 trong 4 ký tự: ‘L’, ‘C’, ‘R’ và ‘S’.  
+
+   Với một cách thay thế dấu ‘*’ ta nhận được một đường đi từ nút gốc tới một nút lá nào đó và tổng các số ghi trên các nút đi qua gọi là trọng số của đường đi đó.  
+
+\subsubsection{   Yêu cầu  }
+
+   Cho một khuôn mẫu đường đi, hãy tính tổng T trọng số các đường đi phù hợp với khuôn mẫu.  
+
+\subsubsection{   Dữ liệu  }
+
+   Chứa một xâu không quá 2000 ký tự ‘L’, ‘C’, ‘R’, ‘S’ và ‘*’.  
+
+\subsubsection{   Kết quả  }
+
+   Ghi ra file văn bản số T tìm được.  
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu
+*LS		
+
+Kết quả
+55
+\end{verbatim}
+
+   Nguồn: 5-й этап Республиканской олимпиады по информатике, 10-11 класс Республика Казахстан, Апрель, 2009  

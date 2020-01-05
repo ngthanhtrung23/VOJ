@@ -1,0 +1,37 @@
+
+
+Một đất nước có N thành phố, vị trí của mỗi thành phố được thể hiện bởi một điểm trên mặt phẳng tọa độ. Tổng thống vừa đắc cử muốn bổ nhiệm mỗi thành phố một thị trưởng. Tổng thổng muốn bổ nhiệm cả các thị trưởng nam và nữ. Với mỗi đường thẳng ngang hoặc dọc (song song với trục tọa độ), gọi \emph{ độ bình đẳng giới } là trị tuyệt đối của hiệu giữa số thị trưởng nam và thị trưởng nữ của các thành phố nằm trên đường thẳng đó.
+
+Để chứng tỏ tinh thần bình đẳng giới của đất nước, tổng thống muốn bổ nhiệm các thị trưởng sao cho tổng độ bình đẳng giới đối với các đường thẳng ngang và dọc là nhỏ nhất.
+
+Bạn hãy viết chương trình giúp tổng thống thực hiện nhiệm vụ này.
+
+\subsubsection{Dữ liệu}
+\begin{itemize}
+	\item Dòng đầu tiên chứa N (1 ≤ N ≤ 20000), số thành phố của đất nước.
+	\item Dòng thứ i trong số N dòng tiếp theo chứa hai số nguyên x $_ i $ , y $_ i $ là tọa độ của thành phố thứ i (x $_ i $ , y $_ i $ thuộc phạm vi số nguyên 32 bit).
+\end{itemize}
+
+\subsubsection{Kết quả}
+\begin{itemize}
+	\item In ra N dòng, dòng thứ i chứa số nguyên 0 hoặc 1 tương ứng với việc cần bổ nhiệm thị trưởng nam hay nữ cho thành phố.
+\end{itemize}
+
+\subsubsection{Ví dụ}
+
+Input
+\begin{verbatim}
+5
+0 0
+0 1
+1 0
+1 1
+1 2\end{verbatim}
+
+Output
+\begin{verbatim}
+0
+1
+1
+0
+0\end{verbatim}

@@ -1,0 +1,49 @@
+
+
+
+
+
+
+
+
+   Bob muốn tô màu một cây N nút. Một nút được tô khi và chỉ khi nút cha của nó được tô và chỉ được tô từng nút một. Mỗi nút tô mất 1 đơn vị thời gian (thời điểm bắt đầu là 0).  
+
+   Nếu Fi là thời điểm kết thúc tô nút i thì chi phí cho tô nút i là Ci x Fi (Ci cho trước).  
+
+   Ví dụ, nếu tô cây sau theo thứ tự 1, 3, 5, 2, 4 và chi phí Ci cho từng nút là 1, 2, 1, 2 và 4 thì tổng chi phí là 33 và nó là nhỏ nhất.  
+
+\href{http://tinypic.com}{}
+
+
+\includegraphics{http://i40.tinypic.com/whxkld.jpg}
+
+
+
+   Cần tính chi phí nhỏ nhất này với một cây bất kỳ.  
+
+\subsubsection{   Input  }
+
+   Gồm nhiều bộ test. Dòng đầu chứa hai số nguyên N và R (1 $<$= N $<$= 1000, 1 $<$= R $<$= N), với N là số nút và R là chỉ số của nút gốc. Dòng thứ hai chứa N số nguyên C1, C2, .., CN (1 $<$= Ci $<$= 500). N-1 dòng tiếp theo mỗi dòng chứa hai số nguyên V1, V2 là cạnh nối hai nút V1 và V2, V1 là cha của V2.  
+
+   Kết thúc là bộ test có N=R=0 và không cần xử lý.  
+\begin{verbatim}
+
+\\Sample Input
+\\5 1 
+\\1 2 1 2 4 
+\\1 2 
+\\1 3 
+\\2 4 
+\\3 5 
+\\0 0 
+\\\end{verbatim}
+
+\subsubsection{   Output  }
+
+   Với mỗi bộ test, in ra chi phí nhỏ nhất cần trả.  
+\begin{verbatim}
+
+\\Sample output
+\\33
+\\\end{verbatim}
+

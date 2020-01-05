@@ -1,0 +1,62 @@
+
+
+
+
+   Cho một tập hợp S các số nguyên, bạn hãy lập trình thực hiện các thao tác sau:  
+\begin{itemize}
+	\item     ADD x: thêm số x vào tập S   
+	\item     DELETE x: xóa số x khỏi tập S   
+	\item     MININUM: tìm số nhỏ nhất trong tập S   
+	\item     MAXIMUM: tìm số lớn nhất trong tập S   
+	\item     SUCC x: tìm số nhỏ nhất lớn hơn x trong tập S   
+	\item     SUCC\_2 x: tìm số nhỏ nhất và không nhỏ hơn x trong tập S   
+	\item     PRED x: tìm số lớn nhất nhỏ hơn x trong tập S   
+	\item     PRED\_2 x: tìm số lớn nhất không vượt quá x trong tập S   
+\end{itemize}
+
+   Ghi chú: Đối với thao tác DELETE, giữ nguyên tập S nếu x không có trong tập S. Đối với các thao tác MINIMUM, MAXIMUM, SUCC, SUCC\_2, PRED và PRED\_2, in ra 'empty' nếu tập S rỗng. Đối với các thao tác SUCC, SUCC\_2, PRED và PRED\_2, in ra 'no' nếu không tìm được số thỏa mãn.  
+
+   Các thao tác ADD, DELETE, MINIMUM, MAXIMUM, SUCC, SUCC\_2, PRED, PRED\_2 lần lượt được mã hóa bởi các chỉ số 1 2 3 4 5 6 7 8.  
+
+\subsubsection{   Dữ liệu  }
+
+   Gồm nhiều dòng, mỗi dòng bắt đầu bằng một số từ 0 đến 8 cho biết chỉ số thao tác cần thực hiện. Số 0 báo hiệu kết thúc dữ liệu nhập. Đối với các thao tác 1, 2, 5, 6, 7, 8, số tiếp theo trên dòng là số nguyên x (|x| ≤ 10   $^    9   $   ) cho biết tham số của thao tác. Biết số thao tác cần thực hiện không vượt quá 300000.  
+
+\subsubsection{   Kết quả  }
+
+   Đối với mỗi thao tác loại 3, 4, 5, 6, 7, 8 in ra một dòng là kết quả của thao tác.  
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu
+4
+1 10
+1 5
+3
+1 7
+4
+2 5
+3
+5 10
+6 10
+7 10
+8 10
+2 10
+7 100
+0
+
+Kết quả
+empty
+5
+10
+7
+no
+10
+7
+10
+7
+\end{verbatim}
+
+\subsubsection{   Gợi ý  }
+
+   Bạn hãy dùng cấu trúc set trong thư viện STL của C++. Bài này bạn chỉ nộp được bằng C++ mà thôi.  

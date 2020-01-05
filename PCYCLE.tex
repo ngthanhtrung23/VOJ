@@ -1,0 +1,29 @@
+
+
+Một mê cung gồm có N phòng và M hành lang nối các phòng, giữa hai phòng bất kì có không quá một hành lang nối chúng.
+
+Một người muốn khám phá mê cung, anh ta sẽ xuất phát từ một phòng và đi dọc theo tất cả các hành lang sao cho mỗi hành lang được đi qua đúng một lần, rồi lại trở về vị trí xuất phát. Mỗi hành lang có một giá trị c cho biết khi đi qua nó thì năng lượng nhà thám hiểm sẽ cộng thêm với c (c có thể âm hay dương). Nhà thám hiểm bắt đầu xuất phát với năng lượng bằng 0, anh ta sẽ chết nếu sau khi đi hết một hành lang nào đó mà mức năng lượng nhỏ hơn 0.
+\\Yêu cầu: Hãy giúp nhà thám hiểm tìm ra một hành trình an toàn thỏa mãn các yêu cầu đã đưa ra.
+
+\subsubsection{Dữ liệu}
+\begin{itemize}
+	\item Dòng 1 là 2 số nguyên N, M. ( 1 ≤ N ≤ 200 )
+	\item M dòng tiếp theo, dòng thứ i gồm 3 số nguyên u, v, c cho biết có 1 hành lang nối phòng u với phòng v và giá trị năng lượng là c. ( |c| ≤ 10000 ) .
+\end{itemize}
+
+\subsubsection{Kết quả}
+\begin{itemize}
+	\item Nếu có không có hành trình nào an toàn thì ghi ra -1. Ngược lại ghi ra M+1 số nguyên là chỉ số phòng trên đường đi. Từ phòng xuất phát, qua các phòng, hành lang rồi quay trở về phòng xuất phát.
+\end{itemize}
+
+\subsubsection{Ví dụ}
+\begin{verbatim}
+Dữ liệu
+3 3
+1 2 2
+1 3 -1
+2 3 -1
+
+Kết qủa
+2 1 3 2
+\end{verbatim}

@@ -1,0 +1,57 @@
+
+
+
+
+   Cho tập   \textbf{    S   }   gồm   \textbf{    N   }   điểm trên mặt phẳng thỏa mãn không có 3 điểm nào thẳng hàng.   \emph{    Cối xay gió   }   là một quá trình bắt đầu với một đường thẳng   \textbf{    d   }   đi qua   \textbf{    chỉ một   }   điểm   \textbf{    P   }   thuộc   \textbf{    S   }   . Đường thẳng này quay theo ngược chiều kim đồng hồ xung quanh tâm   \textbf{    P   }   cho đến khi lần đầu tiên gặp một điểm khác nào đó của   \textbf{    S   }   . Điểm này, ký hiệu   \textbf{    Q   }   , lại được lấy làm tâm quay mới, và bây giờ đường thẳng   \textbf{    d   }   tiếp tục quay theo ngược chiều kim đồng hồ quanh tâm   \textbf{    Q   }   cho đến khi gặp điểm tiếp theo của   \textbf{    S   }   . Quá trình trên cứ tiếp tục như vậy.  
+
+   Biết mỗi giây, đường thẳng   \textbf{    d   }   quay một góc   \textbf{    1 radian   }   , hỏi sau khi quá trình được thực hiện   \textbf{    T   }   giây, đường thẳng   \textbf{    d   }   nhận mỗi điểm làm tâm quay trong bao nhiêu thời gian.  
+
+\subsubsection{   Input  }
+\begin{itemize}
+	\item     Dòng đầu tiên ghi số nguyên    \textbf{     N    }    .   
+	\item     Dòng thứ    \textbf{     i    }    trong    \textbf{     N    }    dòng tiếp theo, mỗi dòng ghi 2 số nguyên    \textbf{     x y    }    là tọa độ của điểm thứ    \textbf{     i    }    thuộc tập    \textbf{     S    }    .   
+	\item     Dòng tiếp theo ghi số nguyên    \textbf{     T    }    .   
+	\item     Dòng cuối cùng ghi ba số nguyên    \textbf{     a    }    ,    \textbf{     b    }    ,    \textbf{     c    }    mô tả đường thẳng    \textbf{     d    }    có phương trình    \emph{     ax + by + c = 0    }    .   
+	\item     Dữ liệu trong input đảm bảo thỏa mãn các điều kiện của đề bài.   
+\end{itemize}
+
+\subsubsection{   Output  }
+\begin{itemize}
+	\item     Ghi ra    \textbf{     N    }    dòng. Dòng thứ    \textbf{     i    }    ghi một số thực    \textbf{     w     $_      i     $}    thể hiện thời gian mà điểm    \textbf{     i    }    làm tâm quay.   
+	\item     Các số cần ghi ra với độ sai số không quá 10    $^     -2    $
+\end{itemize}
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     Trong 40\% test đầu tiên, N ≤ 50, T ≤ 100;   
+	\item     Trong 30\% test tiếp theo, N ≤ 500, T ≤ 10    $^     6    $    ;   
+	\item     Trong tất cả các test, N ≤ 5000, T ≤ 10    $^     9    $    , a, b, c và các tọa độ có trị tuyệt đối không vượt quá 10    $^     6    $    .   
+\end{itemize}
+
+\subsubsection{   Chấm điểm  }
+
+   Bài của bạn sẽ được chấm trên thang điểm 100. Điểm mà bạn nhận được sẽ tương ứng với \% test mà bạn giải đúng.  
+
+   Trong quá trình thi, bài của bạn sẽ chỉ được chấm với 1 test ví dụ có trong đề bài.  
+
+   Khi vòng thi kết thúc, bài của bạn sẽ được chấm với bộ test đầy đủ.  
+\begin{itemize}
+\end{itemize}
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+\textbf{Input:}
+4
+2 0
+-2 0
+0 2
+0 -2
+3
+0 1 -2
+
+\textbf{Output:}
+0.000000
+1.570796
+0.785398
+0.643806
+\end{verbatim}

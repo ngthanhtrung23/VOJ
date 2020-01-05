@@ -1,0 +1,46 @@
+
+
+
+
+   Để chuẩn bị cho Lễ hội kỷ niệm 30 năm ngày Chiến dịch Hồ Chí Minh toàn thắng, giải phóng miền Nam, thống nhất đất nước, người ta cần gia   công các loại khuôn thép có hình dạng là các hình đa giác lồi M đỉnh. Mỗi khuôn thép được thiết kế trên một tấm thép cũng có hình dạng là một hình đa   giác lồi N đỉnh, không có cạnh nào của khuôn thép nằm gọn trên một cạnh của tấm thép.   \emph{    Để tiện cho việc gia công, khuôn thép được vẽ sao cho hai   đường thẳng chứa hai cạnh không kề nhau của nó không cắt nhau ở bên trong tấm thép.   }
+
+   Công việc chính cần làm trong quá trình gia công là sử dụng máy cắt để cắt được khuôn thép từ tấm thép ra. Rõ ràng là cần phải thực hiện M nhát   cắt. Mỗi nhát cắt được thực hiện bằng cách chọn một cạnh nào đó của khuôn thép và cắt theo đường thẳng chứa cạnh ấy chia tấm thép thành hai phần,   một phần chứa khuôn thép cần gia công. Chi phí cắt khuôn thép là tổng chiều dài của các đường cắt.  
+
+
+\includegraphics{http://vn.spoj.com/content/STEEL}
+
+   Trên hình 1 và 2, tấm thép là tứ giác được tô nhạt, khuôn thép là hình vuông được tô bằng các gạch đậm. Các nét gạch đứt là các đường cắt với   tổng chi phí bằng 6.5 đơn vị.  
+
+   Yêu cầu: Cho biết hình dạng tấm thép và khuôn thép cần gia công. Hãy tìm phương án cắt khuôn thép có chi phí nhỏ nhất.  
+
+\subsubsection{   Dữ liệu  }
+
+   Dòng đầu ghi số N là số đỉnh của tấm thép; dòng tiếp theo, mỗi dòng ghi 2 số thực x và y, là toạ độ N đỉnh của tấm thép được liệt kê theo chiều   kim đồng hồ bắt đầu từ một đỉnh nào đó; dòng tiếp theo ghi số M là số đỉnh của khuôn thép; cuối cùng là M dòng, mỗi dòng ghi 2 số thực x và y là toạ   độ M đỉnh của khuôn thép được liệt kê theo chiều kim đồng hồ bắt đầu từ một đỉnh nào đó. Các số trên một dòng cách nhau ít nhất một dấu cách.  
+
+\subsubsection{   Kết qủa  }
+
+   Gồm một dòng duy nhất là chi phí nhỏ nhất tìm được với độ chính xác tới 4 chữ số sau dấu chấm thập phân.  
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     3 ≤ N ≤ 2000   
+	\item     3 ≤ M ≤ 2000   
+	\item     -10    $^     4    $    $<$ x, y $<$ 10    $^     4    $
+\end{itemize}
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+\textbf{Dữ liệu:}
+4
+2 1 
+2 5  
+5 3.5  
+5 2
+4
+3 3 
+3 4 
+4 4 
+4 3  
+\textbf{Kết qủa}
+6.5000
+\end{verbatim}

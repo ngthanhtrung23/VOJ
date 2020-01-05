@@ -1,0 +1,43 @@
+
+
+Bờm và Cuội cùng nhau chơi trò chơi xếp hình. Trò chơi gồm một dải gồm L ô vuông có kích thước 1x1 và các thanh ngang có kích thước 1xS (gồm S khối hộp 1x1 gắn liền nhau). Nhiệm vụ của Bờm là xếp một số thanh ngang này lên dải ô vuông, sao cho hai thanh ngang liên tiếp phải cách nhau ít nhất D ô vuông (nghĩa là có ít nhất D ô trống ở giữa hai thanh ngang).
+
+Để tăng độ khó của trò chơi, Cuội còn đưa ra một số điều kiện cho Bờm. Mỗi điều kiện của Bờm có dạng: “ô thứ i phải có khối hộp” hoặc “ô thứ i không được có khối hộp”.
+
+Hãy giúp Bờm xác định xem có tồn tại cách xếp thỏa mãn yêu cầu của Cuội hay không. Nếu tồn tại, hãy cho biết số thanh ngang nhiều nhất mà Bờm xếp được là bao nhiêu.
+
+\subsubsection{Dữ liệu}
+\begin{itemize}
+	\item Dòng đầu tiên: chứa 3 số nguyên L, S, D (1 ≤ L ≤ 100000).
+	\item Dòng thứ hai: chứa số nguyên K là số yêu cầu của Cuội.
+	\item K dòng tiếp theo, mỗi dòng chứa hai số nguyên i, d (d=1 hoặc d=2) thể hiện một yêu cầu của Cuội: d=1 cho biết “ô i phải có khối hộp” còn d=2 cho biết “ô i không được có khối hộp”. Các giá trị i được đưa ra theo thứ tự tăng dần.
+\end{itemize}
+
+\subsubsection{Kết quả}
+
+Nếu không tồn tại cách xếp thỏa mãn yêu cầu của Cuội, in ra -1. Nếu không, in ra số thanh ngang nhiều nhất mà Bờm có thể sử dụng.
+
+\subsubsection{Hạn chế}
+
+Có 50\% số lượng test, tương ứng với 50\% số điểm có 1 ≤ L ≤ 1000.
+
+\subsubsection{Ví dụ}
+\begin{verbatim}
+Dữ liệu
+10 4 2
+2
+2 1
+5 2	
+
+Kết quả
+2
+
+Dữ liệu
+4 2 1
+2
+1 1
+3 1	
+
+Kết quả
+-1
+\end{verbatim}

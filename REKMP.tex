@@ -1,0 +1,48 @@
+
+
+
+
+   Hàm KMP() của một xâu S độ dài N kí tự (đánh số bắt đầu từ 1) được định nghĩa:  
+\begin{itemize}
+	\item     KMP(I) = Max(L) thỏa đẳng thức ((S[1..L] = S[I-L+1..I] và L$<$I) hoặc L=0);   
+\end{itemize}
+
+   Với:  
+\begin{itemize}
+	\item     I, J là các số số tự nhiên từ 1 đến N;   
+	\item     S[I] là phần tử thứ I của xâu S khi viết S từ trái sang phải;   
+	\item     Nếu I$<$=J, thì S[I..J] = S[I] + S[I+1] + ... + S[J-1] + S[J] (phép cộng chuỗi);   
+\end{itemize}
+
+   Một xâu S xác định chỉ có một hàm KMP() tương ứng duy nhất.  
+
+   Cho trước một hàm KMP() đã xác định, hãy tìm một xâu thập lục phân S (chỉ gồm các kí tự '0'..'9' 'A'..'F') tương ứng.  
+
+\subsubsection{   Input  }
+\begin{itemize}
+	\item     Dòng đầu tiên: số nguyên N (1 $<$= N $<$= 100000);   
+	\item     Dòng thứ hai: gồm N số nguyên biểu diễn một hàm KMP();   
+\end{itemize}
+
+\subsubsection{   Output  }
+\begin{itemize}
+	\item     Một dòng duy nhất là xâu S có hàm KMP() tương ứng trùng với input;   
+	\item     Nếu có nhiều xâu, hãy in ra xâu có thứ tự từ điển nhỏ nhất (qui định '0'$<$'1'$<$...$<$'9'$<$'A'$<$..$<$'F');   
+	\item     Nếu không tồn tại xâu S, xuất ra -1;   
+\end{itemize}
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input 1:}
+\\11
+\\0 0 0 0 1 2 3 0 0 1 2
+
+\textbf{Output 1:}
+01110112101
+\\ \textbf{
+\\Input 2:}
+\\7
+\\0 0 1 2 3 4 4
+\\\textbf{
+\\Output 2:}
+\\-1\end{verbatim}

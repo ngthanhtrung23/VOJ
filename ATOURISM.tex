@@ -1,0 +1,34 @@
+
+
+ 
+
+Các tour du lịch mạo hiểm ngày càng thu hút được sự quan tâm của các bạn trẻ. Tuy vậy, tổ chức du lịch mạo hiểm là cả một vấn đề. Nó đòi hỏi ban tổ chức phải chu đáo, tỷ mỷ đến tận từng chi tiết nhỏ nhất trong khâu chuẩn bị.
+
+Tour du lịch kỳ này có p du khách nam và q du khách nữ tham gia. Ngoài lực lượng hậu cần và ứng cứu khẩn cấp, ban tổ chức còn phân công thêm k hướng dẫn viên đi với đoàn. Ở chặng thứ nhất đường đi khá hẹp và cheo leo, cả đoàn phải đi thành hàng một. Để có thể trợ giúp nhau, quy tắc hình thành đoàn đi là cạnh một du khách nữ phải có một du khách nam hay một hướng dẫn viên (đi trước hoặc đi sau), cạnh một hướng dẫn viên phải có ít nhất một du khách. Có nhiều cách tổ chức đoàn thành hàng đi. Ký hiệu B là du khách nam, G là du khách nữ, và M là hướng dẫn viên, mỗi cách tổ chức đoàn tương ứng với một xâu p+q+k ký tự từ tập (B, G, M). Hai cách tổ chức đoàn gọi là khác nhau nếu các xâu tương ứng khác nhau. Ví dụ, với đoàn có 2 du khách nam, 2 du khách nữ và 1 hướng dẫn viên ( p = q = 2, k = 1) sẽ có tất cả 24 cách tổ chức đoàn như mô tả dưới đây:
+
+ 
+
+
+\includegraphics{https://drive.google.com/uc?export=view&amp;id=14K4IlHgAxvHBPrcJCYLrRpUvn3W16A3E}
+
+
+\includegraphics{drive.google.com/uc?export=view&amp;id=14K4IlHgAxvHBPrcJCYLrRpUvn3W16A3E}Cho p, q, và k, gọi n là số cách khác nhau để tổ chức hàng đi. Nhiệm vụ của bạn là viết một chương trình tính phần dư của n khi chia cho 10 $^ 7 $ .
+
+\subsubsection{Dữ liệu vào}
+
+Dữ liệu vào gồm nhiều bộ dữ liệu tương ứng với nhiều test. Dòng đầu tiên chứa một số nguyên dương không lớn hơn 20 là số lượng các bộ dữ liệu. Các dòng tiếp theo chứa các bộ dữ liệu.
+
+Mỗi bộ dữ liệu có một dòng duy nhất chứa ba số nguyên p, q và k (0 ≤ p, q ≤ 1 000, 0 ≤ k ≤ 10) cách nhau bởi dấu trống.
+
+\subsubsection{Dữ liệu ra}
+
+Với mỗi bộ dữ liệu, ghi ra trên một dòng phần dư của số cách tổ chức thành hàng đi khác nhau khi chia cho 10 $^ 7 $ .
+
+\subsubsection{Ví dụ}
+\begin{verbatim}
+Dữ liệu vào	
+1
+2 2 1	
+Dữ liệu ra
+24
+\end{verbatim}

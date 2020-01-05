@@ -1,0 +1,66 @@
+
+
+
+
+    Bài này là bài    \href{http://vn.spoj.com/problems/V11PLAN/}{     V11PLAN    }    với giới hạn N lớn hơn.   
+
+\emph{    Note: this is V11PLAN with higher limit for N.   }     In 2011, Vietnam set out a national development plan . The plan will consist of two phases: the first year and last year . At each stage , a number of paths between pairs of cities will be built .       You are given a graph showing the results of the plan , in which each edge ( i , j ) represents the plan to create a path between city i and city j ( not necessarily the way directly) . You need to count the number of different plans can produce results . Two different plan if there is a road was built in the period of the plan but not built in the corresponding period of the other plan .       For example , if we build the first phase ramp ( 1.2 ) , we constructed a later stage seams ( 2.3 ) , the resulting graph will have three edges : ( 1,2 ) , ( 2 , 3 ) , ( 1.3 ) by the existence of paths between all 3 cities. If we build ( 1.2 ) in the first phase and construction ( 1.2 ) , ( 1.3 ) at a later stage , we obtain the same result . Note , to save , we can only build a road between a pair of cities in a period , but later stages we can build a longer route to replace street due to subsidence rate in Vietnam South is pretty fast .    
+
+   In 2011, Vietnam sets out a national development plan. The plan will consist of two phases: the first half of the year and the second half of the year. At each phase, a number of paths between some pairs of cities will be built.  
+
+   You are given a graph describle the result of the plan, in which each edge (i,j) represents the plan to make city i and city j connected (not necessarily directly). You need to count the number of different plans that can produce that graph. Two plans are  different if there is a road being built in a phase of the plan but not built in the corresponding phase of the other plan.  
+
+   For example, if we build in the first phase road (1,2) , and then in the second phase we build (2,3) , the resulting graph will have three edges: (1,2), (2,3), (1,3). Building (1,2) in the first phase and (1,2), (1,3) in the later phase produce the same result. Note, we can only build a road between a pair of cities in a phase, but at the later phase we can rebuild that route again due to subsidence rate in Vietnam is pretty fast.  
+
+
+
+\subsubsection{   Input  }
+
+   The first line is N (1 $<$= N $<$= 80).  
+
+   N lines follow, each has N integers. City i and j should be connected at the end of the year if the j-th number at line i is 1, else it's 0. The input will make sure that is city i and j are connected, j and k are connected, then i and k are connected.  
+
+\subsubsection{   Output  }
+
+   A single integer which is the number of different plans modulo 1000000007.  
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+2
+0 1
+1 0
+\textbf{Output:}
+3\end{verbatim}
+\begin{verbatim}
+\emph{Explain: we can build the road between two cities only in the first haft of the year, second half of the year, or both.}\end{verbatim}
+\begin{verbatim}
+\textbf{Input:}
+3
+0 1 1
+1 0 1
+1 1 0
+\textbf{Output:}
+54
+\end{verbatim}
+\begin{verbatim}
+\textbf{Input:}
+16
+0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0
+\textbf{Output:}
+604876153\end{verbatim}

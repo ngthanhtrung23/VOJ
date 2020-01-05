@@ -1,0 +1,42 @@
+
+
+Vinh và Sơn có N đồng tiền cổ, N là số chẵn. Ta tạm đánh số các đồng tiền cổ này theo thứ tự từ 1-$>$N. Đồng tiền thứ i Vinh định giá nó là ai còn Sơn định giá nó là bi.
+
+Vinh và Sơn tiền hành phân chia số tiền này, lần lượt thực hiện N/2 lượt . Ở lượt chơi thứ t, Sơn lấy ra 2 đồng tiền, Vinh sẽ lấy đồng tiền nào có giá trị lớn hơn trong 2 đồng tiền theo như Vinh định giá, và Sơn sẽ lấy đồng tiền còn lại.
+
+Sơn biết tất cả các số ai, bi (i=1..N) và mỗi bước Sơn được quyền chọn cách lấy 2 đồng tiền tùy theo ý thích của mình.
+
+Hãy giúp Sơn tiền hành việc phân chia các đồng tiền sao cho tổng giá trị các đồng tiền Sơn nhận được là lớn nhất có thể.
+
+\subsubsection{Input}
+\begin{itemize}
+	\item Dòng đầu tiên chứa số nguyên dương chẵn N là số đồng tiền.
+	\item Dòng thứ 2 chứa N số nguyên dương a1, a2, ..., aN mỗi số ko vượt quá 400000
+	\item Dòng thứ 3 chứa N số nguyên dương b1, b2, ..., bN mỗi số ko vượt quá 400000.
+\end{itemize}
+
+\subsubsection{Output}
+
+Dòng đầu tiên ghi ra tổng số tiền lớn nhất mà Sơn nhận được.
+
+N/2 dòng tiếp theo mỗi dòng ghi cặp 2 chỉ số các đồng tiền mà Sơn lấy ra theo đúng thứ tự mỗi lượt thực hiện chia phần. Nếu có nhiều phương án in ra 1 phương án bất kì.
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:
+}6
+6 10  11 18 5 14
+1 7 6 12 15 1
+\textbf{Output:
+}28
+5 1
+2 6
+3 4
+\end{verbatim}
+
+\textbf{Giới hạn:}
+\begin{itemize}
+	\item 30\% số test với N $<$= 5000 và ai = bi với i = 1..N;
+	\item 30\% số test với N $<$= 20
+	\item 40\% số test còn lại với N $<$= 5000 
+\end{itemize}

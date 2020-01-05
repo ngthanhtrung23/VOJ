@@ -1,0 +1,45 @@
+
+
+Cuộc thi ACM sắp tới tại thành phố Hồ Chí Minh sẽ có N đội thi. Ban tổ chức bố trí N máy thi cho các đội, đội i ngồi tại vị trí x $_ i $ y $_ i $ . Để các đội có thể truy cập hệ thống nộp bài dễ dàng, ban tổ chức bố trí M access point. Ban tổ chức muốn tổ chức phòng máy sao cho:
+\begin{itemize}
+	\item Mỗi máy tính được kết nối với đúng 1 access point.
+	\item Số lượng máy kết nối với các access point chênh lệch không quá 1.
+	\item Tổng độ "chập chờn" của mạng là nhỏ nhất. Độ chập chờn của một máy được tính bằng bình phương khoảng cách giữa máy đó với access point mà máy đó kết nối tới.
+\end{itemize}
+
+\subsubsection{Dữ liệu}
+\begin{itemize}
+	\item Dòng thứ nhất ghi 2 số M và N.
+	\item M dòng tiếp theo, mỗi dòng ghi 2 số là tọa độ của các access point.
+	\item N dòng tiếp theo, mỗi dòng ghi 2 số là tọa độ của các máy tính.
+\end{itemize}
+
+\subsubsection{Kết quả}
+\begin{itemize}
+	\item Dòng thứ nhất ghi ra tổng độ chập chờn của mạng nhỏ nhất có thể.
+	\item Dòng thứ 2 ghi N số. Số thứ i là số hiệu của access point mà máy thứ i kết nối tới.
+\end{itemize}
+
+\subsubsection{Ví dụ}
+\begin{verbatim}
+Dữ liệu
+2 3
+0 0
+2 1
+1 0
+1 1
+1 2
+
+Kết quả
+4
+1 2 2
+\end{verbatim}
+
+Hình vẽ dưới đây mô tả test ví dụ trên. Các máy tính là các hình vuông màu đen, các access point là các hình vuông màu trắng.
+
+
+\includegraphics{http://vn.spoj.pl/VM08/content/wifi.gif}
+
+\subsubsection{Giới hạn}
+
+1 ≤ N ≤ 200, 1 ≤ M ≤ 50. Các tọa độ là nguyên và trị tuyệt đối không quá 1000.

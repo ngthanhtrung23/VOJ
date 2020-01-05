@@ -1,0 +1,69 @@
+
+
+
+
+   Một công ty Tin học quyết định xuất bản một bản tin nội bộ mô tả những dự án đã kết thúc thành công. Mỗi phòng ban nộp một đoạn văn bản sẽ được in trong một ô được thiết kế sẵn trong bản tin. Cho một đoạn văn bản chỉ chứa các ký tự từ a đến z và ký tự trống. Mỗi từ là một chuỗi các ký tự liên tiếp khác ký tự trống và các từ trong đoạn văn bản phân tách nhau bởi ít nhất một ký tự trống hoặc dấu xuống dòng.  
+
+   Việc in ấn phải tuân theo những nguyên tắc sau:  
+\begin{itemize}
+	\item     Văn bản sẽ được in bằng font có chiều ngang cố định (có nghĩa là mỗi ký tự chiếm một chiều ngang cố định) từ trái sang phải và xuống dòng khi hết dòng.   
+	\item     Số lượng ký tự trên mỗi dòng phải giống nhau.   
+	\item     Các từ được in trong ô phải đúng theo thứ tự trong văn bản ban đầu. Một từ không được tách ra hay in trên quá một dòng.   
+	\item     Các từ liên tiếp nhau trên cùng một dòng phải cách nhau bởi đúng một ký tự trống.   
+	\item     Các dòng chỉ chứa các từ trong đoạn văn bản gốc và các ký tự trống.   
+	\item     Dòng nào bắt đầu bằng ký tự trống thì chỉ bao gồm toàn ký tự trống.   
+\end{itemize}
+
+   Người biên tập bản tin muốn đánh giá mức độ đẹp của một bản in đoạn văn bản thông qua việc định nghĩa  độ mất cân đối của nó là tổng của các lũy thừa mũ ba của số lượng các ký tự trống ở cuối các dòng kể cả dòng gồm toàn ký tự trống. Độ mất cân đối càng nhỏ, bản in đoạn văn bản càng đẹp.  
+
+   Xét ví dụ sau về một đoạn văn bản được in trong một ô có ba dòng, mỗi dòng có chiều ngang là 20 ký tự:  
+\begin{verbatim}
+aaa bbbbbbbbb c dddd
+eeeeeee ffffff
+ggggggggg		
+\end{verbatim}
+\begin{verbatim}
+aaa bbbbbbbbb      
+c dddd eeeeeee       
+ffffff ggggggggg
+\end{verbatim}
+
+   Trong ví dụ này, độ mất cân đối của bản in đoạn văn bản ở bên trái là 0\textasciicircum3 + 6\textasciicircum3 + 11\textasciicircum3 = 1547 trong khi đó độ mất cân đối của bản in đoạn văn bản ở bên phải là 7\textasciicircum3 + 6\textasciicircum3 + 4\textasciicircum3 = 623.  
+
+   Cho trước một đoạn văn bản và một ô để in, nhiệm vụ của bạn là viết chương trình tìm ra bản in đẹp nhất (có độ mất cân đối nhỏ nhất).  
+
+\subsubsection{   Dữ liệu vào  }
+
+   Dữ liệu vào gồm nhiều bộ dữ liệu tương ứng với nhiều test. Dòng đầu tiên chứa một số nguyên dương không lớn hơn 20 là số lượng các bộ dữ liệu. Các dòng tiếp theo chứa các bộ dữ liệu.  
+
+   Với mỗi bộ dữ liệu, dòng đầu tiên chứa số nguyên L (0 $<$ L ≤ 100) là số lượng dòng của ô để in. Dòng thứ hai chứa một số nguyên W (0$<$ W ≤ 1000) là số lượng ký tự trên một dòng của ô để in. Các dòng tiếp theo chứa nội dung đoạn văn bản có không quá 1000 từ, kết thúc bởi một dòng trống.  
+
+\subsubsection{   Dữ liệu ra  }
+
+   Với mỗi bộ dữ liệu, ghi ra trên một dòng độ mất cân đối của bản in đoạn văn bản đẹp nhất. Trong trường hợp không tồn tại cách nào để in đoạn văn bản trong ô đã cho, ghi -1.  
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu vào
+3
+3
+20
+aaa bbbbbbbbb 
+c dddd
+eeeeeee ffffff
+ggggggggg
+
+2
+5
+abcde abcde
+
+2
+5
+abcde abcde 
+a
+
+Dữ liệu ra
+623
+0
+-1
+\end{verbatim}

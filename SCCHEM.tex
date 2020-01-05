@@ -1,0 +1,33 @@
+
+
+One type of chemical compounds is the ionic compound, because it is composed of positively charged ions (cations) and negatively charged ions (anions) in such a way that the compound as a whole is electrically neutral. Cations always attract anions and anions always attract cations.
+
+Now you are given \textbf{ m } cations and \textbf{ n } anions, and their connectivity information about which cation attracts which anion. You task is to find a sub group from the cations and anions where there is at least one cation and at least one anion, such that all the cations in the group attract all the anions in the group. We call such a group as \textbf{ 'Strongly Connected Chemicals' } . As there can be many such groups, we want to find a group which has the highest cardinality. Cardinality means the number of members (cation and anion) in the group.
+
+\section{Input}
+
+Input starts with an integer \textbf{ T ( }\textbf{ ≤ 100) } , denoting the number of test cases.
+
+Each case starts with a line containing two integers: \textbf{ m } and \textbf{ n (1 ≤ m, n ≤ 50) } . Each of the next \textbf{ m } lines contains \textbf{ n } characters (without space), each either \textbf{ '0' } or \textbf{ '1' } . If the \textbf{ j $^ th $} character in the \textbf{ i $^ th $} line is \textbf{ 1 } , that means the \textbf{ i $^ th $} cation attracts the \textbf{ j $^ th $} anion, otherwise it doesn't.
+
+\section{Output}
+
+For each case, print the case number and the maximum possible size of the strongly connected chemical group.
+
+ 
+\begin{verbatim}
+\textbf{Sample Input}
+2
+3 4
+1100
+1110
+0011
+2 2
+10
+00
+
+\textbf{Sample Output}
+Case 1: 4
+Case 2: 2\end{verbatim}
+
+ 

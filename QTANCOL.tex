@@ -1,0 +1,72 @@
+
+
+Ancol là một tay pha chế rượu có tiếng ở VOJ. Cách pha chế rượu của anh ta rất đặc biệt đó là:
+\begin{itemize}
+	\item Chỉ dùng N chai để pha chế rượu.
+	\item Không có 2 chai nào có độ rượu bằng nhau.
+	\item Chỉ dùng 2 loại rượu để pha chế cho mỗi ly rượu mà khách gọi.
+	\item Chỉ lấy 2 loại rượu nằm ở gần nhau.
+	\item Sau khi pha chế xong anh ta sẽ đổi vị trí 2 chai rượu đó.
+\end{itemize}
+
+Tuy nhiên do sức khỏe anh ta chỉ pha cho đúng K vị khách rồi nghỉ.
+
+Vào một buổi sáng đẹp trời, anh ta nhận ra 1 điều là có rất nhiều lần sau khi nghỉ các chai rượu được sắp xếp với độ rượu tăng dần mặc dù ban đầu chúng được đề ở vị trí bất kì.
+
+\textbf{Input:}
+
+Gồm 2 số N,K.
+
+\textbf{Output:}
+
+Số trường hợp các chai ban đầu mà sau khi nghỉ các chai rượu được xếp tăng dần về độ rượu sau khi modul 10$^9$+9.
+
+\textbf{Examples:}
+
+3 0       
+
+1   
+
+Giải thích: (1,2,3)
+
+3 1 
+
+2                  
+
+Giải thích: (2,1,3) =$>$ (1,2,3)
+
+               (1,3,2) =$>$ (1,2,3)
+
+3 2                            
+
+3
+
+Giải thích: (3,1,2) =$>$ (1,3,2) =$>$ (1,2,3)
+
+               (2,3,1) =$>$ (2,1,3) =$>$ (1,2,3)
+
+               (1,2,3) =$>$ (1,3,2) =$>$ (1,2,3)
+
+3 3    
+
+3                
+
+Giải thích: (2,1,3) =$>$ (1,2,3) =$>$ (2,1,3) =$>$ (1,2,3)
+
+               (1,3,2) =$>$ (1,2,3) =$>$ (1,3,2) =$>$ (1,2,3)
+
+               (3,2,1) =$>$ (3,1,2) =$>$ (1,3,2) =$>$ (1,2,3)
+
+\textbf{Lưu ý:} thứ tự đổi và cách đổi khác nhau với cùng 1 thứ tự chai ban đầu chỉ tính là 1.
+
+(1,3,2) =$>$ (1,2,3) =$>$ (1,3,2) =$>$ (1,2,3)
+
+(1,3,2) =$>$ (1,2,3) =$>$ (2,1,3) =$>$ (1,2,3)
+
+2 cách cách đổi trên được xem là 1 vì đều xuất phát từ (1,3,2).
+
+\textbf{Giới hạn:} 1≤N≤2000. 0≤K≤2000.
+
+ 
+
+ 

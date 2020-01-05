@@ -1,0 +1,49 @@
+
+
+
+
+   Cho n điểm trong hệ tọa độ Đề các 2-D. Bạn phải tính số lượng đa giác lồi có lớn hơn hoặc bằng 3 đỉnh mà có thể tạo thành bằng cách chọn một tập hợp con trong tập hợp các điểm đã cho. Để đơn giản, dữ liệu vào đảm bảo các điều kiện sau:  
+\begin{itemize}
+
+    (1) Không có 3 điểm bất kỳ nào thẳng hàng.   
+
+    (2) Không có 2 điểm nào có cùng tọa độ.   
+\end{itemize}
+
+   Do kết quả có thể rất lớn nên bạn chỉ cần in ra phần dư của nó khi chia cho 1234567  
+
+\subsubsection{   Input  }
+
+   Dòng đầu chứa số nguyên T, số lượng test. Trong mỗi test: dòng đầu chứa n là số lượng điểm của test đó; n dòng tiếp theo, dòng thứ i chứa 2 số nguyên là tọa độ của điểm thứ i. Trị tuyệt đối của các tọa độ không quá 10000.  
+
+\subsubsection{   Output  }
+
+   T dòng, mỗi dòng ghi đáp án cho test tương ứng.  
+
+\subsubsection{   Example  }
+\begin{verbatim}
+Input:
+2
+4
+0 0
+2 0
+2 2
+0 2
+6
+0 0
+2 0
+2 2
+0 2
+1 -1
+1 3
+
+Output:
+5
+42
+\end{verbatim}
+
+\subsubsection{   Constraints  }
+\begin{verbatim}
+Input Set 1 : T $<$= 100, 3 $<$= n $<$= 10 timeLimit: 5s  
+Input Set 2 : T $<$= 50, 3 $<$= n $<$= 100 timeLimit: 5s 
+\end{verbatim}

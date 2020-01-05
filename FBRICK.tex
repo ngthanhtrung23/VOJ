@@ -1,0 +1,45 @@
+
+
+ 
+
+Nguyên rất thích trò chơi xếp tháp. Tòa tháp của Nguyên bao gồm những khối lăng trụ đứng có đáy hình vuông và chiều cao bằng 1. Nguyên sẽ xếp các khối lăng trụ chồng lên nhau để tạo thành một tòa tháp cao.
+
+Mới đây trong lớp học toán, Nguyên được cô giáo dạy về cách tính thể tích các hình khối đơn giản. Nguyên thích thú với kiến thức mới học được và cậu ta muốn tính thể tích tòa tháp của mình.
+
+Tháp của Nguyên bao gồm N khối lăng trụ đứng chiều cao 1 và có đáy hình vuông và độ dài cạnh đáy từ trên xuống dưới theo thứ tự là A $_ 1 $ , A­­­ $_ 2 $ , ... A­­ $_\textbf{ N }$ . Dãy A được tạo như sau:
+\begin{enumerate}
+	\item A $_ 1 $ = 1.
+	\item A $_ 2 $ sẽ là một số dương tùy ý mà Nguyên chọn trong mỗi lần chơi để tránh nhàm chán.
+	\item A $_ i $ (i $>$ 2) bằng 2 × A $_ 2 $ × A $_ i  – 1 $ – A­ $_ i – 2. $
+\end{enumerate}
+
+ 
+
+Nguyên biết rõ thể tích hình một hình lăng trụ sẽ bằng chiều cao nhân với diện tích đáy nhưng vì ngại tính toán, Nguyên muốn nhờ bạn viết một chương trình giúp cậu ta. Kết quả có thể rất lớn vì vậy bạn chỉ cần ghi ra theo modulo \textbf{ M } với \textbf{ M } là một số nguyên dương cho trước.
+
+\subsubsection{Input}
+\begin{itemize}
+	\item Dòng 1: Ghi số nguyên dương \textbf{ K } ≤ 10 là số bộ dữ liệu.
+	\item \textbf{K } dòng tiếp: Mỗi dòng ghi 3 số nguyên A $_ 2 $ , \textbf{ N } , \textbf{ M } tương ứng với một bộ dữ liệu. (1 ≤ A $_ 2 $ , \textbf{ M } ≤ 10 $^ 9 $ , 2≤ \textbf{ N } ≤ 10 $^ 9 $ )
+\end{itemize}
+
+\subsubsection{Output}
+\begin{itemize}
+	\item Với mỗi bộ test ghi ra một số duy nhất là kết quả tương ứng trên một dòng.
+\end{itemize}
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+
+2
+
+1 10 1000
+
+2 3 100
+
+\textbf{Output:}
+
+10
+
+54\end{verbatim}

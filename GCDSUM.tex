@@ -1,0 +1,45 @@
+
+
+ 
+
+Một lần, ktuan được thầy giáo cho bài tập về nhà, yêu cầu tính tổng tất cả các ước chung lớn nhất của các cặp số (i, j) thỏa mãn : 1$<$=i$<$ j$<$=N ( N là một số tự nhiên cho trước ). Rất nhanh chóng, ktuan đã cho ra một đoạn code như sau:
+\begin{verbatim}
+
+\texttt{for i:=1 to N-1 do
+    for j:=i+1 to N do
+        sum := sum + gcd( i, j);
+}\end{verbatim}
+
+
+\\
+\\với gcd là hàm tính ước chung lớn nhất của 2 số, sum chính là kết quả cuối cùng.
+\\Thầy giáo yêu cầu ktuan dùng chương trình trên để tính kết quả với N = 1000000. Tuy nhiên, chương trình trên chạy quá lâu. Để khắc phục vấn đề, ktuan đã viết lại đoạn mã đó bằng C++ ( với hi vọng C++ sẽ chạy nhanh hơn pascal nhiều ) :
+\begin{verbatim}
+
+\texttt{for(int i=1;i$<$ N;++i)
+    for(int j=i+1;j$<$=N;++j)
+        sum += gcd(i,j);
+}\end{verbatim}
+
+
+\\Thật không may, đoạn chương trình trên vẫn không giải quyết được vấn đề, bạn hãy giúp ktuan giải đáp yêu cầu của thầy giáo.
+\\
+\\Lưu ý: bài này có thể giải bằng phương pháp Quy hoạch động và các kiến thức sơ đẳng trong toán học, không cần sử dụng những kiến thức toán học phức tạp không nằm trong phạm vi chương trình phổ thông.
+
+\subsubsection{Input}
+
+Gồm nhiều dòng, mỗi dòng là một số N (1 $<$= N $<$= 10\textasciicircum6) ứng với một test. Dữ liệu vào sẽ kết thúc sau khi gặp N=0 ( bạn không cần thực hiện test này ).
+
+\subsubsection{Output}
+
+Với mỗi giá trị của N, in ra một dòng là giá trị của sum sau khi thực hiện đoạn mã trên.
+
+\subsubsection{Example}
+\begin{verbatim}
+Input:
+4
+0
+
+Output:
+7
+\end{verbatim}

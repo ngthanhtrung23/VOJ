@@ -1,0 +1,58 @@
+
+
+
+
+\subsubsection{   Đề bài  }
+
+   SuperSum là hàm định nghĩa bởi  
+
+   SuperSum(0,n) = n với mọi số dương n  
+
+   SuperSum(k,n) = SuperSum(k-1,1) + SuperSum(k-1,2) + ... + SuperSum(k-1,n) với mọi số dương k, n  
+
+   Cho k, n, trả về phần dư của SuperSum(k,n) cho 1000000007  
+
+\subsubsection{   Dữ liệu  }
+\begin{itemize}
+	\item     Mỗi test bắt đầu bằng thẻ "[CASE]", các test cách nhau bởi một dòng trắng. Thẻ "[END]" báo hiệu kết thúc file input.   
+	\item     Mỗi test gồm hai dòng: k và n.   
+\end{itemize}
+
+\subsubsection{   Kết quả  }
+\begin{itemize}
+	\item     Với mỗi test, in ra kết quả tìm được.   
+\end{itemize}
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     k từ 1 đến 50.   
+	\item     n từ 1 đến 1000000000.   
+\end{itemize}
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu
+[CASE]
+1
+3
+
+[CASE]
+2
+3
+
+[CASE]
+4
+10
+
+[CASE]
+10
+35
+
+[END]
+
+Kết quả
+6
+10
+2002
+150595840
+\end{verbatim}

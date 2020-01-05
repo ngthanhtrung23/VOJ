@@ -1,0 +1,38 @@
+
+
+
+
+   Nhân dịp Giáng sinh và năm mới, một cửa hàng lắp đặt một dàn đèn có dạng bảng hình chữ nhật m x n. Trên dàn đèn có một số vị trí cần lắp đặt   bóng đèn. Cửa hàng muốn trang trí dàn đèn bằng các bóng đèn màu. Để thật đẹp mắt, cửa hàng muốn các bóng đèn nằm trên cùng hàng hoặc cùng cột   đều khác màu nhau! Nhưng để đảm bảo sự hài hòa, dàn đèn không nên có quá nhiều màu.  
+
+   Bạn hãy giúp cửa hàng trang trí dàn đèn, sao cho số loại bóng đèn màu cần sử dụng là ít nhất!  
+
+\subsubsection{   Dữ liệu  }
+\begin{itemize}
+	\item     Dòng đầu tiên chứa 2 số nguyên m, n (1 ≤ m, n ≤ 100)   
+	\item     m dòng tiếp theo, mỗi dòng chứa n kí tự '0' hoặc '1' thể hiện dàn đèn, kí tự '1' cho biết vị trí cần lắp đặt bóng đèn.   
+\end{itemize}
+
+\subsubsection{   Kết qủa  }
+\begin{itemize}
+	\item     Dòng đầu tiên: chứa số nguyên p là số loại bóng đèn màu ít nhất cần sử dụng.   
+	\item     Dòng thứ i trong số m dòng tiếp theo chứa n số nguyên, số thứ j là chỉ số màu của bóng đèn ở vị trí tương ứng, hoặc là 0 nếu ở vị trí tương ứng   không cần lắp đặt bóng đèn. Các màu được đánh số từ 1 đến p.   
+\end{itemize}
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+\textbf{Dữ liệu:}
+5 10
+1100111010 
+0011000101 
+0001011000 
+0110001010 
+1111010100
+
+\textbf{Kết qủa}
+6
+3 2 0 0 4 5 6 0 1 0 
+0 0 2 3 0 0 0 4 0 1 
+0 0 0 2 0 3 1 0 0 0 
+0 3 1 0 0 0 4 0 2 0 
+2 4 3 5 0 6 0 1 0 0
+\end{verbatim}

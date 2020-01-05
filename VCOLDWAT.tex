@@ -1,0 +1,56 @@
+
+
+
+
+   Mùa hè oi ả ở Wisconsin đã khiến cho lũ bò phải đi tìm nước để làm dịu đi cơn khát. Các đường ống dẫn nước của nông dân John đã dẫn nước lạnh vào 1 tập N (3 $<$= N $<$= 99999; N lẻ) nhánh (đánh số từ 1..N) từ một cái bơm đặt ở chuồng bò.  
+
+   Khi nước lạnh chảy qua các ống, sức nóng mùa hè sẽ làm nước ấm lên.  Bessie muốn tìm chỗ có nước lạnh nhất để cô bò có thể tận hưởng mùa  hè một cách thoải mái nhất.  
+
+   Bessie đã vẽ sơ đồ toàn bộ các nhánh ống nước và nhận ra rằng nó là  một đồ thị dạng cây với gốc là chuồng bò và ở các điểm nút ống thì  có chính xác 2 nhánh con đi ra từ nút đó. Một điều ngạc nhiên là  các nhánh ống này đều có độ dài là 1.  
+
+   Cho bản đồ các ống nước, hãy cho biết khoảng cách từ chuồng bò  tới tất cả các nút ống và ở các phần cuối đường ống.  
+
+   “Phần cuối” của một đường ống, có thể là đi vào một nút ống hoặc  là bị bịt, được gọi theo số thứ tự của đường ống. Bản đồ có C  (1 $<$= C $<$= N) nút ống, được mô tả bằng 3 số nguyên: là “phần cuối”  của ống E\_i (1 $<$= E\_i $<$= N) và 2 ống nhánh đi ra từ đó là  B1\_i và B2\_i (2 $<$= B1\_i $<$= N; 2 $<$= B2\_i $<$= N). Đường ống số 1 nối  với chuồng bò; khoảng cách từ phần cuối của đường ống này  tới chuồng bò là 1.  
+
+\subsubsection{   Dữ liệu  }
+\begin{itemize}
+	\item     Dòng 1: 2 số nguyên cách nhau bởi dấu cách: N và C   
+	\item     Dòng 2..C+1: Dòng i+1 mô tả nút ống i với ba         Số nguyên cách nhau bởi dấu cách: E\_i, B1\_i, và B2\_i   
+\end{itemize}
+
+\subsubsection{   Kết quả  }
+\begin{itemize}
+	\item     Dòng 1..N: Dòng i chứa 1 số nguyên là khoảng            cách từ chuồng tới “phần cuối” của ống thứ i.   
+\end{itemize}
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu
+5 2
+3 5 4
+1 2 3
+
+Giải thích:
+Dữ liệu ở trên mô tả bản đồ ống nước sau:
+
+                    +--------+
+                    | Chuồng |
+                    +--------+
+                       | 1
+                       *
+                    2 / \ 3
+                         *
+                      4 / \ 5
+
+Kết quả
+1
+2
+2
+3
+3
+
+Giải thích:
+Ống 1 luôn cách chuồng 1 đoạn là 1. Ống 2 và 3 nối với ống 
+1 nên khoảng cách sẽ là 2. Ống 4 và 5 nối với ống 3 nên 
+khoảng cách sẽ là 3.
+\end{verbatim}

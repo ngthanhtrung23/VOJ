@@ -1,0 +1,80 @@
+
+
+
+
+    Năm 2013, nước X sẽ phát hành hệ thống tiền tệ mới, thay cho hệ thống tiền tệ trước đây. Rút kinh nghiệm từ những lần phát hành trước, lần này, chính phủ nước X muốn tiến hành đơn giản hóa hệ thống tiền tệ đến mức tốt nhất có thể. Cụ thể, sau một thời gian nghiên cứu, họ đưa ra quy tắc phát hành tiền tệ như sau:   
+\begin{itemize}
+	\item 
+
+      Chọn  3 số nguyên tố a,b,c đôi một phân biệt nằm trong [1,n]     
+	\item 
+
+      Bộ  tiền xu được đưa ra phát hành sẽ có 3 mệnh giá là  ab, bc, ca     
+\end{itemize}
+
+    (Ví dụ, nếu a = 2, b = 3, c = 5, thì bộ tiền xu được phát hành sẽ có mệnh giá là (6,10,15))   
+
+
+
+    Dễ dàng nhận thấy, sẽ có một số mệnh giá tiền không thể trả được, nếu chỉ sử dụng bộ tiền xu đã cho. Kí hiệu F(a,b,c) là số tiền lớn nhất   \textbf{     không thể trả được    }    nếu chỉ sử dụng bộ tiền xu có mệnh giá (ab,bc,ca). Ví dụ, F(2,3,5) = 29, vì không thể trả được 29 đồng nếu chỉ sử dụng bộ tiền (6,10,15) (ngoài ra, có thể chứng minh, với 1 số tiền từ 30 đồng trở lên, luôn có cách trả mà chỉ dùng các đồng xu 6,10,15 đồng).   
+
+
+
+    Yêu cầu: cho số nguyên dương N, hãy tính tổng của tất cả các F(a,b,c), với 1 $<$ a $<$ b $<$ c $<$= n, và a,b,c là các số nguyên tố. Vì kết quả có thể rất lớn, bạn chỉ cần lấy kết quả modulo 1000000007. Đây sẽ là thông tin quan trọng để chính phủ nước X chọn được bộ tiền thích hợp nhất vào năm 2013 sắp tới   
+
+
+
+    Input:   
+\begin{itemize}
+	\item 
+
+      Dữ  liệu được cho vào gồm nhiều test. Dòng đầu tiên ghi  số nguyên dương T (T $<$= 50) là số test     
+	\item 
+
+      T  dòng sau, mỗi dòng ghi 1 số nguyên dương N (1 $<$= N $<$=  10\textasciicircum6) như mô tả trong đề bài     
+\end{itemize}
+
+    Output:   
+\begin{itemize}
+	\item 
+
+      Gồm  T dòng, ghi ra kết quả tương ứng. Nếu không có bộ  tiền xu nào trong [1,n], ghi ra 0.     
+\end{itemize}
+
+
+
+    Example:   
+
+        Input       
+
+        4       
+
+        4       
+
+        5       
+
+        6       
+
+        7       
+
+        Output       
+
+        0       
+
+        29       
+
+        29       
+
+        292       
+
+
+
+    Giải thích:   
+\begin{itemize}
+	\item 
+
+      Với  n = 4, do không thể chọn được bộ số nào, nên đáp số  là 0.     
+	\item 
+
+      Với  n = 5, chỉ có 1 bộ số (2,3,5) là có thể chọn. Do  F(2,3,5) = 29, nên đáp số là 29.     
+\end{itemize}

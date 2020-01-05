@@ -1,0 +1,66 @@
+
+
+Cho N số nguyên dương A1, A2, ..., An. Mỗi số có giá trị không vượt quá N.
+
+Yêu cầu:
+
+Hãy chia N số này thành một số nhóm sao cho:
+\begin{itemize}
+	\item Mỗi nhóm là một dãy các số liên tiếp.
+	\item Trọng số của mỗi nhóm được tính theo công thức: Bình phương của \textbf{\emph{ số giá trị khác nhau }} trong nhóm đó.
+\end{itemize}
+
+Ví dụ:
+\begin{itemize}
+	\item 1 2 3 -$>$ số giá trị khác nhau bằng 3, trọng số = 9.
+	\item 1 2 1  -$>$ số giá trị khác nhau bằng 2, trọng số = 4.
+	\item 1 1 1  -$>$ số giá trị khác nhau bằng 1, trọng số = 1.
+\end{itemize}
+
+Trọng số của dãy số bằng Tổng trọng số của tất cả các nhóm. Hãy tìm cách chia sao cho Tổng trọng số đạt giá trị nhỏ nhất.
+
+\subsubsection{Input}
+
+Dòng 1: Gồm 2 số N và M - Số lượng số và số giá trị khác nhau trong dãy.
+
+Dòng 2..N+1: Mỗi dòng chứa một số nguyên.
+
+\subsubsection{Output}
+
+Trọng số nhỏ nhất của dãy số.
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+13 4
+1
+2
+1
+3
+2
+2
+3
+4
+3
+4
+3
+1
+4
+
+\textbf{Output:}
+11\end{verbatim}
+
+
+\\
+\\\textbf{\emph{Giải thích}}: Chúng ta sẽ chia dãy số thành 8 nhóm
+\begin{itemize}
+	\item 4 nhóm đầu tiên mỗi nhóm chứa một số duy nhất.
+	\item nhóm thứ 5 chứa hai số nguyên đều có giá trị là 2.
+	\item nhóm thứ 6 gồm các số từ 7-$>$12 : (3, 4, 3, 4, 3)
+	\item 2 nhóm cuối cùng mỗi nhóm gồm 1 số duy nhất.
+\end{itemize}
+
+
+\\Kết quả là 1\textasciicircum2 + 1\textasciicircum2 + 1\textasciicircum2 + 1\textasciicircum2 + 1\textasciicircum2 + 2\textasciicircum2 + 1\textasciicircum2 + 1\textasciicircum2= 11.
+\\
+\\\textbf{Giới hạn}: N $<$= 40 000.

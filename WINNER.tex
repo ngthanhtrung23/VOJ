@@ -1,0 +1,47 @@
+
+
+
+
+
+
+
+
+\subsection{   Ai thắng cuộc?  }
+
+   Không có việc gì làm, Bờm và Cuội nghĩ ra một trò chơi như sau. Có N đống sỏi, đống thứ i gồm a   $_    i   $   viên sỏi. Bờm và Cuội sẽ thay phiên nhau đi. Ở lượt đi của bạn nào thì bạn đó được phép chọn một đống sỏi bất kỳ, và bốc  khỏi đống sỏi đó một số lượng viên sỏi. Số lượng viên sỏi bốc được phải là   \textbf{    ước số   }   của số lượng viên sỏi trong đống được bốc.  
+
+   Bạn nào bốc được viên sỏi cuối cùng sẽ là người thắng cuộc. Bờm là người đi trước.  
+
+   Biết số lượng viên sỏi ban đầu của mỗi đống sỏi, bạn có thể viết chương trình cho biết trước ai là người thắng cuộc trong trò chơi này được không (nếu cả hai cùng chơi với chiến thuật tối ưu)?  
+
+\subsubsection{   Dữ liệu  }
+
+   Dòng đầu tiên chứa số N, là số lượng đống sỏi.  
+
+   Dòng thứ hai gồm N số nguyên dương cách nhau bởi khoảng trắng, cho biết số lượng viên sỏi trong các đống sỏi.  
+
+\subsubsection{   Kết quả  }
+
+   Dòng đầu tiên ghi ra chữ "Bom" hay "Cuoi" tuỳ thuộc vào việc Bờm hay Cuội sẽ thắng cuộc.  
+
+   Trong trường hợp Bờm thắng, dòng thứ hai in ra hai số "x a", cho biết Bờm phải bốc x viên sỏi từ đống hiện có a viên sỏi để giành chiến thắng. Trong trường hợp có nhiều nước đi dẫn đến thắng lợi, hãy tìm nước đi có x lớn nhất. Nếu vẫn có nhiều nước đi, trong số các nước đi có x lớn nhất, hãy tìm nước đi có a lớn nhất.  
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     1 ≤ N ≤ 10    $^     5    $    , 1 ≤ a    $_     i    $    ≤ 10    $^     9    $
+	\item     Có 70\% số test trong đó a    $_     i    $    ≤ 10    $^     5    $
+\end{itemize}
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+\textbf{Dữ liệu}
+\\3
+\\1 2 3 
+\\
+\\\textbf{Kết quả}
+\\Bom
+\\2 2
+\\\end{verbatim}
+
+   Giải thích: Sau khi Bờm bốc hết đống có 2 viên sỏi, sẽ còn lại hai đống 1 và 3 viên sỏi. Nếu Cuội bốc hết 1 trong hai đống, Bờm sẽ bốc đống còn lại và chiến thắng. Nếu Cuội bốc 1 viên sỏi trong đống có 3 viên, Bờm bốc tiếp 1 viên trong đống này. Còn lại hai đống, mỗi đống 1 viên sỏi, Bờm sẽ đảm bảo giành chiến thắng.  
+

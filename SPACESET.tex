@@ -1,0 +1,58 @@
+
+
+
+
+   Đã lâu lắm rồi, ở một thiên hà xa xôi ... Một đế chế đã xây dựng nên một trạm không gian vĩ đại. Trạm không gian này có m tầng, và mỗi tầng gồm có n khu vực. Các khu vực được nối với nhau bởi các tuyến đường để các tàu không gian có thể bay qua.  
+
+   Một tầng là một vòng tròn với n khu vực được đặt trên đó. Vòng tròn cung cấp các tuyến đường bay cho các tàu không gian. Trong vòng một tầng, việc di chuyển chỉ được thực hiện dọc theo vòng tròn đó. Vòng tròn định hướng đường bay sẽ luôn tồn tại, bất chấp số lượng khu vực ở trong tầng đó.  
+
+   Các tầng được tổ chức thành một hệ thống. Một sự kết nối hoàn hảo được cung cấp giữa các tầng. Tại mỗi khu vực trong một tầng sẽ có các tuyến đường nối tới mọi khu vực ở tầng ngay trên và ngay dưới nó. Tầng trên cùng và dưới cùng cũng được nối theo cách tương tự.  
+
+   Chàng phi hành gia thích phiêu lưu -- Han Solo muốn chở mọi người giữa các khu vực. Tàu không gian của Solo có thể bay theo một hành trình có chính xác k điểm dừng, không hơn không kém.  
+
+   Cho giá trị của k, n và m. Bạn phải tính số hành trình trong trạm không gian mà Solo có thể dùng để thực hiện công việc của mình.       Lưu ý    
+\begin{itemize}
+
+    1. Một khu vực có thể được thăm bao nhiêu lần tùy ý trong 1 hành trình.   
+
+    2. Một hành trình được coi là một dãy các đỉnh sao cho tồn tại một cạnh giữa 2 đỉnh liên tiếp. Hai hành trình được coi là khác nhau nếu chúng khác nhau tại một đỉnh bất kỳ.   
+
+    3. Tầng trên cùng và dưới cùng chỉ được nối với nhau nếu như chúng khác nhau.   
+
+    4. Hình ảnh tượng trưng   
+\includegraphics{http://vn.spoj.pl/content/loop.jpg}
+
+    Trong hình, các dấu chấm màu đen thể hiện các khu vực. Sự kết nối được biểu diễn bằng các vòng tròn và đường thẳng.   
+\end{itemize}
+
+\subsubsection{   Input  }
+
+   Dòng đầu chứa T, số lượng test. Mỗi test chứa các giá trị của m, n và k.  
+
+\subsubsection{   Output  }
+
+   Chứa T dòng, mỗi dòng cho 1 test. Mỗi dòng sẽ ghi phần dư của tổng số hành trình có thể sử dụng khi chia cho 12345678.  
+
+\subsubsection{   Example  }
+\begin{verbatim}
+Input:
+5
+1 1 1
+1 2 1
+3 3 56
+4 3 4
+691 60 97764
+
+Output:
+1
+2
+8019378
+6144
+470730 
+\end{verbatim}
+
+\subsubsection{   Constraints  }
+
+   Dataset 1: T ≤ 100, m ≤ 1000, n ≤ 1000, k ≤ 100000 Time limit: 5s  
+
+   Dataset 2: T ≤ 100, m ≤ 10\textasciicircum8, n ≤ 10\textasciicircum8, k ≤ 10\textasciicircum8 Time limit: 5s  

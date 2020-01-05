@@ -1,0 +1,42 @@
+
+
+
+
+   Megastar là rạp chiếu phim lớn và hiện đại nhất ở Hà Nội. Rạp chiếu này có một phòng chiếu gồm M hàng ghế, mỗi hàng có N ghế. Để có được vé xem phim, bạn có thể đặt vé qua mạng. Mỗi yêu cầu đặt vé có thể đặt một lúc nhiều vé. Hiện tại, sau khi nhận được các yêu cầu đặt vé, rạp sẽ sắp xếp bố trí chỗ ngồi cho các yêu cầu sao cho các chỗ ngồi của mỗi yêu cầu là một vùng liên thông. Một ghế không nằm ở hàng đầu, hàng cuối, cột trái nhất, cột phải nhất sẽ có 4 ghế ở phía trước, phía sau, phía trái và phía phải được coi là kề với nó.  
+
+   Công việc sắp xếp chỗ ngồi này hiện tại được làm hoàn toàn bằng tay. Bạn hãy viết chương trình sắp xếp chỗ ngồi cho hợp lý nhất.  
+
+\subsubsection{   Dữ liệu  }
+\begin{itemize}
+	\item     Dòng thứ nhất ghi số M và N.   
+	\item     Dòng thứ hai ghi số K là số yêu cầu đặt vé.   
+	\item     Dòng thứ ba ghi K số là số lượng vé mỗi yêu cầu đã đặt.   
+\end{itemize}
+
+\subsubsection{   Kết quả  }
+\begin{itemize}
+	\item     Ghi ra M dòng, mỗi dòng N số với ý nghĩa ghế đó dành cho yêu cầu đặt vé thứ i.   
+	\item     Nếu một ghế là trống thì in ra 0.   
+\end{itemize}
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     1 ≤ M, N ≤ 1000.   
+	\item     Tổng số vé yêu cầu không vượt quá M * N.   
+	\item     Trong 40\% số test, M N ≤ 100.   
+\end{itemize}
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu
+5 4
+3
+4 5 9
+
+Kết quả
+1 1 2 2
+1 1 2 2
+3 3 3 2
+3 3 3 0
+3 3 3 0
+\end{verbatim}

@@ -1,0 +1,40 @@
+
+
+Nếu ta đảo lộn xộn các ký tự trong 1 từ, trong khi giữ nguyên ký tự đầu tiên và cuối cùng. Ví dụ, câu “this sentence makes perfect sense” trở thành “tihs snetncee mkaes prfecet sesne” Nếu ta xoá tất cả khoảng cách trong 1 câu ta khó đọc được câu đó. Ví dụ, “thissentencemakesperfectsense”. Tuy nhiên nếu ta kết hợp hai điều này thì việc giải mã trở nên khó hơn : “tihssnetnceemkaesprfecetsesne”.
+
+\textbf{Yêu cầu: } Cho 1 câu trong dạng cuối và 1 tự điển các từ đúng, giải mã chúng.
+
+\textbf{Dữ liệu: } Dòng đầu số nguyên là số test $<$= 16. Mỗi test:
+
+-  Dòng đầu 1 xâu s gồm các ký tự thường có độ dài từ 1 đến 1000 ký tự.
+
+- Một dòng với 1 số nguyên n là số từ trong tự điển. N dòng, mỗi dòng chứa 1 từ gồm các ký tự thường và có độ dài từ 1 đến 100. Tất cả các từ là duy nhất.
+
+\textbf{Kết quả: } Mỗi test đưa ra 1 dòng với câu đã giải mã nếu mã là duy nhất. Ngược lại đưa "impossible" (Nếu không có kết quả) hoặc “ambiguous” (Nếu có nhiều kết quả) tuỳ trong mỗi trường hợp.
+
+\textbf{Giới hạn: }
+
+1 ≤ n ≤ 10 000.
+
+\textbf{Ví dụ: }
+\begin{verbatim}
+\textbf{Input}
+3
+tomsot
+2
+to
+most
+too
+3
+too
+to
+o
+tomuch
+2
+to
+mhuc
+
+\textbf{Output}
+to most
+ambiguous
+impossible\end{verbatim}

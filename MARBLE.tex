@@ -1,0 +1,59 @@
+
+
+
+
+
+
+
+
+\subsection{   Bắn bi  }
+
+   Trong những ngày hè rảnh rỗi, ktuan thường chơi bắn bi trên một bảng hình vuông gồm NxN ô vuông nhỏ. Trò chơi được thực hiện như sau:  
+\begin{itemize}
+	\item     Ban đầu, ktuan đặt K vật cản vào K ô vuông của bảng.   
+	\item     Sau đó, ktuan thực hiện lần lượt Q lượt chơi. Ở lượt chơi thứ i, ktuan lần lượt bắn D    $_     i    $    viên bi từ ngoài bảng vào một trong 4 đường biên của bảng. Kích thước của mỗi viên bi đúng bằng kích thước của một ô vuông nhỏ. Viên bi sẽ đi qua các ô thuộc cùng một hàng / cột cho đến khi đi ra ngoài bảng hoặc gặp một vật cản hay viên bi khác. Nếu có vật cản hay viên bi khác ở ngay ô đầu tiên thì viên bi đó không được đưa vào bảng.   
+	\item     Ở mỗi lượt bắn, ktuan ghi lại tổng số ô mà các viên bi đã đi qua.   
+\end{itemize}
+
+   Bạn hãy viết chương trình mô phỏng lại trò chơi và với mỗi lượt bắn, in ra tổng số ô mà các viên bi của lượt bắn đó đã đi qua.  
+
+\subsubsection{   Dữ liệu  }
+\begin{itemize}
+	\item     Dòng đầu ghi 3 số N, K, Q.   
+	\item     K dòng sau, mỗi dòng ghi một cặp số (u,v) thể hiện toạ độ (dòng, cột) của một vật cản.   
+	\item     Q dòng sau, mỗi dòng ghi 4 giá trị c, D, u, v. Ký tự c có thể là 'L', 'R', 'T', hoặc 'B' cho biết viên bi được đưa vào từ biên trái, phải, trên hoặc dưới của bảng. (u,v) thể hiện toạ độ ô đầu tiên mà viên bi được đưa vào. Đây phải là một ô nằm trên biên của bảng ứng với ký tự c. D là số lượng viên bi sẽ bắn ở lượt chơi này.   
+\end{itemize}
+
+\subsubsection{   Kết quả  }
+\begin{itemize}
+	\item     Với mỗi lượt chơi, in ra tổng số ô mà các viên bi của lượt đó đã đi qua   
+\end{itemize}
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+\textbf{Dữ liệu}
+\\5 1 3
+\\3 3
+\\L 2 3 1
+\\T 1 1 1
+\\B 5 5 5
+\\
+\\\textbf{Kết quả}
+\\3
+\\2
+\\25\end{verbatim}
+
+\subsubsection{   Giải thích  }
+\begin{itemize}
+	\item     Viên bi đầu tiên của lượt 1 sẽ đi qua 2 ô (3,1) và (3,2) trước ghi gặp vật cản ở ô (3,3)   
+	\item     Viên bi tiếp theo của lượt 1 sẽ đi qua ô (3,1) trước khi gặp viên bi ở ô (3,2). Vậy tổng số ô bị đi qua ở lượt này là 3.   
+	\item     Viên bi đầu tiên của lượt 2 sẽ đi qua 2 ô (1,1) và (2,1) trước khi gặp viên bi ở ô (3,1).   
+	\item     Mỗi viên bi của lượt cuối cùng đều không gặp vật cản và sẽ đi ra ngoài bảng sau khi đi qua 5 ô.   
+\end{itemize}
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     N ≤ 50000, K ≤ 10, Q ≤ 100000   
+	\item     Trong 1/3 số test, N và Q không vượt quá 1000.   
+\end{itemize}
+

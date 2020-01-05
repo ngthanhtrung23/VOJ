@@ -1,0 +1,43 @@
+
+
+ 
+
+Công ty xây dựng SVI phải lựa chọn các dự án cần thực hiện để lợi nhuận đem lại là nhiều nhất. Công ty có một danh sách gồm n dự án đánh số từ 1 đến n. Sau khi công ty rà soát năng lự thực hiện các dự án, công ty đưa ra bảng đánh giá hiệu quả (có thể là lợi nhuận hoặc thua lỗ) từ việc thực hiện dự án i là pi (nếu pi $>$ 0 đó là lợi nhuận, ngược lại nếu pi $<$ 0 thì đó là thua lỗi phải chị từ việc thực hiện dự án i, |pi| $<$ 10\textasciicircum6). Việc lựa chọn các dự án cần thực hiện để lợi nhuận đem lại là lớn nhất không phải là đơn giản bời vì công ty không thể chi lựa chọn các công việc đem lại lợi nhuận để thực hiện. Có một danh sách gồm m điều kiện liên quan đến việc lựa chọn thực hiện các dự án. Điều kiện thứ j yêu cầu: "Nếu thực hiện dự án uj thì phải thực hiện dự án vj", j = 1, 2, .., m. Một tập con các dự án được gọi là lựa chọn được nếu mỗi dự án trong nó luông thỏa mãn các điều kiện trong danh sách.
+
+\subsubsection{Yêu cầu}
+
+Hãy giúp công ty tìm tập các dự án lựa chọn được mà việc thực hiện chúng đem lại tổng hiệu quả lớn nhất.
+
+\subsubsection{Input}
+\begin{itemize}
+	\item Dòng đầu ghi một số nguyên dương n
+	\item Dòng thứ hai ghi n số nguyên tương ứng là tính hiệu quả của từng công việc.
+	\item Dòng thứ bai ghi một số nguyên dương m (m $<$= 10\textasciicircum4).
+	\item Dòng thứ j trong số m dòng tiếp theo ghi hai số nguyên dương uj và vj chỉ sự ràng buộc rằng nếu thực hiện công việc uj thì phải thực hiện công việc vj.
+\end{itemize}
+
+\subsubsection{Output}
+
+Ghi ra một số nguyên là tổng hiệu quả của tập các dự có thể án thực hiện tìm được. Ghi ra số 0 nếu như không chọn dự án nảo cả.
+
+\subsubsection{Giới hạn}
+\begin{itemize}
+	\item 30\% số test có n $<$= 20.
+	\item 30\% số test khác có n $<$= 100.
+	\item 40\% số test còn lại có n $<$= 500.
+\end{itemize}
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+6
+10 4 -5 3 -1 -2
+4
+2 3
+2 5
+6 5
+4 3
+
+\textbf{Output:}
+11
+\end{verbatim}

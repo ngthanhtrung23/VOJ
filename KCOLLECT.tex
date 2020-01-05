@@ -1,0 +1,63 @@
+
+
+
+
+   Công việc buôn bán dừa của Pirate không mấy khả quan cho lắm, khiến anh đêm ăn không ngon ngày ngủ không yên, chỉ biết chúi đầu vào xem "Rôbô trái cây". Một ngày nọ, đang nằm ngủ dưới gốc dừa, bỗng một trái dừa rơi vào đầu anh ấy. Cũng giống như Newton, Pirate cũng cầm trái dừa lên, ngắm nghía và... rủa: "Khỉ thật, sao xứ này toàn là dừa thế này!". Tức điên lên, Pirate quyết trồng thêm các loại trái cây khác vào hòn đảo của mình.  
+
+   Đến mùa thu hoạch, Pirate đặt hàng một "Rôbô trái cây" để giúp mình hái quả. Khu vườn của Pirate có hình chữ nhật, và được chia thành M x N ô vuông bằng nhau. Trong mỗi ô vuông có một cây thuộc một loại quả khác nhau, đánh số từ 0 đến 9. Không phải vô tình mà chúng được đánh số như vậy, con số đó thể hiện giá trị kinh tế của các loại cây.  
+
+   Tuy nhiên, nhìn mặt con Rôbô trái cây này có vẻ ngu ngu nên trong lần đầu tiên thử việc, Pirate muốn test AI của nó. Cụ thể là Rôbô phải tuân theo các quy định sau:  
+
+   a. Tại mỗi ô, Rôbô chỉ có thể đi sang hướng đông hoặc hướng nam sang ô kề cạnh.  
+
+   b. Có một số ô đặc biệt mà tại đó Rôbô có thể đi được thêm hướng tây hoặc hướng bắc sang ô kề cạnh (chỉ một trong hai).  
+
+   c. Rôbô không được đi vào những ô có cây dừa (Pirate căm thù dừa).  
+
+   d. Rôbô được đi qua một ô nhiều lần. Khi đi qua một ô, Rôbô phải hái hết quả ở cây trong ô đó. Lợi nhuận thu được sẽ bằng chỉ số của loại cây vừa được thu hái. Và sau này, không thể đạt thêm lợi nhuận gì từ ô đó nữa.  
+
+   Xuất phát từ ô ở góc tây bắc của khu vườn, hãy giúp Rôbô trái cây xác định hành trình để đạt được lợi nhuận tối đa.  
+
+
+
+
+\includegraphics{http://i797.photobucket.com/albums/yy253/khanhptnk/quytu1.jpg}
+
+\subsubsection{   Input  }
+\begin{itemize}
+	\item     Dòng thứ nhất: ghi hai số nguyên M và N - kích thước của khu vườn.   
+	\item     M dòng tiếp theo: mỗi dòng ghi N kí tự liên tiếp nhau mô tả khu vườn:   
+\end{itemize}
+
+   + '0' - '9': các loại trái cây;  
+
+   + '\#': cây dừa;  
+
+   + 'W': được quyền đi theo hướng tây;  
+
+   + 'N': được quyền đi theo hướng bắc.  
+
+\subsubsection{   Output  }
+\begin{itemize}
+	\item     Ghi một số nguyên duy nhất là lợi nhuận tối đa đạt được.   
+\end{itemize}
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     Trong mọi test, 1 ≤ M, N ≤ 100.   
+	\item     60\% số test có 1 ≤ M, N ≤ 20.   
+\end{itemize}
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+2 3
+\\264
+\\3WW
+\\
+\\\textbf{Output:}
+15
+\\
+\\\end{verbatim}
+
+\emph{    Giải thích: Rôbô sẽ đi theo hành trình như sau (1, 1) -$>$ (1, 2) -$>$ (1, 3) -$>$ (2, 3) -$>$ (2, 2) -$>$ (2, 1) (ô (i, j) là ô ở dòng i và cột j). Tổng lợi nhuận sẽ là 2 + 6 + 4 + 3 = 15.   }

@@ -1,0 +1,55 @@
+
+
+
+
+   Mirko tìm thấy một chiếc bảng gỗ và N chiếc đinh trên gác mái. Mirko đóng những chiếc đinh vào bảng thật nhanh. Chiếc bảng gỗ có thể coi như một mặt phẳng tọa độ và những chiếc đinh là các điểm trong nó. Không có 2 chiếc đinh nào có cùng tọa độ x hoặc tọa độ y.  
+
+   Để cho vui vẻ, Mirko đã lấy trộm dây chun buộc tóc của chị, căng nó bao quanh những chiếc đinh. Chiếc dây chun, theo tự nhiên, thắt chặt xung quanh những chiếc đinh.  
+
+   Sau đó Mirko tiếp tục lặp lại những bước sau trong khi vẫn còn ít nhất 3 chiếc đinh trên bảng:  
+\begin{itemize}
+	\item     1. Ghi lại diện tích của hình được bao quanh bởi chiếc dây buộc tóc.   
+	\item     2. Chọn 1 chiếc đinh trái nhất, phải nhất, trên nhất, hoặc dưới nhất.   
+	\item     3. Rút chiếc đinh vừa chọn ra khỏi bảng; chiếc dây chun lại thắt chặt xung quanh những chiếc đinh còn lại.   
+\end{itemize}  Viết chương trình tính những giá trị được ghi lại ở bước 1, nếu ta biết chiếc đinh mà Mirko chọn trong bước 2 của mỗi lần thực hiện.  
+
+\subsubsection{   Input  }
+
+   Dòng đầu tiên chứa số nguyên N (3 ≤ N ≤ 300 000), số lượng những chiếc đinh.  
+
+   Mỗi dòng trong số N dòng tiếp theo chứa 2 số nguyên là tọa độ của một chiếc đinh. Tất cả các tọa độ nằm giữa 1 và 1 000 000 000. Không có 2 chiếc đinh nào có cùng tọa độ x hoặc y.  
+
+   Dòng tiếp theo chứa N-2 chữ cái 'L', 'R', 'U' hoặc 'D'. Các chữ cái thể hiện những chiếc đinh mà Mirko chọn theo thứ tự:  
+\begin{itemize}
+	\item     'L' cho chiếc đinh trái nhất (tọa độ x nhỏ nhất),   
+	\item     'R' cho chiếc đinh phải nhất (tọa độ x lớn nhất),   
+	\item     'U' cho chiếc đinh trên nhất (tọa độ y lớn nhất),   
+	\item     'D' cho chiếc đinh dưới nhất (tọa độ y nhỏ nhất).   
+\end{itemize}
+
+\subsubsection{   Output  }
+
+   Viết ra N-2 số, mỗi số trên 1 dòng phân biệt. Các số theo thứ tự là diện tích mà Mirko ghi lại. Viết ra các số với 1 chữ số sau dấu phẩy.  
+
+\subsubsection{   Example  }
+\begin{verbatim}
+Input:
+8
+1 6
+2 4
+3 1
+4 2
+5 7
+6 5
+7 9
+8 3
+URDLUU
+
+Output:
+34.0
+24.0
+16.5
+14.0
+9.5
+5.0
+\end{verbatim}

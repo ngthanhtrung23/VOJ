@@ -1,0 +1,49 @@
+
+
+
+
+   Trò chơi Nim Đen Trắng được chơi như sau. Có một hoặc nhiều hàng, mỗi hàng chứa một số hạt màu đen và trắng. Hai người chơi lần lượt thực hiện lượt đi bằng cách bỏ đi các hạt cho đến hết. Trong mỗi lượt đi, một người chơi phải bỏ đi một hoặc nhiều hạt liên tiếp từ đầu bên trái của một hàng. Các hạt bị bỏ đi phải chứa hoặc là không hạt nào màu đen, hoặc là có duy nhất một hạt đen. Nếu một hạt màu đen bị bỏ đi, hạt đó phải là hạt bên phải nhất của dãy các hạt bị bỏ. Người nào đi lượt cuối cùng là người chiến thắng.  
+
+   Cho số lượng hạt màu đen và màu trắng ở mỗi hàng. Thứ tự của các hạt trên một hàng được tạo ra một cách ngẫu nhiên vào thời điểm bắt đầu trò chơi. Thứ tự của các hàng phân biệt có thể giống nhau. Các hạt màu đen giống hệt nhau, và các hạt màu trắng cũng giống hệt nhau (không thể phân biệt các hạt cùng màu). In ra xác suất mà người chơi đầu tiên giành chiến thắng nếu như cả hai người đều chơi tối ưu.  
+
+\subsubsection{   Input  }
+
+   Dòng đầu chứa một số thể hiện số lượng test.  
+
+   Mỗi test có ba dòng, dòng đầu chứa N là số hàng.  
+
+   Dòng thứ hai chứa N số, thể hiện số lượng hạt màu đen trên mỗi hàng. Có nhiều nhất là 100 hạt màu đen trên mỗi hàng.  
+
+   Dòng thứ ba chứa N số, thể hiện số lượng hạt màu trắng trên mỗi hàng. Có nhiều nhất 100 hạt màu trắng trên mỗi hàng. Có ít nhất một hạt trên một hàng.  
+
+\subsubsection{   Output  }
+
+   Với mỗi test, in ra trên một dòng một số thực, thể hiện đáp số. Số này được in với đúng 6 chữ số thập phân.  
+
+\subsubsection{   Example  }
+\begin{verbatim}
+Input:
+4
+1
+0
+2
+1
+2
+0
+1
+2
+2
+2
+2 5
+2 0
+
+Output:
+1.000000
+0.000000
+0.666667
+0.666667
+\end{verbatim}
+
+\subsubsection{   Constraints  }
+
+   Dataset 1: N ≤ 50. Time limit: 5s  

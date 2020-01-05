@@ -1,0 +1,47 @@
+
+
+
+
+   Cho cây gồm N đỉnh, có gốc ở đỉnh 1. (N ≤ 70,000). Bạn cần trả lời Q truy vấn, mỗi truy vấn gồm 2 số u, v. Bạn cần tìm đỉnh xa gốc nhất, mà là tổ tiên của tất cả các đỉnh u, u+1, ..., v.  
+
+\subsubsection{   Input  }
+\begin{itemize}
+	\item      Dòng 1: Số nguyên dương N và Q.    
+	\item      N-1 dòng tiếp theo, mỗi dòng chứa 2 số nguyên dương u và v, thể hiện có 1 cạnh nối giữa 2 đỉnh u và v. (u ≠ v, 1 ≤ u, v ≤ N).    
+	\item      Q dòng tiếp theo, mỗi dòng gồm 2 số nguyên dương u và v (1 ≤ u ≤ v ≤ N), thể hiện 1 truy vấn.    
+\end{itemize}
+
+\subsubsection{   Output  }
+
+   Với mỗi truy vấn, in ra 1 dòng duy nhất là đáp số của truy vấn.  
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     Trong 30\% số test, 1 ≤ N, Q ≤ 1000.   
+	\item     Trong tất cả các test, 1 ≤ N, Q ≤ 70,000.   
+	\item     Thời gian chạy: 1s. Thời gian chạy cho test ví dụ: 0.5s   
+\end{itemize}
+
+\subsubsection{   Chú ý:  }
+\begin{itemize}
+	\item     Trong thời gian thi, bài của bạn chỉ được chấm với test đề bài.   
+	\item     Nếu bài của bạn chạy đúng trên máy mình, nhưng sai khi nộp lên SPOJ, bạn có thể kiểm tra ở    \href{https://ideone.com}{     ideone    }    . Chú ý khi submit lên ideone, để chế độ Secret để người khác không đọc được code của bạn.   
+\end{itemize}
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+5 3
+1 2
+2 3
+3 4
+3 5
+2 5
+1 3
+4 5
+
+\textbf{Output:}
+2
+1
+3
+\end{verbatim}

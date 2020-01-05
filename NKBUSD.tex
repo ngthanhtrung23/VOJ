@@ -1,0 +1,59 @@
+
+
+
+
+   Có n xe buýt chạy trên tuyến là một đường vòng khép kín có độ dài S. Các xe buýt được đánh số từ 1 đến n theo thứ tự nối đuôi nhau trên tuyến đường. Xe số n chạy sau xe số 1.  
+
+   Các xe chạy cùng với vận tốc V   $_    0   $   và khoảng cách giữa hai xe liên tiếp là như nhau.  
+
+   Có k xe buýt đồng thời rời khỏi tuyến. Để trở lại khoảng cách đều nhau giữa các xe, cần phải có một khoảng thời gian t và một số xe cần phải thay   đổi tốc độ. Trong khoảng thời gian này, các xe phải chạy với tốc độ không đổi trong khoảng [V   $_    min   $   , V   $_    max   $   ] theo lệnh của   trung tâm.  
+
+   Hết khoảng thời gian t các xe lại quay về vận tốc V   $_    0   $   .  
+
+   Yêu cầu: giúp trung tâm tìm khoảng thời gian bé nhất T   $_    min   $   để khôi phục sự cân bằng khoảng cách giữa hai xe liên tiếp trên tuyến và   vận tốc của mỗi xe trong khoảng thời gian ấy. Biết rằng, trong quá trình điều chỉnh, không có xe nào vượt qua xe trước mặt.  
+
+\subsubsection{   Dữ liệu vào  }
+\begin{itemize}
+	\item     Dòng thứ nhất chứa N, K ,S , V    $_     min    $    , V    $_     max    $    , V    $_     0    $    .   
+	\item     Dòng thứ hai chứa K số nguyên dương được ghi theo thứ tự tăng dần là chỉ số của các xe rời khỏi tuyến.   
+	\item     Các dữ liệu trên cùng một dòng được ghi cách nhau bởi ít nhất một dấu cách.   
+\end{itemize}
+
+\subsubsection{   Kết qủa  }
+\begin{itemize}
+	\item     Dòng đầu tiên: T    $_     min    $
+	\item     Mỗi một trong số N-K dòng tiếp theo chứa hai số, số thứ nhất là chỉ số của xe buýt, số thứ hai là tốc độ của nó trong khoảng thời gian   T    $_     min    $    . Các dòng này phải sắp xếp theo thứ tự tăng dần của chỉ số xe buýt.   
+\end{itemize}
+
+   Kết quả cần được in ra với độ chính xác cao (khoảng 6 chữ số thập phân).  
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     K $<$ N $<$ 10000   
+	\item     S ≤ 10000   
+	\item     V    $_     min    $    $<$ V    $_     max    $    ≤ 10000   
+	\item     V    $_     min    $    ≤ V    $_     0    $    ≤ V    $_     max    $
+\end{itemize}
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu mẫu
+4 1 60 21 70 60
+3
+
+Kết qủa
+0.2041
+1 45.5
+2 70
+4 21
+
+Dữ liệu mẫu
+4 2 40 30 80 50
+2 4
+
+Kết qủa
+0
+1 50
+3 50
+\end{verbatim}
+

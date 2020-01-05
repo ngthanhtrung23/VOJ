@@ -1,0 +1,141 @@
+
+
+Slitherlink là một trò chơi trí tuệ được tung ra bởi Nikoli, công ty Nhật đã phát triển trò chơi Sudoku.
+
+Slitherlink được chơi trên một bảng chữ nhật, được chia thành các ô vuông 1x1. Mỗi ô vuông có 1 số nguyên từ 0 đến 3, hoặc là ô trống. Nhiệm vụ của bạn là nối các điểm (là các góc của các hình vuông 1x1) thành 1 đường đi khép kín, sao cho số được ghi trên mỗi ô vuông đúng bằng số cạnh của ô vuông đó mà có đường đi đi qua. (các ô trống có thể có bao nhiêu cạnh thuộc đường đi cũng được.). Một bảng Slitherlink hợp lệ luôn có một cách giải duy nhất.
+
+
+\includegraphics{http://vn.spoj.com/TH2013/content/THSL}
+
+Giải quyết bài toán Slitherlink không hề đơn giản. Takayuki Yato ở Đại học Tokyo đã chứng minh được rằng bài toán Slitherlink tổng quát là bài NP đầy đủ, nói cách khác, không có một thuật toán hiệu quả nào để giải Slitherlink. Ở đây chúng ta sẽ cùng tìm hiểu một số heuristic để giải quyết bài toán này.
+
+Để đơn giản, chúng ta sẽ làm quen với một phiên bản đơn giản hơn của Slitherlink: Slink. Trong Slink, chúng ta không chấp nhận các ô trống (nghĩa là các ô vuông chỉ được chứa các số nguyên dương từ 0 đến 3.
+\begin{itemize}
+	\item 
+\includegraphics{http://vn.spoj.com/TH2013/content/THSL_R1}   
+\end{itemize}
+
+          Nếu 1 ô vuông chứa số 0, tất cả các cạnh kề nó phải bị loại (vì chắc chắn không thuộc kết quả)
+\begin{itemize}
+	\item 
+\includegraphics{http://vn.spoj.com/TH2013/content/THSL_R2}  
+
+Nếu 1 ô vuông chứa số N, và chỉ có đúng N cạnh chưa bị loại khỏi kết quả, tất cả N cạnh này bắt buộc phải thuộc kết quả.
+	\item 
+
+
+\includegraphics{http://vn.spoj.com/TH2013/content/THSL_R4}  
+
+Nếu 2 ô vuông kề cạnh cùng chứa số 3, cạnh ở giữa và 2 cạnh song song với nó của 2 ô vuông đều chắc chắn thuộc kết quả.
+	\item 
+
+
+\includegraphics{http://vn.spoj.com/TH2013/content/THSL_R5} 
+
+Nếu 2 ô vuông có đúng 1 đỉnh chung và cùng chứa số 3, các cạnh thuộc 2 đỉnh đối chắc chắn thuộc kết quả.
+	\item 
+
+
+\includegraphics{http://vn.spoj.com/TH2013/content/THSL_R6} 
+
+Nếu đường đi kết quả đi vào 1 đỉnh, và chỉ còn 1 cạnh duy nhất để đi ra, cạnh này bắt buộc phải thuộc kết quả.
+	\item 
+
+
+\includegraphics{http://vn.spoj.com/TH2013/content/THSL_R7} 
+
+Nếu 1 đỉnh kề với 2 cạnh chắc chắn thuộc kết quả, 2 cạnh còn lại chắc chắn không thuộc kết quả.
+	\item 
+
+
+\includegraphics{http://vn.spoj.com/TH2013/content/THSL_R8} 
+
+Nếu 1 đỉnh kề với 3 cạnh chắc chắn không thuộc kết quả, cạnh còn lại chắc chắn không thuộc kết quả.
+	\item 
+
+
+\includegraphics{http://vn.spoj.com/TH2013/content/THSL_R9} 
+
+Nếu 1 hình vuông chứa số 3, có 1 đỉnh mà 2 cạnh ra khỏi hình vuông đều chắc chắn không thuộc kết quả, 2 cạnh của hình vuông kề với đỉnh bị chặn chắc chắn phải thuộc kết quả.
+	\item 
+
+
+\includegraphics{http://vn.spoj.com/TH2013/content/THSL_R10} 
+
+Xét 1 ô vuông chứa số 2, và có 1 đỉnh mà cả 2 cạnh đi ra khỏi hình vuông đều bị chặn. Nếu 1 đỉnh kề với đỉnh bị chặn cũng có 1 cạnh đi ra bị chặn, thì cạnh đi ra không bị chặn ở đỉnh đó chắc chắn thuộc kết quả.
+	\item 
+
+
+\includegraphics{http://vn.spoj.com/TH2013/content/THSL_R12} 
+
+Xét 1 ô vuông chứa số 3. Nếu đường đi kết quả đi vào 1 đỉnh của hình vuông, và cạnh đi ra khỏi hình vuông ở đỉnh đó chắc chắn không thuộc kết quả, thì 2 cạnh kề đỉnh đối diện chắc chắn thuộc kết quả.
+	\item 
+
+
+\includegraphics{http://vn.spoj.com/TH2013/content/THSL_R13} 
+
+Xét 1 ô vuông chứa số 3 và 1 ô vuông chứa số 1 kề nhau theo đường chéo. Nếu 2 cạnh đi ra khỏi hình vuông chứa số 3, thuộc đỉnh đối diện với đỉnh kề với hình vuông chứa số 1 đều bị chặn, thì 2 cạnh kề với đỉnh thuộc hình vuông chứa số 1 và đối diện với số 3 đều chắc chắn không thuộc kết quả.
+	\item 
+
+
+\includegraphics{http://vn.spoj.com/TH2013/content/THSL_R14} 
+
+Xét 1 hình vuông chứa số 2. Nếu có 1 đỉnh mà 1 cạnh đi vào hình vuông chắc chắn không thuộc kết quả, 1 cạnh chắc chắn thuộc kết quả, và đỉnh đối diện với nó có 1 cạnh chắc chắn không thuộc kết quả, thì cạnh còn lại kề đỉnh đối diện chắc chắn phải thuộc kết quả.
+	\item 
+
+
+\includegraphics{http://vn.spoj.com/TH2013/content/THSL_R15} 
+
+Xét 1 hình vuông chứa số 1. Nếu 1 đỉnh có 1 cạnh đi vào hình vuông chắc chắn thuộc kết quả, và cạnh còn lại đi vào hình vuông ở đỉnh đó chắc chắn không thuộc kết quả, thì 2 cạnh kề đỉnh đối diện của hình vuông chắc chắn không thuộc kết quả.
+\\ 
+\end{itemize}
+
+ 
+
+\subsubsection{Input}
+
+Dòng đầu: M, N : Kích thước của bảng
+
+M dòng tiếp theo, mỗi dòng gồm N số nguyên từ 0 đến 3, thể hiện mô tả của bảng.
+
+\subsubsection{Output}
+
+Output theo đinh dạng bên dưới.
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+8 8
+1 0 1 1 2 2 1 3
+3 3 3 3 2 3 3 2
+2 2 0 1 1 2 2 0
+2 3 1 1 0 1 2 2
+2 1 2 3 1 1 0 2
+1 2 2 2 2 3 2 1
+3 2 1 3 1 1 3 2
+1 0 0 2 3 2 3 2\end{verbatim}
+
+\textbf{Output:}
+\begin{verbatim}
+#####################################
+#                                   #
+#                 +---------------+ #
+#   1   0   1   1 | 2   2   1   3 | #
+# +---+   +---+   |   +---+   +---+ #
+# | 3 | 3 | 3 | 3 | 2 | 3 | 3 | 2   #
+# |   +---+   +---+   |   +---+     #
+# | 2   2   0   1   1 | 2   2   0   #
+# +-------+           +-------+     #
+#   2   3 | 1   1   0   1   2 | 2   #
+# +-------+   +---+           +---+ #
+# | 2   1   2 | 3 | 1   1   0   2 | #
+# |       +---+   |   +---+       | #
+# | 1   2 | 2   2 | 2 | 3 | 2   1 | #
+# |   +---+   +---+   |   +---+   | #
+# | 3 | 2   1 | 3   1 | 1   3 | 2 | #
+# +---+       +---+   |   +---+   | #
+#   1   0   0   2 | 3 | 2 | 3   2 | #
+#                 +---+   +-------+ #
+#                                   #
+#####################################
+\end{verbatim}

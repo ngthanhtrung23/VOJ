@@ -1,0 +1,51 @@
+
+
+ 
+
+Hè này, Pirate đã rời đảo dừa để bắt đầu bước vào đời với một công việc thực tập ở một công ty lớn. Tuy nhiên thì vạn sự khởi đầu nan giải, sếp của Pirate đã giao cho anh một công việc vô cùng khó khăn:
+
+Cho một đồ thị đơn có hướng, đếm xem có bao nhiêu đường đi Hamilton giữa 2 đỉnh bất kỳ của đồ thị.
+
+Cầm ma trận kề của đồ thị trong tay mà lòng Pirate chỉ muốn khóc. Sau nhiều ngày suy nghĩ quên cả ăn uống tắm rửa, Pirate đã quyết định viết một chương trình để đếm. Tiếc là do dạo này đi thực tập quá nhiều, chỉ toàn ngồi đọc code, khả năng code đã dần không còn nữa. Các bạn có thể giúp Pirate không? Tất nhiên để giúp đỡ các bạn, Pirate sẵn sàng đưa tận tay các bạn mô tả chi tiết của các đồ thị (dù đấy là bí mật công ty).
+
+\emph{\textbf{Chú thích } : Đường đi trên đồ thị là một dãy các đỉnh mà hai đỉnh liên tiếp đều có cạnh nối với nhau. Đường đi Hamilton là đường đi qua tất cả các đỉnh của đồ thị, mỗi đỉnh chỉ được đi qua một lần. }
+
+\subsubsection{Yêu cầu}
+
+Đây là bài toán Output-Only, tức là các bạn sẽ được download về một tập các input. Sau đó, chỉ cần nộp file output (không cần nộp chương trình).
+
+\subsubsection{Input}
+
+Bạn được cho 10 file input ở \href{https://www.dropbox.com/s/rsc403hk54lye08/VMCOUNT.zip?dl=0}{ đây } . Mỗi file input gồm:
+\begin{itemize}
+	\item Dòng 1: số nguyên N, số đỉnh của đồ thị.
+	\item N dòng tiếp, mỗi dòng gồm đúng N ký tự 0 hoặc 1. Ký tự j ở dòng i bằng 0 nếu không có cạnh (i,j), và bằng 1 nếu có cạnh (i,j). Các đỉnh của đồ thị được đánh số từ 1 đến N.
+\end{itemize}
+
+\subsubsection{Output}
+
+Gồm đúng 10 dòng, mỗi dòng in ra một số nguyên duy nhất là kết quả của bài toán, theo module 10$^9 $ + 7 (1000000007).
+
+Chú ý: Bạn nên output đủ 10 dòng. Những input không trả lời được bạn nên output ra số 0.
+\begin{itemize}
+\end{itemize}
+
+\subsubsection{Chấm điểm}
+
+Bài của bạn sẽ được chấm trên thang điểm 100.
+
+Trong quá trình thi, chỉ output 1 của bạn được chấm (nghĩa là bạn chỉ có thể được 0 hoặc 100 điểm, tương ứng với việc dòng 1 của output sai hay đúng).
+
+Sau khi vòng thi kết thúc, cả 10 output của bạn sẽ được chấm, bạn sẽ nhận được 10 điểm với mỗi output đúng.
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+3
+011
+101
+110\end{verbatim}
+\begin{verbatim}
+\textbf{Output:}
+6
+\end{verbatim}

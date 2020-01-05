@@ -1,0 +1,59 @@
+
+
+
+
+   Một đất nước nọ có N châu. Các châu được đánh số từ 1 đến N. Các châu được nối với nhau bằng các con đường có độ dài là một số nguyên dương nào đó.  
+
+   Các kị binh này thường xuyên bị điều động đi tuần giữa các châu bằng ngựa. Khi đi giữa các châu, các kị binh không quan tâm độ dài của cả tuyến đường đi mình tuần mà chỉ quan tâm đến độ dài con đường ngắn nhất mà họ phải đi qua. Họ muốn đi sao cho con đường dài nhất mà họ đi qua trên tuyến đường đó càng dài thì con ngựa cưỡi càng có nguy cơ bị mệt mà chết.  
+
+   Cho các thông tin về các tuyến đường giữa các châu, hãy giúp các chàng kị binh xác định độ dài tuyến đường dài nhất mà họ phải đi qua nếu muốn đi giữa hai châu nào đó.  
+
+\textbf{    Input   }
+
+   Dòng đầu ghi hai số nguyên dương N và R. N là số châu, R là số tuyến đường hai chiều giữa các châu. (1$<$=N$<$=3000, 1$<$=r$<$=100000). Mỗi dòng trong R dòng tiếp theo ghi ba số a,b và l: thể hiện có một con đường nối từ châu a đến châu b với độ dài l (1$<$=a,b$<$=N, 1$<$=l$<$=1000000). Dòng tiếp theo ghi số nguyên dương Q (1$<$=Q$<$=1000) là số câu mà các kị binh cần bạn trả lời. Mỗi dòng trong Q dòng tiếp theo ghi hai số a và b thể hiện câu hỏi: Nếu đi từ k đến t thì độ dài đường đi dài nhất trên tuyến đường đi nào đó nối từ k đến t ngắn nhất có thể là bao nhiêu (1$<$=k,t$<$=N, k$<$$>$t).  
+
+\textbf{    Output   }
+
+   Tương ứng với mỗi câu hỏi ghi một dòng trả lời, dòng này chứa đúng một số là độ dài đường đi dài nhất trên tuyến đường đi nào đó nối từ a đến b ngắn nhất có thể là bao nhiêu.  
+
+   Sample Input  
+
+   6 9  
+
+   2 4 5  
+
+   5 1 7  
+
+   3 6 6  
+
+   3 1 4  
+
+   2 3 2  
+
+   1 2 1  
+
+   6 5 42  
+
+   4 5 3  
+
+   4 6 5  
+
+   4  
+
+   1 3  
+
+   3 4  
+
+   5 4  
+
+   6 1  
+
+   Sample Output  
+
+   2  
+
+   5  
+
+   3  
+
+   5  

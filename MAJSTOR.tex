@@ -1,0 +1,76 @@
+
+
+"Oẳn tù tì" là 1 trò chơi đối kháng nổi tiếng giữa 2 người. Ở mỗi cuộc đấu, người chơi được phép ra kéo, giấy hoặc nắm đấm. 2 người sẽ hoà nếu ra cùng loại; nếu không, kéo thắng giấy, giấy thắng nắm đấm và nắm đấm thắng kéo.
+
+Svan đã học về tâm lý học trong nhiều năm và trở nên vô đối trong trò chơi này . Do vậy cậu quyết định tổ chức cuộc đấu đồng loạt với N bạn. Cuộc đấu diễn ra trong R vòng.
+
+Điểm số của Svan với mỗi bạn là tổng điểm số cho R vòng. Điểm số cho mỗi vòng được tính: thắng 2, hoà 1 và thua 0.
+
+\textbf{Yêu cầu:}
+
+Viết chương trình tính tổng điểm Svan có thể nhận được sau khi đấu với N bạn. Đồng thời, Svan có thể giành được tối đa bao nhiêu điểm nếu đoán trước được các bạn của mình sẽ ra cái gì?
+
+\subsubsection{Input}
+\begin{itemize}
+	\item Dòng 1 ghi số R (1 $<$= R $<$= 50) là số vòng
+	\item Dòng 2 là 1 xâu R kí tự 'S' (kéo), 'R' (nắm đấm), 'P' (giấy)
+	\item Dòng 3 ghi số N (1 $<$= N $<$= 50) là số bạn đấu với Svan
+	\item N dòng tiếp theo, dòng thứ i là 1 xâu R kí tự, thể hiện biểu tượng mà bạn i sẽ ra
+\end{itemize}
+
+\subsubsection{Output}
+\begin{itemize}
+	\item Dòng 1: số điểm Svan nhận được theo lối chơi lúc đầu
+	\item Dòng 2: số điểm tối đa Svan có thể nhận được, nếu đưa ra sự điều chỉnh phù hợp (các bạn của Svan vẫn giữ nguyên lối chơi)
+\end{itemize}
+
+\subsubsection{Example}
+\begin{verbatim}
+Input
+5
+SSPPR
+1
+SSPPR
+
+Output
+5
+10
+
+
+Input
+5
+SSPPR
+2
+PPRRS
+RRSSP
+
+Output
+10
+15
+
+
+Input
+4
+SPRS
+4
+RPRP
+SRRR
+SSPR
+PSPS
+
+Output
+12
+21
+\end{verbatim}
+
+ 
+
+ 
+
+(Giải thích test 2:
+\begin{itemize}
+	\item Theo cách chơi ban đầu, Svan sẽ giành được 10đ khi đấu với bạn thứ nhất, và 0đ khi đấu với bạn thứ 2. Tổng cộng là 10đ.
+	\item Để giành được số điểm tối đa, Svan sẽ chơi 'PPRRS' để giành được 5đ khi đấu với bạn thứ nhất, và 10đ khi đấu với bạn thứ hai. Tổng cộng là 15đ)
+\end{itemize}
+
+ 

@@ -1,0 +1,57 @@
+
+
+ 
+
+\href{https://www.youtube.com/watch?v=WBJMeGgAmY8}{Vườn cây của ba }
+
+Sau một năm học cày cuốc vất vả; Hè này Huy quyết định mời các bạn về quê chơi. Huy sẽ dẫn các bạn đi leo núi, ngắm cảnh... và sẽ mở một buổi chiêu đãi các bạn tài nhà mình. "Nhà rộng và đẹp lắm, có cả một vườn cây ăn trái sum xuê !" - Huy giới thiệu về ngôi nhà của mình.
+
+Sau khi kì kèo với ba, Huy đã xin được hái trái trong vườn đãi các bạn. Nhưng với một điều kiện: Huy chỉ được hái trái những LOẠI cây mà ba qui định. Vườn cây chia thành L khu đất liên tiếp nằm thẳng hàng (được đánh số thứ tự từ 1 đến L từ đầu vườn đến cuối vườn), mỗi khu chỉ trồng duy nhất một cây. Nhà Huy có rất nhiều nhân công, mỗi nhân công sẽ chấp nhận làm việc trên những khu đất liên tiếp.
+
+Vì muốn đãi các bạn thật nhiều trái cây, nên Huy sẽ tận dụng hái hết TẤT CẢ những cây được ba cho phép. Nhưng mắc nỗi phải dẫn các bạn đi chơi ròi, nên không có thời gian hái trái cây. Nên Huy sẽ nhờ đến các nhân công.
+
+Bạn tính xem Huy sẽ phân công ít nhất bao nhiêu nhân công để thực hiện kế hoạch chiêu đãi trái cây của mình? Biết rằng mỗi nhân công sẽ hái hết tất cả trái cây ở các khu đất mình được phân vào.
+
+\subsubsection{Input}
+\begin{itemize}
+	\item Dòng 1: Gồm 1 số nguyên dương duy nhất: L - số khu đất trong khu vườn.
+	\item Dòng 2: Chứa xâu S gồm đúng L chữ cái Latin (in thường hoặc hoa), miêu tả khu vườn của Huy. Mỗi chữ cái cho biết loại cây được trồng ở khu đất tương ứng
+	\item Dòng 3: Q - số trường hợp mà bạn phải xứ lý.
+	\item Q dòng tiếp, mỗi dòng mô tả một trường hợp và gồm các chữ cái Latin (in thường hoặc hoa). Mỗi chữ đại diện cho một loại cây được phép sử dụng.
+\end{itemize}
+
+\subsubsection{Output}
+\begin{itemize}
+	\item Với mỗi trường hợp, ghi ra 1 dòng duy nhất là số nhân công ít nhất cần nhờ đến.
+\end{itemize}
+
+\subsubsection{Giới hạn}
+\begin{itemize}
+	\item L ≤ 1,000,000;
+	\item Q ≤ 100,000;
+	\item Số ký tự trong mỗi query không quá 52. Trong mỗi query, các ký tự không lặp lại
+	\item Trong 50\% số test, L ≤ 1000, Q ≤ 1000;
+\end{itemize}
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+7
+abacaba
+3
+ac
+b
+ab
+
+\textbf{Output:}
+3
+2
+2
+\end{verbatim}
+
+\subsubsection{Giải thích}
+\begin{itemize}
+	\item Với trường hợp 'ac', Huy chỉ hái những cây loại 'a' và 'c'. Nên Huy cần nhờ ít nhất 3 nhân công lo 3 phần 'a', 'aca', 'a';
+	\item Với trường hợp 'b', Huy cần nhờ ít nhất 2 nhân công lo 2 phần 'b';
+	\item Với trường hợp 'ab', Huy cần nhờ ít nhất 2 nhân công lo 2 phần 'aba';
+\end{itemize}

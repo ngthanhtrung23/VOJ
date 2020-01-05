@@ -1,0 +1,47 @@
+
+
+Mệt mỏi sau 7 ngày 7 đêm liên tục ôn thi ACM, vào một buổi sáng chủ nhật đẹp trời Aladdin rủ thần đèn chơi một trò chơi đối kháng. Luật chơi như sau :
+\begin{itemize}
+	\item Có N băng giấy, mỗi băng giấy gồm các ô vuông liên tiếp nhau. Băng giấy thứ i có kích thước A$_i$ (có thể xem như một bảng với kích thước 1 x A$_i$).
+	\item Đến lượt của mình, người chơi sẽ chọn một băng giấy và đánh dấu vào một ô còn trống. Aladdin đánh ‘X’ còn thần đền đánh ‘O’. Một nước đi là hợp lệ nếu không có 2 ô liên tiếp được đánh dấu cùng kí hiệu.
+	\item Người chơi nào đến lượt của mình mà không tìm được nước đi sẽ thua.
+\end{itemize}
+
+Nhờ thắng lúc oẳn tù xì nên Aladdin đã giành quyền đi trước. Tuy nhiên lúc này Aladdin mới nhận ra là trò chơi mình đề xuất là một “impartial game” và có thể sử dụng kiến thức về lý thuyết trò chơi trong tin học để chỉ ra ngay người chiến thắng từ trạng thái của trò chơi ban đầu.
+
+\textbf{Yêu cầu :}
+
+Cho biêt N và dãy A$_1$, A$_2$, … , A$_n $thể hiện kích thước mỗi băng giấy. Hãy cho biết người thắng, biết cả hai đều chơi tối ưu và Aladdin thực hiện nước đi đầu tiên.
+
+\textbf{Input}
+
+Dòng đầu tiên T – số testcase.
+\\Trong T nhóm dòng sau :
+\begin{itemize}
+	\item Dòng đầu số nguyên dương N.
+	\item Dòng thứ 2 N số nguyên dương A$_1$, A$_2$, … , A$_n$
+\end{itemize}
+
+\textbf{Giới hạn : }
+\begin{itemize}
+	\item T $<$= 10
+	\item N $<$= 1000
+	\item Ai $<$= 10\textasciicircum6
+\end{itemize}
+
+\textbf{Output}
+
+Với mỗi testcase xuất ra “Aladdin” nếu Aladdin thắng hoặc “Genie” nếu thần đèn thắng.
+
+\textbf{Example}
+\begin{verbatim}
+\textbf{Input:}
+2
+1
+1
+2
+3 5
+
+\textbf{Output:}
+Aladdin
+Genie\end{verbatim}

@@ -1,0 +1,41 @@
+
+
+
+
+     Cho một bảng hình chữ nhật kích thước N×M, ban đầu các phần tử trên bảng bằng 0. Có Q thao       tác trên bảng như sau:       "1 a b x y w": tăng giá trị mỗi phần tử trong hình chữ nhật có góc trái dưới (a,b), góc phải trên       (x,y) lên w đơn vị.       "2 a b x y": in ra tổng các phần tử trong hình chữ nhật có góc trái dưới (a,b), góc phải trên (x,y).    
+
+   Cho một bảng hình chữ nhật kích thước N×M, ban đầu các phần tử trên bảng bằng 0. Có Q thao tác trên bảng như sau:  
+
+   "1 a b x y w": tăng giá trị mỗi phần tử trong hình chữ nhật có góc trái dưới (a,b), góc phải trên (x,y) lên w đơn vị.  
+
+   "2 a b x y": in ra tổng các phần tử trong hình chữ nhật có góc trái dưới (a,b), góc phải trên (x,y).  
+
+
+
+\subsubsection{   Input  }
+
+   Dòng đầu gồm 3 số N, M và Q. 1 ≤ N, M ≤ 1000. 1 ≤ Q ≤ 100000. Sau đó là Q dòng, mỗi dòng là 1 thao tác theo định dạng trên.  
+
+\subsubsection{   Output  }
+
+   Lần lượt với mỗi thao tác loại 2, in ra trên một dòng giá trị tính toán được.  
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+2 3 8
+1 1 1 1 1 5
+1 1 1 1 2 5
+2 1 2 1 3
+1 1 1 2 1 4
+2 2 1 2 2
+2 1 2 1 3
+1 2 1 2 2 5
+2 1 1 1 1
+
+\textbf{Output:}
+5
+4
+5
+14
+\end{verbatim}

@@ -1,0 +1,48 @@
+
+
+ 
+
+Đề bài giống hệt bài \href{http://vnoi.info/problems/show/RECT3/}{ RECT3 } .
+
+\subsubsection{Dữ liệu}
+\begin{itemize}
+	\item Dòng đầu tiên: hai số nguyên M, N (1 ≤ M, N ≤ 2000).
+	\item M dòng tiếp theo, mỗi dòng gồm N số 0 hoặc 1 (viết liền nhau) mô tả bảng chữ nhật.
+\end{itemize}
+
+\subsubsection{Kết quả}
+
+In ra diện tích của khối tam chữ nhật lớn nhất, hoặc 0 nếu không tìm được khối tam chữ nhật nào.
+
+\subsubsection{Ví dụ}
+\begin{verbatim}
+Dữ liệu :
+6 8
+00000110
+00111000
+00110100
+01111001
+01111110
+00111010
+
+Kết quả :
+15
+\textbf{Giải thích}
+Khối tam chữ nhật:
+00000110
+
+00\textbf{11}1000
+00\textbf{11}0100
+01\textbf{11}1001
+0\textbf{111111}0
+00\textbf{111}010
+Có diện tích là 15
+Khối tam chữ nhật khác có diện tích 14:
+
+00000110
+00\textbf{11}1000
+00\textbf{11}0100
+0\textbf{1111}001
+0\textbf{1111}110
+00\textbf{11}1010
+\end{verbatim}

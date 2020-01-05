@@ -1,0 +1,79 @@
+
+
+
+
+
+
+   Cho số nguyên   \textbf{    M   }   , ta định nghĩa   \textbf{    R   }   (   \textbf{    M   }   ) là tổng của   \textbf{    1 / (p * q)   }   với tất cả các cặp số (p, q) thoả mãn các điều kiện:  
+\begin{itemize}
+	\item     1 ≤ p $<$ q ≤    \textbf{     M    }
+	\item     p + q ≥    \textbf{     M    }
+	\item     p và q là 2 số nguyên tố cùng nhau   
+\end{itemize}
+
+   Định nghĩa   \textbf{    S   }   (   \textbf{    n   }   ) bằng tổng của   \textbf{    R   }   (i) với   \textbf{    2   }   ≤ i ≤   \textbf{    n   }   . Tính   \textbf{    S   }   (   \textbf{    n   }   ).  
+
+\subsubsection{   Input  }
+
+   Gồm không quá 10 test, mỗi test gồm 1 dòng duy nhất chứa số   \textbf{    n   }   .  
+
+\subsubsection{   Output  }
+
+   Gồm nhiều dòng, mỗi dòng in ra kết quả của 1 test. Kết quả của bạn được coi là chính xác nếu chênh lệch với kết quả của ban tổ chức không quá   \textbf{    10    $^     -6    $}   .  
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     Trong tất cả các test,    \textbf{     n    }    là số nguyên dương và    \textbf{     1    }    $<$    \textbf{     n    }    ≤    \textbf{     10     $^      6     $}    .   
+	\item     Trong 20\% test tương ứng với 20\% điểm,    \textbf{     n    }    $<$=    \textbf{     1000    }    .   
+	\item     Trong quá trình thi, bài của bạn chỉ được chấm với test ví dụ. Nếu ra đúng kết quả test ví dụ, điểm của bạn sẽ được hiển thị là 100.   
+\end{itemize}
+
+\subsubsection{   Example  }
+
+\textbf{    Input:   }
+\begin{verbatim}
+2
+3
+4
+\end{verbatim}
+
+\textbf{    Output:   }
+\begin{verbatim}
+0.5
+1.5
+2.333333333\end{verbatim}
+
+\subsubsection{   Giải thích  }
+
+   Với   \textbf{    M   }   = 2, ta có   \textbf{    1   }   cặp (p, q):  
+\begin{enumerate}
+	\item     (1, 2)   
+\end{enumerate}
+
+   =$>$   \textbf{    R   }   (2) = 1/2 = 0.5  
+
+   Với   \textbf{    M   }   = 3, ta có   \textbf{    3   }   cặp (p, q):  
+\begin{enumerate}
+	\item     (1, 2)   
+	\item     (1, 3)   
+	\item     (2, 3)   
+\end{enumerate}
+
+   =$>$   \textbf{    R   }   (3) = 1/2 + 1/3 + 1/6 = 1  
+
+   Với   \textbf{    M   }   = 4, ta có   \textbf{    4   }   cặp (p, q):  
+\begin{enumerate}
+	\item     (1, 3)   
+	\item     (1, 4)   
+	\item     (2, 3)   
+	\item     (3, 4)   
+\end{enumerate}
+
+   =$>$   \textbf{    R   }   (4) = 1/3 + 1/4 + 1/6 + 1/12 =  0.833333333  
+
+   Vậy ta có được kết quả:  
+\begin{itemize}
+	\item \textbf{     S    }    (2) =    \textbf{     R    }    (2) = 0.5   
+	\item \textbf{     S    }    (3) =    \textbf{     R    }    (2) +    \textbf{     R    }    (3) = 1 + 0.5 = 1.5   
+	\item \textbf{     S    }    (4) =    \textbf{     R    }    (2) +    \textbf{     R    }    (3) +    \textbf{     R    }    (4) = 1 + 0.5 + 0.833333333 = 2.333333333   
+\end{itemize}

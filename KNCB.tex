@@ -1,0 +1,33 @@
+
+
+Given an \textbf{m x n} chessboard where some of the cells are broken. Now you are about to place chess knights in the chessboard. You have to find the maximum number of knights that can be placed in the chessboard such that no two knights attack each other. You can't place knights in the broken cells.
+
+Those who are not familiar with chess knights, note that a chess knight can attack eight positions in the board as shown in the picture below.
+
+
+\includegraphics{http://vn.spoj.com/content/racer:knights.jpg}
+
+\section{Input}
+
+Input starts with an integer \textbf{T (}\textbf{≤ 125)}, denoting the number of test cases.
+
+Each case starts with a blank line. The next line contains three integers \textbf{m, n, K (1 ≤ m, n ≤ 200)}. Here \textbf{m} and \textbf{n} corresponds to the number of rows and the number of columns of the board respectively. Each of the next \textbf{K}lines will contain two integers \textbf{x, y (1 ≤ x ≤ m, 1 ≤ y ≤ n)} denoting that the cell\textbf{(x, y)} is broken already. No broken cell will be reported more than once.
+
+\section{Output}
+
+For each case of input, print the case number and the maximum number of knights that can be placed in the board considering the above restrictions.
+\begin{verbatim}
+\textbf{Sample Input}
+2
+
+8 8 0
+
+2 5 4
+1 3
+1 4
+2 3
+2 4
+
+\textbf{Sample Output}
+Case 1: 32
+Case 2: 6\end{verbatim}

@@ -1,0 +1,63 @@
+
+
+
+
+\emph{    yenthanh132   }   hiện đang là giám đốc của Attosoft (micro = 10   $^    -6   $   , atto = 10   $^    -18   $   ), công ty phần mềm lớn nhất vương quốc C11. Công ty có   \textbf{    N   }   nhân viên, được đánh số từ 1 đến   \textbf{    N   }   và   \emph{    yenthanh132   }   là người được đánh số 1. Mỗi người ngoại trừ   \emph{    yenthanh132   }   có đúng một sếp. Nếu   \textbf{    z   }   dưới quyền quản lí của nhân viên   \textbf{    y   }   và   \textbf{    y   }   dưới quyền quản lí của   \textbf{    x   }   thì   \textbf{    z   }   dưới quyền quản lí của   \textbf{    x   }   .   \emph{    Tất cả    \textbf{     N-1    }    nhân viên còn lại trong công ty đều dưới quyền quản lí của yenthanh132.   }
+
+   Mỗi nhân viên trong công ty chuyên về một loại ngôn ngữ lập trình nhất định. Có tất cả   \textbf{    M   }   ngôn ngữ lập trình khác nhau được đánh số từ   \textbf{    1   }   đến   \textbf{    M   }   .  
+
+   Mỗi khi nhận một đơn đặt hàng viết phần mềm gửi cho nhân viên u   $_    i   $   nào đó, nhân viên u   $_    i   $   này phải chọn ra trong số các nhân viên mà mình quản lí (kể cả mình), từ 1 đến   \textbf{    K   }   người cùng chuyên môn về một ngôn ngữ lập trình nào đó để viết phần mềm. Vấn đề đặt ra ở đây là   \emph{    yenthanh132   }   muốn biết xem với mỗi yêu cầu như vậy thì có bao nhiêu ngôn ngữ lập trình khác nhau mà   \textbf{    trong số nhân viên u    $_     i    $    và các nhân viên mà u    $_     i    $    quản lí   }   , có ít nhât một người và không quá   \textbf{    K   }   người chuyên môn về ngôn ngữ lập trình đó.  
+
+\textbf{    Yêu cầu:   }   Hãy giúp   \emph{    yenthanh132   }   trả lời xem nếu có một đơn đặt hàng gửi cho nhân viên u   $_    i   $   thì sẽ có bao nhiêu ngôn ngữ lập trình khác nhau thỏa điều kiện đã nêu ở trên  
+
+\textbf{    Input   }
+\begin{itemize}
+	\item     Dòng đầu tiên chứa 3 số nguyên N,      M, K lần lượt là số nhân viên trong công ty, số lượng ngôn ngữ lập trình      khác nhau, và số lượng nhân viên trong một cách chọn.   
+	\item     N-1 dòng tiếp theo, dòng thứ i chứa số nguyên      p    $_     i+1    $    là sếp của nhân viên thứ i+1.   
+	\item     Dòng thứ N+1 chứa N số nguyên v    $_     1    $    ,      v    $_     2    $    ,... v    $_     n    $    . Trong đó v    $_     i    $    là ngôn ngữ lập      trình chuyên môn của nhân viên i. (1 $<$= v    $_     i    $    $<$= M)   
+	\item     Dòng thứ N+2 chứa số nguyên Q, là      số truy vấn.   
+	\item     Q dòng tiếp theo, dòng thứ i chứa      số nguyên u    $_     i    $    (1 $<$= u    $_     i    $    $<$= N)   
+\end{itemize}
+
+\textbf{    Output   }
+\begin{itemize}
+	\item     Gồm Q dòng, dòng thứ i là số ngôn ngữ lập trình khác nhau thỏa yêu cầu khi có một đơn đặt hàng gửi cho nhân viên u    $_     i    $    .   
+\end{itemize}
+
+\textbf{    Giới hạn:   }
+\begin{itemize}
+	\item     Trong 20\% số test có 1 $<$= N, Q, K      $<$= 1000.   
+	\item     Trong tất cả các test: 1 $<$= N, Q, K      $<$= 10    $^     5    $
+	\item     1 $<$= M $<$= 10    $^     5    $
+	\item     1 $<$= K $<$= N   
+\end{itemize}
+
+
+
+\textbf{    Example   }
+
+\textbf{    Input:   }
+\begin{verbatim}
+10 4 2
+\\1
+\\2
+\\2
+\\3
+\\3
+\\1
+\\7
+\\7
+\\7
+\\1 2 4 3 2 4 4 3 3 3
+\\4
+\\1
+\\2
+\\7
+\\3\end{verbatim}
+
+\textbf{    Output:   }
+\begin{verbatim}
+2
+\\3
+\\1
+\\2\end{verbatim}

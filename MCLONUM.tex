@@ -1,0 +1,44 @@
+
+
+Xét hai số n chữ số A và B không có số 0 ở đầu.
+
+Cần tìm hai số có n chữ số gần A nhất, một số $>$= A và một số $<$ A mà gồm mọi chữ số của B theo một thứ tự nào đó.
+
+Ví dụ:
+\begin{itemize}
+	\item Nếu A=3022 và B=1232
+\begin{itemize}
+	\item Các số thu được từ B là: 1223, 1232, 1322, 2123, 2132, 2213, 2231, 2312, 2321, 3122, 3212 và 3221
+	\item Số nhỏ nhất $>$= A là 3122, và số lớn nhất $<$ A là 2321.
+\end{itemize}
+	\item Nếu A=1232 và B=3022
+\begin{itemize}
+	\item Các số thu được từ B là 2023, 2032, 2203, 2230, 2302, 2320, 3022, 3202 và 3220.
+	\item Số nhỏ nhất $>$=A là 2023, và không có số nào $<$ A.
+\end{itemize}
+\end{itemize}
+
+Cho A, B, tìm 2 số gần nhất A như trên.
+
+\subsubsection{INPUT}
+
+Gồm hai dòng là hai số n chữ số A, B tương ứng (1 ≤ n ≤ 60).
+
+\subsubsection{OUTPUT}
+\begin{itemize}
+	\item Dòng 1:  Số nhỏ nhất $>$= A theo định nghĩa trên, không có số 0 ở đầu. Nếu không tồn tại, in ra 0.
+	\item Dòng 2: số lớn nhất $<$ A theo định nghĩa trên, không có số 0 ở đầu. Nếu không tồn tại, in ra 0.
+\end{itemize}
+\begin{verbatim}
+SAMPLE INPUT
+Ví dụ 1          Ví dụ 2
+3075             3000203 
+6604             4562454\end{verbatim}
+\begin{verbatim}
+SAMPLE OUTPUT
+Ví dụ 1        Ví dụ 2
+4066           4244556 
+0              2655444 
+\end{verbatim}
+
+Problem for kid - Please, think like kid.

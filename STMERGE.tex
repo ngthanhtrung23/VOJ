@@ -1,0 +1,32 @@
+
+
+Cho 2 xâu ký tự \emph{ X } = \emph{ x $_ 1 $ , x $_ 2 $ , .., x $_ m $} và \emph{ Y } = \emph{ y $_ 1 $ , y $_ 2 $ , ..., y $_ n $} . Cần xây dựng xâu \emph{ T } = \emph{ t $_ 1 $ , t $_ 2 $ , t $_ 3 $ , ..,t $_ n+m $}$_ . $ gồm tất cả các ký tự trong xâu X và tất cả các ký tự trong xâu \emph{ Y } , sao cho các ký tự trong \emph{ X } xuất hiện trong \emph{ T } theo thứ tự xuất hiện trong \emph{ X } và các ký tự trong \emph{ Y } xuất hiện trong T theo đúng thứ tự xuất hiện trong \emph{ Y } , đồng thời với tổng chi phí trộn là nhỏ nhất. Tổng chi phí trộn hai xâu \emph{ X } và \emph{ Y } để thu được xâu \emph{ T } được tính bởi công thức c( \emph{ T } ) = sum(c( \emph{ t $_ k $ , t $_ k+1 $}$_$ )) với k = 1, 2, ..,  n+m-1; trong đó, các chi phí c( \emph{ t $_ k $ , t $_ k+1 $} ) được tính như sau:
+\begin{itemize}
+	\item Nếu hai ký tự liên tiếp \emph{ t $_ k $ , t $_ k+1 $} được lấy từ cùng một xâu X hoặc Y thì c( \emph{ t $_ k $ , t $_ k+1 $} ) = 0
+	\item Nếu hai ký tự liên tiếp \emph{ t $_ k $ , t $_ k+ $ 1 } là x $_ i $ y $_ j $ thì chi phí phải trả là c( \emph{ x $_ i $ , y $_ j $} ). Nếu hai ký tự liên tiếp \emph{ t $_ k $ , t $_ k+1 $}$_$ là \emph{ y $_ j $ , x $_ i $}$_$ thì chi phí phải trả là c( \emph{ y $_ j $ , x $_ i $} ) = c( \emph{ x $_ i $ , y $_ j $} )
+\end{itemize}
+
+\subsubsection{Input}
+
+Dòng đầu tiên chứa Q là số lượng bộ dữ liệu. tiếp đến là Q nhóm dòng, mỗi nhóm cho thong tin về 1 bộ dữ liệu theo khuôn dạng sau:
+\begin{itemize}
+	\item Dòng thứ nhất chứa 2 số nguyên duong m, n (m, n $<$= 1000);
+	\item Dòng thứ \emph{ i } trong m dòng tiếp theo chứa n số nguyên dương, mỗi số không vượt quá 10\textasciicircum9: c( \emph{ x $_ i $ , y $_ 1 $} ), c( \emph{ x $_ i $ , y $_ 2 $} ), …, c( \emph{ x $_ i $ , y $_ n $} ), \emph{ i } = 1, 2,…, m.
+\end{itemize}
+
+Ràng buộc : Có 60\% số test ứng với 60\% số điểm của bài đó có m, n $<$= 10
+
+\subsubsection{Output}
+\begin{itemize}
+	\item Gồm Q dòng, mỗi dòng chứa một số nguyên là tổng chi phí theo cách xây dựng xâu \emph{ T } tìm được tương ứng với bộ dữ liệu vào.
+\end{itemize}
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+1
+2 3
+3 2 30
+15 5 4
+\textbf{Output:}
+6\end{verbatim}

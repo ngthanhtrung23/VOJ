@@ -1,0 +1,71 @@
+
+
+Nhằm đổi mới việc quản lí cư dân, chính phủ đưa ra chủ trương cấp thẻ công dân thay cho giấy chứng minh nhân dân và giao quyền cấp mã thẻ cho các tỉnh thành phố trực thuộc trung ương. Để phục vụ cho công việc tạo mã thẻ, đơn vị cấp mã thẻ địa phương đã thu thập thông tin về mối quan hệ quen biết nhau của cư dân trong địa bàn của mình. Mối quan hệ đó được mô tả bởi đơn đồ thị vô hướng liên thông với n đỉnh, mỗi đỉnh tương ứng với một người, hai đỉnh được nối với nhau bởi một cạnh nếu hai người tương ứng là quen biết nhau. (Chú  ý là mối quan hệ quen biết ở đây là hai chiều, nghĩa là nếu người A quen biết người B thì người B cũng quen biết người A và ngược lại). Tiếp theo, công việc tạo mã thẻ công dân được tiến hành theo hai bước sau:
+
+\textbf{\emph{Bước 1}}: Số hóa thông tin về quan hệ quen biết của toàn bộ cư dân bằng cách sắp xếp danh sách cư dân theo thứ tự từ điển không giảm của tên người (hai người trùng tên thì thứ tự giữa hai người là tùy ý), và theo danh sách đã sắp xếp, lần lượt đánh số các đỉnh tương ứng của đồ thị bắt đầu từ 1.
+
+\textbf{\emph{Bước 2}}: Mỗi đỉnh i của đồ thị được gán một nhãn Qi là một bộ có thứ tự gồm chỉ số của một số đỉnh được tạo bởi thuật toán sau đây:
+\begin{itemize}
+	\item Khởi tạo nhãn của đỉnh 1 là Q1 = (0), các đỉnh còn lại là chưa có nhãn; đỉnh 1 là đã có nhãn nhưng nhãn của nó là chưa cố định.
+	\item Tại mỗi bước trong n bước tiếp theo, thực hiện các thao tác sau:
+\begin{itemize}
+	\item Tìm u là đỉnh có chỉ số nhỏ nhất trong số các đỉnh đã có nhãn chưa cố định;
+	\item Cố định nhãn đỉnh u;
+	\item Với mỗi đỉnh v kề với đỉnh u (nghĩa là có cạnh nối u với v):
+\begin{itemize}
+	\item Nếu v chưa có nhãn thì khởi tạo nhãn của v là Qv = (u);
+	\item Nếu v có nhãn chưa cố định thì thêm đỉnh u vào cuối nhãn hiện thời Qv của v.
+\end{itemize}
+\end{itemize}
+\end{itemize}
+
+Quan sát các nhãn thu được, Trưởng ban tin học hóa việc quản lý cư dân thấy rằng các nhãn Q được tạo ra tuy thuận tiện cho quản lý nhưng không tuân theo thứ tự từ điển. Trưởng ban yêu cầu đánh số lại các đỉnh của đồ thị về mối quan hệ quen biết sao cho bộ nhãn của các đỉnh thu được theo thuật toán ở Bước 2 thỏa mãn tính chất sau: Nếu u $<$ v thì nhãn của đỉnh u (Qu) phải đi trước nhãn của đỉnh v (Qv) trong thứ tự từ điển.
+
+\textbf{\emph{Nhắc lại}}: Ta nói Qu = (p1,…,pi) là đi trước Qv = (q1,…,qj) trong thứ tự từ điển nếu như:
+
+-        hoặc p1 $<$ q1;
+
+-        hoặc (p1=q1),…,(pk=qk), (pk+1$<$qk+1) với k $<$ min(i, j);
+
+-        hoặc (p1=q1),…, (pi=qi) với i $<$ j.
+
+\textbf{Yêu cầu}: Dựa trên đồ thị về mối quan hệ quen biết thu được ở Bước 1, hãy tìm một cách giải quyết yêu cầu được nêu ở trên.
+
+\textbf{Dữ liệu}:
+\begin{itemize}
+	\item Dòng đầu tiên chứa hai số nguyên dương n và m được ghi cách nhau bởi dấu cách là số đỉnh và số cạnh của đồ thị về mối quan hệ quen biết.
+	\item Mỗi dòng trong số m dòng tiếp theo chứa 2 số nguyên được ghi cách nhau bởi dấu cách là hai chỉ số của hai đỉnh đầu mút của một cạnh.
+\end{itemize}
+
+\textbf{Kết quả}: Ghi ra n số nguyên d1, d2, …, dn cách nhau bởi dấu cách, trong đó di là chỉ số của đỉnh i của đồ thị quan hệ quen biết theo cách đánh số thỏa mãn yêu cầu đã nêu.
+
+\textbf{Ví dụ:}
+
+Input
+
+4 5
+
+1 3
+
+1 4
+
+2 3
+
+2 4
+
+3 4
+
+OUTPUT
+
+1 4 2 3
+
+ 
+
+\textbf{Ràng buộc}:
+\begin{itemize}
+	\item Có 30\% số test tương ứng với các bộ dữ liệu có giới hạn n $<$= 10;
+	\item Có 30 \% số test khác tương ứng với các bộ dữ liệu có giới hạn  n $<$= 1000, m $<$= 10000
+	\item Có 40\% số test còn lại tương ứng với các bộ dữ liệu có giới hạn n $<$= 20000, m $<$= 2000000.
+\end{itemize}
+
+ 

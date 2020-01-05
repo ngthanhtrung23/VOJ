@@ -1,0 +1,76 @@
+
+
+
+
+   Cho 1 pin mặt trời có dạng 1 đa giác không tự cắt (   \textbf{    có thể không phải đa giác lồi   }   ), gồm N điểm, tọa độ đỉnh thứ i là (xi, yi).  
+
+   Như các bạn đã biết , mặt trời ở rất xa rất xa trái đất nên các tia sáng mặt trời có thể được coi là các tia song song. Trong ngày, mặt trời sẽ quay quanh gốc tọa độ (0, 0), đồng nghĩa với việc các tia sáng song song cũng sẽ quay quanh trái đất.  
+
+   Pin mặt trời hấp thụ năng lượng từ mặt trời. Giả sử đoạn (x1, y1) → (x2, y2) của 1 đoạn thẳng có K đoạn khác che nó theo hướng của mặt trời đang chiếu, thì năng lượng hấp thụ sẽ được cộng thêm một lượng L/(K+1).  
+
+   (với L = độ dài hình chiếu của đoạn (x1, y1, x2, y2)  lên phương vuông góc của tia sáng mặt trời).  
+
+   Chú ý rằng trên cùng 1 cạnh của đa giác, giá trị của K có thể thay đổi. Vì vậy để tính toán, ta cần chia mỗi cạnh của đa giác thành các đoạn lớn nhất có cùng giá trị K. Lượng năng lượng hấp thụ được trên một cạnh của đa giác bằng tổng lượng năng lượng hấp thụ được trên từng đoạn.  
+
+   Lượng năng lượng hấp thụ được của pin bằng tổng tất cả lượng năng lượng hấp thụ đc trên các cạnh của đa giác.  
+
+   Ví dụ:  
+
+
+\includegraphics{http://vn.spoj.com/VM13/content/VMPIN}
+
+   Xét các tia sáng mặt trời có hướng từ góc phải trên xuống góc trái dưới (hình vẽ).  
+
+   Xét đoạn AB trong hình trên:  
+\begin{itemize}
+	\item     Trong đoạn (1, 0) - (1, 1) : K = 1, L = 0.70711   
+	\item     Trong đoạn (1, 1) - (1, 3) : K = 3, L = 1.41421   
+	\item     Trong đoạn (1, 3) - (1, 6) : K = 1, L = 2.12132   
+	\item     Như vậy, tổng năng lượng thu được trên đoạn AB là : 0.70711/2 + 1.41421/4 + 2.12132/2 = 1.7677675   
+\end{itemize}
+
+   Xét đoạn KA trong hình:  
+\begin{itemize}
+	\item     K = 0, L = 1.41421   
+	\item     Tổng năng lượng thu được trên KA là : 1.41421/1 = 1.41421   
+\end{itemize}
+
+   Lượng năng lượng mà pin hấp thụ được bằng tổng lượng năng lượng hấp thụ được trên các đoạn thẳng AB, BC, CD, DE, EF, FG, GH, HI, IJ, JK, KA.  
+
+   Tìm năng lượng lớn nhất mà pin hấp thụ được tại một thời điểm trong ngày. Tính kết quả với độ chính xác 4 chữ số sau dấu phẩy.  
+
+\subsubsection{   Input  }
+
+   Dòng 1: Số nguyên dương N.  
+
+   N dòng tiếp theo, dòng thứ i gồm 2 số nguyên dương xi, yi là tọa độ đỉnh thứ i.  
+
+\subsubsection{   Output  }
+
+   Gồm 1 dòng duy nhất là kết quả của bài toán. Bài của bạn sẽ được chấm đúng nếu chênh lệch với kết quả do ban tổ chức đưa ra không quá 0.0001.  
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     Trong tất cả các test, 1 ≤ N ≤ 50   
+	\item     Trong 30\% số test, 1 ≤ N ≤ 8   
+	\item     -1000 ≤ xi, yi ≤ 1000   
+\end{itemize}
+
+\subsubsection{   Chấm bài  }
+
+   Bài của bạn sẽ được chấm trên thang điểm 100. Điểm mà bạn nhận được sẽ tương ứng với \% test mà bạn giải đúng.  
+
+   Trong quá trình thi, bài của bạn sẽ chỉ được chấm với 1 test ví dụ có trong đề bài.  
+
+   Khi vòng thi kết thúc, bài của bạn sẽ được chấm với bộ test đầy đủ.  
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+4
+0 0
+0 2
+2 2
+2 0
+\textbf{Output:}
+4.2426406871\end{verbatim}

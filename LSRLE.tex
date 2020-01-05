@@ -1,0 +1,58 @@
+
+
+RLE (Run length encoding) là một kiểu kí hiệu ngôn ngữ rất nổi tiếng và có ứng dụng rộng rãi trong công nghệ phần mềm, từ hang trăm năm trước, con người đã không biết đến ngôn ngữ này :P, đó là lý do tại sao chúng ta sẽ bắt đầu tìm hiểu sơ lược về nó:
+
+Định nghĩa: những chữ cái giống nhau liền nhau sẽ chỉ viết chữ cái đại diện và số thể hiện các chữ cái giống nó ở ngay liền sau nó
+
+Ví dụ:
+
+String:"WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWBWWWWWWWWWWWWWW" \textbf{}
+
+=$>$ RLE: "12W1B12W3B24W1B14W"
+
+\subsubsection{Input}
+
+Gồm nhiều test case với mỗi test case sẽ là một truy vấn có dạng
+
+Đầu tiên là xâu “@u” với u lần lượt là 1 trong các số 1 2 3 4
+
+Nếu u = 1 : 2 dòng tiếp theo lần lượt là 2 xâu: s1 và s2
+
+Nếu u = 2 hoặc u = 3 : Dòng tiếp theo cho một xâu s
+
+Tiếp tục là một dòng chứa 2 số a và b (a, b $<$= độ dài thực của s)
+
+Nếu u = 4: 2 dòng tiếp theo là một xâu s1 và s2
+
+Tiếp tục là một dòng chứa 1 số a
+
+ 
+
+\subsubsection{Output}
+
+Với u = 1 =$>$ trả ra kết quả dưới dạng là tổng của 2 xâu s1 và s2
+
+Với u = 2 =$>$ trả ra kết quả dưới dạng là xâu s đã bị cắt từ vị trí thứ a đi b kí tự
+
+Với u = 3 =$>$ trả ra kết quả copy trong xâu s từ vị trí thứ a đi b kí tự
+
+Với u = 4 =$>$ chèn xâu s2 vào xâu s1 ở vị trí a
+
+Các câu trả lời có dạng @u:' 'string rle với u = 1, 2, 3, 4 tương ứng từng loại truy vấn. Mỗi câu trả lời, tất nhiên trên 1 dòng.
+
+\textbf{(Lưu ý tất cả các xâu trong bài là RLE và giới hạn độ dài thực của các xâu không quá 1000) }\textbf{}
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+@1c8e7c9
+@1
+c8e7c9
+d7b5e1
+@2
+d9
+3 1
+
+\textbf{Output:}
+@1: c8e7c9d7b5e1
+@2: d8\end{verbatim}

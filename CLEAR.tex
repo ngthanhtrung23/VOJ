@@ -1,0 +1,50 @@
+
+
+
+
+
+
+
+
+\subsection{   Số rõ ràng  }
+
+   Bờm mới tìm được một tài liệu định nghĩa số rõ ràng như sau: Với số nguyên dương n, ta tạo số mới bằng cách lấy tổng bình phương các chữ số của nó, với số mới này ta lại lặp lại công việc trên. Nếu trong quá trình đó, ta nhận được số mới là 1, thì số n ban đầu được gọi là số rõ ràng. Ví dụ, với n = 19, ta có:  
+
+   19 → 82 (= 1   $^    2   $   +9   $^    2   $   ) → 68 → 100 → 1  
+
+   Như vậy, 19 là số rõ ràng.  
+
+   Không phải mọi số đều rõ ràng. Ví dụ, với n = 12, ta có:  
+
+   12 → 5 → 25 → 29 → 85 → 89 → 145 → 42 → 20 → 4 → 16 → 37 → 58 → 89 → 145  
+
+   Bờm rất thích thú với định nghĩa số rõ ràng này và thách đố phú ông: Cho một số nguyên dương n, tìm số S(n) là số rõ ràng liền sau số n, tức là S(n) là số rõ ràng nhỏ nhất lớn hơn n. Tuy nhiên, câu hỏi đó quá dễ với phú ông và phú ông đã đố lại Bờm: Cho hai số nguyên dương n và m (1 ≤ n,m ≤ 10   $^    15   $   ), hãy tìm số S   $^    m   $   (n)=S(S(…S(n) )) là số rõ ràng liền sau thứ m của n.  
+
+   Bạn hãy giúp Bờm giải câu đố này nhé!  
+
+\subsubsection{   Dữ liệu  }
+\begin{itemize}
+	\item     Dòng đầu là số t (0 $<$ t ≤ 20) là số bộ dữ liệu.   
+	\item     t dòng sau, mỗi dòng chứa 2 số nguyên n và m.   
+\end{itemize}
+
+\subsubsection{   Kết quả  }
+
+   Gồm t dòng, mỗi dòng là kết quả tương ứng với dữ liệu vào.  
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+\textbf{Dữ liệu}
+2
+18 1
+1 145674807	
+
+\textbf{Kết quả}
+19
+1000000000
+\end{verbatim}
+
+\subsubsection{   Lưu ý  }
+
+   Có 50\% số test với 1≤n,m≤10   $^    7   $   .  
+

@@ -1,0 +1,38 @@
+
+
+
+
+   Bạn có 34 đồng xu có giá trị như sau:  
+\begin{verbatim}
+xu(1) có giá trị 2
+xu(2) có giá trị 3
+xu(3) có giá trị 5
+for n = 4 to 34
+    xu(n) có giá trị (xu(n-1) + xu(n-2) + xu(n-3))
+\end{verbatim}
+
+   Bạn hãy dùng nhiều đồng xu nhất để mua một món hàng có giá là X!  
+
+\subsubsection{   Dữ liệu  }
+
+   Dòng đầu tiên là số test (không quá 1000). Mỗi dòng tiếp theo chứa một số nguyên X (1 ≤ X ≤ 2000000000).  
+
+\subsubsection{   Kết quả  }
+
+   Với mỗi test, in ra "Case \#" + số hiệu test + ": " + số lượng lớn nhất đồng xu cần dùng. Nếu không có cách nào để đạt giá trị X thì in ra -1.  
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu
+4
+1
+5
+8
+9
+
+Kết quả
+Case #1: -1
+Case #2: 2
+Case #3: 2
+Case #4: -1
+\end{verbatim}

@@ -1,0 +1,50 @@
+
+
+
+
+   Ván đấu cuối cùng của giải cờ vua VNOI Chess 2011 đã diễn ra, và bạn đang phải chạm trán với kì thủ số 1 của Việt Nam – đại kiện tướng quốc tế Lê Quang Liêm. Sau hơn 3 giờ chiến đấu, bạn đã tìm được 1 ô xung yếu trong ván cờ (ở vị trí T), và mục tiêu của bạn là phải chiếm được ô này càng nhanh càng tốt. Để thực hiện được việc này, bạn có một quân mã ở ô A, và dĩ nhiên, bạn mong muốn đưa quân mã này đến ô T sau càng ít bước càng tốt.  
+
+   Tuy nhiên, đối phương của bạn cũng hiểu rõ tầm quan trọng của ô T, và để ngăn chặn kế hoạch của bạn, đại kiện tướng cũng có một quân mã ở ô B (A và B khác nhau và khác T). Cụ thể, sau mỗi bước, bạn và kiện tướng sẽ luân phiên di chuyển quân mã của mình. Bạn sẽ tìm cách đưa quân mã của mình đến ô T càng sớm càng tốt, trong khi kiện tướng Liêm sẽ tìm cách di chuyển quân mã của mình để ngăn chặn kế hoạch của bạn. Mục tiêu bạn cần đạt được là đưa quân mã của mình đến ô T trong thời gian ngắn nhất   \emph{    mà không bị quân mã của Liêm ăn được, luôn giả sử rằng Liêm luôn chơi tốt nhất có thể   }   (lưu ý, kể cả nếu như quân mã của Liêm đến được T trước mà không thể chặn được mã của bạn, thì bạn vẫn đạt được mục tiêu).  
+
+   Lưu ý:  
+
+   - Bàn cờ có kích thước 8 * 8, được chia thành 8 hàng dọc (được kí hiệu từ ‘a’ đến ‘h’ từ trái sang phải) và 8 hàng ngang (kí hiệu từ 1 đến 8 từ dưới lên trên)  
+
+   - Ở mỗi bước, quân mã đi theo hình chữ ‘L’ và không bị cản. Quân mã không được phép nhảy ra khỏi bàn cờ  
+
+   - Đây là thế cờ giả lập, nên bạn có thể giả sử rằng, ngoài 2 quân mã của bạn và của Liêm, tất cả những ô còn lại trên bàn cờ đều là ô trống.  
+
+   - Trong 20\% số test, bên Trắng luôn có chiến thuật đạt được mục tiêu, bất chấp mọi cách cản trở của Đen  
+
+\textbf{    Input   }   :  
+
+   - Dòng đầu tiên gồm duy nhất 1 số nguyên dương T (T ≤ 10) là số bộ test  
+
+   - T dòng tiếp theo, mỗi dòng gồm 3 xâu kí tự mô tả vị trí ban đầu quân mã của bạn, quân mã của Liêm, và ô mục tiêu. Các xâu này được cách nhau bởi đúng 1 dấu cách  
+
+\textbf{    Output   }
+
+   - Gồm T dòng, mỗi dòng in ra số bước ít nhất để quân mã của bạn đến được ô mục tiêu mà không bị ăn, hoặc -1 nếu việc đó là không thể thực hiện được.  
+
+\textbf{    Example   }   :  
+
+\emph{    Input   }
+\begin{verbatim}
+2
+a1 e1 d4
+h8 e5 g3
+\end{verbatim}
+
+\emph{    Output   }
+\begin{verbatim}
+2
+-1
+\end{verbatim}
+
+
+
+   Giải thích:  
+
+   - Ở bàn cờ đầu tiên, bạn đưa quân mã của mình đến ô b3, rồi đến d4 (2 nước). Lưu ý, nếu ở nước đầu tiên, bạn đưa mã đến c2, mã của Liêm sẽ ăn mã của bạn và kế hoạch thất bại  
+
+   - Ở bàn cờ thứ hai, bất kể bạn đưa mã sang f7 hay g6, mã của Liêm cũng có thể “túm” được mã của bạn, nên bạn không thể đưa được quân mã sang g3.  

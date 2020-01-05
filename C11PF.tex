@@ -1,0 +1,46 @@
+
+
+
+
+   Dãy số A gồm n số nguyên khác nhau từng đôi: a   $_    1   $   , a   $_    2   $   , ..., a   $_    n   $   được gọi là hoàn hảo nếu như nó thỏa mãn tính chất sau: "Không tồn tại 3 chỉ số p $<$ q $<$ r sao cho hoặc a   $_    p   $   $<$ a   $_    q   $   $<$ a   $_    r   $   hoặc a   $_    p   $   $<$ a   $_    r   $   $<$ a   $_    q   $   hoặc a   $_    q   $   $<$ a   $_    p   $   $<$ a   $_    r   $   ".  
+
+   Cho A là dãy hoàn hảo, một phép chèn một số nguyên b vào dãy A để tạo thành dãy B (b có thể được chèn vào trước a   $_    1   $   , hoặc giữa a   $_    i   $   , a   $_    i+1   $   với 1 ≤ i $<$ n, hoặc sau a   $_    n   $   ) được gọi là hợp lệ nếu như các điều kiện sau được thỏa mãn:  
+\begin{itemize}
+	\item     b $>$ a    $_     i    $    với mọi 1 ≤ i ≤ n   
+	\item     Dãy B là hoàn hảo   
+\end{itemize}
+\begin{itemize}
+\end{itemize}
+
+\subsubsection{   Yêu cầu  }
+\begin{itemize}
+	\item     Hãy tính số lượng phép chèn hợp lệ một số b vào dãy A.   
+	\item     Giả sử B là một dãy thu được bởi một phép chèn hợp lệ b vào A. Hãy tính số lượng dãy hoàn hảo thu được bằng cách hoán vị các phần tử của B.   
+\end{itemize}
+
+\subsubsection{   Dữ liệu  }
+\begin{itemize}
+	\item     Dòng thứ nhất chứa hai số nguyên n và b tương ứng với số lượng phần tử của dãy A và số nguyên cần chèn. Biết rằng 3 ≤ n ≤ 10    $^     5    $    , |b| ≤ 10    $^     6    $    .   
+	\item     Dòng thứ hai chứa n số nguyên a    $_     1    $    , a    $_     2    $    , ..., a    $_     n    $    , mỗi số có trị tuyệt đối ≤ 10    $^     6    $    .   
+	\item     Các số trên cùng một dòng được ghi cách nhau ít nhất một dấu cách.   
+\end{itemize}
+
+\subsubsection{   Kết quả  }
+\begin{itemize}
+	\item     Dòng thứ nhất ghi một số nguyên là số phép chèn hợp lệ số b vào dãy A.   
+	\item     Dòng thứ hai ghi một số nguyên là phần dư trong phép chia cho 10    $^     9    $    của số lượng dãy hoàn hảo thu được bằng cách hoán vị các phần tử của dãy B. Nếu không thể chèn được b vào dãy A, ta ghi ra 0.   
+\end{itemize}
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+\textbf{Input:}
+4 2012
+\\55 25 9 20
+
+\textbf{Output:}
+2
+\\8\end{verbatim}
+
+\subsubsection{   Giới hạn  }
+
+   Có 50\% số test có n ≤ 15.  

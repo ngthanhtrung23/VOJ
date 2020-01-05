@@ -1,0 +1,46 @@
+
+
+ 
+
+Cho một bảng kích thước MxN, được chia thành lưới ô vuông đơn vị M dòng N cột.
+\\(1$<$=M$<$=1000;1$<$=N$<$=300)
+\\
+\\Trên các ô của bảng ghi số 0 hoặc 1. Các dòng của bảng được đánh số 1, 2... M theo thứ tự từ trên xuống dưới và các cột của bảng được đánh số 1, 2..., N theo thứ tự từ trái qua phải
+\\
+\\Yêu cầu:
+\\
+\\Đếm số hình chữ nhật gồm các ô của bảng thoả mãn các điều kiện sau:
+\begin{enumerate}
+	\item Hình chữ nhật đó có 4 ô ở 4 đỉnh là 4 ô khác nhau
+	\item 4 ô ở đỉnh đều là số 1
+	\item Cạnh hình chữ nhật song song với cạnh bảng
+\end{enumerate}
+
+\subsubsection{Input}
+
+Dòng 1: Ghi hai số M, N
+\\
+\\M dòng tiếp theo, dòng thứ i ghi N số mà số thứ j là số ghi trên ô (i, j) của bảng
+
+\subsubsection{Output}
+
+Gồm 1 dòng duy nhất ghi số hình chữ nhật thỏa mãn yêu cầu .
+\\
+\\Example
+\begin{verbatim}
+\textbf{Input:
+
+}4 4
+1 0 0 1
+0 1 1 1
+1 1 1 1
+1 1 1 1
+
+\textbf{Output:
+}
+14
+
+Kết quả trong phạm vi int64 của pascal và long long của C,C++
+
+
+\end{verbatim}

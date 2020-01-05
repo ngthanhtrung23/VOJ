@@ -1,0 +1,87 @@
+
+
+
+
+\subsubsection{   Đề bài  }
+
+   Cho một bàn cờ và các quân xe nhiều màu khác nhau. Hãy đếm số cách sắp xếp tất cả các quân xe lên bàn cờ sao cho không có hai con xe khác màu nào được tấn công lẫn nhau.  
+
+\subsubsection{   Dữ liệu  }
+\begin{itemize}
+	\item     Mỗi test bắt đầu bằng thẻ "[CASE]", các test cách nhau bởi một dòng trắng. Thẻ "[END]" báo hiệu kết thúc file input.   
+	\item     Hai dòng tiếp theo là M, N, kích thước của bàn cờ   
+	\item     Tiếp theo là dòng "$<$$<$".   
+	\item     Các dòng tiếp theo, mỗi dòng chứa số lượng quân xe của một màu.   
+	\item     Kết thúc bằng dòng "$>$$>$'.   
+\end{itemize}
+
+\subsubsection{   Kết quả  }
+\begin{itemize}
+	\item     Với mỗi test, trả về phần dư của kết quả cho 1 000 000 009.   
+\end{itemize}
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     1 $<$= M, N $<$= 30   
+	\item     Có từ 1 đến 10 màu phân biệt.   
+	\item     Tổng số quân xe không quá M*N.   
+\end{itemize}
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu
+[CASE]
+2
+3
+$<$$<$
+1
+1
+$>$$>$
+
+[CASE]
+5
+2
+$<$$<$
+3
+$>$$>$
+
+[CASE]
+5
+2
+$<$$<$
+1
+1
+1
+$>$$>$
+
+[CASE]
+8
+8
+$<$$<$
+1
+1
+1
+1
+1
+1
+1
+1
+$>$$>$
+
+
+[CASE]
+4
+2
+$<$$<$
+3
+1
+$>$$>$
+
+[END]
+Kết quả
+12
+120
+0
+625702391
+8
+\end{verbatim}

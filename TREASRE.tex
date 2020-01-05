@@ -1,0 +1,40 @@
+
+
+Trong một lần thám hiểm hang động nọ, Aladdin tình cờ phát hiện ra một kho báu. Có N chồng rương (hòm) được xếp thành một hình tam giác đều. Trong hình ở link dưới, mỗi hình tròn tượng trưng cho một rương.
+
+\href{https://mega.co.nz/#!PJ5XgSCK!K7tB9A0uJbmUk9d32r5jviW92OFbNyJ7-kRiBbxd0Mw}{https://mega.co.nz/\#!PJ5XgSCK!K7tB9A0uJbmUk9d32r5jviW92OFbNyJ7-kRiBbxd0Mw }
+
+
+\includegraphics{https://dl.dropboxusercontent.com/u/44735005/C11%20Contest/photo/TREASRE.jpg}
+
+Trừ rương ở đỉnh, mỗi rương sẽ nằm dưới 2 rương ở tầng trên. Nếu Aladdin lấy rương này mà không lấy cả 2 rương nằm trên nó, một hoặc cả 2 rương này sẽ rơi xuống và gây tai họa (đọc đoạn dưới). Dĩ nhiên là rương ở rìa thì chỉ có 1 rương nằm trên nó.
+
+Nhờ tài phép của thần đèn, Aladdin biết được trong mỗi chiếc rương sẽ có một số đồng tiền vàng hoặc một bùa phép sẽ làm Aladdin mất đi một số đồng. Cách để lấy được nhiều đồng xu nhất hiển nhiên là chỉ chọn những rương có đồng xu và bỏ hết rương bị ám. Tuy nhiên Aladdin không thể làm vậy bởi có 1 lời nguyền là nếu một chiếc rương bị rơi xuống hoặc bị lấy xuống mà không được mở ra thì cửa hang sẽ khép lại chôn vùi Aladdin vĩnh viễn. Ngay cả thần đèn cũng không giúp được. Vậy nên Aladdin phải lấy lần lượt các rương từ trên xuống sao cho không rương nào bị rơi và mở tất cả các rương mình lấy xuống. Thứ tự mở rương không quan trọng vì những rương bị ám bùa sẽ cướp mất của Aladdin một số đồng trong tổng số đồng tiền Aladdin tìm được.
+
+Vẫn còn tiếc hùi hụi vì ngày xưa ở trong hang thần bao nhiêu châu báu mà chỉ mang được ra mỗi chiếc đèn cũ rích nên Aladdin quyết lần này phải lấy được càng nhiều đồng xu càng tốt. Hãy giúp Aladdin !
+
+\subsubsection{Input}
+
+Dòng đầu tiên là 1 số nguyên dương N – độ cao của chồng rương
+
+N dòng tiếp theo : dòng i chứa i số nguyên A $_$_ ij $$ (j$<$=i) là giá trị chiếc rương thứ j trên hàng i (từ trái sang phải). Nếu A $_$_ ij $$ $<$ 0 rương này sẽ làm Aladdin mất | A $_$_ ij $$ | đồng vàng
+
+Giới hạn :   N $<$= 3000
+
+|A $_$_ ij $$ | $<$= 10 $^$^ 9 $$
+
+\subsubsection{Output}
+
+In ra một số nguyên duy nhất là tổng đồng tiền vàng lớn nhất mà Aladdin có thể giành được
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+4
+3
+-5 3
+-8 2 -8
+3 9 -2 7 \end{verbatim}
+\begin{verbatim}
+\textbf{Output:}
+7\end{verbatim}

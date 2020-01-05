@@ -1,0 +1,52 @@
+
+
+
+
+   Năm 3010, một nhóm người từ Trái đất đã chuyển đến sống ở hành tinh Alpha. Vì khí hậu của hành tinh này rất khắc nghiệt, chỉ một phần đất nhất định có thể trồng trọt được.  
+
+   Giả sử bề mặt của hành tinh này là một mặt phẳng, mảnh đất có thể trồng trọt có hình dạng là một đa giác không tự cắt có N đỉnh có tọa độ tương ứng là (X1, Y1), (X2, Y2), ..., (Xn , Yn), được liệt kê theo chiều kim đồng hồ. Trên mảnh đất có thể trồng trọt, nhóm người đến từ Trái đất sống ở một trạm nghiên cứu đặt tại vị trí (Xp, Yp).  
+\includegraphics{http://vn.spoj.pl/content/EARTHQK.gif}
+
+   Trên hành tinh Alpha thường có động đất xảy ra. Mỗi trận động đất tạo ra một vết nứt mà con người không thể đi qua được. Vết nứt này có thể chạy ngang qua mảnh đất có thể trồng trọt và chia mảnh đất này ra thành các phần rời nhau. Thật may mắn, vết nứt này không bao giờ cắt qua trạm nghiên cứu. Ví dụ trong hình trên cho thấy hai vết nứt cắt mảnh đất có thể trồng trọt làm ba phần, và phần đất có thể trồng trọt mà nhóm người sống trong trạm nghiên cứu tiếp cận được sau hai trận động đất có diện tích là 22.  
+
+   Giả sử có M trận động đất xảy ra được đánh số từ 1 đến M. Mỗi trận động đất tạo ra một vết nứt được mô tả bởi một đường thẳng đi qua hai điểm (Xj1, Yj1) và (Xj2, Yj2) (j=1..M).  
+
+   Nhiệm vụ của bạn là viết một chương trình để tính phần diện tích có thể trồng trọt mà nhóm người sống trong trạm nghiên cứu tại vị trí (Xp, Yp) có tiếp cận được sau M trận động đất.  
+
+\subsubsection{   Dữ liệu vào  }
+
+   Dữ liệu vào gồm nhiều bộ dữ liệu tương ứng với nhiều test. Dòng đầu tiên chứa một số nguyên dương không lớn hơn 20 là số lượng các bộ dữ liệu. Các dòng tiếp theo chứa các bộ dữ liệu.  
+
+   Với mỗi bộ dữ liệu, dòng đầu tiên chứa số nguyên N (3 ≤  N ≤  1000). Dòng thứ i trong N dòng tiếp theo chứa hai số nguyên Xi và Yi (-10000 ≤ Xi,Yi ≤ 10000) cách nhau bởi dấu cách, là tọa độ của đỉnh thứ i của đa giác thể hiện mảnh đất có thể trồng trọt. Dòng tiếp theo chứa hai số nguyên (Xp,Yp) (-10000 ≤ Xp,Yp ≤ 10000) cách nhau bởi dấu cách, là tọa độ của trạm nghiên cứu. Dòng tiếp theo chứa số nguyên M (1 ≤ M ≤ 1000). Dòng thứ j trong M dòng tiếp theo chứa bốn số nguyên Xj1, Yj1, Xj2, và Yj2 cách nhau bởi dấu cách, mô tả đường thẳng biểu diễn vết nứt tạo ra bởi trận động đất thứ j.  
+
+\subsubsection{   Dữ liệu ra  }
+
+   Với mỗi bộ dữ liệu, ghi ra trên một dòng một số nguyên là phần nguyên của (s * 100) với s là diện tích của phần có thể trồng trọt và tiếp cận được sau M trận động đất.  
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu vào
+2
+3
+0 0
+2 0
+0 2
+0 0
+1
+1 1 1 0
+6
+1 1
+9 1
+9 5
+5 5
+5 8
+1 8
+5 3
+2
+1 1 5 8
+7 1 7 2	
+
+Dữ liệu ra
+150
+2200
+\end{verbatim}

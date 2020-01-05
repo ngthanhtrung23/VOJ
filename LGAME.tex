@@ -1,0 +1,46 @@
+
+
+
+
+   Lala năm nay mới vào lớp một. Sáng nay, Lala được học về phép tính cộng. Khi về nhà, Lala đã hứng thú đến nỗi đòi anh trai - Alex cho mình thêm các bài tập về phép cộng.  
+
+   Alex của rất vui khi thấy được niềm đam mê toán học của em gái mình. Alex viết ra   \textbf{    N   }   con số vào một tờ giấy. Và đánh dấu các con số theo thứ tự 1 --$>$ N (kí hiệu a[i] là số thứ i). Bây giờ Lala được cho thêm số   \textbf{    S   }   và phải viết ra   \emph{    tất cả các bộ số   }\textbf{    \{p[1], p[2], p[3], ..., p[x]\}   }   ,   \emph{    sao cho   }\textbf{\emph{}    p[1]$<$p[2]$<$...$<$p[x]   }\emph{    và   }\textbf{    a[p[1]]  + a[p[2]] + ... + a[p[x]] = S   }   . Sau khi nghe xong câu hỏi, Lala liền hỏi ngược lại Alex: "Nếu vậy thì với mỗi số 1, 2, 3, ..., (N-2), (N-1), N, Lala phải viết   \textbf{    ít nhất   }   bao nhiêu lần để làm xong bài tập trên vậy anh ?!!".  
+
+   Lala thì đã cặm cụi viết ra các bộ số từ lâu. Còn Alex thì đang nhức óc với câu hỏi trên. Các bạn hãy giúp Alex giải nhanh câu đố trên trước khi Lala làm xong bài tập nhé. Nếu không thì Alex sẽ mất mặt với em gái mất !!!.  
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     N $<$= 1.000, S $<$= 10.000, 1$<$= a[i] $<$= 1.000   
+	\item     60\% số test có N $<$= 100.   
+\end{itemize}
+
+\subsubsection{   Input  }
+\begin{itemize}
+	\item     Dòng đầu tiên là 2 số N và S.   
+	\item     Dòng thứ hai gồm N số trong dãy.   
+\end{itemize}
+
+\subsubsection{   Output  }
+\begin{itemize}
+	\item     Gồm N số trên 1 dòng, số thứ i cho biết số lần viết    \emph{}    ít nhất    \emph{     số thứ tự i,    }    để hoàn thành bài tập. Vì các số có thể rất lớn nên bạn chỉ cần in ra phần dư của chúng khi chia cho 10\textasciicircum9 + 7.   
+\end{itemize}
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input 1:}
+4 3
+\\1 1 1 2
+\\
+\\\textbf{Output 1:}
+2 2 2 3 
+\\
+\\\textbf{Giải thích:}
+\\Các bộ số Lala phải viết: {1,2,3}, {1,4}, {2,4}, {3,4}. 
+\\Nên các số 1, 2, 3, 4 được viết lần lượt 2, 2, 2, 3 lần.
+\\
+\\\textbf{Input 2:}
+\\10 5
+\\1 1 1 1 1 1 1 1 1 1\textbf{
+\\
+\\Output 2:}
+\\126 126 126 126 126 126 126 126 126 126 \end{verbatim}

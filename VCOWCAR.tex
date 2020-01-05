@@ -1,0 +1,42 @@
+
+
+
+
+   N (1 $<$= N $<$= 50,000) con bò đánh số từ 1..N đang lái trên các  chiếc xe khác nhau dọc theo đường cao tốc ở Xứ Bò. Bò i có thể  lái ở bất kỳ làn đường nào trong số M (1 $<$= M $<$= N) làn đường cao  tốc và có thể lái xe ở tốc độ tối đa là S\_i (1 $<$= S\_i $<$= 1,000,000) km/giờ.  
+
+   Từ kinh nghiệm đụng xe khá nhiều, các con bò rất ghét đụng nhau  và tiến hành các đo đạc để tránh đụng nhau. Trên đường cao tốc này, bò  i sẽ giảm tốc độ của mình đi D (0$<$= D $<$= 5,000) km/giờ nếu có  một con bò đang đi trước nó (tất nhiên là không bao giờ tốc độ của  bò i nhỏ hơn 0 km/giờ cả). Như vậy, nếu có K con bò đi trước bò i  thì bò i sẽ đi với tốc độ tối đa là max[S\_i - D * K, 0].  
+
+   Nếu một  con bò đi nhanh hơn con bò ở ngay phía trước nó thì đảm bảo  rằng các con bò cách nhau đủ xa để tai nạn không xảy ra khi các con  bò giảm tốc độ (nhưng nếu sau khi giảm tốc độ mà bò đi sau vẫn  phóng nhanh hơn bò đi trước thì sẽ xảy ra tai nạn).  
+
+   Xứ bò cũng có một điều luật về giao thông đó là tốc độ của bò  đi trên đường cao tốc tối thiểu phải là L (1 $<$= L $<$= 1,000,000) km/giờ, bởi  vậy mà đôi khi vài con bò sẽ không thể tham gia giao thông vì  phải tuân thủ luật giao thông. Bạn hãy viết chương trình  tính xem tối đa có bao nhiêu con bò có thể đi trên đường cao tốc mà vẫn  tuân thủ luật giao thông.  
+
+\subsubsection{   Dữ liệu  }
+\begin{itemize}
+	\item     Dòng 1: 4 số nguyên cách nhau bởi dấu cách: N, M, D, và L   
+	\item     Dòng 2..N+1: Dòng i+1 mô tả tốc độ ban đầu của bò i là 1 số nguyên: S\_i   
+\end{itemize}
+
+\subsubsection{   Kết quả  }
+\begin{itemize}
+	\item     Dòng 1: Một số nguyên cho biết số lượng bò nhiều nhất có thể            tham gia giao thông.   
+\end{itemize}
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu
+3 1 1 5
+5
+7
+5
+
+Giải thích:
+Có 3 con bò và chỉ có một làn đường để đi, độ giảm tốc độ 
+là 1 km/giờ và tốc độ tối thiểu phải đạt là 5 km/giờ.
+
+Kết quả
+2
+
+Giải thích:
+Tối đa 2 con bò là tham gia giao thông được, cách chọn 
+là chọn 2 bò đầu tiên.
+\end{verbatim}

@@ -1,0 +1,75 @@
+
+
+
+
+    Cho số nguyên dương X và một trò chơi được diễn ra như sau:   
+
+   1. Trò chơi được bắt đầu trên bảng vuông kích thước vô hạn theo cả 4 hướng (kể cả các ô có tọa độ âm). Ta gọi ô ở hàng x, cột y là (x, y). Đặt X   $^    2   $   quân cờ vào các ô vuông từ (1,1) đến (X,X), sao cho mỗi ô vuông chứa đúng một quân cờ.  
+
+   2. Trò chơi diễn ra trong một số bước. Ở mỗi bước người chơi chọn một quân cờ, và cho quân cờ này nhảy qua đầu một quân cờ kề cạnh và rơi xuống ô kế tiếp, gọi là ô đích. Người chơi có thể chọn quân cờ và hướng nhảy mong muốn, nhưng cần đảm bảo điều kiện: ô đích phải là ô trống. Sau bước nhảy, quân cờ bị nhảy qua sẽ biến mất. Hình sau mô tả một trạng thái của bảng:  
+\begin{verbatim}
+-----
+--x--
+-xx-x
+--x--
+--x--\end{verbatim}
+
+   Ở hình này, dấu gạch ngang mô tả một ô trống và chữ cái x mô tả một quân cờ. Quân cờ nằm ở ô trung tâm có thể nhảy lên trên hoặc sang trái (và quân cờ bị nhảy qua sẽ biến mất). Quân cờ này không thể nhảy sang phải (không có quân cờ kề cạnh), và không thể nhảy xuống dưới (ô đích chứa quân cờ khác).  
+
+   3. Nhiệm vụ của bạn là với mỗi số X, tìm dãy các bước di chuyển để còn lại ít quân cờ nhất (cũng đồng nghĩa với việc bạn cần cố gắng di chuyển nhiều bước nhất).  
+
+\subsubsection{   Input  }
+\begin{itemize}
+	\item     Dòng đầu tiên chứa số nguyên T - số lượng test (1 ≤ T ≤ 10)   
+	\item     T dòng tiếp theo, mỗi dòng gồm một số nguyên dương duy nhất: X (1 ≤ X ≤ 100)   
+\end{itemize}
+
+\subsubsection{   Output  }
+
+   Với mỗi test, ghi ra:  
+\begin{itemize}
+	\item     Dòng thứ nhất chứa số nguyên dương Y - số bước di chuyển trong dãy di chuyển của bạn.   
+	\item     Tiếp theo là Y dòng, mỗi dòng ghi 4 số nguyên x1, y1, x2, y2, cho biết quân cờ nhảy từ vị trí có tọa độ (x1, y1) đến vị trí có tọa độ (x2, y2).   
+\end{itemize}
+
+\subsubsection{   Cách tính điểm:  }
+\begin{itemize}
+	\item     Điểm tối đa cho mỗi test trong 1 file input là 1 điểm.   
+	\item     Nếu dãy di chuyển mà bạn đưa ra không hợp lệ, bạn được 0 điểm.   
+	\item     Gọi M là số lượng bước di chuyển trong cách tối ưu.   
+	\item     Nếu M = Y, bạn được 1 điểm. Nếu Y $<$ M, bạn được 0.7*(Y/M)    $^     3    $    .   
+	\item     Chú ý rằng nếu ở một test bạn in ra nhiều hơn / ít hơn Y dòng, bạn sẽ bị 0 điểm ở test đó và cả các test sau (trong cùng bộ test).   
+\end{itemize}
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+3
+1
+4
+50
+\end{verbatim}
+\begin{verbatim}
+Output:\end{verbatim}
+\begin{verbatim}
+0
+15
+2 4 0 4
+2 3 0 3
+0 4 0 2
+3 2 3 0
+2 2 2 0
+0 2 2 2
+3 0 1 0
+1 0 1 2
+1 2 3 2
+4 3 2 3
+4 4 2 4
+2 4 2 2
+4 1 4 3
+2 2 4 2
+4 2 4 4
+0
+\end{verbatim}
+
+   Với output này, bạn được 2 điểm.  

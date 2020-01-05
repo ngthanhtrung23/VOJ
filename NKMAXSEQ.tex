@@ -1,0 +1,47 @@
+
+
+
+
+   Cho dãy số nguyên a   $_    1   $   , a   $_    2   $   , …, a   $_    n   $   .  
+
+   Dãy số a   $_    i   $   , a   $_    i+1   $   , …, a   $_    j   $   với 1 ≤ i ≤ j ≤ n được gọi là dãy con của dãy số đã cho và khi đó, j-i+1 được gọi là độ dài, còn   a   $_    i   $   +a   $_    i+1   $   ...+a   $_    j   $   được gọi là trọng lượng của dãy con này.  
+
+   Yêu cầu: cho số nguyên p, trong số các dãy con của dãy số đã cho có trọng lượng không nhỏ hơn p hãy tìm dãy con có độ dài lớn nhất.  
+
+\subsubsection{   Dữ liệu vào  }
+\begin{itemize}
+	\item     Dòng đầu tiên ghi hai số nguyên n và p cách nhau bởi dấu cách.   
+	\item     Dòng thứ i trong số n dòng tiếp theo chứa số nguyên a    $_     i    $    là số hạng thứ i của dãy số đã  cho, i = 1, 2, …, n.   
+\end{itemize}
+
+\subsubsection{   Kết qủa  }
+
+   Ghi ra số nguyên k là độ dài của dãy con tìm được (qui ước: nếu không có dãy con nào thỏa mãn điều kiện đặt ra thì k = -1).  
+
+\subsubsection{   Hạn chế  }
+
+   Trong tất cả các test: 1 ≤ n ≤ 50000;  |a   $_    i   $   | ≤ 20000; |p| ≤ 10   $^    9   $   . Có 50\% số lượng test với n ≤ 2000.  
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu mẫu
+5 6
+-2
+3
+2
+-2
+3
+
+Kết qủa
+4
+
+Dữ liệu mẫu
+4 9
+2
+3
+2
+-2
+
+Kết qủa
+-1
+\end{verbatim}

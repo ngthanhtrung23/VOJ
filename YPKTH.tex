@@ -1,0 +1,48 @@
+
+
+Cho dãy số A có N phần tử nguyên phân biệt.
+
+Cho Q truy vấn, mỗi truy vấn có dạng: L R K
+
+\textbf{Yêu cầu: } mỗi truy vấn xuất ra phần tử lớn thứ K sau khi sắp xếp các phần tử A $_ L $ , A $_ L+1 $ , …, A $_ R $ theo thứ tự tăng dần.
+
+\textbf{Giới hạn: }
+
+1 ≤ N, Q ≤ 10 $^ 5 $
+
+|A $_ i $ | ≤ 10 $^ 9 $ với 1 ≤ i ≤ N
+
+1 ≤ L ≤ R ≤ N
+
+1 ≤ K ≤ R-L+1
+
+\textbf{Input: }
+\begin{itemize}
+	\item Dòng đầu tiên chứa số N.
+	\item Dòng tiếp theo chứa N số A $_ 1 $ , A $_ 2 $ , …, A $_ N $ .
+	\item Dòng tiếp theo chứa số Q.
+	\item Q dòng tiếp theo, mỗi dòng chứa 3 số L, R, K.
+\end{itemize}
+
+\textbf{Output: }
+
+Q dòng, mỗi dòng chứa câu trả lời cho một truy vấn theo thứ tự nhập vào.
+
+ 
+
+\textbf{Ví dụ: }
+\begin{verbatim}
+\textbf{Input}
+7
+2 1 5 4 3 6 8
+4
+1 2 2
+3 7 4
+4 6 2
+5 5 1
+
+\textbf{Output}
+2
+6
+4
+3\end{verbatim}

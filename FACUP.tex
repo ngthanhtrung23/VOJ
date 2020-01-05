@@ -1,0 +1,66 @@
+
+
+
+
+\subsection{   Cúp FA  }
+
+   Cúp FA là cúp bóng đá lâu đời nhất từ trước tới nay. Cup FA đá theo thể thức loại trực tiếp. Giải đấu gồm 2\textasciicircumN đội, đá trong N vòng. Vòng đầu tiên có 2\textasciicircum(N – 1) trận đấu, 2\textasciicircum(N – 1) đội thắng sẽ vào vòng 2. 2\textasciicircum(N – 1) đội thua bị loại. Cứ tiếp tục cho đến khi chỉ còn 1 đội duy nhất và đó là đội vô địch.  
+
+   Vòng 1 có 2\textasciicircum(N – 1) trận đấu được đánh số từ 1 đến 2\textasciicircum(N – 1). Ở vòng 1, đội 1 gặp đội 2, 3 gặp 4, …, đội (2k + 1) gặp đội (2k + 2). Ở vòng 2, đội thắng trận 1 sẽ gặp đội thắng trận 2, …, đội thắng trận (2k + 1) gặp đội thắng trận 2k + 2.  
+
+   Vòng 2 sẽ có 2\textasciicircum(N – 2) trận đấu. Các trận được đánh số lại từ 1 đến 2\textasciicircum(N – 2). Ở vòng 3, đội thắng trận 1 sẽ gặp đội thắng trận 2, …, đội thắng trận (2k + 1) gặp đội thắng trận 2k + 2.  
+
+   Các trận đấu sẽ không có tỉ số hòa (nếu hòa 2 đội sẽ đá penalty). Bạn đã biết kết quả bốc thăm ban đầu, và tỉ lệ khả năng thắng, thua giữa hai đội bất kì. Hãy sắp xếp các đội theo khả năng đội đó vô địch giảm dần.  
+
+\subsubsection{   Dữ liệu  }
+
+   Dòng thứ nhất ghi số N. (1 ≤ N ≤ 8)  
+
+   Tiếp theo là ma trận P gồm các số nguyên trong khoảng [0, 100] kích thước 2\textasciicircumN * 2\textasciicircumN. Trong đó P[x, y] là tỉ lệ phần trăm khả năng đội x thắng được đội y khi 2 đội gặp nhau. Dữ liệu đảm bảo P[x, y] + P[y, x] = 100; P[x, x] = 0.  
+
+\subsubsection{   Kết quả  }
+
+   Ghi ra 2\textasciicircumN dòng mỗi dòng ghi ra số hiệu của một đội được sắp xếp giảm dần theo cơ hội vô địch của đội đó. Nếu 2 đội có cùng cơ hội vô địch như nhau thì in ra đội có số hiệu nhỏ hơn trước.  
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu
+2
+ 0 90 50 50
+10  0 10 10
+50 90  0 50
+50 90 50  0
+
+Kết quả
+1
+3
+4
+2
+\end{verbatim}
+
+\subsubsection{   Giải thích  }
+
+   Hãy coi các đội lần lượt là MANCHESTER, FULHAM, ARSENAL, CHELSEA. 3 ông lớn MANCHESTER, ARSENAL, CHELSEA khi gặp FULHAM đều có khả năng thắng là 90\%, thua là 10\%. Khi 3 đội này gặp nhau thì khả năng thắng là chia đều 50-50. Nhưng do MANCHESTER có lợi thế về lịch thi đấu nên khả năng vô địch của họ là cao nhất.  \href{http://s37.photobucket.com/albums/e81/beo_chay_so/?action=view¤t=facup.png}{
+\includegraphics{http://i37.photobucket.com/albums/e81/beo_chay_so/facup.png}}
+
+   MANCHESTER vô địch nếu một trong hai trường hợp sau xảy ra:  
+
+   - MANCHESTER thắng FULHAM, MANCHESTER thắng ARSENAL và ARSENAL thắng CHELSEA. Tỉ lệ này là 90\% * 50\% * 50\% = 22.5\%  
+
+   - MANCHESTER thắng FULHAM, MANCHESTER thắng CHELSEA và CHELSEA thắng ARSENAL. Tỉ lệ này là 90\% * 50\% * 50\% = 22.5\%  
+
+   Tổng cộng MANCHESTER có 45\% cơ hội vô địch.  
+
+   ARSENAL vô địch nếu:  
+
+   - ARSENAL thắng CHELSEA, ARSENAL thắng MANCHESTER, MANCHESTER thắng FULHAM. Tỉ lệ này là 50\% * 50\% * 90\% = 22.5\%  
+
+   - ARSENAL thắng CHELSEA, ARSENAL thắng FULHAM, FULHAM thắng MANCHESTER. Tỉ lệ này là 50\% * 90\% * 10\% = 4.5\% Tổng cộng ARSENAL có 27\% cơ hội vô địch.  
+
+   CHELSEA được tính tương tự như ARSENAL và cũng có 27\% cơ hội vô địch.  
+
+   FULHAM vô địch nếu:  
+
+   - FULHAM thắng MANCHESTER, FULHAM thắng ARSENAL, ARSENAL thắng CHELSEA. Tỉ lệ này là 10\% * 10\% * 50\% = 0.5\%  
+
+   - FULHAM thắng MANCHESTER, FULHAM thắng CHELSEA, CHELSEA thắng ARSENAL. Tỉ lệ này là 10\% * 10\% * 50\% = 0.5\% Tổng cộng FULHAM chỉ có 1\% cơ hội vô địch.  

@@ -1,0 +1,54 @@
+
+
+
+
+   Cho trước một số nguyên K và hai văn bản dưới dạng hai xâu S và P (có độ dài không quá 50 ký tự), chỉ gồm các chữ cái in thường ('a'..'z').  
+
+   Người ta hiệu chỉnh cả hai văn bản theo quy tắc sau: tìm xâu con (nghĩa là một đoạn gồm các ký tự liên tiếp) chung dài nhất của hai xâu S và P. Sau đó nếu xâu con chung này có độ dài $>$=K thì xóa xâu con chung này khỏi S và P.  
+
+   Trong trường hợp có nhiều xâu con chung dài nhất, người ta chọn xâu để xóa theo quy tắc sau:  
+\begin{itemize}
+	\item     Chọn xâu con chung dài nhất có vị trí trái nhất thuộc xâu S   
+	\item     Nếu xâu này vẫn xuất hiện nhiều lần ở xâu P, chọn xâu có vị trí trái nhất thuộc xâu P   
+\end{itemize}
+
+   Quá trình này được lặp lại cho đến khi S và P không còn xâu con chung nào có độ dài $>$= K.  
+
+   Ví dụ, với K=2, S=aabhh, P=haahaa  
+
+   Bước 1:  S=       aa      bhh  P=h       aa      haa  
+
+   Bước 2:  S=b       hh      P=       hh      aa  
+
+   Kết thúc: S=b   P=aa  
+
+   Đến đây S và P không còn xâu con chung nào có độ dài $>$= 2. Ta kết thúc quá trình hiệu chỉnh văn bản.  
+
+   Bạn hãy lập trình thực hiện quá trình hiệu chỉnh văn bản trên và in ra số bước hiệu chỉnh, xâu S và P cuối cùng.  
+
+\subsubsection{   Dữ liệu  }
+\begin{itemize}
+	\item     Dòng 1: K   
+	\item     Dòng 2: S   
+	\item     Dòng 3: P   
+\end{itemize}
+
+\subsubsection{   Kết quả  }
+\begin{itemize}
+	\item     Dòng 1: số bước   
+	\item     Dòng 2: S   
+	\item     Dòng 3: P   
+\end{itemize}
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu
+2
+aabhh
+haahaa
+
+Kết quả
+2
+b
+aa
+\end{verbatim}

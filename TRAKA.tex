@@ -1,0 +1,64 @@
+
+
+ 
+
+As mentioned before, there are N workers in Mirko's factory. They are manufacturing cars on a conveyor belt, in a pipeline fashion.
+
+Workers are denoted by numbers 1 – leftmost, to N - rightmost. Each of the workers does his specific job and requires certain amount of time to complete it.
+
+Production of a single car starts with worker \#1 (Mirko). After he had finished with his part of the job, worker \#2 takes over, after him \#3... When worker \#N finishes with his part, the car is finished.
+
+Mirko and his workers have to produce M cars and they must produce them in order 1 to M.
+
+
+\\For every worker i we know T[i] - time required for him to do his part of the job.
+
+For every car j we know factor of assembly complexity F[j].
+
+Time in minutes for worker i to finish his part of he job on the car j is computed as a product T[i]*F[j].
+
+
+\\After some worker has finished working on a car, he has to give it to the next worker instantly, without any delay (weird company policy).
+
+For that reason, the worker receiving the car has to be free (he must not be working on some other car). In order to fulfill this condition, Mirko has to choose a good timing to start building a new car. To be efficient, he’ll wait minimum number of minutes until he is certain that all of the conditions described are met.
+
+Write a program which will, given worker times and factors of complexity for each car, compute total time required for producing all of the cars.
+
+\subsubsection{Input}
+
+First line of input contains space-separated positive integers N (1 ≤ N ≤ 100 000), number of workers, and M (1 ≤ M ≤ 100 000), number of cars.
+
+i-th of the following N lines contains worker time T[i] for the worker i.
+
+j-th of the following M lines contains factor of complexity F[j] for the car j.
+
+These conditions hold: 1 ≤ T[i] ≤ 10 000, 1 ≤ F[j] ≤ 10 000.
+
+ 
+
+\subsubsection{Output}
+
+First and only line of output has to contain required number of minutes.
+
+ 
+
+\textbf{In test cases worth 40\% of total points, N and M will be at most 1000. }
+
+ 
+\begin{verbatim}
+\textbf{Input:}
+3 3
+2
+1
+1
+2
+1
+1
+\end{verbatim}
+\begin{verbatim}
+\textbf{Output:}
+11\end{verbatim}
+
+ 
+
+\textbf{Sample description: } After four minutes, first worker finishes working on the first car. He might start working on the second car immediately, but that would violate a condition that cars have to be passed to next workers as soon as they' re done (after seven minutes second worker would finish working on his part of second car, but the third worker would not be free to take over as he would still be working on the first car). That is the reason production of the second car is started after five minutes. Production of the third car starts after seven minutes. First car is finished after eight, second after nine and third after eleven seconds. Total time is then 11.

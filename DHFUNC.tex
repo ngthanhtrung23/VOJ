@@ -1,0 +1,48 @@
+
+
+Dãy Fibonacci là dãy vô hạn các số tự nhiên bắt đầu bằng hai phần tử 1 và 1, các phần tử sau đó được thiết lập theo quy tắc mỗi phần tử bằng tổng hai phần tử trước nó. Công thức truy hồi của dãy Fibonacci như sau:
+\begin{itemize}
+	\item Fibonacci(n) = 1 với n = 1, 2
+	\item Fibonacci(n) = Fibonacci(n-1) + Fibonacci(n-2)
+\end{itemize}
+
+Xét hàm f(x,y) sau:
+\begin{itemize}
+	\item f(x,y) = x nếu y = 0
+	\item f(x,y) = y nếu x = 0
+	\item f(x,y) = alpha * f(x-1,y) + beta * f(x,y-1) + g(x, y) nếu x, y $>$ 0.
+\end{itemize}
+
+trong đó, g(x,y) là ước số chung lớn nhất của Fibonacci (x) và Fibonacci (y).
+
+\textbf{Yêu cầu:}
+
+Cho 4 số nguyên không âm x, y, α, β và số nguyên dương B, hãy tính hàm f(x,y) mod B.
+
+\textbf{Dữ liệu:}
+
+Vào từ thiết bị vào chuẩn: Dòng đầu tiên ghi số nguyên dương K là số lượng bộ dữ liệu.
+
+Tiếp đến là K dòng, mỗi dòng chứa 5 số nguyên x, y, α, β, B tương ứng với một bộ dữ liệu. Các số trên cùng một dòng được ghi cách nhau ít nhất một dấu cách.
+
+Kết quả: Ghi ra thiết bị ra chuẩn gồm K dòng, mỗi dòng ghi một số nguyên là giá trị hàm f tính được tương ứng với bộ dữ liệu trong file dữ liệu vào.
+\begin{itemize}
+	\item Subtask 1 (20/70 điểm): Giả thiết là x, y ≤ 10; α, β, B ≤ 10\textasciicircum6.
+	\item Subtask 2 (20/70 điểm): Giả thiết là x, y ≤ 50; α, β, B ≤ 10\textasciicircum9.
+	\item Subtask 3 (15/70 điểm): Giả thiết là x, y ≤ 50; α, β, B ≤ 10\textasciicircum18.
+	\item Subtask 4 (15/70 điểm): Giả thiết là x, y ≤ 500; α, β, B ≤ 10\textasciicircum18.
+\end{itemize}
+
+\textbf{Ví dụ:}
+\begin{verbatim}
+\textbf{Dữ liệu
+}3
+0 10 1 1 100
+10 0 1 1 100
+1 1 1 1 100
+\textbf{Kết quả}
+10
+10
+3
+
+\end{verbatim}

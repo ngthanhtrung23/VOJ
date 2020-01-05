@@ -1,0 +1,58 @@
+
+
+
+
+
+
+    Hằng năm cứ vào khoảng cuối tháng 10, hai trườnng trung học danh tiếng nhất ở nước Alphabet, trường XYZ và trường ABC, sẽ tổ chức giải bóng chuyền với mục đích tạo ra sân chơi lành mạnh giữa các học sinh của hai trường và cũng là dịp để các học sinh tìm hiểu kỹ hơn về trường bạn. Vì sân vận động rất lớn nên mỗi đội có tới    \textbf{     N    }    người chơi. Trường XYZ là một trường chuyên về các môn tự nhiên còn trường ABC là trường chuyên về các môn xã hội. Để chuẩn bị chiến thuật cho giải đấu sắp tới, trường XYZ cần phải biết    \textbf{     mức độ bá đạo    }    của đội bên kia. Nhờ quen biết rộng nên trường XYZ đã biết được    \textbf{     chỉ số trung bình    }    các thí sinh sắp tới sẽ chơi cho đội của trường ABC.    \textbf{     Độ bá đạo    }    của của một đội bóng chuyền sẽ có giá trị bằng    \textbf{     tổng độ bá đạo    }    của các thành viên trong đội và    \textbf{     lấy phần dư trong phép chia cho BASE    }    trong đó độ bá đạo của mỗi thành viên sẽ bằng lũy thừa bậc Q của chỉ số trung bình của thành viên đó. Biết rằng Q có dạng là    \textbf{     k     $^      T     $}    .   
+
+
+
+\textbf{     Yêu cầu:    }    Tính độ bá đạo của đội bóng trường ABC.   
+
+
+
+\subsubsection{    Dữ liệu vào   }
+
+
+\begin{itemize}
+	\item      Dòng đầu chứa số N, k, T, BASE trong đó N $<$=     \textbf{      10      $^       7      $      ,     }     k $<$=     \textbf{      50,     }     T $<$=     \textbf{      10      $^       5      $      ,     }     BASE $<$=     \textbf{      10      $^       12      $      .     }
+	\item      Dòng tiếp theo chứa 2 số nguyên dương là mul và seed.    
+	\item      Lưu ý:     \textbf{      30\%     }     số test T $<$=     \textbf{      5     }\textbf{      0     }     .    
+	\item      Nguyên tắc sinh dãy A với A[i] là chỉ số trung bình của thành viến thứ i như sau:    
+\begin{itemize}
+	\item        A[1] = (mul*seed  + seed)  mod maxC.      
+	\item        A[i]  = (A[i-1]*mul + seed) mod maxC.      
+	\item        a mod b là phép lấy phần dư của phép chia a cho b.      
+	\item \textbf{        0       }       $<$= mul, seed $<$=       \textbf{        10        $^         6        $}       .      
+	\item        maxC =       \textbf{\textbf{         2        }$^         20        $$^         .        $}
+\end{itemize}
+\end{itemize}
+
+
+
+\subsubsection{    Dữ liệu ra   }
+
+
+\begin{itemize}
+	\item      Gồm một dòng chứa mốt số nguyên là kết quả bài toán.    
+\end{itemize}
+
+
+
+\subsubsection{    Ví dụ   }
+
+
+
+\textbf{     Dữ liệu vào:    }
+
+    4 2 2 89133   
+
+    3 6   
+
+\textbf{     Dữ liệu ra:    }
+
+    50886   
+
+
+

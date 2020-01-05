@@ -1,0 +1,49 @@
+
+
+ 
+
+Bạn được cho một bảng hình chữ nhật kích thước R*C:
+\begin{itemize}
+	\item Trên bảng có một số khung hình chữ nhật rỗng (chỉ gồm 4 cạnh của hình chữ nhật).
+	\item Các khung hình chữ nhật có thể lồng nhau, nhưng không có 2 khung hình chữ nhật nào chạm nhau (nghĩa là không có ô nào của bảng thuộc nhiều hơn 1 khung hình chữ nhật, và không có 2 ô chung cạnh hay chung đỉnh thuộc 2 khung hình chữ nhật khác nhau). Nói cách khác, hai hình chữ nhật lồng nhau có nghĩa là một hình chữ nhật này nằm hoàn toàn bên trong một hình chữ nhật kia.
+	\item Mỗi ô trên bảng là 'o' hoặc '.'. Ký tự 'o' thể hiện ô đó thuộc một khung hình chữ nhật và ký tự '.' thể hiện ô đó không thuộc bất kỳ khung hình chữ nhật nào.
+\end{itemize}
+
+Bạn cần tìm dãy dài nhất các hình chữ nhật A(1), ..., A(k) mà A(1) nằm trong A(2), A(2) nằm trong A(3), ... Ai nằm trong A(i+1), ... A(k-1) nằm trong A(k)
+
+\subsubsection{Input}
+
+Dòng 1: số nguyên dương T - số lượng test
+
+Tiếp theo là T test, mỗi test gồm:
+\begin{itemize}
+	\item Dòng đầu: 2 số nguyên dương R và C
+	\item Tiếp theo là R dòng, mỗi dòng gồm C ký tự. Mỗi ký tự là 'o' hoặc '.'
+\end{itemize}
+
+\subsubsection{Output}
+
+Gồm T dòng, mỗi dòng một số nguyên duy nhất là kết quả của bài toán
+
+\subsubsection{Giới hạn}
+\begin{itemize}
+	\item R, C $<$= 2000
+	\item Không có khung hình chữ nhật nào nhỏ hơn 3x3.
+\end{itemize}
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+1
+8 11
+ooooooo....
+o.....o.ooo
+o.ooo.o.o.o
+o.o.o.o.ooo
+o.ooo.o....
+o.....o.ooo
+ooooooo.o.o
+........ooo\end{verbatim}
+\begin{verbatim}
+\textbf{Output:}
+2\end{verbatim}

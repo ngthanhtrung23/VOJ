@@ -1,0 +1,134 @@
+
+
+
+
+   The United Nations Regional Development Agency (UNRDA) has a very well defined organizational structure. It employs a total of   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.1.png}   people, each of them coming from one of   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.2.png}   geographically distinct regions of the world. The employees are numbered from   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.3.png}   to   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.4.png}   inclusive in order of seniority, with employee number   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.5.png}   , the Chair, being the most senior. The regions are numbered from   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.6.png}   to   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.7.png}   inclusive in no particular order. Every employee except for the Chair  has a single supervisor. A supervisor is always more senior than the  employees he or she supervises.  
+
+   We say that an employee   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.8.png}   is a manager of employee   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.9.png}   if and only if   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.10.png}   is   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.11.png}   's supervisor or   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.12.png}   is a manager of   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.13.png}   's  supervisor. Thus, for example, the Chair is a manager of every other  employee. Also, clearly no two employees can be each other's managers.  
+
+   Unfortunately, the United Nations Bureau of Investigations (UNBI)  recently received a number of complaints that the UNRDA has an  imbalanced organizational structure that favors some regions of the  world more than others. In order to investigate the accusations, the  UNBI would like to build a computer system that would be given the  supervision structure of the UNRDA and would then be able to answer  queries of the form: given two different regions   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.14.png}   and   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.15.png}   , how many pairs of employees   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.16.png}   and   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.17.png}   exist in the agency, such that employee   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.18.png}   comes from region   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.19.png}   , employee   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.20.png}   comes from region   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.21.png}   , and   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.22.png}   is a manager of   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.23.png}   . Every query has two parameters: the regios   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.24.png}   and   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.25.png}   ; and its result is a single integer: the number of different pairs   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.26.png}   and   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.27.png}   that satisfy the above-mentioned conditions.  
+
+\subsection{   Task  }
+
+   Write a program that, given the home regions of all of the agency's  employees, as well as data on who is supervised by whom, answers queries  as described above.  
+
+\subsection{   Constraints  }
+
+
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.28.png}   - the number of employees   
+\\
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.29.png}   - the number of regions   
+\\
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.30.png}   - the number of queries your program will have to answer   
+\\
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.31.png}   - the home region of employee   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.32.png}   (for   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.33.png}   )   
+\\
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.34.png}   - the supervisor of employee   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.35.png}   (for   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.36.png}   )   
+\\
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.37.png}   - the regions inquired about in a given query  
+
+\subsection{   Input  }
+
+   Your program must read from standard input the following data:  
+\begin{itemize}
+	\item     The first line contains the integers    
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.38.png}    ,    
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.39.png}    and    
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.40.png}    , in order, separated by single spaces.   
+	\item     The next    
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.41.png}    lines describe the    
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.42.png}    employees of the agency in order of seniority. The    
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.43.png}    th of these    
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.44.png}    lines describes employee number    
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.45.png}    . The first of these lines (i.e., the one describing the Chair) contains a single integer: the home region    
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.46.png}    of the Chair. Each of the other    
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.47.png}    lines contains two integers separated by a single space: employee    
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.48.png}    's supervisor    
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.49.png}    , and employee    
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.50.png}    's home region    
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.51.png}    .   
+	\item 
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.52.png}    queries follow. Each query is presented on a single line of standard  input and consists of two different integers separated by a single  space: the two regions    
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.53.png}    and    
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.54.png}    .   
+\end{itemize}
+
+\subsection{   Output  }
+
+
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.55.png}   lines should be printed to the standard output, containing answers to  subsequent queries.   The response to each query must be a single line  on standard output containing a single integer: the number of pairs of  UNRDA employees   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.56.png}   and   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.57.png}   , such that   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.58.png}   's home region is   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.59.png}   ,   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.60.png}   's home region is   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.61.png}   and   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.62.png}   is a manager of   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.63.png}   .  
+
+\textbf{    Note:   }   The test data will be such that the correct answer to any query given on standard input will always be less than   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.64.png}   .  
+
+\subsection{   Grading  }
+
+   For a number of tests, worth a total of 30 points,   
+\includegraphics{http://main.edu.pl/en/images/IOI2009/reg-en-tex.65.png}   will not exceed 500.   
+\\   For a number of tests, worth a total of 55 points, no region will have more than 500 employees.   
+\\   The tests where both of the above conditions hold are worth 15 points.   
+\\   The tests where at least one of the two conditions holds are worth 70 points.  
+
+\subsection{   Example  }
+
+   For the input data:  
+\begin{verbatim}
+6 3 4
+1
+1 2
+1 3
+2 3
+2 3
+5 1
+1 2
+1 3
+2 3
+3 1
+\end{verbatim}
+
+   the correct result is:  
+\begin{verbatim}
+1
+3
+2
+1
+\end{verbatim}

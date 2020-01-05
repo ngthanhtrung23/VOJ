@@ -1,0 +1,48 @@
+
+
+
+
+
+
+
+
+   Hà Nội đang xây dựng hệ thống tàu điện ngầm. Hệ thống tàu điện ngầm bao gồm M ga được đánh số từ 1 đến M và K tuyến tàu điện ngầm kết nối trực tiếp giữa các cặp ga. Khu vực nội đô Hà Nội có T tòa nhà chung cư rời nhau được mô tả trên bản đồ là các đa giác lồi được đánh số từ 1 đến T. Các tuyến tàu điện ngầm có thể đi ngầm dưới các tòa nhà chung cư.  Tốc độ của tàu điện ngầm khi chạy ngầm dưới các tòa nhà chung cư kể cả ngầm dưới biên là v1 và v2 khi chạy trên các đoạn khác (v1 $<$ v2). Thời gian đi giữa hai ga a và b là thời gian nhỏ nhất để đi từ a đến b (có thể đi qua các ga trung gian và thời gian chuyển tuyến là không đáng kể). Người ta phải chọn ga trung tâm từ những ga đã có sao cho thời gian đi từ ga trung tâm đến ga xa nó nhất (tính theo thời gian đi) là nhỏ nhất.  
+
+   Hình dưới đây mô tả một hệ thống tàu điện ngầm với bốn ga và bốn tuyến tàu điện ngầm. Trong khu vực nội đô có ba tòa nhà chung cư và trên hai đoạn đường tàu điện ngầm phải chạy với tốc độ v1.  
+
+
+\includegraphics{http://vn.spoj.com/content/HNSUBWAY.gif}
+
+   Cho trước một hệ thống tàu điện ngầm, nhiệm vụ của bạn là viết một chương trình để tìm ra ga trung tâm thỏa mãn yêu cầu nói trên và đưa ra thời gian đi từ ga trung tâm tìm được đến ga xa nó nhất.  
+
+\subsubsection{   Dữ liệu vào  }
+
+   Dữ liệu vào gồm nhiều bộ dữ liệu tương ứng với nhiều test. Dòng đầu tiên chứa một số nguyên dương không lớn hơn 20 là số lượng các bộ dữ liệu. Các dòng tiếp theo chứa các bộ dữ liệu.  
+
+   Với mỗi bộ dữ liệu, dòng đầu tiên chứa năm số nguyên M, K, T, v1, v2 (M $<$ 31, K $<$ 50, T $<$ 10, 0 $<$ v1 $<$ v2 $<$ 100) cách nhau bởi dấu cách, tương ứng là số lượng ga, số lượng tuyến tàu điện ngầm, số lượng tòa nhà chung cư, tốc độ của tàu điện ngầm khi đi ngầm dưới tòa nhà chung cư, và tốc độ của tàu điện ngầm khi không đi ngầm dưới tòa nhà chung cư. Dòng thứ i trong M dòng tiếp theo chứa hai số nguyên Xi và Yi (-10000 ≤ Xi,Yi ≤ 10000) cách nhau bởi dấu cách là tọa độ của ga thứ i. Dòng thứ j trong K dòng tiếp theo chứa hai số nguyên cách nhau bởi dấu cách là số hiệu của hai ga ở hai đầu của tuyến tàu điện ngầm thứ j. Dòng thứ g trong T dòng tiếp theo chứa mô tả của tòa nhà chung cư thứ g. Dòng này chứa số nguyên Vg (Vg $<$ 8) là số lượng đỉnh của đa giác mô tả tòa nhà chung cư thứ g và tiếp theo là Vg cặp số nguyên (có trị tuyệt đối không lớn hơn 10000) cách nhau bởi dấu cách là tọa độ đỉnh của đa giác đó theo một thứ tự đi vòng quanh đa giác.  
+
+\subsubsection{   Dữ liệu ra  }
+
+   Với mỗi bộ dữ liệu, ghi ra trên một dòng một số nguyên là phần nguyên của (tmax * 100) với tmax là thời gian đi từ ga trung tâm tìm được đến ga xa nó nhất.  
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+\textbf{Dữ liệu vào}
+1
+4 4 3 1 2
+1 8
+7 8
+7 1
+14 8
+1 2
+2 3
+2 4
+3 4
+3 4 8 6 5 2 5
+4 7 6 9 6 9 4 7 4
+6 10 8 11 9 12 9 13 8 12 7 11 7	
+
+\textbf{Dữ liệu ra}
+500
+\end{verbatim}
+

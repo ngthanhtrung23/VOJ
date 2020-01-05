@@ -1,0 +1,46 @@
+
+
+
+
+   Gần như toàn bộ vương quốc Byteland được che phủ bởi những cánh rừng và các con sông. Các dòng sông nhỏ gặp nhau để tạo thành dòng sông lớn hơn. Các dòng sông lớn này lại gặp nhau và cuối cùng sẽ đều chảy về một dòng sông chính. Dòng sông chính này đổ ra biển ở gần thành phố Bytetown.  
+
+   Có n làng thợ chặt gỗ ở Byteland, mỗi làng đặt gần một con sông. Hiện nay, có một xưởng cưa lớn Bytetown có nhiệm vụ chế biến tất cả các cây gỗ bị chặt trong vương quốc. Những cây gỗ này chảy từ các làng theo các dòng sông xuống xưởng cưa ở Bytetown. Vua Byteland quyết định sẽ xây dựng thêm k xưởng cưa ở các làng để giảm chi phí vận chuyển các cây gỗ qua đường sông. Sau khi xây dựng các trạm cưa, các cây gỗ không cần phải trôi về Bytetown mà chỉ cần trôi đến xưởng cưa đầu tiên mà chúng gặp theo dòng chảy. Hiển nhiên là những cây gỗ được đốn ở gần các làng có xưởng cưa thì không cần phải vận chuyển qua đường sông nữa. Lưu ý rằng các dòng sông ở Byteland không rẽ nhánh. Do vậy, với mỗi làng, có một đường xuôi dòng chảy duy nhất đến Bytetown.  
+
+   Kế toán của vua đã tính được số lượng cây mỗi làng sẽ đốn mỗi năm. Bạn hãy viết chương trình giúp vua tìm các địa điểm để xây dựng xưởng cưa sao cho tổng chi phí vận chuyển các cây là nhỏ nhất. Chi phí vận chuyển theo đường sông là 1 xu mỗi kilomet, mỗi cây.  
+
+\subsubsection{   Yêu cầu  }
+
+   Viết chương trình nhập vào số làng, số xưởng cưa cần xây dựng thêm, số cây được cắt ở mỗi làng và sơ đồ mô tả các dòng sông, tính tổng chi phí vận chuyển nhỏ nhất có thể sau khi xây dựng thêm các xưởng cưa.  
+
+\subsubsection{   Dữ liệu  }
+
+   Dòng đầu tiên chứa 2 số nguyên: n - số làng ngoại trừ Bytetown (2 ≤ n ≤ 100 ), và k - số xưởng cưa cần xây dựng thêm (1 ≤ k ≤ 50 and k ≤ n). Các làng được đánh số 1, 2, ..., n. Bytetown có số hiệu là 0.  
+
+   Mỗi trong số n dòng sau chứa 3 số nguyên, cách nhau bởi khoảng trắng. Dòng i+1 chứa:  
+\begin{itemize}
+	\item     w    $_     i    $    — số cây được đốn ở làng i mỗi năm (0 ≤ w    $_     i    $    ≤ 10 000 ),   
+	\item     v    $_     i    $    — số hiệu của làng đầu tiên (hoặc Bytetown) xuôi dòng sông từ làng i (0 ≤ v    $_     i    $    ≤ n),   
+	\item     d    $_     i    $    — khoảng cách (tính theo kilomet) đường sông từ làng i đến làng vi (1 ≤ d    $_     i    $    ≤ 10 000 ).   
+\end{itemize}
+
+   Dữ liệu luôn đảm bảo rằng tổng chi phí để vận chuyển tất cả cây gỗ về Bytetown trong một năm không vượt quá 2 000 000 000 xu.  
+
+\subsubsection{   Kết quả  }
+
+   In ra một số duy nhất là tổng chi phí nhỏ nhất.  
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu
+4 2
+1 0 1
+1 1 10
+10 2 5
+1 2 3
+
+Kết quả
+4
+\end{verbatim}
+\includegraphics{http://www.spoj.pl/OI/content/RIVERS.jpg}
+
+   Hình vẽ trên mô tả test đề bài. Số hiệu của các làng được ghi trong các vòng tròn. Các số ở dưới vòng tròn cho biết số cây được đốn ở làng tương ứng. Số trên mũi tên mô tả độ dài của đoạn đường sông. Trong trường hợp này, hai xưởng cưa cần được xây dựng ở lang 2 và làng 3.  

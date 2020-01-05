@@ -1,0 +1,39 @@
+
+
+Một mạng giao thông gồm N nút giao thông, và có M đường hai chiều nối một số cặp nút, thông tin về một đường gồm ba số nguyên dương u, v là tên hai nút đầu mút của đường, và l là độ dài đoạn đường đó. Biết rằng hai nút giao thông bất kì có không quá 1 đường hai chiều nhận chúng làm hai đầu mút.
+\\Cho hai nút giao thông s và f, hãy tìm hai đường đi nối giữa s với f sao cho hai trên hai đường không có cạnh nào được đi qua hai lần và tổng độ dài 2 đường đi là nhỏ nhất.
+
+\subsubsection{Input}
+\begin{itemize}
+	\item Dòng đầu ghi N, M (N ≤ 100)
+	\item Dòng thứ 2 ghi hai số s, f.
+	\item M dòng tiếp theo, mỗi dòng mô tả một đường gồm ba số nguyên dương u, v, l.
+\end{itemize}
+
+\subsubsection{Output}
+\begin{itemize}
+	\item Dòng đầu ghi T là tổng độ dài nhỏ nhất tìm được hoặc -1 nếu không tìm được.
+	\item Nếu tìm được, hai dòng sau, mỗi dòng mô tả một đường đi gồm: số đầu là số nút trên đường đi này, tiếp theo là dãy các nút trên đường đi bắt đầu từ s, kết thúc tại f.
+\end{itemize}
+
+Chú ý: \emph{ Phạm vi tính toán trong vòng Longint. }
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input}
+5 8
+1 5
+1 2 1
+1 4 8
+2 3 5
+2 4 1
+3 5 1
+4 3 8
+4 5 1
+1 3 1
+
+\textbf{Output}
+5
+3 1 3 5 
+4 1 2 4 5
+\end{verbatim}

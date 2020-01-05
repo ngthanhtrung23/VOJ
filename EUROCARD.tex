@@ -1,0 +1,65 @@
+
+
+Như vậy là chỉ còn một tuần nữa, quả bóng Tango 12 sẽ bắt đầu lăn trên các sân cỏ Poland và Ukraine, 2 quốc gia đăng cai tổ chức EURO 2012 - ngày hội bóng đá được mong chờ nhất trong năm nay. Trong bầu không khí đang nóng dần lên từng ngày này, EURO 2012 đã được rất nhiều doanh nghiệp chọn làm chủ đề cho các chương trình khuyến mãi hay sự kiện với mục đích thu hút sự quan tâm từ lực lượng đông đảo fan hâm mộ môn thể thao vua. Do đó, các nhà tổ chức kì thi Virtual Marathon 2012 (VM12) quyết định treo giải thưởng một cặp vé xem trận chung kết dành cho đội vô địch kì thi này. Đội của Raldono và Balitello, hai nhân vật chính của chúng ta hôm nay, dù đã cố gắng hết sức nhưng đành dừng bước ở vị trí thứ 7, nhận được giải khuyến khích cùng một phần quà từ ban tổ chức.
+\\
+\\Phần quà là \textbf{ T } tấm poster hình chữ nhật, mỗi tấm được chia ra thành \textbf{ M } x \textbf{ N } ô vuông nhỏ (kích thước M, N cho các tấm poster có thể khác nhau). Trong đó, mỗi ô là một tấm thẻ sưu tập hình các cầu thủ nổi tiếng. Raldono quyết định chia các tấm thẻ cho hai người theo cách sau. Ban đầu mỗi người sẽ chọn tất cả tấm thẻ có hình cầu thủ mình yêu thích, sau đó những tấm thẻ còn lại trên poster sẽ được chia ngẫu nhiên. Balitello lại muốn sau khi chia xong các tấm thẻ, nếu cắt ra 1 hình vuông bất kì (có các cạnh song song với cạnh của poster) từ tấm poster thì chênh lệch số thẻ được chia cho mỗi người trong hình vuông đó không vượt quá 2.
+
+
+\\Với mỗi tấm poster, cho biết những tấm thẻ có hình cầu thủ yêu thích của mỗi người, hãy giúp Raldono và Balitello đếm xem có tất cả bao nhiêu cách chia các tấm thẻ trên tấm poster đó thỏa yêu cầu của cả hai đặt ra.
+
+\subsubsection{Input}
+
+Dòng 1 ghi số \textbf{ T } , số tấm poster.
+
+Tiếp theo là T bộ test, mỗi bộ được mô tả như sau:
+\begin{itemize}
+	\item Dòng đầu ghi số \textbf{ M } và \textbf{ N } .
+\end{itemize}
+\begin{itemize}
+	\item Dòng thứ i trong M dòng tiếp theo gồm N kí tự, kí tự thứ j mô tả tấm thẻ ở hàng i cột j của tấm poster ('R' nếu chứa hình cầu thủ Raldono yêu thích, 'B' nếu chứa hình cầu thủ Balitello yêu thích, '.' là những tấm thẻ sẽ được chia ngẫu nhiên).
+\end{itemize}
+
+\subsubsection{Output}
+
+Xuất ra T dòng, mỗi dòng chứa kết quả là số cách chia cho tấm poster tương ứng.
+
+\subsubsection{Constraints}
+\begin{itemize}
+	\item 1 ≤ \textbf{ T } ≤ 1000.
+\end{itemize}
+\begin{itemize}
+	\item 1 ≤ \textbf{ M } , \textbf{ N } ≤ 5.
+\end{itemize}
+
+\subsubsection{Example}
+
+\textbf{Input }
+\begin{verbatim}
+5
+2 2
+BR
+RB
+4 4
+..RR
+.BRR
+.BB.
+....
+2 3
+...
+BBR
+3 3
+BBB
+BR.
+...
+3 3
+...
+.R.
+...  \textbf{ }\end{verbatim}
+
+\textbf{Output }
+\begin{verbatim}
+1
+0
+6
+3
+102\end{verbatim}

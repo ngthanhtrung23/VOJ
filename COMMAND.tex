@@ -1,0 +1,60 @@
+
+
+
+
+\subsubsection{   Đề bài  }
+
+   Cho một dãy lệnh điều khiển robot 'S': đi thẳng 1 đơn vị, 'L' quay trái 90 độ, 'R' quay phải 90 độ; dãy lệnh được lặp lại vô số lần. Ta nói đường đi của robot là bị chặn (bounded) nếu tồn tại một số R sao cho khi thực hiện dãy lệnh vô hạn lần robot vẫn không bao giờ đi ra khỏi đường tròn bán kính R có tâm là điểm xuất phát của robot. Hãy cho biết đường đi là bị chặn hay không bị chặn.  
+
+\subsubsection{   Dữ liệu  }
+\begin{itemize}
+	\item     Mỗi test bắt đầu bằng thẻ "[CASE]", các test cách nhau bởi một dòng trắng. Thẻ "[END]" báo hiệu kết thúc file input.   
+	\item     Tiếp theo là dòng "$<$$<$".   
+	\item     Mỗi dòng tiếp theo mô tả một phần của dãy lệnh. Nối tất cả các chuỗi lại để được dãy lệnh đầy đủ.   
+	\item     Kết thúc bằng dòng "$>$$>$'.   
+\end{itemize}
+
+\subsubsection{   Kết quả  }
+\begin{itemize}
+	\item     Với mỗi test in ra "bounded" nếu đường đi bị chặn và "unbounded" nếu đường đi không bị chặn.   
+\end{itemize}
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     Số chuỗi lệnh nằm từ 1..50. Mỗi lệnh có từ 1 đến 50 ký tự 'S', 'L' hoặc 'R'.   
+\end{itemize}
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu
+[CASE]
+$<$$<$
+L
+$>$$>$
+
+[CASE]
+$<$$<$
+SRSL
+$>$$>$
+
+[CASE]
+$<$$<$
+SSSS
+R
+$>$$>$
+
+[CASE]
+$<$$<$
+SRSL
+LLSSSSSSL
+SSSSSS
+L
+$>$$>$
+
+[END]
+Kết quả
+bounded
+unbounded
+bounded
+unbounded
+\end{verbatim}

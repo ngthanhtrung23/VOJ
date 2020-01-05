@@ -1,0 +1,89 @@
+
+
+
+
+   Trước đây Mirko đã sáng lập một đại lý du lịch tên là "Giấc mơ băng". Đại lý đã mua N hòn đảo phủ băng gần Nam Cực và bây giờ đang tổ chức các cuộc thám hiểm. Đặc biệt nổi tiếng ở đây là loài chim cánh cụt hoàng đế, có thể được tìm thấy với số lượng lớn trên các hòn đảo.  
+
+   Đại lý của Mirko's đã trở nên cực kỳ thành công; cực kỳ lớn đến nỗi nó không còn hiệu quả cho việc sử dụng thuyền để thám hiểm. Đại lý sẽ phải xây các cây cầu giữa các hòn đảo và vận chuyển hành khách bằng xe buýt. Mirko muốn giới thiệu một chương trình máy tính để quản lý việc xây cầu sao cho có ít sai sót nhất.  
+
+   Các hòn đảo được đánh số từ 1 đến N. Ban đầu không có hai hòn đảo nào được nối bằng cầu. Số lượng chim cánh cụt ban đầu trên mỗi đảo cũng được cho biết. Số lượng này có thể thay đổi sau này, nhưng luôn luôn nằm trong khoảng từ 0 đến 1000.  
+
+   Chương trình của bạn phải thực hiện 3 loại lệnh sau:  
+\begin{itemize}
+	\item     "bridge A B" – một đề nghị yêu cầu xây cầu giữa hai đảo A và B (A và B phải khác nhau). Để giới hạn chi phí, chương trình của bạn chỉ được chấp nhận đề nghị này nếu như chưa tồn tại một cách đi từ một trong 2 đảo đến đảo còn lại mà sự dụng các cây cầu đã xây trước đó. Nếu đề nghị được chấp nhận, chương trình phải in ra "yes", và sau đó cây cầu được xây. Nếu đề nghị bị từ chối, chương trình phải in ra "no".   
+	\item     "penguins A X" – các chú chim cánh cụt trên đảo A đã được đếm lại và bây giờ có X con. Đây chỉ là một lệnh có tính chất thông báo và chương trình không cần phải trả lời.   
+	\item     "excursion A B" – một nhóm khách du lịch muốn tổ chức một cuộc thám hiểm từ đảo A đến đảo B. Nếu có thể tổ chức được (có thể đi từ A đến B qua các cầu đã xây), chương trình phải in ra tổng số lượng chim cánh cụt mà nhóm khách du lịch sẽ thấy trên hành trình (kể cả ở đảo A và B). Ngược lại, chương trình phải in ra "impossible".   
+\end{itemize}
+
+
+
+\subsubsection{   Input  }
+
+   Dòng đầu tiên chứa số nguyên N (1 ≤ N ≤ 30 000), số lượng đảo.  
+
+   Dòng thứ hai chứa N số nguyên nằm trong khoảng từ 0 đến 1000, số lượng chim cánh cụt ban đầu ở mỗi đảo.  
+
+   Dòng thứ ba chứa số nguyên Q (1 ≤ Q ≤ 300 000), số lượng câu lệnh.  
+
+   Q lệnh theo sau đó, mỗi lệnh trên 1 dòng.  
+
+\subsubsection{   Output  }
+
+   Trả lời cho các câu lệnh "bridge" và "excursion", mỗi câu trên 1 dòng.  
+
+\subsubsection{   Example  }
+\begin{verbatim}
+Input:
+5
+4 2 4 5 6
+10
+excursion 1 1
+excursion 1 2
+bridge 1 2
+excursion 1 2
+bridge 3 4
+bridge 3 5
+excursion 4 5
+bridge 1 3
+excursion 2 4
+excursion 2 5
+
+Output:
+4
+impossible
+yes
+6
+yes
+yes
+15
+yes
+15
+16
+
+
+Input:
+6
+1 2 3 4 5 6
+10
+bridge 1 2
+bridge 2 3
+bridge 4 5
+excursion 1 3
+excursion 1 5
+bridge 3 4
+excursion 1 5
+penguins 3 10
+excursion 1 3
+bridge 1 5
+
+Output:
+yes
+yes
+yes
+6
+impossible
+yes
+15
+13
+no
+\end{verbatim}

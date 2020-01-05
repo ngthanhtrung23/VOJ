@@ -1,0 +1,38 @@
+
+
+
+
+   Thể thức của cuộc thi tin học HAOI mỗi năm lại được thay đổi để không làm thí sinh cảm thấy nhàm chán. Chắc hẳn các bạn vẫn nhớ những cuộc thi HAOI 3000, 4000 đã được mô tả những lần trước. Đến lần thứ 5000, cuộc thi lại được xây dựng theo một phong cách khác hẳn. Phòng thi là một khu có dạng hình tròn với N máy tính đặt cách đều nhau. Máy thứ 1 được đặt giữa máy thứ N và máy thứ 2, máy thứ 2 được đặt giữa máy thứ 1 và máy thứ 3, cứ như vậy đến máy thứ N thì được đặt giữa máy N – 1 và máy thứ 1. Phòng thi có kích thước rất lớn những lại chỉ có một số thí sinh tham gia cuộc thi này thậm chí vấn đề còn trở nên phức tạp hơn khi có thể có nhiều thí sinh cùng thi trên một máy (kiểu như thi đồng đội). Khoảng cách giữa 2 máy tính được định nghĩa là khoảng cách để đi từ máy này đến máy kia (tính theo đường ngắn hơn). Nói cách khác, khoảng cách giữa hai máy u và v là min(|u – v|, N – |u – v|).  
+
+   Giám thị MSN đang cần tìm một vị trí để có thể bao quát phòng thi tốt nhất. Vị trí quan sát tốt nhất là tại máy tính mà tổng khoảng cách của nó đến các máy đang thi là nhỏ nhất (nếu có một máy tính có nhiều thí sinh cùng dự thi thì khoảng cách đến máy đó phải được tính nhiều lần).  
+
+\subsubsection{   Input  }
+\begin{itemize}
+	\item     Dòng đầu tiên là hai số nguyên dương N và K lần lượt là tổng số máy tính có trong phòng thi và số thí sinh đang dự thi.   
+	\item     Dòng tiếp theo ghi K số nguyên trong khoảng [1, n]. Số thứ u thể hiện số hiệu máy tính của thí sinh thứ u.   
+\end{itemize}
+
+\subsubsection{   Output  }
+\begin{itemize}
+	\item     Dòng đầu tiên gồm một số là khoảng cách nhỏ nhất tìm được.   
+	\item     Dòng thứ hai gồm một số là số lượng các máy tính có thể chọn   
+	\item     Dòng thứ ba gồm một số số là danh sách số hiệu các máy tính có tổng khoảng cách tới các máy đang thi là nhỏ nhất   
+\end{itemize}
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     1 ≤ N ≤ 10    $^     6    $
+	\item     1 $<$ K ≤ 10    $^     5    $
+\end{itemize}
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Input:
+20 10
+1 1 18 5 6 14 7 4 8 9
+
+Output:
+35
+2
+5 6
+\end{verbatim}

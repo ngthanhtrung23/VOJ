@@ -1,0 +1,36 @@
+
+
+
+
+   Trong một bản nhạc thường có những đoạn nhạc mà tác giả sử dụng nó nhiều lần ( ít nhất 2 lần ). Những đoạn đó gọi là "đoạn cao trào". Do có thể sử dụng nhiều giọng khác nhau ( son, la, si...) nên nốt đầu tiên của các lần xuất hiện có thể khác nhau, nhưng chệnh lệnh độ cao giữa hai nốt liên tiếp thì chắc chắn giống.   
+\\   VD: hai đoạn sau   
+\\   1 2 5 4 10   
+\\   và   
+\\   4 5 8 7 13   
+\\   được coi là một đoạn cao trào, vì chúng cùng sự chênh lệch độ cao : +1,+3,-1,+6   
+\\   Cho một bản nhạc, yêu cầu tìm độ dài đoạn cao trào dài nhất.   
+\\   + Đoạn cao trào phải có từ 5 nốt nhạc trở lên.   
+\\   + Những lần xuất hiện của đoạn không được chồng lên nhau ( không có nốt nhạc chung ).   
+\\
+
+\subsubsection{   Input  }
+
+   Dòng 1 : n = số nốt nhạc $<$= 5000   
+\\   Một số dòng sau là n nốt nhạc, mỗi nốt được quy ra số tự nhiên trong phạm vi 1..88.   
+\\
+
+\subsubsection{   Output  }
+
+   1 dòng chứa 1 số duy nhất là độ dài đoạn cao trào dài nhất. Nếu không tìm được đoạn nhạc nào, in ra 0.  
+
+\subsubsection{   Example  }
+\begin{verbatim}
+Input:
+30
+25 27 30 34 39 45 52 60 69 79 69 60 52 45 39 34 30 26 22 18
+82 78 74 70 66 67 64 60 65 80
+
+
+Output:
+5
+\end{verbatim}

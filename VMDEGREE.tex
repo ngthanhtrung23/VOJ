@@ -1,0 +1,44 @@
+
+
+Những cây cầu dừa nối những hòn đảo của Pirate đang gây trở ngại lớn cho anh ấy khi việc kinh doanh ngày càng mở rộng. Một ngày nọ, Pirate quyết định thiết kế một hệ thống đường mới nối các hòn đảo với nhau. Mỗi đường nối sẽ rộng hơn trước và cho phép di chuyển theo hai chiều. Để tiết kiệm chi phí, giữa hai hòn đảo chỉ nên có một đường nối trực tiếp. Bản vẽ đã xong hoàn thành, giờ chỉ còn việc bắt tay vào xây dựng. Tuy nhiên, do tính đãng trí kinh niên của mình, Pirate đã làm mất bản vẽ thiết kế. Lục tung đống giấy tờ thì chỉ còn lại một mảnh giấy thống kê về số hòn đảo (khác) có đường nối trực tiếp đối với từng hòn đảo.
+
+Việc nâng cấp không thể chậm trễ được, Pirate cần phải bắt tay vào vẽ lại bảng thiết kế dựa vào bảng thống kê trên. Nhưng khổ một nỗi, anh vẫn đang nghi ngờ tính chính xác của bảng thống kê này. Vì thế, trước hết, các bạn hãy giúp Pirate xác định xem có tồn tại một hệ thống đường thỏa mãn bảng thống kê tìm được không.
+
+\subsubsection{Input}
+
+-   Dòng thứ nhất ghi một số nguyên \textbf{ T } – số bộ test.
+
+-   Tiếp theo là \textbf{ T } test, mỗi test được mô tả như sau:
+
++ Dòng đàu tiên ghi một số nguyên \textbf{ N } – số lượng các hòn đảo.
+
++ \textbf{ N } dòng tiếp theo: mô tả bảng thống kê.
+
+\subsubsection{Output}
+
+-   Gồm \textbf{ T } dòng, mỗi dòng ghi “YES” nếu có tồn tại một hệ thống đường thỏa mãn bảng thống kê trong test tương ứng, hoặc “NO” nếu ngược lại.
+
+\subsubsection{Giới hạn}
+\begin{itemize}
+	\item 1 ≤ T ≤ 10.
+	\item 1 ≤ \textbf{ N } ≤ 10 $^ 5 $ .
+	\item 60\% bộ test có 1 ≤ \textbf{ N } ≤ 10 $^ 3 $ .
+	\item Mỗi số trong input là một số nguyên không âm không quá 10 $^ 9 $ .
+\end{itemize}
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+1
+4
+2
+2
+1
+1\end{verbatim}
+\begin{verbatim}
+\textbf{Output:}
+YES
+
+\includegraphics{http://i259.photobucket.com/albums/hh288/phongtinptnk0710/Untitled.jpg}\end{verbatim}
+
+\emph{Giải thích: Có 4 hòn đảo, số lượng đường nối trực tiếp với từng hòn đảo lần lượt là 2, 2, 1, 1. Ta có thể xây dựng được một hệ thống đường như hình vẽ. }

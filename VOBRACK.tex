@@ -1,0 +1,51 @@
+
+
+
+
+   Ngoài việc chơi với các bảng số 01, Bé còn rất thích chơi với những dãy ngoặc. Hôm nay, mẹ cho Bé N dãy ngoặc. Bé muốn tạo được một dãy ngoặc đúng bằng việc nối một số dãy ngoặc lại với nhau. Bạn hãy giúp bé nhé.  
+
+   Một dãy ngoặc đúng được định nghĩa theo kiểu đệ quy như sau:  
+\begin{itemize}
+	\item     Dãy rỗng - dãy không gồm ký tự nào - là dãy ngoặc đúng.   
+	\item     Nếu X là một dãy ngoặc đúng, thì (X) cũng là một dãy ngoặc đúng. Ví dụ, vì X = ()() là một dãy ngoặc đúng nên (()()) cũng là một dãy ngoặc đúng.   
+	\item     Nếu X và Y là hai dãy ngoặc đúng, thì XY là một dãy ngoặc đúng. Ví dụ, vì X = (()) và Y = () là các dãy ngoặc đúng, nên XY = (())() cũng là dãy ngoặc đúng.   
+\end{itemize}
+
+   Một số ví dụ về các dãy không phải là dãy ngoặc đúng: )(, (())), ((()...  
+
+\subsubsection{   Input  }
+\begin{itemize}
+	\item     Dòng 1: Số nguyên dương N duy nhất   
+	\item     N dòng tiếp, mỗi dòng ghi 1 dãy ngoặc   
+\end{itemize}
+
+\subsubsection{   Output  }
+
+   Độ dài của dãy ngoặc lớn nhất tìm được  
+
+\subsubsection{   Chấm điểm  }
+\begin{itemize}
+	\item     Trong quá trình thi, bài của bạn sẽ chỉ được chấm với một test duy nhất là test đề bài.   
+\end{itemize}
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     Trong tất cả các test, N ≤ 1000, tổng độ dài các dãy ngoặc trong input không quá 10,000   
+	\item     Trong 30\% test, N ≤ 8, tổng độ dài các dãy ngoặc không quá 100.   
+\end{itemize}
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+3
+(
+)
+)(
+
+\textbf{Output:}
+4
+\end{verbatim}
+
+\subsubsection{   Giải thích  }
+
+   Bé có thể nối dãy ngoặc thứ 1 với thứ 2 tạo thành dãy ngoặc () là dãy ngoặc đúng. Bé cũng có thể nối dãy ngoặc thứ 1, thứ 3 rồi thứ 2, tạo thành dãy ngoặc ()() là dãy ngoặc đúng.  

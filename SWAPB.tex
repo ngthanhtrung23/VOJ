@@ -1,0 +1,66 @@
+
+
+Thời buổi khoa học công nghệ, biết mình không thể nhờ cậy tài phép của thần đèn mãi được nên Aladdin quyết tâm trau dồi kiến thức tin học. Aladdin đặc biệt thích lập trình. Dưới sự kèm cặp của Abu và thần đèn, Aladdin tập luyện ngày đêm nuôi ước mơ đại diện xứ Ba Tư tham dự kì thi IOI.
+
+Trong một lần làm bài, Aladdin phải nhập dữ liệu vào một bảng A kích thước MxN (M hàng, N cột). Tuy nhiên, do đang mải mơ màng nghĩ tới Jasmine nên Aladdin lại nhập thành bảng NxM và giá trị đáng ra phải ghi vào bảng A ở hàng i cột j thì H lại ghi vào hàng j cột i. Ví dụ với M=3, N=4 :
+
+Bảng Aladdin phải nhập
+\begin{verbatim}
+
+\texttt{3   4 -10   5
+6   7   0 -12
+2   1   9  20}\end{verbatim}
+
+ 
+
+Bảng Aladdin nhập vào
+\begin{verbatim}
+
+\texttt{  3   6   2
+  4   7   1
+-10   0   9
+  5 -12  20}\end{verbatim}
+
+ 
+
+Aladdin định nhập lại từ đầu, nhưng tá hỏa khi biết file dữ liệu đầu vào đã bị virus ăn mất. Vậy nên Aladdin phải viết một chương trình để đưa dữ liệu về bảng A về đúng yêu cầu. Kẹt nỗi mọi chuyện không đơn giản vì Aladdin dùng một máy vi tính đặc biệt. Máy này lưu bảng A dưới dạng một mảng một chiều kích thước MxN và sẽ ghi lần lượt lên mảng này theo thứ tự nhập (theo từng dòng, trên mỗi dòng theo từng cột).
+
+VD : nếu Aladdin nhập đúng thì mảng  A sẽ như sau
+\begin{verbatim}
+
+\texttt{3 4 -10 5 6 7 0 -12 2 1 9 20}\end{verbatim}
+
+Máy của Aladdin có 2 chế độ : ở chế độ 1 có thể đổi vị trí 2 phần tử bất kì ở vị trí i và j, còn ở chế độ 2 nó chỉ có thể đổi vị trí 2 phần tử liên tiếp i và i+1
+
+Aladdin định viết 1 chương trình để đưa mảng A về trạng thái đúng. Tuy nhiên trước khi bắt tay vào code, Aladdin muốn biết sẽ tốn ít nhất bao nhiêu phép hoán đổi để đưa bảng về dữ liệu đúng. Có một điều may mắn là Aladdin nhớ rằng khi nhập dữ liệu vào không có 2 phần tử nào có giá trị bằng nhau. Có thể điều này sẽ giúp việc tính toán dễ dàng hơn.
+
+
+\\\textbf{Input }\textbf{}
+
+Dòng đầu tiên gồm 3 số nguyên dương M, N là kích thước đúng của bảng  A
+
+Dòng tiếp hai gồm 1 số duy nhất S là chế độ hiện thời của máy (1 hoặc 2).
+
+Giới hạn : 1 $<$= M,N $<$= 5x10 $^ 5 $
+
+MxN $<$= 5x10 $^ 5 $
+
+Trong 30\% số test với S=2, MxN $<$= 5000
+
+\subsubsection{Output}
+
+Ghi ra một số nguyên duy nhất là số phép hoán đổi ít nhất cần thực hiện để đưa bảng về đúng trạng thái.
+\begin{verbatim}
+\textbf{Input}
+2 4
+1
+
+\textbf{Output}
+4
+
+\textbf{Input}
+2 4
+2
+
+\textbf{Output}
+6\end{verbatim}

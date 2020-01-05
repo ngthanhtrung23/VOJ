@@ -1,0 +1,27 @@
+
+
+ 
+
+Tuấn và Hiếu rất thích chơi xu lẻ. Một lần, Tuấn rủ Hiếu chơi một trò chơi. Ban đầu Tuấn kẻ một hàng gồm N ô vuông liên tiếp trên nền nhà, sau đó Tuấn lần lượt đặt các đồng xu vào một số ô ( không có ô nào có quá 1 đồng xu ). Hai người bắt đầu thực hiện nước đi luân phiên nhau, Tuấn đi trước. Ở mỗi nước đi, một người phải chọn 1 đồng xu bất kỳ và một ô còn trống phía bên phải đồng xu này. Đồng xu được chọn sẽ được đặt vào vị trí mới và mọi đồng xu nằm giữa vị trí cũ và mới của đồng xu đã chọn đều bị di chuyển sang trái một ô. Người nào đến lượt mà không thể thực hiện nước đi sẽ là người thua cuộc. Sau một thời gian chơi trò chơi này, Hiếu không thắng được ván nào. Hiếu bắt đầu nghi ngờ rằng, vị trí ban đầu của các đồng xu luôn đảm bảo cho Tuấn một thắng lợi. Bạn hãy kiểm chứng điều này.
+
+\subsubsection{Input}
+
+Gồm nhiều dòng, mỗi dòng là một xâu chỉ gồm ký tự 'C' và '.' biểu diễn trạng thái ban đầu của trò chơi. 'C' thể hiện ô vuông đó có một đồng xu và '.' thể hiện một ô vuông trống. Ký tự đầu tiên đến ký tự cuối cùng của xâu thể hiện các ô vuông từ trái sang phải của trò chơi. Mỗi dòng có không quá 500 ký tự.
+
+\subsubsection{Output}
+
+Với mỗi dòng của input, in ra một dòng tương ứng. "Tuan" thể hiện rằng Tuấn luôn là người chiến thắng bất chấp nỗ lực của Hiếu, "Hieu" trong trường hợp ngược lại. Nếu trạng thái trò chơi lúc ban đầu đảm bảo tính công bằng cho cả 2 người chơi, in ra "Cong bang". ( Các xâu in ra không có dấu " ).
+
+\subsubsection{Example}
+\begin{verbatim}
+Input:
+C.C.C
+
+Output:
+Tuan
+
+\end{verbatim}
+
+\textbf{Giải thích:}
+
+Gọi (a,b) là nước đi di chuyển đồng xu ở ô a đến ô trống b, các ô đánh số từ 1 đến N từ trái sang phải. Nếu bước đầu tiên, Tuấn đi (3,4), Hiếu sẽ đi (1,3) và dành chiến thắng. Nếu Tuấn đi (1,4), đồng xu ở ô 3 sẽ bị dịch sang trái 1 ô, Hiếu sẽ đi tiếp (2,3) và chiến thắng. Nếu Tuấn đi (1,2), Hiếu có thể đi (3,4) hoặc (2,4), nhưng Tuấn sẽ dành chiến thắng mà không phụ thuộc vào sự lựa chọn của Hiếu.

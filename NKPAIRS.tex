@@ -1,0 +1,86 @@
+
+
+
+
+
+
+
+
+   Mirko và Slavko chơi trò các con thú đồ chơi. Đầu tiên, Mirko và Slavko chọn một trong 3 bàn cờ như hình dưới đây. Mỗi bàn cờ bao gồm các ô (dưới dạng hình tròn trong hình vẽ) sắp xếp trên một lưới 1, 2 hoặc 3 chiều.  
+
+
+\includegraphics{http://www.spoj.com/content/paulmcvn:pairs.jpg}
+
+   Sau đó Mirko sẽ đặt N con thú đồ chơi lên các ô.  
+
+   Khoảng cách giữa 2 ô là số bước đi nhỏ nhất để một con thú đi từ ô này đến ô kia. Trong mỗi bước đi. con thú có thể bước đến 1 trong 4 ô kề với nó (nối với nhau bằng đoạn thẳng trong hình vẽ).  
+
+   Hai con thú có thể nghe thấy nhau nếu khoảng cách giữa 2 ô chúng đứng không vượt quá D. Nhiệm vụ của Slavko là tính số cặp con thú có thể nghe thấy nhau.  
+
+\subsubsection{   Dữ liệu  }
+
+   Dòng đầu tiên chứa 4 số nguyên dương theo thứ tự:  
+\begin{itemize}
+	\item     Loại bàn cờ B (1 ≤ B ≤ 3).   
+	\item     Số con thú N (1 ≤ N ≤ 100000).   
+	\item     Khoảng cách lớn nhất D mà hai con thú có thể nghe thấy nhau (1 ≤ D ≤ 100000000).   
+	\item     Kích thước bàn cờ M (tọa độ lớn nhất xuất hiện trong dữ liệu).    
+\begin{itemize}
+	\item       Khi B=1, M không vượt quá 75000000.     
+	\item       Khi B=2, M không vượt quá 75000.     
+	\item       Khi B=3, M không vượt quá 75.     
+\end{itemize}
+\end{itemize}
+
+   Mỗi dòng trong số N dòng sau chứa B số nguyên cách nhau bởi khoảng trắng, cho biết các tọa độ của một con thú đồ chơi. Mỗi tọa độ sẽ thuộc phạm vi [1, M]. Có thể có nhiều con thú nằm trên cùng 1 ô.  
+
+\subsubsection{   Kết qủa  }
+
+   Gồm 1 số nguyên duy nhất là số lượng con thú có thể nghe thấy nhau.  
+
+   Lưu ý: sử dụng số nguyên 64-bit để tính kết quả (long long trong C/C++, int64 trong Pascal).  
+
+\subsubsection{   Hạn chế  }
+
+
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+\textbf{Dữ liệu:}
+1 6 5 100
+25
+50
+50
+10
+20
+23
+
+\textbf{Kết qủa}
+4
+
+\textbf{Dữ liệu:}
+2 5 4 10
+5 2
+7 2
+8 4
+6 5
+4 4
+
+\textbf{Kết qủa}
+8
+
+\textbf{Dữ liệu:}
+3 8 10 20
+10 10 10
+10 10 20
+10 20 10
+10 20 20
+20 10 10
+20 10 20
+20 20 10
+20 20 20
+
+\textbf{Kết qủa}
+12
+\end{verbatim}
+

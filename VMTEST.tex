@@ -1,0 +1,60 @@
+
+
+
+
+   Định nghĩa:  
+
+   + "Chữ số" là các kí tự từ "0" đến "9".  
+
+   + "Chữ cái" là các kí tự "a" đến "z" và từ "A" đến "Z" (kí tự Latin in hoa và in thường).  
+
+   + "Số" là dãy liên tiếp các chữ số, có thể chứa tối đa một dấu trừ ("-") ở đầu nếu là số âm và tối đa một dấu thập phân (".") nếu là số thực.  
+
+   + "Từ" là dãy liên tiếp các chữ cái.  
+
+
+
+\subsubsection{   Input  }
+
+   Input gồm nhiều dòng:  
+\begin{itemize}
+	\item     Mỗi dòng là một dãy các từ hoặc các số. Các số và từ được ngăn cách với nhau bởi một hoặc nhiều dấu cách.   
+	\item     Input sẽ kết thúc bằng một dòng chứa một dấu chấm hỏi ("?").   
+\end{itemize}
+
+\subsubsection{   Output  }
+
+   Output gồm nhiều dòng, mỗi dòng tương ứng với một dòng ở Input (trừ dòng chứa dấu chấm hỏi):  
+\begin{itemize}
+	\item     Nếu dòng tương ứng ở Input gồm toàn các số, in ra tổng của các số đó (làm tròn đến 6 chữ số thập phân).   
+	\item     Nếu dòng tương ứng ở Input gồm toàn các từ, in ra xâu tổng của các từ đó (nối các từ lại với nhau theo thứ tự trong Input).   
+	\item     Nếu không phải một trong hai trường trên, ghi ra xâu "Error!" (không bao gồm cặp dấu "").   
+\end{itemize}
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     Input không có quá 20 dòng.   
+	\item     Mỗi dòng không có quá 100 kí tự.   
+	\item     Mỗi số không có quá 9 chữ số.   
+	\item     Mỗi từ không có quá 9 kí tự.   
+\end{itemize}
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+\\
+\\12 23 34
+abd   dbs
+\\12 a 4 
+\\?
+\\
+\\\textbf{Output:}
+
+69.000000
+\\abddbs
+\\Error! 
+\\
+\\\end{verbatim}
+
+\emph{    Các bạn nhập xuất bằng Standard Input/Output cho cả Pascal và C++. Lưu ý rằng ở cuối Ouput không được có kí tự lạ   }\emph{    (ngoại trừ kí tự kết thúc dòng)   }\emph{    . Ví dụ: Ouput là "69" nhưng các bạn in ra "69 " thì vẫn tính là sai kết quả.   }
+

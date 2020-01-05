@@ -1,0 +1,38 @@
+
+
+
+
+   Một bãi mìn hình chữ nhật có cạnh M × N nguyên dương. Bãi mìn được chia thành M × N ô vuông đơn vị bằng các đường song song với các cạnh,   các dòng ô vuông đánh số từ 1 đến M từ trên xuống dưới, các cột ô vuông đánh số từ 1 đến N từ trái sang phải, hai ô vuông khác nhau được gọi là kề   nhau nếu chúng có ít nhất một đỉnh chung. Mỗi ô vuông có không quá một quả mìn. Để ghi nhận tình trạng mìn tại các ô đồng thời có thể giữ bí mật phần   nào, người ta lập một mảng hai chiều M dòng N cột mà A[U, V] bằng số ô mìn có điểm chung với ô [U, V] của bãi mìn (có nhiều nhất 8 ô có điểm   chung với một ô cho trước).  
+
+   Cho mảng A, hãy tìm cách xác định các ô có mìn.  
+
+\subsubsection{   Dữ liệu  }
+\begin{itemize}
+	\item     Dòng đầu gồm hai số nguyên M, N là kích thước hình chữ nhật.   
+	\item     M dòng sau, mỗi dòng ghi N số thể hiện mảng A.   
+\end{itemize}
+
+\subsubsection{   Kết qủa  }
+
+   Gồm M dòng, mỗi dòng ghi N số 0 hoặc 1 tương ứng với ô đó không có mìn hoặc có mìn. Nếu có nhiều kết quả thỏa mãn, chỉ cần đưa ra một kết   quả duy nhất. Biết rằng dữ liệu vào luôn đảm bảo có ít nhất một kết quả.  
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     1 ≤ M, N ≤ 200   
+\end{itemize}
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu:
+4 4
+1 3 3 1
+2 3 4 4
+3 6 5 3
+1 3 3 3
+
+Kết qủa
+1 0 0 1
+0 1 1 0
+0 0 1 1
+1 1 1 0
+\end{verbatim}

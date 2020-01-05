@@ -1,0 +1,40 @@
+
+
+Có N người được đánh số từ 1 đến N . Mỗi người có thể quen biết số người trong N-1 người còn lại . Hãy chia những người này thành 2 nhóm thỏa mãn các điều kiên sau :
+\begin{itemize}
+	\item Mỗi người phải thuộc một nhóm
+	\item Mỗi nhóm phải có ít nhất một người
+	\item Mỗi người trong nhóm phải biết hết những người còn lại trong nhóm đó
+\end{itemize}
+
+Sư chênh lệch về số người giữa 2 nhóm càng ít càng tốt
+
+\textbf{Yêu cầu}
+
+Cho biết thông tin quan hệ của mỗi người hãy in ra độ chênh lệch nhỏ nhất hoặc cho biết không tồn tại cách chia thỏa mãn
+
+\textbf{Dữ liệu vào}
+
+Một số bộ test có dạng
+\begin{itemize}
+	\item Dòng đầu tiên chưa số nguyên N, 1 $<$= N $<$= 1000
+	\item Dòng thứ i trong số N dòng tiếp theo ghi danh sách những người mà người thứ i quen biết  dưới dạng dãy số nguyên kết thúc bằng số 0 , các số cách nhau ít nhất 1 dấu cách
+	\item Kết thúc bộ test là số -1
+\end{itemize}
+
+\textbf{Kết quả }
+\begin{itemize}
+	\item \emph{In ra độ chênh lệch  nhỏ nhất } cho từng test , mỗi test in ra trên 1 dòng
+	\item Trong trường hợp không có cách chia nhóm thỏa mãn in ra  -1
+\end{itemize}
+\begin{verbatim}
+\textbf{Input}
+5
+2 3 5 0
+1 4 5 3 0
+1 2 5 0
+1 2 3 0
+4 3 2 1 0
+-1
+\textbf{Output}
+1\end{verbatim}

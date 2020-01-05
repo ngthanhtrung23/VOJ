@@ -1,0 +1,67 @@
+
+
+
+
+     Quốc vương đang trên đường trở vương quốc của mình. Quãng đường cuối cùng phải       vượt qua của ngài là một khu biển gồm N hòn đào, ngài đang ở hòn đảo thứ nhất là đích đến       là hòn đảo N. Có một số tuyến phà nối giữa các hòn đảo, tuyến phà thứ i đi từ hòn đảo Ai tới       hòn đảo Bi với chi phí là Ci. Quốc vương muốn về nhà càng nhanh càng tốt, vì thế ông muốn       di chuyển với chi phí ít nhất có thể.       Thật không may cho quốc vương, tên chủ ở khu này đã lên kế hoạch để thay đổi đích       đến của một số tuyến phà bắt đầu cùng một vị trí. Ví dụ từ đảo 1 có 3 tuyến phà tới đảo 2, 3,       4 với chi phí lần lượt là 10, 20, 30, hắn ta có thể cho đảo vị trí của các tuyến phà này, ví dụ khi       hắn đổi chỗ 2 tuyến phà đầu tiên thì chi phí của 3 tuyến phà này sẽ lần lượt là 20, 10, 30.       Quốc vương không biết tên chủ tham lam này sẽ đổi các chuyến phà như thế nào,       nhưng ngài vẫn luôn lựa chọn minh mẫn để có thể đi được con đường có chi phí nhỏ nhất.       Hãy giúp ngài tính số tiền tối thiểu mà ngày cần chi ra, để đảm bảo rằng số tiền này sẽ đủ cho       ngài di chuyển về tới đích trong mọi trường hợp tồi tệ nhất.    
+
+   Quốc vương đang trên đường trở về vương quốc của mình. Quãng đường cuối cùng phải  
+
+   vượt qua của ngài là một khu biển gồm N hòn đào, ngài đang ở hòn đảo thứ nhất là đích đến  
+
+   là hòn đảo N. Có một số tuyến phà nối giữa các hòn đảo, tuyến phà thứ i đi từ hòn đảo Ai tới  
+
+   hòn đảo Bi với chi phí là Ci. Quốc vương muốn về nhà càng nhanh càng tốt, vì thế ông muốn  
+
+   di chuyển với chi phí ít nhất có thể.  
+
+
+
+   Thật không may cho quốc vương, tên chủ ở khu này đã lên kế hoạch để thay đổi đích  
+
+   đến của một số tuyến phà bắt đầu cùng một vị trí. Ví dụ từ đảo 1 có 3 tuyến phà tới đảo 2, 3,  
+
+   4 với chi phí lần lượt là 10, 20, 30, hắn ta có thể cho đảo vị trí của các tuyến phà này, ví dụ khi  
+
+   hắn đổi chỗ 2 tuyến phà đầu tiên thì chi phí của 3 tuyến phà này sẽ lần lượt là 20, 10, 30.  
+
+   Quốc vương không biết tên chủ tham lam này sẽ đổi các chuyến phà như thế nào,  
+
+   nhưng ngài vẫn luôn lựa chọn minh mẫn để có thể đi được con đường có chi phí nhỏ nhất.  
+
+   Hãy giúp ngài tính số tiền tối thiểu mà ngày cần chi ra, để đảm bảo rằng số tiền này sẽ đủ cho  
+
+   ngài di chuyển về tới đích trong mọi trường hợp tồi tệ nhất.  
+
+
+
+\subsubsection{   Input  }
+
+   - Dòng đầu tiên là 2 số nguyên N, M thể hiện số đảo và số chuyến phà.(N ≤ 100.000, M ≤ 300.000)  
+
+   - M dòng sau mỗi dòng 3 số nguyên dương Ai, Bi, Ci biểu diễn thông số cho chuyến phà thứ i. (Ci $<$= 1.000.000)  
+
+\subsubsection{   Output  }
+
+   - Số nguyên duy nhất là kết quả của bài toán.  
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+4 5
+1 2 2
+2 4 2
+1 3 10
+3 4 7
+1 4 7
+
+\textbf{Output:}
+9
+\end{verbatim}
+\begin{verbatim}
+\textbf{* Chú ý :}\end{verbatim}
+\begin{verbatim}
+- 7 test có M = 2 * N – 4, trong đó có N – 2 tuyến phà từ 1 tới 2, 3, …, N – 1 và N – 2 tuyến phà
+khác từ 2, 3, …, N – 1 tới N.
+- 10 test có duy nhất đảo 1 có thể có nhiều hơn 1 chuyến phà.
+- 11 test trong các đảo không có chu trình.
+- 12 test còn lại không có ràng buộc nào cả. \end{verbatim}

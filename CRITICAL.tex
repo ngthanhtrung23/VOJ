@@ -1,0 +1,39 @@
+
+
+Đất nước Hạnh Phúc có N thành phố được nối với nhau bởi M đường nối hai chiều. Giữa hai thành phố bất kỳ chỉ có nhiều nhất một con đường.
+
+Chính quyền nước này đưa ra một tiêu chí để đánh giá độ quan trọng của mỗi thành phố, theo đó độ quan trọng của một thành phố X được tính bằng số cặp thành phố A và B mà để di chuyển từ A đến B (và ngược lại) bắt buộc phải đi qua thành phố X.
+
+Bạn hãy lập trình tính độ quan trọng trung bình của tất cả các thành phố.
+
+\subsubsection{Dữ liệu}
+
+Dòng đầu tiên chứa hai số nguyên N, M (1 $<$= N $<$= 20000, 0 $<$= M $<$= 200000).
+
+M dòng tiếp theo mỗi dòng chứa 2 số nguyên u, v (1$<$=u,v $<$=N) mô tả một đường nối.
+
+\subsubsection{Kết quả}
+
+Gồm một số thực duy nhất là độ quan trọng trung bình của các thành phố, làm tròn đến 2 chữ số thập phân.
+
+\subsubsection{Ví dụ}
+\begin{verbatim}
+\textbf{Dữ liệu}
+5 5
+1 2
+2 3
+3 4
+4 5
+5 3
+
+\textbf{Kết quả}
+1.40
+
+\end{verbatim}
+
+
+\includegraphics{http://vn.spoj.com/VO10/content/critical.png}
+
+Giải thích: Độ quan trọng của các thành phố 1, 2, 3, 4, 5 lần lượt là 0, 3, 4, 0, 0. Độ quan trọng của thành phố 3 là 4 vì có 4 cặp thành phố mà khi di chuyển đến nhau cần đi qua thành phố 3: (1, 4), (1, 5), (2, 4), (2,5).
+
+\emph{Tác giả: Ngô Minh Đức }

@@ -1,0 +1,68 @@
+
+
+
+
+   Quả là trái dừa đã cho Pirate một ý tưởng thiên tài khi chuyển sang bán cocktail. Bây giờ Pirate đã mở rộng mạng lưới của mình sang khắp các hòn đảo bên cạnh. Tại mỗi hòn đảo, anh mở một cửa hàng cocktail. Tùy theo sản vật của từng hòn đảo mà mỗi cửa hàng chuyên về một loại cocktail nhất định. Tuy nhiên, do hệ thống đường nối các hòn đảo với nhau vẫn chưa được cải thiện (vẫn dùng các cây cầu dừa để vừa đủ cho từ mỗi hòn đảo chỉ có một đường đi duy nhất đến mọi hòn đảo khác) nên khi giao hàng cho khách gặp một vấn đề nho nhỏ: nhiều khi khách  hàng lại không muốn thưởng thức sản phẩm trên hòn đảo của mình mà lại muốn dùng những loại cocktail khác. Để tiết kiệm chi phí đi lại, Pirate phải chọn cửa hàng cung ứng loại cocktail tương ứng gần với hòn đảo của người khách nhất để đi giao hàng...  
+
+
+
+
+\includegraphics{http://i797.photobucket.com/albums/yy253/khanhptnk/cocktail1.jpg}
+
+\subsubsection{   Input  }
+\begin{itemize}
+	\item     Dòng thứ nhất: ghi số nguyên N - số hòn đảo.   
+	\item     N - 1 dòng tiếp theo: mỗi dòng ghi hai số nguyên x và y - có một cây cầu dừa nối hai hòn đảo x và y.   
+	\item     Dòng thứ N + 1: ghi số nguyên C - số loại cocktail mà các cửa hàng cung ứng.   
+	\item     Dòng thứ N + 2: ghi N số nguyên - loại cocktail chuyên biệt của từng hòn đảo.   
+	\item     Dòng thứ N + 3: ghi số nguyên M - số các vị khách.   
+	\item     M dòng tiếp theo: mỗi dòng mô tả hai số nguyên x và y - người khách ở đảo x yêu cầu cocktail loại y.   
+\end{itemize}
+
+\subsubsection{   Output  }
+\begin{itemize}
+	\item     Gồm M dòng, mỗi dòng ghi ra khoảng cách (tính bằng số cây cầu dừa) cửa hàng gần nhất phải đi để giao hàng cho người khách tương ứng.   
+\end{itemize}
+
+\subsubsection{   Giới hạn:  }
+\begin{itemize}
+	\item     Trong mỗi test, 1 ≤ C ≤ N ≤ 10    $^     4    $    , 1 ≤ M ≤ 10    $^     4    $    .   
+	\item     60\% số test có 1 ≤ C    $^$    ≤ 10    $^     2    $    .   
+\end{itemize}
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+8
+\\1 2
+\\1 3
+\\2 7
+\\2 8
+\\3 4
+\\4 5
+\\4 6
+\\4
+\\1 2 4 2 3 1 3 2
+\\8
+\\1 4
+\\2 4
+\\3 4
+\\4 4
+\\5 4
+\\6 4
+\\7 4
+\\8 4
+\\
+\\\textbf{Output:}
+1
+\\2
+\\0
+\\1
+\\2
+\\2
+\\3
+\\3
+\\
+\\\end{verbatim}
+
+\emph{    Giải thích: Chỉ có cửa hàng 3 chuyên về loại cocktail 4, nên kết quả chính là khoảng cách từ hòn đảo 3 đến các hòn đảo còn lại.   }

@@ -1,0 +1,34 @@
+
+
+Một nhà kiến trúc sư Việt Nam nổi tiếng đã thiết kế một đồng hồ đồ sộ mô tả thời gian khi bắt đầu của vũ trụ. Mặt đồng hồ chứa các kim di chuyển với tốc độ không đổi. Chúng được đánh số từ 1 đến n từ nhanh nhất đến chậm nhất. Kim nhanh nhất tạo 1 vòng /1 phút (60 giây). Mỗi kim sau đó di chuyển chậm hơn kim trước, kim i +1 tạo 1 vòng khi kim i tạo d $_ i $ vòng. Cơ cấu đồng hồ này rất đơn giản. Bạn có thể nắm 1 kim di chuyển theo hướng bất kỳ. Khi di chuyển kim các kim chậm hơn di chuyển tỉ lệ với tốc độ bình thường của chúng và các kim nhanh hơn không di chuyển. Vì các kim là khổng lồ nên để cài đặt đồng hồ là một việc làm khó khăn. Ví dụ, với 3 kim: kim giây, phút và giờ. Độ dài chúng là 5, 15 và 10m tương ứng. Bạn muốn đặt đồng hồ từ 2:30 đến 6:00 (hình dưới). Cách dễ nhất là quay kim phút 180 $^ 0 $ theo chiều kim đồng hồ và di chuyển kim giờ 90 $^ 0 $ theo chiều kim đồng hồ. Tổng các khoảng cách bạn di chuyển bằng tay các kim là khoảng chừng 62.83 m.
+
+
+\includegraphics{http://i1103.photobucket.com/albums/g473/coder_1340/clock.png}
+
+\textbf{Yêu cầu: } Tìm cách đặt đồng hồ sao cho tổng các khoảng cách phải di chuyển bằng tay là nhỏ nhất.
+
+ 
+
+\textbf{Dữ liệu: }
+\begin{itemize}
+	\item Dòng đầu chứa 1 số nguyên n (0 $<$ n ≤ 50) là số kim.
+	\item Dòng 2 chứa n-1 số nguyên d $_ 2 $ , d $_ 3 $ , ..., d $_ n $ (2 ≤ d $_ i $ ≤ 10 $^ 6 $ ).
+	\item Dòng 3 chứa n số nguyên l $_ 1 $ , l $_ 2 $ ,...,l $_ n $ (2 ≤ l $_ i $ ≤ 10 $^ 6 $ ) độ dài các kim đồng hồ.
+	\item Hai dòng sau chứa 2 số nguyên không âm là thời gian biểu thị của đồng hồ và thời gian sẽ đặt lại. Cả hai thời gian tính theo giây và nhỏ hơn 2 $^ 63 $ .
+\end{itemize}
+
+\textbf{Kết quả: } Đưa ra tổng khoảng cách nhỏ nhất có thể, làm tròn ít nhất 6 chữ số sau thập phân.
+
+ 
+
+\textbf{Ví dụ: }
+\begin{verbatim}
+\textbf{Input }
+3
+60 12
+5 10 121
+4482
+17173
+
+\textbf{Output}
+237.19024534602937\end{verbatim}

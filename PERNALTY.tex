@@ -1,0 +1,46 @@
+
+
+
+
+   Dragon football là một loại hình thể thao của các kỵ sĩ rồng. Cũng giống như bóng đá, sau 2 hiệp chính và 2 hiệp phụ nếu vẫn không phân định được thắng thua, 2 đội phải thực hiện những loạt sút luân lưu. Luật sút luân lưu như sau. Mỗi đội có (S+1) cầu thủ trong đó có 1 thủ môn, khung thành có dạng một dải (1xN) với các ô được đánh số từ trái qua phải. Mỗi đội chỉ có một lượt sút duy nhất theo quy tắc:   
+\\   \_ Thủ môn duy nhất của đội phòng thủ phải chọi với S cầu thủ của đội tấn công.   
+\\   \_ Mỗi cầu thủ phải chọn 1 vị trí để đứng, chỉ được sút bóng trên đường thẳng vuông góc với xà ngang của khung thành.   
+\\   \_ Vị trí của cầu thủ đước định nghĩa bằng 2 thống số: T và X. Với T là khoảng cách của cầu thủ so với khung thành và X là tọa độ mà bóng sẽ đến khung thành.   
+\\   \_ Khi tiếng còi cất lên, tất cả cầu thủ đồng loạt sút quả bóng của mình vào khung thành với vận tốc như nhau, một cầu thủ đứng cách khung thành T mét thì quả bóng của cầu thủ đó sẽ mất T giây để đến khung thành.   
+\\   \_ Với sức mạnh của rồng, thủ môn có thể di chuyển tối đa K ô trong 1 giây và có thể cản phá nhiều cú sút một lúc nếu anh đang đứng ở đúng vị trí và đúng thời điểm các quả bóng bay đến khung thành.   
+\\
+\includegraphics{http://www.spoj.pl/content/huy391992:pernalty}
+\\   Khung thành được tô màu xanh lá cây, các điểm tô màu xanh dương chính là vị trí các cầu thủ (chú ý là có thể có nhiều cầu thủ đứng cùng một vị trí). Trục thẳng đứng biểu diễn khoảng cách của cầu thủ so với khung thành, ví dụ từ trái sang thì   
+\\   \_ cầu thủ 1: cách khung thành 1m và sẽ sút bóng vào vị trí 1   
+\\   \_ cầu thủ 2: cách khung thành 2m và sẽ sút bóng vào vị trí 2   
+\\   \_ cầu thủ 3: cách khung thành 3m và sẽ sút bóng vào vị trí 5…   
+\\   Tên chúa tể ác độc Galbatorix đang nắm giữ một đội bóng hùng mạnh, nhưng Neo vừa thu phục được một con rồng con và đc giao vị trí thủ môn. Một kỵ sĩ còn ít kinh nghiệm và một con rồng non nớt phải chiến đấu với cả một đội bóng. Hãy giúp Neo chọn vị trí ban đầu và cách di chuyển để đấm đc càng nhiều bóng ra khỏi khung thành càng tốt.  
+
+\subsubsection{   Input  }
+
+   \_ Dòng đầu tiên là 3 số N, K, S (1$<$= N $<$=10000; 0$<$= K $<$=N; S$<$=100 000) lần lượt là kích thước khung thành, số ô tối đa mà thủ môn có thể di chuyển trong 1 giây và số lượng cầu thủ sút bóng.   
+\\   \_ S dòng tiếp theo biểu diễn thông tin về vị trí các cầu thủ, dòng thứ i chứa 2 số T\_i và X\_i (với T\_i là khoảng cách từ cầu thủ đó đến khung thành còn X\_i là vị trí được đánh số trên khung thành mà cầu thủ đó sẽ sút vào). (1$<$= X\_i $<$=N và 1$<$= T\_i $<$=100)  
+
+\subsubsection{   Output  }
+
+   \_ Một dòng duy nhất chứa số lượng bóng lớn nhất mà Neo có thể đấm ra đc.  
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+10 2 7
+1 1
+2 2
+3 5
+5 7
+6 10
+6 10
+6 10
+
+
+\textbf{Output:}
+5
+\end{verbatim}
+
+\textbf{    Giải thích test vd:   }   Ban đầu thủ môn đứng ở vị trí 1, 1s sau thì bắt trái bóng ở đó, giây tiếp theo di chuyển qua trái 1 bước đến vị trí số 2 rồi bắt ngay trái bóng ở vị trí 2, sau đó 4s tiếp theo mỗi giây di chuyển 2 bước sang phải thì vừa kịp bắt 3 trái bóng ở vị trí 10   
+\\\textbf{    "PERNALTY", chữ R bị thừa là viết tắt của DRAGON =))   }

@@ -1,0 +1,85 @@
+
+
+
+
+
+
+
+
+      Jim đang chuẩn bị đi thăm một trong số những người bạn tốt nhất của cậu ấy ở trong thành phố trên núi cao. Đầu tiên, cậu ấy rời khỏi thành phố của mình và đi đến thành phố đích, gọi là lượt đi. Sau đó cậu ấy lại quay trở về thành phố của mình, gọi là lượt về. Bạn được yêu cầu viết một chương trình tính chi phí nhỏ nhất cho chuyến hành trình này, được tính bằng tổng chi phí của lượt đi và lượt về.     
+
+      Có một mạng lưới đường đi giữa những thành phố này. Mọi con đường đều là một chiều. Mỗi đường cần một chi phí nhất định để di chuyển qua nó.     
+
+      Ngoài chi phí phải trả cho các con đường, còn phải trả một khoản phí cho mỗi thành phố trên đường đi. Tuy nhiên, vì đây là phí visa cho thành phố, nên ta chỉ phải trả 1 lần duy nhất khi lần đầu tiên tới 1 thành phố nào đó.     
+
+      Độ cao của mỗi thành phố được cho trước. Trong lượt đi, không được phép sử dụng các con đường đi xuống (tức là nếu đi từ a đến b thì độ cao của a không được lớn hơn độ cao của b). Trong lượt về thì không được sử dụng các đường đi lên. Nếu độ cao của a và b bằng nhau thì nó có thể được sử dụng ở cả lượt đi lẫn lượt về.     
+
+\subsubsection{      Input     }
+
+      Dữ liệu vào chứa một số bộ test theo định dạng như sau:     
+
+\emph{       n m       
+\\       d       $_        2       $       e       $_        2       $
+\\       d       $_        3       $       e       $_        3       $
+\\       .       
+\\       .       
+\\       .       
+\\       d       $_        n-1       $       e       $_        n-1       $
+\\       a       $_        1       $       b       $_        1       $       c       $_        1       $
+\\       a       $_        2       $       b       $_        2       $       c       $_        2       $
+\\       .       
+\\       .       
+\\       .       
+\\       a       $_        m       $       b       $_        m       $       c       $_        m       $}
+
+      Mỗi giá trị đều là số nguyên không âm và được ngăn cách nhau bằng dấu cách.     
+
+\emph{       n      }      là số lượng thành phố trong mạng,      \emph{       m      }      là số lượng đường 1 chiều. Dữ liệu đảm bảo 2 ≤      \emph{       n      }      ≤ 50 và 0 ≤      \emph{       m      }      ≤      \emph{       n      }      (      \emph{       n      }      −1). Các thành phố được đánh số từ 1 đến      \emph{       n      }      . Thành phố  1 là thành phố khởi hành của Jim, và thành phố      \emph{       n      }      là đích đến.     
+
+\emph{       d       $_        i       $}      là phí visa của thành phố      \emph{       i      }      , và      \emph{       e       $_        i       $}      là độ cao của nó. Đảm bảo 1 ≤      \emph{       d       $_        i       $}      ≤ 1000 và 1≤      \emph{       e       $_        i       $}      ≤ 999 với 2≤      \emph{       i      }      ≤      \emph{       n      }      −1. Thành phố 1 và      \emph{       n      }      không yêu cầu phí visa. Độ cao của thành phố 1 là 0, và độ cao của thành phố n là 1000. Các thành phố khác nhau có thể có cùng độ cao, nhưng có không quá 10 thành phố với cùng 1 độ cao.     
+
+      Con đường thứ      \emph{       j      }      là từ thành phố      \emph{       a       $_        j       $}      đến thành phố      \emph{       b       $_        j       $}      với chi phí      \emph{       c       $_        j       $}      (1 ≤      \emph{       j      }      ≤      \emph{       m      }      ). Với 1 ≤      \emph{       a       $_        j       $}      ≤      \emph{       n      }      , 1 ≤      \emph{       b       $_        j       $}      ≤      \emph{       n      }      , và 1 ≤      \emph{       c       $_        j       $}      ≤ 1000. Bạn có thể đi trực tiếp từ      \emph{       a       $_        j       $}      đến      \emph{       b       $_        j       $}      , nhưng không thể đi từ      \emph{       b       $_        j       $}      đến      \emph{       a       $_        j       $}      trừ khi có một con đường khác từ      \emph{       b       $_        j       $}      đến      \emph{       a       $_        j       $}      được cho trong bộ test. Không có 2 con đường cùng nối 1 cặp thành phố theo cùng 1 chiều, tức là, với mọi      \emph{       i      }      và      \emph{       j      }      mà      \emph{       i      }      ≠      \emph{       j      }      , thì      \emph{       a       $_        i       $}      ≠      \emph{       a       $_        j       $}      hoặc      \emph{       b       $_        i       $}      ≠      \emph{       b       $_        j       $}      . Không có con đường nào nối 1 thành phố với chính nó, nghĩa là với mọi      \emph{       j      }      , thì      \emph{       a       $_        j       $}      ≠      \emph{       b       $_        j       $}      .     
+
+      Cuối cùng là 1 dòng chứa 2 số 0 đánh dấu kết thúc dữ liệu.     
+
+\subsubsection{      Output     }
+
+      Với mỗi bộ test, in ra 1 dòng chứa chi phí nhỏ nhất (kể cả phí visa) của hành trình tìm được. Nếu không tồn tại hành trình nào thoả mãn thì in ra “-1”.     
+
+\subsubsection{      Example     }
+\begin{verbatim}
+\textbf{Input:}
+3 6
+3 1
+1 2 1
+2 3 1
+3 2 1
+2 1 1
+1 3 4
+3 1 4
+3 6
+5 1
+1 2 1
+2 3 1
+3 2 1
+2 1 1
+1 3 4
+3 1 4
+4 5
+3 1
+3 1
+1 2 5
+2 3 5
+3 4 5
+4 2 5
+3 1 5
+2 1
+2 1 1
+0 0
+
+\textbf{Output:}
+7
+8
+36
+-1\end{verbatim}
+

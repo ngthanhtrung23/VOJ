@@ -1,0 +1,45 @@
+
+
+
+
+   John có một chuỗi S. John được yêu cầu thực hiện hai thao tác sau       theo thứ tự      trên S:  
+\begin{enumerate}
+	\item     Chọn một vị trí của S, và thay thế bằng bất kỳ ký tự nào John muốn.   
+	\item     Dịch chuyển chuỗi S, nghĩa là, John có thể chọn một vị trí k và dịch chuỗi S theo vòng tròn sao cho k trở thành vị trí bắt đầu của chuỗi mới.   
+\end{enumerate}
+
+   John muốn sau khi thực hiện hai phép toán trên, kết quả thu được là một chuỗi cho trước.  Bạn hãy giúp John tính số cách biến đổi từ chuỗi S thành một chuỗi T cho trước.  
+
+\subsubsection{   Dữ liệu  }
+\begin{itemize}
+	\item     Dữ liệu bao gồm hai chuỗi S và T trên một dòng. Mỗi chuỗi bao gồm nhiều nhất 100000 ký tự và chỉ gồm các ký tự in hoa.   
+	\item     Đảm bảo rằng S và T có cùng số ký tự.   
+\end{itemize}
+
+\subsubsection{   Kết quả  }
+
+   Một số duy nhất là số cách biến đổi từ chuỗi S thành chuỗi T.  
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu
+AHYANGYI YANGYIAH
+
+Kết quả
+8
+
+Giải thích
+John có thể thay thế chữ "A" đầu tiên bằng "A", hoặc "H" bằng 'H", v.v...
+nghĩa là có thể thay thế một chữ bằng chính chữ đó.
+Sau đó, chỉ có một cách để dịch chuyển chuỗi.
+
+Dữ liệu
+VSUMSU MSUMSU
+
+Kết quả
+2
+
+Giải thích
+John cần thay thế chữ "V" đầu tiên bằng "M".
+Sau đó, John có hai cách để dịch chuyển chuỗi (k=1 hoặc k=4).
+\end{verbatim}

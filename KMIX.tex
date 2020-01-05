@@ -1,0 +1,48 @@
+
+
+
+
+   Sau khi thu hoạch đủ trái cây, Pirate đưa hết chúng vào nhà máy tinh chế để chuẩn bị cho sự nghiệp bán cocktail của mình. Đầu tiên, Pirate thử nghiệm trên hai loại quả là dâu và cam. Tuy nhiên, kinh doanh cocktail cũng không phải là công việc dễ dàng. Nhà máy chỉ sản xuất được một số loại cocktail nhất định. Mỗi loại có nồng độ cam và dâu khác nhau (nồng độ được tính theo đơn vị phần tỉ). Vấn đề là mỗi vị khách lại có khẩu vị khác nhau và họ yêu cầu Pirate phải pha chế được đúng loại cocktail có x phần tỉ dâu và y phần tỉ cam thì họ mới trả tiền. Để tính toán lợi nhuận, Pirate muốn xác định trước xem có thể đáp ứng yêu cầu của từng vị khách hay không.  
+
+
+\includegraphics{http://i797.photobucket.com/albums/yy253/khanhptnk/1302096396_cocktail-bereitung.jpg}
+
+\subsubsection{   Input  }
+\begin{itemize}
+	\item     Dòng thứ nhất: ghi một số nguyên N - số loại cocktail có sẵn.   
+	\item     N dòng tiếp theo: mỗi dòng ghi hai số nguyên - nồng độ dâu và cam của từng loại cocktail.   
+	\item     Dòng thứ N + 2: ghi một số nguyên M - số lượng các vị khách.   
+	\item     M dòng tiếp theo: mỗi dòng ghi hai số nguyên - nồng độ dâu và cam yêu cầu của từng vị khách.   
+\end{itemize}
+
+\subsubsection{   Output  }
+\begin{itemize}
+	\item     Gồm M dòng, mỗi dòng ghi 'YES' nếu yêu cầu của vị khách tương ứng được thỏa mãn và 'NO' nếu ngược lại.   
+\end{itemize}
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     Trong mỗi test, 1 ≤ N, M ≤ 10    $^     5    $    . Nồng độ của các loại cocktail là các số nguyên không âm không quá 10    $^     9    $    .   
+	\item     60\% số test có 1 ≤ N ≤ 10    $^     2    $    .   
+	\item     80\% số test có 1 ≤ N ≤ 10    $^     3    $    .   
+\end{itemize}
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+3
+\\0 10
+\\20 30 
+\\30 10
+\\2
+\\10 30
+\\20 20
+\\
+\\
+\\\textbf{Output:}
+NO
+\\YES
+\\
+\\\end{verbatim}
+
+\emph{    Giải thích: ta có thể đáp ứng yêu cầu của vị khách thứ hai bằng các pha 3 loại cocktail theo tỉ lệ 1 : 3 : 2.   }

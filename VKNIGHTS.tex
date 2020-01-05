@@ -1,0 +1,37 @@
+
+
+
+
+   HÌnh 1 mô tả một quân mã tấn công các ô trên bàn cờ vua.  
+
+   Cho một bàn cờ vua có kích thước 3Xn, 3 hàng và n cột, trong đó 1 ≤ n ≤ 100, và một tập gồm Z ô. Các dòng được đánh số 1 đến 3 từ   trên xuống dưới, các cột được đánh số 1 đến n từ trái sang phải.  
+
+   Các quân mã không được đặt trên các ô thuộc tập Z. Không có hai quân mã nào được tấn công lẫn nhau. Giả sử mỗi cột có nhiều nhất một ô   thuộc tập Z. Khi đó, tập Z có thể mô tả bởi dãy k   $_    1   $   , k   $_    2   $   ,... ,k   $_    n   $   với k   $_    i   $   thuộc \{0, 1, 2, 3\}. Nếu   k   $_    i   $   =0, không có ô nào trên cột i thuộc tập Z, trong các trường hợp còn lại, k   $_    i   $   là chỉ số dòng của ô trên cột này thuộc   tập Z.  
+
+\subsubsection{   Yêu cầu  }
+
+   Cho biết số cột n của bàn cờ và dãy mô tả tập Z, hãy tìm số nhiều nhất quân mã M có thể đặt sao cho thỏa mãn các điều kiện đã nêu, và L,   số cách đặt M quân mã lên bàn cờ.  
+
+
+
+\subsubsection{   Dữ liệu  }
+\begin{itemize}
+	\item     Dòng đầu tiên chứa số nguyên dương n ≤ 100, là số cột trên bàn cờ.   
+	\item     Mỗi dòng trong số n dòng tiếp theo chứa một số thuộc tập \{0, 1, 2, 3\}, là dãy mô tả tập Z.   
+\end{itemize}
+
+\subsubsection{   Kết quả  }
+
+   In ra hai số nguyên M và L cách nhau bởi khoảng trắng.  
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu
+2
+1
+0
+\end{verbatim}
+\begin{verbatim}
+Kết quả 
+4 2
+\end{verbatim}

@@ -1,0 +1,58 @@
+
+
+
+
+   Ở một vương quốc nọ, mỗi khi có một vị vua qua đời, hoàng tử cả sẽ lên ngôi và để thể hiện tình anh em, hoàng tử cả sẽ cắt một phần đất đai bên trong vương quốc cho các hoàng tử khác. Các hoàng tử này trờ thành vua chư hầu và xây dựng vương quốc của họ trên những phần đất được phân chia; và khi các hoàng tử này mất đi, các con của họ lại chia phần đất đó thành các vương quốc nhỏ hơn. Trải qua nhiều thế hệ, vương quốc to lớn ban đầu giờ đây đã trờ thành một tập hợp các vương quốc nhỏ; vương quốc này nằm trong vương quốc kia (Xem ví dụ để thấy rõ hơn). Điều này khiến cho việc quản lý các vương quốc hết sức phức tạp đến mức có những người dân cảm thấy bối rối vì không biết nhà mình thuộc về vương quốc nào. Bạn hãy lập một chương trình để giúp đỡ những người dân này.  
+
+\subsubsection{   Input  }
+
+   Dòng đầu gồm hai số   \textbf{    N   }   và   \textbf{    Q   }   thể hiện số lượng vương quốc và số lượng căn nhà.  
+
+\textbf{    N   }   dòng sau, dòng thứ i mô tả vương quốc thứ i có dạng: k   $_$   x­   $_    1   $   y   $_    1   $   x   $_    2   $   y   $_    2   $   ... x   $_    k   $   y   $_    k   $   . Dòng này thể hiện vương quốc i là một   \textbf{    đa giác lồi   }   k đỉnh; toạ độ các đỉnh theo chiều kim đồng hồ là   $_$   (x­1, y1), (x   $_    2   $   , y   $_    2   $   ) ... (x   $_    k   $   , y   $_    k   $   ). Các đa giác không cắt nhau hay có điểm chung. Luôn tồn tại một đa giác chứa toàn bộ các đa giác còn lại.  
+
+\textbf{    Q   }   dòng cuối cùng; mỗi dòng gồm hai số x y là toạ độ một  căn nhà. Không có căn nhà nào nằm trên biên giới giữa hai quốc gia.  
+
+\textbf{    Giới hạn   }   :   \textbf{    Q   }   $<$ 22,222. Tổng số lượng số đỉnh của các đa giác nhỏ hơn 33,333. Trị tuyệt đối toạ độ các đỉnh và căn nhà nhỏ hơn 999,999,999.  
+
+   .  
+
+\subsubsection{   Output  }
+
+   Gồm   \textbf{    Q   }   dòng, mỗi dòng ghi thứ tự của vương quốc mà căn nhà tương ứng thuộc về.  
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+\\5 3
+\\4 0 1 1 7 6 8 7 0
+\\3 2 4 5 6 6 1
+\\4 3 7 4 6 3 5 2 6
+\\5 1 3 2 3 3 2 3 1 1 2
+\\4 4 4 5 4 5 3 4 3
+\\5 7
+\\2 2
+\\5 5
+\\
+\\\textbf{Output:}
+\\
+\\1
+\\4
+\\2
+\\
+\\
+\includegraphics{http://i259.photobucket.com/albums/hh288/phongtinptnk0710/pic.jpg}
+\\
+
+\textbf{Giải thích }: 
+
+ 
+
+Hình vẽ trên thể hiện vị trí của 5 vương quốc. Vương quốc lớn nhất là vương quốc 1. 
+
+Bên trong vương quốc 1 có ba vương quốc nhỏ hơn có hình tam giác, tứ giác và ngũ giác lần lượt là vương quốc 2, 3 và 4.
+
+Vương quốc cuối cùng là vương quốc 5 nằm trong lòng vương quốc 2. 
+
+Nếu một người dân sống ở toạ độ (5,7) thì nhà anh ta thuộc về vương quốc 1. 
+
+Nếu sống ở toạ độ (2, 2) thì thuộc về vương quốc 4; ở (5, 5) thì thuộc về vương quốc 2.\end{verbatim}

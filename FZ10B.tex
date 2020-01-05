@@ -1,0 +1,39 @@
+
+
+Cho một mạng có N đỉnh, M cạnh vô hướng và một đỉnh phát S. Mỗi cạnh (X, Y) của mạng có khả năng thông qua là K. Hãy tìm cách chọn 1 đỉnh thu T khác với S sao cho luồng cực đại trên mạng với đỉnh phát S và đỉnh thu T có giá trị nhỏ nhất.
+
+\subsubsection{Input}
+
+Có nhiều bộ test, dữ liệu kết thúc bằng  "0 0 0"
+
+Với mỗi test:
+\begin{itemize}
+	\item Dòng đầu chứa 3 số nguyên \emph{N}, \emph{M} và \emph{S}, thể hiện số đỉnh, số cạnh, và chỉ số đỉnh phát (các đỉnh đánh số từ 1 đến N).
+	\item M dòng tiếp theo mô tả các cạnh của đồ thị. Mỗi dòng chứa 3 số nguyên \emph{X}, \emph{Y} và \emph{K}, thể hiện một cạnh nối 2 đỉnh X và Y với khả năng thông qua là  \emph{K}.
+\end{itemize}
+
+\textbf{Giới hạn:}
+
+1 $<$ \emph{N ≤ }300
+
+0 $<$ \emph{M ≤ }50000
+
+0 $<$ \emph{S}, \emph{X}, \emph{Y}\emph{ ≤ }\emph{N}
+
+0 $<$ \emph{K ≤ }1000000
+
+\subsubsection{Output}
+
+Với mỗi test, in ra 1 số nguyên W duy nhất thể hiện luồng cực đại nhỏ nhất tìm được trong số các cách chọn đỉnh thu.
+\begin{verbatim}
+\textbf{Sample Input}
+5 5 1 
+1 2 5 
+2 4 6 
+1 3 7 
+3 4 3 
+5 1 10 
+0 0 0
+\textbf{Sample Output}
+8
+\end{verbatim}

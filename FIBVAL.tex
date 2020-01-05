@@ -1,0 +1,50 @@
+
+
+ 
+
+Bản vanxơ Fibonacci là một bản nhạc mà giai điệu của nó bắt nguồn từ một trong những dãy số nổi tiếng nhất trong Lý thuyết số - dãy số Fibonacci. Hai số đầu tiên của dãy là số 1 và số 2, các số tiếp theo được xác định bằng tổng của 2 số liên tiếp ngay trước nó trong dãy.
+\\
+\\Bản vanxơ Fibonacci thu được bằng việc chuyển dãy số Fibonacci thành dãy các nốt nhạc theo qui tắc chuyển một số nguyên dương thành nốt nhạc sau đây:
+\\ 
+\begin{itemize}
+	\item Số 1 tương ứng với nốt Đô (C).
+	\item Số 2 tương ứng với nốt Rê (D).
+	\item Số 3 tương ứng với nốt Mi (E).
+	\item Số 4 tương ứng với nốt Fa (F).
+	\item Số 5 tương ứng với nốt Sol (G).
+	\item Số 6 tương ứng với nốt La (A).
+	\item Số 7 tương ứng với nốt Si (B).
+	\item Số 8 tương ứng với nốt Đô (C).
+	\item Số 9 tương ứng với nốt Rê (D).
+\end{itemize}
+
+
+\\và cứ tiếp tục như vậy. Ví dụ, dãy gồm 6 số Fibonacci đầu tiên 1, 2, 3, 5, 8 và 13 tương ứng với dãy các nốt nhạc C, D, E, G, C và A.
+\\
+\\Để xây dựng nhịp điệu vanxơ người ta đi tìm các đoạn nhạc có tính chu kỳ trong bản vanxơ Fibonacci. Đoạn nhạc được gọi là có tính chu kỳ nếu như có thể chia nó ra thành k ≥ 2 đoạn giống hệt nhau. Ví dụ, đoạn nhạc GCAGCA là đoạn có tính chu kỳ, vì nó gồm 2 đoạn giống nhau GCA.
+\\
+\\\textbf{Yêu cầu } : Cho trước hai số nguyên dương u, v (u $<$ v), hãy xác định độ dài đoạn nhạc dài nhất có tính chu kỳ của bản nhạc gồm dãy các nốt nhạc của bản vanxơ Fibonacci bắt đầu từ vị trí u kết thúc ở vị trí v.
+\\
+\\\textbf{Ràng buộc } : 50\% số tests ứng với 50\% số điểm có u $_ i $ $<$ v $_ i $ ≤ 100.
+
+\subsubsection{Input}
+\begin{itemize}
+	\item Dòng thứ nhất chứa số nguyên dương k (k ≤ 100) là số lượng test.
+	\item Dòng thứ i trong số k dòng tiếp theo chứa 2 số nguyên dương u $_ i $ , v $_ i $ được ghi cách nhau bởi dấu cách (u $_ i $ $<$ v $_ i $ ≤ 10 $^ 9 $ ) là vị trí bắt đầu và kết thúc của 1 bản nhạc.
+\end{itemize}
+
+\subsubsection{Output}
+
+Ghi ra k dòng, dòng thứ i chứa 1 số nguyên là độ dài đoạn nhạc tìm được tương ứng với test thứ i. Nếu không tìm được đoạn nào có tính chu kỳ thì ghi ra số -1.
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+2
+1 3
+4 10
+
+\textbf{Output:}
+-1
+2 
+\end{verbatim}

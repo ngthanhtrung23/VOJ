@@ -1,0 +1,43 @@
+
+
+Đất nước Monterey có rất nhiều danh lam thánh cảnh đẹp. Brogan đã lên kế hoạch cho chuyến du lịch sắp tới của mình ở Monterey. Theo kế hoạch, Brogan sẽ đi tham quan \textbf{K} danh lam thánh cảnh đẹp nhất ở Monterey. Nhưng Brogan vẫn chưa biết chọn lộ trình sao cho hợp lý. Brogan muốn lộ trình sẽ không đi qua một con đường theo cùng một chiều quá 1 lần và khi kết thúc lộ trình Brogan phải quay về thành phố lúc ban đầu. Ban đầu, Brogan ở thành phố \textbf{S}.
+
+Hãy kiểm tra xem Brogan có thể tìm được lộ trình thỏa các điều kiện trên hay không. Nếu không tồn tại lộ trình như trên thì xuất ra \textbf{“NIE”} còn nếu tồn tại thì xuất ra  \textbf{“TAK”} và một lộ trình bất kỳ thỏa mản yêu cầu trên.
+
+\subsubsection{DỮ LIỆU VÀO}
+\begin{itemize}
+	\item Dòng đầu tiên chứa 3 số nguyên N, M, S, K lần lượt là số lượng thành phố ở Monterey,  số lượng đường đi ở Monterey, thành phố hiện giờ Brogan ở và số lượng danh lam thánh cảnh mà Brogan muốn tham quan.
+	\item M dòng tiếp theo mỗi dòng chứa hai số u, v  có nghĩa là có đương đi hai chiều từ thành phố u tới thành phố v.
+	\item Dòng tiếp theo chứa K số là gồm thử tự của những thành phố mà Brogan muốn tham quan.
+	\item Lưu ý: đồ thị nhập vào đảm bảo là đồ thị đơn.
+\end{itemize}
+
+\subsubsection{DỮ LIỆU RA}
+\begin{itemize}
+	\item Dòng đầu tiên chứa “NIE” hoặc “TAK”.
+	\item Nếu là “TAK”, dòng tiếp theo se chứa số nguyên D là số lượng thành phố nằm trên lộ trình kể cả thành phố xuất phát. Theo sau số D sẽ là dãy gồm D số miêu tả lộ trình tìm được.
+\end{itemize}
+
+\subsubsection{RÀNG BUỘC}
+\begin{itemize}
+	\item N, M $<$= 106.
+	\item K $<$= N.
+	\item 10\% số test M $<$= 10.
+	\item 20\% số test đồ thị không có chu trình.
+\end{itemize}
+
+\subsubsection{VÍ DỤ}
+\begin{verbatim}
+\textbf{Input}
+3 2 1 1
+1 2
+2 3
+3
+
+\textbf{Output}
+TAK
+5 1 2 3 2 1\end{verbatim}
+
+ 
+
+\textbf{Giải thích:} ta không thể chọn lộ trình 1 -$>$ 2 -$>$ 1 -$>$ 2 -$>$ 3 -$>$ 2 -$>$ 1 vì đoạn đường 1-$>$ 2 đi qua 2 lần theo cùng một chiều từ 1 sang 2.

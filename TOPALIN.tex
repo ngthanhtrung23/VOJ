@@ -1,0 +1,32 @@
+
+
+Cho một xâu ký tự, bạn có thể biến đổi xâu này theo cách sau: Chọn một loại ký tự, biến đổi \textbf{ tất cả } các ký tự loại này trong xâu thành một loại ký tự khác. Chi phí của một phép biến đổi như vậy bằng số lượng ký tự đã bị thay đổi. Bạn được phép áp dụng các phép biến đổi nhiều lần, chi phí của nhiều phép biến đổi bằng tổng chi phí của từng phép biến đổi.
+
+Ví dụ, nếu bạn có xâu \emph{ acaabc } , sau khi biến tất cả các ký tự \emph{ c } thành \emph{ b } , bạn có xâu \emph{ abaabb } , bạn mất một lượng chi phí là 2 cho phép biến đổi này do có 2 ký tự \emph{ c } bị thay đổi.
+
+\textbf{Yêu cầu: } Tìm chi phí nhỏ nhất để biến đổi một xâu trở thành \textbf{ xâu đối xứng } .
+
+\subsubsection{Input}
+\begin{itemize}
+	\item Một dòng duy nhất ghi xâu ban đầu.
+\end{itemize}
+
+\subsubsection{Output}
+\begin{itemize}
+	\item Một số duy nhất thể hiện chi phí tối ưu.
+\end{itemize}
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+acaabc
+
+\textbf{Output:}
+3\end{verbatim}
+
+\subsubsection{Giới hạn}
+\begin{itemize}
+	\item Độ dài xâu không vượt quá 10 $^ 5 $ .
+	\item Mỗi ký tự trong xâu là chữ cái hoặc chữ số.
+	\item Trong 50\% số test, độ dài xâu không vượt quá 100.
+\end{itemize}

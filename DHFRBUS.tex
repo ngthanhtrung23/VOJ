@@ -1,0 +1,48 @@
+
+
+Tham gia trò chơi nhảy lò cò, thật may mắn, Khuê đã giành giải nhất của cuộc thi. Phần thưởng mà Khuê nhận được là \emph{ k } vé xe buýt miễn phí để đi thăm quan thành phố Hạ Long. Mỗi vé xe chỉ được sử dụng một lần và có thể sử dụng cho bất kỳ tuyến xe buýt nào trong thành phố. Thành phố có \emph{ n } nút giao thông được đánh số từ 1 đến \emph{ n } và \emph{ m } tuyến xe buýt hai chiều. Mỗi cặp nút giao thông \emph{ i, j } có không quá một tuyến xe buýt hai chiều, nếu có thì để đi từ nút \emph{ i } đến nút \emph{ j } (hoặc từ nút \emph{ j } đến nút \emph{ i } ) với giá vé là \emph{ c $_ ij $}$_$ = \emph{ c $_ ji  $} đồng. Xuất phát từ nút giao thông \emph{ s } , Khuê muốn di chuyển đến nút giao thông \emph{ t } và anh luôn lựa chọn đường đi với chi phí ít nhất.
+
+Ví dụ: thành phố có 5 nút giao thông và 6 tuyến xe buýt:
+
+Tuyến 1: 1-2 giá vé 10 đồng; Tuyến 2: 2-5 giá vé 10 đồng;
+
+Tuyến 3: 1-4 giá vé 3 đồng; Tuyến 4: 3-4 giá vé 5 đồng;
+
+Tuyến 5: 3-5 giá vé 3 đồng; Tuyến 6: 1-3 giá vé 20 đồng.
+
+
+\includegraphics{http://vn.spoj.com/content/voj:FREEBUS}
+
+Xuất phát từ nút 1 đến nút 5 \emph{ , } đi \emph{} theo hành trình 1-4-3-5 hết 11 đồng là đường đi với chi phí ít nhất. Tuy nhiên, nếu Khuê sử dụng 1 vé xe miễn phí thì đường đi 1à3à5 hết 3 đồng là ít nhất (vé xe miễn phí được sử dụng tại tuyến 1-3).
+
+\textbf{Yêu cầu: } Cho biết các tuyến xe buýt với giá vé tương ứng và các giá trị \emph{ s } , \emph{ t } , \emph{ k } . Hãy tính chi phí ít nhất để đi từ nút giao thông \emph{ s } đến nút giao thông \emph{ t } mà không sử dụng quá \emph{ k } vé xe miễn phí.
+
+\textbf{Input}
+\begin{itemize}
+	\item Dòng đầu tiên ghi năm số nguyên dương \emph{ n } , \emph{ m, k, s, t } ; \textbf{\emph{}}
+	\item \emph{\emph{m } dòng sau, mỗi dòng 3 số nguyên \emph{ i, j, c $_ ij $} mô tả có tuyến xe buýt \emph{ i – j } hết \emph{ c $_ ij $} đồng.}
+\end{itemize}
+
+\subsubsection{Output}
+
+Một số duy nhất là chi phí ít nhất để đi từ nút giao thông \emph{ s } đến nút giao thông \emph{ t } mà không sử dụng quá \emph{ k } vé xe miễn phí.
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:
+}5 6 1 1 5
+1 2 10
+2 5 10
+1 4 3
+3 4 5
+3 5 3
+1 3 20
+\textbf{Output:
+}3\end{verbatim}
+
+\textbf{Ghi chú: }
+\begin{itemize}
+	\item Có 40\% số test ứng với 40\% số điểm có \emph{ n } ≤ 100, \emph{ m } ≤ 1000 và \emph{ k } = 1;
+	\item Có 20\% số test ứng với 20\% số điểm có \emph{ n } ≤ 10 $^ 5 $ , \emph{ m } ≤ 10 $^ 5 $ và \emph{ k } = 1;
+	\item Có 40\% số test còn lại ứng với 40\% số điểm có \emph{ n } ≤ 10 $^ 5 $ , \emph{ m } ≤ 10 $^ 5 $ và \emph{ k } ≤ 5.
+\end{itemize}

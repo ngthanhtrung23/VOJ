@@ -1,0 +1,59 @@
+
+
+ 
+
+Mirko was bored, so he took a piece of paper and wrote down a sequence \textbf{ A } of length \textbf{ N } , which contains each positive integer between \textbf{ 1 } and \textbf{ N } , inclusive, \textbf{ exactly once } . After that, he took another piece of paper and wrote down \textbf{ M } descriptions of the sequence \textbf{ A } .
+
+ 
+
+Each description has one of the following formats:
+
+\textbf{1 x y v – } the largest number in positions between \textbf{ x } and \textbf{ y } (inclusive) equals \textbf{ v }
+
+\textbf{2 x y v – } the smallest number in positions between \textbf{ x } and \textbf{ y } (inclusive) equals \textbf{ v }
+
+ 
+
+Then Slavko came, saw, and stole the first paper. Mirko is desperate and has asked you to find some sequence matching the descriptions, not necessarily equal to the original sequence.
+
+ 
+
+\textbf{INPUT: }\textbf{}
+
+The first line of input contains two positive integers, \textbf{ N } (1 ≤ \textbf{ N } ≤ 200), the length of the sequence, and \textbf{ M } (0 ≤ \textbf{ M } ≤ 40 000), the number of descriptions.
+
+Each of the following \textbf{ M } lines contains a description as described above.
+
+ 
+
+\textbf{OUTPUT: }
+
+The first and only line of output must contain a sequence of \textbf{ N } space-separated positive integers (matching the descriptions and containing all positive integers from \textbf{ 1 } to \textbf{ N } ), or -1 if no such sequence exists.
+
+ 
+
+\textbf{SAMPLE TESTS: }
+\begin{verbatim}
+\textbf{Input }
+3 2
+1 1 1 1
+2 2 2 2
+
+\textbf{Output}
+1 2 3
+
+\textbf{Input}
+4 2
+1 1 1 1
+2 3 4 1
+
+\textbf{Output}
+-1
+
+\textbf{Input}
+5 2
+1 2 3 3
+2 4 5 4
+
+\textbf{Output}
+1 2 3 4 5\end{verbatim}

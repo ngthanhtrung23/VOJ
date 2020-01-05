@@ -1,0 +1,47 @@
+
+
+
+
+   Hàm có tính nhân là các hàm thỏa mãn tính chất f(m*n) = f(m) * f(n). Bây giờ, ta đặt thêm một ràng buộc cho hàm nhân, đó là nếu m và n là 2 số nguyên tố cùng nhau thì f(m) và f(n) cũng nguyên tố cùng nhau. Thêm vào đó, nó phải thỏa mãn f(1)=1. f(x) được định nghĩa cho các số nguyên dương, và trả về kết quả cũng là các số nguyên dương.  
+
+   Bây giờ bạn được cung cấp một số số x và f(x) tương ứng. Nhiệm vụ của bạn là phải kiểm tra xem, có thể có duy nhất giá trị của f(y) với một số y cho trước hay không; và nếu có thì hãy tính giá trị đó.  
+
+\subsubsection{   Input  }
+
+   Dòng đầu tiên chứa một số thể hiện số lượng test. Với mỗi test, dòng đầu chứa một số N thể hiện số cặp (x, f(x)) được cung cấp. N dòng tiếp theo, mỗi dòng chứa một cặp 2 số phân biệt: số thứ nhất tương ứng là x, và số thứ 2 là f(x). Dòng tiếp theo chứa q, số lượng câu hỏi. q dòng sau đó, mỗi dòng chứa một số y.  
+
+\subsubsection{   Output  }
+
+   Với mỗi test, in ra q dòng tương ứng với q câu hỏi. In ra "YES f(y)" với f(y) được thay thế bởi số nguyên thể hiện giá trị của f(y) với không có chữ số 0 nào ở đầu, nếu như với dữ liệu được cung cấp, ta có thể tìm được duy nhất giá trị của f(y); hoặc in ra "NO" nếu dữ liệu mâu thuẫn với tính chất của hàm, hoặc với thông tin được cung cấp về hàm thì không tồn tại duy nhất f(y).  
+
+\subsubsection{   Example  }
+\begin{verbatim}
+Input:
+3
+3
+2 2
+3 2
+7 19
+1
+7
+1
+6 6
+1
+6
+2
+2 2
+3 3
+1
+12
+
+Output:
+NO
+YES 6
+YES 12
+\end{verbatim}
+
+\subsubsection{   Constraints  }
+
+   Dataset 1: Số lượng test nhỏ hơn 20. N ≤=50. x và f(x) ≤ 10\textasciicircum50 . x và f(x) không có ước nguyên tố nào lớn hơn 100005.  
+
+   Số lượng câu hỏi không quá 50. Mỗi số trong các câu hỏi đều nhỏ hơn 10\textasciicircum50. Bạn có thể chắc chắn rằng nếu câu trả lời là duy nhất thì nó có ít hơn 400 chữ số. Time limit: 12s  

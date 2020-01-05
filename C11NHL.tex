@@ -1,0 +1,71 @@
+
+
+
+
+\emph{    Như mọi người đã biết (hoặc sắp được biết), nhà hát lớn thành phố Hồ Chí Minh là một nhà hát rất đẹp theo lối kiến trúc Đế Quốc, một nơi mà khi đặt chân đến TP Hồ Chí Minh thì ai cũng nên đến tham quan thử một lần cho biết.   }
+
+\emph{
+\includegraphics{http://www.vinabooking.vn/uploads/tphcm/Nha_hat_TPHCM.jpg}}
+
+   Nhà hát có m dãy ghế, được đánh số từ 1 đến m, dãy ghế 1 gần sân khấu nhất, dãy ghế m xa sân khấu nhất, mỗi dãy ghế có đúng n cái ghế được đánh số từ 1 đến n từ trái sang. Theo khảo sát của ban điều hành nhà hát thì mỗi ghế trong nhà hát có một độ ưa chuộng khác nhau, ghế ở hàng i, cột j có một giá trị ưa chuộng là số nguyên p[i,j].  
+
+   Ngày mai sắp có một chương trình biểu diễn hay, nhân dịp đó, các đoàn du khách tham quan TP Hồ Chí Minh muốn đến đặt chổ để xem biểu diễn. Do số lượng khách tham quan của mỗi đoàn khác nhau và để cho nhiều đoàn có thể xem được biểu diễn, ban điều hành nhà hát đã quyết định mỗi đoàn tham quan khi đến đặt chổ sẽ phải đặt các ghế trong một hình vuông dxd, không hơn không kém (tức là có d hàng ghế, mỗi hàng có d cái ghế).  
+
+   Do đó, khi một trưởng đoàn đến để đặt chổ cho đoàn của mình, họ sẽ chọn trong các ghế còn trống (chưa được các đoàn trước đặt), một hình vuông dxd có góc trái trên là (x0,y0) - (hàng x0, cột y0) sao cho tích 'giá trị ưa chuộng' của các ghế trong hình vuông đó là lớn nhất (tức là tích các p[i,j], với x0 ≤ i $<$ x0+d; y0 ≤ j $<$ y0+d), nếu có nhiều hình vuông thỏa mãn, họ sẽ chọn hình vuông có x0 nhỏ nhất, nếu vẫn còn nhiều hình vuông thỏa mãn, họ sẽ chọn hình vuông có y0 nhỏ nhất, sau khi chọn được rồi thì họ sẽ đặt toàn bộ ghế trong hình vuông đó.  
+
+   Biết rằng số lượng đoàn tham quan đến đặt chổ cho đoàn mình là rất nhiều nên khi nào vẫn còn cách chọn một hình vuông dxd các ghế trống thì vẫn sẽ có đoàn đến để đặt chổ theo cách chọn đã nêu trên.  
+
+\textbf{    Yêu cầu:   }   Hãy giúp ban điều hành nhà hát tính trước xem sẽ có tối đa bao nhiêu đoàn đến để đặt chổ cho đoàn của mình và vị trí mà các đoàn tham quan đã đặt chổ  
+
+\subsubsection{   Dữ liệu  }
+\begin{itemize}
+	\item     Dòng đầu tiên là 3 số nguyên m, n, d (1 ≤ d ≤ min(m,n)).   
+	\item     m dòng tiếp theo, mỗi dòng chứa n số nguyên, số thứ j ở dòng i là p[i,j].   
+\end{itemize}
+
+\subsubsection{   Kết quả  }
+\begin{itemize}
+	\item     Dòng đầu tiên chứa số K, là số lượng đoàn tham quan nhiều nhất có thể đến đặt chổ tại nhà hát.   
+	\item     K dòng tiếp theo, dòng thứ i chứa 2 số nguyên x0, y0 là tọa độ góc trái trên của hình vuông mà đoàn thứ i đến đặt chổ theo thứ tự thời gian (đoàn thứ 1 là đoàn đầu tiên đến đặt chổ, đoàn thứ 2 là đoàn kế tiếp,...).   
+\end{itemize}
+
+\subsubsection{   Phân bố giới hạn test  }
+\begin{itemize}
+	\item     20\% test đầu có 1 ≤ m, n ≤ 5, 0 $<$ p[i,j] ≤ 3   
+	\item     20\% test kế tiếp có 1 ≤ m, n ≤ 50, 0$<$ p[i,j] ≤ 3   
+	\item     20\% test kế tiếp có 1 ≤ m, n ≤ 50, 0 $<$ p[i,j] ≤ 10    $^     9    $
+	\item     20\% test kế tiếp có 1 ≤ m, n ≤ 500, 0 $<$ p[i,j] ≤ 1000   
+	\item     20\% test còn lại có 1 ≤ m, n ≤ 500, 0 $<$ p[i,j] ≤ 10    $^     9    $
+\end{itemize}
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+\textbf{Input 1:}
+4 4 3
+\\1 2 3 5
+\\7 8 1 6
+\\9 8 7 3
+\\2 4 1 4
+\\
+\\\textbf{Output 1:}
+1
+\\1 2\end{verbatim}
+
+   (Giải thích: Hình vuông 3x3 có tích 'giá trị ưa chuộng' lớn nhất có góc trái trên ở ô (1,2), có giá trị 2x3x5x8x1x6x8x7x3=241920. Sau khi đoàn đầu đặt ghế xong thì không còn đủ ghế trống để tiếp tục đặt ghế thỏa mãn hình vuông 3x3 nữa).  
+\begin{verbatim}
+
+\\\textbf{Input 2:
+\\}4 4 2
+\\1 1 1 1
+\\2 2 1 1
+\\2 2 1 1
+\\2 2 2 2
+\\
+\\\textbf{Output 2:
+\\}3
+\\2 1
+\\3 3
+\\1 3\end{verbatim}
+
+
+\\   (Giải thích: Khi đoàn đầu tiên đến đặt chổ, có 2 vị trí hình vuông có cùng giá trị lớn nhất, đó là hình vuông góc trái trên là (2,1) và (3,1). Do đó trưởng đoàn sẽ ưu tiên đặt ghế trong hình vuông có góc trái trên ở vị trí (2,1). 2 đoàn tiếp theo sẽ lần lượt đặt ghế theo giá trị lớn nhất, có vị trí góc trái trên là (3,3) rồi (1,3)).  

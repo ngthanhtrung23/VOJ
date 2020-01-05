@@ -1,0 +1,52 @@
+
+
+ 
+
+Cho một ma trận A kích thước N*N chỉ gồm các giá trị \{-2, -1, 0, 1, 2\}. Các hàng của ma trận A được đánh số từ 1 đến N từ trên xuống dưới. Các cột của ma trận A được đánh số từ 1 đến N từ trái sang phải. Phần tử ở hàng i, cột j được ký hiệu là A(i,j).
+
+Bảng A được gọi là tương thích với dãy T nếu:
+\begin{itemize}
+	\item Dãy T gồm đúng N phần tử. Các phần tử của dãy T được đánh số từ 1 đến N. Phần tử thứ i được ký hiệu là T(i).
+	\item Với mọi i, j mà 1 ≤ i, j ≤ N:
+\begin{itemize}
+	\item A(i,j) = 0 ↔ T(i) = T(j).
+	\item A(i,j) = 1 ↔ T(i) $<$ T(j).
+	\item A(i,j) = 2 ↔ T(i) ≤ T(j).
+	\item A(i,j) = -1 ↔ T(i) $>$ T(j)
+	\item A(i,j) = -2 ↔ T(i) ≥ T(j).
+\end{itemize}
+\end{itemize}
+
+Yêu cầu: cho trước ma trận A, hãy tìm dãy số nguyên dương T tương thích với A, sao cho giá trị lớn nhất của dãy T là nhỏ nhất có thể. Biết rằng luôn tồn tại một dãy T như vậy.
+
+ 
+
+\subsubsection{Input}
+
+Dòng 1: Số nguyên dương N
+
+N dòng tiếp theo, mỗi dòng chứa đúng N số nguyên dương thể hiện ma trận A
+
+\subsubsection{Output}
+
+Dòng 1: Ghi ra số lớn nhất của dãy T.
+
+Dòng 2: Ghi ra N số nguyên dương thể hiện dãy T.
+
+\subsubsection{Giới hạn}
+\begin{itemize}
+	\item Trong 30\% số lượng test (trị giá 30 điểm): N $<$= 7
+	\item Trong 70\% số lượng test còn lại (trị giá 70 điểm): N $<$= 77
+\end{itemize}
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+3
+0 1 1
+-1 0 1
+-1 -1 0\end{verbatim}
+\begin{verbatim}
+\textbf{Output:}
+3
+1 2 3\end{verbatim}

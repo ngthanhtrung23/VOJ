@@ -1,0 +1,64 @@
+
+
+
+
+   Các đảo dừa muốn kết làm thông gia với nhau để tăng thêm tình đoàn kết. Trong vụ việc này, cư dân trên các đảo tín nhiệm mời Pirate, chàng trai bị thất tình nhiều nhất trong quần đảo, đứng ra làm mai mối. Pirate vốn đang đau đớn đọc đống thư chia tay trong email của mình nhưng đành phải gạt nước mắt sang một bên lên để đường làm nhiệm vụ. Tất cả vì sự hòa bình của quần đảo!  
+
+   Pirate biết rằng mấu chốt trong sự thành công của một cuộc hôn nhân phụ thuộc vào sự quen biết từ trước của hai bên. Tức là nếu hai vương quốc càng có mối quan hệ càng khăng khít thì khả năng họ chấp nhận tổ chức hôn sự càng cao.  
+
+   Nhưng làm sao xác định được mối quan hệ của các quốc đảo? Sau khi nghiên cứu, Pirate nhận ra rằng các đảo được nối với nhau bởi một số cây cầu dừa. Độ dài của đường đi từ đảo này đến đảo kia tỉ lệ với số cây cầu dừa phải đi qua trên con đường đó.  
+
+   Dựa vào nghiên cứu trên, Pirate sáng chế ra một thước đo độ khăng khít giữa các hòn đảo, gọi là phương pháp   \textbf{    "khoảng cách trung gian"   }   . Phương pháp này được áp dụng để ước lượng độ khăng khít của hai hòn đảo có cầu dừa nối với nhau. Giả sử ta áp dụng vào hai đảo x và y   \textbf{    (có cầu dừa nối x và y)   }   . Ta sẽ chọn ra một đỉnh z trung gian   \textbf{    (có đường đi đến x hoặc y)   }   , rồi tính chênh lệch (giá trị tuyệt đối của hiệu) giữa đường đi ngắn nhất từ z đến x và từ z đến y. Khoảng cách trung gian giữa x và y chính là chênh lệch nhỏ nhất trong tất cả các cách chọn đỉnh z trung gian trong quần đảo.  
+
+   Pirate sẽ thử nghiệm tác hợp cho hai hòn đảo có khoảng cách trung gian nhỏ nhất. Hãy giúp anh ấy tìm ra giá trị trên!  
+
+\subsubsection{   Input  }
+
+   Input gồm nhiều dòng:  
+\begin{itemize}
+	\item     Dòng thứ nhất là số nguyên    \textbf{     T    }    , số bộ test.   
+	\item     Với mỗi bộ test, được ngăn cách với nhau bởi một dòng trống, gồm:    
+\begin{itemize}
+	\item       Dòng đầu tiên gồm hai số nguyên      \textbf{       N      }      và      \textbf{       M      }      , số hòn đảo và số cây cầu dừa nối các đảo.     
+	\item       M dòng tiếp theo, mỗi dòng chứa hai số nguyên      \textbf{       u v      }      , thể hiện một cây cầu dừa nối hai đảo u và v. Các cây cầu dừa có thể được đi lại theo cả hai hướng. Không có cây cầu dừa nào nối một đảo với chính nó.     
+\end{itemize}
+\end{itemize}
+
+\subsubsection{   Output  }
+
+   Output gồm T dòng:  
+\begin{itemize}
+	\item     Mỗi dòng ghi ra một số nguyên thể hiện khoảng cách trung gian nhỏ nhất giữa hai hòn đảo của test tương ứng.   
+\end{itemize}
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+2
+\\
+\\4 4
+\\1 2
+\\2 3
+\\3 4
+\\4 1
+\\
+\\4 5 
+\\1 2
+\\2 3
+\\3 4
+\\4 1
+\\4 2
+\\
+\\\textbf{Output:}
+1
+\\0\end{verbatim}
+
+\emph{    Giải thích: Ở test thứ nhất, khoảng cách trung gian nhỏ nhất là giữa hai thành phố 1 và 2. Ở test thứ hai, khoảng cách trung gian nhỏ nhất là giữa hai thành phố 2 và 4.   }
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     1 ≤ T ≤ 5   
+	\item     1 ≤ N ≤ 10    $^     5    $
+	\item     1 ≤ M ≤ 10    $^     5    $
+	\item     Trong 40\% số test, 1 ≤ N ≤ 100   
+\end{itemize}

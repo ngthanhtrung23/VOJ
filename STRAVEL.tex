@@ -1,0 +1,36 @@
+
+
+
+
+   Những con quỷ đã tràn vào quấy phá nông trang. Các tạo vật bẩn thỉu, xấu xí này đang cản trở những con bò mỗi khi một con đi từ nông trang (nằm tại bãi cỏ số 1) đến những cánh đồng khác. Con bò i sẽ đi từ nông trang đến cánh đồng i. Những con quỷ đã trở nên thông minh giống người. Chúng biết được đường đi ngắn nhất mà bò i thường đi để đến được cánh đồng i. Con quỷ i đợi bò i tại ở giữa con đường cuối cùng trong hành trình ngắn nhất của bò i đến bãi cỏ i, nhằm phá rối nó.  
+
+   Dĩ nhiên là các con bò không muốn bị phá rối. Vì vậy, chúng chọn một lộ trình hơi khác để từ bãi cỏ 1 đến bãi cỏ i.  
+
+   Tính thời gian tốt nhất để đi qua mỗi lộ trình mới và không phải ngắn nhất này sao cho bò i có thể tránh được quỷ i đang đợi nó ở con đường cuối cùng trong lộ trình ngắn nhất từ bãi cỏ 1 đến bãi cỏ i.  
+
+   Có M con đường (2 $<$= M $<$= 200 000) được đánh số từ 1 đến M. Mỗi con đường là hai chiều và cho phép đi đến tất cả trong số N (3 $<$= N $<$= 100 000) bãi cỏ, được đánh số từ 1 đến N. Con đường i nối hai bãi cỏ là a\_i (1 $<$= a\_i $<$= N) và b\_i (1 $<$= b\_i $<$= N) và đòi hỏi thời gian t\_i (1 $<$= t\_i $<$= 1 000) để lại giữa hai đầu. Không có hai con đường nào nối cùng hai bãi cỏ, và không có con đường nào nối một bãi có với chính nó (a\_i != b\_i). Và thuận lợi hơn cả, lộ trình ngắn nhất mà mỗi con bò i thường đi đến bãi cỏ i là duy nhất trong mỗi test.  
+
+\subsubsection{   Dữ liệu  }
+
+   Dòng 1: Hai số nguyên cách nhau bởi khoảng trắng: N và M  
+
+   Dòng 2...M+1: Dòng i+1 chứa 3 số nguyên: a\_i, b\_i và t\_i  
+\begin{verbatim}
+Dữ liệu mẫu
+4 5
+1 2 2
+1 3 2
+3 4 4
+3 2 1
+2 4 3
+\end{verbatim}
+
+\subsubsection{   Kết quả  }
+
+   Dòng 1...N-1: Dòng i ghi thời gian ngắn nhất để đi từ bãi cỏ 1 đến bãi cỏ i+1 sao cho tránh được việc đi qua con đường cuối cùng trong lộ trình ngắn nhất từ bãi cỏ 1 đến bãi cỏ i+1. Nếu không tồn tại một lộ trình như vậy, ghi -1 trên dòng đó.  
+\begin{verbatim}
+Kết quả mẫu
+3
+3
+6
+\end{verbatim}

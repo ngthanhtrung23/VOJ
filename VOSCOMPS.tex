@@ -1,0 +1,50 @@
+
+
+Cho đồ thị vô hướng N đỉnh. Cho Q truy vấn, mỗi truy vấn thuộc 1 trong 3 loại:
+\begin{enumerate}
+	\item Thêm cạnh (x, y).
+	\item Xóa cạnh (x, y).
+	\item Kiểm tra xem 2 đỉnh x, y có liên thông với nhau không.
+\end{enumerate}
+
+ 
+
+\textbf{Giới hạn : }
+\begin{itemize}
+	\item 2 $<$= N $<$= 10\textasciicircum5
+	\item 1 $<$= Q $<$= 10\textasciicircum5
+	\item Trong cùng một thời điểm, có thể có nhiều cạnh giữa 2 đỉnh x, y (đa đồ thị).
+	\item Đối với truy vấn loại 2: nếu có nhiều cạnh (x, y), xóa 1 cạnh bất kì; nếu không có cạnh nào, không làm gì cả.
+	\item Trong 50\% tổng số test, 1 $<$= N, Q $<$= 5000.
+\end{itemize}
+
+ 
+
+\textbf{Input: }
+\begin{itemize}
+	\item Dòng đầu tiên chứa 2 số N, Q.
+	\item Q dòng tiếp theo, mỗi dòng chứa 1 truy vấn có dạng: t x y. Trong đó t = 1, 2 hoặc 3 tương ứng với truy vấn 1, 2 hoặc 3; x, y là 2 đỉnh trên đồ thị (1 $<$= x, y $<$= N).
+\end{itemize}
+
+\textbf{Output: }
+\begin{itemize}
+	\item Với mỗi truy vấn loại 3, in ra 1 nếu 2 đỉnh x, y liên thông, 0 trong trường hợp ngược lại.
+	\item Các số được in liên tiếp nhau trên cùng một dòng.
+\end{itemize}
+
+ 
+
+\textbf{Ví dụ: }
+\begin{verbatim}
+\textbf{Input}
+2 4
+1 1 2
+3 2 1
+2 2 1
+3 1 2
+
+\textbf{Output}
+10
+
+
+\end{verbatim}

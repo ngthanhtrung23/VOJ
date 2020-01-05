@@ -1,0 +1,61 @@
+
+
+
+
+   ConanKudo và RR chơi 1 trò chơi vô cùng thú vị dành cho 2 người như sau:  
+\begin{itemize}
+	\item     Ban đầu 2 người được cho một bảng vuông kích thước N*N, trên ô ở hàng i cột j của bảng có ghi số A(i,j).   
+	\item     2 người chơi lần lượt chơi theo lượt xen kẽ nhau. ConanKudo chơi trước. Ở mỗi lượt, một người chơi sẽ chọn 1 số nguyên dương trong khoảng [1,N] mà chưa được chọn trước đó bởi bất kỳ người chơi nào.   
+	\item     Sau khi cả 2 người đã chọn hết tất cả các số nguyên dương từ 1 đến N, điểm của 2 người chơi được tính như sau:    
+\begin{itemize}
+	\item       Với mỗi bộ 2 số nguyên dương i, j (i có thể bằng j) mà một người chơi chọn được, điểm của người chơi đó sẽ được cộng thêm A(i,j).     
+\end{itemize}
+\end{itemize}
+
+   Đặt f = (điểm mà ConanKudo nhận được) - (điểm mà RR nhận được).  
+
+   Biết rằng cả 2 người chơi đều thực hiện các nước đi một cách tối ưu, ConanKudo luôn tìm cách chơi để f đạt giá trị lớn nhất, RR luôn tìm cách chơi để f đạt giá trị nhỏ nhất. Hãy tìm các nước đi của ConanKudo.  
+
+\subsubsection{   Mô phỏng trò chơi  }
+
+   Bài toán sẽ được chấm theo kiểu interactive: Bạn vào vai ConanKudo, và máy tính vào vai RR.  
+
+   Khi bắt đầu, trình chấm sẽ viết ra file input của bạn N+1 dòng:  
+\begin{itemize}
+	\item     Dòng đầu chứa số nguyên dương N (N $<$ 101).   
+	\item     N dòng tiếp theo, mỗi dòng chứa N số nguyên dương trong khoảng [1,10    $^     6    $    ] được phân cách nhau bởi ít nhất một dấu cách.   
+	\item     Sau khi đọc input từ trình chấm, bạn sẽ viết ra output cách di chuyển của mình ở lượt đầu tiên, gồm một số nguyên dương duy nhất thể hiện nước di chuyển của bạn   
+	\item     Tiếp đó, trình chấm sẽ viết vào input của bạn nước di chuyển mà trình chấm thực hiện (luôn là nước đi tối ưu)   
+	\item     Sau đó, bạn lại viết ra output cách di chuyển của mình ở lượt tiếp theo   
+	\item     Quá trình trên lặp lại cho đến khi bạn và trình chấm đã thực hiện đủ N lượt chơi.   
+\end{itemize}
+
+   Nếu tất cả các nước di chuyển bạn đưa ra đều tối ưu, bạn được trọn vẹn điểm cho test đó, nếu không, bạn không nhận được điểm nào.  
+
+\subsubsection{   Chú ý  }
+\begin{itemize}
+	\item     Sau khi output ra một số nguyên, bạn cần output thêm 1 dấu cách hoặc 1 dấu xuống dòng.   
+	\item     Để trình chấm nhận được output của bạn, sau mỗi lần in ra một nước di chuyển, bạn cần dùng thêm lệnh fflush(stdout) với C++ và flush(output) với pascal. Với pascal, bạn không nên dùng cách đọc từ file có tên trống để tránh lệnh flush(output) hoạt động không như mong muốn.   
+\end{itemize}
+
+\subsubsection{   Chấm điểm  }
+
+   Trong thời gian thi, bài của bạn chỉ được chấm với   \textbf{    50\%   }   số test của bài. Trong quá trình thi, điểm của bạn thể hiện phần trăm test giải đúng trong các test đó (trên thang điểm   \textbf{    100   }   ).  
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input \& Output:}
+InputOutput3
+\\2 8 1
+\\3 5 5
+\\3 2 7  23  1\end{verbatim}
+
+\subsubsection{   Giải thích  }
+
+   Điểm của ConanKudo: A(2,2) + A(1,1) + A(1,2) + A(2,1) = 18  
+
+   Điểm của RR: A(3,3) = 7  
+
+   f = 11  
+
+   Nếu ở lượt chơi đầu tiên, ConanKudo chọn 1 hoặc 3, thì ở lượt 2, RR sẽ chọn 2. Khi đó, điểm của ConanKudo là 13, điểm của RR là 5, f = 8.  

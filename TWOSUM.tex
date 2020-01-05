@@ -1,0 +1,33 @@
+
+
+
+
+   Một dãy các số nguyên không âm A[1..N] được gọi là 2-Sum nếu ta có thể tách dãy đó làm 2 dãy có tổng các giá trị bằng nhau. Nghĩa là tồn tại một số k trong đoạn [1..N-1] sao cho tổng A[1] + A[2] + ... + A[k] = A[k+1] + A[k+2] + ... + A[N].  
+
+   Cho 1 dãy gồm N số nguyên không âm. Hãy tìm dãy con gồm các phần tử liên tiếp dài nhất mà cũng là dãy 2-Sum.  
+
+\subsubsection{   Input  }
+
+   Dòng đầu tiên chứa số nguyên N (2 $<$= N $<$= 5000).  
+
+   N dòng tiếp theo, dòng thứ i chứa giá trị của phần tử A[i] của dãy. (0 $<$= A[i] $<$= 200000)  
+
+\subsubsection{   Output  }
+
+   Xuất ra độ dài lớn nhất của dãy 2-Sum tìm được. Nếu không có kết quả thì in ra 0.  
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+6
+\\2
+\\10
+\\3
+\\2
+\\5
+\\1 \end{verbatim}
+\begin{verbatim}
+\textbf{Output:}
+4\end{verbatim}
+\begin{verbatim}
+Giải thích: dãy 2-Sum dài nhất tìm được là A[2..5] = {10, 3, 2, 5}. Có thể tách dãy này thành 2 phần {10} và {3, 2, 5} có tổng bằng 10.\end{verbatim}

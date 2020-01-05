@@ -1,0 +1,32 @@
+
+
+A farmer has a set of fields, each of which is surrounded by cypress trees. Also, the farmer has a set of strips of land, each of which has a row of cypress trees. In both fields and stri s, between every two cosecutive cypress trees is a single olive tree. All of the farmer’s cypress trees either surround a field or are in a strip and all of the farmer’s olive trees are between two consecutive cypress trees in a field or in a strip.
+
+One day the farmer became very ill and he felt that he was going to die. A few days before he passed away he called his eldest son and told him, “I give you any \emph{ Q } cypress trees of your choice and all the olive trees which are between any two consecutive cypress trees you have chose n .” From each field and from each strip the son can pick any combination of cypress trees. Since the eldest son loves olives he wants to pick the \emph{ Q } cypress trees which will allow him to inherit as many olive trees as possible.
+
+
+\includegraphics{http://i1103.photobucket.com/albums/g473/coder_1340/tmp.jpg}
+
+In Figure 1, assume that the son is given \emph{ Q } =17 cypress trees. To maximize his olive inheritance he should choose all the cypress trees in Field 1 and Field 2, inheriting 17 olive trees.
+
+You are to write a program which, given the information about the fields and the strips and the number of cypress trees the son can pick, determines the largest possible number of olive trees the son may inherit.
+
+\textbf{INPUT }
+
+The input file name is farmer.in. The first line contains first the integer \emph{ Q } : the number
+
+of cypress trees the son is to select; then the integer \emph{ M } , the number of fields; and then the integer \emph{ K } , the number of strips. The second line contains \emph{ M } integers \emph{ N }\emph{ 1 } , \emph{ N }\emph{ 2 } ,… \emph{ N }\emph{ M } , : the numbers of cypress trees in  fields. The third line contains \emph{ K } integers \emph{ R }\emph{ 1 } , \emph{ R }\emph{ 2 } ,… \emph{ R }\emph{ K } : the numbers of cypress trees in strips \emph{ . } (0≤Q≤150000, 3≤ Ni≤150, 2$<$= Ri$<$= 150)
+
+\textbf{OUTPUT }
+
+The output file name is farmer.out. The file is to contain one line with one integer: the largest possible number of olive trees the son may inherit.
+
+\textbf{EXAMPLE INPUTS AND OUTPUTS }
+\begin{verbatim}
+\textbf{Input }
+17 3 3
+13 4 8
+4 8 6
+
+\textbf{Output}
+17\end{verbatim}

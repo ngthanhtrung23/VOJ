@@ -1,0 +1,72 @@
+
+
+Cho một bảng kích thước M * N. George có tất cả K màu khác nhau. Cậu muốn tô màu bảng này sao cho:
+\begin{itemize}
+	\item 
+
+Mỗi màu được sử dụng ít nhất một lần ở dòng trên cùng của bảng
+	\item 
+
+2 ô cùng màu phải thuộc cùng 1 thành phần liên thông
+\end{itemize}
+
+2 cách tô màu được gọi là khác nhau nếu \emph{ dòng trên cùng } của 2 bảng là khác nhau. Đếm số cách tô màu có thể, lấy modulo 10\textasciicircum9 + 7
+
+
+\\ 
+
+Input:
+\begin{itemize}
+	\item 
+
+Dòng 1: 3 số nguyên M, N, K (0 $<$ M,N,K $<$= 300)
+\end{itemize}
+
+Output:
+\begin{itemize}
+	\item 
+
+1 dòng đưa ra số cách tô màu có thể.
+\end{itemize}
+\begin{verbatim}
+Example:
+
+\textbf{Input}
+4 1 2
+
+\textbf{Output}
+6
+
+\textbf{Input}
+4 3 2
+
+\textbf{Output}
+12
+
+\textbf{Input}
+4 4 10
+
+\textbf{Output}
+0
+
+\textbf{Input}
+14 28 14
+
+\textbf{Output}
+178290591\end{verbatim}
+
+
+\\ 
+
+Trong test ví dụ số 1, 6 cách tô màu là "AAAB", "AABB", "ABBB", "BBBA", "BBAA" và "BAAA".
+
+Trong test ví dụ số 2, có thêm 6 cách tô màu dòng đầu tiên. Bảng sau đây mô tả một số cách tô hợp lệ:
+
+ABAA AABA ABBA BABB BBAB BAAB
+
+ABBA AAAA ABAA BABB BAAB BBBB
+
+AAAA AAAA AAAA BBBB BBBB BBBB
+
+
+\\ 

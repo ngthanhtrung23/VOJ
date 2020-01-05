@@ -1,0 +1,38 @@
+
+
+Có một mảnh giấy hình chữ nhật được chia ra làm lưới MxN ô vuông đơn vị.
+
+Nhiệm vụ của bạn là phải cắt mảnh giấy ra làm hai phần thỏa mãn các điều kiện sau:
+\begin{itemize}
+	\item Đỉnh trái trên và đỉnh phải dưới của hình chữ nhật thuộc về hai phần khác nhau.
+	\item Mỗi ô vuông đơn vị nằm trọn vẹn trong một phần. Nói cách khác, bạn chỉ được cắt dọc theo các cạnh của lưới.
+\end{itemize}
+
+Do chi phí để cắt mỗi cạnh đơn vị là khác nhau, bạn cần tìm cách cắt có tổng chi phí của các cạnh mà đường cắt đi qua là nhỏ nhất.
+
+\subsubsection{Dữ liệu}
+\begin{itemize}
+	\item Dòng đầu ghi 2 số nguyên dương M, N thể hiện lưới có M dòng, mỗi dòng có N ô vuông đơn vị.(M, N ≤ 400)
+	\item M dòng tiếp theo, mỗi dòng ghi N - 1 số tự nhiên thể hiện chi phí cắt mỗi cạnh dọc.
+	\item M - 1 dòng tiếp theo, mỗi dòng ghi N số tự nhiên thể hiện chi phí cắt mỗi cạnh ngang.
+	\item Chi phí cắt mỗi cạnh nằm trong phạm vi số nguyên 32-bit có dấu. Các cạnh được liệt kê theo từng dòng từ trên xuống dưới. Các cạnh thuộc cùng một dòng được liệt kê từ trái qua phải.
+\end{itemize}
+
+\subsubsection{Kết quả}
+\begin{itemize}
+	\item Một số tự nhiên duy nhất thể hiện chi phí cắt nhỏ nhất. Nếu không có cách cắt nào thỏa mãn thì in ra -1.
+\end{itemize}
+
+\subsubsection{Ví dụ}
+\begin{verbatim}
+\textbf{Input:}
+2 3
+3 1
+1 3
+3 1 3
+
+\textbf{Output:}
+3
+\end{verbatim}
+
+\emph{Tác giả: Khúc Anh Tuấn }

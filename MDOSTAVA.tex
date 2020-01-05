@@ -1,0 +1,57 @@
+
+
+
+
+   Công việc của Ivana là chuyển bánh pizza. Hàng ngày, anh ta nhận được  1 danh sách các địa điểm nhận bánh.  
+
+   Thành phố được mô tả là bản đồ RxC ô, (1,1) cho đến RxC.  Cho phép di chuyển từ 1 ô sang trái hoặc phải. Chỉ được phép đi  lên/xuống ở cột 1 hoặc C.  
+
+   Ivana xuất phát từ (1,1) và mang theo mọi bánh pizza cần chuyển. Tại mỗi ô, Ivana biết thời gian mà anh ta cần để đi qua ô đó. Tính thời gian  nhỏ nhất để cung cấp tất cả các pizza.       Biết rằng bánh pizza phải được cung cấp theo đúng thứ tự xuất hiện trong danh sách yêu cầu     
+
+
+
+\subsubsection{   Input  }
+
+
+
+   Dòng đầu là hai số R,c  (1 ≤ R ≤ 2000, 1 ≤ C ≤ 200), R dòng tiếp theo, mỗi dòng C số nguyên $>$=0 và $<$=5000.  
+
+   Dòng sau đó chứa D (1 ≤ D ≤ 200 000), số pizza cần chuyển. D dòng, mỗi dòng hai số A, B , (1 ≤ A ≤ R, 1 ≤ B ≤ C), vị trí nhận bánh.  
+
+   Mỗi vị trí xuất hiện $<$=1 lần.  \href{http://tinypic.com}{
+\includegraphics{http://i44.tinypic.com/do8kqx.jpg}}
+
+\subsubsection{   It calls pizza  }
+
+\subsubsection{
+
+     Thời gian cung cấp pizza nhỏ nhất.    }
+
+\subsubsection{     Sample    }
+\begin{verbatim}
+input
+3 3
+1 8 2
+2 3 2
+1 0 1
+3
+1 3
+3 3
+2 2
+output
+17
+
+input
+2 5
+0 0 0 0 0
+1 4 2 3 2
+4
+1 5
+2 2
+2 5
+2 1
+output
+9
+\end{verbatim}
+
+     Ở ví dụ 1, cách đi nhanh nhất là :  (1, 1), (2, 1), (3, 1), (3, 2), (3, 3), (2, 3), (1, 3), (2, 3), (3, 3), (2, 3) và (2, 2). và thời gian tương ứng là 1+2+1+0+1+2+2+2+1+2+3=17.    

@@ -1,0 +1,51 @@
+
+
+
+
+   Ở một công ty nọ có một quy định khá lạ lùng đó là Sếp thì không được thấp hơn nhân viên! Sếp trực tiếp của một nhân viên A được định nghĩa là nhân viên có chiều cao không thấp hơn A và có mức lương nhỏ nhất nhưng vẫn cao hơn A. Quan hệ lính được định nghĩa đệ quy như sau, nếu A là sếp của B thì B và các lính của B đều là lính của A.  
+
+   Biết công ty này có N nhân viên và một số truy vấn đến các nhân viên. Với mỗi truy vấn, bạn hay tìm sếp trực tiếp và số lượng lính của nhân viên đó.  
+
+\subsubsection{   Dữ liệu  }
+
+   Dòng đầu tiên chứa số lượng test. Mỗi test có cấu trúc như sau:  
+\begin{itemize}
+	\item     Dòng 1 chứa hai số N và Q là số nhân viên và số truy vấn (1 ≤ N ≤ 30000, 1 ≤ Q ≤ 200)   
+	\item     N dòng tiếp theo mỗi dòng chứa thông tin về một nhân viên gồm 3 số nguyên: số hiệu của nhân viên (luôn có 6 chữ số, chữ số đầu tiên khác 0), lương và chiều cao. Lương không vượt quá 10000000. Chiều cao trong phạm vi 1000000 đến 2500000.   
+	\item     Q dòng tiếp theo mỗi dòng chứa số hiệu của một nhân viên cần truy vấn.   
+\end{itemize}
+
+\subsubsection{   Kết quả  }
+
+   Với mỗi truy vấn in ra hai số nguyên là số hiệu của sếp trực tiếp và số lính. Nếu không có sếp thì in ra số 0.  
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu
+2
+3 3
+123456 14323 1700000
+123458 41412 1900000
+123457 15221 1800000
+123456
+123458
+123457
+4 4
+200002 12234 1832001
+200003 15002 1745201
+200004 18745 1883410
+200001 24834 1921313
+200004
+200002
+200003
+200001
+
+Kết quả
+123457 0
+0 2
+123458 1
+200001 2
+200004 0
+200004 0
+0 3
+\end{verbatim}

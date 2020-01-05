@@ -1,0 +1,68 @@
+
+
+
+
+   Có một sân cỏ được chia làm m x n ô vuông, mỗi ô vuông có thể chứa cỏ hoặc là chứa các hòn đá.   \emph{    yenthanh132   }   đã mua một máy cắt cỏ có kích thước k x k ô vuông, máy cắt cỏ có thể cắt toàn bộ cỏ trong k x k ô vuông mà máy cắt cỏ đi qua. Lưu ý máy cắt cỏ không thể đi ra ngoài sân cỏ và cũng không được đi vào vùng chứa các hòn đá, tức là không có ô chứa các hòn đá nào nằm trong vùng k x k ô vuông đặt máy cắt cỏ. Ban đầu   \emph{    yenthanh132   }   sẽ đặt máy cắt cỏ trong một vị trí nào đó trên sân. Sau đó   \emph{    yenthanh132   }   sẽ di chuyển máy cắt cỏ theo 1 trong 4 hướng đông, tây, nam, bắc một 1 ô vuông, nói cách khác nếu gọi x,y là tọa độ góc trái trên của máy cắt cỏ thì ta có thể di chuyển máy cắt cỏ đến 1 trong 4 vị trí có góc trái trên là (x-1,y), (x+1,y), (x,y-1), (x,y+1). Và tất nhiên vị trí mới này cũng không thể chứa các ô vuông có đá.  
+
+   Hãy giúp   \emph{    yenthanh132   }   tìm vị trí đặt máy cắt cỏ sao cho diện tích cỏ cắt được là nhiều nhất, diện tích có cắt được bằng số ô vuông chứa cỏ mà máy cắt cỏ đã đi qua (mỗi ô chứa cỏ chỉ tính 1 lần).  
+
+\subsubsection{   Input  }
+\begin{itemize}
+	\item     Dòng đầu tiên chứa 3 số nguyên dương m, n, k ( k $<$= min(m,n) ).   
+	\item     m dòng tiếp theo, mỗi dòng chứa n kí tự, kí tự '.' đại diện cho ô chứa cỏ, kí tự '\#' đại diện cho ô chứa các hòn đá.   
+\end{itemize}
+
+\subsubsection{   Output  }
+\begin{itemize}
+	\item     Xuất ra một số nguyên duy nhất là diện tích cỏ cắt được lớn nhất. Nếu không có vị trí nào để đặt được máy cắt cỏ, tức    \emph{     yenthanh132    }    không thể cắt được bất cứ ô vuông chứa cỏ nào, ta xuất ra -1.   
+\end{itemize}
+
+\subsubsection{   Giới hạn:  }
+\begin{itemize}
+	\item     Trong 20\% số test có 1 $<$= m,n $<$= 100   
+	\item     Trong tất cả các test có 1 $<$= m,n $<$= 2000   
+\end{itemize}
+
+\subsubsection{   Ví dụ:  }
+\begin{verbatim}
+\textbf{Input 1:}
+4 5 2
+\\.....
+\\...#.
+\\.....
+\\..#..
+
+\textbf{Output 1:}
+11
+\\
+\\Ta có thể đặt máy cắt cỏ vào ô (2,2), thì có 11 ô có có thể cắt được bằng máy cắt cỏ
+\\(kí tự 'x' đại diện cho vùng cỏ cắt được, kí tự '@' đại diện cho vị trí đặt máy cắt cỏ ban đầu
+\\ và tất nhiên cũng là vùng cỏ cắt được)
+\\xxx..
+\\x@@#.
+\\x@@..
+\\xx#..\end{verbatim}
+\begin{verbatim}
+\textbf{Input 2:}
+4 4 3
+\\....
+\\....
+\\....
+\\....
+
+\textbf{Output 2:}
+16
+\\
+\\Ta có thể đặt máy cắt cỏ ở bất kì vị trí nào trong sân để cắt được toàn bộ cỏ trong sân.\end{verbatim}
+\begin{verbatim}
+\textbf{Input 3:}
+4 5 3
+\\#....
+\\..#..
+\\.....
+\\....#
+
+\textbf{Output 3:}
+-1
+\\
+\\Không có vị trí nào hợp lệ để đặt được máy cắt cỏ vào sân.\end{verbatim}

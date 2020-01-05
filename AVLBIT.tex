@@ -1,0 +1,59 @@
+
+
+Một dãy cấp số cộng là một dãy số mà 2 cặp phần tử liên tiếp bất kỳ có hiệu bằng nhau và khác 0. Trường hợp dãy số chỉ gồm 2 số khác nhau vẫn tính là một dãy cấp số cộng
+
+Ví dụ:
+\begin{itemize}
+	\item 2, 5 là dãy cấp số cộng.
+	\item 8, 3 là dãy cấp số cộng.
+	\item 1, 2, 3, 4, 5 là dãy cấp số cộng.
+	\item 11, 8, 5, 2 là dãy cấp số cộng.
+	\item 1, 2, 4, 5, 7 không phải là dãy cấp số cộng.
+\end{itemize}
+
+Cho một dãy số A gồm N số nguyên dương. Cho Q truy vấn dạng (x, y). Mỗi truy vấn yêu cầu kiểm tra xem đoạn từ x tới y có phải là hoán vị của một dãy cấp số cộng không.
+
+\subsubsection{\emph{Dữ liệu vào }}
+
+Dòng đầu chứa 2 số nguyên N, Q.
+
+Số thứ i trong N số ở dòng thứ 2 là A $_ i. $
+
+Dòng thứ i trong Q dòng tiếp theo chứa 2 số nguyên x, y mô tả truy vấn thứ i.
+
+ 
+
+\subsubsection{\emph{Dữ liệu ra }}
+
+Gồm Q dòng.
+
+Dòng thứ i trong Q dòng sẽ trả lời cho truy vấn thứ i.
+
+In ra YES nếu đoạn từ x tới y là hoán vị của một dãy cấp số cộng. Ngược lại thì ghi ra NO.
+
+\emph{\textbf{Ràng buộc }}
+
+11 test có N, Q $<$= 1000 .
+
+10 test có N $<$= 1000, Q $<$= 10\textasciicircum6 .
+
+10 test có N $<$= 10\textasciicircum5, Q $<$= 10\textasciicircum5.
+
+A $_ i $ $<$= 10\textasciicircum9
+
+\emph{\textbf{Ví dụ }}
+\begin{verbatim}
+Input
+ 5 2
+ 1 3 2 5 4
+ 1 5
+ 2 4
+
+Output
+ YES
+ NO
+
+
+\end{verbatim}
+
+ 

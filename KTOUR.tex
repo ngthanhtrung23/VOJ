@@ -1,0 +1,48 @@
+
+
+
+
+   Điều tối kỵ khi có nhiều bạn gái là gì? Là để họ gặp nhau...  
+
+   Tuy nhiên, vào một ngày nọ tai họa bỗng nhiên ập xuống đầu Pirate khi tất cả N cô bạn gái của anh ta cùng một lúc muốn đi chơi với anh chàng. Dĩ nhiên là anh ấy không bao giờ bó tay chịu bị "ngũ mã phanh thây", nên đã sắp xếp hẹn mỗi em trên một hòn đảo khác nhau. Các hòn đảo này có vị trí rất đặc biệt. Nếu nhìn vào bản đồ biển (là hệ trục tọa độ xy), thì các hòn đảo này là các điểm nằm trên một đường thẳng song song với trục hoành.  
+
+   Giờ điều duy nhất là Pirate băn khoăn là dắt các em đi đâu đây nhỉ? Có M chốn hẹn hò lãng mạn trên vùng biển này, mỗi nơi được biểu diễn bởi một điểm trên bản đồ. Pirate muốn "giữ sức" và "giữ tiền" để có đi chơi hết với mọi em. Thế anh quyết định là sẽ dẫn mỗi em đến nơi hẹn hò gần nhất với hòn đảo họ đang đứng. Sau khi xếp lịch xong, Pirate tự hỏi mình phải đi quãng đường xa nhất là bao nhiêu để chuẩn bị tiền đổ xăng (đã qua rồi cái thời cướp biển và cánh buồn phiêu du)?  
+
+\subsubsection{   Input  }
+\begin{itemize}
+	\item     Dòng thứ nhất: hai số nguyên N - số hòn đảo hẹn hò, và Y0 - tọa độ y của các hòn đảo.   
+	\item     N dòng tiếp theo: mô tả tọa độ x của các hòn đảo.   
+	\item     Dòng thứ N + 2: số nguyên M - số địa điểm hẹn hò lãng mạn.   
+	\item     M dòng tiếp theo: mô tả tọa độ (x, y) của các nơi hẹn hò.   
+\end{itemize}
+
+\subsubsection{   Output  }
+\begin{itemize}
+	\item     Một dòng duy nhất ghi ra khoảng cách lớn nhất mà Pirate phải đi từ một hòn đảo đến nơi hẹn hò tương ứng (làm tròn đến 6 chữ số thập phân sau dấu chấm).   
+\end{itemize}
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     Mọi số trong input đều là số nguyên không âm và không vượt quá 10    $^     5    $    .   
+	\item     60\% số test có 1 ≤ N, M ≤ 1000.   
+\end{itemize}
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+2 1 
+\\1 
+\\2
+\\2
+\\0 2
+\\1 0
+\\
+\\\textbf{Output:}
+\\1.414214
+\\
+\\\end{verbatim}
+
+
+
+\emph{     Giải thích        : Có 2 hòn đảo nằm ở (1, 1) và (2, 1) và 2 địa điểm hẹn hò ở (0, 2) và (1, 0). Vì Pirate chỉ chọn nơi hẹn hò gần nhất với hòn đảo đang đứng, nên từ hai hòn đảo, anh ấy đều đi đến nơi hẹn hò đầu tiên với khoảng cách lần lượt là 1 và 1.414214. Đáp án của bài toán là khoảng cách lớn nhất 1.414214.    
+\\}

@@ -1,0 +1,36 @@
+
+
+
+
+   Hôm nay là sinh nhật của Byteman. Có n đứa trẻ ở tiệc sinh nhật (tính cả Byteman), đánh số từ 1 đến n. Cha mẹ của Byteman đã chuẩn bị một cái bàn lớn và đã đặt n cái ghế quanh bàn. Khi bọn trẻ đến, chúng ngồi vào chỗ. Đứa trẻ số hiệu 1 ngồi vào một chỗ. Sau đó đứa trẻ số 2 ngồi vào ghế bên trái,v.v... Đứa trẻ thứ n ngồi giữa đứa trẻ số hiệu 1 và n-1.  
+
+   Cha mẹ của Byteman biết bọn trẻ rất rõ; họ biết một số em có tính hay nói chuyện ồn ào nếu ngồi cạnh nhau. Do đó hai bác sắp xếp lại chỗ ngồi của đám trẻ theo một thứ tự nhất định được mô tả bởi một hoán vị p   $_    1   $   ,p   $_    2   $   , . . . ,p   $_    n   $   (p   $_    1   $   ,p   $_    2   $   , . . . ,p   $_    n   $   là các số nguyên phân biệt từ 1 đến n) — đứa trẻ p   $_    1   $   ngồi giữa đứa trẻ p   $_    n   $   và p   $_    2   $   , đứa trẻ p   $_    i   $   (với i = 2 ,3 , . . . ,n-1 ) ngồi giữa đứa trẻ p   $_    i-1   $   và p   $_    i+1   $   , và đứa trẻ p   $_    n   $   ngồi giữa đứa trẻ p   $_    n-1   $   và p   $_    1   $   . Lưu ý rằng đứa trẻ p   $_    1   $   có thể ngồi ở bên trái hoặc phải đứa trẻ p   $_    n   $   .  
+
+   Để sắp xếp các đứa trẻ theo thứ tự này, cha mẹ của Byteman phải di chuyển mỗi đứa trẻ vòng quanh bàn về bên trái hoặc bên phải theo một số lượng ghế. Với mỗi đứa trẻ, họ phải quyết định đứa trẻ sẽ di chuyển thế nào, nghĩa là họ phải chọn một hướng (trái hoặc phải) và khoảng cách (số lượng ghế). Khi họ ra hiệu, các đứa trẻ sẽ đứng lên cùng một lúc, di chuyển đến chỗ của mình và đồng loạt ngồi xuống.  
+
+   Việc sắp xếp chỗ ngồi đã làm hỗn loạn buổi tiệc. Độ hỗn loạn của buổi tiệc được tính bằng khoảng cách lớn nhất mỗi đứa trẻ di chuyển. Cha mẹ của Byteman muốn chọn cách sắp chỗ sao cho độ hỗn loạn là nhỏ nhất. Bạn hãy giúp họ nhé.  
+
+\subsubsection{   Yêu cầu  }
+
+   Viết chương trình nhập vào số lượng đứa trẻ và hoán vị mô tả sơ đồ chỗ ngồi mà cha mẹ Byteman muốn s8a1p xếp lại, tính và in ra độ hỗn loạn nhỏ nhất.  
+
+\subsubsection{   Dữ liệu  }
+
+   Dòng đầu tiến chứa một số nguyên n (1 ≤ n ≤ 1 000 000 ). Dòng thứ hai chứa n số nguyên p   $_    1   $   ,p   $_    2   $   , . . . ,p   $_    n   $   , cách nhau bởi khoảng trắng. Các số p   $_    1   $   ,p   $_    2   $   , . . . ,p   $_    n   $   tạo thành một hoán vị của tập \{1 ,2 , . . . ,n\}.  
+
+\subsubsection{   Kết quả  }
+
+   In ra một số nguyên duy nhất: độ hỗn loạn nhỏ nhất.  
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu
+6
+3 4 5 1 2 6
+
+Kết quả
+2
+\end{verbatim}
+\includegraphics{http://www.spoj.pl/OI/content/PBIR.jpg}
+
+   Hình bên trái mô tả sơ đồ chỗ ngồi ban đầu. Hình giữa mô tả kết quả của quá trình đổi chỗ sau: đứa trẻ 1, 2 di chuyển 1 vị trí, đứa trẻ 3, 5 di chuyển 2 vị trí; đứa trẻ 4, 6 giữ nguyên chỗ ngồi. Còn một cách đổi chỗ khác, được mô tả trong hình bên phải. Trong cả hai cách, không có đứa trẻ nào phải di chuyển quá 2 ghế.  

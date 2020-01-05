@@ -1,0 +1,77 @@
+
+
+
+
+   Cho một dãy số A gồm N số thực. Các phần tử của dãy được đánh số từ 1 đến N. Phần tử thứ i được kí hiệu là A[i]. Bạn cần thực hiện Q truy vấn trên dãy số, mỗi truy vấn thuộc một trong các dạng:  
+\begin{itemize}
+	\item     Modify u x : Gán A[u] = x   
+	\item     Mul u v x : Gán A[i] = A[i] * x, với i thuộc [u, v]   
+	\item     Sin u v x : Tính tổng: sin(A[u] - x) + sin(A[u+1] - x) + ... + sin(A[v] - x)   
+	\item     Cos u v x : Tính tổng: cos(A[u] - x) + cos(A[u+1] - x) + ... + cos(A[v] - x)   
+	\item     Reverse u v : Đảo ngược các phần tử từ u đến v. (Đổi chỗ a[u] và a[v], đổi chỗ a[u+1] và a[v-1], ...)   
+\end{itemize}
+
+   Chú ý: Các phép tính sin, cos được tính trên góc radian.  
+
+\subsubsection{   Input  }
+\begin{itemize}
+	\item     Dòng 1: Số nguyên dương N   
+	\item     Dòng 2: N số thực, cách nhau bởi ít nhất 1 dấu cách   
+	\item     Dòng 3: Số nguyên dương Q - số truy vấn.   
+	\item     Q dòng tiếp, mỗi dòng là 1 truy vấn thuộc 1 trong các dạng trên.   
+\end{itemize}
+
+\subsubsection{   Output  }
+
+   Với mỗi truy vấn thuộc dạng sin cos, in ra 1 số thực trên 1 dòng. Bài của bạn được tính là đúng nếu mỗi đáp án của bạn chênh lệch với đáp án của ban tổ chức không quá 10   $^    -6   $
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     Trong tất cả các test: 1 ≤ N, Q ≤ 50,000; tại mọi thời điểm, -         π        ≤ A[i], x ≤         π        . Trong mỗi truy vấn, u ≤ v   
+	\item     Trong 20\% test đầu tiên, 1 ≤ N, Q ≤ 5000   
+	\item     Trong 20\% test tiếp theo, không có truy vấn dạng Mul và Reverse   
+	\item     Trong 20\% test tiếp theo, không có truy vấn dạng Mul   
+	\item     Trong 20\% test tiếp theo, không có truy vấn dạng Reverse. Trong các truy vấn Sin và Cos, x luôn bằng 0   
+	\item     Trong 20\% test cuối cùng, không có thêm rằng buộc nào.   
+\end{itemize}
+
+\subsubsection{   Chấm bài  }
+
+   Bài của bạn sẽ được chấm trên thang điểm 100. Điểm mà bạn nhận được sẽ tương ứng với \% test mà bạn giải đúng.  
+
+   Trong quá trình thi, bài của bạn sẽ chỉ được chấm với 1 test ví dụ có trong đề bài.  
+
+   Khi vòng thi kết thúc, bài của bạn sẽ được chấm với bộ test đầy đủ.  
+
+\subsubsection{    Example   }
+\begin{verbatim}
+\textbf{Input:}
+7
+0.117 0.026 0.773 -0.786 -0.127 -0.821 -0.343
+15
+Mul 2 2 0.500
+Sin 1 6 0.744
+Modify 4 0.123
+Sin 2 5 0.741
+Sin 1 4 0.247
+Mul 2 2 1.200
+Mul 2 2 0.700
+Cos 1 6 0.074
+Sin 2 7 0.677
+Modify 2 0.463
+Sin 1 5 -0.444
+Reverse 3 7
+Sin 2 6 -0.143
+Modify 3 -0.317
+Sin 3 7 -0.657
+
+\textbf{Output:}
+-3.989461096
+-1.975827413
+0.016891107
+5.366758756
+-3.617745878
+3.106577699
+0.022551888
+2.369138582
+\end{verbatim}

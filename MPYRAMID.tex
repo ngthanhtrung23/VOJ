@@ -1,0 +1,93 @@
+
+
+
+
+     Tượng đài    
+
+   Sau chiến thắng nhà Vua Jaguar muốn xây dựng một tháp đài để kỷ niệm chiến thắng và để chôn cất các chiến sĩ đã hy sinh. Tháp sẽ được xây dựng trên một mảnh đất hình chữ nhật với các ô vuông bao gồm a cột và b hàng. Bên trong tháp đài sẽ xây một tượng đài liệt sĩ cũng là hình chữ nhật với kích thước c cột và d hàng.  
+
+   Các nhà kiến trúc sư của nhà vua đã tìm ra vị trí cần xây tượng đài là mảnh đất bao gồm m hàng và n cột, và tại mỗi vị trí ô trên lưới đo được độ cao là một số nguyên.        
+
+   Tháp và tượng đài đều phải được xây dựng trên lưới ô vuông với các cạnh song song với khung đất hình chữ nhật. Sau khi xây dựng đất tại vị trí các ô trong tượng đài liệt sĩ sẽ được giữ nguyên nhưng tại các ô còn lại của tháp, đất sẽ được san bằng từ các ô cao xuống các ô thấp để tạo nên một vùng bằng phẳng, độ cao này bằng trung bình cộng của các độ cao các ô được san lấp. Các kiến trúc sư được quyền chọn vị trí xây dựng tháp và vị trí xây tượng đài trong tháp với điều kiện trong tháp xung quanh tượng đài phải có tối thiểu không gian là một ô xung quanh tượng đài.        
+
+   Bạn hãy giúp các kiến trúc sư tìm ra vị trí xây dựng tháp và vị trí tượng đài sao cho sau khi san lấp, mặt phẳng của tháp có độ cao lớn nhất có thể được.        
+
+
+\includegraphics{http://www.spoj.pl/OI/content/MPYRAMID.jpg}
+
+   Trong hình ảnh trên, các số trong các ô là độ cao của ô này. Các ô màu xám là vùng tháp được san lấp xung quanh tượng đài. Ví dụ trên chỉ ra vị trí tối ưu đã tìm được.        
+
+       Yêu cầu           
+
+   Hãy viết chương trình, cho trước kích thước mảnh đất, độ cao các ô, kích thước tháp và tượng đài, chỉ ra vị trí tháp và tượng đài với độ cao lớn nhất có thể được cho tháp sau khi san lấp.        
+
+       Ràng buộc           
+
+   3 ≤ m ≤ 1000        
+
+   3 ≤ n ≤ 1000        
+
+   3 ≤ a ≤ m        
+
+   3 ≤ b ≤ n        
+
+   1 ≤ c ≤ a – 2        
+
+   1 ≤ d ≤ b – 2        
+
+   Các độ cao là số nguyên trong khoảng từ 1 đến 100.        
+
+       INPUT           
+
+   Chương trình cần đọc dữ liệu có dạng sau:        
+
+
+\\
+
+       Mô tả                    
+
+        8 5 5 3 2 1                       
+
+        1 5 10 3 7 1 2    5                       
+
+        6 12 4 4 3 3 1    5                       
+
+$^         2 4 3 1 6 6 19 8        $
+
+        1 1 1 3 4 2 4    5                       
+
+        6 6 3 3 3 2 2    2       
+
+               Dòng    1:                      Chứa 6              số    tự nhiên cách nhau bởi dấu cách là các số       \textit{         m        }       ,       \textit{        n       }       ,       \textit{        a       }       ,       \textit{        b       }       ,       \textit{         c        }       ,       \textit{        d       }       .                    
+
+\textit{         n dòng tiếp theo        }        :                      Mỗi dòng chứa              m số tự nhiên cách nhau bởi    dấu cách là độ cao các ô trong khung chữ nhật.    Dòng đầu tiên chỉ ra các độ cao của hàng    đầu tiên. Dòng cuối cùng chỉ ra các độ cao    của hàng thứ n.                    
+
+
+
+       OUTPUT           
+
+   Chương trình cần đưa ra kết quả có dạng sau:        
+
+
+\\
+
+         Mô tả        
+
+        4 1                       
+
+        6 2       
+
+         Dòng 1:                Chứa               2                 số tự    nhiên chỉ ra vị trí trái trên của tháp.        
+
+         Dòng 2:                Chứa               2                 số tự    nhiên chỉ ra vị trí trái trên của tượng đài    liệt sĩ. tháp.        
+
+
+
+       Chú ý:      Nếu có nhiều phương án tối ưu thì chỉ cần chỉ ra một trong chúng.        
+
+       Cách chấm           
+
+   Với một số các Test có tổng điểm số 30 và các ràng buộc thỏa mãn:        
+
+   3 ≤ m ≤ 10         
+\\   3 ≤ n ≤ 10  

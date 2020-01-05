@@ -1,0 +1,40 @@
+
+
+
+
+   Người ta định xây một con đường cắt ngang khu rừng Amazon. Khu rừng Amazon được tọa độ hóa sẽ là một hình chữ nhật với góc trái dưới là (0, 0), góc phải trên là (x, y). Con đường sẽ được mô tả bằng hai đường thẳng chạy song song cắt cạnh trái của khu rừng ở (0, y1) và (0, y2), cắt cạnh phải của khu rừng tại (x, y3) và (x, y4). Trong đó y1, y2, y3, y4 phải thỏa mãn:  
+
+   0 ≤ y1 $<$ y2 ≤ y  
+
+   0 ≤ y3 $<$ y4 ≤ y  
+
+   y2 – y1 = y4 – y3  
+\includegraphics{http://www.spoj.pl/content/cun:BUILD.JPEG}
+
+   Tuy vậy trong khu rừng có N khu vực cấm vì đó là nơi sinh sống của những loài vật quý hiếm. Mỗi khu vực cấm là một hình chữ nhật có cạnh song song với trục tọa độ. Con đường có thể đi qua đỉnh các khu vực cấm hoặc đi trùng vào cạnh của khu vực cấm. Yêu cầu hãy tính xem độ rộng tối đa của con đường là bao nhiêu. Độ rộng của một con đường được tính bằng khoảng cách giữa hai đường song song.  
+
+\subsubsection{   Input  }
+
+   Dòng thứ nhất ghi 2 số nguyên X, Y. (0 $<$ X, Y ≤ 10   $^    6   $   )  
+
+   Dòng thứ hai ghi số N. ( 0 ≤ N ≤ 100 )  
+
+   Dòng thứ i trong N dòng tiếp theo ghi tọa độ của góc trái dưới và phải trên của hình chữ nhật thứ i.  
+
+\subsubsection{   Output  }
+
+   Gồm 1 dòng ghi độ rộng của con đường ( Chính xác đến 4 chữ số sau dấu phẩy )  
+
+\subsubsection{   Example  }
+\begin{verbatim}
+Input:
+100 150
+4
+98 3 99 15
+48 36 50 43
+39 1 71 10
+24 50 40 70
+
+Output:
+80.0000
+\end{verbatim}

@@ -1,0 +1,52 @@
+
+
+
+
+   Với sự phát triển ngày càng nhanh của hàng không Việt Nam, sân bay Nội Bài đã trở nên quá nhỏ bé. Sân bay chỉ có một đường băng và các máy bay khi bay tới Hà Nội sẽ phải bay lòng vòng phía trên để chờ được hạ cánh.  
+
+   Để đơn giản, ta hãy mô tả sân bay trên mặt phẳng tọa độ Đề Các, mỗi đơn vị độ dài sẽ tương đương 1 Km. Đường băng của sân bay là một đoạn thẳng từ (0, 0) đến (-7, 0). Các máy bay khi đến Hà Nội sẽ phải bay ở khu vực chờ, đó là một hình có dạng hình chữ nhật với bốn góc là các đoạn ¼ đường tròn. Góc trái dưới của hình chữ nhật có tọa độ (X   $_    1   $   , 0), góc phải trên là (X   $_    2   $   , Y   $_    2   $   ). Các góc phần tư hình tròn có bán kính là R. Dưới đây là ví dụ với X   $_    1   $   = 2, X   $_    2   $   = 11, Y   $_    2   $   = 7, R = 1.  
+\includegraphics{http://vn.spoj.pl/VO09/content/Airctrl.jpg}
+
+   Các máy bay sẽ bay với cùng vận tốc 10 Km/phút và theo hướng cùng chiều kim đồng hồ. Khi được phép hạ cánh, máy bay phải bay tới vị trí (X   $_    1   $   + R, 0) (vị trí được đánh dấu hình tròn màu đỏ trên hình vẽ) rồi từ đó bay thẳng vào đường băng. Tại thời điểm ban đầu, có N máy bay, tại các tọa độ (X   $_    U   $   , Y   $_    U   $   ). Với mỗi máy bay, ta được biết lượng nhiên liệu còn lại đủ để đi quãng đường là P   $_    U   $   (Km). Máy bay được coi là hạ cánh an toàn nếu nó đủ nhiêu liệu để bay đến điểm có tọa độ (0, 0) (đầu đường băng).  
+
+   Bạn hãy sắp xếp thứ tự được hạ cánh của các máy bay sao cho thời gian hạ cánh gần nhất giữa 2 máy bay liên tiếp là lớn nhất có thể được, điều này sẽ tăng độ an toàn của các lần hạ cánh.  
+
+\subsubsection{   Dữ liệu  }
+\begin{itemize}
+	\item     Dòng thứ nhất ghi 4 số nguyên X    $_     1    $    , X    $_     2    $    , Y    $_     2    $    , R.   
+	\item     Dòng thứ hai ghi số N.   
+	\item     Tiếp theo là N dòng, mỗi dòng ghi 3 số thực X    $_     U    $    , Y    $_     U    $    , P    $_     U    $    .   
+	\item     Dữ liệu đảm bảo máy bay đang bay trên         các cạnh thẳng        của khu vực chờ. Lưu ý rằng các máy bay có thể ở cùng vị trí vì khi độ cao chênh lệch khác nhau thì vẫn đảm bảo độ an toàn.   
+\end{itemize}
+
+\subsubsection{   Kết quả  }
+\begin{itemize}
+	\item     Ghi ra duy nhất thời gian hạ cánh gần nhất giữa 2 máy bay liên tiếp (tính theo phút) với độ chính xác là 1e-6.   
+\end{itemize}
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu
+2 11 7 1
+2
+6 0 40
+11 3 25	
+
+Kết quả
+2.271238898
+\end{verbatim}
+
+\subsubsection{   Giải thích  }
+
+   Máy bay \#2 chỉ còn bay được 25 Km và phải được ưu tiên hạ cánh ngay. Máy bay \#2 sẽ hạ cánh sau khi bay thêm khoảng 13.57079633 Km nữa. Máy bay \#1 cũng có thể hạ cánh ngay nhưng sẽ an toàn hơn nếu máy bay \#1 bay thêm 1 vòng nữa. Tổng cộng máy bay \#1 sẽ bay thêm 36.28318531 Km.  
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     2 ≤ N ≤ 10, trong các test chiếm 60\% số điểm, 2 ≤ N ≤ 8   
+	\item     0 ≤ X    $_     1    $    ≤ 100   
+	\item     X    $_     1    $    $<$ X    $_     2    $    ≤ 100   
+	\item     0 $<$ Y    $_     2    $    ≤ 100   
+	\item     0 $<$ 2R $<$ Y, 0 $<$ 2R $<$ X    $_     2    $    – X    $_     1    $
+	\item     0 $<$ P    $_     U    $    ≤ 100   
+	\item     Luôn có một cách sắp xếp các máy bay hạ cánh.   
+\end{itemize}

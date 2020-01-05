@@ -1,0 +1,56 @@
+
+
+
+
+   Một xí nghiệp có một robot dùng để xếp các sản phẩm vào các thùng. Mọi thùng đều có dung tích như nhau. Có đúng hai thùng đang mở sẵn để robot xếp các sản phẩm vào. Mỗi thùng bất kỳ đều chứa được số sản phẩm mà tổng dung tích của chúng không vượt quá dung tích của thùng. Robot có thể thực hiện các thao tác sau:  
+\begin{enumerate}
+	\item     Đưa một sản phẩm hiện tại trên dãy băng vào thùng 1.   
+	\item     Đưa một sản phẩm hiện tại trên dãy băng vào thùng 2.   
+	\item     Đóng thùng 1 và mở một thùng mới thay thế cho thùng 1.   
+	\item     Đóng thùng 2 và mở một thùng mới thay thế cho thùng 2.   
+\end{enumerate}
+
+   Các thao tác 1, 2 chỉ có thể thực hiện nếu tổng dung tích của sản phẩm cho vào và các sản phẩm đã có trong thùng không vượt quá dung tích của thùng.  
+
+
+
+\textbf{    Yêu cầu:   }   Cho biết dung tích mỗi thùng là L, dung tích của N sản phẩm trên dãy băng theo thứ tự xuất hiện là a   $_    1   $   , a   $_    2   $   ,..., a   $_    N   $   , hãy tìm số thùng ít nhất để có thể cho N sản phẩm vào thùng.  
+
+\subsubsection{   Input  }
+\begin{itemize}
+	\item     Dòng thứ nhất là hai số nguyên dương L và N   
+	\item     Dòng tiếp theo chứa các số mô tả các số a    $_     1    $    , a    $_     2    $    , …,a    $_     N    $    (1 ≤ a    $_     i    $    ≤ L)   
+\end{itemize}
+
+\subsubsection{   Output  }
+\begin{itemize}
+	\item     Gồm 1 số duy nhất là số thùng ít nhất cần dùng   
+\end{itemize}
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+
+8 6
+\\4 2 5 3 5 4\textbf{Output:}
+3\end{verbatim}
+
+\subsubsection{   Subtask 1 : (5 test - 1s / 1 test)  }
+
+   L ≤ 10   $^    9   $   và N ≤ 20  
+
+\subsubsection{   Subtask 2 : (5 test - 2s / 1 test)  }
+
+   1 ≤ a   $_    i   $   ≤ 2; L = 10       0      và N ≤ 10   $^    6   $
+
+\subsubsection{   Subtask 3 : (5 test - 3s / 1 test)  }
+
+   L ≤ 30 và N ≤ 10000  
+
+\subsubsection{   Subtask 4 : (5 test - 3s / 1 test)  }
+
+   L ≤ 5000 và N ≤ 100  
+
+\subsubsection{   Subtask 5 : (5 test - 4s / 1 test)  }
+
+   L ≤ 5000 và N ≤ 10000  

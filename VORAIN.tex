@@ -1,0 +1,73 @@
+
+
+\emph{Mưa từng con phố có nhớ bóng dáng em đi cuối thu, đông về hè sang vội vàng quá }
+
+\emph{Mưa từng đêm vắng, mưa ơi cứ rơi phố xa, anh đi tìm yêu đương chiều qua }
+
+\emph{Ai vội vàng đi ngang lòng người mang theo bao yêu đương thoáng qua như là cơn mưa rào }
+
+\emph{Chuyện mưa }
+
+Có bao giờ bạn tự hỏi, những giọt mưa kia rồi sẽ về đâu? Chúng ta hãy cùng nhau trả lời câu hỏi này nhé.
+
+Hình dung thế giới như một mặt phẳng Oxy, tại mỗi thời điểm có 1 trong 3 loại sự kiện xảy ra:
+\begin{itemize}
+	\item Một đoạn thẳng nối điểm (x $_ 1 $ , y $_ 1 $ ) và (x $_ 2 $ , y $_ 2 $ ) xuất hiện trên mặt phẳng
+	\item Một đoạn thẳng được thêm vào trước đó biến mất
+	\item Một giọt mưa xuất hiện tại điểm (x, y) và rơi xuống. Giọt mưa rơi theo phương thẳng đứng từ điểm (x, y) về điểm (x, 0).
+\end{itemize}
+
+Nhiệm vụ của bạn là xác định xem, giọt mưa rơi xuống mặt đất, hay rơi vào một đoạn thẳng.
+
+\subsubsection{Input}
+
+Dòng đầu chứa số nguyên dương Q (Q ≤ 10 $^ 5 $ ), cho biết số sự kiện xảy ra.
+
+Q dòng tiếp theo, mỗi dòng cho biết 1 sự kiện xảy ra. Mỗi dòng có 1 trong 3 dạng:
+\begin{itemize}
+	\item 1 x $_ 1 $ y $_ 1 $ x $_ 2 $ y $_ 2 $ : Một đoạn thẳng xuất hiện, nối điểm (x $_ 1 $ , y $_ 1 $ ) và (x $_ 2 $ , y $_ 2 $ ). (1 ≤ x $_ 1 $ , y $_ 1 $ , x $_ 2 $ , y $_ 2 $ ≤ 10 $^ 6 $ , x $_ 1 $ ≠ x $_ 2 $ ). Không có 2 đoạn thẳng nào có điểm chung.
+	\item 2 i: Đoạn thẳng xuất hiện thứ i (tính cả những đoạn đã bị xóa) biến mất (1 ≤ i ≤ số đoạn thẳng đã xuất hiện). Nếu đoạn thẳng thứ i đã biến mất trước đó, sự kiện này không có bất kỳ ảnh hưởng gì.
+	\item 3 x y: Một giọt mưa xuất hiện ở tọa độ (x, y). (1 ≤ x, y ≤ 10 $^ 6 $ ). Chú ý rằng giọt mưa có thể nằm trên đoạn thẳng.
+\end{itemize}
+
+\subsubsection{Output}
+
+Với mỗi sự kiện loại 3, in ra 0 nếu giọt mưa sẽ rơi xuống đất mà không chạm vào bất kỳ đoạn thẳng nào. Ngược lại, in ra thứ tự của đoạn thẳng đầu tiên mà giọt mưa chạm vào.
+
+\subsubsection{Giới hạn}
+\begin{itemize}
+	\item Trong 30\% test đầu tiên, Q ≤ 10 $^ 3 $ .
+	\item Trong 30\% test tiếp theo, trong các sự kiện loại 1, 1 ≤ x $_ 1 $ , y $_ 1 $ , x $_ 2 $ , y $_ 2 $ $<$ 10 $^ 6 $ . Trong các sự kiện loại 3, y = 10 $^ 6 $ .
+	\item Mọi giá trị x, y đều là số nguyên.
+	\item Thời gian chạy cho tất cả các test: 3 giây. Riêng thời gian chạy cho test đề bài là 0.5s.
+\end{itemize}
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+12
+1 1 2 3 2
+3 1 1
+3 2 1
+3 3 1
+3 1 2
+3 2 2
+3 3 2
+3 1 3
+3 2 3
+3 3 3
+2 1
+3 2 2
+
+\textbf{Output:}
+0
+0
+0
+1
+1
+1
+1
+1
+1
+0
+\end{verbatim}

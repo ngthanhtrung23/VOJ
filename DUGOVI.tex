@@ -1,0 +1,52 @@
+
+
+
+
+   In a little town called Križ live N people. Each of them has borrowed some money from exactly one other inhabitant. Now the time has come to pay back all the debts, but the problem is that everybody  has spent all of their money!  
+
+   The major of Križ has decided to solve this problem. The town will give money to a few people so that  they can pay back their debts. When some people get their money back, a chain reaction is started . for  example: person A gets money from the city. Person A uses that money to pay the debt toward person  B. Person B then uses that money to pay the debt towards person C etc. If person B didn’t have  enough money to pay back the debt, they wait until  they get enough. If they have more than enough  money, person B will keep what is left after payback.   Another example: if two people live in Križ, and they owe \$100 to each other, the town will give \$100  to one of them so they can pay back the debt to the other one.  
+
+   Your task is to calculate the minimum total amount of money the town has to give to some subset  of the inhabitants so that after the payback protocol described above all debts are payed.  
+
+\subsubsection{   INPUT  }
+
+   First line of input contains one integer N (2 ≤ N ≤ 200 000), number of inhabitants of Križ. They are numbered from 1 to N.  
+
+   The following N lines contain two integers, separated by space. In i.th of those lines, first number . Ai represents the id of the person  i.th person owes money to (1 ≤  Ai  ≤ N,  Ai  ≠  i), and second  Bi represents the ammount of the debt in \$ (1 ≤ Bi  ≤ 10 000).  
+
+\subsubsection{   OUTPUT  }
+
+   First and only line of output should contain one integer . the minimum total ammount of money town  has to give to its inhabitants so all debts are returned.  
+
+\subsubsection{   SAMPLE TESTS  }
+\begin{verbatim}
+input
+4
+2 100 
+1 100 
+4 70 
+3 70 
+
+output
+170 
+
+input
+3 
+2 120 
+3 50 
+2 80
+
+output
+150
+
+input
+5 
+3 30 
+3 20 
+4 100 
+5 40 
+3 60 
+
+output
+11
+\end{verbatim}

@@ -1,0 +1,45 @@
+
+
+
+
+   Cho số nguyên dương N, bạn hãy tìm tất cả các cặp số nguyên dương X, Y sao cho tổng của nó đúng bằng N. Số nguyên X có ít nhất 2 chữ số và không bắt đầu bằng chữ số 0. Số nguyên Y nhận được từ số nguyên X bằng cách xoá đi 1 chữ số và có thể bắt đầu bằng một chữ số 0.  
+
+\subsubsection{   Input  }
+
+   Dòng đầu tiên ghi số lượng Test t (1 $<$= t $<$= 1000).  
+
+   t dòng tiếp theo mỗi dòng ghi 1 số nguyên dương N (10 $<$= N $<$= 10   $^    9   $   )  
+
+\subsubsection{   Output  }
+
+   Với mỗi Test:  
+
+   Dòng đầu tiên ghi số lượng các cặp số khác nhau tìm được.  Các dòng tiếp theo ghi mỗi cặp số theo quy cách sau:  
+
+   X + Y = N  
+
+   Các cặp số in ra theo thứ tự tăng dần của X.  
+
+\subsubsection{   Example  }
+\begin{verbatim}
+Input:
+2
+234567
+10000000
+
+Output:
+1
+213243 + 21324 = 234567
+10
+9050000 + 950000 = 10000000
+9090500 + 909500 = 10000000
+9090905 + 909095 = 10000000
+9090910 + 909090 = 10000000
+9090950 + 909050 = 10000000
+9091000 + 909000 = 10000000
+9095000 + 905000 = 10000000
+9100000 + 900000 = 10000000
+9500000 + 500000 = 10000000
+10000000 + 0000000 = 10000000
+
+\end{verbatim}

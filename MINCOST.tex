@@ -1,0 +1,70 @@
+
+
+Cho một mạng đối xứng có n đỉnh, mỗi cạnh của mạng có một khả năng thông qua và một cước phí vận chuyển nhất định (như nhau theo cả hai chiều). Cho trước một lượng hàng S cần vận chuyển từ đỉnh nguồn (đánh số là s) tới đỉnh đích (đánh số là f). Hãy tìm một phương án vận chuyển, nghĩa là hãy xác định trên mỗi cạnh của mạng cần vận chuyển bao nhiêu hàng, theo chiều nào, sao cho phù hợp với khả năng thông qua của mạng (trên mỗi cạnh lượng hàng vận chuyển không vượt quá khả năng thông qua của cạnh) và vận chuyển được lượng hàng S từ nguồn về đích với tổng chi phí vận chuyển là nhỏ nhất.
+\\Về mặt toán học, bài toán tìm luồng với chi phí nhỏ nhất có thể diễn đạt như sau:
+
+Cực tiểu hóa hàm chi phí ∑c$_ij $ x$_ij $ với điều kiện:
+\begin{enumerate}
+	\item ∑(x$_ij $ - x$_ji $ ) với j = 1..n, có giá trị
+\begin{itemize}
+	\item S nếu i = s
+	\item 0 nếu i ≠ s; i ≠ n
+	\item -S nếu i = f
+\end{itemize}
+	\item 0 ≤ x$_ij $ ≤ d$_ij $ với mọi cạnh (i, j)
+
+ 
+\end{enumerate}
+
+Ở đây đỉnh nguồn được đánh số là s, đỉnh đích là f, c$_ij $ là chi phí vận chuyển một đơn vị hàng trên cạnh (i, j), d$_ij $ là khả năng thông qua của cạnh (i, j); còn x$_ij $ là khối lượng hàng vận chuyển trên cạnh (i, j) cần xác định.
+
+\subsubsection{Input}
+\begin{itemize}
+	\item Dòng đầu là n, m, k, s, f : Số đỉnh, số đường, số đơn vị hàng cần vận chuyển. đỉnh bắt đầu, đỉnh kết thúc
+	\item m dòng tiếp theo mỗi bao gồm u, v, c, d cho biết có đường từ u -$>$ v, v -$>$ u với chi phí là c và khả năng thông qua là d.
+\end{itemize}
+
+\textbf{Chú ý: Bài này test sai. }Trong input cạnh (u, v) xuất hiện nhiều lần nhưng phải dùng duy nhất cạnh (u, v) xuất hiện cuối cùng thì mới có thể AC.
+
+\subsubsection{Output}
+\begin{itemize}
+	\item Dòng đầu, nếu không vận chuyển được ghi –1, nếu có ghi tổng chi phí vận chuyển.
+	\item Nếu có nghiệm thì một số dòng tiếp ghi u, v, i cho biết vận chuyển i đơn vị hàng từ trên cạnh u -$>$ v. Kết thúc bằng "0 0 0".
+\end{itemize}
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input}:
+6 8 5 1 6
+1 2 1 2
+1 4 3 4
+2 3 1 4
+2 5 5 2
+3 4 2 4
+3 6 1 2
+4 6 4 1
+5 6 6 2
+
+\textbf{Output}:
+43
+1 2 2
+1 4 3
+2 5 2
+3 6 2
+4 3 2
+4 6 1
+5 6 2
+0 0 0
+
+\end{verbatim}
+
+\emph{Giới hạn: }
+\begin{itemize}
+	\item n $<$= 100
+	\item d$_ij $ $<$= 30000
+	\item c$_ij $ $<$= 10 $^ 9 $
+\end{itemize}
+
+Phạm vi tính toán là Longint.
+
+\textbf{Chú ý: Bài này test sai. }Trong input cạnh (u, v) xuất hiện nhiều lần nhưng phải dùng duy nhất cạnh (u, v) xuất hiện cuối cùng thì mới có thể AC.

@@ -1,0 +1,52 @@
+
+
+ 
+
+Trở lại kì thi IOI năm 20XX tổ chức tại Việt Nam. Sau khi đưa các thí sinh đi du lịch xuyên Việt trên xe bus, BTC quyết định tổ chức tiệc chia tay thật linh đình tại nhà hàng năm sao ABC, nổi tiếng món ngon cả ba miền Bắc-Trung-Nam.
+
+Trong nhà hàng ABC có một chiếc bàn tròn rất lớn, đủ chỗ cho cả N thí sinh. Nếu đặt tiệc ở bàn này thì BTC sẽ nhận được ưu đãi đặc biệt của nhà hàng ABC và tiết kiệm được rất nhiều tiền so với đặt nhiều bàn. Tuy nhiên có một số thí sinh muốn ngồi cạnh nhau. BTC muốn tất cả thí sinh đều thoải mái nên sẽ cố đáp ứng tất cả yêu cầu.
+
+Sau khi hỏi ý kiến tất cả N thí sinh, BTC nhận được K yêu cầu dưới dạng A B, nghĩa là thí sinh A muốn ngồi cạnh thí sinh B. Sau chuyến đi chơi vui vẻ, tất cả các thí sinh đều hài lòng nên rất dễ tính. Nếu A muốn ngồi cạnh B mà B không có nhu cầu ngồi cạnh A thì vẫn sắp xếp được. Các thí sinh không có nhu cầu thì có thể xếp cho ngồi ở vị trí bất kì.
+
+Sau khi có được danh sách các yêu cầu, BTC muốn biết rẳng có nên đặt tiệc ở bàn tròn hay không.
+
+\subsubsection{Input}
+
+Dòng đầu tiên là T – số testcase
+\\Mỗi nhóm dòng trong số T nhóm dòng sau :
+\begin{itemize}
+	\item Dòng đầu gồm 2 số N, K – số thí sinh và số yêu cầu
+	\item K dòng sau, mỗi dòng gồm 2 số A, B thể hiện thí sinh A muốn ngồi cạnh thí sinh B
+\end{itemize}
+
+Giới hạn : 1 $<$= N $<$= 10 $^ 9 $ ;  0 $<$= K $<$= 10 $^ 5 $
+\\60\% số test có N $<$= 10 $^ 5 $
+
+\subsubsection{Output}
+
+Với mỗi test, in ra trên 1 dòng một chữ cái ‘Y’ nếu có thể cho tất cả các thí sinh ngồi chung một bàn. Ngược lại in ra ‘N‘
+
+3 3 4 3 2 2 1 1 3 4 3 2 3 1 3 2 1 1000000000 0
+
+\subsubsection{Example}
+
+Mỗi test chỉ được chấm đúng nếu tất cả các testcase đều đúng.
+
+Trong lúc thi submission sẽ được chấm 3 test, trong đó 1 test có testcase với N $>$ 10 $^ 5 $ .
+\begin{verbatim}
+\textbf{Input:}
+3
+3 3
+3 2
+2 1
+1 3
+4 3
+2 3
+1 3
+2 1
+1000000000 0
+
+\textbf{Output:}
+Y
+N
+Y\end{verbatim}

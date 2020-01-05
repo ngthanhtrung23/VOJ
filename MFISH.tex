@@ -1,0 +1,75 @@
+
+
+Hồi nhỏ, Mirko thích chơi "Bắn tàu" nhưng bây giờ anh ta chơi trò "Câu cá trên sông" “Sea battle”.
+
+Trò chơi mô tả trên 1 bảng N ô đánh số từ 1 đến N từ trái qua phải. Trên đó sẽ đặt M tàu.  Với mỗi ô sẽ biết số lượng cá mà ở trong ô đó. Mỗi tàu sẽ chiếm 1 số ô liên tiếp và nó phải thả neo vào 1 ô nào đó.  Nghĩa là ta sẽ biết được với mỗi tàu, ô mà tàu đó bắt buộc phải chiếm.
+
+Chỉ có thể có 1 tàu trên mỗi một ô. Lượng cá bắt được là tổng lượng cá nằm trong ô mà tàu này chiếm.  Cần bắt được nhiều cá nhất.
+
+Bạn hãy giúp Mirko đặt tàu.
+
+ 
+
+\subsubsection{Input}
+
+ 
+
+Dòng đầu là số N, số ô, 1 ≤ N ≤ 100000.
+
+Dòng tiếp theo là N số nguyên mô tả khối lượng cá trong từng ô, mỗi số $>$=1 và $<$=100.
+
+Dòng tiếp theo là số tàu M,  1 ≤ M ≤ N.
+
+M dòng tiếp theo, mỗi dòng gồm 2 số B và D, nghĩa là tàu phải thả neo ở ô B và tàu có độ dài là D ô.
+
+ 
+
+\subsubsection{Output}
+
+ 
+
+Khối lượng cá lớn nhất bắt được.
+
+ 
+
+\subsubsection{Sample}
+\begin{verbatim}
+brodovi.in 
+ 
+11 
+2 5 3 4 7 6 2 1 3 8 5 
+2 
+8 3 
+3 2 
+ 
+brodovi.out 
+ 
+20 
+
+brodovi.in 
+ 
+13 
+3 2 4 7 2 1 3 6 1 2 6 4 1 
+2 
+5 7 
+11 4 
+ 
+brodovi.out 
+ 
+38
+
+brodovi.in 
+ 
+11 
+1 1 6 4 4 1 1 3 10 1 1 
+3 
+2 3 
+6 4 
+10 2 
+ 
+brodovi.out 
+ 
+31 
+\end{verbatim}
+
+ 

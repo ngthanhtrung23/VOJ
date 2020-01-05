@@ -1,0 +1,81 @@
+
+
+Sơn đang chuẩn bị đề thi cho đợt tập huấn học sinh tham dự kỳ thi học sinh giỏi toán. Đề thi gồm n câu hỏi. Trong mỗi câu hỏi học sinh cần phải thực hiện việc tính giá trị của một biểu thức số học gồm không quá 4 toán hạng với các phép toàn cộng (+), trừ (-) hoặc nhân (*) giữa chúng. Sơn đã chuẩn bị n biểu thức như vậy với các toán hạng là các số nguyên không âm. Với cùng một biểu thức, có thể đặt thêm các cặp dấu ngoặc để chỉ ra trình tự thực hiện các phép toán và có thể dẫn đến các kết quả khác nhau.
+
+\textbf{Ví dụ}:
+\begin{itemize}
+	\item Với n=3 và các biểu thức được chuẩn bị là:
+\end{itemize}
+
+2*3-4; 2*3-4; 3*2-4;
+
+Thì một đề thi đáp ứng yêu cầu đặt ra là:
+
+2*3-4 = 2; 2*(3-4) = -2; 3*(2-4) = -6;
+\begin{itemize}
+	\item Xét một ví dụ khác, với n=4 và các biểu thức là:
+\end{itemize}
+
+2*3-4; 2*3-4; 3*2-4; 3*2-4.
+
+Với biểu thức 2*3-4 chỉ có hai trình tự tính toán dẫn đến kết quả là 2 và -2, còn đối với biểu thức 3*2-4 cũng chỉ có hai trình tự tính toán dẫn đến kết quả là 2 và -6. Như vậy, đối với các biểu thức đã cho chỉ có  thể  tạo tối đa 3 kết quả khác nhau, trong khi đó đề thi lại đòi hỏi đưa ra 4 câu hỏi với kết quả khác nhau. Vì vậy, đối với ví dụ này, câu trả lời là không thể tạo đề thi đáp ứng yêu cầu đặt ra.
+
+\textbf{Yêu cầu}: Hãy giúp Sơn tạo đề thi với n biểu thức số học chọn trước đáp ứng yêu cầu đặt ra.
+
+\textbf{Dữ liệu}:
+\begin{itemize}
+	\item Dòng đầu tiên chứa số nguyên dương n là số lượng biểu thức số học;
+	\item Dòng thứ i trong số n dòng tiếp theo chứa một biểu thức gồm ít nhất là hai và nhiều nhất là 4 toán hạng, mỗi toán hạng là số nguyên không âm không vượt quá 106, trong đó các toán hạng và phép toán được viết liên tiếp nhau không có dấu cách phân tách.
+\end{itemize}
+
+\textbf{Kết quả}: Ghi ra n dòng, mỗi dòng chứa một biểu thức (có thể có hoặc không có các dấu ngoặc) trong đề thi mà bạn tạo ra để đáp ứng yêu cầu đã nêu, trong đó các toán hạng, phép toán và dấu ngoặc được ghi liên tiếp nhau không có dấu phân tách. Nếu có nhiều cách tạo đề thi đáp ứng yêu cầu thi hãy đưa ra một cách tùy ý. Nếu câu trả lời là không thể tạo được đề thi đáp ứng yêu cầu thì ghi ra thông báo ‘NO SOLUTION’.
+
+\textbf{Ví dụ}:
+
+INPUT
+
+3
+
+2*3-4
+
+2*3-4
+
+3*2-4
+
+ 
+
+OUTPUT
+
+2*3-4
+
+2*(3-4)
+
+3*(2-4)
+
+ 
+
+INPUT
+
+4
+
+2*3-4
+
+2*3-4
+
+3*2-4
+
+3*2-4
+
+ 
+
+OUTPUT
+
+NO SOLUTION
+
+ 
+
+\textbf{Ràng buộc}:
+\begin{itemize}
+	\item Có 50\% số test ứng với 50\% số điểm của bài có n$<$=20 và mỗi biểu thức gồm đúng 3 toán hạng.
+	\item Có 50\% số test khác ứng với 50\% số điểm của bài có n$<$=2000.
+\end{itemize}

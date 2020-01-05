@@ -1,0 +1,64 @@
+
+
+ 
+
+IOI 2008 diễn ra trong n + 1 ngày, các bài toán của IOI được đánh số từ 1 tới n.(n+1) và được phân bố vào các ngày thi theo lịch sau (mỗi ngày thi có n bài toán):
+\begin{itemize}
+	\item Ngày 1: Các bài toán từ 1 tới n
+	\item Ngày 2: Các bài toán từ n + 1 tới 2n
+	\item ...
+	\item Ngày i: Các bài toán từ (i - 1).n + 1 tới i.n
+	\item ...
+	\item Ngày n+1: Các bài toán từ n.n + 1 tới n.(n+1)
+\end{itemize}
+
+Các bài thi có một trong k dạng, bài thứ j có dạng là r $_ j $ (1 $<$= r $_ j $ $<$= k)
+
+Thể thức thi được thông báo cho mỗi đoàn như sau:
+\begin{itemize}
+	\item Mỗi đoàn sẽ có n + 1 học sinh tham gia
+	\item Hàng ngày, Ban tổ chức sẽ đưa một học sinh của đoàn đi tham quan thành phố, việc chọn học sinh nào cho đi tham quan là quyền của trưởng đoàn, nhưng phải đảm bảo điều kiện:
+\end{itemize}
+
+Cho đến khi IOI kết thúc, học sinh nào của đoàn cũng đã được đi tham quan thành phố. Như vậy mỗi ngày đoàn sẽ còn lại n học sinh tham gia thi, việc giao cho học sinh nào làm bài nào là quyền của phó đoàn nhưng mỗi học sinh chỉ được giao một bài và hai học sinh khác nhau sẽ phải nhận hai bài khác nhau.
+
+Kết thúc IOI, điểm đồng đội của mỗi đoàn sẽ được tính bằng tổng điểm của tất cả các lời giải các bài toán đã cho.
+
+Các thầy giáo trưởng, phó đoàn Việt Nam dự đoán rằng nếu học sinh thứ i của đoàn làm bài toán dạng j thì có thể thu được số điểm là c $_ ij $ (c $_ ij $ = 0 tương đương với lời dự đoán rằng học sinh thứ i không làm được bài toán dạng j).
+
+Hỏi các thầy sẽ sắp xếp lịch thi đấu cho các học sinh như thế nào để theo dự đoán, đoàn Việt Nam sẽ thu được số điểm nhiều nhất có thể.
+
+\subsubsection{Input}
+
+Dòng 1: Chứa hai số n, k (1 $<$= n $<$= 100; 1 $<$= k $<$= 1000)
+
+Dòng 2: Chứa n.(n+1) số, số thứ p là r $_ p $ .
+
+Các dòng tiếp, mỗi dòng chứa ba số nguyên dương i, j, p cho biết một điều dự đoán của các thầy: học sinh thứ i có thể làm được bài toán dạng j và đạt được số điểm là p (=c[i, j]). (1 $<$= p $<$= 100)
+
+\subsubsection{Output}
+
+Gồm 1 dòng duy nhất : Ghi điểm đồng đội mà theo dự đoán đoàn Việt Nam có thể đạt
+
+\subsubsection{Example}
+\begin{verbatim}
+Input:
+3 4
+1 2 4 4 3 3 1 4 2 3 2 2
+1 1 2
+1 2 3
+1 4 6
+2 3 4
+2 1 3
+2 4 7
+3 2 1
+3 1 4
+4 1 2
+4 3 9
+4 2 8
+
+Output:
+65
+\end{verbatim}
+
+\subsubsection{\emph{I hope and expect that you will have much success in IOI 2008 \textasciicircum\textasciicircum }}

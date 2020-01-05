@@ -1,0 +1,51 @@
+
+
+
+
+   Tiếp theo chiến lược “quy hoạch động”, Bờm huấn luyện cho chú chó của mình chiến lược “tham ăn” trong một sân chơi được biểu diễn bởi mặt phẳng trực chuẩn                                                   . Ban đầu chú chó xuất phát ở điểm (0,0) và nó phải đứng im cho tới khi được gọi. Trò chơi diễn ra trong   \textbf{    N   }   lượt, lượt thứ   \emph{    i   }   của trò chơi diễn ra như sau:  
+
+   Bờm di chuyển đến vị trí (x   $_    i   $   ,y   $_    i   $   ), cầm c   $_    i   $   cái bánh và gọi chú chó. Chú chó có quyền đứng im hoặc di chuyển theo các phương song song theo trục tọa độ để đến chỗ Bờm nếu độ dài quãng đường di chuyển không vượt quá   \textbf{    K   }   . Nếu chú chó có thể đi được đến chỗ Bờm và quyết định di chuyển, nó sẽ được thưởng toàn bộ c   $_    i   $   cái bánh, ngược lại nó sẽ phải đứng nhìn Bờm ăn hết luôn c   $_    i   $   cái bánh đó. Hết lượt chơi này chú chó lại phải đứng im và trò chơi tiếp tục ở lượt   \emph{    i+1.   }
+
+\textbf{    Yêu cầu:   }   Cho biết trước các tọa độ (x   $_    i   $   ,y   $_    i   $   ) và số bánh c   $_    i   $   tại các lượt chơi, hãy giúp chú chó tội nghiệp của Bờm kiếm được nhiều bánh nhất  
+
+\subsubsection{   Input  }
+\begin{itemize}
+	\item     Dòng 1 chứa hai số nguyên dương    \textbf{     N    }    ,    \textbf{     K    }    .   
+	\item \textbf{     N    }    dòng tiếp theo, dòng thứ     chứa ba số nguyên dương x    $_     i    $    ,y    $_     i    $    ,c    $_     i    $    .   
+\end{itemize}
+
+   Ràng buộc:   \textbf{    N   }   $<$=10   $^    5   $   , tất cả các số còn lại trong file dữ liệu đều là số nguyên dương $<$=10   $^    3   $   .  
+
+\subsubsection{   Output  }
+\begin{itemize}
+	\item     Gồm một số nguyên duy nhất là số bánh chú chó kiếm được trong trò chơi theo phương án của bạn.   
+\end{itemize}
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+
+8 4
+
+1 2 2
+
+1 5 9
+
+4 3 3
+
+6 4 4
+
+7 7 8
+
+8 2 5
+
+5 1 63 2 7
+
+\textbf{Output:}\end{verbatim}
+\begin{verbatim}
+27\end{verbatim}
+
+\emph{    Giải thích: đây là ví dụ với 8 lượt chơi và vị trí của Bờm tại 8 lượt chơi đó lần lượt là A, B, C, D, E, F, G, H. Trong phương án tối ưu chú chó chỉ phải bỏ 9 bánh tại điểm B và 8 bánh tại điểm E.   }
+\begin{verbatim}
+
+\includegraphics{http://i259.photobucket.com/albums/hh288/phongtinptnk0710/smartdog.jpg}\end{verbatim}

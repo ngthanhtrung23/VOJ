@@ -1,0 +1,47 @@
+
+
+ 
+
+\emph{yenthanh132 } có một vườn thông, vườn thông bao gồm \textbf{ N } cây thông xếp theo một đường thẳng. Do được trồng ở khu đất màu mỡ nên các cây thông của \emph{ anh ta }\emph{} lớn rất nhanh, mỗi ngày mỗi cây thông sẽ tăng thêm \textbf{ d } cm chiều cao.
+
+
+\includegraphics{http://www.hdwallpapersinn.com/wp-content/uploads/2013/10/Glowing-Christmas-Trees_FullHDWpp.com_1.jpg}
+
+Giáng sinh sắp tới rồi nên \emph{ yenthanh132 } muốn làm đẹp lại khu vườn của mình, anh ta muốn \textbf{ N } cây thông sẽ có chiều cao như nhau, để làm được điều đó \emph{ anh ta } có một loại thuốc ngăn chặn sự phát triển của cây thông, mỗi lần phun thuốc cho 1 cây thông thuốc sẽ có tác dụng làm cho cây thông giữ nguyên chiều cao trong vòng \textbf{ 1 } ngày, do thời gian có hạn nên mỗi ngày \emph{ yenthanh132 } chỉ có thể chọn một cây thông trong \textbf{ N } cây thông để phun loại thuốc đó, cây thông bị phun thuốc sẽ giữ nguyên chiều cao trong suốt ngày hôm ấy và \textbf{ N-1 } cây thông còn lại mỗi cây sẽ tăng thêm \textbf{ d } cm chiều cao như bình thường.
+
+Hãy giúp \emph{ yenthanh132 } sắp xếp lịch phun thuốc để \textbf{ N } cây thông có chiều cao bằng nhau sau ít ngày nhất. Hoặc nói với \emph{ yenthanh132 } rằng anh ta không thể làm cho \textbf{ N } cây thông có chiều cao bằng nhau được.
+
+\subsubsection{Input}
+\begin{itemize}
+	\item Dòng đầu gồm 2 số nguyên dương: \textbf{ N, d } ; mỗi số cách nhau 1 dấu cách
+	\item Dòng tiếp theo có \textbf{ N } số nguyên dương, số thứ i là chiều cao của cây thông thứ i.
+\end{itemize}
+
+\subsubsection{Output}
+\begin{itemize}
+	\item In ra một số nguyên duy nhất là số ngày ít nhất để \textbf{ N } cây thông của yenthanh132 có chiều cao như nhau. Trường hợp không thể làm \textbf{ N } cây thông có chiều cao như nhau được thì in ra \textbf{ -1 }
+\end{itemize}
+
+\subsubsection{Giới hạn}
+\begin{itemize}
+	\item 1 $<$= d $<$= 10.
+	\item Chiều cao của cây thông là 1 số nguyên trong đoạn [1, 10 $^ 9 $ ]
+	\item Trong 20\% test đầu có N $<$= 100.
+	\item Trong 20\% test tiếp theo có N $<$= 1000.
+	\item Trong tất cả các test có N $<$= 10000.
+\end{itemize}
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+3 2
+1 5 3
+
+\textbf{Output:}
+3\end{verbatim}
+\begin{verbatim}
+\textbf{Giải thích: }Có cách để sau 3 ngày 3 cây thông sẽ có chiều cao như nhau:
+- Ngày 1: Phun thuốc vào cây thông thứ 2, chiều cao của 3 cây sau ngày 1 là: 3 5 5
+- Ngày 2: Phun thuốc vào cây thông thứ 3, chiều cao của 3 cây sau ngày 2 là: 5 7 5
+- Ngày 3: Phun thuốc vào cây thông thứ 2, chiều cao của 3 cây sau ngày 3 là: 7 7 7.
+Vậy sau 3 ngày chiều cao của 3 cây thông đã bằng nhau\end{verbatim}

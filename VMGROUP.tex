@@ -1,0 +1,59 @@
+
+
+
+
+   Pirate đang trên chuyến tàu sẽ đưa anh đến với hòn đảo mà anh hằng mong ước với dừa xanh, cát trắng và biển ngọc. Tuy nhiên, trước tiên anh phải tìm ra cách để đốt cháy hết khoảng thời gian ngồi bó gối trên khoang tàu. Những con số lại ập vào suy nghĩ của Pirate...  
+
+   Pirate nghĩ ra   \textbf{    N   }   số nguyên dương ở hệ nhị phân, mỗi số gồm L bit. Anh ta nhận thấy rằng giữa các số có một mối quan hệ rất dễ nhìn thấy, là việc chúng giống nhau ở một bit tại vị trí nào đó. Pirate muốn phân nhóm N số trên theo tính chất này, cụ thể là:  
+\begin{itemize}
+	\item     Mỗi số phải thuộc vào duy nhất một nhóm.   
+	\item     Mỗi nhóm gồm các số giống nhau ở bit K (các bit được đánh số từ 1 đến L, 0 $<$ K ≤ L). Ta gọi đó là nhóm bit-K.   
+	\item     Không thể có hai nhóm bit-K cùng tồn tại. Tức là, nếu có nhóm bit-K mà bit giống nhau của các số là bit 1 thì không thể có một nhóm bit-K khác mà bit giống nhau là bit 0.   
+\end{itemize}
+
+   Tuy nhiên, việc phân nhóm đơn thuần như vậy quá dễ dàng đối với Pirate. Để mất thêm thời gian, anh ấy muốn tính xem có thể phân ra được ít nhất bao nhiêu nhóm từ N số trên.  
+
+\subsubsection{   Input  }
+
+   Dòng đầu tiên ghi số nguyên   \textbf{    T   }   là số bộ test.  
+
+   T nhóm dòng sau, mỗi nhóm gồm hai dòng thể hiện một bộ test với cấu trúc như sau:   
+\begin{itemize}
+	\item     Dòng thứ nhất ghi hai số nguyên dương N và L.   
+	\item     N dòng tiếp theo mỗi dòng ghi một số nguyên dương.   
+\end{itemize}
+
+\subsubsection{   Output  }
+
+   Output gồm T dòng, mỗi dòng ghi ra số lượng nhóm ít nhất có thể phân chia được ứng với bộ test tương ứng.  
+
+\subsubsection{   Chấm điểm  }
+
+   Trong quá trình thi, bài của bạn sẽ được chấm với   \textbf{    40\%   }   test. Điểm số mà bạn nhận được thể hiện phần trăm test mà bạn giải đúng trong các test đó (trên thang điểm   \textbf{    100   }   ).  
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}\end{verbatim}
+\begin{verbatim}
+1
+4 3
+1
+6
+7
+4
+\textbf{Output:}
+2
+\end{verbatim}
+
+\subsubsection{   Giải thích  }
+
+   Biểu diễn nhị phân của các số trên lần lượt là: 001, 110, 111, 100. Ta phân chia các số trên thành hai nhóm: nhóm bit-2 gồm (0   \textbf{    0   }   1, 1   \textbf{    0   }   0\} và nhóm bit-3 gồm \{   \textbf{    1   }   10,   \textbf{    1   }   11\}.  
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     1 ≤ T ≤ 4   
+	\item     1 ≤ N ≤ 50.   
+	\item     2 ≤ L ≤ 20. Trong 40\% số test, 2 ≤ L ≤ 8.   
+	\item     Các số trong Input là số nguyên dương không vượt quá 2    $^     L    $    - 1.   
+	\item     Dữ liệu đảm bảo có cách chia nhóm thỏa mãn đề bài.   
+\end{itemize}

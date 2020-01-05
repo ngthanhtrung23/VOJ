@@ -1,0 +1,64 @@
+
+
+
+
+   Austin và Agrron vừa đào được một túi gồm N thỏi kim loại quý. Thỏi thứ k chứa A[k] gram vàng và B[k] gram bạc. Họ muốn chia phần trước khi chia tay nhau, nhưng có một vài rắc rối xảy ra. Đó là Austin chỉ quan tâm đến vàng, trong khi Agrron chỉ quan tâm đến bạc (với 1 người thích vàng, bao nhiêu bạc cũng là vô nghĩa và ngược lại). Sau khi chia xong, ngay lập tức họ sẽ loại bỏ phần kim loại họ không thích (phần này người kia không thể lấy được).  
+
+
+
+   Để đảm bảo công bằng, họ có thể tách một số thỏi kim loại ra thành 2 phần. Với mỗi thỏi, họ có thể tách nó ra theo bất kì tỉ lệ nào, và mỗi người có thể chọn phần mình muốn (lưu ý, việc tách thỏi kim loại không làm thay đổi tỉ lệ phân bổ vàng-bạc trong 2 thỏi nhỏ hơn. Chẳng hạn, với 1 thỏi chứa 6 gram vàng và 4 gram bạc, có thể tách nó thành 2 thỏi, mỗi thỏi chứa 3 gram vàng và 2 gram bạc, trong khi   \textbf{    không thể   }   tách nó thành 2 thỏi, một thỏi chứa 6 gram vàng và thỏi còn lại chứa 4 gram bạc).  
+
+
+
+   Xác định số gram vàng (bạc) nhiều nhất mà người nhận được ít hơn có thể có sau quá trình trao đổi này, nếu họ chọn phương án tối ưu.  
+
+\subsubsection{   Input  }
+\begin{itemize}
+	\item     Dòng đầu tiên chứa một số nguyên N là số thỏi kim loại.   
+	\item     N dòng tiếp theo, mỗi dòng chứa 2 số nguyên A[i], B[i] là số gram vàng và bạc có trong thỏi thứ i.   
+\end{itemize}
+
+
+
+\subsubsection{   Output  }
+\begin{itemize}
+	\item     Một dòng duy nhất là đáp số bài toán. Kết quả được chấp nhận nếu chênh lệch không quá 10\textasciicircum-6 so với đáp số tối ưu.   
+\end{itemize}
+
+
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     0 $<$ N ≤ 100000.   
+	\item     0 ≤ A[i],B[i] ≤ 1000.   
+	\item     Trong 20\% số test, chỉ có đúng 1 viên đá có lẫn cả vàng và bạc (tức là trong N – 1 viên, A[i] = 0 hoặc B[i] = 0).   
+\end{itemize}
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+
+2
+
+10 3
+
+6 10
+
+\textbf{Output:}
+
+10.000\end{verbatim}
+
+\emph{     Giải thích        : Austin lấy thỏi thứ nhất và Agrron lấy thỏi thứ hai, mỗi người được 10 gram có ích. Các đáp số 9.999999 hoặc 10.000001 cũng được chấp nhận.   }
+\begin{verbatim}
+
+\\\textbf{Input:}
+\\
+
+130 15
+\\
+\\\textbf{Output:}
+\\
+
+10.0\end{verbatim}
+
+\emph{     Giải thích        : Tách thỏi kim loại theo tỉ lệ 1/3 và 2/3. Austin lấy phần nhỏ hơn (có 1/3 * 30 = 10 gram vàng), thỏi kia thuộc về Agrron (có 2/3 * 15 = 10 gram bạc).   }

@@ -1,0 +1,53 @@
+
+
+
+
+   Người ta định nghĩa một dãy ngoặc đúng như sau:  
+\begin{itemize}
+	\item     Xâu rỗng là một dãy ngoặc đúng.   
+	\item     Nếu A là dãy ngoặc đúng thì (A) cũng là một dãy ngoặc đúng   
+	\item     Nếu A, B là những dãy ngoặc đúng thì AB cũng là dãy ngoặc đúng.   
+\end{itemize}
+
+   Những dãy ngoặc sau được xem là đúng:  
+\begin{itemize}
+	\item     ()(())   
+	\item     ((()))   
+\end{itemize}
+
+   Những dãy ngoặc sau thì không:  
+\begin{itemize}
+	\item     )(   
+	\item     (((()))   
+	\item     )()()(   
+\end{itemize}
+
+   Một xâu S khác rỗng được gọi là xâu con của T nếu xâu S trùng với một dãy các kí tự liên tiếp của T. Ví dụ "bcd" là xâu con của xâu "abcde" nhưng xâu "dc" thì không.  
+
+   Cho một xâu T chỉ gồm các kí tự '(' và ')'  (kí tự mở ngoặc và đóng ngoặc). Như vậy các xâu con của T có thể là một dãy ngoặc đúng hoặc không. Hãy đếm số lượng xâu con phân biệt của T mà là một dãy ngoặc đúng.  
+
+\subsubsection{   Input  }
+\begin{itemize}
+	\item     Dòng đầu tiên chứa số n là số lượng bộ test (n$<$=20).   
+	\item     n dòng tiếp theo, mỗi dòng là một bộ test chứa xâu T. Biết rằng độ dài của xâu T không vượt quá 100.000 kí tự.   
+\end{itemize}
+
+\subsubsection{   Output  }
+\begin{itemize}
+	\item     Với mỗi bộ test, xuất ra số lượng xâu con phân biệt của T mà là một dãy ngoặc đúng.   
+\end{itemize}
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+3
+\\(()())()
+\\(()()()()()
+\\()()()(()())(()())
+\\\textbf{Output:}
+4
+\\5
+\\11
+\\
+\\\textbf{Giải thích: }Với bộ test đầu, có 4 xâu con phân biệt là một dãy ngoặc đúng: "()" ; "()()"; "(()())"; "(()())()"
+\\\end{verbatim}

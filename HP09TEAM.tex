@@ -1,0 +1,56 @@
+
+
+
+
+   Vào cuối tuần, HT tổ chức một bữa tiệc với bạn bè mình ở disco “WHY NOT”. Sau khi bữa tiệc kết thúc, HT và nhóm bạn của mình (có tất cả P người – đánh chỉ số từ 1 đến P) ra gọi taxi để về nhà. Tại HT Land, có các trạm taxi mà mọi người có thể gọi xe để đi về, mọi người phải trả một số tiền cố định cho mỗi đoạn đường mình đi (phụ thuộc vào độ dài đường đi và không phụ thuộc vào số lượng hành khách).  
+
+   Tại bất kì trạm taxi nào, có thể có những người bạn của HT xuống xe (đi bộ về nhà của họ), khi đó, đoàn người sẽ tách ra thành những       nhóm đồng nhất      riêng biệt và sau đó đi trên những chiếc taxi khác nhau đến những trạm tiếp theo. Hai nhóm đồng nhất khác nhau có thể đi đến đích giống nhau, nhưng lại sử dụng xe taxi khác nhau. Một nhóm được gọi là nhóm đồng nhất nếu nhóm đó có những người có chỉ số liên tiếp.  
+
+\section{   Yêu cầu  }
+
+   Biết số lượng P người, N trạm xe taxi, M đoạn đường, chi phí trên từng đoạn đường và với việc sử dụng xe taxi như đã mô tả, bạn hãy tính chi phí tối thiểu mà HT phải trả cho tất cả P người?  
+
+\section{   Input  }
+\begin{itemize}
+	\item     Dòng 1: Số nguyên P là số người trong nhóm.   
+	\item     Dòng 2: Số nguyên N là số trạm taxi, các trạm taxi được đánh số từ 1 đến N.   
+	\item     Dòng 3: Số nguyên M là số đoạn đường nối trực tiếp 2 trạm taxi.   
+	\item     M dòng tiếp theo, mỗi dòng có 3 số i, j, c. Có nghĩa là đoạn đường đi i đến j (hoặc j đến i) phải trả số tiền là c.   
+	\item     Dòng cuối: là P số D1, D2,..., DP là những trạm mà nhóm người xuống. Di là trạm taxi mà người i xuống. Các số này không nhất thiết phải khác nhau.   
+\end{itemize}
+
+\section{   Output  }
+\begin{itemize}
+	\item     Một số duy nhất là chi phi tối thiểu phải trả.   
+\end{itemize}
+
+\section{   Giới hạn  }
+\begin{itemize}
+	\item     1 $<$= P $<$= 50   
+	\item     2 $<$= N $<$= 500   
+	\item     0 $<$= c $<$= 1000   
+	\item     Trạm taxi số 1 là điểm xuất phát (disco “WHY NOT”)   
+	\item     Tất cả các đoạn đường đều là đường hai chiều   
+	\item     Tất cả các test đều tồn tại lời giải   
+\end{itemize}
+
+\section{   Ví dụ  }
+\begin{verbatim}
+Input
+4
+5
+8
+1 2 6
+1 3 4
+1 5 6
+2 3 4
+2 5 0
+2 4 1
+3 4 1
+3 5 7
+5 2 4 4
+
+
+Output
+6
+\end{verbatim}

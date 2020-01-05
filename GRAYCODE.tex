@@ -1,0 +1,45 @@
+
+
+Denis, Vanya and Fedya gathered at their first team training. Fedya told them that he knew the algorithm for constructing a Gray code.
+
+1. Create a 2-bit list: \{0, 1\}.
+
+2. Reflect this list and concatenate it with the original list: \{0, 1, 1, 0\}.
+
+3. Prefix old entries with 0, and prefix new entries with 1: \{00, 01, 11, 10\}.
+
+4. Repeat steps 2 and 3 until the length of all elements is equal to n.
+
+The number n is a length of a Gray code. For example, the code of length 3 is: \{000, 001, 011, 010, 110, 111, 101, 100\}.
+
+Denis ran the Fedya's algorithm and obtained a binary number x at position k (positions are numbered starting from zero). Vanya wrote down the numbers k and x in binary system. This story happened many years ago and now you hold the paper sheet with these numbers in your hands. Unfortunately, some digits are unreadable now. Could you determine the values of these digits using the readable digits?
+
+\section{Input}
+
+There are several test cases, one per line. Each test case consists of 2 string:
+
+The first one is number k written in the binary system. Unreadable digits are denoted with symbol "?".
+
+The second one is number x in the same format.
+
+The lengths of these numbers are equal and don't exceed 10 $^ 5 $ . The numbers may contain leading zeroes.
+
+\section{Output}
+
+For each test case, output the result in one line as follow:
+
+If there is a unique way to restore the numbers k and x, output them, replacing the symbols "?" with "0" or "1".
+
+If there are multiple ways to restore them, output "Ambiguity".
+
+If Denis or Vanya certainly made a mistake in these numbers, output "Impossible".
+\begin{verbatim}
+\textbf{Sample Input}
+0?1 0?0
+?00 ??0
+100 100
+011 010
+
+\textbf{Sample Output}
+Ambiguity
+Impossible\end{verbatim}

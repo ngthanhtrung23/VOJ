@@ -1,0 +1,41 @@
+
+
+
+
+     Cho 1 xâu có N kí tự và T truy vấn. Mỗi truy vấn gồm 2 xâu. Trong mỗi truy vấn, nếu 1 trong 2 xâu không phải xâu con của xâu đã cho ta in ra -4. Ngược lại, ta xem xét vị trí cuối cùng mà chúng xuất hiện và gọi chúng là pos1, pos2. Ví dụ xâu abs là xâu con của xâu abcsdsx và vị trí xuất hiện cuối cùng của xâu abs là 6 (kí tự s thứ 2). Nếu pos1 $<$ pos2 in ra -1, pos1 $>$ pos2 in ra -2, pos1 = pos2 in ra -3.    
+
+\subsubsection{   Input  }
+
+   Dòng 1: Chứa một xâu S  
+
+   Dòng 2: Gồm 1 số T là số test  
+
+   T dòng tiếp theo, mỗi dòng gồm 2 xâu S1 và S2  
+
+\subsubsection{   Output  }
+
+   Gồm T dòng là câu trả lời cho T test  
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+petrng_58hgminhsyhonguku953petrng_58hgminhsyhonguku95
+3
+petr rng_58
+psyho sky_58
+hgminh95 songuku95
+
+\textbf{Output:}
+-1
+-4
+-3
+
+\end{verbatim}
+
+\subsubsection{   Giới hạn:  }
+\begin{itemize}
+	\item        1 $<$= n $<$= 100000      
+	\item          1 $<$= T $<$= 100000        
+	\item            Mỗi xâu trong các truy vấn có độ dài thuộc [1, 10].          
+	\item              Các kí tự trong các xâu thuộc \{ ['a', 'z'], ['A', 'Z'], ['0', '9'], '.', '\_' , ‘[‘, ‘]’\}            
+\end{itemize}

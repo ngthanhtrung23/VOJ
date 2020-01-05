@@ -1,0 +1,42 @@
+
+
+Có một vòng tròn n mèo. Mèo trắng, đỏ, và xanh lá cây. Khi trò chuyện với nhau, hai mèo khác màu đồng thời thành màu thứ ba.
+
+Mỗi lượt, mèo đứng cạnh nhau trò chuyện theo thứ tự: một và hai, hai và ba, ba và bốn,... ,n và một.
+
+\subsubsection{Yêu cầu}
+
+Cho biết màu ban đầu của mèo, hỏi màu của mèo sau k lượt.
+
+\subsubsection{Dữ liệu}
+\begin{itemize}
+	\item Dòng 1: n, k (1 ≤ n $<$ 10000, 1 ≤ k ≤ 30000).
+	\item Dòng 2: dãy n ký tự, ký tự thứ i là 'R','G', hoặc 'W' cho biết màu của mèo i tương ứng: đỏ, xanh hoặc trắng.
+\end{itemize}
+
+\subsubsection{Kết quả}
+
+In ra dãy n ký tự cho biết màu của mèo sau k lượt.
+
+\subsubsection{Hạn chế}
+
+Có 50\% số tests có 1 ≤ n \&le 1000, 1 ≤ k ≤ 3000.
+
+\subsubsection{Ví dụ}
+\begin{verbatim}
+Dữ liệu
+3 1
+GRR
+
+Kết quả 
+RGR
+
+Giải thích: lượt 1: GRR -$>$ WWR -$>$ WGG -$>$ RGR.
+
+Dữ liệu
+5 4
+WRWRW
+
+Kết quả 
+GGGWG
+\end{verbatim}

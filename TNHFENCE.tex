@@ -1,0 +1,95 @@
+
+
+Các hàng rào bao quanh các cánh đồng của nông dân Brown đã bị mất kiểm soát. Các hàng rào là các đoạn thẳng có độ dài không quá 255 mét và chỉ được nối với nhau ở hai đầu của chúng, cả hai đầu của một hàng rào bất kì đều được nối ít nhất với một hàng rào khác. Kết quả là một mạng lưới hàng rào bao quanh các cánh đồng của ông ta được tạo nên, các hàng rào chia cánh đồng ra thành nhiều khu. Nông dân Brown muốn giải quyết việc này, ông ta cần biết khu cánh đồng được bao quanh bởi các hàng rào có chu vi nhỏ nhất.
+
+Nông dân Brown đánh số các hàng rào từ 1 đến N (N$<$=100). Với mỗi hàng rào, nông dân Brown biết được các thông tin sau:
+\begin{itemize}
+	\item Độ dài của hàng rào đó.
+	\item Các hàng rào kết nối với một đầu của hàng rào đó.
+	\item Các hàng rào kết nối với đầu còn lại của hàng rào đó.
+\end{itemize}
+
+Không có hàng rào nào kết nối với chính nó \textasciicircum\textasciicircum!
+
+\textbf{Yêu cầu: } Cho danh sách các hàng rào kết nối với nhau tạo thành mạng lưới bao quanh cánh đồng của nông dân Brown, nó chia cánh đồng thành nhiều khu. Hãy tìm khu cánh đồng có chu vi nhỏ nhất.
+
+Ví dụ với các hàng rào được đánh số từ 1 đến 10 kết nối với nhau tạo thành nhiều khu cánh đồng như dưới đây:
+\begin{verbatim}
+
+\texttt{           1
+   +---------------+
+   |\             /|
+  2| \7          / |
+   |  \         /  |
+   +---+       /   |6
+   | 8  \     /10  |
+  3|     \9  /     |
+   |      \ /      |
+   +-------+-------+
+       4       5}\end{verbatim}
+
+Khu cánh đồng có chu vi nhỏ nhất được bao bởi các hàng rào được đánh số: 2, 7 và 8.   
+
+\textbf{Input }
+
+Dòng 1 Chứa số nguyên N (1 $<$= N $<$= 100)
+
+Dòng
+
+2...3*N+1
+
+Bao gồm N tập hợp của 3 dòng biểu diễn thông tin của N hàng rào:
+\begin{itemize}
+	\item Dòng đầu chứa 4 số nguyên: S, L, N1, N2 lần lượt là số của hàng rào, độ dài của hàng rào, số hàng rào kết nối với một đầu của hàng rào, số hàng rào kết nối với đầu còn lại. (1$<$=S$<$=N; 1$<$=L$<$=255; 1$<$=N1, N2$<$=8)
+\end{itemize}
+\begin{itemize}
+	\item Dòng thứ 2 chứa N1 số nguyên là số của hàng rào kết nối với hàng rào hiện tại ở một đầu.
+\end{itemize}
+\begin{itemize}
+	\item Dòng thứ 3 chứa N2 số nguyên là số của hàng rào kết nối với hàng rào hiện tại ở đầu còn lại.
+\end{itemize}
+
+\textbf{Output: }\textbf{}
+
+Một số nguyên duy nhất là chu vi của khu cánh đồng nhỏ nhất.
+
+ 
+
+\textbf{Ví dụ: }
+
+(Test này tương ứng với hình ở trên) \textbf{}
+\begin{verbatim}
+\textbf{Input }
+10
+1 16 2 2
+2 7
+10 6
+2 3 2 2
+1 7
+8 3
+3 3 2 1
+8 2
+4
+4 8 1 3
+3
+9 10 5
+5 8 3 1
+9 10 4
+6
+6 6 1 2
+5
+1 10
+7 5 2 2
+1 2
+8 9
+8 4 2 2
+2 3
+7 9
+9 5 2 3
+7 8
+4 5 10
+10 10 2 3
+1 6
+4 9 5
+\textbf{Output }
+12\end{verbatim}

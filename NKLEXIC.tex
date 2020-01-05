@@ -1,0 +1,51 @@
+
+
+
+
+   Cho tập gồm N (1 ≤ N ≤ 26) chữ cái đầu tiên trong bảng chữ cái Latin và số nguyên dương M (1 ≤ M ≤ N). Cặp số (N,M) xác định một tập hợp tất cả các từ gồm M chữ cái khác nhau từ N chữ cái đã cho. Các từ trong tập hợp này được sắp xếp thành dãy theo thứ tự từ điển. Khi đó, ta gọi số thứ tự từ điển của một từ là số thứ tự của nó trong dãy từ được sắp xếp.  
+
+   Ví dụ, cặp (N=3, M=2) xác định tập \{ab, ac, ba, bc, ca, cb\}. Từ 'bc' tương ứng với 4, từ 'ab' tương ứng với 1, từ 'ca' tương ứng với 5,....  
+
+   Yêu cầu: Giả sử biết cặp số nguyên (N,M), khi đó cho một từ bạn cần xác định số thứ tự từ điển của nó, ngược lại cho biết số thứ tự từ điển của một từ bạn cần đưa ra từ đó. Trong cả hai tình huống, bạn phải kiểm tra xem dữ liệu có đúng đắn hay không: trong tình huống thứ nhất, dữ liệu là đúng đắn nếu từ đã cho thuộc tập từ được xét, còn trong tình huống thứ hai, dữ liệu là đúng đắn nếu tìm được từ trong tập từ có số thứ tự đã cho.  
+
+\subsubsection{   Dữ liệu  }
+\begin{itemize}
+	\item     Dòng đầu tiên là số nguyên K là số bộ dữ liệu.   
+	\item     Tiếp theo là K nhóm dòng mô tả K bộ dữ liệu, mỗi nhóm gồm hai dòng:    
+\begin{itemize}
+	\item       Dòng đầu tiên chứa hai số N, M.     
+	\item       Dòng thứ hai bắt đầu bởi chữ 'P' hoặc chữ 'W' tương ứng với việc bạn cần xác định số thứ tự từ điển của từ cho trước hay xác định từ tương ứng với số thứ tự của nó. Sau chữ 'P' hoặc chữ 'W' là một khoảng trống, tiếp đến là từ gồm M chữ cái latinh in thường nếu chữ đầu dòng là 'P' và là số nguyên dương nếu chữ cái đầu dòng là 'W'.     
+\end{itemize}
+\end{itemize}
+
+\subsubsection{   Kết quả  }
+
+   Ghi ra K dòng, mỗi dòng là câu trả lời cho một bộ dữ liệu tương ứng trong file dữ liệu và chứa thông tin sau:  
+\begin{itemize}
+	\item     Nếu bộ dữ liệu đã cho là không đúng đắn cần ghi thông báo 'Incorrect data'.   
+	\item     Nếu bộ dữ liệu đã cho là đúng đắn bạn cần ghi ra từ hoặc số thứ tự từ điển cần tìm phụ thuộc vào câu hỏi của bộ dữ liệu.   
+\end{itemize}
+
+\subsubsection{   Chú ý  }
+
+   Trong trường hợp dữ liệu là đúng đắn, luôn đảm bảo số thứ tự thuộc phạm vi [1, 2000000000] khi xác định từ có số thứ tự cho trước và thứ tự của từ thuộc phạm vi [1, 2000000000] khi xác định số thứ tự của từ cho trước.  
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu:
+4
+3 2
+P bc
+4 3
+W 6
+3 3
+P vba
+3 3
+W 9
+
+Kết qủa
+4
+adc
+Incorrect data
+Incorrect data
+\end{verbatim}

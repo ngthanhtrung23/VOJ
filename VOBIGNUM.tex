@@ -1,0 +1,60 @@
+
+
+
+
+   Cho N số nguyên (có thể âm, N ≤ 1000). Các số được đánh số từ 0 đến N-1, số thứ i được ký hiệu là A(i). Mỗi số có không quá 1000 chữ số. Bạn cần trả lời Q truy vấn (Q ≤ 10   $^    5   $   ). Mỗi truy vấn có dạng: X   $_    1   $   Y   $_    1   $   C   $_    1   $   X   $_    2   $   Y   $_    2   $   C   $_    2   $   , trong đó:  
+\begin{itemize}
+	\item     X    $_     1    $    , Y    $_     1    $$_     ,    $    X    $_     2    $    , Y    $_     2    $    là các số nguyên nằm trong khoảng [0, N-1].   
+	\item     C    $_     1    $    , C    $_     2    $    là các phép toán, có thể là +, - hoặc *   
+\end{itemize}
+
+   Nhiệm vụ của bạn là kiểm tra A(X   $_    1   $   ) C   $_    1   $   A(Y   $_    1   $   ) có bằng A(X   $_    2   $   ) C   $_    2   $   A(Y   $_    2   $   ) có bằng nhau hay không. Ví dụ:  
+\begin{itemize}
+	\item     N = 3   
+	\item     Dãy số: 10 20 30   
+	\item     Truy vấn: 0 2 + 1 1 +   
+	\item     Bạn cần kiểm tra A(0) + A(2) có bằng A(1) + A(1) hay không.   
+\end{itemize}
+
+\subsubsection{   Input  }
+\begin{itemize}
+	\item      Dòng đầu chứa 2 số nguyên dương N, Q.    
+	\item      N dòng tiếp theo, dòng thứ i chứa số nguyên A(i).    
+	\item     Q dòng tiếp theo, mỗi dòng chứa X    $_     1    $    , Y    $_     1    $    , C    $_     1    $    , X    $_     2    $    , Y    $_     2    $    , C    $_     2    $    mô tả truy vấn.   
+\end{itemize}
+
+\subsubsection{   Output  }
+
+   Gồm Q dòng, mỗi dòng in ra YES nếu 2 số bằng nhau, và NO nếu 2 số khác nhau.  
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     Có 40\% số test N ≤ 500, Q ≤ 5000, mỗi số trong input không quá 100 chữ số   
+	\item     Trong tất cả các test N ≤ 1000, Q ≤ 100,000; mỗi số trong input không quá 1000 chữ số   
+	\item     Thời gian chạy cho mỗi test: 1s, riêng test đề bài có giới hạn thời gian chạy là 0.5s.   
+\end{itemize}
+
+\subsubsection{   Chú ý:  }
+\begin{itemize}
+	\item     Trong thời gian thi, bài của bạn chỉ được chấm với test đề bài.   
+	\item     Nếu bài của bạn chạy đúng trên máy mình, nhưng sai khi nộp lên SPOJ, bạn có thể kiểm tra ở    \href{https://ideone.com}{     ideone    }    . Chú ý khi submit lên ideone, để chế độ Secret để người khác không đọc được code của bạn.   
+\end{itemize}
+
+\subsubsection{   Example  }
+
+\textbf{    Input:   }
+\begin{verbatim}
+4 3
+1
+\\2
+\\3
+\\4
+0 1 - 2 3 -
+0 3 + 1 2 +
+0 3 * 1 2 *
+
+
+
+\textbf{Output:}YES
+YES
+NO\end{verbatim}

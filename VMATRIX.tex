@@ -1,0 +1,64 @@
+
+
+ 
+
+Cho 3 ma trận A, B, C kích thước N*N. (N $<$= 1000), gồm các số nguyên từ 0 đến 9.
+
+Các hàng của mỗi ma trận được đánh số từ 1 đến N từ trên xuống dưới. Các cột của mỗi ma trận được đánh số từ 1 đến N từ trái sang phải.
+
+Phần tử ở hàng i, cột j của ma trận A được ký hiệu là A(i,j). Tương tự với ma trận B và ma trận C.
+
+ 
+
+Nhiệm vụ của bạn là kiểm tra đẳng thức A*B = C đúng hay sai. Các phép tính được thực hiện trên module 10.
+
+Phép A*B ở đây là phép nhân ma trận, được định nghĩa như sau:
+\begin{itemize}
+	\item Với ma trận A kích thước m*n và ma trận B kích thước n*k, kết quả của phép nhân là ma trận C kích thước m*k, với
+	\item C(i,j) = sum( A(i,k) * B(k,j) với k = 1..n)
+\end{itemize}
+
+\subsubsection{Input}
+
+Dòng 1: T - số test (T $<$= 10)
+
+Tiếp theo là T test, mỗi test gồm:
+\begin{itemize}
+	\item Dòng 1: N
+	\item N dòng tiếp, mỗi dòng N chữ số: ma trận A
+	\item N dòng tiếp, mỗi dòng N chữ số: ma trận B
+	\item N dòng tiếp, mỗi dòng N chữ số: ma trận C
+\end{itemize}
+
+\subsubsection{Output}
+
+Gồm T dòng, mỗi dòng YES / NO.
+
+\subsubsection{Giới hạn}
+\begin{itemize}
+	\item 20\% số test (tương ứng với 20\% số điểm) có N $<$= 100.
+	\item N $<$= 1000.
+\end{itemize}
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+2
+2
+12
+34
+43
+21
+85
+03
+2
+12
+34
+43
+21
+85
+00\end{verbatim}
+\begin{verbatim}
+\textbf{Output:}
+YES
+NO\end{verbatim}

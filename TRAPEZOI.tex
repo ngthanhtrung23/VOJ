@@ -1,0 +1,62 @@
+
+
+Trong mặt phẳng với hệ trục tọa độ Oxy lấy hai đường thẳng y=y1 và y=y2 (y1$>$y2).
+
+Cho N hình thang đánh số 1, 2, ..., N, hình thang i có 4 đỉnh là (y1,a $_ i $ ),(y1,b $_ i $ ),(y2,c $_ i $ ),(y2,d $_ i $ ) với a $_ i $ $<$b $_ i $ và c $_ i $ $<$d $_ i $ .
+
+Hai hình thang được gọi là giao nhau nếu tồn tại 1 cạnh của hình thang này và 1 cạnh của hình thang kia có số điểm chung $>$0.
+
+Một tập các hình thang được gọi là tập độc lập nếu không có hai hình thang nào trong tập giao nhau.
+
+Hai tập các hình thang được gọi là khác nhau nếu tồn tại một hình thang thuộc tập này mà không thuộc tập còn lại.
+
+\textbf{Yêu cầu}
+\begin{itemize}
+	\item Tìm kích thước của tập độc lập có kích thước lớn nhất.
+	\item Tính số tập độc lập khác nhau là tập độc lập có kích thước lớn nhất.
+\end{itemize}
+
+\textbf{Input: }
+\begin{itemize}
+	\item Dòng 1: Số nguyên N, số hình thang
+	\item Dòng 2:các số nguyên  a $_ i $ ,b $_ i $ ,c $_ i $ ,d $_ i $ . (không có hai hình thang nào có chung đỉnh)
+\end{itemize}
+
+\textbf{Output: }
+\begin{itemize}
+	\item Một dòng duy nhất ghi 2 số nguyên là kích thước của tập độc lập lớn nhất, số lượng các tập độc lập lớn nhất chia dư cho \textbf{ 30013 } .
+\end{itemize}
+
+\textbf{Giới hạn: }
+\begin{itemize}
+	\item 1≤ N ≤100 000
+	\item 1≤ a $_ i $ , b $_ i $ , c $_ i $ , d $_ i $ ≤ 1000 000 000
+\end{itemize}
+
+ 
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+7
+1 3 1 9
+4 7 2 8
+11 15 4 12
+10 12 15 19
+16 23 16 22
+20 22 13 25
+30 31 30 31
+
+\textbf{Output:}
+3 8\end{verbatim}
+
+
+\\Giải thích:
+\\Hình ảnh minh họa cho test này:
+\\
+\\
+\includegraphics{http://vn.spoj.com/content/c_hunter:TRAPEZOID}
+\\
+\\Tập lớn nhất gồm 3 hình thang
+\\Có 8 tập lớn nhất:
+\\(1;4;7) (1;5;7) (1;6;7) (2;4;7) (2;5;7) (2;6;7) (3;5;7) (3;6;7).

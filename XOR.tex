@@ -1,0 +1,35 @@
+
+
+
+
+   Cho 1 tập N số nguyên dương A[1] , … A[N] . Tập số này được gọi là phụ thuộc tuyến tính nếu tồn tại 1 số nguyên A[i] nào đó thoả mãn :   
+\\   A[i] = A[j1] xor A[j2] … xor A[jk] ( với i , j1 , j2 , … , jk  đôi một khác nhau và k là 1 số tuỳ ý ) . Nếu tập số này không phụ thuộc tuyến tính thì được gọi là độc lập tuyến tính .   
+\\   Hãy kiểm tra tập N số nguyên dương A[1] … A[N] có phải là độc lập tuyến tính hay không ? Nếu không hãy chỉ ra phải loại đi ít nhất bao nhiêu phần tử để tập còn lại là 1 tập độc lập tuyến tính .   
+\\
+\\\textit{    Download test tại    \href{http://vn.spoj.pl/content/XOR.rar}{     đây    }    . Solution của bài này sẽ không được upload , các bạn phải tự giải.   }
+
+\subsubsection{   Input  }
+
+   Dòng 1 : số nguyên dương T là số bộ test .   
+\\   Tiếp theo là T bộ test , mỗi bộ test có format như sau :   
+\\   Dòng 1 : số N ( 1 ≤ N ≤ 10000 ) .   
+\\   Dòng 2 : N số nguyên dương A[1] … A[N] .( 1 ≤ A[i] ≤ 2000000000 ) .   
+\\
+
+\subsubsection{   Output  }
+
+   Với mỗi test , nếu tập N số là độc lập tuyến tính thì ghi ra “YES” ngược lại ghi ra “NO X” với X là số số ít nhất cần phải bỏ đi để tập còn lại trở thành độc lập tuyến tính .  
+
+\subsubsection{   Example  }
+\begin{verbatim}
+Input:
+2
+2
+1 2
+3
+1 2 3
+
+Output:
+YES
+NO 1
+\end{verbatim}

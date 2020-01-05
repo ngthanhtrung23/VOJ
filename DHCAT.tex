@@ -1,0 +1,49 @@
+
+
+Cải tiến từ 1 bài thi UVA.
+
+Đồng hồ cát có dạng 2 tam giác đều chung đỉnh, gồm 2n-1 dòng.
+
+Lần lượt mỗi dòng có: n số, n-1 số, ....,1, 2..., n số (n $<$ 21).
+
+Mỗi ô ở dòng trên chỉ có thể di xuống ô phải dưới ( R ) hoặc ô trái dưới ( L ).
+
+\textbf{Yêu cầu:}
+
+Tìm đường đi có trọng số nhỏ nhất. Đường đi được mô tả là ô xuất phát ở hàng 1 (các ô được đánh số từ 0 tới n-1) và chuỗi LR mô tả đường đi.
+
+Cho số S $<$= 5000, đếm số đường đi có trọng số S và mô tả đường đi có thứ tự từ điển nhỏ nhất ứng với S.
+
+\textbf{Input}
+
+Dòng đầu tiên là 2 số n và S.
+
+2n-1 dòng tiếp theo số a mô tả đồng hồ cát. ( a$<$=5000)
+
+\textbf{Output }
+
+Gồm 4 dòng :
+
+Trọng số nhỏ nhất từ hàng 1  tới hàng cuối .
+
+Mô tả đường đi ứng với trọng số nhỏ nhất ( nếu có nhiều đường đi, in ra đường đi có thứ tự từ điển nhỏ nhất )
+
+Số đường đi có trọng số là S. Nếu không có đường thì in ra -1.
+
+Đường đi ứng với trọng số S thỏa mãn.
+
+\textbf{Example}
+\begin{verbatim}
+\textbf{Input:}
+3 17
+1 2 3
+4 5
+6
+5 4
+3 2 1\end{verbatim}
+\begin{verbatim}
+\textbf{Output:}
+16
+0 RRRR
+2
+0 RRRL\end{verbatim}

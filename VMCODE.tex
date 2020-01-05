@@ -1,0 +1,56 @@
+
+
+
+
+   Sau nhiều năm theo đuổi các giải thưởng của kì thi VNOI Marathon (VM), cuối cùng Bờm cũng kiếm được một số tiền khá khá. Để số tiền đó ngày một lớn hơn, Bờm quyết định mở một ngân hàng. Mọi việc đều hoàn thành xong xuôi, từ việc tuyển nhân viên, đăng kí kinh doanh, quảng cáo, ... đến việc xây dựng một hệ thống an toàn để cất trữ tiền bạc. Nhưng có một việc đang làm hao tốn rất nhiều thời gian của Bờm, "nhờ nó" mà đến giờ ngân hàng vẫn chưa đưa vào sử dụng được. Đó là việc suy nghĩ mật mã cho hệ thống an toàn.  
+
+   Sau khi xem xét lại hệ thống an toàn Bờm nhận thấy rằng: Nó là một căn phòng hình chữ nhật trải dài M mét và rộng N mét. Căn phòng được lát bằng các viên gạch đơn vị 1x1 mét vuông. Các hàng gạch được đánh số từ 1 đến M, và các cột được đánh số từ 1 đến N; viên gạch ở hàng I cột J kí hiệu là (I, J). Để mở khóa, người dùng sẽ đứng ở cửa vào, đi M bước từ hàng đầu tiên đến hàng cuối cùng, phải qua ĐÚNG các ô gạch đã xác định làm mật mã (trong hình ví dụ ở dưới chính là các ô màu cam), và kết thúc ở cửa ra. Khi đứng ở viên gạch (I, J) do giới hạn độ dài một bước chân nên một người chỉ có thể đi đến được các viên gạch tại (I+1, J-1) (I+1, J) (I+1, J+1). Để hỗ trợ cho việc GHI NHỚ mật mã của người dùng, mỗi viên gạch - khi bước lên nó - sẽ phát ra một nốt nhạc có độ cao xác định.  
+
+
+\includegraphics{http://www.spoj.pl/content/voj:VMCODE.png}
+
+   Sau khi nghịch, Bờm thấy rằng nếu đi theo qui luật trên và theo một thứ tự nào đó, Bờm sẽ có được những bản nhạc rất hay. Thế là Bờm đi lục lại bản nhạc ưa thích của mình thuở nhỏ (thật may mắn là nó có đúng M nốt nhạc). Bờm dự tính sẽ chọn nó làm mật mã an toàn, nhưng làm như thế sẽ có ngày kẻ xấu tìm ra mật mã và đột nhập vào kho bạc ngân hàng. Vì thế nên Bờm đã nghĩ ra một cách: chọn một số K, trong những bản nhạc tạo được từ cách đi trên và có thứ tự từ điển lớn hơn bản nhạc ưu thích của Bờm, lấy ra bản nhạc có thứ tự từ điển lớn thứ K.  
+
+   Bờm sức thì có hạn mà lại muốn tìm chính xác ra bản nhạc kia. Nên hôm nay Bờm nhờ đến kì thi VM13 giải quyết giùm bài toán này. Nếu giải đúng, Bờm sẽ đồng ý tài trợ và vì thế mà giải thưởng của các bạn có thể sẽ tăng lên rất nhiều đó!  
+
+\subsubsection{   Input  }
+\begin{itemize}
+	\item     Dòng đầu tiên là ba số M, N, K;   
+	\item     Dòng thứ hai là bản nhạc ưa thích của Bờm;   
+	\item     M dòng tiếp theo, mỗi dòng N kí tự biểu diễn cho hệ thống an toàn của ngân hàng;   
+\end{itemize}
+
+\subsubsection{   Output  }
+\begin{itemize}
+	\item     Một dòng duy nhất là bản nhạc Bờm cần tìm;   
+\end{itemize}
+
+\subsubsection{   Chấm điểm  }
+\begin{itemize}
+	\item     Bài của bạn sẽ được chấm trên thang điểm 100. Điểm mà bạn nhận được sẽ tương ứng với \% test mà bạn giải đúng.   
+	\item     Trong quá trình thi, bài của bạn sẽ chỉ được chấm với 1 test ví dụ có trong đề bài.   
+	\item     Khi vòng thi kết thúc, bài của bạn sẽ được chấm với bộ test đầy đủ.   
+\end{itemize}
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     1 ≤ M, N ≤ 2.000;   
+	\item     1 ≤ K ≤ 10\textasciicircum9;   
+	\item     Căn phòng chỉ gồm các kí tự la tinh 'a' đến 'z', đại diện cho độ cao của nốt nhạc phát ra của mỗi ô gạch. Độ cao 'a' $<$ 'b' $<$ ... $<$ 'z';   
+	\item     Bản nhạc A[1..M] có thứ tự từ điển nhỏ hơn B[1..M] khi và chỉ khi tồn tại số nguyên dương t nhỏ hơn hoặc bằng M sao cho A[t] $<$ B[t] và A[i] = B[i] (với mọi i thỏa 1 ≤ i $<$ t);   
+\end{itemize}
+\begin{itemize}
+\end{itemize}
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+3 3 4
+\\efz
+\\ebr
+wqw
+yav
+
+\textbf{Output:}
+ewa
+\end{verbatim}

@@ -1,0 +1,48 @@
+
+
+
+
+   Chính phủ lập ra một hội đồng để sửa chữa đường cao tốc chính       A1      của đất nước. Đường cao tốc có dạng một đường thẳng, bao gồm các cột cây số liên tiếp cách đều nhau. Hai cột cây số liên   tiếp cách nhau 1km. Cột cây số thứ nhất cách điểm đầu tiên của đường cao tốc 1km. Có N vị trí cột cây số cần sửa chữa trên đường cao tốc. Mỗi cột cây số được xác định bởi một số nguyên cho biết   khoảng cách đối với điểm đầu tiên của đường cao tốc (tính theo km). Bắt đầu từ một cột cây số nào đó, đường cao tốc được chia thành các đoạn dài bằng nhau, mỗi đoạn chứa đúng M cột cây số liên tiếp.   Một đội sửa đường sẽ được gửi đến mỗi đoạn có chứa một (hoặc nhiều) vị trí cần sửa chữa. Thông thường, số vị trí cần sửa chữa lớn hơn nhiều so với số đội sửa đường nên tốt nhất cần chia đường cao tốc   thành các đoạn độ dài bằng nhau sao cho số đoạn chứa vị trí cần sửa chữa là ít nhất.  
+
+   Biết rằng trong M cột cây số đầu tiên, không có vị trí nào cần sửa chữa. Đoạn đầu tiên phải được bắt đầu trong M cột cây số đầu tiên.  
+
+   Hỏi cần huy động ít nhất bao nhiêu đội sửa đường để sửa chữa được tất cả vị trí cần thiết trên đường cao tốc       A1      ? Xác định các vị trí mà đoạn đầu tiên có thể bắt đầu.  
+
+\subsubsection{   Dữ liệu  }
+\begin{itemize}
+	\item     Dòng đầu tiên bao gồm 2 số nguyên M và N cách nhau bởi khoảng trắng (1 ≤ M, N ≤ 100000).   
+	\item     Dòng thứ 2 bao gồm N số nguyên cách nhau bởi khoảng trắng mô tả những vị trí cần sửa chữa. N số nguyên tạo thành một dãy tăng chặt, mỗi số không vượt quá 2000000000.   
+\end{itemize}
+
+\subsubsection{   Kết qủa  }
+\begin{itemize}
+	\item     Dòng đầu tiên chứa số đội sửa đường ít nhất cần huy động.   
+	\item     Dòng thứ hai chứa tất cả các vị trí mà đoạn đầu tiên có thể bắt đầu. Các số cách nhau bởi khoảng trắng và phải tạo thành một dãy tăng chặt.   
+\end{itemize}
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu:
+3 5
+4 5 7 8 9
+
+Kết qủa
+2 
+1
+
+Dữ liệu:
+4 3
+7 14 15
+
+Kết qủa
+2
+1 2 4
+
+Dữ liệu:
+2 10
+3 4 7 8 12 13 14 15 20 21
+
+Kết qủa
+7
+1 2
+\end{verbatim}

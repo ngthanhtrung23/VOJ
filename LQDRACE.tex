@@ -1,0 +1,67 @@
+
+
+Kết hợp với IOI, thành phố Pattaya sẽ tổ chức cuộc đua: Olympic quốc tế về đua tốc độ (IOR) 2011.
+
+Là nhà tổ chức, chúng ta phải tìm ra vòng đua tốt nhất cho cuộc thi tốc độ này.
+
+Ở vùng Pattaya-Chonburi, có N thành phố được nối với nhau bởi mạng gồm N-1 đường cao tốc. Mỗi đường cao tốc đều cho phép đi theo cả hai chiều nối hai thành phố phân biệt và có độ dài đo bởi kilomet là số nguyên. Ngoài ra có đúng một đường đi giữa cặp hai thành phố bất kỳ. Nghĩa là, có đúng một cách đi từ một thành phố này đến một thành phố khác dọc theo dãy các đường cao tốc không qua bất cứ thành phố nào quá một lần.
+
+IOR có qui tắc đặc biệt đòi hỏi vòng đua phải dài đúng K kilomet, bắt đầu và kết thúc ở hai thành phố phân biệt. Rõ ràng là không có đường cao tốc (và vì thế cũng không có thành phố) nào có thể được sử dụng quá một lần trên vòng đua để ngăn ngừa đụng độ. Để cực tiểu ảnh hưởng đến giao thông, vòng đua phải chứa một số ít nhất đường cao tốc có thể.
+
+\textbf{Yêu cầu: }
+
+Bạn hãy cho biết số lượng đường cao tốc nhỏ nhất trên vòng đua hợp qui tắc có độ dài đúng bằng K. Nếu không tìm được vòng đua như vậy, kết quả sẽ là -1.
+
+\textbf{Dữ liệu vào: }
+\begin{itemize}
+	\item Dòng đầu ghi số N, K.
+	\item N-1 dòng tiếp theo mỗi dòng ghi 3 số u, v, l - đường cao tốc nối thành phố u và v, độ dài l (l $<$= 10\textasciicircum6).
+\end{itemize}
+
+\textbf{Dữ liệu ra: }
+
+1 số nguyên duy nhất là kết quả của bài toán.
+
+ 
+
+\textbf{Giới hạn: }
+\begin{itemize}
+	\item 1 ≤ N ≤ 2 * 10\textasciicircum5
+	\item 1 ≤ K ≤ 10\textasciicircum6
+\end{itemize}
+
+ 
+
+\textbf{Ví dụ: }
+\begin{verbatim}
+\textbf{Input}
+4 3
+0 1 1
+1 2 2
+1 3 4
+\textbf{Output}
+2
+
+\textbf{Input}
+3 3
+0 1 1
+1 2 1
+\textbf{Output}
+-1
+
+\textbf{Input}
+11 12
+0 1 3
+0 2 4
+2 3 5
+3 4 4
+4 5 6
+0 6 3
+6 7 2
+6 8 5
+8 9 6
+8 10 7
+\textbf{Output}
+2\end{verbatim}
+
+ 

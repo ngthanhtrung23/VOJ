@@ -1,0 +1,66 @@
+
+
+\emph{Ở vương quốc XYZ, phép thuật không còn là điều xa lạ với các cư dân ở đây. Hằng ngày mọi người đều ăn ở và sinh hoạt với các pháp sư ở đây trong yên bình. Các pháp sư “tốt” đã tập hợp với nhau và thành lập các “ }\emph{ bạch” }\emph{ hội với mục đích giúp đỡ người dân. Nhưng cái gì có mặt “tốt” thì cũng có mặt “xấu”. Các “hắc” pháp sư là những pháp sư luôn muốn sử dụng sức mạnh của mình để ức hiếp người dân với tiêu chí “ai mạnh thì thắng”. Những pháp sư này cũng đã cùng nhau thành lập các “hắc” hội. Các cuộc giao tranh giữa các pháp sư “tốt” và các “hắc” pháp sư đang ngày một căng thẳng. Đỉnh điểm }\emph{ là cuộc giao tranh sắp tới, một cuộc tổng tiến công của cả 2 phe pháp sư. }
+
+ 
+
+Theo thống kê thì có tất cả \textbf{ N } “bạch” hội được đánh số từ 1 tới \textbf{ N } theo thứ tự bất kỳ và mỗi hội có \textbf{ M } pháp sư. \textbf{ N } hội này đã hội họp lại với nhau để bàn chiến thuật cho cuộc chiến sắp tới với các “hắc” hội. Vì đây sẽ là cuộc chiến lâu dài nên chiến thuật được đưa ra là sẽ đưa từng tốp \textbf{ N } pháp sư trong đó không có 2 pháp sư nào thuộc cùng một hội ra đánh thay phiên nhau. Chi tiết chiến thuật thì các tốp có sức mạnh yếu sẽ được đưa ra trước. Sức mạnh của một tốp pháp sư được đánh giá bằng tổng chỉ số sức mạnh của các pháp sư được chọn. Khi không cầm cự được nữa thì tốp đó sẽ quay về để tốp khác lên đánh. Một pháp sư có thể được chọn trong 2 đợt liên tiếp. Ngoài ra 2 tốp pháp sư liên tiếp nhau có thể mạnh hoặc yếu như nhau.
+
+ 
+
+\textbf{Yêu cầu: } Tính sức mạnh của tốp pháp sư ở lượt thứ K.
+
+ 
+
+\textbf{Dữ liệu vào: }
+\begin{itemize}
+	\item 
+
+Dòng đầu chứa 3 số nguyên dương N, M, K.
+	\item 
+
+N dòng tiếp theo, dòng thứ i sẽ chứa M số nguyên dương là chỉ số sức mạnh của các pháp sư từ yếu tới mạnh trong “bạch” hội thứ i. Pháp sư u yếu hơn pháp sư v nếu chỉ số sức mạnh. của pháp sư u nhỏ hơn pháp sư v.
+\end{itemize}
+
+ 
+
+\textbf{Dữ liệu ra: }
+\begin{itemize}
+	\item 
+
+Chứa 1 số là tổng chỉ số sức mạnh của tốp pháp sư ở lượt thứ K.
+\end{itemize}
+
+ 
+
+\textbf{Ràng buộc: }
+\begin{itemize}
+	\item K $<$= M $^ N $ .
+	\item Sức mạnh của các pháp sư $<$= 10 $^ 9. $
+	\item 
+
+20\% số test sẽ có N = 5 và M $<$= 20.
+	\item 
+
+20\% số test tiếp theo sẽ có N = 2 và M $<$= 10 $^ 6 $ .
+	\item 
+
+20\% số test tiếp theo sẽ thỏa mãn: N = 3, M $<$= 10 $^ 5 $, Tổng chỉ số sức mạnh trong mỗi hội $<$= 10 $^ 7 $ .
+	\item 
+
+40\% số test tiếp theo có N = 10, M $<$= 10 $^ 5 $ và K $<$= 10 $^ 6 $ .
+\end{itemize}
+
+ 
+
+\textbf{Ví dụ: }
+
+ 
+\begin{verbatim}
+\textbf{Dữ liệu vào:}
+2 3 4
+1 2 3
+4 5 6
+
+\textbf{Dữ liệu ra:}
+7\end{verbatim}

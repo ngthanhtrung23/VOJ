@@ -1,0 +1,46 @@
+
+
+
+
+   Cho mô hình bãi cỏ có dạng bảng chữ nhật 2xB (1 $<$= B $<$= 15,000,000), trong đó một số ô có con bò đang ăn cỏ. Có tất cả N con bò (1 $<$= N $<$= 1000) trên bãi cỏ. Ví dụ:  
+\begin{verbatim}
+-------------------------------------------------------
+|     | cow |     |     |     | cow | cow | cow | cow |
+-------------------------------------------------------
+|     | cow | cow | cow |     |     |     |     |     |
+-------------------------------------------------------
+\end{verbatim}
+
+   Bác John muốn dùng K (1 $<$= K $<$= N) cái chuồng hình chữ nhật để che phủ đàn bò, sao cho tổng diện tích được phủ là nhỏ nhất. Không có hai chuồng nào được nằm đè lên nhau. Hiển nhiên, các chuồng phải che phủ hết các ô có bò.  
+
+   Ví dụ, trong hình trên nếu K=2, lời giải tối ưu bao gồm một chuồng kích thước 2x3 và một chuồng kích thước 1x4. Tổng diện tích được phủ là 10.  
+
+\subsubsection{   Dữ liệu  }
+
+   Dòng đầu tiên chứa một số nguyên t là số bộ test. Mỗi bộ test có dạng:  
+\begin{itemize}
+	\item     Dòng 1: N, K, B   
+	\item     Dòng 2..N+1: chức tọa độ của các con bò, trong phạm vi (1,1) đến (2,B). Không có ô nào chứa hơn 1 con bò.   
+\end{itemize}
+
+\subsubsection{   Kết quả  }
+
+   Với mỗi test, in ra tổng diện tích nhỏ nhất cần phủ.  
+
+\subsubsection{   Ví dụ  }
+\begin{verbatim}
+Dữ liệu
+1
+8 2 9
+1 2
+1 6
+1 7
+1 8
+1 9
+2 2
+2 3
+2 4
+
+Kết quả
+10
+\end{verbatim}

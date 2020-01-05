@@ -1,0 +1,60 @@
+
+
+
+
+     Based on the latest intelligence reports, Chief Arnook of the northern tribe has become suspicious of the warrior nations that dwell south of the border. The chief has ordered his warriors to protect the southern border which runs parallel to the 54     $^      o     $     latitude line and stretches between the longitudes of 1     $^      o     $     to 1000,000,000     $^      o     $     , inclusive.    
+
+     Each warrior is assigned the task of protecting a segment of the border defined to lie between longitudes “a” and “b”, inclusive. No two warriors are assigned to protect the exact same segment. Bound by loyalty to his chief, a warrior will inform the chief upon his arrival at his appointed post and will never leave once he arrives.    
+
+         Your task is to write a program that performs the following two operations                   to help Chief Arnook track the status of his border protection.         
+
+
+
+        + a b       
+
+        a warrior assumes his position and protects the segment between longitudes “a” and “b”, inclusive.       
+
+
+
+        ? c d       
+
+           computes the number of warriors who completely protect the segment between longitudes “c” and “d”, inclusive. The segment between the longitudes “c” and “d”, inclusive, is said to be completely protected by a warrior X if and only if warrior X protects a segment between          
+
+            “a” and “b”, inclusive, and a ≤ c ≤ d ≤ b.            
+\\
+
+
+\\
+
+\subsubsection{\textbf{        Input       }}
+
+    The input starts with an integer N (1 ≤ N ≤ 500000), on a line by itself, that indicates the number of operations. Each of the following N lines contains one operation. The description of an operation consists of a character “+” or “?” followed by two integers on a line by itself. The entries on a line are separated by single blank spaces.   
+
+
+\\
+
+\subsubsection{   Output  }
+
+    There is one output line for each input line that starts with the operation “?”. The output consists of a single integer that represents the number of warriors who completely protect the corresponding segment at the time.   
+
+     There is no output for input lines that start with the character “+”.    
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+9
++ 5 10
++ 7 20
++ 3 15
+? 9 12
++ 10 20
+? 8 9
++ 6 30
+? 8 9
+? 9 12
+
+\textbf{Output:}
+2
+3
+4
+3\end{verbatim}

@@ -1,0 +1,65 @@
+
+
+
+
+   Cho một bàn cờ vuông kích thước N*N, trên đó có một số ô cấm. Bạn cần đặt N quân xe lên đấy sao cho:  
+\begin{itemize}
+	\item     Trên mỗi ô của bàn cờ, chỉ có tối đa 1 quân xe   
+	\item     Không có quân xe nào được đặt lên các ô cấm   
+	\item     Không có 2 quân xe nào có thể ăn được nhau (cùng hàng hoặc cùng cột). Chú ý rằng các quân xe có thể đi xuyên qua ô cấm.   
+\end{itemize}
+
+   Đếm số cách đặt N quân xe lên bảng, theo modulo 2 (mod 2).  
+
+\subsubsection{   Input  }
+\begin{itemize}
+	\item     Dòng 1: Số nguyên dương T - số bộ test.   
+	\item     Tiếp theo là T bộ test, mỗi bộ test gồm:    
+\begin{itemize}
+	\item       Dòng 1: Số nguyên dương N     
+	\item       Tiếp theo là N dòng, dòng thứ i gồm N số nguyên. Số nguyên thứ j trên dòng i là 0 nếu ô tương ứng là ô cấm và bằng 1 trong trường hợp ngược lại.     
+\end{itemize}
+\end{itemize}
+
+\subsubsection{   Output  }
+
+   Gồm T dòng, mỗi dòng là một số nguyên duy nhất là số cách đặt quân xe theo modulo 2.  
+
+\subsubsection{   Giới hạn  }
+\begin{itemize}
+	\item     1 ≤ T ≤ 10   
+	\item     1 ≤ N ≤ 250   
+	\item     Trong 20\% số test, N ≤ 15   
+\end{itemize}
+
+\subsubsection{   Chấm điểm  }
+\begin{itemize}
+	\item     Bài của bạn sẽ được chấm trên thang điểm 100. Điểm mà bạn nhận được sẽ tương ứng với \% test mà bạn giải đúng.   
+	\item     Trong quá trình thi, bài của bạn sẽ chỉ được chấm với 1 test ví dụ có trong đề bài.   
+	\item     Khi vòng thi kết thúc, bài của bạn sẽ được chấm với bộ test đầy đủ.   
+\end{itemize}
+\begin{itemize}
+\end{itemize}
+
+\subsubsection{   Example  }
+\begin{verbatim}
+\textbf{Input:}
+2
+3
+1 0 1
+0 1 1
+1 1 1
+2
+1 0
+0 1
+
+\textbf{Output:}
+1
+1
+\end{verbatim}
+
+\subsubsection{   Giải thích  }
+\begin{itemize}
+	\item     Trong test đầu tiên, có 3 cách xếp. Bạn cần in ra 3 mod 2 = 1   
+	\item     Trong test thứ hai, có duy nhất 1 cách xếp. Bạn cần in ra 1 mod 2 = 1   
+\end{itemize}

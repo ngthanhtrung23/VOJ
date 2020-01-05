@@ -1,0 +1,46 @@
+
+
+
+
+   Một thương nhân vừa quyết định mua một con tàu mới phục vụ cho các cuộc trao đổi hàng hóa dọc bờ sông Danube. Con tàu của anh ta có tốc độ rất tuyệt vời, nó có thể đưa anh ta đến bất kì vị trí nào trên sông trong không quá một tích tắc, nhưng, đó lại là một con tàu rất tốn nhiên liệu. Con tàu tốn U dollar cho 1 mét đi ngược dòng, và mất D dollar cho 1 mét đi xuôi dòng.   
+\\
+\\   Có tất cả N hội chợ sắp sửa diễn ra trên khắp bờ sông Danube. Mỗi hội chợ chỉ diễn ra trong 1 ngày. Với mỗi hội chợ x, thương nhân biết hội chợ bắt đầu vào ngày T[x] (tính từ khi mua tàu), tại vị trí cách thượng nguồn L[x] mét, và nếu tham gia, thương nhân sẽ kiếm được M[x] dollar. Anh ta sẽ phải bắt đầu và kết thúc chuyến đi của mình tại một vị trí cách thượng nguồn S mét.   
+\\
+\\   Lưu ý rằng, các hội chợ bắt đầu theo thứ tự thời gian, nên nếu như hội chợ A được bắt đầu sớm hơn hội chợ B, thương nhân không thể tham gia hội chợ B trước hội chợ A. Tuy nhiên, nếu như có nhiều hội chợ diễn ra trong cùng 1 ngày, thương nhân có thể tham gia bất kì hội chợ nào theo bất kì thứ tự nào anh ta muốn. Thương nhân có thể đi qua 1 hội chợ nhiều lần trong ngày, nhưng dĩ nhiên, anh ta sẽ chỉ kiếm được tiền trong lần đầu tiên ghé qua hội chợ đó.   
+\\
+\\   Nhiệm vụ của bạn, là hãy viết chương trình giúp thương nhân tính được số tiền nhiều nhất thu được, khi tham gia các hội chợ theo phương án tối ưu. Số tiền kiếm được, bằng tổng lợi nhuận đạt được từ những hội chợ anh ta tham gia, trừ đi chi phí di chuyển trên sông.   
+\\
+\\   Input:   
+\\   - Dòng đầu tiên gồm 4 số nguyên N,U,D,S   
+\\   - N dòng tiếp theo, mỗi gồm 3 số T[k], L[k], M[k] mô tả hội chợ k: hội chợ bắt đầu vào ngày T[k], cách thượng nguồn L[k] mét, và lợi nhuận đạt được nếu tham gia là M[k]   
+\\   - Các số trên cùng 1 dòng cách nhau bởi ít nhất 1 dấu cách   
+\\
+\\   Output   
+\\   - Gồm 1 số nguyên duy nhất, là số tiền lớn nhất mà thương nhân có thể kiếm được (giá trị này có thể bằng 0).   
+\\
+\\   Giới hạn:   
+\\   - 1 $<$= N $<$= 500000, số hội chợ   
+\\   - 1 $<$= D $<$= U $<$= 10, chi phí di chuyển 1 mét ngược dòng (U), và xuôi dòng (D)   
+\\   - 1 $<$= S $<$= 500001, vị trí xuất phát của thương nhân   
+\\   - 1 $<$= T[k] $<$= 500000, ngày diễn ra hội chợ thứ k   
+\\   - 1 $<$= L[k] $<$= 500001, vị trí của hội chợ thứ k   
+\\   - 1 $<$= M[k] $<$= 4000, số tiền thương nhân có thể kiếm được nếu tham gia hội chợ thứ k   
+\\   - Không có hai hội chợ nào được mở ở cùng vị trí, cũng như không có hội chợ nào được mở tại nhà của thương nhân   
+\\
+\\   Example:   
+\\   Input   
+\\   4 5 3 100   
+\\   2 80 100   
+\\   20 125 130   
+\\   10 75 150   
+\\   5 120 110   
+\\   Output   
+\\   50   
+\\
+\\   Giải thích:   
+\\   Phương án tối ưu của thương nhân sẽ là tham gia hội chợ 1 và 3, theo thứ tự như sau   
+\\   - Đi ngược dòng 20 mét, chi phí 100 dollar. Lợi nhuận hiện tại: -100   
+\\   - Tham gia hội chợ 1, kiếm được 100 dollar. Lợi nhuận hiện tại: 0   
+\\   - Đi ngược dòng 5 mét, chi phí 25 dollar. Lợi nhuận hiện tại: -25   
+\\   - Tham gia hội chợ 3, kiếm được 150 dollar. Lợi nhuận hiện tại: 125   
+\\   - Đi xuôi dòng 25 mét và trở về nhà, chi phí 75 dollar. Lợi nhuận cuối cùng: 50 dollar  

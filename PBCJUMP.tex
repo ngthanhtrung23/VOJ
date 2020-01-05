@@ -1,0 +1,48 @@
+
+
+
+
+   AD đang bị đau chân sau một vụ tai nạn thảm khốc. Anh ấy không biết làm gì hơn ngoài việc ngồi chơi Tetris. Hôm đó em gái của AD chợt nghĩ ra một trò chơi đó là nhảy lò cò vượt chướng ngại vật, rất may mắn là vẫn còn một chân lành lặn nên anh ấy có thể tham gia. Trò chơi được chơi trên N bậc đánh số từ 1 đến N, bậc thứ i có độ cao Di. Nhiệm vụ của người chơi là nhảy từ bậc 1 đến bậc N. Mỗi người chơi có mức sức khỏe là K thì từ bậc i có thể nhảy đến các bậc i+1, i+2, ... , i+K. Một bước nhảy từ bậc i đến bậc j được gọi là gây mất sức nếu như Di $<$= Dj. Em gái của AD rất tinh quái nên bắt anh phải tính ra số bước nhảy mất sức ít nhất để hoàn thành trò chơi rồi mới cho chơi ! Không chỉ có thế, AD còn phải tính ra đáp án cho tất cả các bạn của em gái !  
+
+\textbf{    INPUT   }   :  
+\begin{itemize}
+	\item     Dòng đầu chứa số N   
+	\item     Dòng thứ hai chứa N số Di   
+	\item     Dòng thứ ba chứa Q là số lượng người AD phải giúp tính ra kết quả   
+	\item     Q dòng tiếp theo mỗi dòng chứa một số K là mức sức khỏe của từng người   
+\end{itemize}
+
+\textbf{    OUTPUT   }   :  
+\begin{itemize}
+	\item     Q dòng mỗi dòng là kết quả đối với K tương ứng.   
+\end{itemize}
+
+    Example      :  
+
+\emph{    INPUT   }   :   
+\\   10   
+\\   3 10 5 3 1 3 2 6 3 4   
+\\   2   
+\\   2   
+\\   3  
+
+\emph{    OUTPUT   }   :   
+\\   3   
+\\   2  
+
+   Giải thích:  
+\begin{itemize}
+	\item     Với K = 2 có thể nhảy như nhau: 1-$>$2-$>$4-$>$6-$>$8-$>$10;   
+	\item     Với K = 3: 1-$>$2-$>$5-$>$8-$>$10;   
+\end{itemize}     10       3 10 5 3 1 3 2 6 3 4       2       2       3    
+
+\textbf{    Giới hạn   }   :  
+\begin{itemize}
+	\item     Trong tất cả các test: 1 $<$= N $<$= 1000000; 1 $<$= Di $<$= 10\textasciicircum9; 1 $<$= Q $<$= 25; 1 $<$= K $<$ N;   
+	\item     Trong 20\% số test đầu tiên: N $<$= 1000;   
+	\item     Trong 20\% số test tiếp theo: N $<$= 100000; Di $<$= 10;   
+	\item     Trong 20\% số test tiếp theo: N $<$= 100000;   
+	\item     Trong 20\% số test tiếp theo: Di $<$= 100;   
+	\item     Trong 20\% số test còn lại: không có ràng buộc gì thêm.   
+\end{itemize}
+
