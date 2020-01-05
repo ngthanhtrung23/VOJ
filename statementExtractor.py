@@ -112,17 +112,17 @@ def extractNSections(n):
 
                 if found: continue
 
-                for keyword in inputKeywords:
+                for keyword in outputKeywords:
                     if keyword in formattedSubsectionName:
-                        input += content
+                        output += content
                         found = True
                         break
 
                 if found: continue
 
-                for keyword in outputKeywords:
+                for keyword in inputKeywords:
                     if keyword in formattedSubsectionName:
-                        output += content
+                        input += content
                         found = True
                         break
 
@@ -132,18 +132,17 @@ def extractNSections(n):
             except Exception as e:
                 print(e)
                 print(parts)
-                exit(0)
 
         if not (statement and input and output):
             print("Couldn't find 4 parts for " + name)
-            # if not statement:
-            #     print('statement')
-            # if not input:
-            #     print('input')
-            # if not output:
-            #     print('output')
-            # if not notes:
-            #     print('notes')
+            if not statement:
+                print('statement')
+            if not input:
+                print('input')
+            if not output:
+                print('output')
+            if not notes:
+                print('notes')
             continue
 
         try:

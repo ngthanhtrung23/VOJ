@@ -1,0 +1,10 @@
+Tuy trò chơi Moebius không được phổ biến, nhưng vẫn có một số người hâm mộ có thể bỏ cả ngày ra ngồi chơi Moebius. Trò chơi này yêu cầu người chơi tìm cách xóa một cặp ô chứa x và z được chỉ định trước nằm trên mặt Moebius với chi phí nhỏ nhất.  
+
+   Moebius được làm từ một miếng bìa hình chữ nhật ABCD kích thước  . Mỗi mặt của miếng bìa được chia thành lưới các ô vuông bằng nhau kích thước 1x1. Trên cả hai lưới, các cột được đánh số từ   đến N và các dòng được đánh số từ   đến M, bắt đầu từ đỉnh A. Ngoài ra, mỗi ô  , nằm tại dòng   và cột  , được viết chữ x, chữ z hoặc để rỗng. Dán hai mép AB và CD của tờ giấy với nhau, nhưng xoay mép giấy để đỉnh C trùng với đỉnh A và đỉnh D trùng với đỉnh B, chúng ta có được một Moebius chỉ có 1 mặt duy nhất.  
+\includegraphics{http://vn.spoj.pl/content/MOEBIUS1.jpg}
+\includegraphics{http://vn.spoj.pl/content/MOEBIUS2.jpg}
+\includegraphics{http://vn.spoj.pl/content/MOEBIUS3.jpg}
+
+   Một phép xóa cặp ô chứa x và z có thể thực hiện chỉ khi có một đường đi trực tiếp từ   đến   xuyên qua các ô rỗng kề cạnh với tối đa 2 lần đổi hướng. Các ô trung gian có thể nằm bên ngoài Moebius. Mặc định các ô nằm ngoài Moebius là rỗng. Chi phí để xóa cặp ô chứa x và z được tính bằng chiều dài của đường đi ngắn nhất từ   đến   như cách mô tả ở trên. Sau phép xóa, ô chứa   và ô chứa   trở thành rỗng. Hình trên cho thấy hai phép xóa liên tiếp với chi phí là 5 và 8.  
+
+   Nhiệm vụ của bạn là viết một chương trình để thực hiện phép xóa cặp ô chứa x và z cho trước sử dụng tối đa 1 phép xóa trung gian sao cho tổng chi phí là nhỏ nhất và đưa ra tổng chi phí đó.
