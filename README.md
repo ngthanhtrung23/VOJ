@@ -9,7 +9,7 @@
 ![](https://cdn.discordapp.com/attachments/663039190560145409/663331329915748385/unknown.png)
 
 By examination (`subsectionsExtractor.py`) I saw that most of the statement have a typical format of `3 subsections`, beautifully ordered by the format: statement, input, output, notes. So I wrote an extractor for that specific case (inside `statementExtractor.py`).
-- Now we need to write the extractor for the others as well.
+- Done extractor for 3 and 4 subsections. Now we need to write the extractor for the others as well.
 
 # EXTRACTOR INSTRUCTION
 1. Place your statements into `statement` folder
