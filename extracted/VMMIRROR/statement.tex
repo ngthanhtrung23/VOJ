@@ -1,0 +1,21 @@
+ 
+
+Là lập trình viên xuất sắc nhất của đất nước 1D, bạn được tin tưởng giao phó nhiệm vụ vô cùng quan trọng và nguy hiểm: Truy bắt tên tội phạm quốc gia TSZ.
+
+Theo những nguồn tin mới nhất mà bạn nhận được, TSZ đã đặt chân đến vùng đất của những chiếc gương huyền thoại và đang lẩn trốn ở đó. Vùng đất những chiếc gương huyền thoại có thể tưởng tượng giống như một đường thẳng (bạn đang ở trên đất nước 1D mà), tại một số vị trí trên vùng đất, có đặt những chiếc gương thần kỳ. Trong khoảnh khắc (có thể coi như 0 đơn vị thời gian), bạn có thể di chuyển từ 1 điểm bất kỳ trên vùng đất, đến ảnh của nó qua 1 gương bất kỳ (Chú ý rằng tại vùng đất huyền thoại, ảnh của một vật luôn là điểm đối xứng với vật đó qua gương, các gương khác không làm ảnh hưởng hay che vị trí của ảnh của vật). Vì vậy, vùng đất này là một nơi lý tưởng để TSZ có thể lẩn trốn, do chỉ trong 0 đơn vị thời gian, TSZ có thể di chuyển từ A, đến B (B là ảnh của A qua gương G), rồi từ B đến C (C là ảnh của B qua gương G')... (với G, G' là 2 gương nào đó trong số N gương trên vùng đất huyền thoại).
+
+
+\includegraphics{http://vn.spoj.com/content/voj:VMMIRROR.png}
+
+Trong hình minh họa, có 5 gương:
+\begin{itemize}
+	\item Gương g1 ở tọa độ 3
+	\item Gương g2 ở tọa độ 4
+	\item Gương g3 ở tọa độ 9
+	\item Gương g4 ở tọa độ 12
+	\item Gương g5 ở tọa độ 13
+\end{itemize}
+
+Trong 0 đơn vị thời gian, TSZ có thể di chuyển từ A đến D như sau: từ A đến B (ảnh của A qua g1), rồi từ B đến C (ảnh của B qua g3), rồi từ C đến D (ảnh của C qua g4).
+
+Bạn đã có trong tay bản đồ của vùng đất những chiếc gương huyền thoại. Vì vậy bạn đã biết được vị trí chính xác của tất cả N chiếc gương. Để lên kế hoạch bắt TSZ, bạn cần phải biết được TSZ có thể di chuyển như thế nào. Bạn đã chuẩn bị sẵn Q câu hỏi, mỗi câu hỏi cho biết TSZ có thể di chuyển từ vị trí start đến vị trí target trong 0 đơn vị thời gian hay không.

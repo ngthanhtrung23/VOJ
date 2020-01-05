@@ -1,0 +1,12 @@
+Input
+Dòng thứ nhất gồm 2 số nguyên dương M và N (kích thước mê cung)
+
+M dòng sau là bảng S kích thước MxN mô tả mê cung.
+\begin{itemize}
+	\item S[i,j] = ‘+’ : có đường đến 4 phòng kề cạnh
+	\item S[i,j] = ‘-’  : có đường đến 2 phòng kề phía Đông và Tây
+	\item S[i,j] = ‘|’  : có đường đến 2 phòng kề phía Bắc và Nam
+	\item S[i,j] = ‘.’  : không thông sang phòng nào bên cạnh
+\end{itemize}
+
+Giải thích câu (1) : giả sử A, B, C là 3 phòng liền kề theo thứ tự từ Đông sang Tây và được miêu tả bằng dãy "|+-" thì chỉ có thể di chuyển giữa 2 phòng B và C (thứ 2 và thứ 3). Do từ A không có đường qua B nên từ B cũng không thể qua A.

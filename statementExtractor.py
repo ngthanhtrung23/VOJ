@@ -6,6 +6,36 @@ statementPath = './statement'
 extractedPath = './extracted'
 subsectionInfoFolderPath = './subsectionsInfo'
 
+
+def format(word):
+    return ''.join(c if c.isalnum() else '' for c in unidecode(word.decode('utf-8'))).strip().lower().replace(' ','').replace('textbf', '')
+
+def analyze():
+    wordArr = []
+    wordCount = defaultdict(int)
+
+    for i in range(1, 8):
+        lines = open(subsectionInfoFolderPath + '/' + str(i) + 'subsections.csv').read().strip().split('\n')
+
+        words = []
+
+        for line in lines:
+            words += line.split(',')[1:]
+
+        words = list(map(format, words))
+
+        for word in words:
+            wordCount[word] += 1
+
+    for word in wordCount.keys():
+        if word:
+            wordArr.append([word, wordCount[word]])
+
+    wordArr.sort(key=lambda item: item[1], reverse=True)
+
+    for word in wordArr:
+        print(word)
+
 def extract3Sections():
     lines = open(subsectionInfoFolderPath + '/3subsections.csv').read().strip().split('\n')
 
@@ -40,39 +70,11 @@ def extract3Sections():
         open(extractedProblemFolder + '/output.tex', 'w').write(output.strip())
         open(extractedProblemFolder + '/notes.tex', 'w').write(notes.strip())
 
-def extract4Sections():
+def extractNSections(n):
     pattern = '\\\subsubsection{(.+?)}'
     compiledPattern = re.compile(pattern)
 
-    def format(word):
-        return ''.join(c if c.isalnum() else '' for c in unidecode(word.decode('utf-8'))).strip().lower().replace(' ', '').replace('textbf', '')
-
-    lines = open(subsectionInfoFolderPath + '/4subsections.csv').read().strip().split('\n')
-
-    def analyze():
-        words = []
-
-        for line in lines:
-            words += line.split(',')[1:]
-
-        words = list(map(format, words))
-        wordCount = defaultdict(int)
-
-        for word in words:
-            wordCount[word] += 1
-
-        wordArr = []
-
-        for word in wordCount.keys():
-            if word:
-                wordArr.append([word, wordCount[word]])
-
-        wordArr.sort(key=lambda item: item[1], reverse=True)
-
-        for word in wordArr:
-            print(word)
-
-    # analyze()
+    lines = open(subsectionInfoFolderPath + '/' + str(n) + 'subsections.csv').read().strip().split('\n')
 
     statementKeywords = ['yeucau', 'hanche', 'constraints', 'constraint', 'limit', 'phanbogioihantest']
     inputKeywords = ['input', 'dulieuvao', 'dulieu', 'quycachnhapdulieu']
@@ -126,5 +128,7 @@ def extract4Sections():
         open(extractedProblemFolder + '/output.tex', 'w').write(output.strip())
         open(extractedProblemFolder + '/notes.tex', 'w').write(notes.strip())
 
+# analyze()
 extract3Sections()
-extract4Sections()
+for i in range(4, 8):
+    extractNSections(i)

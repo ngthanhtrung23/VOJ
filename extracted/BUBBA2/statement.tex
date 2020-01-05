@@ -1,0 +1,37 @@
+"Đường đến trang trại của bác Tom vô cùng trắc trở khó khăn, vừa xa vừa rộng, vừa dài vừa xanh, rất là khó đi. Không những thế, trên đường còn có biết bao gian khó nguy hiểm như bộ tộc ăn thịt người, cứ thấy bóng dáng con người là thèm khát xông vào ăn thịt nhau. Như ở vùng nọ có ông Bụt Hắc Ám, rất thích chơi trò đánh rơi rìu xuống hồ rồi ngồi khóc thút thít để lừa khách đi đường. Lại như có loại Thỏ Đồng Hồ, to như con bò, vừa dữ vừa khỏe, móng vuốt sắc bén, cứ thấy người là xúm lại hỏi giờ, khiến nạn nhân bị quấy rối đến mức quên cả thời gian rồi lạc lối trong rừng đến chết. Hay như là Cánh Cụt Lông Dài không làm gì cả, chỉ rình xem có hai người đi chung với nhau là chạy qua trước mặt thu hút chú ý rồi chạy mất, người đi đường nhìn thấy sẽ cãi nhau xem con vừa rồi có phải là cánh cụt hay không, nếu là cánh cụt thì sao lại sống ở trong rừng, cuối cùng là cãi nhau tới mức lưỡng bại câu thương, cả hai đều mất hết lý trí, thê thảm vô cùng. Vẫn còn nhiều nhiều loại quái vật hoang dã, kỳ nhân dị thú, đáng sợ hơn nhiều, khiến cho đoạn đường đi tới trang trại của bác Tom cực kỳ khó khăn. Rốt cuộc Bubba bắt máy bay bay tới, hòan toàn không hề trải qua chuyện gì nguy hiểm cả. "
+
+- Trích Truyền thuyết Bubba -
+
+Nhiệm vụ lần này của RR là đi đến trang trại của bác Tom. Dĩ nhiên, là sinh viên, RR không có nhiều tiền, vì vậy không thể bay máy bay tới như Bubba được. Do vậy RR phải dành rất nhiều thời gian để chuẩn bị cho chuyến đi này.
+
+Như đã miêu tả ở trên, khu vực xung quanh trang trại bác Tom là nơi trú ngụ của vô vàn cái loài quái vật hoang dã, kỳ nhân dị thú (tạm gọi tắt là quái vật). Các vị trí có quái vật đã được RR đánh số bằng các số nguyên dương liên tiếp từ 1 đến N. Trong khu vực này, hai vị trí có quái vật bất kỳ đều chỉ có duy nhất một đường đi đến nhau thông qua các con đường nối các vị trí có quái vật. Nói cách khác, khu vực này có thể được hình dung như một cây gồm N đỉnh, với đỉnh gốc - cũng là vị trí mà RR xuất phát - được đánh số 1. Như có phép màu, tất cả những đỉnh lá đều có con đường trực tiếp nối đến trang trại bác Tom. Vì vậy, RR chỉ cần xuất phát từ vị trí số 1, cứ đi ngẫu hứng theo trái tim mách bảo, chắc chắn sẽ đến được trang trại bác Tom.
+
+Ví dụ:
+
+
+\includegraphics{http://vn.spoj.com/content/voj:BUBBA2}
+
+
+\includegraphics{../../../content/voj:BUBBA2}
+
+Hình trên mô tả một đồ thị gồm 8 đỉnh. Mỗi vòng tròn thể hiện một đỉnh, trong đó số bên trái là thứ tự của đỉnh, còn số bên phải thể hiện quái thú ở đỉnh đó (các quái thú được đánh số bằng các số nguyên dương).
+
+Chú ý rằng các mũi tên trong hình chỉ giúp bạn hình dung hướng đi của RR, còn đồ thị đường đi là vô hướng.
+
+Trong ví dụ này, RR có 3 cách để đi đến trang trại bác Tom.
+\begin{itemize}
+	\item Cách thứ nhất: đi qua các đỉnh 1 - 2 - 7 - 8. Trên con đường này, RR sẽ lần lượt gặp các quái thú có số thứ tự 1, 4, 2, 1.
+	\item Cách thứ hai: đi qua các đỉnh 1 - 3 - 5. Trên con đường này, RR sẽ lần lượt gặp các quái thú có số thứ tự 1, 3, 2.
+	\item Cách thứ ba: đi qua các đỉnh 1 - 4 - 6. Trên con đường này, RR sẽ lần lượt gặp các quái thú có số thứ tự 1, 1, 2.
+\end{itemize}
+
+Nhờ có sự chuẩn bị kĩ lưỡng, RR không sợ khi phải đối mặt với một loại quái thú nào. Tuy nhiên nếu gặp phải một danh sách các quái thú liên tiếp trên đường đi, RR có thể không thực hiện được chuyến đi của mình. Chẳng hạn, nếu RR gặp Thỏ Đồng Hồ, rồi ngay sau đó lại gặp tiếp Cánh Cụt Lông Dài, thì chắc chắn RR sẽ bị mất hết lý trí, và không thể tiếp tục di chuyển đến trang trại của bác Tom được. Chú ý rằng thứ tự RR gặp những loại quái thú này vô cùng quan trọng, chẳng hạn nếu RR gặp Cánh Cụt Lông Dài trước rồi mới gặp Thỏ Đồng Hồ, thì sẽ hoàn toàn vô sự. Đồng thời, việc gặp liên tiếp cũng vô cùng quan trọng, ví dụ nếu sau khi gặp Thỏ Đồng Hồ, RR gặp bộ tộc ăn thịt người, rồi mới gặp Cánh Cụt Lông Dài, thì cũng không sao cả do trí óc đã có thời gian nghỉ ngơi khi gặp bộ tộc ăn thịt người.
+
+Quay lại với ví dụ trên, ta quy ước 1 ứng với Thỏ Đồng Hồ, 2 ứng với Cánh Cụt Lông Dài, 3 ứng với bộ tộc ăn thịt người, 4 ứng với Bụt Hắc Ám.
+\begin{itemize}
+	\item Nếu đi theo cách thứ ba, RR sẽ gặp liên tiếp Thỏ Đồng Hồ rồi đến Cánh Cụt Lông Dài (ở 2 đỉnh 4, 6), do đó RR không thể đi tiếp được
+	\item Nếu đi theo cách thứ hai, RR sẽ gặp bộ tộc ăn thịt ở giữa 2 lần gặp Thỏ Đồng Hồ và Cánh Cụt Lông Dài, do đó RR vẫn có thể đi tiếp được
+	\item Nếu đi theo cách thứ nhất, RR sẽ gặp Thỏ Đồng Hồ 2 lần, nhưng không lần nào gặp Cánh Cụt Lông Dài ngay sau khi gặp Thỏ Đồng Hồ, do vậy RR vẫn có thể đi tiếp.
+\end{itemize}
+
+RR tìm được Q danh sách - danh sách thứ i (ký hiệu là $L_{i}$ ) chứa các quái thú mà nếu RR gặp liên tiếp trên đường đi, thì RR sẽ không thể đi tiếp được. Vì còn bận ra đề cho VNOI Marathon 2012, RR không thể chọn trước cho mình một đường đi cố định. Vì vậy, RR muốn hỏi các bạn, nếu RR chọn một con đường ngẫu nhiên, thì liệu có khả năng gặp liên tiếp các quái thú trong danh sách hay không.

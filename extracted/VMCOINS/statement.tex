@@ -1,0 +1,25 @@
+RR có N đồng xu giống hệt nhau.  
+
+    RR đặt N đồng xu lên mặt phẳng tọa độ Oxy, đồng xu thứ i có tọa độ (xi, yi). Không có 2 đồng xu nào cùng vị trí.   
+
+   Hai đồng xu ở vị trí (x1, y1) và (x2, y2) được gọi là kề nhau nếu |x1 - x2| + |y1 - y2| = 1.  
+
+   Một cách đặt các đồng xu lên mặt phẳng tọa độ như vậy được gọi là một trạng thái của N đồng xu.  
+
+   Xét 2 trạng thái: H1, với các đồng xu ở tọa độ (x1, y1), (x2, y2)..., (xN, yN) và H2 với các đồng xu ở tọa độ (u1, v1), (u2, v2), ...., (uN, vN).  
+
+   Hai trạng thái H1 và H2 được gọi là tương đương nếu: tồn tại một hoán vị (P1, P2, ..., PN) thỏa mãn:  
+\begin{itemize}
+	\item     u1 - x(P1) = u2 - x(P2) = ... = uN - x(PN)   
+	\item     v1 - y(P1) = v2 - y(P2) = ... = vN - y(PN).   
+\end{itemize}
+
+   Nhiệm vụ của bạn là chuyển các đồng xu từ trạng thái xuất phát đến trạng thái đích (hoặc một trạng thái tương đương với trạng thái đích), sau không quá $10^{6}$   bước.  
+
+   Mỗi bước, bạn được di chuyển đúng một đồng xu, từ vị trí A đến vị trí B, nếu:  
+\begin{itemize}
+	\item     Vị trí B không có đồng xu nào   
+	\item     Sau khi đặt đồng xu vào vị trí B, nó kề với ít nhất 2 đồng xu khác.   
+\end{itemize}
+
+   Cho biết rằng luôn tồn tại dãy di chuyển thỏa mãn đề bài, và tồn tại 2 đồng xu trong trạng thái xuất phát sao cho nếu di chuyển 2 đồng xu này đến vị trí bất kỳ (không trùng nhau và không trùng với các đồng xu khác), thì vẫn tồn tại kết quả.

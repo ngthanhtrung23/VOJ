@@ -1,0 +1,57 @@
+Đề bài
+Cho sàn nhà chữ nhật HxW. Mỗi ô có thể có 4 màu : đỏ, xanh lá, xanh dương hoặc vàng được mô tả bởi các ký tự 'R','G','B','Y'.  
+
+   Taro quyết định đổi màu một số ô để không có hai ô nào kề nhau có cùng màu. Hai ô là kề nhau nếu có chung một góc (mỗi ô có nhiều nhất 8 ô kề). Taro được phép đổi màu nhiều nhất K ô.  
+
+   Tính số cách đổi màu hợp lệ của Taro, lấy phần dư cho 1,000,000,007.
+Giới hạn
+\begin{itemize}
+	\item     1  $\le$  W, H  $\le$  50   
+	\item     0  $\le$  K  $\le$  W*H   
+\end{itemize}
+Ví dụ
+\begin{verbatim}
+Dữ liệu
+[CASE]
+$<$$<$
+RG
+$>$$>$
+1
+
+[CASE]
+$<$$<$
+BY
+$>$$>$
+2
+
+[CASE]
+$<$$<$
+RG
+GR
+$>$$>$
+2
+
+[CASE]
+$<$$<$
+BY
+$>$$>$
+2
+
+[CASE]
+$<$$<$ 	
+BRYBGYRB
+GRYGYBBG
+RGBGYBYG
+YRBRGBYG
+RBGRBRGG
+RBGYRYBY
+$>$$>$
+34
+
+[END]
+Kết quả
+5
+12
+8
+489
+\end{verbatim}

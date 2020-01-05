@@ -1,0 +1,13 @@
+ 
+
+Bài toán định tuyến kèm theo chất lượng dịch vụ bảo đảm trong các ứng dụng đa phương tiện như tuyến tính hình ảnh và âm thanh theo yêu cầu là vấn đề thời sự trong những năm gần đây. Trong bài toán này, chúng ta quan tâm đến độ trễ của các đường truyền tin.
+
+Công ty cung cấp dịch vụ mạng ESI vừa thiết lập một mạng truyền thông giữa các điểm cung cấp dịch vụ và khách hàng, bao gồm n nút và m kênh nối trực tiếp một chiều giữa hai nút. Các nút được đánh số từ 1 đến n, trong đó nút 1 là nút nguoif. Các kênh nối được đánh số từ 1 đến m. kênh nối thứ i cho phép truyền tin (một chiều) từ nút ui tới nút vi và có độ trễ là c(ui, vi). Có không quá một kênh truyền tin từ một nút đến một nút khác. Một đường truyền tin từ nút nguồn đến nút t được biểu diễn dưới dạng một dãy liên tiếp các chỉ số cảu các nút, xuất phát từ 1 và kết thúc tại t. Dộ trễ của đường truyền tin được định nghĩa là tổng độ trễ của các kênh nối trực tiếp trên đường truyền tin đó. Để khảo sát các đường truyền tin từ nút nguồn đến một nút i trong mạng, công ty ESI xác định Cmin là độ trễ nhỏ nhất trong tất cả các độ trêc của các kênh trong mạng và Tmin là độ trễ của đường truyền tin từ nút nguồn đến nút t với độ trễ nhỏ nhất. Để đảm bảo dịch vụ đường truyền với chất lượng cao, đường truyền tin từ nút nguồn đến nút t phải thỏa mãn điều kiện QoS (Quality of Service) sau đây: độ trễ của đường truyền tin phải nhỏ hơn hoặc bằng tổng số Tmin + Cmin Sau đó ESI sắp xếp tất cả các đường truyền tin từ nút nguồn đến nút t thỏa mãn điều kiện QoS theo thứ tự từ điển. Theo định nghĩa của công ty ESI, đường truyền tin (x1, x2, .., xp) được gọi là có thứ tự từ điển nhỏ hơn đường truyền tin (y1, y2, ...yq) nếu:
+\begin{itemize}
+	\item hoặc x1 $<$ y1
+	\item hoặc là p $<$ q và xi = yi với mọi i = 1, 2,.., p
+	\item hoặc là tồn tại một chỉ số u (1 $<$ u  $\le$  p) sao cho xi = yi với mọi i = 1, 2, .. u - 1 và xu $<$ yu.
+\end{itemize}
+
+Yêu cầu
+Cho trước số nguyên dương k, hãy tìm đường truyền tin từ 1 đến t thỏa mãn điều kiện QoS thứ k trong thứ tự từ điển
