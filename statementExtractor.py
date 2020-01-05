@@ -39,7 +39,7 @@ def analyze():
 def extract3Sections():
     lines = open(subsectionInfoFolderPath + '/3subsections.csv').read().strip().split('\n')
 
-    pattern = '\\\subsubsection{.+?}'
+    pattern = '\\\subsubsection{.+}'
     compiledPattern = re.compile(pattern)
 
     for line in lines:
@@ -71,7 +71,7 @@ def extract3Sections():
         open(extractedProblemFolder + '/notes.tex', 'w').write(notes.strip())
 
 def extractNSections(n):
-    pattern = '\\\subsubsection{(.+?)}'
+    pattern = '\\\subsubsection{(.+)}'
     compiledPattern = re.compile(pattern)
 
     lines = open(subsectionInfoFolderPath + '/' + str(n) + 'subsections.csv').read().strip().split('\n')

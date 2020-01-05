@@ -106,7 +106,7 @@ SUBSTR.tex,Input,Output,Example
 JEWELNB.tex,Input,Output,Example
 MATCH2.tex,Input,Output,Example
 FLOYD.tex,Input,Output,Example
-C11STR2.tex,Input,Output,\textbf{    Ví dụ:
+C11STR2.tex,Input,Output,\textbf{    Ví dụ:   }
 QTREEX.tex,Input,Output,Example
 CUTRECT.tex,Dữ liệu,Kết quả,Ví dụ
 NRS.tex,Dữ liệu,Kết quả,Ví dụ
@@ -133,7 +133,7 @@ RAOVUON.tex,Input,Output,Example
 QBPOINT.tex,Input,Output,Example
 VECTOR.tex,Input,Output,Example
 NKSEV.tex,Dữ liệu,Kết qủa,Ví dụ
-BLOPER2.tex,\textbf{\textbf{Input,\textbf{\textbf{Output,\textbf{Example
+BLOPER2.tex,\textbf{\textbf{Input }},\textbf{\textbf{Output }},\textbf{Example }
 C11DOLL.tex,Dữ liệu vào:,Dữ liệu ra:,Ví dụ:
 SHTH.tex,Input,Output,Example
 RECT3.tex,Dữ liệu,Kết quả,Ví dụ
@@ -215,7 +215,7 @@ MARS.tex,Input,Output,Example
 MTANUM.tex,Input,Output,Example
 HBTLCA.tex,Input,Output,Example
 INKPRINT.tex,Input,Output,Example
-GPT.tex,Input,\textbf{    Giới hạn,Example
+GPT.tex,Input,\textbf{    Giới hạn   },Example
 FINDNUM.tex,Dữ liệu vào,Dữ liệu ra,Ví dụ
 CREC01.tex,Input,Output,Example
 FIRE.tex,Input,Output,Example
@@ -308,7 +308,7 @@ NBFD.tex,Dữ liệu,Kết quả,Ví dụ
 CRUELL2.tex,Dữ liệu,Kết quả,Ví dụ
 LQDNUMS.tex,Input,Output,Example
 LSRLE.tex,Input,Output,Example
-C11TOUCH.tex,\textbf{    Dữ liệu vào:,Dữ liệu ra:,Ví dụ:
+C11TOUCH.tex,\textbf{    Dữ liệu vào:   },Dữ liệu ra:,Ví dụ:
 CFLAG2.tex,Input,Output,Example
 PVOI14_5.tex,Input,Output,Example
 TCHESS.tex,Input,Output,Example
@@ -354,7 +354,7 @@ NKTEAM.tex,Dữ liệu vào,Kết qủa,Ví dụ
 MTELE.tex,Input,Output,Sample
 QBGAME.tex,Input,Output,Example
 PVOI14_4.tex,Input,Output,Example
-BINTREE.tex,Input \href{http://vi.wikipedia.org/wiki/Duy%E1%BB%87t_c%C3%A2y,Output,Example
+BINTREE.tex,Input \href{http://vi.wikipedia.org/wiki/Duy%E1%BB%87t_c%C3%A2y}{},Output,Example
 SETNJA.tex,Input,Output,Example
 WCALC.tex,Input,Output,Example
 VPARTSUM.tex,Dữ liệu,Kết quả,Ví dụ
@@ -400,7 +400,7 @@ VODIVIDE.tex,Input,Output,Example
 NKDIST.tex,Dữ liệu,Kết quả,Ví dụ
 SPSEQ.tex,Input,Output,Example
 VBF1.tex,Dữ liệu,Kết quả,Ví dụ
-PATULJCI.tex,\textbf{    Input,Output,Example
+PATULJCI.tex,\textbf{    Input   },Output,Example
 CTNCLN.tex,Input,Output,Example
 NKTICK.tex,Dữ liệu,Kết qủa,Ví dụ
 VCOLDWAT.tex,Dữ liệu,Kết quả,Ví dụ
@@ -521,7 +521,7 @@ STNODE.tex,Dữ liệu:,Kết quả,Ví dụ
 AMSSEQ.tex,Dữ liệu vào,Dữ liệu ra,Ví dụ
 HBT1D.tex,Input,Output,Example
 DTDOI.tex,Input,Output,Example
-C11DK1.tex,Input,\textbf{Output,Example
+C11DK1.tex,Input,\textbf{Output },Example
 KINGDOM.tex,Dữ liệu,Kết quả,Ví dụ
 VN_ZR_II.tex,Input,Output,Example
 NKDEC.tex,Dữ liệu,Kết qủa,Ví dụ
@@ -546,7 +546,7 @@ VOSCUN.tex,Input,Output,Example
 MSE08G.tex,Input,Output,Sample
 C11GAR.tex,Input,Output,Example
 KIDSMATH.tex,Input,Output,Example
-KL11B.tex,\textbf{        Input,Output,Example
+KL11B.tex,\textbf{        Input       },Output,Example
 NKSTEP.tex,Dữ liệu,Kết quả,Ví dụ
 NKSPILJA.tex,Dữ liệu vào,Kết qủa,Ví dụ
 QBRECT.tex,Input,Output,Example

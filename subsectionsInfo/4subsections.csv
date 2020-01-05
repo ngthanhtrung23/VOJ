@@ -51,7 +51,7 @@ KPASS.tex,Input,Output,Giới hạn,Example
 VMDOTA.tex,Input,Output,Example,Giới hạn
 PBIR.tex,Yêu cầu,Dữ liệu,Kết quả,Ví dụ
 C11NHL.tex,Dữ liệu,Kết quả,Phân bố giới hạn test,Ví dụ
-NSC.tex,Dữ liệu,\textbf{    Giới hạn,Kết quả,Ví dụ
+NSC.tex,Dữ liệu,\textbf{    Giới hạn   },Kết quả,Ví dụ
 C11CAVE.tex,Dữ liệu,Kết quả,Giới hạn,Ví dụ
 XYZ.tex,Dữ liệu,Kết quả,Ví dụ,Hạn chế
 VMDEGREE.tex,Input,Output,Giới hạn,Example
@@ -80,7 +80,7 @@ CHEAP.tex,Input,Output,Example,Constraint
 VMQTREE.tex,Input,Giới hạn:,Output,Example
 SKBUS.tex,Input,Output,Example,Constraint
 V11HH.tex,Input,Output,Giới hạn,Example
-NKRTEST.tex,\textbf{Yêu cầu,Input,Output,Example
+NKRTEST.tex,\textbf{Yêu cầu },Input,Output,Example
 VCOWFLIX.tex,Dữ liệu,Kết quả,Ví dụ,Giải thích
 COMNET.tex,Input,Output,Example,Giới hạn
 C11PASS.tex,Input,Output,Example,Chú ý : Có 20% test 1  $\le$  N, M  $\le$  10, K  $\le$  4.
@@ -102,7 +102,7 @@ C11BEAU.tex,Dữ liệu,Output,Ví dụ,Ràng buộc
 CENTRE28.tex,Input,Output,Example,Giới hạn
 NKLEAGUE.tex,Dữ liệu,Kết quả,Hạn chế,Ví dụ
 KAGAIN.tex,Bài này O(N) mới thực sự coi là accept . Còn lại O(NlogN) , O(N^2) thì đó là do bạn may mắn accept thôi.,Input,Output,Example
-VOMARBLE.tex,\textbf{Input,Ouput,Ràng buộc,Example
+VOMARBLE.tex,\textbf{Input },Ouput,Ràng buộc,Example
 NKBUS.tex,Dữ liệu vào,Kết qủa,Giới hạn,Ví dụ
 VCRISIS.tex,Dữ liệu,Kết quả,Ví dụ,Giải thích
 EUROBET.tex,Input,Output,Giới hạn,Example
@@ -137,13 +137,13 @@ MDOSTAVA.tex,Input,It calls pizza,Sample
 GONDOR.tex,Input,Output,Example, 
 NKBUSD.tex,Dữ liệu vào,Kết qủa,Giới hạn,Ví dụ
 C11ID.tex,Dữ liệu,Kết quả,Ví dụ,Giới hạn
-VMCUT2.tex,Input,Output,Giới hạn,\textbf{    Example
+VMCUT2.tex,Input,Output,Giới hạn,\textbf{    Example   }
 SCOLLECT.tex,Dữ liệu,Kết quả,Kết quả,Ví dụ
 VMSEQ.tex,Input,Output,Giới hạn,Example
 VOLIS.tex,Input,Output,Giới hạn,Example
 SFLOWERF.tex,Dữ liệu,Kết quả,Giới hạn,Ví dụ
 VODEFEND.tex,Input,Output,Giới hạn,Example
-VOS2SUM.tex,\textbf{Input,\textbf{Output,\textbf{Ràng buộc,\textbf{VÍ DỤ
+VOS2SUM.tex,\textbf{Input},\textbf{Output},\textbf{Ràng buộc},\textbf{VÍ DỤ }
 BONES.tex,DỮ LIỆU,KẾT QUẢ,VÍ DỤ,GIẢI THÍCH
 KQUERY2.tex,Truy vấn-k II,Dữ liệu,Kết quả,Ví dụ
 NKTARDY.tex,Dữ liệu,Kết quả,Hạn chế,Ví dụ
@@ -162,7 +162,7 @@ NKMINES.tex,Dữ liệu,Kết qủa,Giới hạn,Ví dụ
 NHREMIND.tex,Input,Output,Example,Giới hạn
 TCONCERT.tex,Input,Output,Constraints,Example
 VQUERY.tex,Input,Output,Giới hạn:,Example
-VOSMAXK.tex,\textbf{Dữ liệu vào:,\textbf{Dữ liệu ra:,\textbf{Ràng buộc:,\textbf{Ví dụ:
+VOSMAXK.tex,\textbf{Dữ liệu vào: },\textbf{Dữ liệu ra: },\textbf{Ràng buộc: },\textbf{Ví dụ: }
 VMXGAME.tex,Input,Output,Cách tính điểm:,Example
 CPPSET.tex,Dữ liệu,Kết quả,Ví dụ,Gợi ý
 VMSQUARE.tex,Input,Output,Giới hạn,Example
@@ -176,7 +176,7 @@ HAOI6000.tex,Dữ liệu,Kết quả,Giới hạn,Ví dụ
 SPACESET.tex,Input,Output,Example,Constraints
 RIVERS.tex,Yêu cầu,Dữ liệu,Kết quả,Ví dụ
 TBIKE.tex,Input,Output,Constraints,Example
-C11GENIE.tex,Dữ liệu vào,Dữ liệu ra,\textbf{    Giới hạn:,Ví dụ
+C11GENIE.tex,Dữ liệu vào,Dữ liệu ra,\textbf{    Giới hạn:   },Ví dụ
 MAJMUN.tex,Input,Output,Example
 PBCFIBO.tex,Dữ liệu vào,Dữ liệu ra,Giới hạn,Ví dụ
 MINK.tex,Bài này O(N) mới thực sự coi là accept . Còn lại O(NlogN) hay O(N*K) thì bạn chỉ may mắn accept thôi .,Input,Output,Example
