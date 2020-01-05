@@ -2,28 +2,28 @@
 
 
 
-        Một công ty đầu tư xây dựng một khu nhà gồm L căn nhà nằm cạnh nhau trên một con đường. Có N người muốn mua nhà ở khu nhà này, biết rằng người thứ i muốn mua a        $_         i        $        căn nhà và mỗi người đều muốn mua những căn nhà nằm cạnh nhau. Do số căn nhà cần mua có thể nhỏ hơn tổng số căn nhà (L) nên sẽ có một số căn nhà chưa được bán. Để đảm bảo mỹ quan của khu nhà, công ty sẽ luôn luôn bán căn nhà đầu tiên (theo thứ tự từ trái sang phải).       
+        Một công ty đầu tư xây dựng một khu nhà gồm L căn nhà nằm cạnh nhau trên một con đường. Có N người muốn mua nhà ở khu nhà này, biết rằng người thứ i muốn mua $a_{i}$        căn nhà và mỗi người đều muốn mua những căn nhà nằm cạnh nhau. Do số căn nhà cần mua có thể nhỏ hơn tổng số căn nhà (L) nên sẽ có một số căn nhà chưa được bán. Để đảm bảo mỹ quan của khu nhà, công ty sẽ luôn luôn bán căn nhà đầu tiên (theo thứ tự từ trái sang phải).       
 
         Biết yêu cầu của những người mua, một cách bán những căn nhà của công ty có thể được biểu diễn bằng 1 dãy gồm L số. Trong đó số thứ i bằng 0 nếu căn nhà thứ i chưa được bán và bằng k nếu căn nhà thứ i được bán cho người thứ k.       
 
-        Ví dụ: khi L=4, N=2, a        $_         1        $        = 2, a        $_         2        $        =1, dãy “2 0 1 1” thể hiện một cách bán những căn nhà của công ty: căn nhà đầu tiên bán cho người thứ 2, căn nhà thứ 3 và thứ 4 bán cho người đầu tiên và căn nhà thứ 2 được để lại.       
+        Ví dụ: khi L=4, N=2, $a_{1}$        = 2, $a_{2}$        =1, dãy “2 0 1 1” thể hiện một cách bán những căn nhà của công ty: căn nhà đầu tiên bán cho người thứ 2, căn nhà thứ 3 và thứ 4 bán cho người đầu tiên và căn nhà thứ 2 được để lại.       
 \includegraphics{http://vn.spoj.pl/VO09/content/Houses.jpg}
 
 
 
-   Yêu cầu: Hãy giúp công ty liệt kê các cách bán những căn nhà. Các cách bán căn nhà được liệt kê theo thứ tự từ điển của dãy số biểu diễn. Nếu số cách bán căn nhà lớn hơn 1000, chỉ cần liệt kê 1000 cách đầu tiên. (Biết rằng dãy a có thứ tự từ điển đứng trước dãy b nếu và chỉ nếu tồn tại chỉ số j, sao cho a   $_    i   $   = b   $_    i   $   với mọi i $<$ j và a   $_    j   $   $<$ b   $_    j   $   ).  
+   Yêu cầu: Hãy giúp công ty liệt kê các cách bán những căn nhà. Các cách bán căn nhà được liệt kê theo thứ tự từ điển của dãy số biểu diễn. Nếu số cách bán căn nhà lớn hơn 1000, chỉ cần liệt kê 1000 cách đầu tiên. (Biết rằng dãy a có thứ tự từ điển đứng trước dãy b nếu và chỉ nếu tồn tại chỉ số j, sao cho $a_{i}$   = $b_{i}$   với mọi i $<$ j và $a_{j}$   $<$ $b_{j}$   ).  
 
 \subsubsection{   Dữ liệu  }
 \begin{itemize}
 	\item     Dòng đầu tiên: chứa 2 số nguyên L, N.   
-	\item     Dòng thứ 2 chứa N số nguyên, tương ứng là các giá trị a    $_     1    $    , a    $_     2    $    , …, a    $_     n    $    .   
+	\item     Dòng thứ 2 chứa N số nguyên, tương ứng là các giá trị $a_{1}$    , $a_{2}$    , …, $a_{n}$    .   
 \end{itemize}
 
 \subsubsection{   Hạn chế  }
 \begin{itemize}
 	\item     1 ≤ L ≤ 100.   
 	\item     1 ≤ N ≤ 20.   
-	\item     a    $_     1    $    + a    $_     2    $    + ... + a    $_     N    $    ≤ L.   
+	\item     $a_{1}$    + $a_{2}$    + ... + $a_{N}$    ≤ L.   
 \end{itemize}
 
 \subsubsection{   Kết quả  }

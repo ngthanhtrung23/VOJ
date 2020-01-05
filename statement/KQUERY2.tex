@@ -4,25 +4,25 @@
 
 \subsubsection{   Truy vấn-k II  }
 
-   Cho một dãy n phần tử a   $_    1   $   ,   a   $_    2   $   , ..., a   $_    n   $   và một số các truy vấn-k. Ngoài ra còn có một số thao tác cập nhật.  
+   Cho một dãy n phần tử $a_{1}$   ,   $a_{2}$   , ..., $a_{n}$   và một số các truy vấn-k. Ngoài ra còn có một số thao tác cập nhật.  
 
-   Một thao tác cập nhật là một cặp (i, v) nghĩa là a   $_    i   $   cần được gán giá trị v.  
+   Một thao tác cập nhật là một cặp (i, v) nghĩa là $a_{i}$   cần được gán giá trị v.  
 
    Một truy vấn-k là một bộ ba (i, j, k) (1 ≤ i ≤ j ≤ n).  
 
-   Với mỗi truy vấn-k (i, j, k), bạn phải trả về số phần tử lớn hơn k nằm trong dãy con a   $_    i   $   ,   a   $_    i+1   $   , ..., a   $_    j   $   .  
+   Với mỗi truy vấn-k (i, j, k), bạn phải trả về số phần tử lớn hơn k nằm trong dãy con $a_{i}$   ,   $a_{i+1}$   , ..., $a_{j}$   .  
 
 \subsubsection{   Dữ liệu  }
 \begin{itemize}
 	\item     Dòng 1: n (1 ≤ n ≤ 30000).   
-	\item     Dòng 2: n số a    $_     1    $    , a    $_     2    $    , ...,   a    $_     n    $    (1 ≤ a    $_     i    $    ≤   10    $^     4    $    ).   
+	\item     Dòng 2: n số $a_{1}$    , $a_{2}$    , ...,   $a_{n}$    (1 ≤ $a_{i}$    ≤   $10^{4}$    ).   
 	\item     Dòng 3: q (1 ≤ q ≤ 200000), số truy vấn-k.   
-	\item     q dòng tiếp theo, số đầu tiên trong mỗi dòng là 0 hoặc 1. Số 0 theo sau bởi 2 số i và v (1 ≤ i ≤ n, 1 ≤ v ≤ 10    $^     4    $    ) cho biết một thao tác cập nhật. Số 1 theo sau bởi 3 số nguyên i, j, k (1 ≤ i ≤ j ≤ n, 1 ≤ k ≤ 10    $^     4    $    ) cho biết một truy vấn-k.   
+	\item     q dòng tiếp theo, số đầu tiên trong mỗi dòng là 0 hoặc 1. Số 0 theo sau bởi 2 số i và v (1 ≤ i ≤ n, 1 ≤ v ≤ $10^{4}$    ) cho biết một thao tác cập nhật. Số 1 theo sau bởi 3 số nguyên i, j, k (1 ≤ i ≤ j ≤ n, 1 ≤ k ≤ $10^{4}$    ) cho biết một truy vấn-k.   
 \end{itemize}
 
 \subsubsection{   Kết quả  }
 \begin{itemize}
-	\item     Với mỗi truy vấn-k (i, j, k), in ra số phần tử lớn hơn k trong dãy con a    $_     i    $    ,   a    $_     i+1    $    , ..., a    $_     j    $    trên một dòng.    
+	\item     Với mỗi truy vấn-k (i, j, k), in ra số phần tử lớn hơn k trong dãy con $a_{i}$    ,   $a_{i+1}$    , ..., $a_{j}$    trên một dòng.    
 
 
 \end{itemize}

@@ -4,14 +4,14 @@
 
 
 
-   Cho bộ N số nguyên không âm (a   $_    1   $   , a   $_    2   $   , …, a   $_    N   $   ) và một danh sách gồm M bộ quy tắc biến đổi.       Ta định nghĩa một quy tắc biến đổi (u, oper, v) là phép biến đổi dãy số A gồm N phần tử (a1, a2, ... , aN) thành một dãy số B gồm N phần tử (b1, b2, ..., bN)       Với dãy b thỏa mãn       bi = au oper av. Oper chỉ gồm \{and, or, xor\}    
+   Cho bộ N số nguyên không âm ($a_{1}$   , $a_{2}$   , …, $a_{N}$   ) và một danh sách gồm M bộ quy tắc biến đổi.       Ta định nghĩa một quy tắc biến đổi (u, oper, v) là phép biến đổi dãy số A gồm N phần tử (a1, a2, ... , aN) thành một dãy số B gồm N phần tử (b1, b2, ..., bN)       Với dãy b thỏa mãn       bi = au oper av. Oper chỉ gồm \{and, or, xor\}    
 
-   Ta định nghĩa một bộ quy tắc biến đổi gồm N quy tắc biến đổi (u, oper, v). Những quy tắc này sẽ biến đổi dãy số A gồm N phần tử (a   $_    1   $   , a   $_    2   $   , …, a   $_    N   $   ) thành dãy số B cũng gồm N phần tử (b   $_    1   $   , b   $_    2   $   , ... , b   $_    N   $   ). Trong đó, quy tắc thứ i như sau:  
+   Ta định nghĩa một bộ quy tắc biến đổi gồm N quy tắc biến đổi (u, oper, v). Những quy tắc này sẽ biến đổi dãy số A gồm N phần tử ($a_{1}$   , $a_{2}$   , …, $a_{N}$   ) thành dãy số B cũng gồm N phần tử ($b_{1}$   , $b_{2}$   , ... , $b_{N}$   ). Trong đó, quy tắc thứ i như sau:  
 
-   b   $_    i   $   = a   $_    u   $   oper a   $_    v   $   , với oper là 1 trong 3 phép toán and, or, xor.  
+   $b_{i}$   = $a_{u}$   oper $a_{v}$   , với oper là 1 trong 3 phép toán and, or, xor.  
 
 
-\\   Yêu cầu: Cho bộ (a   $_    1   $   , a   $_    2   $   , ... , a   $_    N   $   ) ban đầu, M bộ quy tắc biến đổi và số K. Ta lần lượt biến đổi dãy A ban đầu thông qua các bộ quy tắc theo thứ tự sau: 1, 2, …, M, 1, 2, …,M, 1, 2, ... Hãy xác định giá trị cuối cùng của (a   $_    1   $   , a   $_    2   $   , …, a   $_    N   $   ) sau K lần biến đổi.  
+\\   Yêu cầu: Cho bộ ($a_{1}$   , $a_{2}$   , ... , $a_{N}$   ) ban đầu, M bộ quy tắc biến đổi và số K. Ta lần lượt biến đổi dãy A ban đầu thông qua các bộ quy tắc theo thứ tự sau: 1, 2, …, M, 1, 2, …,M, 1, 2, ... Hãy xác định giá trị cuối cùng của ($a_{1}$   , $a_{2}$   , …, $a_{N}$   ) sau K lần biến đổi.  
 
 \subsubsection{   Input  }
 
@@ -19,7 +19,7 @@
 
    Gồm một dòng ghi 3 số N, M và K.  
 
-   Dòng thứ 2 ghi N số ban đầu a   $_    1   $   , a   $_    2   $   , …, a   $_    N   $
+   Dòng thứ 2 ghi N số ban đầu $a_{1}$   , $a_{2}$   , …, $a_{N}$
 
     Tiếp theo là M nhóm dòng mô tả M bộ quy tắc biến đổi; mỗi bộ quy tắc được ghi trên N dòng gồm 3 giá trị u oper v. Các bộ quy tắc biến đổi được ghi cách nhau một dòng trống.   
 
@@ -33,9 +33,9 @@
 
    1 ≤ M ≤ 100 cho tất cả các test.  
 \begin{itemize}
-	\item      Trong 30\% test đầu tiên: 1 ≤ N ≤ 10; 0 ≤ a    $_     i    $     ≤ 10    $^     9    $     ; 0 ≤ K ≤ 100.    
-	\item      Trong 30\% test tiếp theo: 1 ≤ N ≤ 3; 0 ≤ a     $_      i     $     ≤ 100; 0 ≤ K ≤ 10     $^      9     $     .    
-	\item      Trong 40\% test tiếp theo: 1 ≤ N ≤ 10; 0 ≤ a     $_      i     $      ≤ 10     $^      9     $     , K ≤ 10     $^      9     $     .    
+	\item      Trong 30\% test đầu tiên: 1 ≤ N ≤ 10; 0 ≤ $a_{i}$     ≤ $10^{9}$     ; 0 ≤ K ≤ 100.    
+	\item      Trong 30\% test tiếp theo: 1 ≤ N ≤ 3; 0 ≤ $a_{i}$     ≤ 100; 0 ≤ K ≤ $10^{9}$     .    
+	\item      Trong 40\% test tiếp theo: 1 ≤ N ≤ 10; 0 ≤ $a_{i}$      ≤ $10^{9}$     , K ≤ $10^{9}$     .    
 \end{itemize}
 
    Thời gian chạy: 0.5s cho mỗi test  

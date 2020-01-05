@@ -2,7 +2,7 @@
 
  
 
-Chuẩn bị đón năm mới. Công ty bánh kẹo Hương Dứa đã làm một tấm sôcôla cực lớn với mục đích ghi tên mình vào sách kỷ lục Ghi-nét đồng thời quảng bá thương hiệu trước công chúng. Tấm sôcôla có hình vuông kích thước 2 $^ k $ x2 $^ k $ , tạo thành lưới ô vuông 2 $^ k $ hàng và 2 $^ k $ cột. Các hàng được đánh số từ 0 đến 2 $^ k $ -1 từ trên xuống dưới, các cột được đánh số từ 0 đến 2 $^ k $ -1 từ trái sang phải. Ô nằm ở hàng i và cột j được gọi là ô (i, j). Sau buổi trưng bày giới thiệu sản phẩm, tấm sôcôla được cắt nhỏ, chia cho mọi người, mỗi người được một ô của chiếc bánh kỷ lục. Bộ phận tiếp thị đã ấn vào hai ô khác nhau (p, q) và (u, v) mỗi ô một đồng xu. Vị khách nào may mắn nhận được ô sôcôla có đồng xu sẽ được tặng rất nhiều sản phẩm độc đáo của công ty.
+Chuẩn bị đón năm mới. Công ty bánh kẹo Hương Dứa đã làm một tấm sôcôla cực lớn với mục đích ghi tên mình vào sách kỷ lục Ghi-nét đồng thời quảng bá thương hiệu trước công chúng. Tấm sôcôla có hình vuông kích thước $2^{k}$ $x2^{k}$ , tạo thành lưới ô vuông $2^{k}$ hàng và $2^{k}$ cột. Các hàng được đánh số từ 0 đến $2^{k}$ -1 từ trên xuống dưới, các cột được đánh số từ 0 đến $2^{k}$ -1 từ trái sang phải. Ô nằm ở hàng i và cột j được gọi là ô (i, j). Sau buổi trưng bày giới thiệu sản phẩm, tấm sôcôla được cắt nhỏ, chia cho mọi người, mỗi người được một ô của chiếc bánh kỷ lục. Bộ phận tiếp thị đã ấn vào hai ô khác nhau (p, q) và (u, v) mỗi ô một đồng xu. Vị khách nào may mắn nhận được ô sôcôla có đồng xu sẽ được tặng rất nhiều sản phẩm độc đáo của công ty.
 
 
 \includegraphics{http://www.spoj.pl/content/paulmcvn:nkgifts.jpg}
@@ -13,7 +13,7 @@ Vì chiếc bánh rất lớn nên công ty đã thiết kế một máy cắt b
 	\item Bước 2: Cắt dọc song song với cạnh chồng bánh chia chồng sôcôla thành hai phần bằng nhau, úp chồng bánh bên trái lên chồng bánh bên phải sao cho mép trái đè lên mép phải.
 \end{itemize}
 
-Như vậy sau mỗi lần thực hiện thao tác cắt, chiều dài và chiều rộng của các tấm sôcôla giảm đi một nửa. Sau k lần thực hiện thao tác cắt, các ô của tấm sôcôla sẽ được xếp thành một cột. Khách nhận bánh xếp hàng một và được đánh số từ 1 trở đi, người thứ m sẽ nhận được miếng sôcôla thứ m từ trên xuống dưới. (1 ≤ m ≤ 2 $^ k $ x 2 $^ k $ ).
+Như vậy sau mỗi lần thực hiện thao tác cắt, chiều dài và chiều rộng của các tấm sôcôla giảm đi một nửa. Sau k lần thực hiện thao tác cắt, các ô của tấm sôcôla sẽ được xếp thành một cột. Khách nhận bánh xếp hàng một và được đánh số từ 1 trở đi, người thứ m sẽ nhận được miếng sôcôla thứ m từ trên xuống dưới. (1 ≤ m ≤ $2^{k}$ x $2^{k}$ ).
 
 Ví dụ, với k=1 và đồng xu được ấn vào các ô (0,0), (1,1), việc thực hiện các thao tác cắt sẽ được trình bày trên hình vẽ minh họa ở trên. Trong ví dụ này, vị khách thứ nhất và thứ ba sẽ là những người nhận được tặng phẩm của công ty.
 
@@ -31,7 +31,7 @@ Một dòng chứa hai số nguyên là số thứ tự các vị khách may m�
 
 \subsubsection{Ràng buộc}
 \begin{itemize}
-	\item 1 ≤ k ≤ 40, 0 ≤ p, q, u, v ≤ 2 $^ k $ - 1.
+	\item 1 ≤ k ≤ 40, 0 ≤ p, q, u, v ≤ $2^{k}$ - 1.
 	\item 60\% số tests ứng với 60\% số điểm của bài có 1 ≤ k ≤ 5.
 \end{itemize}
 

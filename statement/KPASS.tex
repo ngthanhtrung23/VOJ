@@ -12,15 +12,15 @@
 
    Pirate đã nghĩ ra một quy trình mã hóa số điện thoại như sau:  
 \begin{itemize}
-	\item     Giả sử số điện thoại của bạn được biểu diễn bằng dãy số a    $_     1    $    , a    $_     2    $    ,..., a    $_     N    $    (0 ≤ a    $_     i    $    ≤ 9 với 1 ≤ i ≤ N).   
-	\item     Đặt s    $_     1    $    = a    $_     1    $    , s    $_     i    $    = s    $_     i - 1    $    + a    $_     i    $    (với 1 $<$ i ≤ N).   
-	\item     Tìm số thứ tự từ điển của dãy \{s    $_     N    $    \} trong tập các dãy được sinh ra từ tất cả các số điện thoại theo nguyên tắc trên. Trừ số đó đi một đơn vị.   
+	\item     Giả sử số điện thoại của bạn được biểu diễn bằng dãy số $a_{1}$    , $a_{2}$    ,..., $a_{N}$    (0 ≤ $a_{i}$    ≤ 9 với 1 ≤ i ≤ N).   
+	\item     Đặt $s_{1}$    = $a_{1}$    , $s_{i}$    = s    $_     i - 1    $    + $a_{i}$    (với 1 $<$ i ≤ N).   
+	\item     Tìm số thứ tự từ điển của dãy \{$s_{N}$    \} trong tập các dãy được sinh ra từ tất cả các số điện thoại theo nguyên tắc trên. Trừ số đó đi một đơn vị.   
 	\item     Trong dãy số N bit biểu diễn nhị phân của số vừa nhận được, gọi K là dãy bit 0 liên tiếp nhau dài nhất. Tìm thứ tự từ điển của dãy N bit trên trong tập các dãy nhị phân N bit có không quá K bit 0 liên tiếp, gọi số đó là X.   
 \end{itemize}
 
    Nhiệm vụ của bạn là giúp Pirate viết một chương trình giúp tìm ra một số điện thoại nếu biết được N, X và K.  
 
-\emph{    Lưu ý: dãy số \{a    $_     N    $    \} được gọi là lớn hơn dãy số \{b    $_     N    $    \} khi và chỉ khi tồn tại một chỉ số i sao cho a    $_     j    $    = b    $_     j    $    (với mọi 1 ≤ j $<$ i) và a    $_     i    $    $>$ b    $_     i    $    . Trong một tập hợp các dãy số có cùng tính chất nào đó, thứ tự từ điển của một dãy số là số lượng dãy số trong tập không lớn nó (bao gồm cả chính nó).   }
+\emph{    Lưu ý: dãy số \{$a_{N}$    \} được gọi là lớn hơn dãy số \{$b_{N}$    \} khi và chỉ khi tồn tại một chỉ số i sao cho $a_{j}$    = $b_{j}$    (với mọi 1 ≤ j $<$ i) và $a_{i}$    $>$ $b_{i}$    . Trong một tập hợp các dãy số có cùng tính chất nào đó, thứ tự từ điển của một dãy số là số lượng dãy số trong tập không lớn nó (bao gồm cả chính nó).   }
 
 
 
@@ -31,12 +31,12 @@
 
 \subsubsection{   Output  }
 \begin{itemize}
-	\item     Gồm một dòng duy nhất ghi ra dãy số \{a    $_     N    $    \} ban đầu, các số cách nhau bởi dấu cách.   
+	\item     Gồm một dòng duy nhất ghi ra dãy số \{$a_{N}$    \} ban đầu, các số cách nhau bởi dấu cách.   
 \end{itemize}
 
 \subsubsection{   Giới hạn  }
 \begin{itemize}
-	\item     1 ≤ N, K ≤ 30; 1 ≤ X ≤ 10    $^     9    $    .   
+	\item     1 ≤ N, K ≤ 30; 1 ≤ X ≤ $10^{9}$    .   
 	\item     30\% số test có 1 ≤ N, K ≤ 10.   
 	\item     Dữ liệu vào đảm bảo có kết quả.   
 \end{itemize}
@@ -49,7 +49,7 @@
 \textbf{Output:}
 0 0 0 4\end{verbatim}
 
-\emph{    Giải thích: dãy nhị phân 4 bit thứ 3 có không quá 2 bit 0 liên tiếp là 0100. Đây là biểu diễn của số 4. Từ đó suy ra được dãy \{s    $_     N    $    \} là (0, 0, 0, 4). Vậy dãy \{a    $_     N    $    \} là (0, 0, 0, 4).   }
+\emph{    Giải thích: dãy nhị phân 4 bit thứ 3 có không quá 2 bit 0 liên tiếp là 0100. Đây là biểu diễn của số 4. Từ đó suy ra được dãy \{$s_{N}$    \} là (0, 0, 0, 4). Vậy dãy \{$a_{N}$    \} là (0, 0, 0, 4).   }
 \begin{verbatim}
 \textbf{Input:}
 4 5 1
@@ -57,4 +57,4 @@
 \textbf{Output:}
 0 0 1 1\end{verbatim}
 
-\emph{    Giải thích: dãy nhị phân 4 bit thứ 5 có không  quá 1 bit 0 liên tiếp là 1011. Đây là biểu diễn của số 11. Từ đó suy ra  được dãy \{s    $_     N    $    \} là (0, 0, 1, 2). Vậy dãy \{a    $_     N    $    \} là (0, 0, 1, 1).   }
+\emph{    Giải thích: dãy nhị phân 4 bit thứ 5 có không  quá 1 bit 0 liên tiếp là 1011. Đây là biểu diễn của số 11. Từ đó suy ra  được dãy \{$s_{N}$    \} là (0, 0, 1, 2). Vậy dãy \{$a_{N}$    \} là (0, 0, 1, 1).   }

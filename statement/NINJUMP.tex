@@ -4,10 +4,10 @@
 
    Bạn ninja   \emph{    Rantaro   }   đang chăm chỉ luyện khinh công. Một ngày,   \emph{    Rantaro   }   cắm các cọc tre từ bờ bên trái sang bờ bên phải của một con sông và luyện tập như sau:   \emph{    Rantaro   }   sẽ nhảy lên cọc đầu tiên bên trái, nhảy qua một số cọc tre về phía bên phải trước khi nhảy lên cọc cuối cùng và sang bờ bên kia.   \emph{    Rantaro   }   luôn nhảy hướng về đích chứ không bao giờ nhảy lùi, đồng thời, một số cọc có thể bị nhảy qua, nhưng   \emph{    Rantaro   }   luôn nhảy lên cọc đầu tiên và cuối cùng.  
 
-   Giả sử độ cao hiện tại của các cọc tre lần lượt là   \textbf{    H    $_     1    $    , H    $_     2    $    , …, H    $_     n    $}   từ trái qua phải. Ở mỗi bước,   \emph{    Rantaro   }   có thể lựa chọn:  
+   Giả sử độ cao hiện tại của các cọc tre lần lượt là   \textbf{    $H_{1}$    , $H_{2}$    , …, $H_{n}$}   từ trái qua phải. Ở mỗi bước,   \emph{    Rantaro   }   có thể lựa chọn:  
 \begin{itemize}
-	\item     Nhảy cao đến cọc kế tiếp và mất    \textbf{     x    }    năng lượng cho mỗi đơn vị độ cao. Nói cách khác,    \emph{     Rantaro    }    có thể nhảy từ cọc    \textbf{     i    }    sang cọc    \textbf{     i+1    }    và mất max(    \textbf{     H     $_      i+1     $}    -    \textbf{     H     $_      i     $}    , 0) *    \textbf{     x    }    năng lượng.   
-	\item     Nhảy xa đến một cọc khác nếu cọc đó và tất cả các cọc ở giữa đều thấp hơn cọc đang đứng. Mỗi đơn vị độ dài sẽ làm cho    \emph{     Rantaro    }    mất    \textbf{     y    }    năng lượng. Nói cách khác,    \emph{     Rantaro    }    có thể nhảy từ cọc    \textbf{     i    }    sang cọc    \textbf{     j    }    nếu    \textbf{     H     \textbf{$_       i+1      $}     , H     $_      i+2     $     , …, H     $_      j     $     $<$ H     $_      i     $}    và mất (    \textbf{     j    }    -    \textbf{     i    }    ) *    \textbf{     y    }    năng lượng.   
+	\item     Nhảy cao đến cọc kế tiếp và mất    \textbf{     x    }    năng lượng cho mỗi đơn vị độ cao. Nói cách khác,    \emph{     Rantaro    }    có thể nhảy từ cọc    \textbf{     i    }    sang cọc    \textbf{     i+1    }    và mất max(    \textbf{     $H_{i+1}$}    -    \textbf{     $H_{i}$}    , 0) *    \textbf{     x    }    năng lượng.   
+	\item     Nhảy xa đến một cọc khác nếu cọc đó và tất cả các cọc ở giữa đều thấp hơn cọc đang đứng. Mỗi đơn vị độ dài sẽ làm cho    \emph{     Rantaro    }    mất    \textbf{     y    }    năng lượng. Nói cách khác,    \emph{     Rantaro    }    có thể nhảy từ cọc    \textbf{     i    }    sang cọc    \textbf{     j    }    nếu    \textbf{     H     \textbf{$_       i+1      $}     , $H_{i+2}$     , …, $H_{j}$     $<$ $H_{i}$}    và mất (    \textbf{     j    }    -    \textbf{     i    }    ) *    \textbf{     y    }    năng lượng.   
 \end{itemize}
 
    Mỗi khi   \emph{    Rantaro   }   nhảy lên một cọc tre, cọc tre sẽ bị lún và độ cao của cọc đó sẽ giảm đi 1 trước khi   \emph{    Rantaro   }   thực hiện bước nhảy tiếp theo. Ví dụ, nếu có 2 cọc tre với độ cao là (3, 5).   \emph{    Rantaro   }   sẽ nhảy lên cọc đầu tiên và làm độ cao của cọc đó giảm xuống 2. Khi   \emph{    Rantaro   }   nhảy lên cọc cuối sẽ mất (5 - 2) *   \textbf{    x   }   năng lượng. Sau khi sang bờ bên kia, độ cao của 2 cọc sẽ là (2, 4). Trong bài này, chúng ta bỏ qua năng lượng để nhảy từ bờ lên cọc đầu tiên và từ cọc cuối cùng xuống bờ bên kia.  
@@ -37,7 +37,7 @@
 
 \subsubsection{   Giới hạn  }
 \begin{itemize}
-	\item     2 ≤    \textbf{     N    }    ,    \textbf{     H     $_      i     $}    ≤ 100; 1 ≤    \textbf{     x    }    ,    \textbf{     y    }    ,    \textbf{     u    }    ,    \textbf{     v    }    ≤ 100.   
+	\item     2 ≤    \textbf{     N    }    ,    \textbf{     $H_{i}$}    ≤ 100; 1 ≤    \textbf{     x    }    ,    \textbf{     y    }    ,    \textbf{     u    }    ,    \textbf{     v    }    ≤ 100.   
 	\item     50\% số test có N ≤ 20.   
 	\item     70\% số test có N ≤ 40.   
 \end{itemize}

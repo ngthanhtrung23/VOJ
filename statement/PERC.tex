@@ -2,28 +2,28 @@
 
 Nam rất thích hoán vị. Một hoán vị N là một cách sắp xếp N số nguyên dương từ 1 đến N, mỗi số chỉ xuất hiện một lần. Ví dụ 1 3 5 2 4 là một hoán vị 5.
 
-Phép nhân 2 hoán vị N (a $_ 1 $ , a $_ 2 $ , a $_ 3 $ , … , a $_ n $ ) và (b $_ 1 $ , b $_ 2 $ , b $_ 3 $ , … ,b $_ n $ ) được định nghĩa như sau
-\\(a $_ 1 $ , a $_ 2 $ , a $_ 3 $ , … , a $_ n $ ) x (b $_ 1 $ , b $_ 2 $ , b $_ 3 $ , … ,b $_ n $ ) = (a $_ b1 $ ,a $_ b2 $ , a $_ b3 $ , …, a $_ bn $ )
+Phép nhân 2 hoán vị N ($a_{1}$ , $a_{2}$ , $a_{3}$ , … , $a_{n}$ ) và ($b_{1}$ , $b_{2}$ , $b_{3}$ , … ,$b_{n}$ ) được định nghĩa như sau
+\\($a_{1}$ , $a_{2}$ , $a_{3}$ , … , $a_{n}$ ) x ($b_{1}$ , $b_{2}$ , $b_{3}$ , … ,$b_{n}$ ) = ($a_{b1}$ ,$a_{b2}$ , $a_{b3}$ , …, $a_{bn}$ )
 \\Ví dụ : (2 5 1 4 3) x (3 4 2 5 1) = (1 4 5 3 2)
 
 Phép lũy thừa hoán vị được định nghĩa theo phép nhân hoán vị :
-\\(a $_ 1 $ , a $_ 2 $ , a $_ 3 $ , … , a $_ n $ ) $^ 2 $ = (a $_ 1 $ , a $_ 2 $ , a $_ 3 $ , … , a $_ n $ ) x (a $_ 1 $ , a $_ 2 $ , a $_ 3 $ , … , a $_ n $ )
-\\(a $_ 1 $ , a $_ 2 $ , a $_ 3 $ , … , a $_ n $ ) $^ k $ = (a $_ 1 $ , a $_ 2 $ , a $_ 3 $ , … , a $_ n $ ) x (a $_ 1 $ , a $_ 2 $ , a $_ 3 $ , … , a $_ n $ ) x … x (a $_ 1 $ , a $_ 2 $ , a $_ 3 $ , … , a $_ n $ )  (k phép nhân hoán vị)
+\\($a_{1}$ , $a_{2}$ , $a_{3}$ , … , $a_{n}$ ) $^ 2 $ = ($a_{1}$ , $a_{2}$ , $a_{3}$ , … , $a_{n}$ ) x ($a_{1}$ , $a_{2}$ , $a_{3}$ , … , $a_{n}$ )
+\\($a_{1}$ , $a_{2}$ , $a_{3}$ , … , $a_{n}$ ) $^ k $ = ($a_{1}$ , $a_{2}$ , $a_{3}$ , … , $a_{n}$ ) x ($a_{1}$ , $a_{2}$ , $a_{3}$ , … , $a_{n}$ ) x … x ($a_{1}$ , $a_{2}$ , $a_{3}$ , … , $a_{n}$ )  (k phép nhân hoán vị)
 \\
-\\Nam nhận thấy có những số nguyên X mà (a $_ 1 $ , a $_ 2 $ , a $_ 3 $ , … , a $_ n $ ) $^ X $ = (a $_ 1 $ , a $_ 2 $ , a $_ 3 $ , … , a $_ n $ ). Khi đó ta gọi X là một chu trình của (a $_ 1 $ , a $_ 2 $ , a $_ 3 $ , … , a $_ n $ ).
-\\Với một một hoán vị ban đầu (a $_ 1 $ , a $_ 2 $ , a $_ 3 $ , … , a $_ n $ ). Nam muốn tìm số nguyên dương K nhỏ nhất sao cho K+1 là một chu trình của (a $_ 1 $ , a $_ 2 $ , a $_ 3 $ , … , a $_ n $ ). Hãy giúp Nam.
+\\Nam nhận thấy có những số nguyên X mà ($a_{1}$ , $a_{2}$ , $a_{3}$ , … , $a_{n}$ ) $^ X $ = ($a_{1}$ , $a_{2}$ , $a_{3}$ , … , $a_{n}$ ). Khi đó ta gọi X là một chu trình của ($a_{1}$ , $a_{2}$ , $a_{3}$ , … , $a_{n}$ ).
+\\Với một một hoán vị ban đầu ($a_{1}$ , $a_{2}$ , $a_{3}$ , … , $a_{n}$ ). Nam muốn tìm số nguyên dương K nhỏ nhất sao cho K+1 là một chu trình của ($a_{1}$ , $a_{2}$ , $a_{3}$ , … , $a_{n}$ ). Hãy giúp Nam.
 
 \subsubsection{Input}
 
-Dòng đầu ghi số nguyên dương N (1  $\le$  N  $\le$  2x10 $^ 6 $ )
+Dòng đầu ghi số nguyên dương N (1  $\le$  N  $\le$  $2x10^{6}$ )
 \\Dòng thứ 2 gồm N số nguyên dương khác nhau đôi một thể hiện hoán vị ban đầu.
 
 \subsubsection{Output}
 
-Gồm một số nguyên M duy nhất là số dư của K cho 10 $^ 9 $ +7.
+Gồm một số nguyên M duy nhất là số dư của K cho $10^{9}$ +7.
 \\Dữ liệu vào bảo đảm có kết quả.
-\\Trong 30\% số test có N  $\le$  500,  K  $\le$  5x10 $^ 5 $
-\\Trong 50\% số test, K  $\le$  10 $^ 18 $
+\\Trong 30\% số test có N  $\le$  500,  K  $\le$  $5x10^{5}$
+\\Trong 50\% số test, K  $\le$  $10^{18}$
 
 \subsubsection{Example}
 \begin{verbatim}

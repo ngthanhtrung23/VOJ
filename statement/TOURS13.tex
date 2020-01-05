@@ -1,13 +1,13 @@
 
 
-Công ty du lịch X có dự án tổ chức các hành trình du lịch trong vùng lãnh thổ gồm n điểm du lịch trọng điểm, được đánh số từ 1 tới n. Hệ thống giao thông trong vùng gồm m tuyến đường một chiều khác nhau, tuyến đường thứ \emph{ j } ( \emph{ j } = 1, 2, 3, …, m) cho phép đi từ địa diểm u $_ j $ đến dịa diểm v $_ j $ với chi phí đi lại là một số nguyên dương c(u $_ j $ , v $_ j $ ). Vấn đề đặt ra cho công ty là xây dựng các hành trình du lịch cho mỗi điểm du lịch. Một hành trình du lịch cho địa điểm du lịch \emph{ i } phải được xây dựng sao cho xuất phát từ địa điểm \emph{ i } đi qua một số địa điểm khác rồi quay lại địa điểm xấu phát \emph{ i } với tổng chi phí (được tính như là tổng chi phí của các tuyến đường mà hành trình đi qua) nhỏ nhất.
+Công ty du lịch X có dự án tổ chức các hành trình du lịch trong vùng lãnh thổ gồm n điểm du lịch trọng điểm, được đánh số từ 1 tới n. Hệ thống giao thông trong vùng gồm m tuyến đường một chiều khác nhau, tuyến đường thứ \emph{ j } ( \emph{ j } = 1, 2, 3, …, m) cho phép đi từ địa diểm $u_{j}$ đến dịa diểm $v_{j}$ với chi phí đi lại là một số nguyên dương c($u_{j}$ , $v_{j}$ ). Vấn đề đặt ra cho công ty là xây dựng các hành trình du lịch cho mỗi điểm du lịch. Một hành trình du lịch cho địa điểm du lịch \emph{ i } phải được xây dựng sao cho xuất phát từ địa điểm \emph{ i } đi qua một số địa điểm khác rồi quay lại địa điểm xấu phát \emph{ i } với tổng chi phí (được tính như là tổng chi phí của các tuyến đường mà hành trình đi qua) nhỏ nhất.
 
 \subsubsection{Input}
 
 Dòng đầu tiên số T là số lượng bộ dữ liệu. tiếp đến là T nhóm dòng, mỗi dòng cho thông tin về một bộ dữ liệu theo khuôn dạng sau :
 \begin{itemize}
 	\item Dòng thứ nhất chứa 2 số nguyên dương n, m
-	\item Dòng thứ \emph{ j } trong số m dòng tiếp theo chứa ba số nguyên duong u $_ j $ , v $_ j $ , c(u $_ j $ , v $_ j $ ) cho biết thông tin về tuyến đường thứ j. Giả thiết là u $_ j $ ≠ v $_ j $ ; c(u $_ j $ , v $_ j $ ) $<$ 10^6; \emph{ j } = 1, 2, …, m
+	\item Dòng thứ \emph{ j } trong số m dòng tiếp theo chứa ba số nguyên duong $u_{j}$ , $v_{j}$ , c($u_{j}$ , $v_{j}$ ) cho biết thông tin về tuyến đường thứ j. Giả thiết là $u_{j}$ ≠ $v_{j}$ ; c($u_{j}$ , $v_{j}$ ) $<$ 10^6; \emph{ j } = 1, 2, …, m
 \end{itemize}
 
 \subsubsection{Output}
@@ -41,8 +41,8 @@ Gồm T nhóm dòng tương ứng với T bộ test vào, mỗi nhóm dòng gồ
 \textbf{Ràng buộc:}
 \begin{itemize}
 	\item Có 30\% số test tương ứng với 30\% số điểm của bài có n  $\le$  20.
-	\item Có 30\% số test tương ứng với 30\% số điểm của bài có 20 $<$ n  $\le$  100, m  $\le$  10$^4$.
-	\item Có 40\% số test tương ứng với 30\% số điểm của bài có 100 $<$ n  $\le$  10$^3$, m  $\le$  10$^5$
+	\item Có 30\% số test tương ứng với 30\% số điểm của bài có 20 $<$ n  $\le$  100, m  $\le$  $10^{4}$.
+	\item Có 40\% số test tương ứng với 30\% số điểm của bài có 100 $<$ n  $\le$  $10^{3}$, m  $\le$  $10^{5}$
 \end{itemize}
 \begin{itemize}
 \end{itemize}

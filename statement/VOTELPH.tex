@@ -4,12 +4,12 @@
 
    Sau thành công của Bà Nà - Đường lên tiên cảnh, Alex muốn đầu tư vào một dự án du lịch khác trên dãy núi Trường sơn. Cùng với đoàn thám hiểm miệt mài tìm kiếm, cuối cùng Alex cũng tìm được một địa điểm vô cùng lý tưởng để khởi công xây dựng dự án này.  
 
-   Vùng núi gồm   \textbf{    N   }   ngọn núi mà Alex chọn có cấu trúc rất đặc biệt. Nếu quan sát trên bản đồ 2D (mặt phẳng tọa độ Oxy) thì mỗi ngọn núi có thể được biểu diễn bởi một đường Parabola có phương trình là ax   $^    2   $   + bx + c (với a $<$ 0). Trên bản đồ này, Alex tiến hành thiết kế các tuyến cáp treo. Có   \textbf{    Q   }   tuyến cáp treo sẽ được quy hoạch, vị trí cụ thể của điểm khởi đầu và điểm kết thúc của chúng chưa được xác định vì chưa có bản thống kê kinh phí chi tiết. Tuy nhiên, theo dự kiến ban đầu thì tuyến cáp treo thứ i sẽ bắt đầu tại hoành độ L   $_    i   $   và kết thúc tại hoành độ R   $_    i   $   trên bản đồ 2D.  
+   Vùng núi gồm   \textbf{    N   }   ngọn núi mà Alex chọn có cấu trúc rất đặc biệt. Nếu quan sát trên bản đồ 2D (mặt phẳng tọa độ Oxy) thì mỗi ngọn núi có thể được biểu diễn bởi một đường Parabola có phương trình là $ax^{2}$   + bx + c (với a $<$ 0). Trên bản đồ này, Alex tiến hành thiết kế các tuyến cáp treo. Có   \textbf{    Q   }   tuyến cáp treo sẽ được quy hoạch, vị trí cụ thể của điểm khởi đầu và điểm kết thúc của chúng chưa được xác định vì chưa có bản thống kê kinh phí chi tiết. Tuy nhiên, theo dự kiến ban đầu thì tuyến cáp treo thứ i sẽ bắt đầu tại hoành độ $L_{i}$   và kết thúc tại hoành độ $R_{i}$   trên bản đồ 2D.  
 
    Alex đặt AN TOÀN lên mọi tiêu chí trong quá trình thi công dự án này. Có hai điều Alex quan tâm nhất:  
 \begin{itemize}
 	\item     Để cho du khách có cảm giác an toàn nhất, độ cao của cáp treo so với mực nước biển sẽ không đổi trong suốt đường đi. Nói cách khác, tuyến cáp treo có thể được mô tả bởi một đường thẳng song song với trục x của bản đồ 2D.   
-	\item     Độ cao của cáp sẽ phải lớn hơn độ cao của tất cả các ngọn núi mà nó đi qua ít nhất 1 đơn vị. Cụ thể hơn, nếu Hi là độ cao của tuyến cáp treo thứ i, thì    \textbf{     H     $_      i     $     = 1 + max(a     $_      k     $     x     $^      2     $     + b     $_      k     $     x + c     $_      k     $     | 1 ≤ k ≤ N và L     $_      i     $     ≤ x ≤ R     $_      i     $     )    }    (a    $_     k    $    , b    $_     k    $    , c    $_     k    $    là thông số của Parabola biểu diễn ngọn núi thứ k).   
+	\item     Độ cao của cáp sẽ phải lớn hơn độ cao của tất cả các ngọn núi mà nó đi qua ít nhất 1 đơn vị. Cụ thể hơn, nếu Hi là độ cao của tuyến cáp treo thứ i, thì    \textbf{     $H_{i}$     = 1 + max($a_{k}$     $x^{2}$     + $b_{k}$     x + $c_{k}$     | 1 ≤ k ≤ N và $L_{i}$     ≤ x ≤ $R_{i}$     )    }    ($a_{k}$    , $b_{k}$    , $c_{k}$    là thông số của Parabola biểu diễn ngọn núi thứ k).   
 \end{itemize}
 
    Bạn hãy giúp Alex tính toán độ cao an toàn tối thiểu của mỗi đường cáp treo nhé.  
@@ -17,13 +17,13 @@
 \subsubsection{   Input  }
 \begin{itemize}
 	\item     Dòng đầu chứa 2 số nguyên    \textbf{     N    }    và    \textbf{     Q    }    tương ứng với số đỉnh núi và số tuyến cáp treo.   
-	\item     Dòng thứ i trong số N dòng tiếp theo chứa 3 số thực    \textbf{     a     $_      i     $}    ,    \textbf{     b     $_      i     $}    và    \textbf{     c     $_      i     $}    mô tả ngọn núi thứ i.   
-	\item     Dòng thứ i trong số Q dòng cuối chứa 2 số thực    \textbf{     L     $_      i     $}    và    \textbf{     R     $_      i     $}$_$    mô tả tuyến cáp treo thứ i.   
+	\item     Dòng thứ i trong số N dòng tiếp theo chứa 3 số thực    \textbf{     $a_{i}$}    ,    \textbf{     $b_{i}$}    và    \textbf{     $c_{i}$}    mô tả ngọn núi thứ i.   
+	\item     Dòng thứ i trong số Q dòng cuối chứa 2 số thực    \textbf{     $L_{i}$}    và    \textbf{     $R_{i}$}$_$    mô tả tuyến cáp treo thứ i.   
 \end{itemize}
 
 \subsubsection{   Output  }
 \begin{itemize}
-	\item     Xuất ra Q dòng, dòng thứ i chứa 1 số thực là độ cao    \textbf{     H     $_      i     $}    tìm được cho mỗi tuyến cáp treo, với ít nhất 2 chữ số sau dấu phẩy.   
+	\item     Xuất ra Q dòng, dòng thứ i chứa 1 số thực là độ cao    \textbf{     $H_{i}$}    tìm được cho mỗi tuyến cáp treo, với ít nhất 2 chữ số sau dấu phẩy.   
 \end{itemize}
 
 \subsubsection{   Giới hạn  }
@@ -35,9 +35,9 @@
 
    Ngoài ra trong tất cả các test:  
 \begin{itemize}
-	\item     -10 ≤ a    $_     i    $    $<$ 0   
-	\item     -10    $^     3    $    ≤ b    $_     i    $    , c    $_     i    $    ≤ 10    $^     3    $
-	\item     -10    $^     3    $    ≤ L    $_     i    $    ≤ R    $_     i    $    ≤ 10    $^     3    $
+	\item     -10 ≤ $a_{i}$    $<$ 0   
+	\item     -$10^{3}$    ≤ $b_{i}$    , $c_{i}$    ≤ $10^{3}$
+	\item     -$10^{3}$    ≤ $L_{i}$    ≤ $R_{i}$    ≤ $10^{3}$
 	\item     Các số trong input có không quá 2 chữ số sau dấu phẩy   
 \end{itemize}
 

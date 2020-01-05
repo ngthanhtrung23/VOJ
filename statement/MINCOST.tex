@@ -3,20 +3,20 @@
 Cho một mạng đối xứng có n đỉnh, mỗi cạnh của mạng có một khả năng thông qua và một cước phí vận chuyển nhất định (như nhau theo cả hai chiều). Cho trước một lượng hàng S cần vận chuyển từ đỉnh nguồn (đánh số là s) tới đỉnh đích (đánh số là f). Hãy tìm một phương án vận chuyển, nghĩa là hãy xác định trên mỗi cạnh của mạng cần vận chuyển bao nhiêu hàng, theo chiều nào, sao cho phù hợp với khả năng thông qua của mạng (trên mỗi cạnh lượng hàng vận chuyển không vượt quá khả năng thông qua của cạnh) và vận chuyển được lượng hàng S từ nguồn về đích với tổng chi phí vận chuyển là nhỏ nhất.
 \\Về mặt toán học, bài toán tìm luồng với chi phí nhỏ nhất có thể diễn đạt như sau:
 
-Cực tiểu hóa hàm chi phí ∑c$_ij $ x$_ij $ với điều kiện:
+Cực tiểu hóa hàm chi phí ∑$c_{ij}$ $x_{ij}$ với điều kiện:
 \begin{enumerate}
-	\item ∑(x$_ij $ - x$_ji $ ) với j = 1..n, có giá trị
+	\item ∑($x_{ij}$ - $x_{ji}$ ) với j = 1..n, có giá trị
 \begin{itemize}
 	\item S nếu i = s
 	\item 0 nếu i ≠ s; i ≠ n
 	\item -S nếu i = f
 \end{itemize}
-	\item 0 ≤ x$_ij $ ≤ d$_ij $ với mọi cạnh (i, j)
+	\item 0 ≤ $x_{ij}$ ≤ $d_{ij}$ với mọi cạnh (i, j)
 
  
 \end{enumerate}
 
-Ở đây đỉnh nguồn được đánh số là s, đỉnh đích là f, c$_ij $ là chi phí vận chuyển một đơn vị hàng trên cạnh (i, j), d$_ij $ là khả năng thông qua của cạnh (i, j); còn x$_ij $ là khối lượng hàng vận chuyển trên cạnh (i, j) cần xác định.
+Ở đây đỉnh nguồn được đánh số là s, đỉnh đích là f, $c_{ij}$ là chi phí vận chuyển một đơn vị hàng trên cạnh (i, j), $d_{ij}$ là khả năng thông qua của cạnh (i, j); còn $x_{ij}$ là khối lượng hàng vận chuyển trên cạnh (i, j) cần xác định.
 
 \subsubsection{Input}
 \begin{itemize}
@@ -61,8 +61,8 @@ Cực tiểu hóa hàm chi phí ∑c$_ij $ x$_ij $ với điều kiện:
 \emph{Giới hạn: }
 \begin{itemize}
 	\item n  $\le$  100
-	\item d$_ij $  $\le$  30000
-	\item c$_ij $  $\le$  10 $^ 9 $
+	\item $d_{ij}$  $\le$  30000
+	\item $c_{ij}$  $\le$  $10^{9}$
 \end{itemize}
 
 Phạm vi tính toán là Longint.
