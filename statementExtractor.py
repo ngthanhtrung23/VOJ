@@ -109,19 +109,29 @@ def extractNSections(n):
 
         start = 0
 
+        statementFound = False
+
         while start < len(parts):
             partMatches = re.search(pattern2, parts[start])
 
-            if not partMatches:
-                statement += parts[start] + '\n'
-                start += 1
-            else:
+            if partMatches:
                 break
 
-        for i in range(start, len(parts) - 1, 2):
+            statementFound = True
+            statement += parts[start] + '\n'
+            start += 1
+
+        # if 'KQUERY2' in name:
+        #     print(parts)
+
+        if not statementFound and start + 1 < len(parts):
+            statement += parts[start + 1] + '\n'
+            start += 2
+
+        for i in range(start, len(parts) - 1):
             try:
                 subsectionMatches = re.search(pattern2, parts[i])
-                if not subsectionMatches:
+                if not subsectionMatches or re.match(pattern2, parts[i + 1]):
                     continue
                 subsectionName = subsectionMatches.group(1).strip()
                 formattedSubsectionName = format(subsectionName)

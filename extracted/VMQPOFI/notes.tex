@@ -1,0 +1,34 @@
+Và bây giờ...
+Bạn sẽ giúp Pirate thực hiện thí nghiệm của anh ấy. Bạn được giao cho một biểu thức đúng dạng PN. Biểu thức gồm một số các toán hạng và các toán tử cộng, trừ, nhân.  
+\begin{itemize}
+	\item \textbf{      Thử thách thứ nhất     }    của bạn là    \textbf{      sử dụng tất cả toán hạng và toán tử}    của biểu thức đã cho để sắp xếp thành một biểu thức mới dưới dạng QPN. Khi sử dụng thuật toán QPN để tính toán biểu thức mới sẽ thu được    \textbf{     kết quả tương tự    }    như khi tính toán biểu thức đã cho bằng thuật toán PN.   
+	\item \textbf{      Thử thách thứ hai     }    của bạn cũng là tạo ra một biểu thức QPN có kết quả tương tự với biểu thức PN được cho. Bạn vẫn phải    \textbf{sử dụng tất cả các toán hạng}    trong biểu thức ban đầu. Điều đặc biệt là bạn có quyền    \textbf{đổi dấu các toán hạng}    (số âm thành số dương và ngược lại). Ngoài ra, bạn có quyền    \textbf{sử dụng toán tử một cách tự do nhưng không được dùng dấu trừ}    . Nói các khác, bạn chỉ được sử dụng dấu cộng và dấu nhân.   
+\end{itemize}
+
+   Bạn có thể chọn giải một trong hai thứ thách hoặc cả hai. Chúc bạn may mắn!
+Example
+\begin{verbatim}
+\textbf{Input:}
+5
+\\4 3 2 * -
+\\
+\\\textbf{Output:}
+3 2 4 * -
+\\-3 2 4 * + \end{verbatim}
+
+Lưu ý        : vì kết quả của biểu thức có thể rất lớn, trong chương trình chấm bài, kết quả của mỗi biểu thức sẽ được lấy modulo $10^{9$    + 7 để so sánh với nhau.   }
+Giới hạn
+\begin{itemize}
+	\item 
+
+     N ≤ 100001. Trong 30\% số test, N ≤ 9.    
+	\item     Biểu thức ở Input được đảm bảo là một biểu thức dạng Postfix Notation đúng (luôn có kết quả).   
+	\item     Mỗi toán hạng trong biểu thức ở Input là một số nguyên có trị tuyệt đối không vượt quá $10^{4}$    .   
+\end{itemize}
+Cách tính điểm
+\begin{itemize}
+	\item     Nếu chỉ trả lời đúng một trong hai thử thách, bạn được 80\% số điểm của test.   
+	\item     Nếu trả lời đúng cả hai thử thách, bạn được 100\% số điểm của test.   
+	\item     Nếu bạn không in N số 0 ở dòng tương ứng với thử thách nào, tức là bạn chọn trả lời thử thách đó. Trong trường hợp này, nếu trả lời sai thử thách đó thì bạn sẽ được 0\% số điểm của cả test.   
+	\item     Trong thời gian diễn ra vòng thi, chương trình của bạn sẽ được chấm trên test ví dụ của đề bài. Nếu bạn sai ở test này thì kết quả sẽ là "Wrong Answer". Ngược lại, dù bạn được trọn điểm hay một phần điểm, kết quả vẫn được hiển thị là "Accepted".   
+\end{itemize}
