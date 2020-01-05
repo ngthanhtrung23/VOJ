@@ -4,11 +4,11 @@
 
 \subsection{   Cúp FA  }
 
-   Cúp FA là cúp bóng đá lâu đời nhất từ trước tới nay. Cup FA đá theo thể thức loại trực tiếp. Giải đấu gồm 2\textasciicircumN đội, đá trong N vòng. Vòng đầu tiên có 2\textasciicircum(N – 1) trận đấu, 2\textasciicircum(N – 1) đội thắng sẽ vào vòng 2. 2\textasciicircum(N – 1) đội thua bị loại. Cứ tiếp tục cho đến khi chỉ còn 1 đội duy nhất và đó là đội vô địch.  
+   Cúp FA là cúp bóng đá lâu đời nhất từ trước tới nay. Cup FA đá theo thể thức loại trực tiếp. Giải đấu gồm 2^N đội, đá trong N vòng. Vòng đầu tiên có 2^(N – 1) trận đấu, 2^(N – 1) đội thắng sẽ vào vòng 2. 2^(N – 1) đội thua bị loại. Cứ tiếp tục cho đến khi chỉ còn 1 đội duy nhất và đó là đội vô địch.  
 
-   Vòng 1 có 2\textasciicircum(N – 1) trận đấu được đánh số từ 1 đến 2\textasciicircum(N – 1). Ở vòng 1, đội 1 gặp đội 2, 3 gặp 4, …, đội (2k + 1) gặp đội (2k + 2). Ở vòng 2, đội thắng trận 1 sẽ gặp đội thắng trận 2, …, đội thắng trận (2k + 1) gặp đội thắng trận 2k + 2.  
+   Vòng 1 có 2^(N – 1) trận đấu được đánh số từ 1 đến 2^(N – 1). Ở vòng 1, đội 1 gặp đội 2, 3 gặp 4, …, đội (2k + 1) gặp đội (2k + 2). Ở vòng 2, đội thắng trận 1 sẽ gặp đội thắng trận 2, …, đội thắng trận (2k + 1) gặp đội thắng trận 2k + 2.  
 
-   Vòng 2 sẽ có 2\textasciicircum(N – 2) trận đấu. Các trận được đánh số lại từ 1 đến 2\textasciicircum(N – 2). Ở vòng 3, đội thắng trận 1 sẽ gặp đội thắng trận 2, …, đội thắng trận (2k + 1) gặp đội thắng trận 2k + 2.  
+   Vòng 2 sẽ có 2^(N – 2) trận đấu. Các trận được đánh số lại từ 1 đến 2^(N – 2). Ở vòng 3, đội thắng trận 1 sẽ gặp đội thắng trận 2, …, đội thắng trận (2k + 1) gặp đội thắng trận 2k + 2.  
 
    Các trận đấu sẽ không có tỉ số hòa (nếu hòa 2 đội sẽ đá penalty). Bạn đã biết kết quả bốc thăm ban đầu, và tỉ lệ khả năng thắng, thua giữa hai đội bất kì. Hãy sắp xếp các đội theo khả năng đội đó vô địch giảm dần.  
 
@@ -16,11 +16,11 @@
 
    Dòng thứ nhất ghi số N. (1 ≤ N ≤ 8)  
 
-   Tiếp theo là ma trận P gồm các số nguyên trong khoảng [0, 100] kích thước 2\textasciicircumN * 2\textasciicircumN. Trong đó P[x, y] là tỉ lệ phần trăm khả năng đội x thắng được đội y khi 2 đội gặp nhau. Dữ liệu đảm bảo P[x, y] + P[y, x] = 100; P[x, x] = 0.  
+   Tiếp theo là ma trận P gồm các số nguyên trong khoảng [0, 100] kích thước 2^N * 2^N. Trong đó P[x, y] là tỉ lệ phần trăm khả năng đội x thắng được đội y khi 2 đội gặp nhau. Dữ liệu đảm bảo P[x, y] + P[y, x] = 100; P[x, x] = 0.  
 
 \subsubsection{   Kết quả  }
 
-   Ghi ra 2\textasciicircumN dòng mỗi dòng ghi ra số hiệu của một đội được sắp xếp giảm dần theo cơ hội vô địch của đội đó. Nếu 2 đội có cùng cơ hội vô địch như nhau thì in ra đội có số hiệu nhỏ hơn trước.  
+   Ghi ra 2^N dòng mỗi dòng ghi ra số hiệu của một đội được sắp xếp giảm dần theo cơ hội vô địch của đội đó. Nếu 2 đội có cùng cơ hội vô địch như nhau thì in ra đội có số hiệu nhỏ hơn trước.  
 
 \subsubsection{   Ví dụ  }
 \begin{verbatim}
