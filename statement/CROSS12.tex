@@ -2,16 +2,16 @@
 
  
 
-Một nhóm n bạn đi tập văn nghệ về khuya. Cả nhóm chỉ có 1 chiếc đèn pin và phải qua 1 cây cầu gồm m đoạn, các đoạn được đánh số từ 1 đến m kể từ vị trí bờ đang đứng sang bờ kia. Coi vị trí n bạn đang đứng là đoạn thứ 0 và đầu cầu bên kia là vị trí m+1. Cây cầu đã cũ, do đó có một số đoạn của cầu đã hỏng và không thể đi vào được, hơn nữa cầu chỉ chịu được sức nặng của không quá hai người. Để qua cầu an toàn, các bạn phải tổ chức qua cầu theo cách thức sau: mỗi lượt chỉ có 2 người cầm đèn pin để cùng nhau qua cầu và không được đi vào những vị trí đoạn cầu bị hỏng. Sau khi hai người qua đến đầu cầu bên kia thì những người đã qua cầu phải cử 1 người đem đèn pin trở lại đầu cầu bên này để các bạn khác tiếp tục qua cầu ... Mỗi đơn vị thời gian, bạn thứ i có thể bước không quá r $_ i $ đoạn, nghĩa là nếu bạn thứ i đang ở đoạn thứ s của cây cầu thì bạn có thể di chuyển vào một trong các đoạn thứ s+1, s+2, ..., s+r $_ i $ nếu đoạn đó không bị hỏng. Việc thực hiện một bước đi đòi hỏi 1 đơn vị thời gian. Do đó có thể có người qua cầu nhanh hơn, có người qua cầu chậm hơn. Nếu 2 bạn đi cùng nhau qua cầu thì họ phải di chuyển qua cầu với thời gian của bạn chậm hơn. Vì đã quá khuya nên cả nhóm bàn nhau tìm cách qua cầu sớm nhất có thể được.
+Một nhóm n bạn đi tập văn nghệ về khuya. Cả nhóm chỉ có 1 chiếc đèn pin và phải qua 1 cây cầu gồm m đoạn, các đoạn được đánh số từ 1 đến m kể từ vị trí bờ đang đứng sang bờ kia. Coi vị trí n bạn đang đứng là đoạn thứ 0 và đầu cầu bên kia là vị trí m+1. Cây cầu đã cũ, do đó có một số đoạn của cầu đã hỏng và không thể đi vào được, hơn nữa cầu chỉ chịu được sức nặng của không quá hai người. Để qua cầu an toàn, các bạn phải tổ chức qua cầu theo cách thức sau: mỗi lượt chỉ có 2 người cầm đèn pin để cùng nhau qua cầu và không được đi vào những vị trí đoạn cầu bị hỏng. Sau khi hai người qua đến đầu cầu bên kia thì những người đã qua cầu phải cử 1 người đem đèn pin trở lại đầu cầu bên này để các bạn khác tiếp tục qua cầu ... Mỗi đơn vị thời gian, bạn thứ i có thể bước không quá $r_{i}$ đoạn, nghĩa là nếu bạn thứ i đang ở đoạn thứ s của cây cầu thì bạn có thể di chuyển vào một trong các đoạn thứ s+1, s+2, ..., s+$r_{i}$ nếu đoạn đó không bị hỏng. Việc thực hiện một bước đi đòi hỏi 1 đơn vị thời gian. Do đó có thể có người qua cầu nhanh hơn, có người qua cầu chậm hơn. Nếu 2 bạn đi cùng nhau qua cầu thì họ phải di chuyển qua cầu với thời gian của bạn chậm hơn. Vì đã quá khuya nên cả nhóm bàn nhau tìm cách qua cầu sớm nhất có thể được.
 
-\textbf{Yêu cầu } : Cho biết vị trí các đoạn cầu bị hỏng và khả năng di chuyển của từng bạn (được mô tả bằng các số r $_ 1 $ , r $_ 2 $ , ..., r $_ n $ ), hãy tính khoảng thời gian ngắn nhất để n bạn qua được cầu. Giải thiết rằng luôn có cách để cả nhóm vượt qua cầu.
+\textbf{Yêu cầu } : Cho biết vị trí các đoạn cầu bị hỏng và khả năng di chuyển của từng bạn (được mô tả bằng các số $r_{1}$ , $r_{2}$ , ..., $r_{n}$ ), hãy tính khoảng thời gian ngắn nhất để n bạn qua được cầu. Giải thiết rằng luôn có cách để cả nhóm vượt qua cầu.
 
 \textbf{Ràng buộc } : 50\% số tests ứng với 50\% số điểm của bài có n ≤ 10.
 
 \subsubsection{Input}
 \begin{itemize}
 	\item Dòng thứ nhất chứa hai số nguyên dương n và m tương ứng là số bạn trong nhóm và số đoạn của cây cầu (n ≤ 10000; m ≤ 100000).
-	\item Dòng thứ hai chứ n số nguyên dương r $_ 1 $ , r $_ 2 $ , ..., r $_ n $ (r $_ i $ ≤ 100, i = 1, 2, ..., n).
+	\item Dòng thứ hai chứ n số nguyên dương $r_{1}$ , $r_{2}$ , ..., $r_{n}$ ($r_{i}$ ≤ 100, i = 1, 2, ..., n).
 	\item Dòng thứ ba chứa một xâu gồm m ký tự '0' hoặc '1' mô tả trạng thái của cây cầu. Ký tự thứ i của xâu là '0' nếu đoạn cầu thứ i không bị hỏng có thể đi vào được, là '1' nếu đoạn cầu thứ i bị hỏng không thể đi vào được.
 \end{itemize}
 

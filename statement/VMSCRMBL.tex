@@ -4,7 +4,7 @@ Nếu đang sở hữu một chiếc Smartphone, iPod hay iPad, chắc hẳn b�
 
 \subsubsection{Tổng quan về trò chơi}
 
-\textbf{Scramble with friends } là một trò chơi đối kháng 2 người trên iPhone, iPad, Android... Bạn có thể chơi với những đối thủ ngẫu nhiên trên mạng, hoặc với bạn bè trên facebook của mình. Mỗi ván chơi gồm 3 lượt và người chiến thắng là người có tổng điểm cao hơn sau 3 lượt đó. Trong mỗi lượt chơi, bạn được cho một bảng vuông kích thước 4x4 có chứa các chữ cái từ A-Z. Mỗi chữ cái trong bảng này đi kèm với một giá trị điểm tương ứng (số nằm ở góc trên phải). Bạn cần tìm các từ tiếng Anh xuất hiện trong bảng theo nghĩa: một chuỗi chữ cái thuộc các ô kề cạnh hoặc kề đỉnh với ô trước nó và không có ô nào lặp lại 2 lần. Cụ thể hơn: các chữ cái của một từ cần xuất hiện trong dãy các ô vuông t $_ 1 $ , t $_ 2 $ , ..., t $_ k $ sao cho ô t $_ i $ có cạnh chung hoặc đỉnh chung với ô t $_ i+1 $ , với 1 ≤ i $<$ k và t $_ i $ ≠ t $_ j $ với 1 ≤ i, j ≤ k và i ≠ j. Khi tìm được một từ, bạn được cho một số điểm nhất định, được mô tả ở phía dưới.
+\textbf{Scramble with friends } là một trò chơi đối kháng 2 người trên iPhone, iPad, Android... Bạn có thể chơi với những đối thủ ngẫu nhiên trên mạng, hoặc với bạn bè trên facebook của mình. Mỗi ván chơi gồm 3 lượt và người chiến thắng là người có tổng điểm cao hơn sau 3 lượt đó. Trong mỗi lượt chơi, bạn được cho một bảng vuông kích thước 4x4 có chứa các chữ cái từ A-Z. Mỗi chữ cái trong bảng này đi kèm với một giá trị điểm tương ứng (số nằm ở góc trên phải). Bạn cần tìm các từ tiếng Anh xuất hiện trong bảng theo nghĩa: một chuỗi chữ cái thuộc các ô kề cạnh hoặc kề đỉnh với ô trước nó và không có ô nào lặp lại 2 lần. Cụ thể hơn: các chữ cái của một từ cần xuất hiện trong dãy các ô vuông $t_{1}$ , $t_{2}$ , ..., $t_{k}$ sao cho ô $t_{i}$ có cạnh chung hoặc đỉnh chung với ô $t_{i+1}$ , với 1 ≤ i $<$ k và $t_{i}$ ≠ $t_{j}$ với 1 ≤ i, j ≤ k và i ≠ j. Khi tìm được một từ, bạn được cho một số điểm nhất định, được mô tả ở phía dưới.
 
 
 \includegraphics{http://vn.spoj.com/content/voj:Scramble-1}
@@ -44,15 +44,15 @@ Người chơi jess4002 đạt được số điểm gấp 4 lần đối thủ 
 
 Sau rất nhiều thời gian nghiên cứu, người ta đã thu thập được một số thông tin về những cao thủ Scramble như sau:
 \begin{itemize}
-	\item Khi bắt đầu một lượt chơi, họ cần t $_ 0 $ thời gian để phân tích bảng chữ cái được cho, tìm chiến thuật thích hợp cũng như tìm từ đầu tiên
+	\item Khi bắt đầu một lượt chơi, họ cần $t_{0}$ thời gian để phân tích bảng chữ cái được cho, tìm chiến thuật thích hợp cũng như tìm từ đầu tiên
 	\item Trong suốt thời gian chơi, họ không cần mất thêm thời gian suy nghĩ hoặc tìm từ: Trong khi những ngón tay của họ đang di chuyển với tốc độ chóng mặt, thì bộ não của họ còn làm việc với tốc độ nhanh hơn - do đó họ luôn tìm được những từ tiếp theo khi ngón tay còn chưa chỉ xong từ hiện tại.
 	\item Thời gian để ngón tay chỉ ra 1 từ:
 \begin{itemize}
 	\item Thời gian để ngón tay của họ di chuyển đến chữ cái đầu tiên của từ chỉ phụ thuộc vào vị trí trên bảng (mà KHÔNG phụ thuộc vào vị trí hay tốc độ trước đó của ngón tay). Thời gian để di chuyển đến vị trí ở hàng i, cột j của bảng là p(i,j)
-	\item Thời gian để di chuyển giữa ô (i,j) và ô (i+di,j+dj) là di $^ 2 $ + dj $^ 2 $ .
+	\item Thời gian để di chuyển giữa ô (i,j) và ô (i+di,j+dj) là $di^{2}$ + $dj^{2}$ .
 	\item Ví dụ, tổng thời gian để người chơi đoán được từ SCRAMBLE trong hình minh họa phía trên là:
 \begin{itemize}
-	\item p(1,1) + (0 $^ 2 $ + 1 $^ 2 $ ) + (1 $^ 2 $ + 0 $^ 2 $ ) + (1 $^ 2 $ + 0 $^ 2 $ ) + (1 $^ 2 $ + 1 $^ 2 $ ) + (1 $^ 2 $ + 1 $^ 2 $ ) + (1 $^ 2 $ + 0 $^ 2 $ ) + (1 $^ 2 $ + 0 $^ 2 $ )
+	\item p(1,1) + ($0^{2}$ + $1^{2}$ ) + ($1^{2}$ + $0^{2}$ ) + ($1^{2}$ + $0^{2}$ ) + ($1^{2}$ + $1^{2}$ ) + ($1^{2}$ + $1^{2}$ ) + ($1^{2}$ + $0^{2}$ ) + ($1^{2}$ + $0^{2}$ )
 \end{itemize}
 \end{itemize}
 	\item Với nhiều năm kinh nghiệm, họ biết tất cả các từ trong từ điển của trò chơi.
@@ -68,7 +68,7 @@ Sau rất nhiều thời gian nghiên cứu, người ta đã thu thập đượ
 	\item 4 dòng tiếp theo, mỗi dòng gồm 4 số nguyên dương phân cách nhau bởi ít nhất một dấu cách, mô tả giá trị điểm của các ô trên bảng
 	\item Tiếp theo đó là một dòng trống
 	\item 4 dòng tiếp theo, mỗi dòng gồm 4 số nguyên dương phân cách nhau bởi ít nhất một dấu cách, số thứ j ở dòng i là p(i,j) - thời gian để người chơi di chuyển ngón tay đến ô (i,j).
-	\item Dòng tiếp theo ghi số nguyên t $_ 0 $
+	\item Dòng tiếp theo ghi số nguyên $t_{0}$
 	\item Dòng cuối cùng ghi số nguyên dương là thời gian của một lượt chơi.
 \end{itemize}
 
@@ -77,7 +77,7 @@ Sau rất nhiều thời gian nghiên cứu, người ta đã thu thập đượ
 	\item N ≤ 100
 	\item Độ dài từ ≤ 16
 	\item Trong bộ test chính thức dùng để tính điểm chương trình của bạn, không có chữ cái nào xuất hiện nhiều hơn 2 lần trong bảng. Điều này không đúng với test ví dụ (cũng là test bạn được chấm trong quá trình thi).
-	\item 0 ≤ t $_ 0 $ ≤ 100
+	\item 0 ≤ $t_{0}$ ≤ 100
 	\item 0 ≤ p(i,j) ≤ 100
 	\item 0 ≤ giá trị điểm của các ô trên bảng ≤ 100
 	\item 0 ≤ thời gian của 1 lượt chơi ≤ 100

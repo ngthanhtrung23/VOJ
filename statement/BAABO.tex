@@ -2,10 +2,10 @@
 
 
 
-   The 2*N (3  $\le$  N  $\le$  1,000) cows have assembled the Bovine Accordion and Banjo Orchestra!  They possess various levels of skill on their respective instruments: accordionist i has an associated talent level A   $_    i   $   (0  $\le$  A   $_    i   $    $\le$  1,000); banjoist j has an associated talent level B   $_    j   $   (0  $\le$  B   $_    j   $    $\le$  1,000).  
+   The 2*N (3  $\le$  N  $\le$  1,000) cows have assembled the Bovine Accordion and Banjo Orchestra!  They possess various levels of skill on their respective instruments: accordionist i has an associated talent level $A_{i}$   (0  $\le$  $A_{i}$    $\le$  1,000); banjoist j has an associated talent level $B_{j}$   (0  $\le$  $B_{j}$    $\le$  1,000).  
 
    The combined A   
-\includegraphics{../../../files/gif/%5Cdisplaystyle%7Ba%7D%7Bw%7D%7Be%7D%7Bs%7D%7Bo%7D%7Bm%7D%7Be%7D%5Cne%7Bs%7D%7Bs%7D%27%7Bo%7D%7Bf%7B%7Ba%7D%7D%7D%7Bp%7D%7Ba%7D%7Bi%7D%7Br%7D%5Cin%7Bg%7B%7Bb%7D%7D%7D%7Be%7D%7Bt%7D%7Bw%7D%7Be%7D%7Be%7D%7Bn%7D%7Bc%7D%7Bo%7D%7Bw%7D%7Bs%7D%7Bw%7D%7Bi%7D%7Bt%7D%7Bh%7D%7Bt%7D%7Ba%7D%5Cle%7Bn%7D%7Bt%7D%7Bs%7D%7BA%7D}$_    i   $   and B   $_    j   $   is directly proportional to the talents of each cow in the pair so a concert with those two cows will earn FJ precisely A   $_    i   $   * B   $_    j   $   dollars in "charitable donations".  FJ wishes to maximize the sum of all revenue obtained by his cows by pairing them up in the most profitable way.  
+\includegraphics{../../../files/gif/%5Cdisplaystyle%7Ba%7D%7Bw%7D%7Be%7D%7Bs%7D%7Bo%7D%7Bm%7D%7Be%7D%5Cne%7Bs%7D%7Bs%7D%27%7Bo%7D%7Bf%7B%7Ba%7D%7D%7D%7Bp%7D%7Ba%7D%7Bi%7D%7Br%7D%5Cin%7Bg%7B%7Bb%7D%7D%7D%7Be%7D%7Bt%7D%7Bw%7D%7Be%7D%7Be%7D%7Bn%7D%7Bc%7D%7Bo%7D%7Bw%7D%7Bs%7D%7Bw%7D%7Bi%7D%7Bt%7D%7Bh%7D%7Bt%7D%7Ba%7D%5Cle%7Bn%7D%7Bt%7D%7Bs%7D%7BA%7D}$_    i   $   and $B_{j}$   is directly proportional to the talents of each cow in the pair so a concert with those two cows will earn FJ precisely $A_{i}$   * $B_{j}$   dollars in "charitable donations".  FJ wishes to maximize the sum of all revenue obtained by his cows by pairing them up in the most profitable way.  
 
    Unfortunately, FJ's accordionists are a bit stuck up and stubborn. If accordionist i is paired with banjoist j, then accordionists i+1..N refuse to be paired with banjoists 1..j-1. This creates restrictions on which pairs FJ can form. FJ thus realizes that in order to maximize his profits, he may have to leave some cows unpaired.  
 
@@ -13,7 +13,7 @@
 
    After all pairings are made, a list is constructed of the groups of each of the consecutive skipped musicians (of either instrument). Every group of one or more consecutive skipped cows will gather together to consume kegs of ice cold orange soda in an amount proportional to the square of the sum of their wasted talent.  
 
-   Specifically, FJ has calculated that if the x-th to y-th accordionists are skipped, they will consume precisely (A   $_    x   $   + A   $_    x+1   $   + A   $_    x+2   $   + ... + A   $_    y   $   )   $^    2   $   dollars worth of orange soda in the process of drinking themselves into oblivion. An identical relationship holds for the banjoists. FJ realizes that he'll end up getting stuck with the bill for his cows' drinking, and thus takes this into account when choosing which pairings to make.  
+   Specifically, FJ has calculated that if the x-th to y-th accordionists are skipped, they will consume precisely ($A_{x}$   + $A_{x+1}$   + $A_{x+2}$   + ... + $A_{y}$   )   $^    2   $   dollars worth of orange soda in the process of drinking themselves into oblivion. An identical relationship holds for the banjoists. FJ realizes that he'll end up getting stuck with the bill for his cows' drinking, and thus takes this into account when choosing which pairings to make.  
 
    Find the maximum amount of total profit that FJ can earn after the contributions are collected and the orange soda is paid for.  
 
@@ -21,9 +21,9 @@
 
    * Line 1: A single integer: N  
 
-   * Lines 2..N+1: Line i+1 contains the single integer: A   $_    i   $
+   * Lines 2..N+1: Line i+1 contains the single integer: $A_{i}$
 
-   * Lines N+2..2*N+1: Line i+N+1 contains the single integer: B   $_    i   $
+   * Lines N+2..2*N+1: Line i+N+1 contains the single integer: $B_{i}$
 
 \subsubsection{   Output  }
 
@@ -48,4 +48,4 @@
 
    There are 6 cows: 3 accordionists and 3 banjoists. The accordionists have talent levels (1, 1, 5), and the banjoists have talent levels (5, 1, 1).  
 
-   FJ pairs accordionist 3 with banjoist 1 to get earn A   $_    3   $   * B   $_    1   $   = 5 * 5 = 25 in profit.  He loses a total of (1 + 1)   $^    2   $   + (1 + 1)   $^    2   $   = 8 dollars due to the cost of soda for his remaining cows. Thus his final (net) profit is 25 - 8 = 17.  
+   FJ pairs accordionist 3 with banjoist 1 to get earn $A_{3}$   * $B_{1}$   = 5 * 5 = 25 in profit.  He loses a total of (1 + 1)   $^    2   $   + (1 + 1)   $^    2   $   = 8 dollars due to the cost of soda for his remaining cows. Thus his final (net) profit is 25 - 8 = 17.  

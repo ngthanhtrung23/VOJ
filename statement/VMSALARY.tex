@@ -8,7 +8,7 @@ Tại công ty VM15, có \textbf{ N } nhân viên được đánh số từ 1. T
 
 Nếu nhân viên x là cấp trên trực tiếp của nhân viên y và nhân viên y là cấp trên của nhân viên z thì x là cấp trên (nhưng không trực tiếp) của nhân viên z.
 
-Nhân viên thứ i có mức lương là \textbf{ C $_ i $} . Hãy đếm số bộ ba nhân viên \textbf{ (x, y, z) } khác nhau sao cho :
+Nhân viên thứ i có mức lương là \textbf{ $C_{i}$} . Hãy đếm số bộ ba nhân viên \textbf{ (x, y, z) } khác nhau sao cho :
 \begin{itemize}
 	\item Nhân viên thứ \textbf{ x } là cấp trên của nhân viên thứ \textbf{ y } và thứ \textbf{ z } (không cần là cấp trên trực tiếp).
 	\item Lương của nhân viên thứ \textbf{ x } cao hơn lương của nhân viên thứ \textbf{ y } và thứ \textbf{ z } .
@@ -18,8 +18,8 @@ Nhân viên thứ i có mức lương là \textbf{ C $_ i $} . Hãy đếm số 
 \subsubsection{Dữ liệu vào}
 \begin{itemize}
 	\item Dòng 1: chứa số nguyên dương \textbf{ N } thể hiện số nhân viên.
-	\item Dòng 2: chứa một số nguyên dương \textbf{ C $_ 1 $} thể hiện tiền lương của CEO (nhân viên 1).
-	\item \textbf{N-1 } dòng tiếp theo: dòng thứ \textbf{ i } chứa 2 số nguyên dương \textbf{ P $_ i+1 $} và \textbf{ C $_ i+1 $} lần lượt thể hiện cấp trên trực tiếp và tiền lương của nhân viên thứ \textbf{ i+1 } .
+	\item Dòng 2: chứa một số nguyên dương \textbf{ $C_{1}$} thể hiện tiền lương của CEO (nhân viên 1).
+	\item \textbf{N-1 } dòng tiếp theo: dòng thứ \textbf{ i } chứa 2 số nguyên dương \textbf{ $P_{i+1}$} và \textbf{ $C_{i+1}$} lần lượt thể hiện cấp trên trực tiếp và tiền lương của nhân viên thứ \textbf{ i+1 } .
 \end{itemize}
 
 \subsubsection{Dữ liệu ra}
@@ -30,11 +30,11 @@ Nhân viên thứ i có mức lương là \textbf{ C $_ i $} . Hãy đếm số 
 
 \subsubsection{Giới hạn}
 \begin{itemize}
-	\item \textbf{1 ≤ N ≤ 10 $^ 5 $ . }
-	\item \textbf{1 ≤ C $_ i $ ≤ 10 $^ 9 $ . }
+	\item \textbf{1 ≤ N ≤ $10^{5}$ . }
+	\item \textbf{1 ≤ $C_{i}$ ≤ $10^{9}$ . }
 	\item \textbf{20\% } số test, \textbf{ N ≤ 100. }
-	\item \textbf{15\% } số test, \textbf{ N ≤ 10 $^ 5 $} , nhân viên thứ \textbf{ x } là cấp trên của nhân viên thứ \textbf{ x+1 } , với \textbf{ 1 ≤ x $<$ N. }
-	\item \textbf{65\% } số test, \textbf{ N ≤ 10 $^ 5 $ . }
+	\item \textbf{15\% } số test, \textbf{ N ≤ $10^{5}$} , nhân viên thứ \textbf{ x } là cấp trên của nhân viên thứ \textbf{ x+1 } , với \textbf{ 1 ≤ x $<$ N. }
+	\item \textbf{65\% } số test, \textbf{ N ≤ $10^{5}$ . }
 	\item Trong quá trình thi, bài của bạn sẽ chỉ được chấm với test ví dụ.
 \end{itemize}
 

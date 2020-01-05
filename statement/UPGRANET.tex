@@ -1,10 +1,10 @@
 
 
-Một hệ thống gồm n máy tính đánh số từ 1 đến n được kết nối thành một mạng bởi m đoạn cáp mạng đánh số từ 1 đến m. Đoạn cáp mạng thứ i có thông lượng w $_ i $ kết nối hai máy u $_ i $ , v $_ i $ cho phép truyền dữ liệu theo cả hai chiều giữa hai máy này.
+Một hệ thống gồm n máy tính đánh số từ 1 đến n được kết nối thành một mạng bởi m đoạn cáp mạng đánh số từ 1 đến m. Đoạn cáp mạng thứ i có thông lượng $w_{i}$ kết nối hai máy $u_{i}$ , $v_{i}$ cho phép truyền dữ liệu theo cả hai chiều giữa hai máy này.
 
-Một dãy các máy x $_ 1 $ , x $_ 2 $ , …, x $_ p $ trong đó giữa hai máy x $_ j $ và x $_ j+1 $ (j = 1, 2, …, p-1) có đoạn cáp nối được gọi là một đường truyền tin từ máy x $_ 1 $ tới máy x $_ p $ . Thông lượng của đường truyền tin được xác định như là thông lượng nhỏ nhất trong số các thông lượng của các đoạn cáp mạng trên đường truyền. Giả thiết là mạng được kết nối sao cho có đường truyền tin giữa hai máy bất kì và giữa hai máy có không quá một đoạn cáp mạng nối chúng.
+Một dãy các máy $x_{1}$ , $x_{2}$ , …, $x_{p}$ trong đó giữa hai máy $x_{j}$ và $x_{j+1}$ (j = 1, 2, …, p-1) có đoạn cáp nối được gọi là một đường truyền tin từ máy $x_{1}$ tới máy $x_{p}$ . Thông lượng của đường truyền tin được xác định như là thông lượng nhỏ nhất trong số các thông lượng của các đoạn cáp mạng trên đường truyền. Giả thiết là mạng được kết nối sao cho có đường truyền tin giữa hai máy bất kì và giữa hai máy có không quá một đoạn cáp mạng nối chúng.
 
-Người ta muốn nâng cấp mạng bằng cách tăng thông lượng của một số đoạn cáp nối trong mạng. Để tăng thông lượng của mỗi đoạn cáp mạng thêm một lượng d (d $>$ 0) ta phải trả một chi phí đúng bằng d. Việc nâng cấp mạng phải đảm bảo là sau khi hoàn tất, thông lượng của mỗi đoạn cáp mạng i đều bằng thông lượng của đường truyền tin có thông lượng lớn nhất từ máy u $_ i $ tới máy v $_ i $ .
+Người ta muốn nâng cấp mạng bằng cách tăng thông lượng của một số đoạn cáp nối trong mạng. Để tăng thông lượng của mỗi đoạn cáp mạng thêm một lượng d (d $>$ 0) ta phải trả một chi phí đúng bằng d. Việc nâng cấp mạng phải đảm bảo là sau khi hoàn tất, thông lượng của mỗi đoạn cáp mạng i đều bằng thông lượng của đường truyền tin có thông lượng lớn nhất từ máy $u_{i}$ tới máy $v_{i}$ .
 
 \textbf{Yêu cầu: } Tìm phương án nâng cấp các đoạn cáp mạng sao cho tổng chi phí nâng cấp là nhỏ nhất.
 
@@ -13,7 +13,7 @@ Người ta muốn nâng cấp mạng bằng cách tăng thông lượng của m
 	\item Dòng thứ nhất: Chứa hai số nguyên dương n, m (n, m  $\le$  10^5).
 \end{itemize}
 \begin{itemize}
-	\item Dòng thứ i trong số m dòng tiếp theo chứa ba số nguyên dương u $_ i $ , v $_ i $ , w $_ i $ (w $_ i $  $\le$  10^6),
+	\item Dòng thứ i trong số m dòng tiếp theo chứa ba số nguyên dương $u_{i}$ , $v_{i}$ , $w_{i}$ ($w_{i}$  $\le$  10^6),
 \\i = 1, 2, …, m.
 \end{itemize}
 

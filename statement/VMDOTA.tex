@@ -8,16 +8,16 @@
 
    Chuyện đến nước này, Pirate chỉ biết tìm đến gặp Cá Mập Hơn, vốn là kình địch của Cá Mập (vì hắn mập hơn), để xin giúp đỡ. Tên này cũng chả tử tế gì nên cố tình làm khó dễ Pirate. Hắn ra cho Pirate một câu đố hóc hiểm, nếu trả lời được thì mới vác mỡ đến giúp. Câu đố như sau:  
 
-   Giả sử rằng Pirate có N quả dừa. Quả dừa thứ i nặng A   $_    i   $   kí (A   $_    i   $   $>$ 0). Pirate không hề biết trọng lượng của các quả dừa này. Với mỗi quả dừa i, Cá Mập Hơn sẽ tính tích (A   $_    i   $   - A   $_    j   $   ) (với mọi 1 ≤ j ≤ N và j khác i). Hắn sẽ chỉ cho Pirate biết tích trên là số âm, số dương hay số 0 thông qua dãy kí tự B. Nhiệm vụ của Pirate là dựa vào dãy B để đoán ra trọng lượng của các quả dừa hoặc thông báo là dãy B không hợp lệ. Đặc biệt, dãy trọng lượng mà Pirate đoán ra phải có thứ tự từ điển nhỏ nhất.  
+   Giả sử rằng Pirate có N quả dừa. Quả dừa thứ i nặng $A_{i}$   kí ($A_{i}$   $>$ 0). Pirate không hề biết trọng lượng của các quả dừa này. Với mỗi quả dừa i, Cá Mập Hơn sẽ tính tích ($A_{i}$   - $A_{j}$   ) (với mọi 1 ≤ j ≤ N và j khác i). Hắn sẽ chỉ cho Pirate biết tích trên là số âm, số dương hay số 0 thông qua dãy kí tự B. Nhiệm vụ của Pirate là dựa vào dãy B để đoán ra trọng lượng của các quả dừa hoặc thông báo là dãy B không hợp lệ. Đặc biệt, dãy trọng lượng mà Pirate đoán ra phải có thứ tự từ điển nhỏ nhất.  
 
-\emph{    Dãy X    $_     1    $    , X    $_     2    $    , ..., X    $_     N    $    được gọi là có thứ tự từ điển nhỏ hơn dãy Y    $_     1    $    , Y    $_     2    $    , ..., Y    $_     N    $    nếu tồn tại k (1 ≤ k ≤ N) sao cho X    $_     1    $    = Y    $_     1    $    , X    $_     2    $    = Y    $_     2    $    , ..., X    $_     k - 1    $    = Y    $_     k - 1    $    và X    $_     k    $    $<$ Y    $_     k    $    .   }
+\emph{    Dãy $X_{1}$    , $X_{2}$    , ..., $X_{N}$    được gọi là có thứ tự từ điển nhỏ hơn dãy $Y_{1}$    , $Y_{2}$    , ..., $Y_{N}$    nếu tồn tại k (1 ≤ k ≤ N) sao cho $X_{1}$    = $Y_{1}$    , $X_{2}$    = $Y_{2}$    , ..., X    $_     k - 1    $    = Y    $_     k - 1    $    và $X_{k}$    $<$ $Y_{k}$    .   }
 
 \subsubsection{   Input  }
 
    Input gồm nhiều dòng:  
 \begin{itemize}
 	\item     Dòng thứ nhất ghi số T, số bộ test.   
-	\item     T dòng tiếp theo: mỗi dòng là một dãy các kí tự liên tiếp nhau thể hiện một dãy B đã được mô tả trong đề bài. Kí tự thứ i là '+' nếu tích (A    $_     i    $    - A    $_     j    $    ) (với mọi 1 ≤ j ≤ N và j khác i) là số dương, '-' nếu tích là số âm, '0' nếu tích bằng 0.   
+	\item     T dòng tiếp theo: mỗi dòng là một dãy các kí tự liên tiếp nhau thể hiện một dãy B đã được mô tả trong đề bài. Kí tự thứ i là '+' nếu tích ($A_{i}$    - $A_{j}$    ) (với mọi 1 ≤ j ≤ N và j khác i) là số dương, '-' nếu tích là số âm, '0' nếu tích bằng 0.   
 \end{itemize}
 
 \subsubsection{   Output  }

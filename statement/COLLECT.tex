@@ -2,11 +2,11 @@
 
  
 
-Một bộ sưu tập tiền xu cổ được coi là có giá trị phải gồm không ít hơn Z $_ 0 $ đồng tiền vàng, S $_ 0 $ đồng tiền bạc và M $_ 0 $ đồng tiền đồng. Bộ sưu tập ban đầu của Alibaba có một số lượng nhất định các đồng tiền vàng, bạc và đồng nhưng chưa phải là một bộ sưu tập có giá trị.
+Một bộ sưu tập tiền xu cổ được coi là có giá trị phải gồm không ít hơn $Z_{0}$ đồng tiền vàng, $S_{0}$ đồng tiền bạc và $M_{0}$ đồng tiền đồng. Bộ sưu tập ban đầu của Alibaba có một số lượng nhất định các đồng tiền vàng, bạc và đồng nhưng chưa phải là một bộ sưu tập có giá trị.
 
 Tại Trụ sở của Hiệp hội những người sưu tầm tiền cổ có đặt một máy đổi tiền để giúp hội viên đổi được các bộ sưu tập có giá trị.
 
-Tuy nhiên, máy đổi chỉ hỗ trợ việc đổi tiền trọn gói theo quy tắc đổi gói (Z $_ 1 $ , S $_ 1 $ , M $_ 1 $ ) lấy gói (Z $_ 2 $ , S $_ 2 $ , M $_ 2 $ ) đồng tiền. Các quy tắc đổi tiền khác nhau từng đôi một, được gán số hiệu tuần tự 1,2,3, . . . và được công bố trước. Hội viên có thể tạo gói tiền thích hợp từ bộ sưu tập của mình để thực hiện việc đổi tiền. Các đồng tiền nhận được sau mỗi lần đổi được gộp lại với các đồng tiền mà hội viên đang có để thành một bộ sưu tập mới và có thể được sử dụng để đổi trong những lần sau nếu cần. Số lần đổi không hạn chế, tuy nhiên, là người thực dụng, Alibaba luôn cố gắng giảm tới mức tối đa số lần đổi tiền. Mặt khác, để ngăn chặn việc đầu cơ, Hiệp hội quy định, trong mọi thời điểm, mỗi hội viên không được giữ quá 4 đồng tiền mỗi loại và không được phép đổi tiếp khi đã đổi được một bộ sưu tập có giá trị.
+Tuy nhiên, máy đổi chỉ hỗ trợ việc đổi tiền trọn gói theo quy tắc đổi gói ($Z_{1}$ , $S_{1}$ , $M_{1}$ ) lấy gói ($Z_{2}$ , $S_{2}$ , $M_{2}$ ) đồng tiền. Các quy tắc đổi tiền khác nhau từng đôi một, được gán số hiệu tuần tự 1,2,3, . . . và được công bố trước. Hội viên có thể tạo gói tiền thích hợp từ bộ sưu tập của mình để thực hiện việc đổi tiền. Các đồng tiền nhận được sau mỗi lần đổi được gộp lại với các đồng tiền mà hội viên đang có để thành một bộ sưu tập mới và có thể được sử dụng để đổi trong những lần sau nếu cần. Số lần đổi không hạn chế, tuy nhiên, là người thực dụng, Alibaba luôn cố gắng giảm tới mức tối đa số lần đổi tiền. Mặt khác, để ngăn chặn việc đầu cơ, Hiệp hội quy định, trong mọi thời điểm, mỗi hội viên không được giữ quá 4 đồng tiền mỗi loại và không được phép đổi tiếp khi đã đổi được một bộ sưu tập có giá trị.
 
 Yêu cầu: Cho biết số lượng các đồng tiền vàng, bạc, đồng mà Alibaba có ban đầu và các quy tắc đổi tiền. Hãy chỉ ra tất cả các bộ sưu tập tiền cổ có giá trị mà Alibaba có thể có được sau một số lần đổi không vượt quá k cho trước.
 
@@ -14,9 +14,9 @@ Yêu cầu: Cho biết số lượng các đồng tiền vàng, bạc, đồng m
 
 Dòng đầu ghi số nguyên dương K ( K  $\le$  1000 )
 
-Dòng thứ 2 ghi 6 số nguyên không âm Z, S, M, Z $_ 0 $ , S $_ 0 $ , M $_ 0 $ ( 0  $\le$  Z, S, M, Z $_ 0 $ , S $_ 0 $ , M $_ 0 $  $\le$  4 )
+Dòng thứ 2 ghi 6 số nguyên không âm Z, S, M, $Z_{0}$ , $S_{0}$ , $M_{0}$ ( 0  $\le$  Z, S, M, $Z_{0}$ , $S_{0}$ , $M_{0}$  $\le$  4 )
 
-Các dòng tiếp theo mỗi dòng ghi 6 số nguyên không âm Z $_ 1 $ , S $_ 1 $ , M $_ 1 $ , Z $_ 2 $ , S $_ 2 $ , M $_ 2 $ xác định một quy tắc đổi tiền (0  $\le$  Z $_ 1 $ , S $_ 1 $ , M $_ 1 $ , Z $_ 2 $ , S $_ 2 $ , M $_ 2 $  $\le$  4 )
+Các dòng tiếp theo mỗi dòng ghi 6 số nguyên không âm $Z_{1}$ , $S_{1}$ , $M_{1}$ , $Z_{2}$ , $S_{2}$ , $M_{2}$ xác định một quy tắc đổi tiền (0  $\le$  $Z_{1}$ , $S_{1}$ , $M_{1}$ , $Z_{2}$ , $S_{2}$ , $M_{2}$  $\le$  4 )
 
 \subsubsection{Output}
 
@@ -24,7 +24,7 @@ Nếu không tồn tại cách đổi để có được bộ sưu tập có gi�
 
 Trong trường hợp ngược lại, dòng đầu ghi số v là số các bộ tiền cổ có giá trị mà Alibaba có thể đổi được.
 
-Dòng thứ i trong v dòng tiếp theo ghi 4 số nguyên Z $_ i $ , S $_ i $ , M $_ i $ , k $_ i $ mô tả bộ sưu tập có giá trị thứ i và số lần đổi k $_ i $ ít nhất không vượt quá k cần thực hiện để có được bộ sưu tập ấy. ( Các bộ Z $_ i $ , S $_ i $ , M $_ i $ phải đưa ra theo thứ tự từ điển )
+Dòng thứ i trong v dòng tiếp theo ghi 4 số nguyên $Z_{i}$ , $S_{i}$ , $M_{i}$ , $k_{i}$ mô tả bộ sưu tập có giá trị thứ i và số lần đổi $k_{i}$ ít nhất không vượt quá k cần thực hiện để có được bộ sưu tập ấy. ( Các bộ $Z_{i}$ , $S_{i}$ , $M_{i}$ phải đưa ra theo thứ tự từ điển )
 
 \subsubsection{Example}
 \begin{verbatim}

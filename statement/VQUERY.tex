@@ -19,7 +19,7 @@ Người ta cần thực hiện R*Q truy vấn với dãy số, mỗi truy vấn
 	\item Q dòng tiếp theo, mỗi dòng gồm 5 số nguyên dương r, a, b, c, d mô tả một truy vấn:
 \begin{itemize}
 	\item Đặt L là kết quả của truy vấn 2 gần nhất. Nếu chưa có truy vấn 2 nào, L = 0.
-	\item Nếu r = 1, truy vấn bạn cần trả lời là 1 u k với u = (L*a+c) mod N + 1, k = (L*b+d) mod 10 $^ 9 $ + 1.
+	\item Nếu r = 1, truy vấn bạn cần trả lời là 1 u k với u = (L*a+c) mod N + 1, k = (L*b+d) mod $10^{9}$ + 1.
 	\item Nếu r = 2, truy vấn bạn cần trả lời là 2 u v với u = (L*a+c) mod N + 1, v = (L*b+d) mod N + 1. Chú ý rằng trong trường hợp này, u có thể lớn hơn v, và bạn cần tìm số lớn nhất trong các phần tử có chỉ số từ v đến u.
 	\item Nếu r = 3, truy vấn bạn cần trả lời là 3 x với x = (L*a + c) mod (P+1), với P là số truy vấn 1 và 3 đã được thực hiện.
 \end{itemize}
@@ -35,10 +35,10 @@ Với mỗi truy vấn loại 2, in ra một dòng duy nhất là kết quả c�
 \subsubsection{Giới hạn:}
 \begin{itemize}
 	\item 20\% test đầu tiên có 1  $\le$  N, R*Q  $\le$  1000
-	\item 20\% test tiếp theo không có truy vấn loại 3, 1  $\le$  N, R*Q  $\le$  10 $^ 5 $ .
-	\item 30\% test tiếp theo có số lượng truy vấn loại 3 không quá 100, 1  $\le$  N, R*Q  $\le$  10 $^ 5 $
-	\item 30\% test cuối cùng có 1  $\le$  N, R*Q  $\le$  10 $^ 5 $ .
-	\item 1  $\le$  Ai, a, b, c, d  $\le$  10 $^ 9 $
+	\item 20\% test tiếp theo không có truy vấn loại 3, 1  $\le$  N, R*Q  $\le$  $10^{5}$ .
+	\item 30\% test tiếp theo có số lượng truy vấn loại 3 không quá 100, 1  $\le$  N, R*Q  $\le$  $10^{5}$
+	\item 30\% test cuối cùng có 1  $\le$  N, R*Q  $\le$  $10^{5}$ .
+	\item 1  $\le$  Ai, a, b, c, d  $\le$  $10^{9}$
 	\item R, Q  $\le$  5000
 \end{itemize}
 
