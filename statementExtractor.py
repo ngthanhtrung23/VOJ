@@ -5,7 +5,7 @@ extractedPath = './extracted'
 subsectionInfoFolderPath = './subsectionsInfo'
 lines = open(subsectionInfoFolderPath + '/3subsections.csv').read().strip().split('\n')
 
-pattern = 'subsubsection{.+?}'
+pattern = '\\\subsubsection{.+?}'
 compiledPattern = re.compile(pattern)
 
 for line in lines:
