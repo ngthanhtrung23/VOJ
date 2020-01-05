@@ -1,0 +1,40 @@
+\begin{itemize}
+	\item 1 ≤ N ≤ 4000
+	\item Trong 40\% số test N ≤ 30
+	\item 1 ≤ x, y ≤ N
+	\item 1 ≤ C $_ i $ ≤ 10 $^ 6 $
+\end{itemize}
+\begin{itemize}
+\end{itemize}
+\begin{verbatim}
+\textbf{Input:}
+5
+2 5
+1 3
+2 1
+4 2
+1 10 15 19
+
+\textbf{Output: }
+2 20
+
+
+\textbf{Giải thích}\end{verbatim}
+
+Các hành trình là:
+\begin{itemize}
+	\item Ngày 1: 5-2-4 (chi phí: 10)
+	\item Ngày 2: 3-1-2 (chi phí: 10)
+\end{itemize}
+
+Nếu đi hành trình 3-1-2 vào ngày 1 thì không hợp lệ vì ngôi làng thứ 2 vào lúc đó chưa có doanh trại.
+
+Một cách đi khác là:
+\begin{itemize}
+	\item Ngày 1: 5-2-1-3 (chi phí: 15)
+	\item Ngày 2: 2-4 (chi phí: 1)
+\end{itemize}
+
+Chi phí cách đi này là 16, nhỏ hơn cách bên trên tuy nhiên độ dài hành trình dài nhất là 3, không tối ưu.
+\begin{itemize}
+\end{itemize}

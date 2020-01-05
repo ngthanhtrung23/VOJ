@@ -1,0 +1,34 @@
+Mới đây hãng sản xuất đồ chơi có sáng kiến cho ra đời bộ đồ chơi XYZ “đoán hình” như sau: đồ chơi là một bảng điện tử có kích thước 5×N điểm sáng để giúp trẻ phân biệt được hai loại hình có kích thước 5×L (L ≤ N).  
+
+   Ví dụ:  
+\includegraphics{http://vn.spoj.pl/VO09/content/XYZ1.jpg}
+
+               Bảng điện tử có kích thức 5×8 (N=8)             
+\includegraphics{http://vn.spoj.pl/VO09/content/XYZ2.jpg}
+
+                       Loại hình 1                     
+\includegraphics{http://vn.spoj.pl/VO09/content/XYZ3.jpg}
+
+                       Loại hình 2                     
+
+                       Hai loại hình kích thước 5×3 (L=3)                     
+
+   Bảng điện tử hiển thị được gọi là chứa loại hình i (i=1 hoặc 2) nếu tồn tại vị trí từ cột thứ k đến cột (k+L-1) trên bảng điện tử hiển thị đúng loại hình i.  
+\includegraphics{http://vn.spoj.pl/VO09/content/XYZ4.jpg}
+
+               Ví dụ bảng điện tử 5×8 chỉ chứa loại hình 1             
+\includegraphics{http://vn.spoj.pl/VO09/content/XYZ5.jpg}
+
+               Ví dụ bảng điện tử 5×8 chỉ chứa loại hình 2             
+\includegraphics{http://vn.spoj.pl/VO09/content/XYZ6.jpg}
+
+               Ví dụ bảng điện tử 5×8  không chứa loại hình 1 và hình 2             
+\includegraphics{http://vn.spoj.pl/VO09/content/XYZ7.jpg}
+
+               Ví dụ bảng điện tử 5×8  chứa cả loại hình 1 và hình 2             
+
+   Mỗi lần bảng điện tử sẽ hiển thị và trẻ phải trả lời câu hỏi: bảng điện tử hiển thị có chứa loại hình 1 hay loại hình 2. Do đó, người ta muốn khảo sát xem có bao nhiêu cách hiển thị bảng điện tử khác nhau để bảng điện tử luôn chỉ chứa loại 1 hoặc chỉ chứa loại 2.  
+
+   Yêu cầu: Cho N và hai loại hình. Gọi k là số cách hiển thị bảng điện tử khác nhau để bảng điện tử luôn chỉ chứa loại 1 hoặc chỉ chứa loại 2. Hãy tính giá trị k  mod 10   $^    6   $   .  
+
+Có 50\% số test với 0$<$ L ≤ 3. Giải đúng các test này, thí sinh được không ít hơn 50\% số điểm tối đa cho toàn bộ bài toán.

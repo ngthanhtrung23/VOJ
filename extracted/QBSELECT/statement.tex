@@ -1,0 +1,12 @@
+Cho một bảng hình chữ nhật kích thước 4×n ô vuông. Các dòng được đánh số từ 1 đến 4, từ trên xuống dưới, các cột được đánh số từ 1 đến n từ trái qua phải.
+
+Ô nằm trên giao của dòng i và cột j được gọi là ô (i,j). Trên mỗi ô (i,j) có ghi một số nguyên aij , i =1, 2, 3, 4; j =1, 2, ..., n. Một cách chọn ô là việc xác định một tập con khác rỗng S của tập tất cả các ô của bảng sao cho không có hai ô nào trong S có chung cạnh. Các ô trong tập S được gọi là ô được chọn, tổng các số trong các ô được chọn được gọi là trọng lượng của cách chọn. Tìm cách chọn sao cho trọng lượng là lớn nhất.
+
+Ví dụ: Xét bảng với n=3 trong hình vẽ dưới đây:
+
+
+\includegraphics{http://www.spoj.pl/content/cun:select.JPEG}
+
+Cách chọn cần tìm là tập các ô S = \{(3,1), (1,2), (4,2), (3,3)\} với trọng lượng 32.
+
+Trong tất cả các test: n ≤ 10000, |a $_ ij $ | ≤ 30000. Có 50\% số lượng test với n ≤ 1000.

@@ -1,0 +1,12 @@
+Bạn được cho một đồ thị liên thông có V đỉnh và V-1 cạnh, với mỗi đỉnh sẽ có một trọng số tương ứng (các đỉnh khác nhau có thể có trọng số bằng nhau). Lần này, w có một số thao tác trên cây muốn nhờ bạn xử lí như sau:
+\begin{itemize}
+	\item 1 u v: hỏi trọng số bé nhất trong số các đỉnh trên đường đi từ u đến v.
+	\item 2 u v: hỏi trọng số lớn nhất trong số các đỉnh trên đường đi từ u đến v.
+	\item 3 u v: đảo ngược trọng số các đỉnh trên đường đi từ u đến v.
+\end{itemize}
+
+Giả sử các đỉnh trên đường đi từ u đến v lần lượt là: u, u $_ 1 $ , u $_ 2, $ u $_ 3,... $ u $_ k $$_ , $ v.
+
+Trọng số tương ứng là: w $_ u, $ w $_ u1, $ w $_ u2, $ w $_ u3,... $ w $_ uk, $ w $_ v. $
+
+Thì sau khi thực hiện thao tác loại 3 trọng số các đỉnh sẽ trở thành w $_ v, $ w $_ uk,... $ w $_ u2, $ w $_ u1, $ w $_ u $ .

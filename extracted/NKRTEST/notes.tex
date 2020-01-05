@@ -1,0 +1,34 @@
+\begin{verbatim}
+\textbf{Input:}
+4 4
+1 2 0
+1 3 0
+3 4 0
+2 4 1
+3
+0
+00
+01\end{verbatim}
+
+\textbf{Output:}
+\\+1 2
+\\+2 1
+\\-1 2
+
+\textbf{Giải thích: } Trong 2 lần thí nghiệm cuối robot đã chọn phòng 4 làm đích đến. Có 2 đường đi ngắn nhất giữa 1 và 4 :
+
+1 --(0)--$>$ 3 --(0)--$>$ 4
+
+1 --(0)--$>$ 2 --(1)--$>$ 4
+
+Trong đó 1, 3, 4 là đường có thứ tự từ điển nhỏ hơn.
+
+00 --$>$ chạy đúng, robot đi được độ dài K=2 và dừng tại S=1 phòng (phòng số 4).
+
+01 --$>$ mặc dù vẫn đi được đến phòng số 4, nhưng không phải là đường đẹp nhất. Nên robot sẽ chạy đúng đến sau bước thứ K=1 , sau bước đó số phòng có thể có chứa Robot là S=2 phòng (phòng số 2 và 3).
+
+\textbf{Giới hạn: }
+
+- 25\% số test đồ thị có dạng cây khung.
+
+- 40\% số test N $\le$ 100 và M $\le$ 200.

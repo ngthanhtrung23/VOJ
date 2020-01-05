@@ -1,0 +1,27 @@
+ 
+
+IOI 2008 diễn ra trong n + 1 ngày, các bài toán của IOI được đánh số từ 1 tới n.(n+1) và được phân bố vào các ngày thi theo lịch sau (mỗi ngày thi có n bài toán):
+\begin{itemize}
+	\item Ngày 1: Các bài toán từ 1 tới n
+	\item Ngày 2: Các bài toán từ n + 1 tới 2n
+	\item ...
+	\item Ngày i: Các bài toán từ (i - 1).n + 1 tới i.n
+	\item ...
+	\item Ngày n+1: Các bài toán từ n.n + 1 tới n.(n+1)
+\end{itemize}
+
+Các bài thi có một trong k dạng, bài thứ j có dạng là r $_ j $ (1  $\le$  r $_ j $  $\le$  k)
+
+Thể thức thi được thông báo cho mỗi đoàn như sau:
+\begin{itemize}
+	\item Mỗi đoàn sẽ có n + 1 học sinh tham gia
+	\item Hàng ngày, Ban tổ chức sẽ đưa một học sinh của đoàn đi tham quan thành phố, việc chọn học sinh nào cho đi tham quan là quyền của trưởng đoàn, nhưng phải đảm bảo điều kiện:
+\end{itemize}
+
+Cho đến khi IOI kết thúc, học sinh nào của đoàn cũng đã được đi tham quan thành phố. Như vậy mỗi ngày đoàn sẽ còn lại n học sinh tham gia thi, việc giao cho học sinh nào làm bài nào là quyền của phó đoàn nhưng mỗi học sinh chỉ được giao một bài và hai học sinh khác nhau sẽ phải nhận hai bài khác nhau.
+
+Kết thúc IOI, điểm đồng đội của mỗi đoàn sẽ được tính bằng tổng điểm của tất cả các lời giải các bài toán đã cho.
+
+Các thầy giáo trưởng, phó đoàn Việt Nam dự đoán rằng nếu học sinh thứ i của đoàn làm bài toán dạng j thì có thể thu được số điểm là c $_ ij $ (c $_ ij $ = 0 tương đương với lời dự đoán rằng học sinh thứ i không làm được bài toán dạng j).
+
+Hỏi các thầy sẽ sắp xếp lịch thi đấu cho các học sinh như thế nào để theo dự đoán, đoàn Việt Nam sẽ thu được số điểm nhiều nhất có thể.
