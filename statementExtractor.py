@@ -1,4 +1,6 @@
 import os, re
+import shutil
+
 from unidecode import unidecode
 from collections import defaultdict
 
@@ -71,12 +73,14 @@ def extract3Sections():
         open(extractedProblemFolder + '/notes.tex', 'w').write(notes.strip())
 
 def extractNSections(n):
-    pattern = '\\\subsubsection{(.+)}'
+    pattern = '(\\\subsubsection{.+})'
+    pattern2 = '\\\subsubsection{(.+)}'
+
     compiledPattern = re.compile(pattern)
 
     lines = open(subsectionInfoFolderPath + '/' + str(n) + 'subsections.csv').read().strip().split('\n')
 
-    statementKeywords = ['yeucau', 'hanche', 'constraints', 'constraint', 'limit', 'phanbogioihantest']
+    statementKeywords = ['debai', 'yeucau', 'hanche', 'constraints', 'constraint', 'limit', 'phanbogioihantest']
     inputKeywords = ['input', 'dulieuvao', 'dulieu', 'quycachnhapdulieu']
     outputKeywords = ['output', 'ketqua', 'dulieura', 'quycachghiketqua']
 
@@ -89,32 +93,64 @@ def extractNSections(n):
 
         extractedProblemFolder = extractedPath + '/' + name
 
-        parts = compiledPattern.split(content)
+        try:
+            shutil.rmtree(extractedProblemFolder)
+        except Exception:
+            pass
 
-        statement = parts[0]
+        parts = list(filter(lambda c: c, map(lambda c: c.strip(), compiledPattern.split(content))))
+
+        statement = ''
         input = ''
         output = ''
         notes = ''
 
         # print(parts)
 
-        for i in range(1, len(parts), 2):
-            subsectionName = parts[i].strip()
-            formattedSubsectionName = format(subsectionName)
-            subsectionContent = parts[i + 1].strip() + '\n'
+        start = 0
 
-            content = subsectionName + '\n' + subsectionContent
-            if formattedSubsectionName in statementKeywords:
-                statement += content
-            elif formattedSubsectionName in inputKeywords:
-                input += content
-            elif formattedSubsectionName in outputKeywords:
-                output += content
+        while start < len(parts):
+            partMatches = re.search(pattern2, parts[start])
+
+            if not partMatches:
+                statement += parts[start] + '\n'
+                start += 1
             else:
-                notes += content
+                break
+
+        for i in range(start, len(parts) - 1, 2):
+            try:
+                subsectionMatches = re.search(pattern2, parts[i])
+                if not subsectionMatches:
+                    continue
+                subsectionName = subsectionMatches.group(1)
+                formattedSubsectionName = format(subsectionName)
+                subsectionContent = parts[i + 1].strip() + '\n'
+
+                content = subsectionName + '\n' + subsectionContent
+                if formattedSubsectionName in statementKeywords:
+                    statement += content
+                elif formattedSubsectionName in inputKeywords:
+                    input += content
+                elif formattedSubsectionName in outputKeywords:
+                    output += content
+                else:
+                    notes += content
+            except Exception as e:
+                print(e)
+                print(parts)
+                exit(0)
 
         if not (statement and input and output and notes):
             print("Couldn't find 4 parts for " + name)
+            # if not statement:
+            #     print('statement')
+            # if not input:
+            #     print('input')
+            # if not output:
+            #     print('output')
+            # if not notes:
+            #     print('notes')
             continue
 
         try:
@@ -129,6 +165,6 @@ def extractNSections(n):
         open(extractedProblemFolder + '/notes.tex', 'w').write(notes.strip())
 
 # analyze()
-extract3Sections()
+# extract3Sections()
 for i in range(4, 8):
     extractNSections(i)

@@ -1,1 +1,11 @@
  
+Đề bài
+Cho một bảng số A kích thước M*N (M hàng, N cột), thể hiện độ cao của các ô trên vương quốc Đồng Dư K. Độ cao của mỗi ô là một số nguyên từ 0 đến K-1. Các hàng được đánh số từ 1 đến M. Các cột được đánh số từ 1 đến N. Ô nằm ở hàng i, cột j được kí hiệu là ô A(i,j).
+
+Bạn được phép thực hiện 2 loại thao tác trên bảng:
+\begin{itemize}
+	\item Cộng 1 đơn vị tất cả các số trên hàng R, với R do bạn lựa chọn (phép cộng được thực hiện trên module K). Nói cách khác, bạn chọn R, và với mỗi ô A(R,j) trên bảng, gán A(R,j) = ( A(R,j) + 1 ) mod K.
+	\item Cộng 1 đơn vị tất cả các số trên cột C, với C do bạn lựa chọn (phép cộng được thực hiện trên module K). Nói cách khác, bạn chọn C, và với mỗi ô A(i,C) trên bảng, gán A(i,C) = ( A(i,C) + 1 ) mod K.
+\end{itemize}
+
+Nhiệm vụ của bạn là tìm một dãy biến đổi gồm ít thao tác nhất để biến bảng về toàn số 0. Dữ liệu đảm bảo luôn tồn tại kết quả.
