@@ -5,16 +5,24 @@
 Given a sequence a1, a2,..., an and a integer S, your task is find a way to insert an operator ‘+’ , ‘-‘, ‘.‘, ‘\textasciitilde‘  to every neighbor pair of A, that the result of the expression after insert equal to S.
 
 Note that :
-\\- a . b = a + 2 * b
-\\- a \textasciitilde b = a - 2 * b
+
+
+- a . b = a + 2 * b
+
+
+- a \textasciitilde b = a - 2 * b
 
  
 
 \subsubsection{\textbf{\textbf{Input }}}
 
 
-\\First line :  N and S (2 ≤ N ≤ 22, |S| ≤ 5 * $10^{16}$ )
-\\Second line : N integers, a1, a2,..., an  (|ai| ≤ $10^{15}$ )
+
+
+First line :  N and S (2 ≤ N ≤ 22, |S| ≤ 5 * $10^{16}$ )
+
+
+Second line : N integers, a1, a2,..., an  (|ai| ≤ $10^{15}$ )
 
  
 
@@ -35,23 +43,39 @@ If there are way(s) to insert, output any of them, otherwise output “Impossibl
  
 
 \textbf{Input : }
-\\9 5
+
+
+9 5
 
 1 2 3 4 5 6 7 8 9
 
 \textbf{Output : }
-\\-\textasciitilde\textasciitilde\textasciitilde++++
 
 
-\\\textbf{Input : }
-\\3 -1
+-\textasciitilde\textasciitilde\textasciitilde++++
+
+
+
+
+\textbf{Input : }
+
+
+3 -1
 
 -2 5 7
-\\\textbf{Output : }
-\\Impossible
 
 
-\\\textbf{Details : }
-\\In first test case : 1 - 2 - 2 * 3 - 2 * 4 - 2 * 5 + 6 + 7 + 8 + 9 = 5
+\textbf{Output : }
+
+
+Impossible
+
+
+
+
+\textbf{Details : }
+
+
+In first test case : 1 - 2 - 2 * 3 - 2 * 4 - 2 * 5 + 6 + 7 + 8 + 9 = 5
 
 You may want to try another version \href{/problems/show/BLOPER}{ here } .

@@ -3,33 +3,65 @@
 
 
    Một xâu S có độ dài n gồm các kí tự x1x2…xn được gọi là xâu đối xứng nếu nó thỏa mãn xi=xn-i+1 với mọi i=1…n. Xâu s được gọi là CVPdrome nếu ta đảo lại trật tự các kí tự thì thu được một xâu đối xứng. Cho xâu s gồm n kí tự.   
-\\\textbf{    Yêu cầu   }   :Tính số xâu con (gồm các kí tự liên tiếp của s) là CVPdrome.  
 
 
-\\\textbf{    Input:   }
-\\   Dòng 1: Số nguyên dương N (1 $\le$ N $\le$ 3*10^5) là độ dài xâu s.   
-\\   Dòng 2: Xâu s, các kí tự trong s là các chữ cái latin thường hoặc hoa (‘A’->’Z’ hoặc ‘a’->’z’).  
+\textbf{    Yêu cầu   }   :Tính số xâu con (gồm các kí tự liên tiếp của s) là CVPdrome.  
 
 
-\\\textbf{    Ouput:   }
+
+
+\textbf{    Input:   }
+
+
+   Dòng 1: Số nguyên dương N (1 $\le$ N $\le$ 3*10^5) là độ dài xâu s.   
+
+
+   Dòng 2: Xâu s, các kí tự trong s là các chữ cái latin thường hoặc hoa (‘A’->’Z’ hoặc ‘a’->’z’).  
+
+
+
+
+\textbf{    Ouput:   }
 
    Một dòng duy nhất ghi số nguyên kết quả.  
 
    Ví dụ:  
 
 
-\\\textbf{    Input:   }
-\\   3   
-\\   aaa   
-\\\textbf{    Output:   }
-\\   6  
 
 
-\\\textbf{    Input:   }
-\\   3   
-\\   aAA   
-\\\textbf{    Output:   }
-\\   5  
+\textbf{    Input:   }
 
 
-\\   Giải thích các xâu (1,1),(1,3),(2,2),(2,3),(3,3) là các CVPdrome. Xâu aAA không là xâu đối xứng nhưng ta có thể viết lại  nó thành AaA là một xâu đối xứng.  
+   3   
+
+
+   aaa   
+
+
+\textbf{    Output:   }
+
+
+   6  
+
+
+
+
+\textbf{    Input:   }
+
+
+   3   
+
+
+   aAA   
+
+
+\textbf{    Output:   }
+
+
+   5  
+
+
+
+
+   Giải thích các xâu (1,1),(1,3),(2,2),(2,3),(3,3) là các CVPdrome. Xâu aAA không là xâu đối xứng nhưng ta có thể viết lại  nó thành AaA là một xâu đối xứng.  

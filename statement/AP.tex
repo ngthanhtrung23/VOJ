@@ -7,53 +7,137 @@
    You suspect that the smaller of the two sculptures was actually created by simply removing some spheres and pipes from the larger one. You want to write a program to test if this is possible.  
 
    The input will contain several test cases. One sculpture is described by numbering the spheres   
-\\   consecutively from 1, and listing the pairs of spheres which are connected by pipes. The   
-\\   numbering is chosen independently for each sculpture.  
 
 
-\\   Input   
-\\   One line containing an integer C, the number of test cases in the input file.   
-\\   For each test case, there will be:   
-\\   • One line containing the integer N, the number of spheres in the large sculpture.   
-\\   • N−1 lines, each containing a pair of space-separated integers, indicating that the two   
-\\   spheres with those numbers in the large sculpture are connected by a pipe.   
-\\   • One line containing the integer M, the number of spheres in the small sculpture.   
-\\   • M−1 lines, each containing a pair of space-separated integers, indicating that the two   
-\\   spheres with those numbers in the small sculpture are connected by a pipe.  
+   consecutively from 1, and listing the pairs of spheres which are connected by pipes. The   
 
 
-\\   Output   
-\\   C lines, one for each test case in the order they occur in the input file, containing:   
-\\   • "Case \#X: YES" if the small sculpture in case X could have been created from the large   
-\\   sculpture in case X   
-\\   • "Case \#X: NO" if it could not. (X is the number of the test case, between 1 and C.)   
-\\   Limits   
-\\   1  $\le$  C  $\le$  50   
-\\   2  $\le$  N  $\le$  50   
-\\   1  $\le$  M  $\le$  N  
+   numbering is chosen independently for each sculpture.  
+
+
+
+
+   Input   
+
+
+   One line containing an integer C, the number of test cases in the input file.   
+
+
+   For each test case, there will be:   
+
+
+   • One line containing the integer N, the number of spheres in the large sculpture.   
+
+
+   • N−1 lines, each containing a pair of space-separated integers, indicating that the two   
+
+
+   spheres with those numbers in the large sculpture are connected by a pipe.   
+
+
+   • One line containing the integer M, the number of spheres in the small sculpture.   
+
+
+   • M−1 lines, each containing a pair of space-separated integers, indicating that the two   
+
+
+   spheres with those numbers in the small sculpture are connected by a pipe.  
+
+
+
+
+   Output   
+
+
+   C lines, one for each test case in the order they occur in the input file, containing:   
+
+
+   • "Case \#X: YES" if the small sculpture in case X could have been created from the large   
+
+
+   sculpture in case X   
+
+
+   • "Case \#X: NO" if it could not. (X is the number of the test case, between 1 and C.)   
+
+
+   Limits   
+
+
+   1  $\le$  C  $\le$  50   
+
+
+   2  $\le$  N  $\le$  50   
+
+
+   1  $\le$  M  $\le$  N  
 
    Sample input   
-\\   2   
-\\   5   
-\\   1 2   
-\\   2 3   
-\\   3 4   
-\\   4 5   
-\\   4   
-\\   1 2   
-\\   1 3   
-\\   1 4   
-\\   5   
-\\   1 2   
-\\   1 3   
-\\   1 4   
-\\   4 5   
-\\   4   
-\\   1 2   
-\\   2 3   
-\\   3 4  
 
 
-\\   Sample output   
-\\   Case \#1: NO   
-\\   Case \#2: YES  
+   2   
+
+
+   5   
+
+
+   1 2   
+
+
+   2 3   
+
+
+   3 4   
+
+
+   4 5   
+
+
+   4   
+
+
+   1 2   
+
+
+   1 3   
+
+
+   1 4   
+
+
+   5   
+
+
+   1 2   
+
+
+   1 3   
+
+
+   1 4   
+
+
+   4 5   
+
+
+   4   
+
+
+   1 2   
+
+
+   2 3   
+
+
+   3 4  
+
+
+
+
+   Sample output   
+
+
+   Case \#1: NO   
+
+
+   Case \#2: YES  

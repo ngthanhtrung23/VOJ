@@ -1,8 +1,12 @@
 
 
 Mirko là tài xế xe tải. Công việc hàng ngày của anh là chuyên chở hàng hoá đi các thành phố. Chiếc xe tải của anh có thể chở được một lượng khối hàng tuỳ ý, tuy nhiên, nó chỉ cho phép Mirko mỗi lần được dỡ ra khối hàng nằm trên cùng (có thể coi xe tải của Mirko như 1 stack). Có 26 loại hàng hoá khác nhau, chúng được kí hiệu bằng các chữ cái trong bảng kí tự alphabet.
-\\
-\\Thành phố của Mirko gồm các con đường 1 chiều, với độ dài mỗi con đường là 1km. Ở thành phố này, MIrko chỉ di chuyển trên 3 loại đường sau:
+
+
+
+
+
+Thành phố của Mirko gồm các con đường 1 chiều, với độ dài mỗi con đường là 1km. Ở thành phố này, MIrko chỉ di chuyển trên 3 loại đường sau:
 \begin{itemize}
 	\item Loại 1: mỗi lần Mirko lái xe qua con đường này, anh ta phải chất thêm đúng 1 khối hàng ứng với con đường đó
 	\item Loại 2: mỗi lần Mirko lái xe qua con đường này, anh ta phải đỡ xuống khối hàng trên cùng của xe, và phải đúng với yêu cầu trên đường này
@@ -10,12 +14,24 @@ Mirko là tài xế xe tải. Công việc hàng ngày của anh là chuyên ch�
 \end{itemize}
 
 Lưu ý, ngoài các thao tác trên, Mirko không được phép lấy thêm hàng ở bất kì chỗ nào khác, cũng như không được dỡ bỏ hàng ở dọc đường.
-\\
-\\Hàng ngày, Mirko sẽ xuất phát ở thành phố 1, di chuyển qua các con đường, và kết thúc chuyến đi ở thành phố N. Ban đầu, xe Mirko không chở hàng, và khi kết thúc, các khối hàng có thể vẫn còn ở trên xe của Mirko.
-\\
-\\\textbf{Yêu cầu:} cho biết mạng lưới các con đường trong thành phố, hãy viết chương trình đếm số cách Mirko có thể lái xe tải trên chặng đường không quá K km. Mirko có thể đi qua 1 thành phố nhiều lần, miễn sao thoả mãn được các yêu cầu đã cho.
-\\
-\\\textbf{Input}
+
+
+
+
+
+Hàng ngày, Mirko sẽ xuất phát ở thành phố 1, di chuyển qua các con đường, và kết thúc chuyến đi ở thành phố N. Ban đầu, xe Mirko không chở hàng, và khi kết thúc, các khối hàng có thể vẫn còn ở trên xe của Mirko.
+
+
+
+
+
+\textbf{Yêu cầu:} cho biết mạng lưới các con đường trong thành phố, hãy viết chương trình đếm số cách Mirko có thể lái xe tải trên chặng đường không quá K km. Mirko có thể đi qua 1 thành phố nhiều lần, miễn sao thoả mãn được các yêu cầu đã cho.
+
+
+
+
+
+\textbf{Input}
 \begin{itemize}
 	\item Dòng đầu tiên của input gồm 3 số nguyên N,M,K (2  $\le$  N  $\le$  50, 0 $<$ M $<$ 2450, 0 $<$ K  $\le$  50)
 	\item M dòng tiếp theo mô tả các con đường trong thành phố. Mỗi dòng sẽ có dạng như sau:
@@ -27,11 +43,21 @@ Lưu ý, ngoài các thao tác trên, Mirko không được phép lấy thêm h�
 \end{itemize}
 
 Dữ liệu đảm bảo với mỗi con đường, x khác y, và không có 2 con đường nào nối cùng 1 cặp thành phố theo chung 1 hướng
-\\
-\\\textbf{Output:}
-\\Trên dòng duy nhất, in ra số cách Mirko có thể thực hiện được chuyến đi của mình, lấy modulo 10007
-\\
-\\Example:
+
+
+
+
+
+\textbf{Output:}
+
+
+Trên dòng duy nhất, in ra số cách Mirko có thể thực hiện được chuyến đi của mình, lấy modulo 10007
+
+
+
+
+
+Example:
 \begin{verbatim}
 \textbf{Input}
 2 1 10
