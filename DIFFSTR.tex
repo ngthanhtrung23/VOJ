@@ -14,7 +14,7 @@
 
 
 
-   Xâu a gọi là xâu con của S nếu tồn tại 1 dãy x thỏa mãn 0 $<$ x   $_    1   $   $<$ x   $_    2   $   $<$ ...$<$ x   $_    length(a)   $   $<$= length(S) và a   $_    i   $   = S   $_    Xi   $   với mọi i từ 1 đến length(a).  
+   Xâu a gọi là xâu con của S nếu tồn tại 1 dãy x thỏa mãn 0 $<$ x   $_    1   $   $<$ x   $_    2   $   $<$ ...$<$ x   $_    length(a)   $    $\le$  length(S) và a   $_    i   $   = S   $_    Xi   $   với mọi i từ 1 đến length(a).  
 
    Ví dụ xâu "aba" có 6 xâu con phân biệt khác rỗng là: "a", "b", "ab", "ba", "aa", "aba"  
 
@@ -22,7 +22,7 @@
 
 \subsubsection{   Input  }
 \begin{itemize}
-	\item     Dòng 1: số nguyên dương t là số test (t $<$= 5)   
+	\item     Dòng 1: số nguyên dương t là số test (t  $\le$  5)   
 	\item     Mỗi test có định dạng như sau:    
 \begin{itemize}
 	\item       Dòng 1: xâu S độ dài n     
@@ -56,7 +56,7 @@
 \begin{itemize}
 	\item     Trong tất cả các test n, m $>$= 1,   
 	\item \textbf{     Xâu S, B chỉ gồm chữ thường từ 'a'..'z'    }
-	\item     Trong 20\% số test, n, m $<$= 20   
-	\item     Trong 40\% số test tiếp theo, n, m $<$= 1.000 (10    $^     3    $    )   
-	\item     Trong 40\% số test tiếp theo, n, m $<$= 100.000 (10    $^     5    $    )   
+	\item     Trong 20\% số test, n, m  $\le$  20   
+	\item     Trong 40\% số test tiếp theo, n, m  $\le$  1.000 (10    $^     3    $    )   
+	\item     Trong 40\% số test tiếp theo, n, m  $\le$  100.000 (10    $^     5    $    )   
 \end{itemize}

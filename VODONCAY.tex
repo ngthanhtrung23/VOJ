@@ -1,6 +1,6 @@
 
 
-Hùng đang làm việc trong Công ty cao su X. Công ty có rừng cao su rất rộng, với những hàng cây cao su trồng cách đều thẳng tắp. Theo định kỳ, người ta thường phải chặt hạ cả hàng cây cao su đã hết hạn khai thác để trồng thay thế bằng hàng cây mới. Hùng phát hiện ra một bài toán tin học liên quan đến vấn đề này: Một nhóm công nhân được giao nhiệm vụ chặt hạ hàng cây gồm N cây được trồng dọc theo một đường thẳng với khoảng cách cố định giữa hai cây liên tiếp. Nếu các công nhân cưa đổ một cây, họ có thể cho nó đổ về phía bên trái hoặc bên phải dọc theo hàng cây. Một cây khi đổ có thể lật đổ cây khác bị nó rơi vào và có thể làm đổ nhiều cây khác, theo hiệu ứng lan truyền domino. Sau khi khảo sát kỹ, Hùng đã mô tả được hiệu ứng lan truyền domino như sau: Giả sử các cây trên hàng cây được đánh số từ 1 đến N, từ trái qua phải và chiều cao của cây i là hi (1 $<$= i $<$= N)
+Hùng đang làm việc trong Công ty cao su X. Công ty có rừng cao su rất rộng, với những hàng cây cao su trồng cách đều thẳng tắp. Theo định kỳ, người ta thường phải chặt hạ cả hàng cây cao su đã hết hạn khai thác để trồng thay thế bằng hàng cây mới. Hùng phát hiện ra một bài toán tin học liên quan đến vấn đề này: Một nhóm công nhân được giao nhiệm vụ chặt hạ hàng cây gồm N cây được trồng dọc theo một đường thẳng với khoảng cách cố định giữa hai cây liên tiếp. Nếu các công nhân cưa đổ một cây, họ có thể cho nó đổ về phía bên trái hoặc bên phải dọc theo hàng cây. Một cây khi đổ có thể lật đổ cây khác bị nó rơi vào và có thể làm đổ nhiều cây khác, theo hiệu ứng lan truyền domino. Sau khi khảo sát kỹ, Hùng đã mô tả được hiệu ứng lan truyền domino như sau: Giả sử các cây trên hàng cây được đánh số từ 1 đến N, từ trái qua phải và chiều cao của cây i là hi (1  $\le$  i  $\le$  N)
 \begin{itemize}
 	\item Nếu cây i đổ về bên trái thì tất cả các cây j với i – hi $<$ j $<$ i cũng sẽ đổ;
 	\item Nếu cây i đổ về bên phải thì tất cả các cây j với i $<$ j $<$ i + hi cũng sẽ đổ;
@@ -20,7 +20,7 @@ Do đó bài toán đặt ra đối với Hùng là: Xác định số lượng 
 \textbf{Kết quả}:
 \begin{itemize}
 	\item Dòng đầu tiên ghi số nguyên dương k là số lượng cây mà các công nhân cần cưa đổ;
-	\item Dòng thứ hai ghi dãy số nguyên c1, c2, …, ck trong đó |cj| (1 $<$= j $<$= k) là dãy chỉ số của các cây theo thứ tự các công nhân phải lần lượt cưa đổ, cj là số dương nếu cây cần cho đổ về bên phải và là số âm nếu cây cần cho đổ về bên trái. Nếu có nhiều cách thì chỉ cần đưa ra một cách tùy ý.
+	\item Dòng thứ hai ghi dãy số nguyên c1, c2, …, ck trong đó |cj| (1  $\le$  j  $\le$  k) là dãy chỉ số của các cây theo thứ tự các công nhân phải lần lượt cưa đổ, cj là số dương nếu cây cần cho đổ về bên phải và là số âm nếu cây cần cho đổ về bên trái. Nếu có nhiều cách thì chỉ cần đưa ra một cách tùy ý.
 \end{itemize}
 
 \textbf{Ví dụ}:
@@ -45,7 +45,7 @@ OUTPUT
 
 \textbf{Ràng buộc}:
 \begin{itemize}
-	\item Có 40\% số test ứng với 40\% số điểm của bài có 1 $<$= N $<$= 10000.
-	\item Có 40\% số test khác ứng với 40\% số điểm của bài có 1 $<$= N $<$= 100000.
-	\item Có 20\% số test còn lại ứng với 20\% số điểm của bài có 1 $<$= N $<$= 4000000.
+	\item Có 40\% số test ứng với 40\% số điểm của bài có 1  $\le$  N  $\le$  10000.
+	\item Có 40\% số test khác ứng với 40\% số điểm của bài có 1  $\le$  N  $\le$  100000.
+	\item Có 20\% số test còn lại ứng với 20\% số điểm của bài có 1  $\le$  N  $\le$  4000000.
 \end{itemize}

@@ -2,7 +2,7 @@
 
  
 
-Một lần, ktuan được thầy giáo cho bài tập về nhà, yêu cầu tính tổng tất cả các ước chung lớn nhất của các cặp số (i, j) thỏa mãn : 1$<$=i$<$ j$<$=N ( N là một số tự nhiên cho trước ). Rất nhanh chóng, ktuan đã cho ra một đoạn code như sau:
+Một lần, ktuan được thầy giáo cho bài tập về nhà, yêu cầu tính tổng tất cả các ước chung lớn nhất của các cặp số (i, j) thỏa mãn : 1 $\le$ i$<$ j $\le$ N ( N là một số tự nhiên cho trước ). Rất nhanh chóng, ktuan đã cho ra một đoạn code như sau:
 \begin{verbatim}
 
 \texttt{for i:=1 to N-1 do
@@ -17,7 +17,7 @@ Một lần, ktuan được thầy giáo cho bài tập về nhà, yêu cầu t�
 \begin{verbatim}
 
 \texttt{for(int i=1;i$<$ N;++i)
-    for(int j=i+1;j$<$=N;++j)
+    for(int j=i+1;j $\le$ N;++j)
         sum += gcd(i,j);
 }\end{verbatim}
 
@@ -28,7 +28,7 @@ Một lần, ktuan được thầy giáo cho bài tập về nhà, yêu cầu t�
 
 \subsubsection{Input}
 
-Gồm nhiều dòng, mỗi dòng là một số N (1 $<$= N $<$= 10\textasciicircum6) ứng với một test. Dữ liệu vào sẽ kết thúc sau khi gặp N=0 ( bạn không cần thực hiện test này ).
+Gồm nhiều dòng, mỗi dòng là một số N (1  $\le$  N  $\le$  10\textasciicircum6) ứng với một test. Dữ liệu vào sẽ kết thúc sau khi gặp N=0 ( bạn không cần thực hiện test này ).
 
 \subsubsection{Output}
 
