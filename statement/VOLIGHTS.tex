@@ -4,20 +4,20 @@
 
 Bờm có một cái sân hình chữ nhật có các kích thước là \textbf{ M } và \textbf{ N } mét. Khu vườn được chia thành \textbf{ M x N } ô vuông đơn vị \textbf{ 1 x 1 } mét vuông. Các hàng được đánh số liên tục từ \textbf{ 1 } đến \textbf{ M } , các cột được đánh số liên tục từ \textbf{ 1 } đến \textbf{ N } . Ô tại hàng \textbf{ i } cột \textbf{ j } sẽ có tọa độ \textbf{ [i, j] } .
 
-Sắp đến giáng sinh, Bờm đã trang trí cho cái sân của mình một \emph{ hệ thống đèn } . \emph{ Hệ thống đèn } có thiết kế như sau:
+Sắp đến giáng sinh, Bờm đã trang trí cho cái sân của mình một hệ thống đèn . Hệ thống đèn có thiết kế như sau:
 \begin{itemize}
-	\item Bờm làm một \emph{ hệ thống treo đèn } có kích thước \textbf{ M } , \textbf{ N } và cách mặt sân \textbf{ K + 1 } mét.
-	\item Tại tâm của mỗi hình vuông đơn vị, \emph{ hệ thống treo } sẽ cho xuống đất một \emph{ dây đèn } .
-	\item Trên mỗi \emph{ dây đèn } sẽ gắn đúng \textbf{ K } đèn, đèn thứ \textbf{ 1 } , \textbf{ 2 } , ..., \textbf{ i } , ..., \textbf{ K } sẽ lần lượt gắn tại các độ cao \textbf{ 1 } , \textbf{ 2 } , ..., \textbf{ i } , ..., \textbf{ K } mét.
+	\item Bờm làm một hệ thống treo đèn có kích thước \textbf{ M } , \textbf{ N } và cách mặt sân \textbf{ K + 1 } mét.
+	\item Tại tâm của mỗi hình vuông đơn vị, hệ thống treo sẽ cho xuống đất một dây đèn .
+	\item Trên mỗi dây đèn sẽ gắn đúng \textbf{ K } đèn, đèn thứ \textbf{ 1 } , \textbf{ 2 } , ..., \textbf{ i } , ..., \textbf{ K } sẽ lần lượt gắn tại các độ cao \textbf{ 1 } , \textbf{ 2 } , ..., \textbf{ i } , ..., \textbf{ K } mét.
 	\item Đèn nằm trên ô vuông đơn vị có tọa độ \textbf{ [i, j] } , tại độ cao \textbf{ u } sẽ có tọa độ là \textbf{ [u, i, j]ta } trong hệ thống đèn.
 \end{itemize}
 \begin{itemize}
 \end{itemize}
 
-Bờm cũng đã thiết thế cho mỗi đèn một \emph{ công tắc } . Hệ thống có đến \textbf{ K x M x N }\emph{ công tắc } , mỗi lần muốn mở cả hệ thống là phải tốn rất nhiều thời gian. Nên Bờm đã lập trình ra một \emph{ hệ thống hỗ trợ mở đèn } . Các bước sử dụng như sau:
+Bờm cũng đã thiết thế cho mỗi đèn một công tắc . Hệ thống có đến \textbf{ K x M x N }công tắc , mỗi lần muốn mở cả hệ thống là phải tốn rất nhiều thời gian. Nên Bờm đã lập trình ra một hệ thống hỗ trợ mở đèn . Các bước sử dụng như sau:
 \begin{enumerate}
 	\item Bờm sẽ chọn một số đèn để mở.
-	\item Sau đó, Bờm mở \emph{ hệ thống hỗ trợ } . Khi \emph{ hệ trống hỗ trợ } được mở, tắc cả các \emph{ công tắc } sẽ bị liệt và không còn sử dụng được nữa (để tránh việc sinh ra các lỗi trong quá trình hệ thống đang chạy). Nhưng bù lại \emph{ hệ thống hộ trợ } sẽ mở thêm một số đèn theo nguyên tắc sau:
+	\item Sau đó, Bờm mở hệ thống hỗ trợ . Khi hệ trống hỗ trợ được mở, tắc cả các công tắc sẽ bị liệt và không còn sử dụng được nữa (để tránh việc sinh ra các lỗi trong quá trình hệ thống đang chạy). Nhưng bù lại hệ thống hộ trợ sẽ mở thêm một số đèn theo nguyên tắc sau:
 \end{enumerate}
 \begin{itemize}
 	\item Nếu 2 đèn tại tọa độ [ \textbf{ x } , y1, z1] và [ \textbf{ x } , y2, z2] đã mở thì đèn tại [ \textbf{ x } , y1, z2] và [ \textbf{ x } , y2, z1] sẽ tự động mở.
@@ -27,12 +27,12 @@ Bờm cũng đã thiết thế cho mỗi đèn một \emph{ công tắc } . Hệ
 \begin{itemize}
 \end{itemize}
 
-Hiện tại Bờm đã mở một số đèn. Bạn hãy mở thêm ít nhất các đèn, để sau khi mở \emph{ hệ thống hỗ trợ } tắc cả đèn đều sáng.
+Hiện tại Bờm đã mở một số đèn. Bạn hãy mở thêm ít nhất các đèn, để sau khi mở hệ thống hỗ trợ tắc cả đèn đều sáng.
 
 
 \includegraphics{http://www.spoj.com/content/voj:VOLIGHTS.png}
 
-Hình trên mô tả trạng thái các đèn tại cùng \textbf{\emph{ độ cao x }} . Khi 2 đèn \textbf{\emph{ vàng [x, y1, z1] }}\emph{ và }\textbf{\emph{ [x, y2, x2] }} đã mở, thì 2 đèn \textbf{\emph{ xanh [x, y1, z2] }}\emph{ và }\textbf{\emph{ [x, y2, z1] }} sẽ tự mở (sau khi mở \emph{ hệ thống hỗ trợ } ).
+Hình trên mô tả trạng thái các đèn tại cùng \textbf{độ cao x} . Khi 2 đèn \textbf{vàng [x, y1, z1]}và\textbf{[x, y2, x2]} đã mở, thì 2 đèn \textbf{xanh [x, y1, z2]}và\textbf{[x, y2, z1]} sẽ tự mở (sau khi mở hệ thống hỗ trợ ).
 
  
 
@@ -40,12 +40,12 @@ Hình trên mô tả trạng thái các đèn tại cùng \textbf{\emph{ độ c
 \begin{itemize}
 	\item Dòng đầu tiên gổm 3 số \textbf{ K } , \textbf{ M } , \textbf{ N } .
 	\item Dòng thứ hai là số đèn đã được Bờm mở trước đó - \textbf{ Q } .
-	\item \textbf{Q } dòng tiếp theo, mỗi dòng gồm 3 số nguyên \textbf{ u } , \textbf{ i } , \textbf{ j }\emph{ (1 ≤ u ≤ K, 1 ≤ i ≤ M, 1 ≤ j ≤ N) } - viết cách nhau bởi dấu cách, là tọa độ bóng đèn đã được Bờm mở trước đó. Do không cẩn thận nên có một số đèn được Bờm ghi nhiều hơn 1 lần trong danh sách, mặc dù một đèn chỉ có thể mở một lần (tắc nhiên Bờm sẽ không tắc đèn đã được mở trước đó). Các bạn hãy cẩn thận !!!
+	\item \textbf{Q } dòng tiếp theo, mỗi dòng gồm 3 số nguyên \textbf{ u } , \textbf{ i } , \textbf{ j }(1 ≤ u ≤ K, 1 ≤ i ≤ M, 1 ≤ j ≤ N) - viết cách nhau bởi dấu cách, là tọa độ bóng đèn đã được Bờm mở trước đó. Do không cẩn thận nên có một số đèn được Bờm ghi nhiều hơn 1 lần trong danh sách, mặc dù một đèn chỉ có thể mở một lần (tắc nhiên Bờm sẽ không tắc đèn đã được mở trước đó). Các bạn hãy cẩn thận !!!
 \end{itemize}
 
 \subsubsection{Output}
 \begin{itemize}
-	\item Một dòng duy nhất là kết bài toán - số đèn phải mở thêm ít nhất, để sau khi mở \emph{ hệ thống hỗ trợ }\emph{ tắc cả các đèn đều sáng. }
+	\item Một dòng duy nhất là kết bài toán - số đèn phải mở thêm ít nhất, để sau khi mở hệ thống hỗ trợtắc cả các đèn đều sáng.
 \end{itemize}
 
 \subsubsection{Giới hạn}

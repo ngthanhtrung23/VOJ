@@ -1,21 +1,21 @@
 
 
-Bạn nhận được một hộp quà với một khóa số ở bên ngoài. Thông tin hiển thị trên khóa là một dãy \emph{ n } số nguyên \emph{ a }$_ 1 $ , \emph{ a }$_ 2 $ ,..., \emph{ $a_{n}$ , } các số nằm trong phạm vi từ 0 đến \emph{ k } . Có ( \emph{ n } +2) phím dùng để thay đổi giá trị các số, một phím nằm bên trái khóa, một phím nằm bên phải khóa, dưới mỗi số có một phím. Bạn nhanh chóng nhận ra rằng:
+Bạn nhận được một hộp quà với một khóa số ở bên ngoài. Thông tin hiển thị trên khóa là một dãy n số nguyên a$_ 1 $ , a$_ 2 $ ,..., $a_{n$ , } các số nằm trong phạm vi từ 0 đến k . Có ( n +2) phím dùng để thay đổi giá trị các số, một phím nằm bên trái khóa, một phím nằm bên phải khóa, dưới mỗi số có một phím. Bạn nhanh chóng nhận ra rằng:
 \begin{itemize}
-	\item Khi bấm vào phím nằm bên trái khóa thì giá trị tất cả các số trên khóa tăng lên 1, nếu số nào đang có giá trị là \emph{ k } thì sau khi bấm nó nhận giá trị 0. Ví dụ, nếu dãy là (10, 9, 0) và \emph{ k } = 10, khi bấm vào phím nằm bên trái khóa thì trạng thái mới của dãy là (0, 10, 1).
-	\item Khi bấm vào phím nằm bên phải khóa thì tất cả các số dịch chuyển đi sang bên phải, trừ số cuối cùng, số cuối cùng trở thành số đầu tiên. Ví dụ, nếu dãy là (10, 9, 0) và \emph{ k } = 10, khi bấm vào phím nằm bên phải khóa thì trạng thái mới của dãy là (0, 10, 9).
-	\item Khi bấm vào phím nằm bên dưới số thứ \emph{ i } ( \emph{ i= } 1, 2,..., \emph{ n } ) thì giá trị số thứ \emph{ i } trên khóa tăng lên 1, nếu số đang có giá trị là \emph{ k } thì sau khi bấm nó nhận giá trị 0. Ví dụ, nếu dãy là (10, 9, 0) và \emph{ k } = 10, khi bấm vào phím nằm bên dưới số thứ 2 thì trạng thái mới của dãy là (10, 10, 0).
+	\item Khi bấm vào phím nằm bên trái khóa thì giá trị tất cả các số trên khóa tăng lên 1, nếu số nào đang có giá trị là k thì sau khi bấm nó nhận giá trị 0. Ví dụ, nếu dãy là (10, 9, 0) và k = 10, khi bấm vào phím nằm bên trái khóa thì trạng thái mới của dãy là (0, 10, 1).
+	\item Khi bấm vào phím nằm bên phải khóa thì tất cả các số dịch chuyển đi sang bên phải, trừ số cuối cùng, số cuối cùng trở thành số đầu tiên. Ví dụ, nếu dãy là (10, 9, 0) và k = 10, khi bấm vào phím nằm bên phải khóa thì trạng thái mới của dãy là (0, 10, 9).
+	\item Khi bấm vào phím nằm bên dưới số thứ i ( i= 1, 2,..., n ) thì giá trị số thứ i trên khóa tăng lên 1, nếu số đang có giá trị là k thì sau khi bấm nó nhận giá trị 0. Ví dụ, nếu dãy là (10, 9, 0) và k = 10, khi bấm vào phím nằm bên dưới số thứ 2 thì trạng thái mới của dãy là (10, 10, 0).
 \end{itemize}
 
-Trên tờ bưu thiếp gửi kèm chiếc hộp có ghi một dãy \emph{ n } số nguyên \emph{ b }$_ 1 $ , \emph{ b }$_ 2 $ ,..., \emph{ $b_{n}$} chính là mật mã để mở được chiếc hộp. Chiếc hộp sẽ được mở nếu thông tin hiển thị trên khóa số là dãy \emph{ b }$_ 1 $ , \emph{ b }$_ 2 $ ,..., \emph{ $b_{n}$} .
+Trên tờ bưu thiếp gửi kèm chiếc hộp có ghi một dãy n số nguyên b$_ 1 $ , b$_ 2 $ ,..., $b_{n$} chính là mật mã để mở được chiếc hộp. Chiếc hộp sẽ được mở nếu thông tin hiển thị trên khóa số là dãy b$_ 1 $ , b$_ 2 $ ,..., $b_{n$} .
 
-\textbf{Yêu cầu: } Cho hai dãy số nguyên \emph{ a }$_ 1 $ , \emph{ a }$_ 2 $ ,..., \emph{ $a_{n}$} , \emph{ b }$_ 1 $ , \emph{ b }$_ 2 $ ,..., \emph{ $b_{n}$} và số nguyên dương \emph{ k } , hãy tìm cách bấm ít lần nhất để mở được chiếc hộp.
+\textbf{Yêu cầu: } Cho hai dãy số nguyên a$_ 1 $ , a$_ 2 $ ,..., $a_{n$} , b$_ 1 $ , b$_ 2 $ ,..., $b_{n$} và số nguyên dương k , hãy tìm cách bấm ít lần nhất để mở được chiếc hộp.
 
 \subsubsection{Input}
 \begin{itemize}
-	\item Dòng đầu chứa hai số nguyên dương \emph{ n, k } ;
-	\item Dòng thứ hai chứa \emph{ n } số nguyên không âm \emph{ a }$_ 1 $ , \emph{ a }$_ 2 $ ,..., \emph{ $a_{n}$} ( \emph{ $a_{n}$} ≤ \emph{ k } );
-	\item Dòng thứ ba chứa \emph{ n } số nguyên không âm \emph{ b }$_ 1 $ , \emph{ b }$_ 2 $ ,..., \emph{ $b_{n}$} ( \emph{ $b_{n}$} ≤ \emph{ k } )
+	\item Dòng đầu chứa hai số nguyên dương n, k ;
+	\item Dòng thứ hai chứa n số nguyên không âm a$_ 1 $ , a$_ 2 $ ,..., $a_{n$} ( $a_{n$} ≤ k );
+	\item Dòng thứ ba chứa n số nguyên không âm b$_ 1 $ , b$_ 2 $ ,..., $b_{n$} ( $b_{n$} ≤ k )
 \end{itemize}
 
 \subsubsection{Output}
@@ -34,7 +34,7 @@ Một số nguyên là số lần bấm ít lần nhất để mở được chi
 
 \textbf{\textbf{Ghi chú:}}
 \begin{itemize}
-	\item Có 20\% số test ứng với 20\% số điểm có \emph{n }= 3 và \emph{k} ≤ 10;
-	\item Có 40\% số test ứng với 40\% số điểm có \emph{n }≤ 30 và \emph{k} ≤ 1000;
-	\item Có 40\% số test còn lại ứng với 40\% số điểm có \emph{n }≤ 300 và \emph{k} ≤ $10^{6}$
+	\item Có 20\% số test ứng với 20\% số điểm có n= 3 và k ≤ 10;
+	\item Có 40\% số test ứng với 40\% số điểm có n≤ 30 và k ≤ 1000;
+	\item Có 40\% số test còn lại ứng với 40\% số điểm có n≤ 300 và k ≤ $10^{6}$
 \end{itemize}

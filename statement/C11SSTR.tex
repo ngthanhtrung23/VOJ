@@ -2,13 +2,13 @@
 
 
 
-   Hôm nay chúng ta sẽ sẽ cùng ôn về   \emph{\textbf{     Suffix Array    }}   !!!  
+   Hôm nay chúng ta sẽ sẽ cùng ôn về   \textbf{     Suffix Array}   !!!  
 
    Cho 1 xâu S gồm n kí tự, ta sinh ra n xâu con của S là: T[1] = S[1..n], T[2] = S[2..n], T[3] = S[3..n],.. T[n] = S[n..n];  
 
    Sau đó ta sẽ sắp xếp n xâu T lại theo thứ tự   \textbf{    từ điển tăng dần   }   , 1 xâu A được xem là có thứ tự từ điển nhỏ hơn B nếu tồn tại 1 vị trí   \textbf{    k   }   sao cho   \textbf{    A[1..k-1] = B[1..k-1]   }   và   \textbf{    A[k] $<$ B[k]   }   ;  
 
-   Cuối cùng ta sẽ xây dựng mảng a[1], a[2], .., a[n] với a[i] = x nếu xâu T[x] nằm ở vị trí i sau khi đã được sắp xếp tăng dần. Mảng   \textbf{    a   }   được gọi là   \emph{\textbf{     Suffix Array    }}   của xâu S.  
+   Cuối cùng ta sẽ xây dựng mảng a[1], a[2], .., a[n] với a[i] = x nếu xâu T[x] nằm ở vị trí i sau khi đã được sắp xếp tăng dần. Mảng   \textbf{    a   }   được gọi là   \textbf{     Suffix Array}   của xâu S.  
 
    Ví dụ:  
 \begin{itemize}
@@ -28,7 +28,7 @@
 
 \textbf{    Yêu cầu:   }
 \begin{itemize}
-	\item     Cho trước Suffix Array    \textbf{     a,    }    và số    \textbf{     K.    }    Trong những xâu có    \textbf{\emph{      Suffix Array     }     a,    }    hãy tìm xâu S có thứ tự từ điển nhỏ thứ    \textbf{     K.    }
+	\item     Cho trước Suffix Array    \textbf{     a,    }    và số    \textbf{     K.    }    Trong những xâu có    \textbf{Suffix Array     a,    }    hãy tìm xâu S có thứ tự từ điển nhỏ thứ    \textbf{     K.    }
 	\item     Để đơn giản các xâu chỉ bao gồm các kí tự từ 'a' đến 'z'   
 \end{itemize}
 

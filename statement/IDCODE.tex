@@ -2,9 +2,9 @@
 
 Nhằm đổi mới việc quản lí cư dân, chính phủ đưa ra chủ trương cấp thẻ công dân thay cho giấy chứng minh nhân dân và giao quyền cấp mã thẻ cho các tỉnh thành phố trực thuộc trung ương. Để phục vụ cho công việc tạo mã thẻ, đơn vị cấp mã thẻ địa phương đã thu thập thông tin về mối quan hệ quen biết nhau của cư dân trong địa bàn của mình. Mối quan hệ đó được mô tả bởi đơn đồ thị vô hướng liên thông với n đỉnh, mỗi đỉnh tương ứng với một người, hai đỉnh được nối với nhau bởi một cạnh nếu hai người tương ứng là quen biết nhau. (Chú  ý là mối quan hệ quen biết ở đây là hai chiều, nghĩa là nếu người A quen biết người B thì người B cũng quen biết người A và ngược lại). Tiếp theo, công việc tạo mã thẻ công dân được tiến hành theo hai bước sau:
 
-\textbf{\emph{Bước 1}}: Số hóa thông tin về quan hệ quen biết của toàn bộ cư dân bằng cách sắp xếp danh sách cư dân theo thứ tự từ điển không giảm của tên người (hai người trùng tên thì thứ tự giữa hai người là tùy ý), và theo danh sách đã sắp xếp, lần lượt đánh số các đỉnh tương ứng của đồ thị bắt đầu từ 1.
+\textbf{Bước 1}: Số hóa thông tin về quan hệ quen biết của toàn bộ cư dân bằng cách sắp xếp danh sách cư dân theo thứ tự từ điển không giảm của tên người (hai người trùng tên thì thứ tự giữa hai người là tùy ý), và theo danh sách đã sắp xếp, lần lượt đánh số các đỉnh tương ứng của đồ thị bắt đầu từ 1.
 
-\textbf{\emph{Bước 2}}: Mỗi đỉnh i của đồ thị được gán một nhãn Qi là một bộ có thứ tự gồm chỉ số của một số đỉnh được tạo bởi thuật toán sau đây:
+\textbf{Bước 2}: Mỗi đỉnh i của đồ thị được gán một nhãn Qi là một bộ có thứ tự gồm chỉ số của một số đỉnh được tạo bởi thuật toán sau đây:
 \begin{itemize}
 	\item Khởi tạo nhãn của đỉnh 1 là Q1 = (0), các đỉnh còn lại là chưa có nhãn; đỉnh 1 là đã có nhãn nhưng nhãn của nó là chưa cố định.
 	\item Tại mỗi bước trong n bước tiếp theo, thực hiện các thao tác sau:
@@ -21,7 +21,7 @@ Nhằm đổi mới việc quản lí cư dân, chính phủ đưa ra chủ trư
 
 Quan sát các nhãn thu được, Trưởng ban tin học hóa việc quản lý cư dân thấy rằng các nhãn Q được tạo ra tuy thuận tiện cho quản lý nhưng không tuân theo thứ tự từ điển. Trưởng ban yêu cầu đánh số lại các đỉnh của đồ thị về mối quan hệ quen biết sao cho bộ nhãn của các đỉnh thu được theo thuật toán ở Bước 2 thỏa mãn tính chất sau: Nếu u $<$ v thì nhãn của đỉnh u (Qu) phải đi trước nhãn của đỉnh v (Qv) trong thứ tự từ điển.
 
-\textbf{\emph{Nhắc lại}}: Ta nói Qu = (p1,…,pi) là đi trước Qv = (q1,…,qj) trong thứ tự từ điển nếu như:
+\textbf{Nhắc lại}: Ta nói Qu = (p1,…,pi) là đi trước Qv = (q1,…,qj) trong thứ tự từ điển nếu như:
 
 -        hoặc p1 $<$ q1;
 

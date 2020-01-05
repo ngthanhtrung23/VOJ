@@ -1,25 +1,25 @@
 
 
-Duy vừa xây dựng hệ thống mã hóa bảo mật dữ liệu cho cơ quan dựa trên cơ sở hệ mã hóa với khóa công khai. Biết rằng, trong hệ thống này khóa được sử dụng để mã hóa là một số nguyên dương thuộc tập \emph{ S } gồm các khóa mã hóa được xây dựng dựa trên tập gồm \emph{ n } số nguyên dương \emph{ a }$_ 1 $ , \emph{ a }$_ 2 $ , ..., \emph{ a }\emph{$_ n $} . Theo định nghĩa, tập \emph{ S } là tập chỉ gồm các số được xác định theo 2 qui tắc sau đây:
+Duy vừa xây dựng hệ thống mã hóa bảo mật dữ liệu cho cơ quan dựa trên cơ sở hệ mã hóa với khóa công khai. Biết rằng, trong hệ thống này khóa được sử dụng để mã hóa là một số nguyên dương thuộc tập S gồm các khóa mã hóa được xây dựng dựa trên tập gồm n số nguyên dương a$_ 1 $ , a$_ 2 $ , ..., a$_ n $ . Theo định nghĩa, tập S là tập chỉ gồm các số được xác định theo 2 qui tắc sau đây:
 
-\textbf{\emph{Qui tắc }}\textbf{ 1 \emph{ . }} Các số \emph{ a }$_ 1 $ , \emph{ a }$_ 2 $ , ..., \emph{ a }\emph{$_ n $} là thuộc vào \emph{ S. }
+\textbf{Qui tắc}\textbf{ 1 .} Các số a$_ 1 $ , a$_ 2 $ , ..., a$_ n $ là thuộc vào S.
 
-\textbf{\emph{Qui tắc }}\textbf{ 2 \emph{ . }} Nếu \emph{ x } và \emph{ у } thuộc tập \emph{ S } , thì cả ước số chung lớn nhất lẫn bội số chung nhỏ nhất của chúng cũng đều thuộc tập \emph{ S } .
+\textbf{Qui tắc}\textbf{ 2 .} Nếu x và у thuộc tập S , thì cả ước số chung lớn nhất lẫn bội số chung nhỏ nhất của chúng cũng đều thuộc tập S .
 
-Vấn đề đặt ra cho Duy bây giờ là: Kiểm tra xem một số nguyên dương \emph{ k } có thuộc vào tập các khóa S \emph{} hay không?
+Vấn đề đặt ra cho Duy bây giờ là: Kiểm tra xem một số nguyên dương k có thuộc vào tập các khóa S  hay không?
 
-\textbf{Yêu }\textbf{}\textbf{ cầu: }\textbf{} Cho \emph{ n } số nguyên dương \emph{ a }$_ 1 $ , \emph{ a }$_ 2 $ , ..., \emph{ a }\emph{$_ n $} và một số nguyên dương, hãy kiểm tra xem \emph{ k } có thuộc vào tập các khóa xây dựng theo các qui tắc đã nêu hay không.
+\textbf{Yêu }\textbf{}\textbf{ cầu: }\textbf{} Cho n số nguyên dương a$_ 1 $ , a$_ 2 $ , ..., a$_ n $ và một số nguyên dương, hãy kiểm tra xem k có thuộc vào tập các khóa xây dựng theo các qui tắc đã nêu hay không.
 
  
 
 \textbf{Dữ liệu vào: }
 \begin{itemize}
-	\item Dòng đầu tiên chứa số nguyên dương \emph{ T } ( \emph{ T }\emph{} ≤ 5) là số lượng bộ dữ liệu;
-	\item Mỗi nhóm trong số \emph{ T } nhóm dòng tiếp theo mô tả một bộ dữ liệu gồm 3 dòng:
+	\item Dòng đầu tiên chứa số nguyên dương T ( T ≤ 5) là số lượng bộ dữ liệu;
+	\item Mỗi nhóm trong số T nhóm dòng tiếp theo mô tả một bộ dữ liệu gồm 3 dòng:
 \begin{itemize}
-	\item Dòng thứ nhất chứa số nguyên dương \emph{ n } ;
-	\item Dòng thứ hai chứa \emph{ n } số nguyên dương \emph{ a }$_ 1 $ , \emph{ a }$_ 2 $ , ..., \emph{ a }\emph{$_ n $}\emph{} ( \emph{ a }\emph{$_ i $}\emph{} ≤ $10^{12}$ );
-	\item Dòng thứ ba chứa số nguyên dương \emph{ k } ( \emph{ k } ≤ $10^{12}$ ).
+	\item Dòng thứ nhất chứa số nguyên dương n ;
+	\item Dòng thứ hai chứa n số nguyên dương a$_ 1 $ , a$_ 2 $ , ..., a$_ n $ ( a$_ i $ ≤ $10^{12}$ );
+	\item Dòng thứ ba chứa số nguyên dương k ( k ≤ $10^{12}$ ).
 \end{itemize}
 \end{itemize}
 
@@ -27,13 +27,13 @@ Hai số liên tiếp trên cùng dòng được ghi cách nhau bởi dấu các
 
 \textbf{Dữ liệu ra:}
 \begin{itemize}
-	\item Ghi ra \emph{ T } dòng, mỗi dòng ghi câu trả lời cho một bộ dữ liệu tương ứng trong file dữ liệu vào: ghi ‘YES’ nếu như \emph{ k } thuộc vào tập khóa và ghi ‘NO’ nếu như trái lại.
+	\item Ghi ra T dòng, mỗi dòng ghi câu trả lời cho một bộ dữ liệu tương ứng trong file dữ liệu vào: ghi ‘YES’ nếu như k thuộc vào tập khóa và ghi ‘NO’ nếu như trái lại.
 \end{itemize}
 
 \textbf{Ràng buộc:}
 \begin{itemize}
-	\item Có 50\% số test ứng với 50\% số điểm của bài có \emph{ n ≤ } 10.
-	\item Có 50\% số test còn lại ứng với 50\% số điểm của bài có \emph{ n ≤ } 50000.
+	\item Có 50\% số test ứng với 50\% số điểm của bài có n ≤ 10.
+	\item Có 50\% số test còn lại ứng với 50\% số điểm của bài có n ≤ 50000.
 \end{itemize}
 
  
