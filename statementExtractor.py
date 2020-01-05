@@ -3,35 +3,39 @@ import os, re
 statementPath = './statement'
 extractedPath = './extracted'
 subsectionInfoFolderPath = './subsectionsInfo'
-lines = open(subsectionInfoFolderPath + '/3subsections.csv').read().strip().split('\n')
 
-pattern = '\\\subsubsection{.+?}'
-compiledPattern = re.compile(pattern)
+def extract3Sections():
+    lines = open(subsectionInfoFolderPath + '/3subsections.csv').read().strip().split('\n')
 
-for line in lines:
-    name = line.split(',')[0]
+    pattern = '\\\subsubsection{.+?}'
+    compiledPattern = re.compile(pattern)
 
-    content = open(statementPath + '/' + name).read()
+    for line in lines:
+        name = line.split(',')[0]
 
-    name = name.split('.')[0]
+        content = open(statementPath + '/' + name).read()
 
-    extractedProblemFolder = extractedPath + '/' + name
+        name = name.split('.')[0]
 
-    try:
-        os.mkdir(extractedProblemFolder)
-    except Exception as e:
-        # print(e)
-        pass
+        extractedProblemFolder = extractedPath + '/' + name
 
-    parts = compiledPattern.split(content)
-    # print(name, len(parts))
+        try:
+            os.mkdir(extractedProblemFolder)
+        except Exception as e:
+            # print(e)
+            pass
 
-    if (len(parts) != 4):
-        print("Couldn't find 4 parts for " + name)
-        continue
+        parts = compiledPattern.split(content)
+        # print(name, len(parts))
 
-    [statement, input, output, notes] = parts
-    open(extractedProblemFolder + '/statement.tex', 'w').write(statement.strip())
-    open(extractedProblemFolder + '/input.tex', 'w').write(input.strip())
-    open(extractedProblemFolder + '/output.tex', 'w').write(output.strip())
-    open(extractedProblemFolder + '/notes.tex', 'w').write(notes.strip())
+        if (len(parts) != 4):
+            print("Couldn't find 4 parts for " + name)
+            continue
+
+        [statement, input, output, notes] = parts
+        open(extractedProblemFolder + '/statement.tex', 'w').write(statement.strip())
+        open(extractedProblemFolder + '/input.tex', 'w').write(input.strip())
+        open(extractedProblemFolder + '/output.tex', 'w').write(output.strip())
+        open(extractedProblemFolder + '/notes.tex', 'w').write(notes.strip())
+
+extract3Sections()
