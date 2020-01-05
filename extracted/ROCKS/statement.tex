@@ -1,0 +1,18 @@
+Những con bò sắp có kế hoạch thư giãn và nghỉ ngơi , FJ muốn chúng thông minh hơn bằng một trò chơi giải trí.  
+
+   Có N(1 $\le$ N $\le$ 15)  cái lỗ giống hệt nhau nằm trên sân, chúng nằm một đường thằng. Ban đầu tất cả các lỗ đều trống rỗng. Luật chơi được mô tả như sau : Trong lượt chơi của mình, các con bò sẽ được lấy đi đúng một viên đá từ một cái lỗ (nếu lỗ đó có đá), hoặc được đặt thêm vào một cái lỗ trống đúng một viên đá. Bằng cách như thế, các con bò có thể thay đổi trạng thái của các lỗ. Người thắng sẽ là người ko được phạm luật ( tất nhiên) và phải đi đến được tất cả các trạng thái khác nhau có thể tạo ra từ N lỗ này(Có tất cả 2^N trạng thái), mỗi trạng thái chỉ được đến duy nhất một lần ,   \textbf{    và cuối cùng về được trạng thái ban đầu.   }
+\begin{verbatim}
+        Holes
+\\time   1  2  3 
+\\-----------------
+\\0      O  O  O  Trạng thái ban đầu
+\\1      O  O  X  Đặt thêm một viên đã vào lỗ thứ 3
+\\2      X  O  X  Đặt thêm một viên đã vào lỗ thứ 3
+\\3      X  O  O  Lấy đi viên đã ở lỗ thứ 3
+\\4      X  X  O  Đặt thêm một viên đá ở lỗ thứ 2
+\\5      O  X  O ...
+\\6      O  X  X  ...
+\\7      X  X  X  ...
+\\8      X  O  X ...
+\\Đi như trên là phạm luật, vì trạng thái ở giây thứ 8 giống ở giây thứ 2.
+\\\end{verbatim}

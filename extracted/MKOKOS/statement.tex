@@ -1,0 +1,27 @@
+\href{/problems/show/MKOKOS/en/}{       English      }\href{/problems/show/MKOKOS/vn/}{       Vietnamese      }
+
+
+
+   Một tập có N từ, mỗi từ có độ dài 2K kí tự.   
+\\   Đồ thị có hướng với mỗi đỉnh chứa 1 kí từ được gọi là "kokos" nếu, với mỗi từ trong tập, có 1 đường đi mà nhãn các định của đường đi này tạo thành từ đó. Ngoài ra, mọi đỉnh trên đường đi này phải thỏa mãn:  
+
+   ·  Bậc vào của đỉnh đầu tiên là 0.   
+\\   ·  Bậc vào của K-1 đỉnh tiếp theo là 1.   
+\\   ·  Bậc ra của K-1 đỉnh tiếp theo là 1.   
+\\   ·  Bậc ra của đỉnh cuối cùng là 0.  
+
+   Nghĩa là các đường đi này chỉ có thể phân nhánh theo K kí tự đầu tiên và gặp nhau ở K kí tự cuối cùng. Một "kokos" là cực tiểu nếu số đỉnh của nó là nhỏ nhất có thể.  
+
+   Cần xác định số đỉnh này.   
+\\
+\\   Ví dụ về kokos cực tiểu (tập các từ của ví dụ thứ 3):  
+
+
+\includegraphics{http://i42.tinypic.com/20rqu5s.jpg}
+
+   Một cách biểu diễn khác như sau:  
+
+
+\includegraphics{http://i43.tinypic.com/2dhwb39.jpg}
+
+   Tuy nhiên, nó không là kokos vì các đường đi gặp nhau ở kí tự thứ 4 (D), và rẽ nhanh ở kí tự thứ 6 (E).

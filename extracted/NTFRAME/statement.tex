@@ -1,0 +1,40 @@
+ 
+
+Nhân dịp nhà mới, LC được bố mẹ cho phép treo 1 số ảnh lên tường nhà. Tường nhà được mô tả bởi 1 hình chữ nhật kích thước MxN. LC đã mua được một số khung ảnh, nhưng lại đang phân vân không biết nên treo khung ảnh kích thước như thế nào và treo ở vị trí nào. Vì thế cậu ta lần lượt treo thử các khung ảnh lên tường. Mỗi lần treo 1 khung ảnh, LC lại dùng bút đánh dấu vị trí của khung ảnh đã treo bằng cách vẽ 1 hình chữ nhật với viền là các chữ cái in hoa. Ví dụ, LC đã treo 5 khung ảnh như sau:
+\begin{verbatim}
+
+\texttt{........   ........   ........   ........   .CCC....
+EEEEEE..   ........   ........   ..BBBB..   .C.C....
+E....E..   DDDDDD..   ........   ..B..B..   .C.C....
+E....E..   D....D..   ........   ..B..B..   .CCC....
+E....E..   D....D..   ....AAAA   ..B..B..   ........
+E....E..   D....D..   ....A..A   ..BBBB..   ........
+E....E..   DDDDDD..   ....A..A   ........   ........
+E....E..   ........   ....AAAA   ........   ........
+EEEEEE..   ........   ........   ........   ........}\end{verbatim}
+
+Sau khi đánh dấu xong, LC nhìn lại bức tường và nhận thấy: bức tường trở nên nhem nhuốc một cách thảm hại do các phần đánh dấu của các hình chữ nhật chồng lên nhau. Với 5 khung ảnh trên đặt theo đúng thứ tự thì ta có bức tường như sau:
+\begin{verbatim}
+
+\texttt{.CCC....
+ECBCBB..
+DCBCDB..
+DCCC.B..
+D.B.ABAA
+D.BBBB.A
+DDDDAD.A
+E...AAAA
+EEEEEE..}\end{verbatim}
+
+Quá hoảng sợ, LC quên mất mình đã đặt các khung ảnh theo thứ tự nào. Hãy giúp cậu ta tìm đúng thứ tự đó. Và nhanh lên, để LC còn phải sơn lại bức tường nữa, nếu không muốn bị ăn đòn. :D
+
+ 
+
+Lưu ý:
+\begin{itemize}
+	\item Các khung ảnh là các hình chữ nhật kích thước mỗi chiều tối thiểu là 3.
+	\item Các khung ảnh được treo song song với các cạnh của bức tường.
+	\item Mỗi khung ảnh được mô tả bởi 1 chữ cái in hoa. Không có chữ cái nào mô tả 2 khung ảnh khác nhau.
+	\item Ở trạng thái sau cùng, mỗi cạnh của 1 khung ảnh luôn có ít nhất 1 điểm có thể nhìn thấy được.
+	\item Số lượng kết quả nhỏ hơn 100000.
+\end{itemize}

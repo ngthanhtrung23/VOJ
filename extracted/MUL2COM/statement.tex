@@ -1,0 +1,26 @@
+ 
+
+Đây là một số kiến thức về biểu diễn số trên máy tính trước khi các bạn giải bài toán này. Với n bit, máy tính có thể biểu diễn được 2 $^ n $ số trong phạm vi -2 $^ n-1 $ ..(2 $^ n-1 $ -1). Máy tính sử dụng các \emph{ số bù 2 } để biểu diễn các số âm. Trong cách biểu diễn số bù 2 có n bit thì:
+\begin{itemize}
+	\item Số x ≥ 0 được biểu diễn bằng chính số x.
+	\item Số x $<$ 0 được biểu diễn bằng số 2 $^ n $ - x.
+\end{itemize}
+
+Dưới đây là bảng biểu diễn số bù 2 với 3 bit:
+
+
+\includegraphics{https://drive.google.com/uc?export=view&amp;id=1c6I7tfXe9jb0F4Z9TP1NZzRMlp6vSBfP}
+
+Ưu điểm của số bù 2 là phép cộng có thể thực hiện hoàn toàn như các số không dấu. Với x $>$ 0, x + (-x) = 2 $^ n $ = 0 vì các số chỉ được biểu diễn bởi n bit. Ví dụ, xét phép cộng (-2) + 3 trong biểu diễn số bù hai 3 bit:
+\begin{verbatim}
+ 110
++011
+ ---
+ 001
+\end{verbatim}
+
+Kết quả bằng 1.
+
+Với x ≥ 0, biểu diễn số bù 2 của -x sẽ thu được bằng cách đảo toàn bộ bit của x và cộng thêm 1 đơn vị. Nói cách khác -x = (NOT x) + 1. Để chỉ ra biểu thức này đúng, ta nhận xét rằng NOT x = 2 $^ n $ -1-x, do đó (NOT x) + 1 = 2 $^ n $ -x chính là biểu diễn của số -x. Với x $<$ 0, ta cũng có -x = (NOT x) + 1.
+
+Trong bài toán này, bạn cần thực hiện phép nhân hai số bù hai có n bit. Kết quả trả về cũng là một số bù hai n bit. Bạn hãy thông báo lỗi nếu kết quả vượt quả phạm vi biểu diễn.

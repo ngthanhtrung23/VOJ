@@ -1,0 +1,35 @@
+\begin{verbatim}
+Input:
+20 4 5
+4 3 6 1
+
+Output:
+3 3 3 2
+1 0 1 0
+
+
+Input:
+100 3 5
+30 20 10
+
+Output:
+4 3 3
+1 1 0
+
+\end{verbatim}
+
+   Trong ví dụ đầu tiên, 14 phiếu bầu đã được kiểm và 6 phiếu chưa. Để minh họa một kết quả có thể, giả sử rằng đảng đầu tiên nhận 2 trong số 6 lá phiếu đó, đảng thứ hai 0 phiếu, đảng thứ ba 1 phiếu và đảng thứ tư 3 phiếu. Tổng số phiếu của các đảng sẽ là 6, 3, 7 và 4. Tất cả các đảng đều vượt qua ngưỡng 5\%. Các ghế được phân bố như sau:  
+\begin{itemize}
+
+    1. Các thương số ban đầu là 6/1, 3/1, 7/1 và 4/1; lớn nhất là 7/1 nên đảng 3 giành được 1 ghế.   
+
+    2. Các thương số bây giờ là 6/1, 3/1, 7/2 và 4/1; lớn nhất là 6/1 nên đảng 1 giành 1 ghế.   
+
+    3. Các thương số là 6/2, 3/1, 7/2 và 4/1; lớn nhất là 4/1 nên đảng 4 giành 1 ghế.   
+
+    4. Các thương số là 6/2, 3/1, 7/2 và 4/2; lớn nhất là 7/2 nên đảng 3 giành 1 ghế.   
+
+    5. Các thương số là 6/2, 3/1, 7/3 và 4/2; đảng 1 và 2 có cùng thương số 6/2 và 3/1, nhưng đảng 1 có số hiệu nhỏ hơn nên giành được ghế cuối cùng.   
+\end{itemize}
+
+   Trong kết quả này, số lượng ghế mà mỗi đảng giành được là 2, 0, 2 và 1. Do đảng thứ hai có thể sẽ không giành được ghế nào, nên số thứ hai trên dòng 2 của output sẽ là 0.

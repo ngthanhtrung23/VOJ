@@ -1,0 +1,17 @@
+Bây giờ là thời điểm bầu cử. V cử tri tham gia vào cuộc bầu cử, mỗi người sẽ bỏ 1 lá phiếu cho một trong số N đảng. M công chức sẽ được chọn vào nghị viện.  
+
+   Sự chuyển đổi từ những lá phiếu thành các ghế trong nghị viện được thực hiện theo phương pháp D'Hondt với ngưỡng 5\%. Chính xác hơn, giả sử các đảng được đánh số từ 1 đến N và họ nhận được lần lượt V1, V2, ..., VN phiếu bầu. Các ghế của nghị viện sẽ được phân bố như sau:  
+\begin{itemize}
+
+    1. Tất cả các đảng nhận được ít hơn 5\% tổng số phiếu V sẽ bị xóa khỏi danh sách.   
+
+    2. Nghị viện ban đầu trống, tức là mọi đảng đều chưa có ghế nào trong nghị viện.   
+
+    3. Với một đảng P bất kỳ, thương số QP=VP/(SP+1) sẽ được tính, với VP là tổng số lá phiếu mà đảng P nhận được, và SP là số lượng ghế đã phân cho đảng P.   
+
+    4. Đảng có thương số QP lớn nhất sẽ được phân thêm 1 ghế. Nếu có nhiều đảng có cùng thương số lớn nhất đó thì đảng nào có số hiệu nhỏ hơn sẽ giành được ghế.   
+
+    5. Lặp lại bước 3 và 4 cho đến khi nghị viện đầy. Các lá phiếu đang được đếm và mới chỉ có một phần của tổng số V lá phiếu được kiểm. Chúng ta tạm thời biết được số phiếu mà mỗi đảng đang có.   
+\end{itemize}
+
+   Viết chương trình tính toán cho mỗi đảng, trong số các khả năng có thể xảy ra sau khi tất cả V lá phiếu đã được đếm, số lượng ghế lớn nhất và nhỏ nhất mà đảng đó giành được.

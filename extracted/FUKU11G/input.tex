@@ -1,0 +1,10 @@
+Dữ liệu vào gồm có nhiều bộ test. Mỗi bộ test có cấu trúc như sau: h w map Dòng đầu tiên của bộ test chứa 2 số nguyên h và w. h là chiều cao và w là chiều rộng của bản đồ. 1 $\le$ h $\le$ 15 và 1 $\le$ w $\le$ 15.
+
+h dòng tiếp theo mô tả bản đồ. Mỗi dòng chứa w kí tự, tương ứng với một hàng ngang của bản đồ. Mỗi kí tự biểu diễn trạng thái của một ô vuông như sau:
+\begin{itemize}
+	\item '.': Ô vuông không phải là 1 phần của đảo (là ô nước). Không có kho báu nào ở ô này.
+	\item '*': Ô vuông là một phần của đảo, số lượng kho báu ở 9 ô lân cận của nó là chưa biết.
+	\item '0' .. '9': Ô vuông là một phần của đảo, và chữ số mô tả số lượng kho báu ở 9 ô lân cận của nó.
+\end{itemize}
+
+Dữ liệu đảm bảo luôn có ít nhất một phương án sắp xếp các kho báu thoả mãn. Có tối thiểu là 1 và tối đa 15 ô chứa sữ số. Một dòng chứa 2 số 0 đánh dấu hết dữ liệu.

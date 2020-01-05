@@ -1,0 +1,661 @@
+C11SEQ2.tex,Input,Output,Ví dụ:
+QBSTOCK.tex,Input,Output,Example
+TWO.tex,Input,Output,Example
+NKNUMFRE.tex,Dữ liệu,Kết quả,Ví dụ
+MIDAS.tex,Input,Output,Example
+F1.tex,Input,Output,Example
+DUGOVI.tex,INPUT,OUTPUT,SAMPLE TESTS
+HSPC14H.tex,Input,Output,Example
+HCN2.tex,Input,Output,Example
+RACE.tex,Input,Output,Example
+LASCALE.tex,Input,Output,Example
+SKWLTH.tex,Input,Output,Example
+KINGDOMS.tex,Input,Output,Example
+NTSURF.tex,Input,Output,Example
+WINSTRAT.tex,Dữ liệu vào,Dữ liệu ra,Ví dụ
+MSE07B.tex,Input,Output,Sample
+VOSTOUR.tex,Input,Output,Example
+ITREE.tex,Input,Output,Example
+INSUL.tex,Dữ liệu,Kết qủa,Ví dụ
+QBSORT.tex,Input,Output,Example
+NKNET.tex,Dữ liệu,Kết quả,Ví dụ
+DUAXE.tex,Input,Output,Example
+NKPOS.tex,Dữ liệu,Kết qủa,Ví dụ
+VPBINDEG.tex,Input,Output,Example
+QBMST.tex,Input,Output,Example
+ROBOCON.tex,Input,Output,Example
+BOXES.tex,Dữ liệu,Kết quả,Ví dụ
+HSPC14I.tex,Input,Output,Example
+CPRIME.tex,Dữ liệu,Kết quả,Ví dụ
+NTBANK.tex,Input,Output,Example
+DTTUI1.tex,Input,Output,Example
+QMAX2.tex,Input,Output,Example
+NKSP.tex,Dữ liệu,Kết quả,Ví dụ
+VCOWCAR.tex,Dữ liệu,Kết quả,Ví dụ
+CHATCHIT.tex,Dữ liệu,Kết quả,Ví dụ
+XOR.tex,Input,Output,Example
+NKMOU.tex,Dữ liệu,Kết qủa,Ví dụ
+C11SEQ3.tex,Dữ liệu,Kết quả,Ví dụ
+SKWTHR.tex,Input,Output,Example
+QBHEAP.tex,Input,Output,Example
+DTCSTR.tex,Input,Output,Example
+HEAP1.tex,Input,Output,Example
+MATRIX.tex,Input,Output,Example
+F2.tex,Input,Output,Example
+JUPI.tex,Input,Output,Example
+GRAPE.tex,Input,Output,Example
+HSPC14K.tex,Input,Output,Example
+LUCKYNUM.tex,Dữ liệu vào,Dữ liệu ra,Ví dụ
+COIN34.tex,Dữ liệu,Kết quả,Ví dụ
+MBIPALIN.tex,Input,Output,Sample
+SDRIVE.tex,Input,Output,Example
+MCARDS.tex,Input,Output,Sample
+TPCPALIN.tex,Input,Output,Example
+RTF.tex,Input,Output,Example
+WORDCNT.tex,Dữ liệu vào,Dữ liệu ra,Ví dụ
+HOUSE.tex,Input,Output,Example
+KGSS.tex,Input,Output,Example
+TJALG.tex,Input,Output,Example
+NTFLOWER.tex,Input,Output,Example
+QBMARKET.tex,Input,Output,Example
+YUGI.tex,Input,Output,Example
+DOMINO88.tex,Input,Output,Example
+VWORDPOW.tex,Dữ liệu,Kết quả,Ví dụ
+DIGIT0.tex,Dữ liệu,Kết quả,Ví dụ
+TCDFZ.tex,Input,Output,Example
+HELPPM.tex,Dữ liệu,Kết quả,Ví dụ
+SUBD.tex,Input,Output,Example
+NKCABLE.tex,Dữ liệu,Kết quả,Ví dụ
+ANARC09I.tex,Input,Output,Example
+HSPC14J.tex,Input,Output,Example
+PYTHAEQ.tex,Input,Output,Example
+PNUMBER.tex,Input,Output,Ví dụ
+BCHESS.tex,Input,Output,Example
+SEARCH.tex,Input,Output,Example
+DTTUI2.tex,Input,Output,Example
+POINT.tex,Input,Output,Example
+AE5A1.tex,Input,Output,Example
+WEATHER.tex,Dữ liệu,Kết qủa,Ví dụ
+SOCCER.tex,Input,Output,Example
+FERRIES.tex,Input,Output,Example
+GANNHAT.tex,Dữ liệu,Kết quả,Ví dụ
+VOSPOW.tex,Dữ liệu vào,Dữ liệu ra,Ví dụ
+C11WATER.tex,Input,Output,Example
+TRIANGLE.tex,Input,Output,Example
+DBRACKET.tex,Input,Output,Example
+SKIVER1.tex,Dữ liệu,Kết qủa,Ví dụ
+NKSEQ.tex,Dữ liệu vào,Kết qủa,Ví dụ
+BOSS.tex,Dữ liệu,Kết quả,Ví dụ
+C11TEST.tex,Input,Output,Example
+KENRE.tex,Input,Output,Example
+PETROLM.tex,Input,Output,Example
+VNCUT.tex,Input,Output,Example
+BEADSNB.tex,Input,Output,Example
+STONE1.tex,Input,Output,Example
+C11CAL.tex,Input,Output,Ví dụ:
+NKTREE.tex,Dữ liệu,Kết quả,Ví dụ
+OTOCI.tex,Input,Output,Example
+C11TRCNT.tex,Input,Output,Example
+LITES.tex,Dữ liệu,Kết quả,Ví dụ
+QBSQUARE.tex,Input,Output,Example
+TWOOPERS.tex,Dữ liệu,Kết quả,Ví dụ
+NKPANO.tex,Dữ liệu,Kết quả,Ví dụ
+V8SORT.tex,Dữ liệu,Kết qủa,Ví dụ
+LQDGRAPE.tex,Input,Output,Example
+SUBSTR.tex,Input,Output,Example
+JEWELNB.tex,Input,Output,Example
+MATCH2.tex,Input,Output,Example
+FLOYD.tex,Input,Output,Example
+C11STR2.tex,Input,Output,\textbf{    Ví dụ:
+QTREEX.tex,Input,Output,Example
+CUTRECT.tex,Dữ liệu,Kết quả,Ví dụ
+NRS.tex,Dữ liệu,Kết quả,Ví dụ
+QMAX3VN.tex,Input,Output,Example
+TREECST.tex,Xây dựng cây,Dữ liệu,Kết quả
+QBSTR.tex,Input,Output,Example
+TNHWIFI.tex,Input,Output,Example
+ALADDIN.tex,Input,Output,Example
+NKPOLI.tex,Dữ liệu,Kết qủa,Ví dụ
+KWAY.tex,Input,Output,Example
+MYSTERY.tex,Dữ liệu,Kết qủa,Ví dụ
+RECTP.tex,Input,Output,Example
+RECT1.tex,Input,Output,Example
+TOY.tex,Dữ liệu,Kết quả,Ví dụ
+TPCHOLE1.tex,Input,Output,Example
+POWER.tex,Dữ liệu,Kết quả,Ví dụ
+ROCKS.tex,Input,Output,Example
+STOCK.tex,Dữ liệu,Kết quả,Ví dụ
+PBCDIV.tex,Input,Output,Example
+PBCPOINT.tex,Input,Output,Example
+PERIODNI.tex,Input,Output,Example
+MROADS.tex,Input,Output,Sample
+RAOVUON.tex,Input,Output,Example
+QBPOINT.tex,Input,Output,Example
+VECTOR.tex,Input,Output,Example
+NKSEV.tex,Dữ liệu,Kết qủa,Ví dụ
+BLOPER2.tex,\textbf{\textbf{Input,\textbf{\textbf{Output,\textbf{Example
+C11DOLL.tex,Dữ liệu vào:,Dữ liệu ra:,Ví dụ:
+SHTH.tex,Input,Output,Example
+RECT3.tex,Dữ liệu,Kết quả,Ví dụ
+FMATCH.tex,Input,Output,Example
+ACPC10G.tex,Input,Output,Example
+KVIP.tex,Input,Output,Example
+FSELECT.tex,Input,Output,Example
+VOSSEQ.tex,Input,Output,Example
+NKLINEUP.tex,Dữ liệu,Kết qủa,Ví dụ
+ILSMATH2.tex,Input,Output,Example
+MSAFE.tex,Input,Output,Sample
+CIJEVI.tex,Input,Output,Example
+NK05MNIM.tex,Dữ liệu vào,Kết qủa,Ví dụ
+MATCH1.tex,Input,Output,Example
+ALAKE.tex,Input,Output,Example
+NKPOLICE.tex,Dữ liệu vào,Kết qủa,Ví dụ
+MSE08H.tex,Input,Output,Sample
+COND.tex,Input,Output,Example
+THTRACE.tex,Input,Output,Example
+THEME.tex,Input,Output,Example
+ALLOW.tex,Input,Output,Example
+HSPC14L.tex,Input,Output,Example
+TPCHOLE2.tex,Input,Output,Example
+SHUTTLE.tex,Dữ liệu,Kết quả,Ví dụ
+POSLOZI.tex,Input,Output,Example
+MEDIAN.tex,Dữ liệu,Kết quả,Ví dụ
+TREENUM.tex,Input,Output,Sample
+ALERT.tex,Input,Output,Example
+CWAY.tex,Dữ liệu,Kết quả,Ví dụ
+MDIGITS2.tex,Input,Output,Sample
+NBFM.tex,Dữ liệu,Kết quả,Ví dụ
+REVAMP.tex,Dữ liệu,Kết quả,Ví dụ
+COMPANY3.tex,Input,Output,Example
+CASTLE.tex,Input,Output,Example
+KINV.tex,Input,Output,Example
+QVSICK.tex,Input,Output,Example
+LQDFROG.tex,Input,Output,Example
+SVADA.tex,Input,Output,Example
+BRACKET.tex,Input,Output,Example
+ROTATION.tex,DỮ LIỆU,KẾT QUẢ,VÍ DỤ
+KSPREE.tex,Input,Output,Example
+LUBENICA.tex,Dữ liệu,Kết qủa,Ví dụ
+TELEPORT.tex,Input,Output,Example
+NOTE.tex,Dữ liệu,Kết quả,Ví dụ
+TRIPOD2.tex,Input,Output,Example
+CRATE.tex,Input,Output,Example
+NKEDIT.tex,Dữ liệu,Kết quả,Ví dụ
+HNSUBWAY.tex,Dữ liệu vào,Dữ liệu ra,Ví dụ
+VUKVN.tex,Input,Output,Example
+NKMINERS.tex,Dữ liệu,Kết qủa,Ví dụ
+MINCOST.tex,Input,Output,Example
+V11PLAN.tex,Input,Output,Example
+TOURS13.tex,Input,Output,Example
+CTREE.tex,Input,Output,Example
+HBTLAST.tex,Input,Output,Example
+SLIKAR.tex,Input,Output,Example
+TWOSUM.tex,Input,Output,Example
+QBTREEK.tex,Input,Output,Example
+GROUP.tex,Dữ liệu,Kết quả,Ví dụ
+FUKU11G.tex,Input,Output,Example
+NKBM.tex,Dữ liệu,Kết qủa,Ví dụ
+SHHV.tex,Input,Output,Example
+COLLECT.tex,Input,Output,Example
+HCN.tex,Input,Output,Example
+NUMBER.tex,Input,Output,Example
+NKNL.tex,Dữ liệu,Kết quả,Ví dụ
+MELE3.tex,Input,Output,Sample
+SPBINARY.tex,Input,Output,Example
+V8MAYORS.tex,Dữ liệu,Kết quả,Ví dụ
+VN_ZR_I.tex,Input,Output,Example
+PCIRCLE.tex,Input,Output,Ví dụ
+VRATF.tex,Dữ liệu,Kết quả,Ví dụ
+KAMP.tex,Input,Output,Example
+PRODUCT.tex,Input,Output,Example
+BARICAVN.tex,Input,Output,Example
+FIRS.tex,Dữ liệu,Kết quả,Ví dụ
+M00PAIR.tex,Input,Output,Sample
+MARS.tex,Input,Output,Example
+MTANUM.tex,Input,Output,Example
+HBTLCA.tex,Input,Output,Example
+INKPRINT.tex,Input,Output,Example
+GPT.tex,Input,\textbf{    Giới hạn,Example
+FINDNUM.tex,Dữ liệu vào,Dữ liệu ra,Ví dụ
+CREC01.tex,Input,Output,Example
+FIRE.tex,Input,Output,Example
+TREZOR.tex,Input,Output,Example
+KBSUDOKU.tex,Input,Output,Example
+KTUAN.tex,Input,Output,Example
+AREATRI.tex,Dữ liệu,Kết quả,Ví dụ
+GWCOINS.tex,Input,Output,Example
+LINEGAME.tex,Dữ liệu:,Kết quả:,Ví dụ:
+MAFIJA.tex,Input,Output,Example
+OLDMAPS.tex,Input,Output,Example
+MCHAOS.tex,Input,Output,Sample
+VSTEPS.tex,Dữ liệu,Kết qủa,Ví dụ
+POST.tex,Input,Output,Ví dụ
+ADS.tex,Input,Output,Example
+TGPASCAL.tex,Input,Output,Example
+EXPAR.tex,Input,Output,Example
+NHPAINT.tex,Input,Output,Example
+QBWIRE.tex,Input,Output,Example
+MMASS.tex,Input,Output,Sample
+DIVSEQQ.tex,Input,Output,Example
+QTKNAP.tex,Input,Output,Example
+MKOKOS.tex,Input,Output,Sample
+NTFRAME.tex,Input,Output,Example
+LSPITO.tex,Input,Output,Example
+QBFIREWK.tex,Input,Output,Example
+AREA.tex,Input,Output,Example
+NTTREE.tex,Input,Output,Example
+ENET.tex,Input,Output,Example
+C11BC1.tex,Input,Output,Example
+ELECT.tex,Input,Output,Example
+FOCUS.tex,Dữ liệu,Kết quả,Ví dụ
+INCVN.tex,Input,Output,Example
+CUTSEG.tex,Input,Output,Example
+VOSFENCE.tex,Input,Output,Example
+CROSS12.tex,Input,Output,Example
+CHEAT.tex,Input,Output,Example
+DTKSUB.tex,Input,Output,Example
+NKCNT2.tex,Input,Output,Example
+QTBIT.tex,Input,Output,Example
+NEAREST.tex,Input,Output,Example
+MPIGS.tex,Input,Output,Sample
+NKFLOW.tex,Dữ liệu,Kết qủa,Ví dụ
+HUGEKNAP.tex,Input,Output,Example
+CATALAN.tex,Input,Output,Example
+VNPLAN2.tex,Input,Output,Example
+NKPATROL.tex,Input,Output,Example
+NKA1.tex,Dữ liệu,Kết qủa,Ví dụ
+DTPYRA.tex,Input,Output,Example
+SQUARES.tex,Input,Output,Example
+CONNECTE.tex,Input,Output,Example
+KDEL.tex,Dữ liệu,Kết quả,Ví dụ
+GRAPH_.tex,Input,Output
+C11CIR.tex,Input,Output,Ví dụ
+VNBRACK.tex,Input,Output,Example
+PIZZALOC.tex,Input,Output,Sample
+VPDOMINO.tex,Input,Output,Example
+MBUS.tex,Dữ liệu,Kết qủa,Ví dụ
+CARPET.tex,Input,Output,Example
+QBBUILD.tex,Input,Output,Example
+NTPACK.tex,Input,Output,Example
+QULNUM.tex,Input,Output,Example
+MACHINE.tex,Input,Output,Example
+LSORTVN.tex,Input,Output,Sample
+BOB.tex,Input,Output,Example
+DEGREE.tex,Input,Output,Example
+QBSTAR.tex,Input,Output,Example
+HINHTHOI.tex,Dữ liệu,Kết quả,Ví dụ
+BLOPER.tex,Input,Output,Example
+RELJEF.tex,Input,Output,Example
+C11BC2.tex,Input,Output,Example
+FBRICK.tex,Input,Output,Example
+OWN2.tex,Input,Output,Example
+QBFLOWER.tex,Input,Output,Example
+C11BC3.tex,Input,Output,Example
+V8SCORE.tex,Dữ liệu,Kết qủa,Ví dụ
+PLACE.tex,Input,Output,Example
+MSTRING.tex,Input,Output,Sample
+VOVAGAME.tex,Input,Output,Example
+NKCNT1.tex,Input,Output,Example
+ILSMATH.tex,Dữ liệu vào,Dữ liệu ra,Ví dụ
+SMAX.tex,Dữ liệu,Kết quả,Ví dụ
+SAFENET2.tex,Input,Output,Example
+UPIT.tex,Input,Output,Example
+HAM12.tex,Input,Output,Example
+C11PNUM.tex,Input,Output,Example
+MOVE12.tex,Input,Output,Example
+VM12CIR.tex,Input,Output,Example
+NBFD.tex,Dữ liệu,Kết quả,Ví dụ
+CRUELL2.tex,Dữ liệu,Kết quả,Ví dụ
+LQDNUMS.tex,Input,Output,Example
+LSRLE.tex,Input,Output,Example
+C11TOUCH.tex,\textbf{    Dữ liệu vào:,Dữ liệu ra:,Ví dụ:
+CFLAG2.tex,Input,Output,Example
+PVOI14_5.tex,Input,Output,Example
+TCHESS.tex,Input,Output,Example
+WS.tex,Input,Output,Example
+MIXUP2.tex,Dữ liệu,Kết quả,Ví dụ
+QBPIZZA.tex,Input,Output,Example
+SMARTDOG.tex,Input,Output,Example
+BILL.tex,Input,Output,Example
+GSS.tex,Input,Output,Example
+CSTARS.tex,Input,Output,Example
+CRITICAL.tex,Dữ liệu,Kết quả,Ví dụ
+NORMA.tex,Input,Output,Example
+VOSTREE2.tex,Input,Output,Example
+PERNALTY.tex,Input,Output,Example
+TRILAND.tex,Input,Output,Example
+CVJETICI.tex,Input,Output,Example
+DGOLD.tex,Input,Output,Example
+C11BCH.tex,Input,Output,Example
+LEM6.tex,Input,Output,Example
+QUEENNB.tex,Input,Output,Example
+CTNAB.tex,Input,Output,Example
+LEM7.tex,Input,Output,Example
+TRIPOD.tex,Input,Output,Example
+PER.tex,Dữ liệu,Kết qủa,Ví dụ
+KSTEEPLE.tex,Input,Output,Example
+LSTAR.tex,Input,Output,Example
+MKFLAGS.tex,Input,Output,Example
+BESTSPOT.tex,Dữ liệu,Kết quả,Ví dụ
+AUCTION.tex,Dữ liệu,Kết quả,Ví dụ
+LSFIGHT.tex,Dữ liệu,Kết quả,Ví dụ
+NKLETTER.tex,Dữ liệu,Kết quả,Ví dụ
+POST2.tex,Input,Output,Example
+LIS2VN.tex,Input,Output,Example
+COWGIRL.tex,Input,Output,Example
+MESSAGE.tex,Input,Output,Example
+NEWJ.tex,Input,Output,Example
+MAXCUB.tex,Input,Output,Example
+NKCARD.tex,Input,Output,Example
+VBF2.tex,Dữ liệu,Kết quả,Hạn chế
+VMDOMINO.tex,Input,Output,Example
+QBDIVSEQ.tex,Input,Output,Example
+NKTEAM.tex,Dữ liệu vào,Kết qủa,Ví dụ
+MTELE.tex,Input,Output,Sample
+QBGAME.tex,Input,Output,Example
+PVOI14_4.tex,Input,Output,Example
+BINTREE.tex,Input \href{http://vi.wikipedia.org/wiki/Duy%E1%BB%87t_c%C3%A2y,Output,Example
+SETNJA.tex,Input,Output,Example
+WCALC.tex,Input,Output,Example
+VPARTSUM.tex,Dữ liệu,Kết quả,Ví dụ
+NOIXICH.tex,Input,Output,Example
+TWOSAT.tex,Input,Output,Example
+BAOVE.tex,Input,Output,Example
+VMUNCH.tex,Dữ liệu,Kết quả,Ví dụ
+C11HUM.tex,Input,Output,Example
+QBDISNEY.tex,Input,Output,Example
+C11PIPI.tex,Input,Output,Example
+PVOI14_6.tex,Input,Output,Example
+C11KM.tex,Input,Output,Example
+VMMTFIVE.tex,Input,Output,Example
+MBLAST.tex,Input,Output,Sample
+BAABO.tex,Input,Output,Example
+PYRAMID2.tex,Input,Output,Example
+MFISH.tex,Input,Output,Sample
+NK05ORDR.tex,Dữ liệu vào,Kết qủa,Ví dụ
+QTSEQ.tex,Input:,Output:,Example:
+COST.tex,Input,Output,Ví dụ
+NKNL2.tex,Input,Output,Example
+TAMCAM.tex,Dữ liệu,Kết quả,Ví dụ
+MSKYCODE.tex,Input,Output,Sample
+METERAIN.tex,Input,Output,Example
+NKREZ.tex,Dữ liệu,Kết qủa,Ví dụ
+C11POST.tex,Input,Output,Example
+NKDIVSEQ.tex,Dữ liệu,Kết quả,Ví dụ
+LEM5.tex,Input,Output,Example
+QBMAX.tex,Input,Output,Example
+LEM4.tex,Input,Output,Example
+MOEBIUS.tex,Dữ liệu vào,Dữ liệu ra,Ví dụ
+MNERED.tex,Input,Output,Sample
+MBRACKET.tex,Input,Output,Sample
+QBTICKET.tex,Input,Output,Example
+PAGAIN.tex,Dữ liệu,Kết quả,Ví dụ
+COUNTCBG.tex,Input,Output,Ví dụ
+NKRACING.tex,Dữ liệu,Kết qủa,Ví dụ
+TPCDLCS.tex,Input,Output,Example
+MESSAGE1.tex,Input,Output,Example
+GOLD.tex,Input,Output,Example
+DRASHOOT.tex,Input,Output,Example
+VODIVIDE.tex,Input,Output,Example
+NKDIST.tex,Dữ liệu,Kết quả,Ví dụ
+SPSEQ.tex,Input,Output,Example
+VBF1.tex,Dữ liệu,Kết quả,Ví dụ
+PATULJCI.tex,\textbf{    Input,Output,Example
+CTNCLN.tex,Input,Output,Example
+NKTICK.tex,Dữ liệu,Kết qủa,Ví dụ
+VCOLDWAT.tex,Dữ liệu,Kết quả,Ví dụ
+CRECT.tex,Input,Output,Example
+MVECTOR.tex,Input,Output,Sample
+SCIRCLE.tex,Input,Output,Example
+PVOI14_3.tex,Input,Output,Example
+ATOURISM.tex,Dữ liệu vào,Dữ liệu ra,Ví dụ
+CP.tex,Input,Output,Example
+NKBUILD.tex,Input,Output,Example
+CAVLI.tex,Input,Output,Example
+QHROAD.tex,Dữ liệu,Kết quả,Ví dụ
+THSL.tex,Input,Output,Example
+NKGAME.tex,Input,Output,Example
+BALGAME2.tex,Input,Output,Example
+PTRANG.tex,Input,Output,Ví dụ
+QBHV.tex,Input,Output,Example
+DBMS.tex,Input,Output,Example
+LUCKY13.tex,Input,Output,Example
+INTEGER7.tex,Dữ liệu,Kết quả,Ví dụ
+IZBORI.tex,Input,Output,Example
+KRUS.tex,Input,Output,Example
+LQDFIBO.tex,Input,Output,Example
+NETWRKNB.tex,Input,Output,Example
+TNHTEST.tex,Input,Output,Ví dụ
+CONANSP.tex,Input,Output,Example
+DSUMMITS.tex,Input,Output,Example
+QBSEQ.tex,Input,Output,Example
+DPEQN.tex,Dữ liệu,Kết quả,Ví dụ
+COPYDNA.tex,Dữ liệu,Kết quả,Ví dụ
+RECT3_2.tex,Dữ liệu,Kết quả,Ví dụ
+CRUELL.tex,Dữ liệu,Kết quả,Ví dụ
+NTFENCE.tex,Input,Output,Example
+QMATCH.tex,Input,Output,Example
+MECUNG.tex,Input,Output,Example
+QBPAL.tex,Input,Output,Example
+MAXARR1.tex,Input,Output,Example
+PVOI14_2.tex,Input,Output,Example
+JACOBI.tex,Input,Output,Example
+VBGRASS.tex,Dữ liệu,Kết quả,Ví dụ
+CBUYING.tex,Input,Output,Example
+STARGATE.tex,Input,Output,Sample
+HIREHP.tex,Input,Output,Example
+NBFA.tex,Dữ liệu,Kết quả,Ví dụ
+MAXARR3.tex,Input,Output,Example
+MULONE.tex,Input,Output,Example
+FUKU11J.tex,Input,Output,Example
+QBINT.tex,Input,Output,Example
+VNEMPIRE.tex,Dữ liệu,Kết qủa,Ví dụ
+CTNOWN.tex,Input,Output,Example
+QBCAKE.tex,Input,Output,Example
+ONE4EVER.tex,Input,Output,Example
+VOSLUCKY.tex,Input,Output,Example
+NUMVN.tex,Input,Output,Example
+SUMAA.tex,Input,Output,Example
+QBAGENTS.tex,Input,Output,Example
+DHTABLE.tex,Input,Output,Example
+LUYTHUA2.tex,Input,Output,Example
+NSRAIL.tex,Input,Output,Example
+PAGODA.tex,Dữ liệu,Kết quả,Ví dụ
+LEM3.tex,Input,Output,Example
+C11NUM.tex,Input,Output,Example
+FIBVAL.tex,Input,Output,Example
+PK11E.tex,Input,Output,Example
+LEM2.tex,Input,Output,Example
+CTNEWS.tex,Input,Output,Example
+KRECT.tex,Input,Output,Example
+PERC.tex,Input,Output,Example
+MAUGIAO.tex,Input,Output,Example
+EGG.tex,Input,Output,Example
+NTHUGE.tex,Input,Output,Example
+KMEDIAN.tex,Input,Output,Example
+IVANA.tex,Input,Output,Example
+POLY4.tex,Input,Output,Example
+GPMB.tex,Dữ liệu,Kết quả,Ví dụ
+MUL2COM.tex,Dữ liệu,Kết quả,Ví dụ
+RESTR.tex,Input,Output,Example
+LQDFIBO2.tex,Input,Output,Example
+VNINGAME.tex,Input,Output,Example
+MAXARR2.tex,Input,Output,Example
+PVOI14_1.tex,Input,Output,Example
+NKMAGE.tex,Input,Output,Example
+BRTREE.tex,Input,Output,Example
+BONUS13.tex,Input,Output,Example
+BLAND.tex,Dữ liệu,Kết quả,Ví dụ
+BWTRI.tex,Input,Output,Example
+VOSPLAY.tex,Input,Output,Example
+QBMOUSE.tex,Input,Output,Example
+ASSIGN4.tex,Input,Output,Example
+MKUHAR.tex,Input,Output,Sample
+MTREE.tex,Input,Output,Sample
+HSPC14A.tex,Input,Output,Example
+TRES.tex,Input,Output,Example
+CHNTOWER.tex,Input,Output,Example
+TRIOMINO.tex,Input,Output,Example
+DHTABLE2.tex,Input,Output,Example
+QBSEGPAR.tex,Input,Output,Example
+MAXNUM.tex,Input,Output,Example
+QTREEV.tex,Input,Output,Example
+BWGAME.tex,Input,Output,Example
+PCYCLE.tex,Dữ liệu,Kết quả,Ví dụ
+TANDV.tex,Input,Output,Example
+MPRIME.tex,Dữ liệu,Kết qủa,Ví dụ
+TPTICKET.tex,Input,Output,Ví dụ
+MGAME1.tex,Input,Output,Sample
+VOSTRIBO.tex,Input,Output,Example
+DHLOCO.tex,Input,Output,Example
+STMERGE.tex,Input,Output,Example
+FOURPOS.tex,Input,Output,Example
+SPFIBO.tex,Input,Output,Example
+GRNUM.tex,Input,Output,Example
+NTKING.tex,Input,Output,Example
+NKCITY.tex,Dữ liệu,Kết quả,Ví dụ
+TRAVEL12.tex,Input,Output,Example
+LQDDIV.tex,Input,Output,Example
+LATGACH2.tex,Input,Output,Example
+STNODE.tex,Dữ liệu:,Kết quả,Ví dụ
+AMSSEQ.tex,Dữ liệu vào,Dữ liệu ra,Ví dụ
+HBT1D.tex,Input,Output,Example
+DTDOI.tex,Input,Output,Example
+C11DK1.tex,Input,\textbf{Output,Example
+KINGDOM.tex,Dữ liệu,Kết quả,Ví dụ
+VN_ZR_II.tex,Input,Output,Example
+NKDEC.tex,Dữ liệu,Kết qủa,Ví dụ
+PLAHTE.tex,Input,Output,Example
+BINARY.tex,Input,Output,Example
+ROADS.tex,Dữ liệu,Kết quả,Ví dụ
+VMSORT.tex,Input,Output,Example
+CON.tex,Input,Output,Example
+TWOBLACK.tex,Input,Output,Example
+NTSEQ.tex,Input,Output,Example
+HSPC14B.tex,Input,Output,Example
+CAR.tex,Input,Output,Example
+VM3PHIA.tex,Input,Output,Example
+CHEER.tex,Dữ liệu,Kết quả,Ví dụ
+ZABAVA.tex,Input,Output,Example
+DHEXP.tex,Input,Output,Example
+ONBRIDGE.tex,Input,Output,Example
+VDANGER.tex,Dữ liệu,Kết quả,Ví dụ
+TREASRE.tex,Input,Output,Example
+NK05EOPR.tex,Dữ liệu vào,Kết qủa,Ví dụ
+VOSCUN.tex,Input,Output,Example
+MSE08G.tex,Input,Output,Sample
+C11GAR.tex,Input,Output,Example
+KIDSMATH.tex,Input,Output,Example
+KL11B.tex,\textbf{        Input,Output,Example
+NKSTEP.tex,Dữ liệu,Kết quả,Ví dụ
+NKSPILJA.tex,Dữ liệu vào,Kết qủa,Ví dụ
+QBRECT.tex,Input,Output,Example
+DIAMOND.tex,Dữ liệu,Kết quả,Ví dụ
+MAJSTOR.tex,Input,Output,Example
+TAPN.tex,Input,Output,Example
+CLOCK.tex,Input,Output,Ví dụ
+HSPC14C.tex,Input,Output,Example
+MREPLBRC.tex,Input,Output,Sample
+FAREY3.tex,Input,Output,Example
+EARTHQK.tex,Dữ liệu vào,Dữ liệu ra,Ví dụ
+C11DK2.tex,Input,Output,Example
+QBMSEQ.tex,Input,Output,Example
+PHEPNHAN.tex,Input,Output,Example
+PTREE.tex,Input,Output,Example
+C11SEQ.tex,Input,Output,Example
+REL7.tex,Input,Output,Example
+GARDEN25.tex,Input,Output,Example
+DISNEY1.tex,Input,Output,Example
+ACMNB.tex,Input,Output,Example
+STRHFI.tex,Input,Output,Example
+MTWALK.tex,Dữ liệu,Kết quả,Ví dụ
+BOXMAN.tex,Input,Output,Example
+CHAIN2.tex,Dữ liệu,Kết quả,Ví dụ
+C11GAME1.tex,Input,Output,Example
+NKTRIO.tex,Dữ liệu:,Kết quả:,Ví dụ:
+HSPC14G.tex,Input,Output,Example
+PKADKP.tex,Input,Output,Example
+V11COMET.tex,Output,Giới hạn,Example
+CUTBOARD.tex,Input,Output,Example
+MZVRK.tex,Input,Output,Sample
+DORUCAK.tex,Input,Output,Example
+QBSCHOOL.tex,Input,Output,Example
+LIS.tex,Input,Output,Example
+LIGHT.tex,Input,Output,Example
+FLOW1.tex,Input,Output,Example
+QBROBOT.tex,Input,Output,Example
+SBOOST.tex,Input,Output,Example
+SNAD.tex,Dữ liệu,Kết qủa,Ví dụ
+LQDGONME.tex,Input,Output,Example
+QBTRANS.tex,Input,Output,Example
+ETF.tex,Input,Output,Example
+TABLIC.tex,Input,Output,Example
+MPILOT.tex,Input,Output,Sample
+CHESSCBG.tex,Dữ liệu vào,Dữ liệu ra,Ví dụ
+LATGACH.tex,Input,Output,Example
+CARDS.tex,Input,Output,Example
+RIDERHP.tex,Input,Output,Example
+HSPC14F.tex,Input,Output,Example
+GRAPH.tex,Dữ liệu,Kết quả,Ví dụ
+HIWAY.tex,Input,Output,Example
+NKGUARD.tex,Dữ liệu,Kết quả,Ví dụ
+LATGACH4.tex,Input,Output,Example
+LSTTCD2.tex,Input,Output,Example
+LQDXEUI.tex,Input,Output,Example
+SPSUM.tex,Input,Output,Example
+IQ.tex,Input,Output,Example
+PERIODNB.tex,Input,Output,Example
+NTSHEEP.tex,Input,Output,Example
+PASSWORD.tex,Input,Output,Example
+HEADQRT.tex,Dữ liệu vào,Dữ liệu ra,Ví dụ
+SKFIB.tex,Input,Output,Example
+DISNEY2.tex,Input,Output,Example
+C11TCT.tex,Input,Output,Example
+SHCH.tex,Input,Output,Example
+VMLINES.tex,Input,Output,Example
+GCDSUM.tex,Input,Output,Example
+BUILD28.tex,Input,Output,Example
+C11CUT.tex,Dữ liệu,Kết quả,Ví dụ
+ASSIGN1.tex,Input,Output,Example
+SPQUEUE.tex,Input,Output,Example
+DTGAME.tex,Input,Output,Example
+CNMARBLE.tex,
+PRAVO.tex,Input,Output,Example
+C11GAME2.tex,Input,Output,Ví dụ:
+HSPC14D.tex,Input,Output,Example
+LKNIGHT.tex,Input,Output,Example
+PTQMSEQ.tex,Input,Output,Example
+VOSCAL.tex,Input,Output,Example
+PRETTYP.tex,Dữ liệu vào,Dữ liệu ra,Ví dụ
+DHLOCK.tex,Input,Output,Example
+NK2MFS.tex,Dữ liệu,Kết quả,Ví dụ
+CFLAG.tex,Input,Output,Example
+JEDNAKOS.tex,Input,Output,Example
+CHESS_.tex,Input,Output,Example
+REKMP.tex,Input,Output,Example
+ELEVATOR.tex,Input,Output,Example
+TRIPHP.tex,Input,Output,Example
+PALINY.tex,Input,Output,Example
+NICEQUAD.tex,Dữ liệu,Kết qủa,Ví dụ
+NTPFECT.tex,Input,Output,Example
+PBCISPIS.tex,Input,Output,Example
+PALINX.tex,Input,Output,Example
+TOUR2509.tex,Input,Output,Example
+PBCWATER.tex,Input,Output,Example
+DTOGRADA.tex,Input,Output,Example
+LIQ.tex,Input,Output,Ví dụ
+POINTS2.tex,Dữ liệu,Kết quả,Ví dụ
+V8ORG.tex,Dữ liệu,Kết qủa,Ví dụ
+LAZYCOWS.tex,Dữ liệu,Kết quả,Ví dụ
+OPTCUT.tex,Dữ liệu,Kết quả,Ví dụ
+NKPARITY.tex,Dữ liệu,Kết quả,Ví dụ
+MILITARY.tex,Input,Output,Example
+HSPC14E.tex,Input,Output,Example
+MORSEDEC.tex,Input,Output,Example
+LSPALIN.tex,Input,Output,Example
+WALK.tex,Input,Output,Example
+CVP00001.tex,Input,Output,Example
+QBCOND.tex,Input,Output,Example
+FFLOW.tex,Input,Output,Example
+HIWAY2.tex,Input,Output,Example
+CUTSEQS.tex,Input,Output,Example

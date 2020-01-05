@@ -1,0 +1,30 @@
+ 
+
+Nhằm chào mừng các ngày lễ lớn trong năm 2005 người ta đã chế tạo một loại đạn pháo hoa mới, khi bắn, đạn nổ thành bông hoa 2n cánh màu ( 1 ≤ n ≤ 30). Nguyên vật liệu cho phép tạo được m màu khác nhau, đánh số từ 1 đến m (2 ≤ m ≤ 32).
+
+Để đảm bảo tính mỹ thuật, việc chuyển tiếp màu giữa 2 cánh hoa kề nhau phải tuân theo quy tắc chuyển màu cầu vồng sau đây:
+
+- Bên cạnh cánh hoa màu i phải là cánh hoa màu i-1 hoặc i+1, với 1 $<$ i $<$ m.
+
+- Bên cạnh cánh hoa màu 1 chỉ có thể là cánh hoa màu 2.
+
+- Bên cạnh cánh hoa màu m chỉ có thể là cánh hoa màu m-1.
+
+Một bông hoa không nhất thiết phải có đầy đủ m màu. Mỗi bông hoa tương ứng với một vòng tròn 2n số thể hiện màu của các cánh hoa. Ví dụ, hình 1 là bông hoa 24 cánh (n = 12) và hình 2 là vòng tròn số tương ứng với nó. Mỗi bông hoa được mô tả bằng dãy 2n số nguyên liệt kê các chỉ số màu của các cánh hoa theo chiều kim đồng hồ. Ví dụ, bông hoa ở hình 1 có thể được mô tả bằng dãy số
+
+3 4 3 2 1 2 3 4 3 2 1 2 3 4 3 2 1 2 3 4 3 4 3 2.
+
+
+\includegraphics{http://vn.spoj.com/content/QBFIREWK}
+
+Dãy có thứ tự từ điển nhỏ nhất trong các dãy có thể dùng để mô tả hoa được gọi là mã hoa. Khi đó, mã hoa của bông hoa ở hình 1 sẽ là
+
+1 2 3 4 3 2 1 2 3 4 3 2 1 2 3 4 3 4 3 2 3 4 3 2.
+
+Trong các ngày lễ, Ban tổ chức yêu cầu bắn các đạn pháo hoa 2n cánh có đúng k cánh màu C (0 ≤ k ≤ 2). Các mã hoa thỏa mãn yêu cầu vừa nêu cũng được sắp xếp theo thứ tự từ điển và đánh số bắt đầu từ 1. Hơn nữa, nhằm tạo ra các hoa không giống nhau, đội bắn pháo hoa cần đảm bảo hai viên đạn pháo hoa bắn liên tiếp phải có mã khác nhau. Do vậy, người ta đã thiết kế một Hệ thống chụp ảnh và phân tích tự động để báo cho đội bắn pháo hoa biết số thứ tự của viên đạn pháo hoa vừa nổ trên trời. Em được giao viết chương trình giải quyết nhiệm vụ chính trong phần mềm phân tích tự động này.
+
+Yêu cầu: Cho biết n, m, k và C. Gọi X là tập tất cả các mã hoa 2n cánh có đúng k cánh màu C.
+
+- Hãy xác định số lượng p các phần tử của X.
+
+- Cho một mã hoa nào đó trong tập X. Hãy xác định số thứ tự từ điển của nó trong X.

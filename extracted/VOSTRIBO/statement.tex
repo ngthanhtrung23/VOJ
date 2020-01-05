@@ -1,0 +1,16 @@
+ 
+
+Nói đến dãy số Fibonacci, chắc chắn ai trong chúng ta ít nhiều cũng đã biết tới. Bờm vừa được thầy của mình dạy cho về dãy Fibonacci, anh ta rất thích thú với dãy số này nhưng lại cảm thấy công thức của dãy số này quá đơn giản, do đó Bờm nghĩ đến một dãy số phức tạp hơn có công thức gần giống với dãy Fibonacci, Bờm đặt tên cho dãy đó là \textbf{ Tribonacci. }
+
+Dãy Tribonacci là dãy số có công thức như sau:
+\begin{itemize}
+	\item T(i) = i ; với mọi số nguyên dương i  $\le$  3
+	\item T(i) = T(i-1) + T(i-2) + T(i-3) ; với mọi số nguyên dương i $>$ 3
+\end{itemize}
+
+Bờm khoe dãy số mới với Tèo, vốn là một người rất thông minh nhưng cũng rất gian xảo nên Tèo đố bờm có thể tính được tổng \textbf{ N } phần tử đầu tiên của dãy \textbf{ Tribonacci } này. Tức là Bờm cần tính giá trị:
+\begin{itemize}
+	\item F(N) = T(1) + T(2) + T(3) + ... + T(N-1) + T(N).
+\end{itemize}
+
+Do giá trị N rất lớn nên hãy giúp Bờm tính và trả lời kết quả cho câu đố của Tèo nhé. Do giá trị rất lớn nên Bờm chỉ cần trả lời phần dư của kết quả sau khi chia cho 10$^15 $ + 7 (mod 10$^15 $ + 7)

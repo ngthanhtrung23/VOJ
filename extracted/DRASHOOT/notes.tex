@@ -1,0 +1,54 @@
+\begin{verbatim}
+Input:
+5
+1
+2
+3
+4
+5
+5
+Q 0 0
+S 3
+Q 0 0
+S 3
+Q 2 2
+
+Output:
+5
+2
+5
+\end{verbatim}
+\begin{verbatim}
+Input:
+8
+1
+5
+7
+2
+6
+4
+5
+3
+10
+S 5
+Q 0 1
+Q 0 1
+Q 2 2
+S 5
+Q 1 2
+Q 1 1
+Q 2 3
+S 4
+Q 1 1
+
+Output:
+7
+7
+NONE
+5
+NONE
+5
+NONE
+\end{verbatim}
+
+   Giải thích: ban đầu các phần tử theo thứ tự từ dưới lên trên mang giá trị 1 2 3 4 5. Ban đầu các số chưa bị thay đổi vị trí nên tất cả đều thuộc nhóm 0. Q 0 0 =$>$ 5 Sau khi bắn ptử thứ 3 dãy còn lại là 1 2 4 5 với (1 2) thuộc nhóm 0 và (4 5) thuộc nhóm 1. Khi đó thực hiện Q 0 0 =$>$ 2 Tiếp tục bắn ptử thứ 3, dãy còn lại 1 2 5 với (1 2) thuộc nhóm 0 và (5) thuộc nhóm 2 nên Q 2 2 =$>$ 5

@@ -1,0 +1,16 @@
+Alice là người chia bài tại bàn chơi Poker trong một Casino ResortWorld vừa mới mở. Cũng giống như những người mới vào nghề khác, cô có 2 cách di chuyển một quân bài khi tráo bài:
+\begin{itemize}
+	\item Cách A: Cô lấy 1 quân bài ở trên cùng và chuyển nó xuống dưới cùng bộ bài
+	\item Cách B: Cô lấy 1 quân bài ở vị trí thứ hai từ trên xuống và chuyển nó xuống dưới cùng của bộ bài.
+\end{itemize}
+
+Ban đầu, Alice có \emph{ m } quân bài (chú ý rằng \emph{ m } có thể nhiều hơn 52 quân bài của một bộ bài chuẩn), mỗi quân bài được đánh nhãn: quân bài trên cùng được đánh nhãn 0 và quân bài dưới cùng được đánh nhãn \emph{ m – 1 } .
+
+Xét một dãy các thao tác di chuyển: ABBABA
+
+Bảng dưới đây thể hiện bộ bài 6 quân sau khi áp dụng mỗi bước chuyển trong dãy thao tác:
+
+
+\includegraphics{https://drive.google.com/uc?export=view&amp;id=17Qw5CMpXm014lA5Kn4FJ9FIQ1TEHa5s3}
+
+\textbf{Yêu cầu đặt ra cho chúng ta là: } cho trước một dãy thao tác di chuyển và 1 số k; trong đó \emph{ 0 $<$ k $<$ m – 1 } , hãy cho biết nhãn của các quân bài thứ \emph{ k – 1 } , thứ \emph{ k } và thứ \emph{ k + 1, } tính từ trên xuống, của bộ bài sau khi áp dụng các thao tác di chuyển. Ở đây, quân bài trên cùng có nhãn là quân bài thứ 0. Ví dụ như trên, nếu \emph{ k = 3 } thì câu trả lời là “ \emph{ 3 1 5 } ”.

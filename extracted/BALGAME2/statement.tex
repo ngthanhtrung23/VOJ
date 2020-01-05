@@ -1,0 +1,13 @@
+(Nguồn gốc từ bài BALLGAME)  
+
+   Cho một dãy các lỗ có sức chứa vô hạn được đánh số từ 1 đến N. Trò chơi tiến hành như sau:  
+
+   \_ Tại thời điểm nào đó, một người đứng ở vị trí x bất kì và ném bóng.  
+
+   \_ Quả bóng được ném đi sẽ lọt vào lỗ   \textbf{    trống   }   gần nó nhất  
+
+   \_ Mỗi quả bóng có một độ xoáy (có thể giống hoặc khác nhau); nếu một quả bóng có độ xoáy là x thì nó sẽ xoáy trên miệng lỗ mà nó rơi vào trong x phút trước khi rơi hẳn xuống lỗ.  
+
+   \_ Một ô được định nghĩa là trống khi không có quả bóng nào đang xoáy trên miệng lỗ đó, nếu tại một lỗ có một quả bóng đang xoáy thì thời điểm quả bóng ngừng xoáy cũng là thời điểm lỗ bắt đầu trống.  
+
+   Cho các truy vấn có dạng T X Y với T là thời điểm ném bóng, X là vị trí ném bóng, và Y là độ xoáy. Với mỗi truy vấn yêu cầu in ra vị trí của lỗ trống gần vị trí X nhất (nếu X trống thì tất nhiên vị trí này sẽ là X). Nếu tồn tại 2 ô trống đều gần X nhất thì in ra vị trí bên trái.

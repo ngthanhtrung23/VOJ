@@ -1,0 +1,14 @@
+\includegraphics{http://vn.spoj.pl/content/anarc09i2.jpg}
+
+   Image blurring occurs when the object being captured is out of the camera’s focus. The top two figures on the right are an example of an image and its blurred version. Restoring the original image given only the blurred version is one of the most interesting topics in image processing. This process is called deblurring, which will be your task for this problem.  
+
+
+\\   In this problem, all images are in grey-scale (no colours). Images are represented as a 2 dimensional matrix of real numbers, where each cell corresponds to the  brightness of the corresponding pixel. Although not mathematically accurate, one way to describe a blurred image is through averaging all the pixels that are within (less than or equal to) a certain Manhattan distance† from each pixel (including the pixel itself ). Here’s an example of how to calculate the blurring of a 3x3 image with a  blurring distance of 1:  
+
+
+\includegraphics{http://vn.spoj.pl/content/anarc09i1.jpg}
+\begin{verbatim}
+
+\includegraphics{http://vn.spoj.pl/content/anarc09i3.jpg}\end{verbatim}
+
+   Given the blurred version of an image, we are interested in reconstructing the original version assuming that the image was blurred as explained above.

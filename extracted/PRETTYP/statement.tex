@@ -1,0 +1,29 @@
+Một công ty Tin học quyết định xuất bản một bản tin nội bộ mô tả những dự án đã kết thúc thành công. Mỗi phòng ban nộp một đoạn văn bản sẽ được in trong một ô được thiết kế sẵn trong bản tin. Cho một đoạn văn bản chỉ chứa các ký tự từ a đến z và ký tự trống. Mỗi từ là một chuỗi các ký tự liên tiếp khác ký tự trống và các từ trong đoạn văn bản phân tách nhau bởi ít nhất một ký tự trống hoặc dấu xuống dòng.  
+
+   Việc in ấn phải tuân theo những nguyên tắc sau:  
+\begin{itemize}
+	\item     Văn bản sẽ được in bằng font có chiều ngang cố định (có nghĩa là mỗi ký tự chiếm một chiều ngang cố định) từ trái sang phải và xuống dòng khi hết dòng.   
+	\item     Số lượng ký tự trên mỗi dòng phải giống nhau.   
+	\item     Các từ được in trong ô phải đúng theo thứ tự trong văn bản ban đầu. Một từ không được tách ra hay in trên quá một dòng.   
+	\item     Các từ liên tiếp nhau trên cùng một dòng phải cách nhau bởi đúng một ký tự trống.   
+	\item     Các dòng chỉ chứa các từ trong đoạn văn bản gốc và các ký tự trống.   
+	\item     Dòng nào bắt đầu bằng ký tự trống thì chỉ bao gồm toàn ký tự trống.   
+\end{itemize}
+
+   Người biên tập bản tin muốn đánh giá mức độ đẹp của một bản in đoạn văn bản thông qua việc định nghĩa  độ mất cân đối của nó là tổng của các lũy thừa mũ ba của số lượng các ký tự trống ở cuối các dòng kể cả dòng gồm toàn ký tự trống. Độ mất cân đối càng nhỏ, bản in đoạn văn bản càng đẹp.  
+
+   Xét ví dụ sau về một đoạn văn bản được in trong một ô có ba dòng, mỗi dòng có chiều ngang là 20 ký tự:  
+\begin{verbatim}
+aaa bbbbbbbbb c dddd
+eeeeeee ffffff
+ggggggggg		
+\end{verbatim}
+\begin{verbatim}
+aaa bbbbbbbbb      
+c dddd eeeeeee       
+ffffff ggggggggg
+\end{verbatim}
+
+   Trong ví dụ này, độ mất cân đối của bản in đoạn văn bản ở bên trái là 0^3 + 6^3 + 11^3 = 1547 trong khi đó độ mất cân đối của bản in đoạn văn bản ở bên phải là 7^3 + 6^3 + 4^3 = 623.  
+
+   Cho trước một đoạn văn bản và một ô để in, nhiệm vụ của bạn là viết chương trình tìm ra bản in đẹp nhất (có độ mất cân đối nhỏ nhất).

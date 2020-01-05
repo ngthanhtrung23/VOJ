@@ -1,0 +1,13 @@
+Cho một đơn đồ thị vô hướng gồm K x N đỉnh, các đỉnh được chia thành K nhóm, mỗi nhóm có N đỉnh. Các nhóm được đặt tên bằng các chữ cái in hoa A, B, C, ... các đỉnh tương ứng thuộc các nhóm được đặt tên bằng các số từ 0 đến N – 1. Giả sử Ch   $_    K   $   là chữ cái ứng với nhóm thứ K, ta quy ước chữ cái tiếp sau A là B, tiếp sau B là C, … tiếp sau Ch   $_    K   $   là A và ký hiệu chữ cái tiếp sau Ch là next(Ch). Đồ thị này có các tính chất sau:  
+
+   Giữa các đỉnh thuộc cùng một nhóm không có cạnh nối.  
+
+   Các đỉnh thuộc 2 nhóm bất kỳ có tên là Ch và next(Ch) có đúng N cạnh nối từ đỉnh thuộc nhóm Ch đến đỉnh thuộc nhóm next(Ch).  
+
+   Bạn cần được yêu cầu đánh số các đỉnh của đồ thị sao cho:  
+
+   Các đỉnh thuộc 1 nhóm được đánh các số là hoán vị của các số tự nhiên từ 0 đến N – 1.  
+
+   Với 2 nhóm Ch và next(Ch) bất kỳ thì N số trên N cạnh nối các đỉnh thuộc chúng là khác nhau. Nếu đỉnh i thuộc nhóm Ch được đánh số là P kề với đỉnh j thuộc nhóm next(Ch) được đánh số là Q thì cạnh nối 2 đỉnh này được đánh số là (N + P – Q) mod N.  
+
+   Biết rằng 2 cách đánh số các đỉnh của đồ thị được coi là khác nhau nếu trong 2 cách đánh số, tồn tại một đỉnh thuộc một nhóm nào đó được đánh số khác nhau. Bạn hãy tính số cách đánh số khác nhau.
