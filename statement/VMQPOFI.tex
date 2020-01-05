@@ -14,70 +14,70 @@
 
    Thuật toán tính giá trị của biểu thức dạng PN sử dụng stack như sau:  
 
-\emph{     Xử lý biểu thức từ trái sang phải:    }
+Xử lý biểu thức từ trái sang phải:
 \begin{itemize}
-	\item \emph{      Nếu gặp một toán hạng, đẩy (push) nó vào stack.     }
-	\item \emph{      Nếu gặp một toán tử, lấy (pop) hai toán hạng từ stack ra và tính kết quả của phép tính gồm hai toán hạng trên và toán tử đang xét. Sau đó, đẩy (push) kết quả trở lại vào stack.     }
+	\item Nếu gặp một toán hạng, đẩy (push) nó vào stack.
+	\item Nếu gặp một toán tử, lấy (pop) hai toán hạng từ stack ra và tính kết quả của phép tính gồm hai toán hạng trên và toán tử đang xét. Sau đó, đẩy (push) kết quả trở lại vào stack.
 \end{itemize}
 
    Hãy xem xét một ví dụ phức tạp hơn: "4 - 3 * 2". PN của biểu thức trên là "4 3 2 * -". Ta sẽ thử áp dụng thuật toán vào ví dụ:  
 
-\emph{    Xử lý biểu thức từ trái sang phải:   }
+Xử lý biểu thức từ trái sang phải:
 
-\emph{    - Đẩy 4 vào stack.   }
+- Đẩy 4 vào stack.
 
-\emph{    - Đẩy 3 vào stack.   }
+- Đẩy 3 vào stack.
 
-\emph{    - Đẩy 2 vào stack.   }
+- Đẩy 2 vào stack.
 
-\emph{    - Gặp dấu *, ta lấy 3 và 2 ra khỏi stack, tính 3 * 2 = 6. Đẩy 6 vào stack.   }
+- Gặp dấu *, ta lấy 3 và 2 ra khỏi stack, tính 3 * 2 = 6. Đẩy 6 vào stack.
 
-\emph{    - Gặp dấu -, lấy 4 và 6 ra, tính 4 - 6 = -2 (lưu ý rằng số nào được đưa vào stack trước sẽ đứng trước trong phép tính). Đẩy -2 vào stack.   }
+- Gặp dấu -, lấy 4 và 6 ra, tính 4 - 6 = -2 (lưu ý rằng số nào được đưa vào stack trước sẽ đứng trước trong phép tính). Đẩy -2 vào stack.
 
-\emph{    - Kết quả của biểu thức là -2.   }
+- Kết quả của biểu thức là -2.
 
    Pirate loay hoay tìm cách mô phỏng thuật toán trên. Anh tìm thấy một cái hộp đựng cầu lông. Tốt quá rồi, cái này có thể mô phỏng được stack. Nhưng khổ một nỗi là hộp đựng cầu này không có cái nắp nào cả nên hai đầu trống trơn. Kế hoạch thất bại, nếu phải quay lại với TeenCode thà chết còn hơn, Pirate nghĩ thầm. Trong lúc đang dùng hộp cầu đập vào đầu để tự vẫn, Thần Cầu hiện ra cười và hỏi:  
 
 \emph{    - Tạj seo kon hú? (Thần Cầu cũng thích TeenCode)    
 \\}
 
-\emph{    - Hú hú hú, con không thể dùng cái hộp này để làm một cái stack vì nó không có đáy.   }
+- Hú hú hú, con không thể dùng cái hộp này để làm một cái stack vì nó không có đáy.
 
-\emph{    - Đừng bỏ cuộc con ạ, người nhìn thấy thành công là người nhìn thấy khó khăn và biến nó thành cơ hội. Con hãy nhìn lại xem cái hộp giờ trông giống cái gì?   }
+- Đừng bỏ cuộc con ạ, người nhìn thấy thành công là người nhìn thấy khó khăn và biến nó thành cơ hội. Con hãy nhìn lại xem cái hộp giờ trông giống cái gì?
 
-\emph{    - Nó giống... một hàng đợi ạ.   }
+- Nó giống... một hàng đợi ạ.
 
    Thần Cầu đã cho Pirate một gợi ý tuyệt vời. Thay vì làm thí nghiệm với stack, Pirate sẽ làm thí nghiệm với   \href{http://www.cosc.canterbury.ac.nz/mukundan/dsal/QueueAppl.html}{    queue (hàng đợi)   }   . Nhưng như thế thì Pirate cần một ký pháp mới để biểu diễn biểu thức. Anh gọi ký pháp mới là   \textbf{    Queue Postfix Notation   }   (QPN). Thuật toán tính giá trị của QPN cũng gần giống với PN thông thường:  
 
-\emph{     Xử lý biểu thức từ trái sang phải:    }
+Xử lý biểu thức từ trái sang phải:
 \begin{itemize}
-	\item \emph{      Nếu gặp một toán hạng, đẩy (enqueue) nó vào queue.     }
-	\item \emph{      Nếu gặp một toán tử, lấy (dequeue) hai toán hạng từ queue ra và tính kết  quả của phép tính gồm hai toán hạng trên và toán tử đang xét. Sau đó,  đẩy (enqueue) kết quả trở lại vào queue.     }
+	\item Nếu gặp một toán hạng, đẩy (enqueue) nó vào queue.
+	\item Nếu gặp một toán tử, lấy (dequeue) hai toán hạng từ queue ra và tính kết  quả của phép tính gồm hai toán hạng trên và toán tử đang xét. Sau đó,  đẩy (enqueue) kết quả trở lại vào queue.
 \end{itemize}
 
    Biểu thức "4 - 3 * 2" có thể được viết lại dưới dạng QPN là "3 2 4 * -" và được tính toán như sau:  
 
     Xử lý biểu thức từ trái sang phải:   
 
-\emph{    - Đẩy 3 vào queue.   }
+- Đẩy 3 vào queue.
 
-\emph{    - Đẩy 2 vào queue.   }
+- Đẩy 2 vào queue.
 
-\emph{    - Đẩy 4 vào queue.   }
+- Đẩy 4 vào queue.
 
-\emph{    - Gặp *, lấy 3 và 2 ra khỏi queue, tính 3 * 2 = 6. Đẩy 6 vào queue.   }
+- Gặp *, lấy 3 và 2 ra khỏi queue, tính 3 * 2 = 6. Đẩy 6 vào queue.
 
 \emph{    - Gặp -, lấy 4 và 6 ra khỏi queue, tính 4 - 6 = -2 (lưu ý rằng số nào vào queue trước sẽ đứng trước trong phép tính). Đẩy -2 vào queue.    
 \\}
 
-\emph{    - Kết quả của biểu thức là -2.   }
+- Kết quả của biểu thức là -2.
 
 \subsubsection{   Và bây giờ...  }
 
    Bạn sẽ giúp Pirate thực hiện thí nghiệm của anh ấy. Bạn được giao cho một biểu thức đúng dạng PN. Biểu thức gồm một số các toán hạng và các toán tử cộng, trừ, nhân.  
 \begin{itemize}
-	\item \textbf{      Thử thách thứ nhất     }    của bạn là    \emph{\textbf{      sử dụng tất cả toán hạng và toán tử     }}    của biểu thức đã cho để sắp xếp thành một biểu thức mới dưới dạng QPN. Khi sử dụng thuật toán QPN để tính toán biểu thức mới sẽ thu được    \textbf{     kết quả tương tự    }    như khi tính toán biểu thức đã cho bằng thuật toán PN.   
-	\item \textbf{      Thử thách thứ hai     }    của bạn cũng là tạo ra một biểu thức QPN có kết quả tương tự với biểu thức PN được cho. Bạn vẫn phải    \textbf{\emph{      sử dụng tất cả các toán hạng     }}    trong biểu thức ban đầu. Điều đặc biệt là bạn có quyền    \textbf{\emph{      đổi dấu các toán hạng     }}    (số âm thành số dương và ngược lại). Ngoài ra, bạn có quyền    \textbf{\emph{      sử dụng toán tử một cách tự do nhưng không được dùng dấu trừ     }}    . Nói các khác, bạn chỉ được sử dụng dấu cộng và dấu nhân.   
+	\item \textbf{      Thử thách thứ nhất     }    của bạn là    \textbf{      sử dụng tất cả toán hạng và toán tử}    của biểu thức đã cho để sắp xếp thành một biểu thức mới dưới dạng QPN. Khi sử dụng thuật toán QPN để tính toán biểu thức mới sẽ thu được    \textbf{     kết quả tương tự    }    như khi tính toán biểu thức đã cho bằng thuật toán PN.   
+	\item \textbf{      Thử thách thứ hai     }    của bạn cũng là tạo ra một biểu thức QPN có kết quả tương tự với biểu thức PN được cho. Bạn vẫn phải    \textbf{sử dụng tất cả các toán hạng}    trong biểu thức ban đầu. Điều đặc biệt là bạn có quyền    \textbf{đổi dấu các toán hạng}    (số âm thành số dương và ngược lại). Ngoài ra, bạn có quyền    \textbf{sử dụng toán tử một cách tự do nhưng không được dùng dấu trừ}    . Nói các khác, bạn chỉ được sử dụng dấu cộng và dấu nhân.   
 \end{itemize}
 
    Bạn có thể chọn giải một trong hai thứ thách hoặc cả hai. Chúc bạn may mắn!  
@@ -110,7 +110,7 @@
 3 2 4 * -
 \\-3 2 4 * + \end{verbatim}
 
-\emph{     Lưu ý        : vì kết quả của biểu thức có thể rất lớn, trong chương trình chấm bài, kết quả của mỗi biểu thức sẽ được lấy modulo $10^{9}$    + 7 để so sánh với nhau.   }
+Lưu ý        : vì kết quả của biểu thức có thể rất lớn, trong chương trình chấm bài, kết quả của mỗi biểu thức sẽ được lấy modulo $10^{9$    + 7 để so sánh với nhau.   }
 
 \subsubsection{   Giới hạn  }
 \begin{itemize}

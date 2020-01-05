@@ -1,18 +1,18 @@
 
 
-Bao quanh thủ đô  là \emph{ n } hồ lớn, đánh số từ 1 đến \emph{ n } . Ban đầu các hồ đều đầy nước. Theo dự báo thời tiết những ngày tới sẽ có các trận mưa lớn, mỗi trận mưa diễn ra trên vùng của một hồ. Nếu hồ cạn, mưa sẽ làm hồ đầy nước, nếu hồ đang đầy nước, mưa sẽ làm nước tràn bờ gây ngập lụt ở thủ đô. May mắn là có một con rồng biệt danh Joo PiPi. Vào ngày không mưa katejordan\_ts có thể dắt Joo PiPi ra một hồ nào đó và trong ngày rồng có thể uống cạn hồ nước này. Cơ quan dự báo thời tiết đưa ra dự báo cho m ngày dưới dạng các số \emph{ $t_{1}$} , \emph{ $t_{2}$} , . . ., \emph{ $t_{m}$} , trong đó \emph{ $t_{i}$} thuộc đoạn [0, \emph{ n } ]. Nếu \emph{ $t_{i}$} thuộc đoạn [1, \emph{ n } ] có nghĩa là sẽ có mưa trên hồ \emph{ $t_{i}$} vào ngày \emph{ i } , nếu \emph{ $t_{i}$} = 0 là ngày \emph{ i } không có mưa.
+Bao quanh thủ đô  là n hồ lớn, đánh số từ 1 đến n . Ban đầu các hồ đều đầy nước. Theo dự báo thời tiết những ngày tới sẽ có các trận mưa lớn, mỗi trận mưa diễn ra trên vùng của một hồ. Nếu hồ cạn, mưa sẽ làm hồ đầy nước, nếu hồ đang đầy nước, mưa sẽ làm nước tràn bờ gây ngập lụt ở thủ đô. May mắn là có một con rồng biệt danh Joo PiPi. Vào ngày không mưa katejordan\_ts có thể dắt Joo PiPi ra một hồ nào đó và trong ngày rồng có thể uống cạn hồ nước này. Cơ quan dự báo thời tiết đưa ra dự báo cho m ngày dưới dạng các số $t_{1$} , $t_{2$} , . . ., $t_{m$} , trong đó $t_{i$} thuộc đoạn [0, n ]. Nếu $t_{i$} thuộc đoạn [1, n ] có nghĩa là sẽ có mưa trên hồ $t_{i$} vào ngày i , nếu $t_{i$} = 0 là ngày i không có mưa.
 
-\emph{\textbf{Yêu cầu } : } Cho \emph{ n } , \emph{ m } và các \emph{ $t_{i}$} (1 ≤ \emph{ n } , \emph{ m } ≤ $10^{6}$ , \emph{ i } = 1 ÷ \emph{ m } ). Hãy xác định xem có tồn tại lịch cho Joo PiPi hút nước tránh lụt được hay không và đưa ra câu trả lời “ \emph{ YES } ” hoặc “ \emph{ NO } ”.  Nếu có lịch hút nước thì đưa ra ở dòng tiếp theo các số nguyên $l_{1}$ , $l_{2}$ , . . ., l \emph{$_ p $} , trong đó \emph{ p } là số ngày không mưa, l \emph{$_ j $} thuộc đoạn [0, \emph{ n } ]. Nếu l \emph{$_ j $} ≠ 0 có nghĩa là cần hút nước ở hồ l \emph{$_ j $} trong ngày không mưa thứ j.
+\textbf{Yêu cầu : } Cho n , m và các $t_{i$} (1 ≤ n , m ≤ $10^{6}$ , i = 1 ÷ m ). Hãy xác định xem có tồn tại lịch cho Joo PiPi hút nước tránh lụt được hay không và đưa ra câu trả lời “ YES ” hoặc “ NO ”.  Nếu có lịch hút nước thì đưa ra ở dòng tiếp theo các số nguyên $l_{1}$ , $l_{2}$ , . . ., l $_ p $ , trong đó p là số ngày không mưa, l $_ j $ thuộc đoạn [0, n ]. Nếu l $_ j $ ≠ 0 có nghĩa là cần hút nước ở hồ l $_ j $ trong ngày không mưa thứ j.
 
 \subsubsection{Input}
 \begin{itemize}
 	\item 
 
-Dòng đầu tiên chứa số nguyên \emph{ q } – số lượng tests (1 ≤ \emph{ q } ≤ 40)
+Dòng đầu tiên chứa số nguyên q – số lượng tests (1 ≤ q ≤ 40)
 	\item Mỗi test cho trên 2 dòng:
 \begin{enumerate}
-	\item Dòng thứ nhất chứa các số nguyên \textbf{\emph{ n }} và \textbf{\emph{ m }} ,
-	\item Dòng thứ 2 chứa \textbf{\emph{ m }} số nguyên \textbf{\emph{ $t_{1}$}} , \textbf{\emph{ $t_{2}$}} , . . ., \textbf{\emph{ $t_{m}$}} .
+	\item Dòng thứ nhất chứa các số nguyên \textbf{n} và \textbf{m} ,
+	\item Dòng thứ 2 chứa \textbf{m} số nguyên \textbf{$t_{1$}} , \textbf{$t_{2$}} , . . ., \textbf{$t_{m$}} .
 \end{enumerate}
 \end{itemize}
 
@@ -20,8 +20,8 @@ Dòng đầu tiên chứa số nguyên \emph{ q } – số lượng tests (1 ≤
 
 Với mỗi test bao gồm:
 \begin{itemize}
-	\item Dòng thứ nhất chứa thông báo “ \textbf{\emph{ YES }} ” hoặc “ \textbf{\emph{ NO }} ”,
-	\item Nếu kết quả là “ \textbf{\emph{ YES }} ” thì ở dòng thứ 2 đưa ra các số nguyên l \textbf{$_ 1 $}\textbf{ , } l \textbf{$_ 2 $}\textbf{ , . . ., } l \emph{$_ p $}\textbf{ . }
+	\item Dòng thứ nhất chứa thông báo “ \textbf{YES} ” hoặc “ \textbf{NO} ”,
+	\item Nếu kết quả là “ \textbf{YES} ” thì ở dòng thứ 2 đưa ra các số nguyên l \textbf{$_ 1 $}\textbf{ , } l \textbf{$_ 2 $}\textbf{ , . . ., } l $_ p $\textbf{ . }
 \end{itemize}
 
 Test đảm bảo chỉ có 1 đáp án

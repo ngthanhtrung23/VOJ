@@ -2,12 +2,12 @@
 
 
 
-   Ai cũng biết Alex là một người rất giàu có, anh có đến   \emph{    N (N $\le$ 1155)   }   căn nhà (các nhà được đánh số từ   \emph{    1--$>$N   }   ). Trước kia, do không chú ý trong lúc xây dựng,   \emph{    nên mỗi nhà đã bị sơn một màu khác nhau,   }   không có nhà nào giống nhà nào . Là một người sống đơn giản, không thích màu mè, nên Alex muốn các căn nhà của mình không được sơn quá nhiều màu.  
+   Ai cũng biết Alex là một người rất giàu có, anh có đến   N (N $\le$ 1155)   căn nhà (các nhà được đánh số từ   1--$>$N   ). Trước kia, do không chú ý trong lúc xây dựng,   nên mỗi nhà đã bị sơn một màu khác nhau,   không có nhà nào giống nhà nào . Là một người sống đơn giản, không thích màu mè, nên Alex muốn các căn nhà của mình không được sơn quá nhiều màu.  
 
-   Để làm đươc như vậy, anh đã chia   \emph{    N   }   căn nhà của mình vào   \textbf{\emph{}}\emph{    K (K $\le$ 15)   }   nhóm (mỗi nhà chỉ thuộc một nhóm, và mỗi nhóm chứa ít nhất một căn nhà).   \emph{    Các căn nhà trong cùng một nhóm sẽ được sơn màu giống nhau.   }   Nhưng không bắt buộc hai căn nhà khác nhóm phải được sơn khác màu.   \emph{
+   Để làm đươc như vậy, anh đã chia   N   căn nhà của mình vào   \textbf{}K (K $\le$ 15)   nhóm (mỗi nhà chỉ thuộc một nhóm, và mỗi nhóm chứa ít nhất một căn nhà).   Các căn nhà trong cùng một nhóm sẽ được sơn màu giống nhau.   Nhưng không bắt buộc hai căn nhà khác nhóm phải được sơn khác màu.   \emph{
 \\}
 
-   Nhưng do sở hữu quá nhiều nhà, và Alex chỉ muốn kết thúc các việc một cách nhanh gọn. Nên Alex đã tìm đến một nhà thông thái. Ông là một người tài ba, thông thạo đến   \emph{    M (M $\le$ 1555)   }   phép thần thông biến hóa. Khi xài phép thứ i (i $\le$ M), ông chỉ tốn C[i] giây để có thể   \emph{    biến tất cả các nhà có màu A[i] thành màu B[i] và ngược lại.   }   Trong cùng một lúc, ông chỉ đọc được một câu thần chú của một phép biến hóa nào đó.   \emph{}   Nhưng bù lại ông luôn biết cách tối ưu hóa trong mọi công việc của mình.   \emph{
+   Nhưng do sở hữu quá nhiều nhà, và Alex chỉ muốn kết thúc các việc một cách nhanh gọn. Nên Alex đã tìm đến một nhà thông thái. Ông là một người tài ba, thông thạo đến   M (M $\le$ 1555)   phép thần thông biến hóa. Khi xài phép thứ i (i $\le$ M), ông chỉ tốn C[i] giây để có thể   biến tất cả các nhà có màu A[i] thành màu B[i] và ngược lại.   Trong cùng một lúc, ông chỉ đọc được một câu thần chú của một phép biến hóa nào đó.      Nhưng bù lại ông luôn biết cách tối ưu hóa trong mọi công việc của mình.   \emph{
 \\}
 
 \textbf{    Yêu cầu:   }   Cho biết số nhóm và các căn nhà trong mỗi nhóm. Hãy cho biết thời gian ít nhất để nhà thông thái biến các căn nhà thuộc mỗi nhóm về cùng một màu.  
@@ -17,13 +17,13 @@
 
 \subsubsection{   Input  }
 
-   \_ Dòng đầu tiến chưa 3 số nguyên dương:   \emph{    N   }   - số lượng nhà hiện có,   \emph{    K   }   - số nhóm phải chia   \emph{    .   }
+   \_ Dòng đầu tiến chưa 3 số nguyên dương:   N   - số lượng nhà hiện có,   K   - số nhóm phải chia   .
 
-   \_ Dòng thứ hai gồm   \emph{    N   }   số, số thứ i có giá trị   \emph{    e[i] (1  $\le$  i  $\le$  N; 1  $\le$  e[i]  $\le$  K)   }   nếu nhà thứ i thuộc nhóm   \emph{    e[i]   }   .  
+   \_ Dòng thứ hai gồm   N   số, số thứ i có giá trị   e[i] (1  $\le$  i  $\le$  N; 1  $\le$  e[i]  $\le$  K)   nếu nhà thứ i thuộc nhóm   e[i]   .  
 
-   \_ Dòng thứ ba là số phép biến hóa có thể sử dụng -   \emph{    M   }   .  
+   \_ Dòng thứ ba là số phép biến hóa có thể sử dụng -   M   .  
 
-   \_ M dòng cuối cùng, mỗi dòng chứa bộ 3 các số nguyên không âm   \emph{    A[i], B[i], C[i] (1  $\le$  i  $\le$  M; 1  $\le$  A[i], B[i]  $\le$  N ; C[i]  $\le$  1000000000)   }   miêu tả một phép biến hóa.  
+   \_ M dòng cuối cùng, mỗi dòng chứa bộ 3 các số nguyên không âm   A[i], B[i], C[i] (1  $\le$  i  $\le$  M; 1  $\le$  A[i], B[i]  $\le$  N ; C[i]  $\le$  1000000000)   miêu tả một phép biến hóa.  
 
 \subsubsection{   Output  }
 
@@ -70,4 +70,4 @@
 \\(3, 3, 3, 3) Biến các nhà có màu 4 thành màu 3, tốn 1s
 \\--$>$ 3 + 1 + 1 = 5\end{verbatim}
 
-\emph{\textbf{      Giới hạn:     }\textbf{}     Có 20\% số test có số nhóm là 1.    }
+\textbf{      Giới hạn:\textbf{}     Có 20\% số test có số nhóm là 1.    }

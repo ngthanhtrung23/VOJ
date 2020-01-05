@@ -2,59 +2,59 @@
 
  
 
-Mùa Giáng Sinh năm nay ấm áp, đôi bạn Đông và Bắc rủ nhau ở nhà cùng nghiên cứu một thuật toán sắp xếp tổ hợp có cấu trúc đặc biệt. Ban đầu Đông chuẩn bị một hoán vị \emph{ π } = ( \emph{ π }$_ 1 $ , \emph{ π }$_ 2 $ , ..., \emph{ π }\emph{$_ n $} ) của \emph{ n } số nguyên dương 1, 2, ..., \emph{ n } rồi đưa cho Bắc. Tiếp theo, Đông tìm hoán vị đi ngay sau hoán vị \emph{ π } trong thứ tự từ điển rồi đưa cho Bắc, và cứ tiếp tục như vậy. Nhắc lại là: Hoán vị \emph{ ρ = } ( \emph{ ρ }$_ 1 $ , \emph{ ρ }$_ 2 $ , \emph{ … } , \emph{ ρ }\emph{$_ n $} ) được gọi là đi trước hoán vị \emph{ σ } = ( \emph{ σ }$_ 1 $ , \emph{ σ }$_ 2 $ , …, \emph{ σ }\emph{$_ n $} ) theo thứ tự từ điển nếu như tồn tại một chỉ số \emph{ i } (1 ≤ \emph{ i } ≤ \emph{ n } ) sao cho:
+Mùa Giáng Sinh năm nay ấm áp, đôi bạn Đông và Bắc rủ nhau ở nhà cùng nghiên cứu một thuật toán sắp xếp tổ hợp có cấu trúc đặc biệt. Ban đầu Đông chuẩn bị một hoán vị π = ( π$_ 1 $ , π$_ 2 $ , ..., π$_ n $ ) của n số nguyên dương 1, 2, ..., n rồi đưa cho Bắc. Tiếp theo, Đông tìm hoán vị đi ngay sau hoán vị π trong thứ tự từ điển rồi đưa cho Bắc, và cứ tiếp tục như vậy. Nhắc lại là: Hoán vị ρ = ( ρ$_ 1 $ , ρ$_ 2 $ , … , ρ$_ n $ ) được gọi là đi trước hoán vị σ = ( σ$_ 1 $ , σ$_ 2 $ , …, σ$_ n $ ) theo thứ tự từ điển nếu như tồn tại một chỉ số i (1 ≤ i ≤ n ) sao cho:
 \begin{itemize}
-	\item nếu \emph{ i } = 1 thì \emph{ ρ }\emph{$_ i $} $<$ \emph{ σ }\emph{$_ i $} ;
-	\item nếu 1 $<$ \emph{ i } ≤ \emph{ n } thì \emph{ ρ }\emph{$_ j $} = \emph{ σ }\emph{$_ j $}\emph{} với \emph{ j } $<$ \emph{ i } và \emph{ ρ }\emph{$_ i $} $<$ \emph{ σ }\emph{$_ i $} .
+	\item nếu i = 1 thì ρ$_ i $ $<$ σ$_ i $ ;
+	\item nếu 1 $<$ i ≤ n thì ρ$_ j $ = σ$_ j $ với j $<$ i và ρ$_ i $ $<$ σ$_ i $ .
 \end{itemize}
 
-Với mỗi hoán vị \emph{ π } nhận được từ Đông, Bắc tiến hành dựng cây nhị phân \emph{ T } ( \emph{ π } ) có cấu trúc như sau:
+Với mỗi hoán vị π nhận được từ Đông, Bắc tiến hành dựng cây nhị phân T ( π ) có cấu trúc như sau:
 \begin{itemize}
-	\item Nút gốc của \emph{ T } ( \emph{ π } ) được gán nhãn \emph{ n } là số lớn nhất của \emph{ π } ;
-	\item Giả sử \emph{ π }\emph{$^ left $}\emph{} và \emph{ π }\emph{$^ right $}\emph{} lần lượt là dãy con bên trái và bên phải của \emph{ n } trong \emph{ π } . Gọi \emph{ a } là số lớn nhất của dãy \emph{ π }\emph{$^ left $}\emph{} và \emph{ b } là số lớn nhất của dãy \emph{ π }\emph{$^ right $} . Khi đó nút gốc của \emph{ T } ( \emph{ π } ) sẽ có hai cây con: cây con trái \emph{ T } ( \emph{ π }\emph{$^ left $} ) với gốc được gán nhãn \emph{ a } và cây con phải \emph{ T } ( \emph{ π }\emph{$^ right $} ) với gốc được gán nhãn \emph{ b } . Nếu dãy \emph{ π }\emph{$^ left $}\emph{} là rỗng thì nút gốc của \emph{ T } ( \emph{ π } ) không có con trái. Nếu dãy \emph{ π }\emph{ right }\emph{} là rỗng thì nút gốc của \emph{ T } ( \emph{ π } ) không có con phải;
-	\item Nếu dãy \emph{ π }\emph{$^ left $}\emph{} là khác rỗng thì cây con \emph{ T } ( \emph{ π }\emph{$^ left $} ) gốc tại \emph{ a } được xây dựng một cách đệ qui đối với dãy con \emph{ π }\emph{$^ left $}\emph{} giống như việc xây dựng cây \emph{ T } ( \emph{ π } );
-	\item Nếu dãy \emph{ π }\emph{ right }\emph{} là khác rỗng thì cây con \emph{ T } ( \emph{ π }\emph{$^ right $} ) gốc tại \emph{ b } được xây dựng một cách đệ qui đối với  dãy con \emph{ π }\emph{$^ right $}\emph{} giống như việc xây dựng cây \emph{ T } ( \emph{ π } ).
+	\item Nút gốc của T ( π ) được gán nhãn n là số lớn nhất của π ;
+	\item Giả sử π$^ left $ và π$^ right $ lần lượt là dãy con bên trái và bên phải của n trong π . Gọi a là số lớn nhất của dãy π$^ left $ và b là số lớn nhất của dãy π$^ right $ . Khi đó nút gốc của T ( π ) sẽ có hai cây con: cây con trái T ( π$^ left $ ) với gốc được gán nhãn a và cây con phải T ( π$^ right $ ) với gốc được gán nhãn b . Nếu dãy π$^ left $ là rỗng thì nút gốc của T ( π ) không có con trái. Nếu dãy πright là rỗng thì nút gốc của T ( π ) không có con phải;
+	\item Nếu dãy π$^ left $ là khác rỗng thì cây con T ( π$^ left $ ) gốc tại a được xây dựng một cách đệ qui đối với dãy con π$^ left $ giống như việc xây dựng cây T ( π );
+	\item Nếu dãy πright là khác rỗng thì cây con T ( π$^ right $ ) gốc tại b được xây dựng một cách đệ qui đối với  dãy con π$^ right $ giống như việc xây dựng cây T ( π ).
 \end{itemize}
 
-\textbf{\emph{Ví }}\textbf{\emph{ dụ: }} Với \emph{ π } = (2, 6, 3, 4, 9, 8, 1, 7, 5) thì cây \emph{ T } ( \emph{ π } ) được mô tả như trong hình 1.
+\textbf{Ví}\textbf{dụ:} Với π = (2, 6, 3, 4, 9, 8, 1, 7, 5) thì cây T ( π ) được mô tả như trong hình 1.
 
  
 
 
 \includegraphics{https://lh4.googleusercontent.com/IQJ-lhq7Q551SlW40fnxrpE-scE8RC-OBsq_oINUtw=w301-h207-p-no}
 
-Hình 1. Cây \emph{ T } ( \emph{ π } ) tương ứng với hoán vị \emph{ π } = (2, 6, 3, 4, 9, 8, 1, 7, 5)
+Hình 1. Cây T ( π ) tương ứng với hoán vị π = (2, 6, 3, 4, 9, 8, 1, 7, 5)
 
-Cây \emph{ T } ( \emph{ π } ) xây dựng theo qui tắc nêu trên được gọi là \textbf{\emph{ cây nhị phân tương ứng với hoán vị }}\emph{ π. }
+Cây T ( π ) xây dựng theo qui tắc nêu trên được gọi là \textbf{cây nhị phân tương ứng với hoán vị}π.
 
-Tiếp theo Bắc tiến hành liệt kê các nút của cây \emph{ T } ( \emph{ π } ) theo thứ tự sau và thu được một hoán vị mới gồm các nhãn của các nút được sắp xếp theo trình tự các nút được liệt kê. Nhắc lại là: Việc liệt kê các nút của cây \emph{ T } ( \emph{ π } ) theo thứ tự sau được định nghĩa một cách đệ qui như sau:
+Tiếp theo Bắc tiến hành liệt kê các nút của cây T ( π ) theo thứ tự sau và thu được một hoán vị mới gồm các nhãn của các nút được sắp xếp theo trình tự các nút được liệt kê. Nhắc lại là: Việc liệt kê các nút của cây T ( π ) theo thứ tự sau được định nghĩa một cách đệ qui như sau:
 \begin{itemize}
-	\item Nếu cây \emph{ T } ( \emph{ π } ) chỉ có một nút thì danh sách gồm một nút duy nhất đó là danh sách các nút của cây \emph{ T } ( \emph{ π } ) được liệt kê theo thứ tự sau;
-	\item Nếu cây \emph{ T } ( \emph{ π } ) có nhiều hơn một nút thì danh sách các nút của cây \emph{ T } ( \emph{ π } ) được liệt kê theo thứ tự sau là: đầu tiên là các nút của cây con trái của \emph{ T } ( \emph{ π } ) được liệt kê theo thứ tự sau, tiếp đến là các nút của của cây con phải của \emph{ T } ( \emph{ π } ) được liệt kê theo thứ tự sau, cuối cùng là nút gốc.
+	\item Nếu cây T ( π ) chỉ có một nút thì danh sách gồm một nút duy nhất đó là danh sách các nút của cây T ( π ) được liệt kê theo thứ tự sau;
+	\item Nếu cây T ( π ) có nhiều hơn một nút thì danh sách các nút của cây T ( π ) được liệt kê theo thứ tự sau là: đầu tiên là các nút của cây con trái của T ( π ) được liệt kê theo thứ tự sau, tiếp đến là các nút của của cây con phải của T ( π ) được liệt kê theo thứ tự sau, cuối cùng là nút gốc.
 \end{itemize}
 
-\textbf{\emph{Ví }}\textbf{\emph{}}\textbf{\emph{ dụ: }} Với hoán vị trong ví dụ trên, hoán vị thu được bởi việc liệt kê các nút của cây nhị phân tương ứng với nó \emph{ T } ( \emph{ π } ) theo thứ tự sau là (2, 3, 4, 6, 1, 5, 7, 8, 9).
+\textbf{Ví}\textbf{}\textbf{dụ:} Với hoán vị trong ví dụ trên, hoán vị thu được bởi việc liệt kê các nút của cây nhị phân tương ứng với nó T ( π ) theo thứ tự sau là (2, 3, 4, 6, 1, 5, 7, 8, 9).
 
-Đôi bạn xét tính chất TSort sau đây trên tập các hoán vị của các số nguyên dương từ 1 đến \emph{ n } : " \emph{ Hoán }\emph{ vị π được nói là có tính chất TSort nếu việc liệt kê các nút của cây nhị phân tương ứng với nó T } ( \emph{ π } ) \emph{ theo thứ tự sau cho ta hoán vị đơn vị, nghĩa là hoán vị có dạng } (1, 2, \emph{ ... } , \emph{ n } )". Đông và Bắc muốn khảo sát xem những hoán vị như vậy có phải là thường gặp hay không.
+Đôi bạn xét tính chất TSort sau đây trên tập các hoán vị của các số nguyên dương từ 1 đến n : " Hoánvị π được nói là có tính chất TSort nếu việc liệt kê các nút của cây nhị phân tương ứng với nó T ( π ) theo thứ tự sau cho ta hoán vị đơn vị, nghĩa là hoán vị có dạng (1, 2, ... , n )". Đông và Bắc muốn khảo sát xem những hoán vị như vậy có phải là thường gặp hay không.
 
-\textbf{Yêu }\textbf{}\textbf{ cầu: }\textbf{} Cho \emph{ π } là một hoán vị của các số 1, 2, …, \emph{ n } , hãy viết chương trình giúp đôi bạn xác định số lượng hoán vị trong số \emph{ k } hoán vị liên tiếp theo thứ tự từ điển bắt đầu từ \emph{ π } (kể cả \emph{ π } ) thoả mãn tính chất TSort.
+\textbf{Yêu }\textbf{}\textbf{ cầu: }\textbf{} Cho π là một hoán vị của các số 1, 2, …, n , hãy viết chương trình giúp đôi bạn xác định số lượng hoán vị trong số k hoán vị liên tiếp theo thứ tự từ điển bắt đầu từ π (kể cả π ) thoả mãn tính chất TSort.
 
 \textbf{Dữ liệu vào: }
 \begin{itemize}
-	\item Dòng đầu gồm hai số nguyên dương \emph{ n } và \emph{ k } ;
-	\item Dòng thứ hai gồm \emph{ n } số nguyên dương \emph{ π }$_ 1 $ , \emph{ π }$_ 2 $ , ..., \emph{ π }\emph{$_ n $}\emph{} là các thành phần của hoán vị \emph{ π } . Hai số liên tiếp trên cùng một dòng được ghi cách nhau bởi dấu cách.
+	\item Dòng đầu gồm hai số nguyên dương n và k ;
+	\item Dòng thứ hai gồm n số nguyên dương π$_ 1 $ , π$_ 2 $ , ..., π$_ n $ là các thành phần của hoán vị π . Hai số liên tiếp trên cùng một dòng được ghi cách nhau bởi dấu cách.
 \end{itemize}
 
 \textbf{Dữ liệu ra: }
 \begin{itemize}
-	\item Ghi ra một số nguyên duy nhất là số lượng hoán vị trong số \emph{ k } hoán vị liên tiếp theo thứ tự từ điển bắt đầu từ π \emph{} (kể cả \emph{ π } ) thoả mãn tính chất TSort.
+	\item Ghi ra một số nguyên duy nhất là số lượng hoán vị trong số k hoán vị liên tiếp theo thứ tự từ điển bắt đầu từ π  (kể cả π ) thoả mãn tính chất TSort.
 \end{itemize}
 
 \textbf{Ràng buộc: }
 \begin{itemize}
-	\item Có 30\% số test tương ứng với các bộ dữ liệu có giới hạn \emph{ n } , \emph{ k } ≤ 100;
-	\item Có 30\% số test khác tương ứng với các bộ dữ liệu có giới hạn \emph{ n } , \emph{ k } ≤ $10^{3}$ ;
-	\item Có 40\% số test còn lại tương ứng với các bộ dữ liệu có giới hạn \emph{ n } ≤ $10^{3}$ , \emph{ k } ≤ $10^{6}$ .
+	\item Có 30\% số test tương ứng với các bộ dữ liệu có giới hạn n , k ≤ 100;
+	\item Có 30\% số test khác tương ứng với các bộ dữ liệu có giới hạn n , k ≤ $10^{3}$ ;
+	\item Có 40\% số test còn lại tương ứng với các bộ dữ liệu có giới hạn n ≤ $10^{3}$ , k ≤ $10^{6}$ .
 \end{itemize}
 
 \textbf{Ví dụ: }
