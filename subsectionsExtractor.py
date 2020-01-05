@@ -31,7 +31,7 @@ for k in c.keys():
     open(subsectionInfoPath, 'w').close()
 
     for name in c[k]:
-        content = open('./statement/' + name).read()
+        content = open(statementPath + '/' + name).read()
 
         matches = list(map(lambda text: text.strip(), re.findall(pattern, content)))
 
