@@ -1,0 +1,31 @@
+\textit{    Bh MìN đÃ BíT cHáT ChÍt NhƯ 1 Ng Vịt cHíNh GúC rÙi!   }
+\\   (Joe's blog)    
+
+   Sau khi trải qua kỳ thi chọn đội tuyển Quốc tế đầy căng thẳng, các vCoders quyết định tạm gác niềm đam mê tin học của mình một thời gian để đi tìm những niềm vui mới. Một số quyết định đi Hồng Kông nghỉ mát để bù lại những ngày học hành vất vả. Số khác quay lại trường học. Nhưng đặc biệt, có một số vCoders sau những buổi chat đêm đã đi đến quyết định: dùng kiến thức tin học của mình góp phần giữ gìn sự trong sáng của tiếng Việt. Nhóm quyết định lấy tên là vitko (Viet-Coder) để mọi người ý thức được công việc thầm lặng họ đang làm.  
+
+   Nhận thấy rằng ngôn ngữ chat tiếng Việt bị lạm dụng quá nhiều, các vitkos đã suy nghĩ và tìm một thuật toán để dịch từ ngôn ngữ chat trở lại tiếng Việt. Dữ liệu vào sẽ là một câu chat (gồm các chữ cái latin in thường và không dấu). Thuật toán của các vitkos gồm một số quy tắc được áp dụng theo thứ tự vào câu văn. Các quy tắc này dựa trên hai thao tác cơ bản:  
+\begin{itemize}
+	\item     R(p)=q: thay tất cả các chuỗi con p bằng chuỗi con q trong câu văn.   
+	\item     RW(p)=q: thay tất cả các từ p bằng từ q trong câu văn.   
+\end{itemize}
+
+   Các quy tắc được áp dụng lần lượt theo thứ tự như sau:  
+\begin{itemize}
+	\item     RW('k')='khong'   
+	\item     RW('ko')='khong'   
+	\item     RW('ng')='nguoi'   
+	\item     RW('n')='nhieu'   
+	\item     RW('dc')='duoc'   
+	\item     RW('hok')='khong'   
+	\item     RW('ntn')='nhu the nao'   
+	\item     RW('kq')='ket qua'   
+	\item     R('j')='gi'   
+	\item     R('w')='qu'   
+	\item     R('f')='ph'   
+	\item     R('dz')='d'   
+	\item     R('z')='d'   
+\end{itemize}
+
+   Mặc dù đây là những quy tắc rất đơn giản, tuy nhiên chúng cũng giúp các vitkos đỡ căng mắt khi nhìn vào các đoạn chat! Hãy giúp các vitkos cài đặt thuật toán này. Họ sẽ dùng chương trình của bạn để viết một plugin cho Yahoo Messenger :)  
+
+\

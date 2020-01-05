@@ -1,0 +1,20 @@
+ 
+
+Trong một hệ quản trị cơ sở dữ liệu thì một trong những khả năng quan trọng là điều khiển truy cập đồng thời, có nghĩa là khả năng xử lý các tình huống có nhiều người dùng cùng truy cập đến một vùng dữ liệu. Để làm được điều này thì một trong những cách phổ biến là khóa truy cập, có nghĩa là nếu một người đang làm việc với một vùng dữ liệu xác định thì những người khác muốn làm việc với vùng này đều phải chờ.
+
+Cho một hệ cơ sở dữ liệu có N bản ghi được đánh số từ 1 đến N. Có M yêu cầu truy cập và cập nhật các bản ghi đối với hệ cơ sở dữ liệu này. Yêu cầu thứ i được biểu diễn bằng bộ 3 số nguyên dương (a $_ i $ , b $_ i $ , t $_ i $ ) có nghĩa là cần cập nhật các bản ghi từ thứ a $_ i $ đến thứ b $_ i $ tại thời điểm t $_ i $ . Danh sách các yêu cầu được cho là danh sách các yêu cầu được sắp xếp theo thời gian thực, nghĩa là thỏa mãn t $_ i $ ≤ t $_ j $ với mọi i $<$ j.
+
+Hệ quản trị cơ sở dữ liệu sẽ xử lý lần lượt M yêu cầu nói trên. Biết rằng:
+\begin{itemize}
+	\item Để xử lý một yêu cầu nào đó thì hệ quản trị cần 1 đơn vị thời gian tuy nhiên nó có khả năng xử lý nhiều hơn 1 yêu cầu tại 1 thời điểm nếu các yêu cầu này không truy cập chung một bản ghi nào. Tại thời điểm này nó sẽ xử lý nhiều yêu cầu nhất có thể.
+	\item Tại một thời điểm, nếu có nhiều hơn 1 yêu cầu cần xử lý thì hệ quản trị cơ sở dữ liệu sẽ xử lý theo thứ tự ưu tiên yêu cầu đứng trước trong danh sách các yêu cầu, nghĩa là yêu cầu có số hiệu nhỏ hơn.Ví dụ:
+\end{itemize}
+
+Các yêu cầu trong 1 thời điểm có số hiệu là 1, 2, ...i.Thì hệ sẽ xử lý yêu cầu 1 sau đó xét lần lượt các yêu cầu từ 2 đến i, gặp yêu cầu nào xử lý được thì xử lý và cứ tiếp tục như thế cho đến hết.
+\begin{itemize}
+	\item Các yêu cầu chưa thể xử lý sẽ được cho vào hàng đợi để chờ xử lý tại thời điểm ngay sau đó. Nghĩa là tại thời điểm i chưa xử lý được sẽ chuyển sang xử lý ở thời điểm i+1.
+\end{itemize}
+
+Vì vậy một yêu cầu cần được xử lý tại thời điểm t thì có thể phải chờ đến thời điểm t’ mới được xử lý (t’ ≥ t), khi đó thời gian chờ đợi của yêu cầu này là t’ – t. Bạn hãy tính tổng thời gian chờ đợi của M yêu cầu.
+
+\

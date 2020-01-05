@@ -1,0 +1,24 @@
+Hàng trăm năm về trước, vua Arthur và các kị sĩ của Hội Bàn Tròn thường gặp gỡ vào ngày đầu năm mới để kỉ niệm mối giao hảo của họ. Để tưởng nhớ những sự kiện này, chúng ta lập ra một trò chơi với bàn cờ và một người chơi, trên đó một quân vua và nhiều quân mã được đặt trên các ô, không có quân mã nào nằm trên cùng một ô.
+
+Bàn cờ ví dụ dưới đây là một bàn cờ chuẩn 8x8:
+
+
+\includegraphics{http://www.ioinformatics.org/locations/ioi98/contest/day2/camelot/camelot-1.gif}
+
+Quân vua có thể di chuyển đến bất kì ô liền kề nào từ đến miễn là nó không rơi ra khỏi bàn:
+
+
+\includegraphics{http://www.ioinformatics.org/locations/ioi98/contest/day2/camelot/camelot-2.gif}
+
+Quân mã có thể nhảy theo đường chéo của HCN 1*2, miễn là nó không rơi ra khỏi bàn:
+
+
+\includegraphics{http://www.ioinformatics.org/locations/ioi98/contest/day2/camelot/camelot-3.gif}
+
+Trong quá trình chơi, người chơi có thể đặt nhiều hơn một quân cờ trên cùng một ô. Các ô trên bàn cờ được xem như đủ rộng để không có quân cờ nào trở thành chướng ngại vật khiến quân cờ khác không thể di chuyển dễ dàng.
+
+Mục đích của người chơi là di chuyển các quân cờ về cùng một ô - với số bước đi ít nhất. Để đạt được điều này, người chơi phải di chuyển các quân cờ như chỉ dẫn ở trên. Thêm nữa, khi con vua và một hoặc nhiều con mã được đặt trong cùng một ô, người chơi có thể chọn để di chuyển vua với một con mã cùng nhau từ ô đó trở về sau, như là một con mã, cho đến điểm tập hợp. Di chuyển con mã cùng con vua sẽ được tính là một bước đi.
+
+Viết một chương trình tính số bước ít nhất mà người chơi cần để tập hợp các quân cờ vào cùng một ô. Dĩ nhiên là các quân cờ có thể tập hợp ở bất kì ô nào.
+
+\

@@ -1,0 +1,238 @@
+NKTEST.tex,Dữ liệu,Kết qủa,Giới hạn,Ví dụ
+POOL.tex,Dữ liệu,Kết quả,Giới hạn,Ví dụ
+VMHCN.tex,Input,Output,Giới hạn,Example
+VOSLIS.tex,Input,Output,Giới hạn:,Example
+C11XOA.tex,Input,Output,Example,Giới hạn
+EQUTRI.tex,Input,Output,Giới hạn,Ví dụ
+NKPOLY.tex,Dữ liệu,Kết qủa,Giới hạn,Ví dụ
+NSP.tex,Input,Output,Hạn chế,Ví dụ
+C11SSTR.tex,Input,Output,Giới hạn,Example
+NKLEAVES.tex,Dữ liệu,Kết qủa,Giới hạn,Ví dụ
+XUCXAC.tex,Dữ liệu,Kết quả,Giới hạn,Ví dụ
+TREEPATH.tex,Yêu cầu,Dữ liệu,Kết quả,Ví dụ
+QBSELECT.tex,Input,Output,Example,Hạn chế
+MTRGAME.tex,Input,Output,Example,Constraints
+VMELLIP.tex,Input,Output,Giới hạn,Example
+ANT.tex,Dữ liệu,Kết qủa,Giới hạn,Ví dụ
+VOSEXP.tex,DỮ LIỆU VÀO,DỮ LIỆU RA,RÀNG BUỘC,VÍ DỤ
+VMINTERN.tex,Input,Output,Giới hạn,Example
+DIFFSTR.tex,Input,Output,Example,Giới hạn
+VMKEY.tex,Input,Output,Giới hạn,Example
+NKLEXIC.tex,Dữ liệu,Kết quả,Chú ý,Ví dụ
+VMST.tex,Input,Output,Cách tính điểm,Example
+VBLOCKS.tex,Dữ liệu,Kết quả,Hạn chế,Ví dụ
+NKINV.tex,Dữ liệu,Kết qủa,Giới hạn,Ví dụ
+HWAYADS.tex,Dữ liệu,Kết quả,Ví dụ,Giới hạn
+TRIBE.tex,Input,Output,Example,Chú ý
+KCOIN.tex,Input,Output,Giới hạn,Example
+VOSHANDL.tex,Input,Output,Example,Giới hạn:
+PALDR.tex,Input,Output,Example,Constraints
+VOSNET.tex,Input,Output,Example,Giới hạn
+FWATER.tex,DỮ LIỆU,KẾT QUẢ,VÍ DỤ,GIẢI THÍCH
+KPLANK.tex,Input,Output,Giới hạn,Example
+VMSUDOKU.tex,Input,Output,Cách tính điểm,Example
+TTRIP.tex,Input,Output,Constraints,Example
+CLEAR.tex,Dữ liệu,Kết quả,Ví dụ,Lưu ý
+VOSMUL.tex,DỮ LIỆU VÀO,DỮ LIỆU RA,RÀNG BUỘC,VÍ DỤ
+VKNIGHTS.tex,Yêu cầu,Dữ liệu,Kết quả,Ví dụ
+NKMAXSEQ.tex,Dữ liệu vào,Kết qủa,Hạn chế,Ví dụ
+VOSTRAVL.tex,DỮ LIỆU VÀO,DỮ LIỆU RA,RÀNG BUỘC,VÍ DỤ
+C11XU.tex,Dữ liệu vào,Dữ liệu ra,Giới hạn,Ví dụ
+NKPALIN.tex,Dữ liệu vào,Kết qủa,Giới hạn,Ví dụ
+VMRELATE.tex,Input,Output,Example,Giới hạn
+TREAT.tex,QUY CÁCH NHẬP DỮ LIỆU,VÍ DỤ,QUY CÁCH GHI KẾT QUẢ,VÍ DỤ
+IOIBIN.tex,Input,Output,Example,Giới hạn
+KTREEC.tex,Input,Output,Giới hạn:,Example
+LEM.tex,Input,Output,Example,Giới hạn
+VOLIGHTS.tex,Input,Output,Giới hạn,Example
+KQUERY.tex,Truy vấn-k,Dữ liệu,Kết quả,Ví dụ
+MAKHOA.tex,Dữ liệu,Kết quả,Hạn chế,Ví dụ
+KPASS.tex,Input,Output,Giới hạn,Example
+VMDOTA.tex,Input,Output,Example,Giới hạn
+PBIR.tex,Yêu cầu,Dữ liệu,Kết quả,Ví dụ
+C11NHL.tex,Dữ liệu,Kết quả,Phân bố giới hạn test,Ví dụ
+NSC.tex,Dữ liệu,\textbf{    Giới hạn,Kết quả,Ví dụ
+C11CAVE.tex,Dữ liệu,Kết quả,Giới hạn,Ví dụ
+XYZ.tex,Dữ liệu,Kết quả,Ví dụ,Hạn chế
+VMDEGREE.tex,Input,Output,Giới hạn,Example
+DEMSO.tex,Dữ liệu,Kết quả,Giới hạn,Ví dụ
+MCQUERY.tex,Input,Output,Example,Constraints
+WINCHK.tex,QUY CÁCH NHẬP DỮ LIỆU,VÍ DỤ,QUY CÁCH GHI KẾT QUẢ,VÍ DỤ
+NKLP.tex,Dữ liệu,Kết qủa,Giới hạn,Ví dụ
+BASEH.tex,Input,Output,Giới hạn,Ví dụ
+NKPAIRS.tex,Dữ liệu,Kết qủa,Hạn chế,Ví dụ
+BOBALLS.tex,Input,Output,Example,Constraints
+NKBAS.tex,Dữ liệu,Kết qủa,Hạn chế,Ví dụ
+MASKTAPE.tex,Dữ liệu,Kết quả,Ví dụ,Giới hạn
+NCOB.tex,Dữ liệu,Kết quả,Giới hạn,Ví dụ
+CINEMA.tex,Dữ liệu,Kết quả,Giới hạn,Ví dụ
+FACUP.tex,Dữ liệu,Kết quả,Ví dụ,Giải thích
+KCOLLECT.tex,Input,Output,Giới hạn,Example
+VMCIRCLE.tex,Input,Output,Example,Example
+HOUSES.tex,Dữ liệu,Hạn chế,Kết quả,Ví dụ
+QTDIVSEQ.tex,Input,Output,Giới hạn :,Ví dụ :
+QMAX.tex,Giới hạn,Input,Output,Example
+V11STR.tex,Input,Output,Giới hạn,Example
+VMTOWN.tex,Input,Output,Giới hạn,Example
+QBBISHOP.tex,Input,Output,Example,Hạn chế:
+WINNER.tex,Dữ liệu,Kết quả,Giới hạn,Ví dụ
+CHEAP.tex,Input,Output,Example,Constraint
+VMQTREE.tex,Input,Giới hạn:,Output,Example
+SKBUS.tex,Input,Output,Example,Constraint
+V11HH.tex,Input,Output,Giới hạn,Example
+NKRTEST.tex,\textbf{Yêu cầu,Input,Output,Example
+VCOWFLIX.tex,Dữ liệu,Kết quả,Ví dụ,Giải thích
+COMNET.tex,Input,Output,Example,Giới hạn
+C11PASS.tex,Input,Output,Example,Chú ý : Có 20% test 1  $\le$  N, M  $\le$  10, K  $\le$  4.
+LTEAM.tex,Input,Output,Giới hạn,Example
+TREEK.tex,Input,Output,Example,Constraint
+NKMOBILE.tex,Dữ liệu,Kết qủa,Giới hạn,Ví dụ
+VM3SETS.tex,Input,Output,Example,Giới hạn
+VMPRINCE.tex,Input,Output,Giới hạn,Example
+WIFI.tex,Dữ liệu,Kết quả,Ví dụ,Giới hạn
+VMTILE.tex,Input,Output,Chấm điểm,Example
+LQDBUS.tex,Dữ liệu vào,Kết qủa,Giới hạn,Ví dụ
+VMATRIX.tex,Input,Output,Giới hạn,Example
+HAOI5000.tex,Input,Output,Giới hạn,Ví dụ
+NKGOLF.tex,Dữ liệu,Kết qủa,Giới hạn,Ví dụ
+MAXISET.tex,Input,Output,Example,Constraints
+TOPALIN.tex,Input,Output,Example,Giới hạn
+LGAME.tex,Giới hạn,Input,Output,Example
+C11BEAU.tex,Dữ liệu,Output,Ví dụ,Ràng buộc
+CENTRE28.tex,Input,Output,Example,Giới hạn
+NKLEAGUE.tex,Dữ liệu,Kết quả,Hạn chế,Ví dụ
+KAGAIN.tex,Bài này O(N) mới thực sự coi là accept . Còn lại O(NlogN) , O(N^2) thì đó là do bạn may mắn accept thôi.,Input,Output,Example
+VOMARBLE.tex,\textbf{Input,Ouput,Ràng buộc,Example
+NKBUS.tex,Dữ liệu vào,Kết qủa,Giới hạn,Ví dụ
+VCRISIS.tex,Dữ liệu,Kết quả,Ví dụ,Giải thích
+EUROBET.tex,Input,Output,Giới hạn,Example
+IOI2008.tex,Input,Output,Example,\emph{I hope and expect that you will have much success in IOI 2008 ^^
+KKKCT2.tex,Input,Output,Limit,Example
+C11SEVEN.tex,Dữ liệu vào,Dữ liệu ra,Giới hạn,Ví dụ
+C11STAR.tex,Input,Output,Example,Giới hạn:
+C11ANT2.tex,Dữ liệu vào,Dữ liệu ra,Ràng buộc,Ví dụ
+C11FBR.tex,Input,Output,Chú ý,Example
+PERMUT.tex,Yêu cầu,Dữ liệu,Kết quả,Ví dụ
+SPHASH.tex,Input,Output,Example,Constraints
+V11TOUR.tex,Input,Output,Giới hạn,Example
+HAF1.tex,Input,Output,Giới hạn,Ví dụ
+QBCHANGE.tex,Input,Output,Example,Hạn chế:
+NKTRAFIC.tex,Dữ liệu,Kết qủa,Giới hạn,Ví dụ
+MCONVOI.tex,Nhằm mục đích giới thiệu các bạn CON VOI!,Input,Output,Sample
+EUROCARD.tex,Input,Output,Constraints,Example
+CVXPOLY.tex,Input,Output,Example,Constraints
+PWRFAIL.tex,DỮ LIỆU,KẾT QUẢ,VÍ DỤ,GIẢI THÍCH
+STEEL.tex,Dữ liệu,Kết qủa,Giới hạn,Ví dụ
+TABLE5X5.tex,Yêu cầu,Dữ liệu,Kết quả,Ví dụ
+VOSTRIP.tex,Input,Output,Giới hạn:,Example
+C11SUM.tex,Input,Output,Giới hạn:,Example
+SOPENP.tex,Dữ liệu,Kết quả,Giới hạn,Ví dụ
+LAMP.tex,Yêu cầu,Dữ liệu,Kết quả,Ví dụ
+C11LOCK.tex,Dữ liệu,Kết quả,Giới hạn,Ví dụ
+C11YARD.tex,Input,Output,Giới hạn:,Ví dụ:
+NKLAND.tex,Dữ liệu,Kết qủa,Giới hạn,Ví dụ
+SAILS.tex,Yêu cầu,Dữ liệu,Kết quả,Ví dụ
+VMLSEQ.tex,Input,Output,Giới hạn,Example
+MDOSTAVA.tex,Input,It calls pizza,Sample
+GONDOR.tex,Input,Output,Example, 
+NKBUSD.tex,Dữ liệu vào,Kết qủa,Giới hạn,Ví dụ
+C11ID.tex,Dữ liệu,Kết quả,Ví dụ,Giới hạn
+VMCUT2.tex,Input,Output,Giới hạn,\textbf{    Example
+SCOLLECT.tex,Dữ liệu,Kết quả,Kết quả,Ví dụ
+VMSEQ.tex,Input,Output,Giới hạn,Example
+VOLIS.tex,Input,Output,Giới hạn,Example
+SFLOWERF.tex,Dữ liệu,Kết quả,Giới hạn,Ví dụ
+VODEFEND.tex,Input,Output,Giới hạn,Example
+VOS2SUM.tex,\textbf{Input,\textbf{Output,\textbf{Ràng buộc,\textbf{VÍ DỤ
+BONES.tex,DỮ LIỆU,KẾT QUẢ,VÍ DỤ,GIẢI THÍCH
+KQUERY2.tex,Truy vấn-k II,Dữ liệu,Kết quả,Ví dụ
+NKTARDY.tex,Dữ liệu,Kết quả,Hạn chế,Ví dụ
+DIVREL.tex,Quan hệ chia hết,Dữ liệu,Kết quả,Ví dụ
+LEM1.tex,Input,Output,Example,Giới hạn
+BNWNIM.tex,Input,Output,Example,Constraints
+TRAINING.tex,Yêu cầu,Dữ liệu,Kết quả,Ví dụ
+LSEA.tex,Giới hạn,Input,Output,Example
+NDIGIT.tex,Dữ liệu,Kết quả,Chấm điểm,Ví dụ
+DPER.tex,Input,Output,Example,Constraint
+C11PINES.tex,Input,Output,Giới hạn,Example
+VOEXC.tex,Input,Output,Giới hạn,Example
+NKONEARC.tex,Dữ liệu,Kết qủa,Hạn chế,Ví dụ
+VMMUMMY.tex,Input,Output,Giới hạn,Example
+NKMINES.tex,Dữ liệu,Kết qủa,Giới hạn,Ví dụ
+NHREMIND.tex,Input,Output,Example,Giới hạn
+TCONCERT.tex,Input,Output,Constraints,Example
+VQUERY.tex,Input,Output,Giới hạn:,Example
+VOSMAXK.tex,\textbf{Dữ liệu vào:,\textbf{Dữ liệu ra:,\textbf{Ràng buộc:,\textbf{Ví dụ:
+VMXGAME.tex,Input,Output,Cách tính điểm:,Example
+CPPSET.tex,Dữ liệu,Kết quả,Ví dụ,Gợi ý
+VMSQUARE.tex,Input,Output,Giới hạn,Example
+LANDK.tex,Mua đất,Input,Output,Ví dụ
+FINFRAC.tex,Input,Output,Example,Constraints
+KBUILD.tex,Input,Output,Giới hạn,Example
+VBOARD.tex,Dữ liệu,Kết quả,Giới hạn,Ví dụ
+DANCING.tex,Dữ liệu,Kết qủa,Giới hạn,Ví dụ
+NKH.tex,Yêu cầu:,Dữ Liệu,Kết Quả,Ví Dụ
+HAOI6000.tex,Dữ liệu,Kết quả,Giới hạn,Ví dụ
+SPACESET.tex,Input,Output,Example,Constraints
+RIVERS.tex,Yêu cầu,Dữ liệu,Kết quả,Ví dụ
+TBIKE.tex,Input,Output,Constraints,Example
+C11GENIE.tex,Dữ liệu vào,Dữ liệu ra,\textbf{    Giới hạn:,Ví dụ
+MAJMUN.tex,Input,Output,Example
+PBCFIBO.tex,Dữ liệu vào,Dữ liệu ra,Giới hạn,Ví dụ
+MINK.tex,Bài này O(N) mới thực sự coi là accept . Còn lại O(NlogN) hay O(N*K) thì bạn chỉ may mắn accept thôi .,Input,Output,Example
+VOSRTRI.tex,DỮ LIỆU VÀO,DỮ LIỆU RA,RÀNG BUỘC,VÍ DỤ
+PBCDEM.tex,Giới hạn,Dữ liệu vào,Dữ liệu ra,Ví Dụ
+CTF.tex,Dữ liệu,Kết quả,Giới hạn,Ví dụ
+HCN3D.tex,Dữ liệu,Kết quả,Ví dụ,Giới hạn
+TOINCSEQ.tex,Input,Output,Example,Giới hạn
+BINLADEN.tex,Dữ liệu,Kết quả,Ví dụ,Giới hạn
+FLOOD.tex,Yêu cầu,Dữ liệu,Kết quả,Ví dụ
+FLOWER.tex,Dữ liệu,Kết quả,Giới hạn,Ví dụ
+VMTREE.tex,Input,Output,Chấm điểm,Example
+NHP.tex,Dữ liệu,Kết quả,Giới hạn,Ví dụ
+PWALK.tex,DỮ LIỆU,KẾT QUẢ,VÍ DỤ,GIẢI THÍCH
+ORDERSET.tex,Tập hợp thứ tự,Dữ liệu,Kết quả,Ví dụ
+V11WATER.tex,Input,Output,Giới hạn,Example
+VNABOR.tex,Dữ liệu,Kết quả,Ví dụ,Giải thích
+NDCCARD.tex,Yêu cầu: Bạn hãy tìm kết quả tốt nhất có thể có của trò chơi trên.,Dữ liệu:,Kết quả:,Ví dụ:
+SELFDIV.tex,Input,Output,Example,Giới hạn
+CATGO.tex,Dữ liệu,Kết quả,Giới hạn,Ví dụ
+VORAIN.tex,Input,Output,Giới hạn,Example
+QBCIRARC.tex,Input,Output,Example,Hạn chế:
+KTOUR.tex,Input,Output,Giới hạn,Example
+NAIL.tex,Dữ liệu,Kết qủa,Giới hạn,Ví dụ
+ROBOT2.tex,Yêu cầu,Dữ liệu,Kết quả,Ví dụ
+CARDSHUF.tex,Dữ liệu,Kết quả,Ví dụ,Giới hạn
+NKPATH.tex,Dữ liệu vào,Kết qủa,Hạn chế,Ví dụ
+VMQUABEO.tex,Input,Output,Giới hạn,Example
+KDIFF.tex,Input,Output,Giới hạn,Example
+VTRI.tex,Dữ liệu,Kết quả,Hạn chế,Ví dụ
+TWINSNOW.tex,Dữ liệu,Kết quả,Ví dụ,Giới hạn
+BIGNUM.tex,Chú ý:,Input,Output,Example
+NPR.tex,Chú ý,Dữ liệu,Kết quả,Ví dụ
+FWFUNC.tex,Input,Output,Example,Constraints
+DAMAGE.tex,Dữ liệu,Kết quả,Ví dụ,Giải thích
+KHISTORY.tex,Input,Output,Giới hạn,Example
+KMIN.tex,Input,Output,Example,Giới hạn
+VMREL6.tex,Input,Output,Giới hạn,Example
+DQUERY.tex,Truy vấn-d,Dữ liệu,Kết quả,Ví dụ
+NKTOSS.tex,Dữ liệu,Kết qủa,Giới hạn,Ví dụ
+VMTEST.tex,Input,Output,Giới hạn,Example
+ADWFNSNW.tex,Dữ liệu,Kết quả,Ví dụ,Giới hạn
+GLOVE.tex,Task,Input,Output,Example
+BALLGAME.tex,Dữ liệu,Kết quả,Ví dụ,Giới hạn
+COUNTPL.tex,Yêu cầu,Input,Output,Example
+LIGHTS.tex,Yêu cầu:,Dữ liệu:,Kết quả:,Ví dụ:
+PBCRECT.tex,Dữ liệu,Kết qủa,Giới hạn,Ví dụ
+PBCWRI.tex,Dữ liệu,Kết qủa,Giới hạn,Ví dụ
+BGAME.tex,Task,Input,Output,Example
+VWORDS.tex,Yêu cầu,Dữ liệu,Kết quả,Ví dụ
+PBCWAYS.tex,Yêu cầu,Input,Output,Example
+VMVSOS.tex,Input,Output,Giới hạn,Example
+QTREE3.tex,Dữ liệu,Kết quả,Ví dụ,Giới hạn
+VMSWAP.tex,Input,Output,Giới hạn,Example
+SUMS.tex,Yêu cầu:,Dữ liệu:,Kết quả:,Ví dụ:
+VMWTREE.tex,Input,Giới hạn,Output,Example
+VOPIG.tex,Input,Output,Giới hạn:,Example:
+NKABD.tex,Dữ liệu,Kết quả,Chú ý,Ví dụ
+KMIX.tex,Input,Output,Giới hạn,Example

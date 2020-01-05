@@ -1,0 +1,22 @@
+VMRR.tex,Yêu cầu,Input,Output,Giới hạn,Chấm bài,Example
+VMROOK.tex,Input,Output,Giới hạn,Chấm điểm,Example,Giải thích
+KKDD.tex,Yêu cầu,Dữ liệu,Kết quả,Ví dụ,Giới hạn,Hạn chế
+VOSTR.tex,Yêu cầu,Lưu ý,Input,Output,Giới hạn,Example
+VMYT.tex,\textbf{Yêu cầu:,Input,Giới hạn,Output,Chấm bài,Example
+ORGAN.tex,Ví dụ,Yêu cầu,Dữ liệu,Kết quả,Test ví dụ,Ràng buộc
+VOPLANE.tex,Input,Output,Chấm điểm,Giới hạn,Ví dụ,Hình minh họa
+FENCE.tex,QUY CÁCH NHẬP DỮ LIỆU,VÍ DỤ,MÔ TẢ VÍ DỤ,QUY CÁCH GHI KẾT QUẢ,VÍ DỤ,GIẢI THÍCH
+VOBRACK.tex,Input,Output,Chấm điểm,Giới hạn,Example,Giải thích
+VOTELPH.tex,Input,Output,Giới hạn,Ví dụ,Chấm điểm,Hình minh họa
+VMCANDLE.tex,Yêu cầu,Input,Giới hạn,Output,Chấm bài,Example
+GOHOME.tex,Dữ liệu,Kết quả,Giới hạn,Ví dụ,Giải thích,Hạn chế
+VOEASY.tex,Input,Output,Giới hạn,Chú ý:,Example,Giải thích
+VMROPES.tex,Input,Output,Giới hạn,Example,Example,Example
+VMGCDSUM.tex,Input,Output,Giới hạn,Chấm bài,Example,Giải thích
+TWOSIDE.tex,Đề bài,Dữ liệu,Kết quả,Giới hạn,Ví dụ,Giải thích
+VMGROUP.tex,Input,Output,Chấm điểm,Example,Giải thích,Giới hạn
+SEC.tex,QUY CÁCH NHẬP DỮ LIỆU,VÍ DỤ,GIẢI THÍCH VÍ DỤ,QUY CÁCH GHI KẾT QUẢ,VÍ DỤ,GIẢI THÍCH
+VMSCALE.tex,Input,Output,Giới hạn,Chấm điểm,Example,Giải thích
+VOBOARD.tex,Truyền thuyết,Đề bài,Input,Output,Giới hạn,Example
+HEADTAIL.tex,Input,Output,Example,Giải thích,Giới hạn, 
+VOBOARD2.tex,Đề bài,Input,Output,Giới hạn,Chấm điểm,Ví dụ

@@ -1,0 +1,16 @@
+Josip là một họa sĩ kỳ lạ. Anh muốn vẽ một bức tranh gồm N×N điểm ảnh, với N là một lũy thừa của 2 (1, 2, 4, 8, 16 v.v…). Mỗi điểm sẽ có màu đen hoặc màu trắng. Josip đã có một ý tưởng cho việc tô màu mỗi điểm ảnh.  
+
+   Sẽ chẳng có vấn đề gì nếu như phương pháp tô màu của Josip không kỳ lạ. Anh ấy sử dụng quá trình đệ quy sau:  
+\begin{itemize}
+	\item     Nếu như bức tranh chỉ có một điểm ảnh, anh tô nó theo cách đã dự định.   
+	\item     Trường hợp còn lại, chia hình vuông thành 4 hình vuông nhỏ hơn và:    
+\begin{itemize}
+	\item       1. Chọn một trong số 4 hình vuông, tô nó bằng màu trắng.     
+	\item       2. Chọn một trong 3 hình vuông còn lại, tô nó màu đen.     
+	\item       3. Coi 2 hình vuông còn lại như những bức tranh mới và áp dụng quá trình trên với chúng.     
+\end{itemize}
+\end{itemize}
+
+   Josip nhanh chóng thấy rằng không thể nào chuyển tải hết được ý tưởng của mình vào các bức tranh với phương pháp này. Nhiệm vụ của bạn là viết một chương trình tìm cách tô một bức tranh sao cho nó sai khác ít nhất so với bức tranh đã thiết kế sẵn. Sự sai khác giữa hai bức tranh là số cặp điểm ở vị trí tương ứng mà khác màu nhau.  
+
+\

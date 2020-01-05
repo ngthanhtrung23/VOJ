@@ -1,0 +1,29 @@
+\begin{verbatim}
+Input:
+5 5
+1 3 1
+2 5 1
+3 4 2
+1 2 2
+1 1 2
+
+Output:
+3
+
+Giải thích ví dụ: 
+-Thời điểm 1: Các yêu cầu đem ra xử lý là 1, 2.
+Xử lý yêu cầu 1, yêu cầu 2 chung 2 bản ghi 2, 3 với yêu cầu 1 nên chuyển sang xử lý ở thời điểm 2.
+-Thời điểm 2: Các yêu cầu đem ra xử lý là 2, 3, 4, 5.
+Xử lý yêu cầu 2, yêu cầu 2 và 3 có chung bản ghi với yêu cầu 2 nên chuyển sang thời điểm 3 để xử lý. Xử lý tiếp yêu cầu 5
+-Thời điểm 3: Các yêu cầu đem ra xử lý là 3, 4.
+Xử lý yêu cầu 3 và yêu cầu 4, vì chúng không có chung bản ghi nào
+
+-Thời điểm xử lý các yêu cầu từ 1.. 5 tương ứng sẽ là 1, 2, 3, 3, 2
+
+Giới hạn:
+1 ≤ N ≤ 100000. 
+1 ≤ M ≤ 100000.
+1 ≤ a$_i$ ≤ b$_i$ ≤ N. 
+1 ≤ t$_i$ ≤ 100000. 
+
+\end{verbatim}

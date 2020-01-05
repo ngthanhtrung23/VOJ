@@ -1,0 +1,17 @@
+Hàm KMP() của một xâu S độ dài N kí tự (đánh số bắt đầu từ 1) được định nghĩa:  
+\begin{itemize}
+	\item     KMP(I) = Max(L) thỏa đẳng thức ((S[1..L] = S[I-L+1..I] và L$<$I) hoặc L=0);   
+\end{itemize}
+
+   Với:  
+\begin{itemize}
+	\item     I, J là các số số tự nhiên từ 1 đến N;   
+	\item     S[I] là phần tử thứ I của xâu S khi viết S từ trái sang phải;   
+	\item     Nếu I $\le$ J, thì S[I..J] = S[I] + S[I+1] + ... + S[J-1] + S[J] (phép cộng chuỗi);   
+\end{itemize}
+
+   Một xâu S xác định chỉ có một hàm KMP() tương ứng duy nhất.  
+
+   Cho trước một hàm KMP() đã xác định, hãy tìm một xâu thập lục phân S (chỉ gồm các kí tự '0'..'9' 'A'..'F') tương ứng.  
+
+\

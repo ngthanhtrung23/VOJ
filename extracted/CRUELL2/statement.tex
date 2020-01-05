@@ -1,0 +1,14 @@
+Tính lũy thừa là chưa đủ, cô giáo còn có bài tập "khủng" nữa, đó là tìm nghiệm của phương trình có dạng đa thức. Biết rằng các đa thức này có bậc cao nhất là D (1  $\le$  D  $\le$  11) , D là số lẻ và đa thức chỉ có duy nhất 1 nghiệm X trong khoảng -1,000,000  $\le$  X  $\le$  1,000,000; X là nghiệm nếu nó làm cho giá trị của đa thức xấp xỉ 0 hoặc đúng bằng 0.  
+
+   Cho đa thức cùng với các hệ số thực (-500  $\le$  hệ số bậc i  $\le$  500), hãy tìm giá trị X với độ chính xác đến 0.0005. Khi tìm được X rồi thì ghi ra phần nguyên của X*1,000 (chú ý không làm tròn X).  
+
+   Ví dụ, đa thức bậc 3: 1.5*x^3 - 10 = 0 có 1 nghiệm X = 1.88207. Như vậy phải ghi ra 1882.  
+
+   Các bậc của đa thức là tính từ 0..D.   
+\\
+
+   Không có đáp án nào có nhiều hơn 6 chữ số có nghĩa và mỗi đáp án đều đủ nhỏ  để tăng 0.0001 (với kiểu dữ liệu double) thì cũng không làm mất đi tính chính xác.  
+
+   GỢI Ý: Tìm 1 chiến lược để thu hẹp khoảng của nghiệm cần tìm kiếm mỗi lần "thử" 1 giá trị X nào đó.  
+
+\

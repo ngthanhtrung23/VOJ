@@ -1,0 +1,31 @@
+Bạn cần chặt một thanh gỗ ra thành n đoạn, mỗi đoạn có độ dài a $_ i $ .
+
+Các đoạn được chặt phải có độ dài theo đúng thứ tự a $_ 1 $ , a $_ 2 $ , ..., a $_ n $ từ trái sang phải.
+
+Tại mỗi bước, bạn có thể chặt một nhát chia một thanh gỗ làm hai, và chi phí cho nhát chặt này bằng độ dài của thanh gỗ trước khi chặt.
+
+Thứ tự chặt khác nhau sẽ cho ra tổng chi phí khác nhau khi chặt thanh gỗ thành n đoạn yêu cầu.
+
+Ví dụ: bạn cần chặt một thanh gỗ độ dài 20 ra thành 4 đoạn độ dài 3, 5, 2 và 10 theo thứ tự.
+
+Khi chặt từ trái sang phải:
+\begin{itemize}
+	\item 20 chặt thành 3 và 17, chi phí 20.
+	\item 17 chặt thành 5 và 12, chi phí 17.
+	\item 12 chặt thành 2 và 10, chi phí 12.
+\end{itemize}
+
+Tổng chi phí: 49
+
+Khi chặt từ phải sang trái:
+\begin{itemize}
+	\item 20 chặt thành 10 và 10, chi phí 20.
+	\item 10 chặt thành 8 và 2, chi phí 10.
+	\item 8 chặt thành 3 và 5, chi phí 8.
+\end{itemize}
+
+Tổng chi phí: 38
+
+Bạn hãy tìm cách chặt có tổng chi phí nhỏ nhất.
+
+\

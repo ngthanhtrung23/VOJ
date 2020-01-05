@@ -1,0 +1,22 @@
+Bessie rất yêu bãi cỏ của mình và thích thú chạy về chuồng bò vào  giờ vắt sữa buổi tối.  
+
+   Bessie đã chia đồng cỏ của mình là 1 vùng hình chữ nhật thành  các ô vuông nhỏ với R (1  $\le$  R  $\le$  100) hàng và C (1  $\le$  C  $\le$  100) cột,  đồng thời đánh dấu chỗ nào là cỏ và chỗ nào là đá. Bessie đứng ở vị  trí R\_b,C\_b và muốn ăn cỏ theo cách của mình, từng ô vuông một và  trở về chuồng ở ô 1,1 ; bên cạnh đó đường đi này phải là ngắn nhất.  
+
+   Bessie có thể đi từ 1 ô vuông sang 4 ô vuông khác kề cạnh.  
+
+   Dưới đây là một bản đồ ví dụ [với đá ('*'), cỏ ('.'),  chuồng bò ('B'),  và Bessie ('C') ở hàng 5, cột 6] và một bản đồ cho biết hành trình  tối ưu của Bessie, đường đi được dánh dấu bằng chữ ‘m’.  
+\begin{verbatim}
+           Bản đồ               Đường đi tối ưu
+        1 2 3 4 5 6  $<$-cột      1 2 3 4 5 6  $<$-cột
+      1 B . . . * .           1 B m m m * .
+      2 . . * . . .           2 . . * m m m
+      3 . * * . * .           3 . * * . * m
+      4 . . * * * .           4 . . * * * m
+      5 * . . * . C           5 * . . * . m
+
+Bessie ăn được 9 ô cỏ.
+\end{verbatim}
+
+   Cho bản đồ, hãy tính xem có bao nhiêu ô cỏ mà Bessie sẽ ăn được trên  con đường ngắn nhất trở về chuồng (tất nhiên trong chuồng không có  cỏ đâu nên đừng có tính nhé)  
+
+\

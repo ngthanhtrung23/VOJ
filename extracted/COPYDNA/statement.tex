@@ -1,0 +1,18 @@
+Cho một xâu DNA S gồm các ký tự \{A, C, G, T\}. Bạn sẽ làm việc trên một xâu T, ban đầu có giá trị rỗng. Tìm số thao tác sao chép nhỏ nhất để biến T thành một xâu cho trước. Biết rằng mỗi thao tác sao chép có một trong hai dạng:  
+\begin{itemize}
+	\item     sao chép S i j k: sao chép đoạn S[i..j] vào xâu T bắt đầu từ vị trí k   
+	\item     sao chép T i j k: sao chép đoạn T[i..j] vào xâu T bắt đầu từ vị trí k   
+\end{itemize}
+
+   Lưu ý nếu i $>$ j có nghĩa là ta sao chép đoạn xâu theo thứ tự ngược. Mỗi ký tự trong T chỉ được tạo ra đúng một lần, nghĩa là không được sao chép đè lên ký tự đó.  
+
+   Ví dụ: Với S = “ACTG” hãy tạo T = “GTACTATTATA”  
+\begin{enumerate}
+	\item     Tạo GT......... bằng cách sao chép và đảo xâu “TG” từ S.   
+	\item     Tạo GTAC....... bằng cách sao chép “AC” từ S.   
+	\item     Tạo GTAC...TA.. bằng cách sao chép “TA” từ T.   
+	\item     Tạo GTAC...TAAT bằng cách sao chép và đảo xâu “TA” từ T.   
+	\item     Tạo GTACAATTAAT bằng cách sao chép “AAT” từ T.   
+\end{enumerate}
+
+\

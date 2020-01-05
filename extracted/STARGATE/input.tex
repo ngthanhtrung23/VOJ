@@ -1,0 +1,25 @@
+Gồm nhiều test, mỗi test vài dòng, mỗi dòng bắt đầu bằng ‘D’, ‘C’ hoặc ‘Q’ (chữ hoa hoặc
+
+thường) sau đó là 1 -$>$ 5 số nguyên với ý nghĩa như sau:
+\begin{itemize}
+	\item ‘D’ N -$>$ xác định số hành tinh là N, N $\le$ 6000000, hành tinh đánh số từ 1..N.
+	\item ‘C’ -$>$ tạo kết nối giữa các cặp hành tinh.
+	\item ‘Q’ -$>$ kiểm tra các cặp hành tinh có kết nối.
+\end{itemize}
+
+Lệnh C và Q có cùng định dạng như sau (kí hiệu là chữ X )
+\begin{itemize}
+	\item X src dst – Tạo/truy vấn kết nối giữa 2 hành tinh src và dst
+	\item X src dst nnn – Tạo/truy vấn kết nối giữa hành tinh src và nnn hành tinh liên tiếp từ dst. VD:
+\begin{itemize}
+	\item C 1 100 1 tạo 3 kết nối (1,100), (1,101), (1,102).
+	\item C 1 100 3 tạo 3 kết nối sau (1,100), (1,105), (1,110).
+	\item C 1 100 5 tạo 3 kết nối sau (1,100), (1,105), (1,110).
+\end{itemize}
+	\item X src dst nnn dststep srcstep – Tạo/truy vấn kết nối giữa nnn cặp thành phố từ src với bước nhảy là srcstep tại src và tới dst với bước nhảy là dststep. VD:
+\begin{itemize}
+	\item C 1 100 3 5 15 tạo 3 kết nối (1,100), (16,105), (31,110).
+\end{itemize}
+\end{itemize}
+
+\

@@ -1,0 +1,15 @@
+ 
+
+Trên một mạng lưới giao thông có n nút, các nút được đánh số từ 1 đến n và giữa hai nút bất kỳ có không quá một đường nối trực tiếp (đường nối trực tiếp là một đường hai chiều). Ta gọi đường đi từ nút s đến nút t là một dãy các nút và các đường nối trực tiếp có dạng:
+
+s = u $_ 1 $ , e $_ 1 $ , u $_ 2 $ ,..., u $_ i $ , e $_ i $ , u $_ i+1 $ , ..., u $_ k-1 $ , e $_ k-1 $ , u $_ k $ = t,
+
+trong đó u $_ 1 $ , u $_ 2 $ , …, u $_ k $ là các nút trong mạng lưới giao thông, e $_ i $ là đường nối trực tiếp giữa nút u $_ i $ và u $_ i+1 $ (không có nút u $_ j $ nào xuất hiện nhiều hơn một lần trong dãy trên, j = 1, 2, …, k).
+
+Biết rằng mạng lưới giao thông được xét luôn có ít nhất một đường đi từ nút 1 đến nút n.
+
+Một robot chứa đầy bình với w đơn vị năng lượng, cần đi từ trạm cứu hoả đặt tại nút 1 đến nơi xảy ra hoả hoạn ở nút n, trong thời gian ít nhất có thể. Thời gian và chi phí năng lượng để robot đi trên đường nối trực tiếp từ nút i đến nút j tương ứng là t $_ ij $ và c $_ ij $ (1 ≤ i, j ≤ n). Robot chỉ có thể đi được trên đường nối trực tiếp từ nút i đến nút j nếu năng lượng còn lại trong bình chứa không ít hơn c $_ ij $ (1 ≤ i, j ≤ n). Nếu robot đi đến một nút có trạm tiếp năng lượng (một nút có thể có hoặc không có trạm tiếp năng lượng) thì nó tự động được nạp đầy năng lượng vào bình chứa với thời gian nạp coi như không đáng kể.
+
+Yêu cầu: Hãy xác định giá trị w nhỏ nhất để robot đi được trên một đường đi từ nút 1 đến nút n trong thời gian ít nhất.
+
+\

@@ -1,0 +1,31 @@
+You have a treasure map that is arranged into a N \_M grid. A grid square may be either sea or part of
+
+an island. In addition, the map shows the treasure and an enemy Viking ship that occupies one (sea)
+
+square. Finally, for convenience you have also drawn your own position.
+
+Now you must set up a fixed route to get the treasure. The route must start at your position, end at
+
+the treasure, and consist of a sequence of moves. In each move, you can go only to an (horizontally
+
+or vertically) adjacent square that is not part of an island. But beware: The Viking ship might follow
+
+you, using the same kind of moves! After each of your moves according to your route, the Viking
+
+ship may move or not. Your move and the Vikings’ reaction together is called a round.
+
+After every round, the following checks are made:
+
+\_ If you are in line with the Viking ship (you are in the same vertical or horizontal line as the
+
+Viking ship with only sea between the Viking ship and you), you are dead.
+
+\_ If you aren’t dead and at the treasure-spot, you get the treasure.
+
+Write a program that decides whether it is possible to set up a fixed route in advance such that you
+
+can get the treasure by following this route and will not get killed by the Vikings – no matter how the
+
+Viking ship moves.
+
+\

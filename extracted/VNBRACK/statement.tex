@@ -1,0 +1,13 @@
+Xét định nghĩa 1 dãy ngoặc đúng:   
+\\   - Nếu A không có ký tự nào thì A là dãy ngoặc đúng   
+\\   - Nếu A là dãy ngoặc đúng thì (A) là dãy ngoặc đúng   
+\\   - Nếu A và B là 2 dãy ngoặc đúng thì AB là dãy ngoặc đúng   
+\\
+\\   Ta gọi bậc của dãy ngoặc đúng S là hàm deg(S). Gọi R là dãy ngoặc thu được bằng cách xóa đi N div 2 ký tự đầu và N div 2 ký tự cuối của S, trong đó 2*N là độ dài của S. Ta có công thức đệ quy tính deg(S) như sau:   
+\\   - Nếu R không phải dãy ngoặc đúng thì deg(S) = 1   
+\\   - Nếu R là dãy ngoặc đúng thì deg(S) = deg(R)+1   
+\\
+\\   Ví dụ dãy (()()) có bậc là 2, dãy ()(()) có bậc là 1, dãy (()) có bậc lớn vô cùng ( áp dụng vô hạn lần công thức đệ quy trên ).   
+\\   Yêu cầu: Xét cách dãy ngoặc có độ dài 2*N và bậc P, hãy in ra dãy ngoặc có thứ tự từ điển thứ K.  
+
+\

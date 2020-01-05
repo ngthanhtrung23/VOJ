@@ -1,0 +1,49 @@
+ 
+
+Những ngày hè nóng nực và ngột ngạt đã đến và những chú bò đang bắt đầu kêu ca. Bác John quyết định xây một hồ nước nhân tạo. Hồ nước có thể được mô tả như 1 vùng đất 2 chiều gồm N đoạn (N  $\le$  100 000) đánh số từ 1 đến N từ trái sang phải. Đoạn thứ i được mô tả bởi 2 số nguyên W\_i (1  $\le$  W\_i  $\le$  1000) và H\_i (1  $\le$  H\_i  $\le$  10^9 lần lượt là độ rộng và chiều cao của đoạn thứ i. Không có 2 đoạn nào có độ cao bằng nhau. 2 bức tường cao vô tận chặn ở 2 đầu trái và phải. Sau đây là 1 ví dụ về hình dạng hồ nước.
+\begin{verbatim}
+
+\texttt{        *             *  : 
+        *             *  : 
+        *             *  8 
+        *    ***      *  7 
+        *    ***      *  6 
+        *    ***      *  5 
+        *    **********  4 $<$- độ cao 
+        *    **********  3 
+        ***************  2 
+        ***************  1 
+Đoạn    |1111222333333| 
+}\end{verbatim}
+
+Lúc mặt trời mọc, bác John bắt đầu đổ nước vào nơi có độ cao thấp nhất với tốc độ 1 ô vuông 1x1 trên 1 phút. Nước sẽ rơi xuống đến khi nó chạm vào đáy và chảy sang các vùng bên cạnh như thông thường
+\begin{verbatim}
+
+\texttt{  Nước              Nước tràn 
+  |                       |        
+* |          *      *     |      *      *            * 
+* V          *      *     V      *      *            * 
+*            *      *    ....    *      *~~~~~~~~~~~~* 
+*    **      *      *~~~~** :    *      *~~~~**~~~~~~* 
+*    **      *      *~~~~** :    *      *~~~~**~~~~~~* 
+*    **      *      *~~~~**~~~~~~*      *~~~~**~~~~~~* 
+*    *********      *~~~~*********      *~~~~********* 
+*~~~~*********      *~~~~*********      *~~~~********* 
+**************      **************      ************** 
+**************      **************      ************** 
+}\end{verbatim}
+
+ 
+\begin{itemize}
+	\item 
+
+Sau 4 phút: Đoạn 1 bị phủ
+	\item 
+
+Sau 26 phút: Đoạn 3 bị phủ
+	\item 
+
+Sau 50 phút: Đoạn 2 bị phủ
+\end{itemize}
+
+\

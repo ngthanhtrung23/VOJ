@@ -1,0 +1,89 @@
+BUBBA2.tex,Input,Giới hạn,Output,Example,Giới hạn thời gian chạy:
+BALLGMVN.tex,Yêu cầu,Input,Giới hạn,Output,Example
+C11ROOKS.tex,Dữ liệu,Kết quả,Ví dụ,Giải thích,Giới hạn
+NUMBERS.tex,Dữ liệu,Kết quả,Giới hạn,Chú ý,Ví dụ
+VMPIN.tex,Input,Output,Giới hạn,Chấm bài,Example
+VMFOUR.tex,Giới hạn,Input,Output,Chấm bài,Example
+TRICIR.tex,Đề bài,Dữ liệu,Kết quả,Giới hạn,Ví dụ
+VMDOM2.tex,Input,Output,Giới hạn,Chấm điểm,Example
+TOTALODD.tex,Đề bài,Dữ liệu,Kết quả,Giới hạn,Ví dụ
+VOCARD.tex,\textbf{    Yêu cầu,Input,Output,Giới hạn:,Example
+VMCOINS.tex,Input,Output,Giới hạn,Chấm điểm,Example
+VMDAOBIT.tex,Input,Output,Giới hạn,Ví dụ,Giải thích
+BOUNCE.tex,Đề bài,Dữ liệu,Kết quả,Giới hạn,Ví dụ
+VOBIGNUM.tex,Input,Output,Giới hạn,Chú ý:,Example
+VMPIZZA.tex,Input,Output,Giới hạn,Ví dụ,Giải thích
+VMSINCOS.tex,Input,Output,Giới hạn,Chấm bài,Example
+PA06ANT.tex,Yêu cầu,Dữ liệu,Kết quả,Ví dụ,Giới hạn
+C11SWAP.tex,Dữ liệu,Kết quả,Ví dụ,Giải thích:,\textbf{    Giới hạn:
+VMCOFFEE.tex,Input,Giới hạn,Output,Chấm bài,Example
+VOGCDSUM.tex,Input,Output,Giới hạn,Chấm điểm,Ví dụ
+VMAOCE.tex,Inpute,Output,Giới hạn,Chấm bài,Example
+C11ANT.tex,\textbf{Dữ liệu vào,\textbf{Dữ liệu ra,Giới hạn,\textbf{Ví dụ,Giải thích
+VMCOUNT.tex,Yêu cầu,Input,Output,Chấm điểm,Example
+BONGDA.tex,Yêu cầu,Dữ liệu,Kết qủa,Giới hạn,Ví dụ
+STREDUCE.tex,Yêu cầu,Dữ liệu,Kết quả,Ví dụ,Giới hạn
+BINPAL.tex,Dữ liệu,Kết quả,Ví dụ,Giải thích,Giới hạn
+ZOOTOUR.tex,Dữ liệu,Kết quả,Ví dụ,Giới hạn,Giải thích
+AZNET.tex,Yêu cầu,Input,Giải thích,Output,Example
+LOTT.tex,Đề bài,Dữ liệu,Kết quả,Giới hạn,Ví dụ
+VMAZE.tex,Yêu cầu,Input,Giới hạn,Output,Example
+VMGAME.tex,Mô phỏng trò chơi,Chú ý,Chấm điểm,Example,Giải thích
+POTATO.tex,Đề bài,Dữ liệu,Kết quả,Giới hạn,Ví dụ
+NETACCEL.tex,Dữ liệu,Giới hạn,Kết quả,Ví dụ,Giải thích
+VOSNUM.tex,Input,Output,Example,Giải thích:,Giới hạn:
+MOVIES.tex,Đề bài,Dữ liệu,Kết quả,Giới hạn,Ví dụ
+TWOREG.tex,Đề bài,Dữ liệu,Kết quả,Giới hạn,Ví dụ
+VMCODE.tex,Input,Output,Chấm điểm,Giới hạn,Example
+C11PAIRS.tex,Dữ liệu,Kết quả,Ví dụ,Giải thích,Giới hạn
+NINJUMP.tex,Dữ liệu,Kết quả,Lưu ý,Giới hạn,Ví dụ
+VMSUBSTR.tex,Input,Output,Giới hạn,Example,Giải thích
+JOBSET.tex,Yêu cầu,Input,Output,Giới hạn,Example
+FLOWGROW.tex,Yêu cầu,Dữ liệu,Kết quả,Ví dụ,Giới hạn
+VMSALARY.tex,Dữ liệu vào,Dữ liệu ra,Giới hạn,Ví dụ,Giải thích
+MEO.tex,Yêu cầu,Dữ liệu,Kết quả,Hạn chế,Ví dụ
+CHUOIHAT.tex,Yêu cầu,Dữ liệu,Kết qủa,Giới hạn,Ví dụ
+VMEMPIRE.tex,Input,Output,Giới hạn,Chấm bài,Example
+FSOFT.tex,Dữ liệu,Kết quả,Ví dụ,Giới hạn,Cách tính điểm
+VMGOLD.tex,Yêu cầu,Input,Giới hạn,Output,Example
+COLOROOK.tex,Đề bài,Dữ liệu,Kết quả,Giới hạn,Ví dụ
+COLORECT.tex,Đề bài,Dữ liệu,Kết quả,Giới hạn,Ví dụ
+QOS.tex,Yêu cầu,Input,Output,Giới hạn,Example
+NKJUMP.tex,Yêu cầu,Dữ liệu,Kết quả,Ràng buộc,Ví dụ
+ARITHSEQ.tex,Yêu cầu,Dữ liệu,Kết quả,Ví dụ,Giới hạn
+VMBW.tex,Input,Output,Chấm điểm,Giới hạn,Example
+SUPERSUM.tex,Đề bài,Dữ liệu,Kết quả,Giới hạn,Ví dụ
+VMCXG.tex,Input,Output,Giới hạn,Chấm điểm,Ví dụ
+MEXICO.tex,Yêu cầu,Ràng buộc,Dữ liệu,Kết quả,Cách chấm điểm
+C11PF.tex,Yêu cầu,Dữ liệu,Kết quả,Ví dụ,Giới hạn
+COMPUTER.tex,Yêu cầu,Dữ liệu,Kết quả,Giới hạn,Ví dụ
+VMECLIP.tex,Input,Output,Giới hạn,Chấm bài,Example
+VMMIRROR.tex,Input,Output,Chấm điểm,Giới hạn,Example
+BALGAME3.tex,Yêu cầu,Dữ liệu,Kết quả,Ví dụ,Giới hạn
+DRLINES.tex,Đề bài,Dữ liệu,Kết quả,Giới hạn,Ví dụ
+NKGIFTS.tex,Yêu cầu,Dữ liệu,Kết quả,Ràng buộc,Ví dụ
+KANDP.tex,Dữ liệu,Kết quả,Giới hạn,Ví dụ,Giải thích
+CHNREST.tex,Yêu cầu,Dữ liệu,Kết quả,Ví dụ,Giới hạn
+VOTREE.tex,Input,Output,Giới hạn,Chú ý:,Example
+MARBLE.tex,Dữ liệu,Kết quả,Ví dụ,Giải thích,Giới hạn
+MOBIVINA.tex,Yêu cầu,Dữ liệu,Kết quả,Ví dụ,Giới hạn
+LCS2X.tex,Yêu cầu,Input,Giới hạn,Output,Example
+VMCOMP.tex,Input,Output,Giới hạn,Chấm bài,Example
+NKSGAME.tex,Yêu cầu,Dữ liệu,Kết quả,Ràng buộc,Ví dụ
+AIRCTRL.tex,Dữ liệu,Kết quả,Ví dụ,Giải thích,Giới hạn
+EQSTR.tex,Đề bài,Dữ liệu,Kết quả,Giới hạn,Ví dụ
+VMTRIP.tex,Input,Output,Giới hạn:,Chấm điểm,Example
+BUS_.tex,Yêu cầu,Input,Output,Giới hạn,Example
+COMMAND.tex,Đề bài,Dữ liệu,Kết quả,Giới hạn,Ví dụ
+QUAD.tex,CHÚ Ý,Dữ liệu,Kết quả,Ví dụ,GIẢI THÍCH
+VM15SWAP.tex,Input,Output,Giới hạn,Ví dụ,Giải thích
+NK05DSRT.tex,Dữ liệu vào,Kết qủa,Giới hạn,Ví dụ,Giải thích
+VMSUM2.tex,Input,Output,Giới hạn,Example,Giải thích
+TPCLKNUM.tex,Input,Output,Example,Giải thích,Giới hạn :
+VMRESTO.tex,Input,Output,Giới hạn,Example,Giải thích
+PBCSEQ.tex,Yêu cầu,Dữ liệu,Kết quả,Giới hạn,Ví dụ
+VOBOARD3.tex,Input,Output,Giới hạn,Chấm điểm,Ví dụ
+VOCACTUS.tex,Input,Output,Giới hạn:,Example,Giải thích
+MINROAD.tex,Yêu cầu,Input,Output,Giới hạn,Example
+SUMTREE.tex,Dữ liệu,Giới hạn,Kết quả,Ví dụ,Giải thích
+VMMARBLE.tex,Input,Output,Giới hạn,Example,Giải thích

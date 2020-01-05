@@ -1,0 +1,11 @@
+Một công viên giải trí vừa mở trò chơi tàu lượn siêu tốc thế hệ mới. Đường ray tàu lượn bao gồm n thanh ray gắn với   nhau. Đoạn đầu của thanh ray thứ nhất được cố định tại cao độ 0. Byteman, người điều hành, có thể điều chỉnh lại đường   ray tàu lượn theo ý muốn bằng cách điều chỉnh       độ thay đổi cao độ      của một dãy các thanh ray liên tiếp. Độ thay   đổi cao độ của các thanh ray khác không bị thay đổi. Mỗi khi các thanh ray được điều chỉnh, đường ray được nâng lên   hoặc hạ xuống để nối các thanh ray trong khi vẫn giữ điểm đầu ở cao độ 0. Hình vẽ dưới đây minh họa 2 ví dụ về điều  chỉnh đường ray.  
+
+   Mỗi chuyến tàu được thực hiện bằng cách khởi động xe với đủ năng lượng để đạt đến độ cao h. Nghĩa là xe sẽ tiếp tục   di chuyển đến khi nào độ cao của đường ray không vượt quá h và chưa đi hết đường ray.  
+
+   Cho biết thông tin về các chuyến tàu và các điều chỉnh đường ray trong ngày, với mỗi chuyến tàu hãy tính số thanh ray   xe di chuyển trước khi dừng lại.  
+
+   Đường ray được mô tả dưới dạng một dãy gồm n độ thay đổi cao độ, mỗi giá trị tương ứng với một thanh ray. Số thứ i   d   $_    i   $   mô tả độ thay đổi cao độ (tính theo cm) của thanh ray thứ i. Giả sử sau khi di chuyển trên i-1 thanh ray xe   đạt đến độ cao h thì sau khi di chuyển trên i thanh ray, xe sẽ đạt đến độ cao h+d   $_    i   $   cm.  
+
+   Ban đầu tất cả các thanh ray đều nằm ngang, nghĩa là d   $_    i   $   =0 với mọi i. Các chuyến tàu và điều chỉnh đường   ray diễn ra xen kẽ nhau trong ngày. Mỗi điều chỉnh được đặc trưng bởi 3 số: a, b và D. Đoạn ray được điều chỉnh bao gồm   các thanh ray từ a đến b. Độ thay đổi cao độ của mỗi thanh ray trong đoạn được đặt bằng D. Nghĩa là d   $_    i   $   =D   với mọi a ≤ i ≤ b. Mỗi chuyến tàu được đặc trưng bởi 1 số nguyên h cho biết cao độ lớn nhất mà xe đạt được.  
+
+\
