@@ -123,7 +123,7 @@ def extractNSections(n):
                 subsectionMatches = re.search(pattern2, parts[i])
                 if not subsectionMatches:
                     continue
-                subsectionName = subsectionMatches.group(1)
+                subsectionName = subsectionMatches.group(1).strip()
                 formattedSubsectionName = format(subsectionName)
                 subsectionContent = parts[i + 1].strip() + '\n'
 
