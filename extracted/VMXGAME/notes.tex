@@ -1,0 +1,40 @@
+Cách tính điểm:
+\begin{itemize}
+	\item     Điểm tối đa cho mỗi test trong 1 file input là 1 điểm.   
+	\item     Nếu dãy di chuyển mà bạn đưa ra không hợp lệ, bạn được 0 điểm.   
+	\item     Gọi M là số lượng bước di chuyển trong cách tối ưu.   
+	\item     Nếu M = Y, bạn được 1 điểm. Nếu Y $<$ M, bạn được 0.7*(Y/M)    $^     3    $    .   
+	\item     Chú ý rằng nếu ở một test bạn in ra nhiều hơn / ít hơn Y dòng, bạn sẽ bị 0 điểm ở test đó và cả các test sau (trong cùng bộ test).   
+\end{itemize}
+Example
+\begin{verbatim}
+\textbf{Input:}
+3
+1
+4
+50
+\end{verbatim}
+\begin{verbatim}
+Output:\end{verbatim}
+\begin{verbatim}
+0
+15
+2 4 0 4
+2 3 0 3
+0 4 0 2
+3 2 3 0
+2 2 2 0
+0 2 2 2
+3 0 1 0
+1 0 1 2
+1 2 3 2
+4 3 2 3
+4 4 2 4
+2 4 2 2
+4 1 4 3
+2 2 4 2
+4 2 4 4
+0
+\end{verbatim}
+
+   Với output này, bạn được 2 điểm.

@@ -1,0 +1,17 @@
+Giới hạn
+\begin{itemize}
+	\item     N ≤ 1000.   
+	\item     Màu của các hộp không vượt quá N.   
+\end{itemize}
+Ví dụ
+\begin{verbatim}
+Dữ liệu
+5
+2 1 2 3 4
+2 3 1 4 2
+
+Kết quả
+1
+\end{verbatim}
+
+\textit{    Giải thích   }   : Đầu tiên ta rút hộp màu 2 ra, đặt nó vào vị   trí ở dưới ( hình vẽ ), sau đó rút hộp màu 1 ra và cho vào giỏ ( vì không thể đặt vào bên trái/phải của hộp màu 2 ), sau đó rút được hộp màu 2 nữa ra, ta đặt nó vào bên phải hộp màu 2 đã xếp trước đó. Tiếp tục rút hộp 3 ra và cho vào bên phải hộp 2 ( hộp ở trên ), sau đó rút hộp 1 (từ trong giỏ) ra cho vào bên phải hộp 3 hoặc rút hộp 4 ra cho vào bên trái hộp 2 ( hộp ở dưới ), còn lại 1 hộp đặt nó vào vị trí cuối cùng.

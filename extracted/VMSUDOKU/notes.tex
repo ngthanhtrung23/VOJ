@@ -1,0 +1,39 @@
+Cách tính điểm
+\begin{itemize}
+	\item Nếu bạn đưa ra một bảng Sudoku không hợp lệ, bạn được 0 điểm.
+	\item Ngược lại, điểm của bạn được tính như sau:
+\begin{itemize}
+	\item Gọi ô ở hàng u, cột v là ô (u, v).
+	\item Với mỗi số i từ 1 đến 9, ta định nghĩa
+\\
+\includegraphics{../../../content/voj:VMSUDOKU2.png}
+\\với tất cả các cặp ô (u, v) và (x, y) chứa số i.
+	\item Điểm của bạn được tính theo công thức:
+\\
+\includegraphics{../../../content/voj:VMSUDOKU1.png}
+\end{itemize}
+	\item Điểm càng cao càng tốt. Vì đây là bài challenge, điểm cuối cùng mà bạn nhận được trong VM14 sẽ được tính theo công thức:
+\begin{itemize}
+	\item Giả sử bạn đứng thứ i (nghĩa là có i-1 người điểm cao hơn bạn).
+	\item Điểm của bạn nhận được sẽ là
+\\
+\includegraphics{../../../content/voj:VMSUDOKU3.png}
+\\với log là log cơ số e.
+\end{itemize}
+\end{itemize}
+Example
+\begin{verbatim}
+\textbf{Output:}
+683459172
+241673859
+759182364
+492836715
+536217498
+817594236
+928361547
+174925683
+365748921
+
+
+Với output này, sum(1) = 398, sum(2) = 404, ..., sum(9) = 374, tổng(i * sum(i)) = 17056. Điểm bạn nhận được là 56.
+\end{verbatim}

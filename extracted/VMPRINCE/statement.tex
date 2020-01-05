@@ -1,0 +1,13 @@
+Ngày xửa ngày xưa, ở một vương quốc xa rất xa, có một nàng công chúa xinh đẹp tuyệt trần chẳng may bị quái vật bắt giữ. Chàng hoàng tử của chúng ta sau khi \href{vnoi.info/problems/show/VOBOARD2/{ thoát ra được mê cung } chưa bao lâu thì hay tin này và chàng ngay lập tức dẫn quân lính đi giải cứu công chúa. }
+
+Quái vật sau khi để hoàng tử chạy thoát khỏi mê cung của mình bây giờ đã trở nên thông minh hơn. Nó mang công chúa đến giam giữ trong lãnh địa của mình. Lãnh địa của quái vật có \textbf{ N } ngôi làng bỏ hoang và các con đường mòn nối giữa các ngôi làng với nhau đi xuyên qua những cánh rừng sâu thăm thẳm. Vì quái vật rất thông minh, nó chỉ giữ lại những con đường cần thiết để có thể đi lại giữa hai ngôi làng bất kì trong lãnh địa của mình và dùng ma thuật của mình để xóa đi dấu vết của các con đường khác.
+
+Hoàng tử biết rất rõ về lãnh địa của quái vật cũng như biết rằng quái vật có thể giam giữ công chúa ở trong một ngôi làng nào đó hoặc một nơi bất kì trong các cánh rừng bao quanh những con đường mòn. Ban đầu, hoàng tử sẽ cho quân lính lập doanh trại tại các ngôi làng ở biên giới của lãnh địa. Đặc điểm của những ngôi làng này là chỉ có tối đa một con đường mòn dẫn tới nó. Sau đó, hoàng tử sẽ điều động quân lính của mình đi theo các con đường mòn để tìm ra nơi công chúa bị giam giữ. Quá trình tìm kiếm được mô tả như sau:
+\begin{itemize}
+	\item Do quái vật rất cảnh giác, mỗi ngày chỉ có một nhóm quân lính được điều động đi tìm kiếm để tránh bị quái vật phát hiện và thay đổi nơi giam giữ công chúa.
+	\item Nhóm quân lính tìm kiếm phải được điều động từ một doanh trại, đi qua các con đường và các ngôi làng rồi dừng chân tại doanh trại đầu tiên họ gặp.
+	\item Nếu trên đường đi, nhóm quân lính đi qua một ngôi làng bỏ hoang, thì sau khi nhóm quân lính rời ngôi làng, một phần trong số họ sẽ ở lại và đặt một doanh trại mới tại ngôi làng này. Số quân lính của hoàng tử là rất lớn nên đảm bảo luôn có đủ người để lập doanh trại mới. Lưu ý, điều này có nghĩa là tại thời điểm nhóm quân lính xuất phát, đích đến cuối cùng của họ phải có sẵn một doanh trại từ trước.
+	\item \textbf{Tất cả các ngôi làng đều có doanh trại và mỗi con đường trong lãnh địa phải được đi qua đúng một lần. }
+\end{itemize}
+
+Độ dài của một hành trình tìm kiếm là số con đường nhóm quân lính phải đi qua. Một hành trình có độ dài \textbf{ i } sẽ có chi phí là \textbf{ $C_{i}$} . Do muốn nhóm quân lính có nhiều thời gian tìm kiếm hơn trên mỗi con đường đi qua, hoàng tử muốn lên kế hoạch sao cho \textbf{ độ dài của hành trình dài nhất là nhỏ nhất có thể } . Trong những cách thỏa mãn điều kiện trên, hoàng tử muốn chọn cách có \textbf{ tổng chi phí là nhỏ nhất } .

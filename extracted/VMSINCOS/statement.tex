@@ -1,0 +1,10 @@
+Cho một dãy số A gồm N số thực. Các phần tử của dãy được đánh số từ 1 đến N. Phần tử thứ i được kí hiệu là A[i]. Bạn cần thực hiện Q truy vấn trên dãy số, mỗi truy vấn thuộc một trong các dạng:  
+\begin{itemize}
+	\item     Modify u x : Gán A[u] = x   
+	\item     Mul u v x : Gán A[i] = A[i] * x, với i thuộc [u, v]   
+	\item     Sin u v x : Tính tổng: sin(A[u] - x) + sin(A[u+1] - x) + ... + sin(A[v] - x)   
+	\item     Cos u v x : Tính tổng: cos(A[u] - x) + cos(A[u+1] - x) + ... + cos(A[v] - x)   
+	\item     Reverse u v : Đảo ngược các phần tử từ u đến v. (Đổi chỗ a[u] và a[v], đổi chỗ a[u+1] và a[v-1], ...)   
+\end{itemize}
+
+   Chú ý: Các phép tính sin, cos được tính trên góc radian.

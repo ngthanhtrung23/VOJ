@@ -1,0 +1,50 @@
+Đề bài
+Có một trò chơi như sau. Có một bàn cờ 1xN gồm N ô đánh số 1..N từ trái sang phải và 1 quân xúc xắc có d mặt với xác suất rơi trúng mỗi mặt là như nhau. Hai người chơi thay phiên nhau đi, mỗi người chơi có một quân cờ. Mỗi lượt người chơi sẽ tung xúc xắc và di chuyển quần cờ của mình với số ô bằng số hiện ra trên xúc xắc. Ai đến được ô N trước là thắng.  
+
+   Lưu ý là nếu vượt quá ô N quân cờ sẽ bật ngược về bên trái. Cụ thể, nếu a là ô hiện tại và b là kết quả tung xúc xắc thì:  
+\begin{itemize}
+	\item     Nếu a + b $<$ n, quân cờ di chuyển đến (a+b)   
+	\item     Nếu a + b = n, quân cờ di chuyển đến n và người cầm quân  thắng cuộc   
+	\item     Nếu a + b $>$ n, quân cờ di chuyển đến ô (n-(a+b-n))   
+\end{itemize}
+
+   Cho n, d và vị trí ban đầu của mỗi quân cờ, tính xác suất để người đi trước thắng.
+Giới hạn
+\begin{itemize}
+	\item     10  $\le$  n  $\le$  5000   
+	\item     1  $\le$  d, x, y  $\le$  n-1   
+\end{itemize}
+Ví dụ
+\begin{verbatim}
+Dữ liệu
+[CASE]
+10
+6
+1
+1
+
+[CASE]
+10
+2
+1
+1
+
+[CASE]
+100
+20
+1
+10
+
+[CASE]
+10
+5
+9
+1
+
+[END]
+Kết quả
+0.5417251215862328
+0.6090494791666666
+0.49158887163174947
+0.6943018666666667
+\end{verbatim}

@@ -1,0 +1,28 @@
+Giới hạn
+\begin{itemize}
+	\item L ≤ 1,000,000;
+	\item Q ≤ 100,000;
+	\item Số ký tự trong mỗi query không quá 52. Trong mỗi query, các ký tự không lặp lại
+	\item Trong 50\% số test, L ≤ 1000, Q ≤ 1000;
+\end{itemize}
+Example
+\begin{verbatim}
+\textbf{Input:}
+7
+abacaba
+3
+ac
+b
+ab
+
+\textbf{Output:}
+3
+2
+2
+\end{verbatim}
+Giải thích
+\begin{itemize}
+	\item Với trường hợp 'ac', Huy chỉ hái những cây loại 'a' và 'c'. Nên Huy cần nhờ ít nhất 3 nhân công lo 3 phần 'a', 'aca', 'a';
+	\item Với trường hợp 'b', Huy cần nhờ ít nhất 2 nhân công lo 2 phần 'b';
+	\item Với trường hợp 'ab', Huy cần nhờ ít nhất 2 nhân công lo 2 phần 'aba';
+\end{itemize}

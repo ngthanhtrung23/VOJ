@@ -1,0 +1,28 @@
+Consider a grid having NxM squares. The top left square is (0,0) and the bottom right is (N-1,M-1). Each square in the grid is either occupied by a platform or has a number written on it. Two balls are released from the top of the grid (from locations (0,Y1) and (0,Y2), 0  $\le$  Y1,Y2 $<$ M). Each ball falls down vertically, unless either it falls down the bottom row, or encounters a platform beneath. When the ball encounters a platform beneath, it rolls either to the left or to the right, each with an equal probability. The score obtained by a ball is the sum of the numbers on the squares that it passes (including the starting square). However, if both the balls pass over the same square, points corresponding to that square are obtained only once, and not twice. Your goal is to choose Y1 and Y2 such that the expected score obtained by the two balls is maximized. For example, consider the grid below : (P reprsents a platform)  
+\begin{verbatim}
+N = 6, M = 6
+112214
+211243
+30PPP2
+423378
+1P9753
+220102
+\end{verbatim}
+
+   Here, dropping a ball from position (0,3) could result in one of the following three scores :  
+\begin{verbatim}
+1) 2 + 2 + 1 + 1 + 0 + 2 + 4 + 1 + 2 = 15 
+2) 2 + 2 + 1 + 1 + 0 + 2 + 3 + 9 + 0 = 20
+3) 2 + 2 + 4 + 3 + 2 + 8 + 3 + 2 = 26
+\end{verbatim}
+
+   The expected score is (considering only 1 ball) :  
+\begin{verbatim}
+1/2*(1/2*(15) + 1/2*(20)) + 1/2*(26)\end{verbatim}
+
+Constraints
+Dataset 1: 1  $\le$  number of test cases  $\le$  100  
+
+   3  $\le$  N,M  $\le$  100  
+
+   All possible paths from the top will eventually lead to the ball falling from the bottom. There will be no "rebounds" possible. If there is a 'P' on square (x,y), there will not be a 'P' on squares (x-1,y-1) or (x-1,y+1) or (x+1,y-1) or (x+1,y+1). Also, platforms will not occur on the boundaries of the grid. Thus, the X coodinate of a platform will never be 0 or N-1, and the Y coordinate will never be 0 or M-1. The test case was generated to guarantee that any answer with absolute error in 1e-9 will got accepted. Time limit: 7s

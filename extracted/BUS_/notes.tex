@@ -1,0 +1,46 @@
+Giới hạn
+\begin{itemize}
+	\item 1  $\le$  N  $\le$  5 * 10^4
+	\item 1  $\le$  M  $\le$  10^5
+	\item 0  $\le$  T  $\le$  10^9
+	\item 1  $\le$  U[i] , V[i]  $\le$  N
+	\item 0  $\le$  A[i]  $\le$  B[i] $<$ C[i]  $\le$  D[i]  $\le$  10^9
+\end{itemize}
+Example
+\begin{verbatim}
+\textbf{Input:}
+3 6 2 100
+1 3 10 20 30 40
+3 2 32 35 95 95
+1 1 1 1 7 8
+1 3 8 8 9 9
+2 2 98 98 99 99
+1 2 0 0 99 101
+\textbf{Output:}
+32\end{verbatim}
+
+ 
+
+\textbf{Giải thích:}
+\\- Từ 0..1 : Đợi ở thành phố 1
+\\- Từ 1..7 : Dùng tuyến thứ 3 để đi từ thành phố 1 đến thành phố 1
+\\- Từ 7..8 : Đợi ở thành phố 1
+\\- Từ 8..9 : Dùng tuyến thứ 4 để đi từ thành phố 1 đến thành phố 3
+\\- Từ 9..35 : Đợi ở thành phố 3
+\\- Từ 35..95 : Dùng tuyến thứ 2 để đi từ thành phố 3 đến thành phố 2
+\\- Từ 95..98 : Đợi trong thành phố 2
+\\- Từ 98..99 : Dùng tuyến thử 5 để đi từ thành phố 2 đến thành phố 2
+\\- Từ 99..100 : Đợi ở thành phố 2
+\\\textbf{Tổng thời gian đợi : 1 + 1 + 26 + 3 + 1 = 32}
+
+ 
+\begin{verbatim}
+\textbf{Input:
+}3 2 2 100
+1 3 0 0 49 51
+3 2 50 51 100 100
+\textbf{Output:
+}-1
+\end{verbatim}
+
+ 

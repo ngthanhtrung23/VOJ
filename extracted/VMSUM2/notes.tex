@@ -1,0 +1,52 @@
+Giới hạn
+\begin{itemize}
+	\item     Trong tất cả các test,    \textbf{     n    }    là số nguyên dương và    \textbf{     1    }    $<$    \textbf{     n    }    ≤    \textbf{     $10^{6}$}    .   
+	\item     Trong 20\% test tương ứng với 20\% điểm,    \textbf{     n    }     $\le$     \textbf{     1000    }    .   
+	\item     Trong quá trình thi, bài của bạn chỉ được chấm với test ví dụ. Nếu ra đúng kết quả test ví dụ, điểm của bạn sẽ được hiển thị là 100.   
+\end{itemize}
+Example
+\textbf{    Input:   }
+\begin{verbatim}
+2
+3
+4
+\end{verbatim}
+
+\textbf{    Output:   }
+\begin{verbatim}
+0.5
+1.5
+2.333333333\end{verbatim}
+Giải thích
+Với   \textbf{    M   }   = 2, ta có   \textbf{    1   }   cặp (p, q):  
+\begin{enumerate}
+	\item     (1, 2)   
+\end{enumerate}
+
+   =$>$   \textbf{    R   }   (2) = 1/2 = 0.5  
+
+   Với   \textbf{    M   }   = 3, ta có   \textbf{    3   }   cặp (p, q):  
+\begin{enumerate}
+	\item     (1, 2)   
+	\item     (1, 3)   
+	\item     (2, 3)   
+\end{enumerate}
+
+   =$>$   \textbf{    R   }   (3) = 1/2 + 1/3 + 1/6 = 1  
+
+   Với   \textbf{    M   }   = 4, ta có   \textbf{    4   }   cặp (p, q):  
+\begin{enumerate}
+	\item     (1, 3)   
+	\item     (1, 4)   
+	\item     (2, 3)   
+	\item     (3, 4)   
+\end{enumerate}
+
+   =$>$   \textbf{    R   }   (4) = 1/3 + 1/4 + 1/6 + 1/12 =  0.833333333  
+
+   Vậy ta có được kết quả:  
+\begin{itemize}
+	\item \textbf{     S    }    (2) =    \textbf{     R    }    (2) = 0.5   
+	\item \textbf{     S    }    (3) =    \textbf{     R    }    (2) +    \textbf{     R    }    (3) = 1 + 0.5 = 1.5   
+	\item \textbf{     S    }    (4) =    \textbf{     R    }    (2) +    \textbf{     R    }    (3) +    \textbf{     R    }    (4) = 1 + 0.5 + 0.833333333 = 2.333333333   
+\end{itemize}

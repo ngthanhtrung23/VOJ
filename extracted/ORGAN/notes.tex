@@ -1,0 +1,34 @@
+Ví dụ
+Với n = 5; s = 2; w = 2; m = 1; $b_{min}$ = 9; $b_{max}$ = 12 và dãy các ống có độ cao là 4, 6, 2, 3, 7 có 2 cách phân 5 ống thành 2 lô con:
+
+\textbf{Cách phân lô thứ nhất: } Lô con 1 gồm các ống với các trọng lượng tương ứng là 4, 6, 2. Lô con 2 gồm các ống với các trọng lượng tương ứng là 3, 7.
+
+Lô con thứ nhất có thể sản xuất các loại đàn:
+\begin{itemize}
+	\item Số lượng loại đàn không có vị trí nào mà ống đứng trước cao hơn ống đứng liền kề sau nó là 1 (2-4-6);
+	\item Số lượng loại đàn có đúng 1 vị trí mà ống đứng trước cao hơn ống đứng liền kề sau nó là 4 (2-6-4, 4-2-6, 4-6-2, 6-2-4);
+	\item Số lượng loại đàn có đúng 2 vị trí mà ống đứng trước cao hơn ống liền kề sau nó là 1 (6-4-2);
+\end{itemize}
+
+Do đó, từ các ống trong lô con thứ nhất có thể sản xuất 6 loại đàn.
+\\Từ các ống trong lô con thứ hai có thể sản xuất thêm 2 loại đàn mới (3-7, 7-3).
+\\Vậy, theo các phân lô thứ nhất có thể sản xuất 8 loại đàn.
+
+\textbf{Cách phân lô thứ hai: } Lô con 1 gồm các ống với các trọng lượng tương ứng là 4, 6. Lô con 2 gồm các ống với các trọng lượng tương ứng là 2, 3, 7. Tính tương tự như trên, cách phân lô này cho phép sản xuất 8 loại đàn.
+
+Vậy đáp số cần tìm là 8.
+Test ví dụ
+\begin{verbatim}
+\textbf{Input:}
+1
+5 2 2 1 9 12
+4 6 2 3 7
+
+\textbf{Output:}
+8\end{verbatim}
+Ràng buộc
+\begin{itemize}
+	\item Có 30\% số test ứng với 30\% số điểm của bài có n ≤ 10.
+	\item Có 30\% số test ứng với 30\% số điểm của bài có 10 $<$ n ≤ 30.
+	\item Có 40\% số test ứng với 40\% số điểm của bài có 30 $<$ n ≤ 200.
+\end{itemize}

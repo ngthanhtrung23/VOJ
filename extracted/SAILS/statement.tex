@@ -1,0 +1,15 @@
+Bọn cướp biển đang đóng một chiếc tàu mới. Chiếc tàu này có N cột buồm chia thành các đoạn độ dài đơn vị, độ cao của một cột buồm bằng số đoạn thẳng trên cột buồm. Mỗi cột buồm có một số lá buồm, mỗi lá buồm nằm gọn trên một đoạn độ dài đơn vị. Các lá buồm trên một cột có thể được phân bố tùy ý vào các đoạn khác nhau trên cột buồm, nhưng mỗi đoạn chỉ được chứa đúng một lá buồm.  
+
+   Mỗi cách sắp đặt lá buồm khác nhau sẽ tạo ra một lực đẩy gió khác nhau khi thuyền ra khơi. Các lá buồm đằng trước các lá buồm khác ở cùng độ cao sẽ nhận được ít gió hơn và tạo ít lực đẩy hơn. Với mỗi lá buồm, ta định nghĩa độ kém hiệu quả của nó là tổng số lá buồm có cùng độ cao ở phía sau nó. Chú ý là "phía trước" và "phía sau" phụ thuộc vào hướng của con thuyền: trong hình vẽ dưới đây, "phía trước" nghĩa là ở bên trái, "phía sau" nghĩa là ở bên phải.  
+
+   Độ kém hiệu quả của cả con thuyền là tổng độ kém hiệu quả của mỗi lá buồm.  
+
+
+\includegraphics{http://vn.spoj.com/OI/content/SAILS.jpg}
+
+   Con thuyền này có 6 cột buồm, với độ cao 3, 5, 4, 2, 4 và 3 từ phía trước (bên trái của hình vẽ) đến phía sau.  
+
+   Cách sắp xếp các lá buồm này cho độ kém hiệu quả là 10. Độ kém hiệu quả của mỗi lá buồm được ghi trên lá buồm đó trên hình vẽ.  
+
+Yêu cầu
+Viết chương trình nhập vào độ cao và số lá buồm trên mỗi trong số N cột buồm, xác định độ kém hiệu quả nhỏ nhất có thể của con thuyền.

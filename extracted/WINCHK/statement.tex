@@ -1,0 +1,39 @@
+Tụi bò rất thích chơi cờ và chơi cờ với niềm say mê vô bờ. Nhưng thật đáng tiếc, dù chúng rất thích chơi cờ, chúng lại chơi  quá kém và muốn nhờ bạn giúp chúng.  
+
+   Cho 1 bàn cờ kích thước NxN (4  $\le$  N  $\le$  500).  Các quân cờ chỉ di chuyển trên các ô '+' và ăn quân đối phương khi nhảy qua 1 quân cờ của đối phương, quân cờ bị ăn sẽ bị loại ra khỏi bàn cờ. Ví dụ sau đây là 1 một bàn cờ kích thước 8x8:  
+\begin{verbatim}
+- + - + - + - +  K là ký hiệu quân Vua của Bessie; o là ký hiệu quân
++ - + - + - + -  cờ của đối phương. Bessie được đi trước và sẽ chọn ra 
+- + - K - + - +  1 quân Vua để di chuyển. Quân Vua sẽ nhảy chéo liên 
++ - + - + - + -  tục qua đầu các quân cờ của đối phương (và loại các quân 
+- o - o - + - +  đối phương ra khỏi bàn cờ mỗi khi nhảy qua).
++ - K - + - + -  Với bàn cờ này, cách đi tốt nhất sẽ là dùng quân Vua ở góc trái 
+- o - + - + - +  dưới nhảy liên tục qua đầu tất cả 3 quân cờ của đối phương, và 
++ - K - + - K -  như vậy trò chơi sẽ kết thúc (di chuyển quân Vua
+                 đánh dấu là $>$K$<$):
+
+   Ban đầu            Sau bước 1         Sau bước 2          Sau bước 3
+- + - + - + - +     - + - + - + - +    - + - + - + - +     - + - + - + - +
++ - + - + - + -     + - + - + - + -    + - + - + - + -     + - + - + - + -
+- + - K - + - +     - + - K - + - +    - + - K - + - +     - + - K - + - +
++ - + - + - + -     + - + - + - + -    + -$>$K$<$- + - + -     + - + - + - + -
+- o - o - + - +     - o - o - + - +    - + - o - + - +     - + - + - + - +
++ - K - + - + -    $>$K$<$- K - + - + -    + - K - + - + -     + - K -$>$K$<$- + -
+- o - + - + - +     - + - + - + - +    - + - + - + - +     - + - + - + - +
++ -$>$K$<$- + - K -     + - + - + - K -    + - + - + - K -     + - + - + - K -
+\end{verbatim}
+
+   Như vậy các bước đi của quân Vua đi qua các ô sau:  
+\begin{verbatim}
+  1 2 3 4 5 6 7 8           Dòng Cột
+1 - + - + - + - +    start: 8    3
+2 + - + - + - + -    move:  6    1
+3 - + - K - + - +    move:  4    3
+4 + - * - + - + -    move:  6    5
+5 - o - o - + - +
+6 * - K - * - + - 
+7 - o - + - + - + 
+8 + - K - + - K - 
+\end{verbatim}
+
+   Viết chương trình xác định xem Bessie có thể kết thúc trò chơi được không. Có ít nhất 1 quân vua và 1 quân cờ đối phương trên bàn cờ.

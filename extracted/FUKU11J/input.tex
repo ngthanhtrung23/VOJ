@@ -1,25 +1,25 @@
 Dữ liệu vào chứa một số bộ test theo định dạng như sau:     
 
 \emph{       n m       
-\\       d       $_        2       $       e       $_        2       $
-\\       d       $_        3       $       e       $_        3       $
+\\       $d_{2}$       $e_{2}$
+\\       $d_{3}$       $e_{3}$
 \\       .       
 \\       .       
 \\       .       
-\\       d       $_        n-1       $       e       $_        n-1       $
-\\       a       $_        1       $       b       $_        1       $       c       $_        1       $
-\\       a       $_        2       $       b       $_        2       $       c       $_        2       $
+\\       $d_{n-1}$       $e_{n-1}$
+\\       $a_{1}$       $b_{1}$       $c_{1}$
+\\       $a_{2}$       $b_{2}$       $c_{2}$
 \\       .       
 \\       .       
 \\       .       
-\\       a       $_        m       $       b       $_        m       $       c       $_        m       $}
+\\       $a_{m}$       $b_{m}$       $c_{m}$}
 
       Mỗi giá trị đều là số nguyên không âm và được ngăn cách nhau bằng dấu cách.     
 
-\emph{       n      }      là số lượng thành phố trong mạng,      \emph{       m      }      là số lượng đường 1 chiều. Dữ liệu đảm bảo 2 ≤      \emph{       n      }      ≤ 50 và 0 ≤      \emph{       m      }      ≤      \emph{       n      }      (      \emph{       n      }      −1). Các thành phố được đánh số từ 1 đến      \emph{       n      }      . Thành phố  1 là thành phố khởi hành của Jim, và thành phố      \emph{       n      }      là đích đến.     
+n      là số lượng thành phố trong mạng,      m      là số lượng đường 1 chiều. Dữ liệu đảm bảo 2 ≤      n      ≤ 50 và 0 ≤      m      ≤      n      (      n      −1). Các thành phố được đánh số từ 1 đến      n      . Thành phố  1 là thành phố khởi hành của Jim, và thành phố      n      là đích đến.     
 
-\emph{       d       $_        i       $}      là phí visa của thành phố      \emph{       i      }      , và      \emph{       e       $_        i       $}      là độ cao của nó. Đảm bảo 1 ≤      \emph{       d       $_        i       $}      ≤ 1000 và 1≤      \emph{       e       $_        i       $}      ≤ 999 với 2≤      \emph{       i      }      ≤      \emph{       n      }      −1. Thành phố 1 và      \emph{       n      }      không yêu cầu phí visa. Độ cao của thành phố 1 là 0, và độ cao của thành phố n là 1000. Các thành phố khác nhau có thể có cùng độ cao, nhưng có không quá 10 thành phố với cùng 1 độ cao.     
+$d_{i$}      là phí visa của thành phố      i      , và      $e_{i$}      là độ cao của nó. Đảm bảo 1 ≤      $d_{i$}      ≤ 1000 và 1≤      $e_{i$}      ≤ 999 với 2≤      i      ≤      n      −1. Thành phố 1 và      n      không yêu cầu phí visa. Độ cao của thành phố 1 là 0, và độ cao của thành phố n là 1000. Các thành phố khác nhau có thể có cùng độ cao, nhưng có không quá 10 thành phố với cùng 1 độ cao.     
 
-      Con đường thứ      \emph{       j      }      là từ thành phố      \emph{       a       $_        j       $}      đến thành phố      \emph{       b       $_        j       $}      với chi phí      \emph{       c       $_        j       $}      (1 ≤      \emph{       j      }      ≤      \emph{       m      }      ). Với 1 ≤      \emph{       a       $_        j       $}      ≤      \emph{       n      }      , 1 ≤      \emph{       b       $_        j       $}      ≤      \emph{       n      }      , và 1 ≤      \emph{       c       $_        j       $}      ≤ 1000. Bạn có thể đi trực tiếp từ      \emph{       a       $_        j       $}      đến      \emph{       b       $_        j       $}      , nhưng không thể đi từ      \emph{       b       $_        j       $}      đến      \emph{       a       $_        j       $}      trừ khi có một con đường khác từ      \emph{       b       $_        j       $}      đến      \emph{       a       $_        j       $}      được cho trong bộ test. Không có 2 con đường cùng nối 1 cặp thành phố theo cùng 1 chiều, tức là, với mọi      \emph{       i      }      và      \emph{       j      }      mà      \emph{       i      }      ≠      \emph{       j      }      , thì      \emph{       a       $_        i       $}      ≠      \emph{       a       $_        j       $}      hoặc      \emph{       b       $_        i       $}      ≠      \emph{       b       $_        j       $}      . Không có con đường nào nối 1 thành phố với chính nó, nghĩa là với mọi      \emph{       j      }      , thì      \emph{       a       $_        j       $}      ≠      \emph{       b       $_        j       $}      .     
+      Con đường thứ      j      là từ thành phố      $a_{j$}      đến thành phố      $b_{j$}      với chi phí      $c_{j$}      (1 ≤      j      ≤      m      ). Với 1 ≤      $a_{j$}      ≤      n      , 1 ≤      $b_{j$}      ≤      n      , và 1 ≤      $c_{j$}      ≤ 1000. Bạn có thể đi trực tiếp từ      $a_{j$}      đến      $b_{j$}      , nhưng không thể đi từ      $b_{j$}      đến      $a_{j$}      trừ khi có một con đường khác từ      $b_{j$}      đến      $a_{j$}      được cho trong bộ test. Không có 2 con đường cùng nối 1 cặp thành phố theo cùng 1 chiều, tức là, với mọi      i      và      j      mà      i      ≠      j      , thì      $a_{i$}      ≠      $a_{j$}      hoặc      $b_{i$}      ≠      $b_{j$}      . Không có con đường nào nối 1 thành phố với chính nó, nghĩa là với mọi      j      , thì      $a_{j$}      ≠      $b_{j$}      .     
 
       Cuối cùng là 1 dòng chứa 2 số 0 đánh dấu kết thúc dữ liệu.

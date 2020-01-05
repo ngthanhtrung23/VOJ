@@ -1,0 +1,14 @@
+Input
+Dòng đầu ghi 3 số nguyên N, Q và BASE. N là số người, Q là số truy vấn và BASE được dùng cho việc tính toán phía dưới.  
+
+   N dòng tiếp theo, dòng thứ i ghi 2 số xi, yi là tọa độ người thứ i.  
+
+   Q dòng tiếp theo mô tả các truy vấn (gồm câu hỏi của Heo, hoặc mô tả việc di chuyển của một người dân nước Bubbabic).  
+
+   Đặt T = câu trả lời của câu hỏi gần nhất. Trước câu hỏi đầu tiên, T = 0. Mỗi truy vấn thuộc 1 trong 2 dạng:  
+\begin{itemize}
+	\item     0 i a1 b1 a2 b2: Người thứ i di chuyển đến vị trí ( (a1*T + b1) MOD BASE, (a2*T+b2) MOD BASE ). Chú ý rằng truy vấn này không làm thay đổi T.   
+	\item     1 a1 b1 a2 b2: Nếu heo xây nhà của mình ở ( (a1*T + b1) MOD BASE, (a2*T + b2) MOD BASE ), thì tổng thời gian chuyến hành trình của heo là bao nhiêu. Sau truy vấn này, T bị thay đổi. (Giá trị mới của T = kết quả của truy vấn này)   
+\end{itemize}
+
+   Chú ý: a MOD b được hiểu là phần dư của phép chia a cho b. Ví dụ 7 MOD 4 = 3, 12 MOD 5 = 2

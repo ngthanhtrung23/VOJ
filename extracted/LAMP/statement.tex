@@ -1,0 +1,13 @@
+Bé Johnny nhận được một món quà Giáng sinh kỳ lạ. Trên hộp quà còn chưa bóc có hàng chữ: “Dàn đèn màu cổ tích dài vô hạn”. Thích thú, cậu bé đặt món đồ chơi lên nền nhà.  
+
+   Dàn đèn của Johnny là một sợi dây cáp nhưng chỉ có một đầu: nó bắt đầu tại một điểm nhưng không có điểm kết thúc. Gắn vào sợi dây cáp là các ngọn đèn cổ tích, đánh số (theo thứ tự được gắn) bằng các số tự nhiên liên tiếp, bắt đầu từ 0. Bản thân sợi dây cáp được gắn vào một bảng điều khiển. Có một số nút bấm trên bảng điều khiển, mỗi nút được sơn một màu riêng biệt và được gán cho một số hiệu  riêng biệt là số nguyên dương. Các số hiệu của các nút đôi một nguyên tố cùng nhau.  
+
+   Khi mở gói quà ra, chưa có ngọn đèn nào được bật. Suy nghĩ một lát, Johnny bấm lần lượt các nút, từ đầu đến cuối. Cậu bé càng lúc càng thích thú khi phát hiện ra rằng bấm nút thứ i sẽ bật các bóng đèn có số hiệu là bội số của $p_{i}$   , số hiệu của nút thứ i. Hơn nữa, chúng sáng lên với màu $k_{i}$   , là màu của nút bấm đó. Đặc biệt, tất cả các bóng đèn có số hiệu là bội số của $p_{i}$   mà đã được chiếu sáng trước đó sẽ chuyển thành màu $k_{i}$   .  
+
+   Johnny ngắm dàn đèn muôn vàn màu sắc và tự hỏi tỉ lệ phần đèn sáng của mỗi màu là bao nhiêu. Gọi $L_{i,r}$   là số bóng đèn sáng với màu $k_{i}$   trong số các ngọn đèn có số hiệu 0,1,...,r. Tỉ lệ $C_{i}$   phần bóng đèn sáng với màu $k_{i}$   được định nghĩa bằng:  
+
+
+\includegraphics{http://vn.spoj.com/content/LAMP}
+
+Yêu cầu
+Viết chương trình đọc mô tả của các nút trên bảng điều khiển và với mỗi màu $k_{i}$   tính giá trị $C_{i}$   là phân số mô tả tỉ lệ phần bóng đèn sáng với màu $k_{i}$   .

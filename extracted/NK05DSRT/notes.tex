@@ -1,0 +1,32 @@
+Giới hạn
+\begin{itemize}
+	\item 1  $\le$  N, M, C  $\le$  100
+	\item 1  $\le$  L  $\le$  30,000
+\end{itemize}
+Ví dụ
+\begin{verbatim}
+Dữ liệu mẫu
+1
+9 10 25 
+1 2 3 
+2 3 12 
+3 4 4 
+3 5 9 
+4 9 13 
+5 9 5 
+2 6 10 
+6 7 10 
+7 8 10 
+8 9 10 
+
+Kết qủa
+65 
+\end{verbatim}
+Giải thích
+Mang 25 nước từ 1 đến 2 sau đó lại quay về 1. Do đó, tại 2 có 19 nước. (Bờm đã uống hết (3 + 3) nước trong lần đi và về, (19 = 25 – 3 – 3)).
+
+Lặp lại như thế 1 lần nữa, Bờm đã mang đến 2 thêm 19 nước. Sau đó lại từ 1, Bờm mang theo 15 nước đến 2. Vậy khi đến 2, Bờm có tại đây (19+19+12 = 50) nước.
+
+Tiếp theo, Bờm lại mang 25 nước đi từ 2 đến 3, rồi quay về 2, như vậy, tại 3 có (25 – 12 – 12 = 1) nước. Từ 2, Bờm mang 25 nước còn lại đi đến 3. Tại 3, Bờm có được (1+(25-12) = 14) nước.
+
+Cuối cùng, Bờm mang 14 nước đi đến 5 rồi đến 9. Vậy là Bờm đã thoát khỏi sa mạc.

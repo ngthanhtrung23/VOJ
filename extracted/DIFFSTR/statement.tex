@@ -1,0 +1,15 @@
+hgminh là một thành viên mới của tập đoàn trách nhiệm hữu hạn nhiều thành viên phi lợi nhuận đào tạo coder: Cờ Một Một.  
+
+   Không may thay, khi vừa vào anh bị tổ trưởng điểm danh Cà Dốt chơi khó, anh cần tìm số thứ tự trong danh sách nhân viên. Cà Dốt cho anh một xâu S độ dài n, tên của hgminh trong danh sách là xâu B độ dài m. Để tìm ra số thứ tự của mình, hgminh cần phải đếm số xâu con (định nghĩa xâu con xem ở dưới) phân biệt của xâu S thỏa mãn:  
+\begin{itemize}
+	\item     2 ký tự kề nhau trong xâu con phải khác nhau   
+	\item     Có thứ tự từ điển không nhỏ hơn xâu B   
+\end{itemize}
+
+   Vì kết quả rất to mà hgminh chưa học số lớn nên Cà Dốt quyết định sẽ yêu cầu hgminh đưa ra kết quả sau khi mod 1000000007 ($10^{9}$   + 7)  
+
+
+
+   Xâu a gọi là xâu con của S nếu tồn tại 1 dãy x thỏa mãn 0 $<$ $x_{1}$   $<$ $x_{2}$   $<$ ...$<$ $x_{length(a)}$    $\le$  length(S) và $a_{i}$   = $S_{Xi}$   với mọi i từ 1 đến length(a).  
+
+   Ví dụ xâu "aba" có 6 xâu con phân biệt khác rỗng là: "a", "b", "ab", "ba", "aa", "aba"

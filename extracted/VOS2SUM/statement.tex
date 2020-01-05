@@ -1,0 +1,33 @@
+Ở một gia đình nọ có 4 người. Người cha tên là Tổng, người mẹ tên là Hai Số. Không biết hai vợ chồng canh ngày tháng thế nào mà 2 đứa con đều sinh ra cùng ngày tháng mặc dù là khác năm. Hai đứa con có tên là Khó và Lắm.
+
+Tối nay là Trung thu, đôi vợ chồng Tổng, Hai Số lên kế hoạch mua cho 2 đứa con Khó, Lắm mỗi đứa \textbf{ X } viên kẹo. Để niềm vui được trọn vẹn, \textbf{ X } phải là số ưa thích của cả Khó và Lắm. Dõi theo từng ngày Lắm lớn khôn, cặp vợ chòng ấy đã tìm được thông tin về những số mà Lắm thích. Lắm chỉ thích đúng \textbf{ P } số đặc biệt. \textbf{ P } số này được cha mẹ của Lắm ghi lại nhưng trong quá trình ghi chép lại gặp một số vấn đề nên có thể có trường hợp 1 số bị lặp lại nhiều lần cho nên danh sách được ghi lại sẽ có \textbf{ Q } số. Khó là anh nên có vẻ hơi khó chiều hơn. Vì là một lập trình viên giỏi nên Khó đã viết một thủ tục \textbf{ Find(x) } bằng PASCAL và input của thủ tục là một dãy \textbf{ A } gồm \textbf{ N } số không giảm. Dãy số là cố định và \textbf{ x } là số cần kiểm tra xem Khó có thích hay không.
+\begin{verbatim}
+
+\texttt{procedure Find(x: longint);
+var i,j: longint;
+Begin
+  i := 1;
+  j := n;
+  while  i $<$ j do
+  begin 
+    if A[i] + A[j] = x 
+    begin
+      writeln(i,’ ‘,j); 
+      exit;
+    end; 
+    if A[i] + A[j] $>$ x
+      j := j-1
+    else 
+      i := i+1;
+ end;
+ writeln(‘-1 -1’);
+end;
+}\end{verbatim}
+
+ 
+
+Biết rằng nếu cặp số được in ra là (-1, -1 ) thì Khó không thích số đó. Giờ cha mẹ của Khó, Lắm phải tìm xem cặp số được in ra sau khi thực hiện thủ tục \textbf{ Find } cho từng số trong danh sách \textbf{ Q } số. Vì \textbf{ Q } khá lớn nên Tổng, Hai Số đã nhờ tới các bạn lập trình viên VNOI\_er giải quyết giúp vấn đề này.
+
+Lưu ý:
+
+Mảng \textbf{ A } được đánh số từ 1 tới \textbf{ N } từ trái sang phải.

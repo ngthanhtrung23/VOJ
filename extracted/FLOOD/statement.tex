@@ -1,0 +1,25 @@
+Năm 1964, một trận lụt khủng khiếp đã tràn vào thành vố Zagreb. Rất nhiều nhà cửa bị phá hủy khi nước tràn vào các bờ tường. Trong bài tập này, bạn được cho một mô hình đơn giản của thành phố trước trận lụt và bạn phải xác định xem các bức tường nào không bị đổ sau trận lụt.  
+
+   Mô hình bao gồm N điểm trên mặt phẳng tọa độ và W bức tường. Mỗi bức tường nối hai điểm và không đi qua bất kỳ điểm nào khác. Mô hình có thêm tính chất sau đây:  
+\begin{itemize}
+	\item     Không có hai bức tường nào giao nhau hoặc chồng lên nhau, nhưng chúng có thể chạm nhau tại các đầu mút;   
+	\item     Mỗi bức tường song song với trục tung hoặc trục hoành của mặt phẳng tọa độ.   
+\end{itemize}
+
+   Ban đầu, toàn bộ mặt phẳng tọa độ ở trạng thái khô. Vào thời điểm 0, nước lập tức tràn vào miền ngoài (phần không bị tường che chắn). Sau đúng một giờ, tất cả bức tường với một bên là nước, một bên là không khí sẽ bị vỡ dưới sức ép của nước. Nước sẽ tràn vào miền mới không bị chắn bởi bất kỳ bức tường nào. Và bây giờ có thể có những bức tường mới với một bên là nước, một bên là không khí.  
+
+   Sau một giờ nữa, các bức tường này sẽ lại bị vỡ và nước sẽ tiếp tục tràn sâu hơn. Quá trình này tiếp diễn đến khi nước tràn vào toàn bộ khu vực.  
+
+   Hình sau mô tả một ví dụ:  
+\includegraphics{http://www.spoj.pl/OI/content/FLOOD.jpg}
+
+   Trạng thái ở thời điểm 0.  
+
+   Các ô được tô mô tả vùng bị lụt, trong khi các ô trắng mô tả vùng khô (chứa không khí).  
+
+   Trạng thái sau một giờ.  
+
+   Trạng thái sau hai giờ. Nước đã tràn vào toàn bộ thành phố và 4 bức tường còn lại không thể bị vỡ.  
+
+Yêu cầu
+Viết chương trình, nhập vào tọa độ của N điểm và mô tả của W bức tường nối các điểm này, xác định xem bức tường nào còn đứng vững sao trận lụt.

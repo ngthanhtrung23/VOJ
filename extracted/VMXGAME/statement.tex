@@ -1,0 +1,15 @@
+Cho số nguyên dương X và một trò chơi được diễn ra như sau:   
+
+   1. Trò chơi được bắt đầu trên bảng vuông kích thước vô hạn theo cả 4 hướng (kể cả các ô có tọa độ âm). Ta gọi ô ở hàng x, cột y là (x, y). Đặt $X^{2}$   quân cờ vào các ô vuông từ (1,1) đến (X,X), sao cho mỗi ô vuông chứa đúng một quân cờ.  
+
+   2. Trò chơi diễn ra trong một số bước. Ở mỗi bước người chơi chọn một quân cờ, và cho quân cờ này nhảy qua đầu một quân cờ kề cạnh và rơi xuống ô kế tiếp, gọi là ô đích. Người chơi có thể chọn quân cờ và hướng nhảy mong muốn, nhưng cần đảm bảo điều kiện: ô đích phải là ô trống. Sau bước nhảy, quân cờ bị nhảy qua sẽ biến mất. Hình sau mô tả một trạng thái của bảng:  
+\begin{verbatim}
+-----
+--x--
+-xx-x
+--x--
+--x--\end{verbatim}
+
+   Ở hình này, dấu gạch ngang mô tả một ô trống và chữ cái x mô tả một quân cờ. Quân cờ nằm ở ô trung tâm có thể nhảy lên trên hoặc sang trái (và quân cờ bị nhảy qua sẽ biến mất). Quân cờ này không thể nhảy sang phải (không có quân cờ kề cạnh), và không thể nhảy xuống dưới (ô đích chứa quân cờ khác).  
+
+   3. Nhiệm vụ của bạn là với mỗi số X, tìm dãy các bước di chuyển để còn lại ít quân cờ nhất (cũng đồng nghĩa với việc bạn cần cố gắng di chuyển nhiều bước nhất).
