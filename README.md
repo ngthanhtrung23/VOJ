@@ -19,3 +19,7 @@ By examination (`subsectionsExtractor.py`) I saw that most of the statement have
 3. Run `python3 subsectionsExtractor.py` to extract information about statements based on subsections
 4. Run `python3 statementExtractor.py` to extract statements into parts
 Extracted statements are saved in `extracted` folder. Each statement would be broken into 4 parts: `statement.tex`, `input.tex`, `output.tex`, `notes.tex`, the same format as Codeforces Polygon
+
+# VOJ TESTS CRAWLER INSTRUCTION
+1. Place your VOJ problem accounts into `accounts.csv`, one per line
+2. Run `python3 testCrawler.py'
