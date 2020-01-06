@@ -13,6 +13,7 @@ By examination (`subsectionsExtractor.py`) I saw that most of the statement have
 
 # EXTRACTOR INSTRUCTION
 1. Place your statements into `statement` folder
-2. Run `python subsectionsExtractor.py` to extract information about statements based on subsections
-3. Run `python statementExtractor.py` to extract statements into parts
+2. Run `pip3 install unidecode`
+3. Run `python3 subsectionsExtractor.py` to extract information about statements based on subsections
+4. Run `python3 statementExtractor.py` to extract statements into parts
 Extracted statements are saved in `extracted` folder. Each statement would be broken into 4 parts: `statement.tex`, `input.tex`, `output.tex`, `notes.tex`, the same format as Codeforces Polygon
