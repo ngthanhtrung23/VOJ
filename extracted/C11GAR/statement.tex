@@ -1,10 +1,28 @@
 Khải Hạnh trồng \textbf{ n } cây hoa hồng trong khu vườn của mình - khu vườn được coi là đẹp nhất ở Đồng Tháp với những bông hoa nở thật to và đẹp khi hè về. Khải Hạnh thấy rằng mình không thể vừa đi học vừa chăm sóc tất cả hoa hồng trong vườn, vì thế cậu đã quyết định thuê thêm hai người làm vườn. Khải Hạnh muốn chọn hai vùng hình chữ nhật trong vườn để phân cho hai người làm vườn chăm sóc hoa hồng trên đó. Các phần vườn này được tách rời nhau và trên mỗi phần có \textbf{ k } cây hoa hồng.
-\\
-\\Khải Hạnh muốn dựng hàng rào xung quanh các vùng chữ nhật đó, nhưng do không có nhiều tiền vì vậy cậu muốn dựng được hàng rào càng nhỏ càng tốt. Nhiệm vụ của bạn là giúp Khải Hạnh chọn hai vùng chữ nhật này để rào.
-\\Khu vườn có dạng một hình chữ nhật với chiều dài L mét và chiều rộng W mét, được chia thành L*W hình vuông với kích thước 1 mét x 1 mét để trồng hoa hồng vào đó. Ta đưa vào một hệ tọa độ có các trục song song với các cạnh của khu vườn. Tất cả các hình vuông có các tọa độ nguyên (x,y) thỏa mãn 1 ≤ x ≤ L, 1 ≤ y ≤ W. Thay vì mỗi ô vuông trồng một cây hoa hồng, Khải Hạnh muốn khu vườn của mình trong tự nhiên nên đã trồng không theo quy tắc nào cả :D. Do vậy trong khu vườn của cậu, mỗi hình vuông có thể không có cây hoa hồng nào hoặc chứa một số bất kỳ các cây hoa hồng.
-\\Hình chữ nhật được chọn để rào có các cạnh song song với các cạnh của khu vườn, các hình vuông trong các góc của chúng đều có tọa độ nguyên. Cho 1 ≤ L1 ≤ L2 ≤ L; 1 ≤ W1 ≤ W2 ≤ W, vùng hình chữ nhật được chọn với các góc có tọa độ là (L1,W1), (L1,W2), (L2,W1), và (L2,W2) sẽ:
-\\- Chứa tất cả các hình vuông với tọa độ (x,y) thỏa mãn L1 ≤ x ≤ L2 và W1 ≤ y ≤ W2 và
-\\- Có chu vi là 2(L2 – L1 + 1) + 2.(W2 – W1 + 1).
-\\Hai vùng chữ nhật phải tách rời nhau, tức là chúng không chứa một hình vuông chung nào. Thậm chí nếu chúng có một cạnh chung hoặc một phần của nó, chúng cũng phải được bao xung quanh bởi các hàng rào riêng rẽ.
-\\
-\\Hãy giúp Khải Hạnh tìm ra 2 hình chữ nhật tốt nhất thỏa yêu cầu sao cho chu vi là nhỏ nhất. Hoặc nếu không thể tìm được thì phải báo để Khải Hạnh biết đường mà lo liệu :D
+
+
+
+
+
+Khải Hạnh muốn dựng hàng rào xung quanh các vùng chữ nhật đó, nhưng do không có nhiều tiền vì vậy cậu muốn dựng được hàng rào càng nhỏ càng tốt. Nhiệm vụ của bạn là giúp Khải Hạnh chọn hai vùng chữ nhật này để rào.
+
+
+Khu vườn có dạng một hình chữ nhật với chiều dài L mét và chiều rộng W mét, được chia thành L*W hình vuông với kích thước 1 mét x 1 mét để trồng hoa hồng vào đó. Ta đưa vào một hệ tọa độ có các trục song song với các cạnh của khu vườn. Tất cả các hình vuông có các tọa độ nguyên (x,y) thỏa mãn 1 ≤ x ≤ L, 1 ≤ y ≤ W. Thay vì mỗi ô vuông trồng một cây hoa hồng, Khải Hạnh muốn khu vườn của mình trong tự nhiên nên đã trồng không theo quy tắc nào cả :D. Do vậy trong khu vườn của cậu, mỗi hình vuông có thể không có cây hoa hồng nào hoặc chứa một số bất kỳ các cây hoa hồng.
+
+
+Hình chữ nhật được chọn để rào có các cạnh song song với các cạnh của khu vườn, các hình vuông trong các góc của chúng đều có tọa độ nguyên. Cho 1 ≤ L1 ≤ L2 ≤ L; 1 ≤ W1 ≤ W2 ≤ W, vùng hình chữ nhật được chọn với các góc có tọa độ là (L1,W1), (L1,W2), (L2,W1), và (L2,W2) sẽ:
+
+
+- Chứa tất cả các hình vuông với tọa độ (x,y) thỏa mãn L1 ≤ x ≤ L2 và W1 ≤ y ≤ W2 và
+
+
+- Có chu vi là 2(L2 – L1 + 1) + 2.(W2 – W1 + 1).
+
+
+Hai vùng chữ nhật phải tách rời nhau, tức là chúng không chứa một hình vuông chung nào. Thậm chí nếu chúng có một cạnh chung hoặc một phần của nó, chúng cũng phải được bao xung quanh bởi các hàng rào riêng rẽ.
+
+
+
+
+
+Hãy giúp Khải Hạnh tìm ra 2 hình chữ nhật tốt nhất thỏa yêu cầu sao cho chu vi là nhỏ nhất. Hoặc nếu không thể tìm được thì phải báo để Khải Hạnh biết đường mà lo liệu :D
