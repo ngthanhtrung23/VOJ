@@ -10,7 +10,7 @@ subsectionInfoFolderPath = './subsectionsInfo'
 
 
 def format(word):
-    return ''.join(c if c.isalnum() else '' for c in unidecode(word.decode('utf-8'))).strip().lower().replace(' ','').replace('textbf', '')
+    return ''.join(c if c.isalnum() else '' for c in unidecode(word)).strip().lower().replace(' ','').replace('textbf', '')
 
 def analyze():
     wordArr = []
@@ -35,8 +35,8 @@ def analyze():
 
     wordArr.sort(key=lambda item: item[1], reverse=True)
 
-    for word in wordArr:
-        print(word)
+    # for word in wordArr:
+    #     print(word)
 
 def extractNSections(n):
     pattern = '(\\\subsubsection{.+})'
@@ -131,7 +131,7 @@ def extractNSections(n):
                 notes += content
             except Exception as e:
                 print(e)
-                print(parts)
+                # print(parts)
 
         if not (statement and input and output):
             print("Couldn't find 4 parts for " + name)

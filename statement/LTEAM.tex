@@ -4,7 +4,7 @@
 
    Trong vương quốc C11, ai cũng biết đến biệt đội Lí Lắc (L-TEAM). Đây là tên của đại đội cảnh sát ngầm chủ lực, đặc biệt và duy nhất của vương quốc. L-TEAM được chia thành   \textbf{    K   }   tiểu đội Lí Lắc. Vị trí của các tiểu đội trong vương quốc được biểu diễn bằng 1 dãy số bí mật gồm   \textbf{    K   }   phần tử   \textbf{    S[1], S[2], ..., S[K]   }   , với   \textbf{    S[i]   }   là tên thành phố mà tiểu đội   \textbf{    i   }   đang trú ngụ. Mặc dù rất nổi danh, nhưng hành tung các tiểu đội Lí Lắc được bảo mật rất cẩn thận. Nên không ai biết, ngoại trừ những người trong L-TEAM.  
 
-   Hôm nay, các bạn sẽ được hé lộ phần nào về phương pháp bảo mật của L-TEAM. Đó chính là "liên tục thay đổi và không bao giờ cố định nơi trú ngụ. Cụ thể hơn, nếu xem vương quốc C11 là một đồ thị vô hướng gồm   \textbf{    N   }   đỉnh,   \textbf{    M   }   cạnh (Mỗi đỉnh là một thành phố đánh số tự 1 --$>$ N, và mỗi cạnh sẽ cho biết 2 thành phố nằm kề nhau),   mỗi tiểu đội sau một ngày    \textbf{     bắt buộc    phải di chuyển sang một thành phố khác   }   (thành phố đó phải kề và khác với thành phố đang trú ngụ hiện tại). Nên dù hôm nay bạn có biết vị trí trú ngụ của các tiểu đội, thì ngày mai các vị trí đó sẽ tự động trở thành ẩn số.  
+   Hôm nay, các bạn sẽ được hé lộ phần nào về phương pháp bảo mật của L-TEAM. Đó chính là "liên tục thay đổi và không bao giờ cố định nơi trú ngụ. Cụ thể hơn, nếu xem vương quốc C11 là một đồ thị vô hướng gồm   \textbf{    N   }   đỉnh,   \textbf{    M   }   cạnh (Mỗi đỉnh là một thành phố đánh số tự 1 --> N, và mỗi cạnh sẽ cho biết 2 thành phố nằm kề nhau),   mỗi tiểu đội sau một ngày    \textbf{     bắt buộc    phải di chuyển sang một thành phố khác   }   (thành phố đó phải kề và khác với thành phố đang trú ngụ hiện tại). Nên dù hôm nay bạn có biết vị trí trú ngụ của các tiểu đội, thì ngày mai các vị trí đó sẽ tự động trở thành ẩn số.  
 
    Quốc vương C11 đang dự tính tổ chức Olympic tin học quốc tế vào một ngày trong tương lai. Ông đã lên một lên danh sách gồm   \textbf{    Q   }   câu hỏi thăm dò. Mỗi câu hỏi có dạng   \textbf{}   (   \textbf{    D   }   ,   \textbf{    E   }   ) với ý nghĩa "nếu tổ chức vào ngày thứ   \textbf{    D   }   trong tương lai và cần   \textbf{    E   }   (cần E đội, nhưng điều dư cũng chẳng sao) tiểu đội để bảo vệ một thành phố thì các thành phố nào có thể được chọn làm nơi tổ chức được ?".  
 
@@ -34,20 +34,48 @@
 \subsubsection{   Example  }
 \begin{verbatim}
 \textbf{Input:}
-\\5 5 3 3
-\\1 2 3
-\\1 2
-\\2 3
-\\3 4
-\\3 5
-\\4 5
-\\3 1
-\\3 2
-\\3 3
-\\
-\\\textbf{Output:}
+
+
+5 5 3 3
+
+
+1 2 3
+
+
+1 2
+
+
+2 3
+
+
+3 4
+
+
+3 5
+
+
+4 5
+
+
+3 1
+
+
+3 2
+
+
+3 3
+
+
+
+
+
+\textbf{Output:}
 5
-\\4
-\\2\end{verbatim}
+
+
+4
+
+
+2\end{verbatim}
 
 (Trong lúc thi, sẽ chấm trước 4 test (bao gồm test ví dụ)).

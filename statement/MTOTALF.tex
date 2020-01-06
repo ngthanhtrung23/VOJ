@@ -3,13 +3,13 @@
 Để quản lý nước cho đàn bò, FJ đã vẽ bản đồ đường ống gồm N (1  $\le$  N  $\le$  700) ống trong trang trại mà nối bể nước với các chuồng. FJ thấy rằng các đường ống có kích thước khác nhau và được nối một cách rất kỳ lạ. Do đó, FJ muốn tính xem lượng nước truyền qua các ống. Hai ống nước được nối liên tiếp với nhau cho phép lượng nước không vượt quá thông lượng nhỏ nhất của hai ống. Một ống có thông lượng 5 nối với ống có thông lượng 3 sẽ tương đương với một ống có thông lượng 3:
 \begin{verbatim}
 
-\texttt{  +---5---+---3---+    -$>$    +---3---+}\end{verbatim}
+\texttt{  +---5---+---3---+    ->    +---3---+}\end{verbatim}
 
 Còn hai ống nối song song cho phép thông lượng nước là tổng thông lượng của từng ống.
 \begin{verbatim}
 
 \texttt{    +---5---+
- ---+       +---    -$>$    +---8---+
+ ---+       +---    ->    +---8---+
     +---3---+
 }\end{verbatim}
 
@@ -17,7 +17,7 @@ Còn một ống mà không nối với chuồng bò nào hay ống na
 \begin{verbatim}
 
 \texttt{    +---5---+
- ---+               -$>$    +---3---+
+ ---+               ->    +---3---+
     +---3---+--
 }\end{verbatim}
 
@@ -86,12 +86,26 @@ OUTPUT
 Input
 
 5
-\\A B 3
-\\B C 3
-\\C D 5
-\\D Z 4
-\\B Z 6
-\\
-\\Output
+
+
+A B 3
+
+
+B C 3
+
+
+C D 5
+
+
+D Z 4
+
+
+B Z 6
+
+
+
+
+
+Output
 
 3

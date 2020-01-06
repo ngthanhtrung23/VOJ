@@ -9,18 +9,26 @@ Pháp sư vĩ đại Byter đã phù phép tạo nên 2 hòn đảo trên biển
 \end{enumerate}
 
 
-\\Một lần Byter đã giao cho các học trò của mình bài toán như sau : Cho biết số lượng CDCTT ở mỗi hòn đảo . Các học trò phải xác định xem cổng nào sẽ là Cổng Đến , cổng nào sẽ là Cổng Đi sao cho thoả mãn yêu cầu sau : Giả sử cổng i được đặt là Cổng Đến thì có ít nhất 1 Cổng Đi sẽ đưa người được dịch chuyển tới cổng i này và ngược lại , cổng i được đặt là Cổng Đi thì cổng mà nó gửi người đến phải được đặt là Cổng Đến .
+
+
+Một lần Byter đã giao cho các học trò của mình bài toán như sau : Cho biết số lượng CDCTT ở mỗi hòn đảo . Các học trò phải xác định xem cổng nào sẽ là Cổng Đến , cổng nào sẽ là Cổng Đi sao cho thoả mãn yêu cầu sau : Giả sử cổng i được đặt là Cổng Đến thì có ít nhất 1 Cổng Đi sẽ đưa người được dịch chuyển tới cổng i này và ngược lại , cổng i được đặt là Cổng Đi thì cổng mà nó gửi người đến phải được đặt là Cổng Đến .
 
 \subsubsection{Input}
 
 Dòng 1 : 2 số nguyên N và M ( 1 ≤ N , M ≤ 50000 ) tương ứng là số CDCTT ở trên đảo Bornhom và Gotland .
-\\Dòng thứ 2 gồm N số nguyên A[1] … A[N] mô tả các CDCTT ở đảo Bornhom : số A[i] cho biết nếu như Cổng thứ i trên đảo Bornhom được đặt là Cổng Đi thì nó sẽ gửi người đến Cổng A[i] trên đảo Gotland . ( 1 ≤ A[i] ≤ M ) .
-\\Dòng thứ 3 gồm M số nguyên B[1] … B[M] mô tả các CDCTT ở đảo Gotland : số B[i] cho biết nếu như Cổng thứ i trên đảo Gotland được đặt là Cổng Đi thì nó sẽ gửi người đến Cổng B[i] trên đảo Bornhom . ( 1 ≤ B[i] ≤ N ) .
+
+
+Dòng thứ 2 gồm N số nguyên A[1] … A[N] mô tả các CDCTT ở đảo Bornhom : số A[i] cho biết nếu như Cổng thứ i trên đảo Bornhom được đặt là Cổng Đi thì nó sẽ gửi người đến Cổng A[i] trên đảo Gotland . ( 1 ≤ A[i] ≤ M ) .
+
+
+Dòng thứ 3 gồm M số nguyên B[1] … B[M] mô tả các CDCTT ở đảo Gotland : số B[i] cho biết nếu như Cổng thứ i trên đảo Gotland được đặt là Cổng Đi thì nó sẽ gửi người đến Cổng B[i] trên đảo Bornhom . ( 1 ≤ B[i] ≤ N ) .
 
 \subsubsection{Output}
 
 Dòng 1 : N số nguyên C[1] … C[N] ghi cách nhau 1 dấu khoảng trắng , C[i] = 1 nếu cổng i trên đảo Bornhom là Cổng Đi và = 0 nếu cổng i là Cổng Đến .
-\\Dòng 2 : M số nguyên D[1] … D[M] ghi cách nhau 1 khoảng trắng, D[i] = 1 nếu cổng i trên đảo Gotland là Cổng Đi và = 0 nếu cổng i là Cổng Đến .
+
+
+Dòng 2 : M số nguyên D[1] … D[M] ghi cách nhau 1 khoảng trắng, D[i] = 1 nếu cổng i trên đảo Gotland là Cổng Đi và = 0 nếu cổng i là Cổng Đến .
 
 \subsubsection{Example}
 \begin{verbatim}

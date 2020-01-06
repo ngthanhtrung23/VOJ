@@ -1,5 +1,3 @@
- 
-
 Trong một hệ quản trị cơ sở dữ liệu thì một trong những khả năng quan trọng là điều khiển truy cập đồng thời, có nghĩa là khả năng xử lý các tình huống có nhiều người dùng cùng truy cập đến một vùng dữ liệu. Để làm được điều này thì một trong những cách phổ biến là khóa truy cập, có nghĩa là nếu một người đang làm việc với một vùng dữ liệu xác định thì những người khác muốn làm việc với vùng này đều phải chờ.
 
 Cho một hệ cơ sở dữ liệu có N bản ghi được đánh số từ 1 đến N. Có M yêu cầu truy cập và cập nhật các bản ghi đối với hệ cơ sở dữ liệu này. Yêu cầu thứ i được biểu diễn bằng bộ 3 số nguyên dương ($a_{i}$ , $b_{i}$ , $t_{i}$ ) có nghĩa là cần cập nhật các bản ghi từ thứ $a_{i}$ đến thứ $b_{i}$ tại thời điểm $t_{i}$ . Danh sách các yêu cầu được cho là danh sách các yêu cầu được sắp xếp theo thời gian thực, nghĩa là thỏa mãn $t_{i}$ ≤ $t_{j}$ với mọi i $<$ j.
