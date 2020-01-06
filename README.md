@@ -10,7 +10,8 @@
 
 By examination (`subsectionsExtractor.py`) I saw that most of the statement have a typical format of `3 subsections`, beautifully ordered by the format: statement, input, output, notes. So I wrote an extractor for that specific case (inside `statementExtractor.py`).
 - Done extractor for 3+ subsections. Now we need to write the extractor for the others as well.
-- We need to extract sample tests from the extracted statements. Note that many of them lie within `\begin{verbatim}` and `\end{verbatim}`
+- We need to extract sample tests from the extracted statements. Note that many of them lie within `\begin{verbatim}` and `\end{verbatim}` (Done, need to verify)
+- VOJ tests downloader (Working)
 
 # EXTRACTOR INSTRUCTION
 1. Place your statements into `statement` folder
