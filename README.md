@@ -22,4 +22,4 @@ Extracted statements are saved in `extracted` folder. Each statement would be br
 
 # VOJ TESTS CRAWLER INSTRUCTION
 1. Place your VOJ problem accounts into `accounts.csv`, one per line
-2. Run `python3 testCrawler.py'
+2. Run `python3 testCrawler.py`
