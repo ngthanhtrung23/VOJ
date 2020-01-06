@@ -1,0 +1,7 @@
+Cho N điểm cách đều nhau trên một vòng tròn được đánh số từ 0 đến N-1 theo chiều kim đồng hồ, trong đó có P điểm được sơn màu đỏ. Hãy đếm số tam giác vuông có 3 đỉnh đều được sơn màu đỏ.  
+
+   Biết rằng P điểm màu đỏ được tạo thành như sau, cho trước 3 số nguyên a, b, c. Với i = 0, 1, 2, 3, ..., P - 1, thực hiện các bước sau:  
+\begin{itemize}
+	\item     Tính P[i] = (a*i*i + b*i + c) mod N   
+	\item     Bắt đầu từ P[i], tìm điểm đầu tiên theo chiều kim đồng hồ mà chưa được sơn đỏ và sơn đỏ điểm đó   
+\end{itemize}

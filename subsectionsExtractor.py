@@ -22,7 +22,7 @@ arr.sort(key=lambda item: item[1], reverse=True)
 for item in arr:
     print(item)
 
-pattern = 'subsubsection{(.+?)}'
+pattern = 'subsubsection{(.+)}'
 subsectionInfoFolderPath = './subsectionsInfo'
 
 for k in c.keys():

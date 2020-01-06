@@ -7,7 +7,7 @@ VMFOUR.tex,Giới hạn,Input,Output,Chấm bài,Example
 TRICIR.tex,Đề bài,Dữ liệu,Kết quả,Giới hạn,Ví dụ
 VMDOM2.tex,Input,Output,Giới hạn,Chấm điểm,Example
 TOTALODD.tex,Đề bài,Dữ liệu,Kết quả,Giới hạn,Ví dụ
-VOCARD.tex,\textbf{    Yêu cầu,Input,Output,Giới hạn:,Example
+VOCARD.tex,\textbf{    Yêu cầu   },Input,Output,Giới hạn:,Example
 VMCOINS.tex,Input,Output,Giới hạn,Chấm điểm,Example
 VMDAOBIT.tex,Input,Output,Giới hạn,Ví dụ,Giải thích
 BOUNCE.tex,Đề bài,Dữ liệu,Kết quả,Giới hạn,Ví dụ
@@ -15,11 +15,11 @@ VOBIGNUM.tex,Input,Output,Giới hạn,Chú ý:,Example
 VMPIZZA.tex,Input,Output,Giới hạn,Ví dụ,Giải thích
 VMSINCOS.tex,Input,Output,Giới hạn,Chấm bài,Example
 PA06ANT.tex,Yêu cầu,Dữ liệu,Kết quả,Ví dụ,Giới hạn
-C11SWAP.tex,Dữ liệu,Kết quả,Ví dụ,Giải thích:,\textbf{    Giới hạn:
+C11SWAP.tex,Dữ liệu,Kết quả,Ví dụ,Giải thích:,\textbf{    Giới hạn:   }
 VMCOFFEE.tex,Input,Giới hạn,Output,Chấm bài,Example
 VOGCDSUM.tex,Input,Output,Giới hạn,Chấm điểm,Ví dụ
 VMAOCE.tex,Inpute,Output,Giới hạn,Chấm bài,Example
-C11ANT.tex,\textbf{Dữ liệu vào,\textbf{Dữ liệu ra,Giới hạn,\textbf{Ví dụ,Giải thích
+C11ANT.tex,\textbf{Dữ liệu vào },\textbf{Dữ liệu ra },Giới hạn,\textbf{Ví dụ },Giải thích
 VMCOUNT.tex,Yêu cầu,Input,Output,Chấm điểm,Example
 BONGDA.tex,Yêu cầu,Dữ liệu,Kết qủa,Giới hạn,Ví dụ
 STREDUCE.tex,Yêu cầu,Dữ liệu,Kết quả,Ví dụ,Giới hạn

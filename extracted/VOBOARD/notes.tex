@@ -12,16 +12,6 @@ Giữa lúc chiến tranh loạn lạc, một lời tiên tri được đưa ra:
 Câu đố đặt ra là: cho biết độ cao các ô trên vương quốc Đồng Dư K tại thời điểm hiện tại, bạn hãy cho biết sau ít nhất bao nhiêu lần tấn công của Hàng Tinh và Cột Tinh, vương quốc Đồng Dư K mới trở lại trạng thái yên bình (tất cả các ô đều có độ cao 0)"
 
 Tuy đã trải qua rất nhiều năm, nhưng không có ai ngó ngàng đến việc giải quyết câu đố trong truyền thuyết. Nhưng giờ đã là thế kỷ 21 rồi, với sự trợ giúp của máy tính, chắc chắn không còn câu đố nào là ngoài sức của chúng ta. Nhiệm vụ của các bạn là tìm lời giải cho câu đố này.
-Đề bài
-Cho một bảng số A kích thước M*N (M hàng, N cột), thể hiện độ cao của các ô trên vương quốc Đồng Dư K. Độ cao của mỗi ô là một số nguyên từ 0 đến K-1. Các hàng được đánh số từ 1 đến M. Các cột được đánh số từ 1 đến N. Ô nằm ở hàng i, cột j được kí hiệu là ô A(i,j).
-
-Bạn được phép thực hiện 2 loại thao tác trên bảng:
-\begin{itemize}
-	\item Cộng 1 đơn vị tất cả các số trên hàng R, với R do bạn lựa chọn (phép cộng được thực hiện trên module K). Nói cách khác, bạn chọn R, và với mỗi ô A(R,j) trên bảng, gán A(R,j) = ( A(R,j) + 1 ) mod K.
-	\item Cộng 1 đơn vị tất cả các số trên cột C, với C do bạn lựa chọn (phép cộng được thực hiện trên module K). Nói cách khác, bạn chọn C, và với mỗi ô A(i,C) trên bảng, gán A(i,C) = ( A(i,C) + 1 ) mod K.
-\end{itemize}
-
-Nhiệm vụ của bạn là tìm một dãy biến đổi gồm ít thao tác nhất để biến bảng về toàn số 0. Dữ liệu đảm bảo luôn tồn tại kết quả.
 Giới hạn
 \begin{itemize}
 	\item Trong 20\% test đầu tiên, K = 2, 1 ≤ M, N ≤ 1000
