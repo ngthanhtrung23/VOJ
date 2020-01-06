@@ -134,15 +134,16 @@ def extractNSections(n):
                 # print(parts)
 
         if not (statement and input and output):
-            print("Couldn't find 4 parts for " + name)
+            notFound = []
             if not statement:
-                print('statement')
+                notFound.append('statement')
             if not input:
-                print('input')
+                notFound.append('input')
             if not output:
-                print('output')
+                notFound.append('output')
             if not notes:
-                print('notes')
+                notFound.append('notes')
+            print("Couldn't find 4 parts for " + name + ". Not found: " + ', '.join(notFound))
             continue
 
         try:
@@ -156,6 +157,79 @@ def extractNSections(n):
         open(extractedProblemFolder + '/output.tex', 'w').write(output.strip())
         open(extractedProblemFolder + '/notes.tex', 'w').write(notes.strip())
 
-# analyze()
-for i in range(3, 8):
-    extractNSections(i)
+        tests = extractSampleTests(notes)
+
+        if not tests:
+            print("Can't extract sample tests for " + name)
+        else:
+            for i in range(len(tests)):
+                open(extractedProblemFolder + '/TEST' + str(i + 1) + '.INP', 'w').write(tests[i][0])
+                open(extractedProblemFolder + '/TEST' + str(i + 1) + '.OUT', 'w').write(tests[i][1])
+
+def extractSampleTests(notes):
+    statementKeywords = ['debai', 'yeucau', 'hanche', 'constraints', 'constraint', 'limit', 'phanbogioihantest']
+    inputKeywords = ['input', 'dulieuvao', 'dulieu', 'quycachnhapdulieu']
+    outputKeywords = ['output', 'ketqua', 'dulieura', 'quycachghiketqua']
+    forbiddenKeywords = ['test', 'sample']
+
+    forbiddenKeywords += statementKeywords + inputKeywords + outputKeywords
+
+    def caseInconsistent(s):
+        haveLower = False
+        haveUpper = False
+
+        for c in s:
+            if c.islower():
+                haveLower = True
+            else:
+                haveUpper = True
+
+            if (haveUpper and haveLower):
+                return True
+
+        return False
+
+    def forbidden(s):
+        formatted = format(s)
+
+        for keyword in forbiddenKeywords:
+            if keyword in formatted:
+                return True
+
+        return False
+
+    notes = notes.replace('}', '}\n').replace('\\', '\n\\')
+    while ('\n\n' in notes):
+        notes = notes.replace('\n\n', '\n')
+    lines = notes.split('\n')
+    pattern = '[.0-9 a-zA-Z-]+'
+
+    tests = []
+
+    inputContent = ''
+    outputContent = ''
+    inputMode = True
+
+    for line in lines:
+        line = line.strip()
+
+        if re.match(pattern, line) and not (caseInconsistent(line) or forbidden(line)):
+            if (inputMode):
+                inputContent += line + '\n'
+            else:
+                outputContent += line + '\n'
+        elif inputContent:
+            if not inputMode:
+                if (inputContent and outputContent):
+                    tests.append([inputContent, outputContent])
+                    inputContent = ''
+                    outputContent = ''
+            else:
+                inputMode = False
+
+    return tests
+
+if __name__ == '__main__':
+    # analyze()
+    for i in range(3, 8):
+        extractNSections(i)
