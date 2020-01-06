@@ -5,115 +5,51 @@
    Tom McCoffee owns the only pizza delivery place in the mountains. The terrain is represented as a rectangular grid of squares, where each square either contains a building or is empty. Each empty square has an integer height between 0 and 9, inclusive. Today, each building in the area has ordered one pizza, and Tom must use his two delivery boys to fulfill all the orders in the shortest total amount of time possible.  
 
 
-
-
-   From each square in the grid, you can only move to adjacent squares. Two squares are adjacent if they share an edge. You can only move between two empty squares if the absolute difference of their heights is less than or equal to 1. If the height difference is 0, it takes 1 minute to make the move, and if the absolute height difference is 1, it takes 3 minutes.  
+\\   From each square in the grid, you can only move to adjacent squares. Two squares are adjacent if they share an edge. You can only move between two empty squares if the absolute difference of their heights is less than or equal to 1. If the height difference is 0, it takes 1 minute to make the move, and if the absolute height difference is 1, it takes 3 minutes.  
 
    You can always move to a building from any of its adjacent squares and vice versa, regardless of height. This is because all buildings are taller than the highest terrain, and each building has entrances and exits for all its adjacent squares at the correct heights. Moving to or from a square containing a building takes 2 minutes. The delivery boys are allowed to enter buildings even if they are not their final destinations. Note that the pizza place itself is also a building.  
 
 
+\\   Each delivery boy can only carry one pizza at a time. This means that after each delivery, the delivery boy must return to the pizza place to pick up another pizza if there are more deliveries left to do.  
 
 
-   Each delivery boy can only carry one pizza at a time. This means that after each delivery, the delivery boy must return to the pizza place to pick up another pizza if there are more deliveries left to do.  
+\\   Your task is to print the minimum time in minutes at which the last delivery can be made. If it is not possible to deliver all the pizzas, print -1 instead.  
 
 
+\\   Input   
+\\   One line containing an integer C, the number of test cases in the input.   
+\\   For each of the C test cases:   
+\\   • The first line consists of M and N the size of the grid. M is the number of rows and N is   
+\\   the number of columns.   
+\\   • The next M lines consists of a string which length is N. Each character could be ‘\$’, ‘X’   
+\\   or digits from ‘0’ to ‘9’. '\$' represents a building from which a pizza was ordered, 'X'   
+\\   represents the location of the restaurant, and the digits '0'-'9' represent the heights of   
+\\   empty squares.  
 
 
-   Your task is to print the minimum time in minutes at which the last delivery can be made. If it is not possible to deliver all the pizzas, print -1 instead.  
+\\   Output   
+\\   For each test case, print the minimum time in minutes at which the last delivery can be made. If   
+\\   it is not possible to deliver all the pizzas, print -1 instead.  
 
 
-
-
-   Input   
-
-
-   One line containing an integer C, the number of test cases in the input.   
-
-
-   For each of the C test cases:   
-
-
-   • The first line consists of M and N the size of the grid. M is the number of rows and N is   
-
-
-   the number of columns.   
-
-
-   • The next M lines consists of a string which length is N. Each character could be ‘\$’, ‘X’   
-
-
-   or digits from ‘0’ to ‘9’. '\$' represents a building from which a pizza was ordered, 'X'   
-
-
-   represents the location of the restaurant, and the digits '0'-'9' represent the heights of   
-
-
-   empty squares.  
-
-
-
-
-   Output   
-
-
-   For each test case, print the minimum time in minutes at which the last delivery can be made. If   
-
-
-   it is not possible to deliver all the pizzas, print -1 instead.  
-
-
-
-
-   Limits   
-
-
-   1  $\le$  C  $\le$  30   
-
-
-   1  $\le$  M  $\le$  50   
-
-
-   1  $\le$  N  $\le$  50   
-
-
-   There are at most 20 buildings.  
+\\   Limits   
+\\   1  $\le$  C  $\le$  30   
+\\   1  $\le$  M  $\le$  50   
+\\   1  $\le$  N  $\le$  50   
+\\   There are at most 20 buildings.  
 
    Sample input   
+\\   2   
+\\   3 7   
+\\   3442211   
+\\   34\$221X   
+\\   3442211   
+\\   3 7   
+\\   001000\$   
+\\   \$010X0\$   
+\\   0010000  
 
 
-   2   
-
-
-   3 7   
-
-
-   3442211   
-
-
-   34\$221X   
-
-
-   3442211   
-
-
-   3 7   
-
-
-   001000\$   
-
-
-   \$010X0\$   
-
-
-   0010000  
-
-
-
-
-   Sample output   
-
-
-   8   
-
-
-   13  
+\\   Sample output   
+\\   8   
+\\   13  

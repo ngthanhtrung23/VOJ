@@ -3,131 +3,63 @@
 
 
    You are given K points with positive integer coordinates. You are also given M triangles, each   
+\\   of them having one vertex in the origin and the other 2 vertices with non-negative integer   
+\\   coordinates.   
+\\   You are asked to determine for each triangle whether it has at least one of the K given points   
+\\   inside. (None of the K points are on any edge of any triangle.)  
 
 
-   of them having one vertex in the origin and the other 2 vertices with non-negative integer   
+\\   Input   
+\\   The first line will contain K and M. The following K lines will   
+\\   contain 2 positive integers x y separated by one space that represent the coordinates of   
+\\   each point. The next M lines have 4 non-negative integers separated by one space, (x1,y1)   
+\\   and (x2, y2), that represent the other 2 vertices of each triangle, except the origin.  
 
 
-   coordinates.   
+\\   Output   
+\\   The output should contain exactly M lines. The k-th line should contain the   
+\\   character Y if the k-th triangle (in the order of the input) contains at least one point   
+\\   inside it, or N otherwise.  
 
 
-   You are asked to determine for each triangle whether it has at least one of the K given points   
-
-
-   inside. (None of the K points are on any edge of any triangle.)  
-
-
-
-
-   Input   
-
-
-   The first line will contain K and M. The following K lines will   
-
-
-   contain 2 positive integers x y separated by one space that represent the coordinates of   
-
-
-   each point. The next M lines have 4 non-negative integers separated by one space, (x1,y1)   
-
-
-   and (x2, y2), that represent the other 2 vertices of each triangle, except the origin.  
-
-
-
-
-   Output   
-
-
-   The output should contain exactly M lines. The k-th line should contain the   
-
-
-   character Y if the k-th triangle (in the order of the input) contains at least one point   
-
-
-   inside it, or N otherwise.  
-
-
-
-
-   Constraints   
-
-
-   · 1 ≤ K,M ≤ 100 000   
-
-
-   · 1 ≤ each coordinate of the K points ≤ 10^9   
-
-
-   · 0 ≤ each coordinate of the triangle vertices ≤ 10^9   
-
-
-   · Triangles are not degenerate (they all have nonzero area).  
+\\   Constraints   
+\\   · 1 ≤ K,M ≤ 100 000   
+\\   · 1 ≤ each coordinate of the K points ≤ 10^9   
+\\   · 0 ≤ each coordinate of the triangle vertices ≤ 10^9   
+\\   · Triangles are not degenerate (they all have nonzero area).  
 
    SAMPLE 1  
 
    Input  
 
    4 3   
-
-
-   1 2   
-
-
-   1 3   
-
-
-   5 1   
-
-
-   5 3   
-
-
-   1 4 3 3   
-
-
-   2 2 4 1   
-
-
-   4 4 6 3  
+\\   1 2   
+\\   1 3   
+\\   5 1   
+\\   5 3   
+\\   1 4 3 3   
+\\   2 2 4 1   
+\\   4 4 6 3  
 
    Output  
 
    Y   
-
-
-   N   
-
-
-   Y  
+\\   N   
+\\   Y  
 
    SAMPLE 2  
 
    Input  
 
    4 2   
-
-
-   1 2   
-
-
-   1 3   
-
-
-   5 1   
-
-
-   4 3   
-
-
-   0 2 1 0   
-
-
-   0 3 5 0  
+\\   1 2   
+\\   1 3   
+\\   5 1   
+\\   4 3   
+\\   0 2 1 0   
+\\   0 3 5 0  
 
    Output  
 
    N   
-
-
-   Y  
+\\   Y  

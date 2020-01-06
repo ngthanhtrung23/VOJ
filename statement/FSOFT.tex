@@ -7,72 +7,40 @@
 
 
    Công ti phần mềm FSoft mới nhận thêm N nhân viên. Lãnh đạo công ti muốn số nhân viên mới trên chia thành M nhóm khác nhau thỏa mãn rằng: số người trong các nhóm bằng nhau, mỗi người chỉ thuộc một nhóm. Qua phân tích bản CV và lúc phỏng vấn, công ti đưa ra bảng đánh giá A với $A_{ij}$   là sự hiệu quả khi người thứ i và j thuộc cùng một nhóm.   
-
-
-   Ban lãnh đạo công ti nhờ bạn tìm cách phân chia N nhân viên thành M nhóm sao cho hiệu quả nhất. Sự hiệu quả của một cách phân chia bằng tổng sự hiệu quả của từng nhóm; sự hiệu quả của mỗi nhóm bằng tổng sự hiệu của của các cặp trong nhóm đó.  
+\\   Ban lãnh đạo công ti nhờ bạn tìm cách phân chia N nhân viên thành M nhóm sao cho hiệu quả nhất. Sự hiệu quả của một cách phân chia bằng tổng sự hiệu quả của từng nhóm; sự hiệu quả của mỗi nhóm bằng tổng sự hiệu của của các cặp trong nhóm đó.  
 
 \subsubsection{   Dữ liệu  }
 
    - Dòng đầu tiên chứa hai số N, M.   
-
-
-   - N dòng tiếp theo, mỗi dòng ghi N số mô tả bảng A. ($A_{ii}$   =0; $A_{ji}$   =$A_{ij}$   )  
+\\   - N dòng tiếp theo, mỗi dòng ghi N số mô tả bảng A. ($A_{ii}$   =0; $A_{ji}$   =$A_{ij}$   )  
 
 \subsubsection{   Kết quả  }
 
    - Dòng đầu tiên ghi sự hiệu quả của cách phân chia mà bạn tìm được.   
-
-
-   - M dòng tiếp theo ghi danh sách nhân viên của mỗi nhóm trong cách chia của bạn.  
+\\   - M dòng tiếp theo ghi danh sách nhân viên của mỗi nhóm trong cách chia của bạn.  
 
 \subsubsection{   Ví dụ  }
 \begin{verbatim}
 \textbf{Dữ liệu:}
-
-
-4 2
-
-
-0 1 2 3
-
-
-1 0 5 1
-
-
-2 5 0 2
-
-
-3 1 2 0
-
-
-
-
-
-\textbf{Kết quả:}
-
-
-8
-
-
-1 4
-
-
-2 3
-
-
-\end{verbatim}
+\\4 2
+\\0 1 2 3
+\\1 0 5 1
+\\2 5 0 2
+\\3 1 2 0
+\\
+\\\textbf{Kết quả:}
+\\8
+\\1 4
+\\2 3
+\\\end{verbatim}
 
 \subsubsection{   Giới hạn  }
 
    - 1 ≤ N ≤ 100.   
-
-
-   - 1 ≤ M ≤ 10. (N mod M = 0)  
+\\   - 1 ≤ M ≤ 10. (N mod M = 0)  
 
 \subsubsection{   Cách tính điểm  }
 
    - Có 10 tests; với mỗi test, gọi sự hiệu quả bạn tìm được là RES, đáp án là ANS; nếu RES khớp với danh sách các nhóm bạn đưa ra thì số điểm bạn đạt được là   \textbf{    (RES/ANS)    $^     4    $    x10   }   .   
-
-
-   - Điểm của toàn bài bằng tổng điểm cho mỗi test.  
+\\   - Điểm của toàn bài bằng tổng điểm cho mỗi test.  
 
