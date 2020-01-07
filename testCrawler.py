@@ -1,16 +1,20 @@
-import requests, threading, os, zipfile
+import requests, threading, os, zipfile, time
 from bs4 import BeautifulSoup
 
-s = requests.session()
+# For debugging, please comment out 2 lines below when you are running (in case I forget)
+# s.proxies = {'https': 'http://localhost:8080'}
+# s.verify = False
+
+BASE_URL = 'https://www.spoj.com/'
 
 def login(username, password):
-    return s.post('http://www.spoj.com/login/', data={
+    return s.post(BASE_URL + 'login/', data={
         'login_user': username,
         'password': password
-    })
+    }, allow_redirects=False)
 
 def getTestsDataInfo(problemId):
-    html = s.get('http://www.spoj.com/problems/'+ problemId +'/edit/').text
+    html = s.get(BASE_URL + 'problems/'+ problemId +'/edit/').text
 
     soup = BeautifulSoup(html, features='html.parser')
 
@@ -22,7 +26,7 @@ def getTestsDataInfo(problemId):
 
 def downloadTestAsText(problemId, path, i):
     i = str(i)
-    baseUrl = 'http://www.spoj.com/problems/' + problemId
+    baseUrl = BASE_URL + 'problems/' + problemId
 
     input = s.get(baseUrl + '/' + i + '.in').text
 
@@ -61,7 +65,7 @@ def downloadAllTestsFromZip(problemId, tempFolder = './temp', testsFolder = './t
         extractedProblemPath = tempFolder + '/' + problemId
         problemTestsFolder = testsFolder + '/' + problemId
 
-        open(zipPath, 'wb').write(s.post('http://www.spoj.com/problems/' + problemId + '/edit2/', data={'form_action': 'export'}).content)
+        open(zipPath, 'wb').write(s.post(BASE_URL + 'problems/' + problemId + '/edit2/', data={'form_action': 'export'}).content)
 
         zipfile.ZipFile(zipPath, "r").extractall(extractedProblemPath)
 
@@ -83,8 +87,8 @@ def downloadAllTestsFromZip(problemId, tempFolder = './temp', testsFolder = './t
     except Exception as e:
         print('Error while downloading tests for ' + problemId + ': ' + str(e))
 
-def getAuthoredProblems(start = 0, sort = 5):
-    html = s.get('http://www.spoj.com/problems/my/', params={
+def getEditableProblems(start = 0, sort = 5):
+    html = s.get(BASE_URL + 'problems/editable/', params={
         'start': start,
         'sort': sort
     }).text
@@ -101,25 +105,37 @@ def getAuthoredProblems(start = 0, sort = 5):
 
     return codes
 
-accounts = open('accounts.csv').read().strip().split('\n')
+if __name__ == '__main__':
+    s = requests.session()
 
-for account in accounts:
-    [username, password] = account.split(',')
+    accounts = open('accounts.csv').read().strip().split('\n')
 
-    login(username, password)
+    for account in accounts:
+        s = requests.session()
 
-    start = 0
+        t = time.time()
 
-    while 1:
-        codes = getAuthoredProblems(start)
+        [username, password] = account.split(',')
 
-        if not codes:
-            break
+        username = username.strip()
+        password = password.strip()
 
-        for code in codes:
-            print('Crawling tests for ' + code)
+        print('Crawling tests for account ' + username)
 
-            t = threading.Thread(target=downloadAllTestsAsText, args=(code,))
-            t.start()
+        login(username, password)
 
-        start += len(codes)
+        start = 0
+
+        while 1:
+            codes = getEditableProblems(start)
+
+            if not codes:
+                break
+
+            for code in codes:
+                print('Crawling tests for ' + code)
+
+                t = threading.Thread(target=downloadAllTestsAsText, args=(code,))
+                t.start()
+
+            start += len(codes)
