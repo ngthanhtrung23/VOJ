@@ -132,10 +132,16 @@ if __name__ == '__main__':
             if not codes:
                 break
 
+            threads = []
+
             for code in codes:
                 print('Crawling tests for ' + code)
 
                 t = threading.Thread(target=downloadAllTestsAsText, args=(code,))
+                threads.append(t)
                 t.start()
+
+            for t in threads:
+                t.join()
 
             start += len(codes)
