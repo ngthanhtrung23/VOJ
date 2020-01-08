@@ -21,5 +21,5 @@ By examination (`subsectionsExtractor.py`) I saw that most of the statement have
 Extracted statements are saved in `extracted` folder. Each statement would be broken into 4 parts: `statement.tex`, `input.tex`, `output.tex`, `notes.tex`, the same format as Codeforces Polygon
 
 # VOJ TESTS CRAWLER INSTRUCTION
-1. Place your VOJ problem accounts into `accounts.csv`, one per line
+1. Place your VOJ problem setter accounts into `accounts.csv`, one per line
 2. Run `python3 testCrawler.py`
