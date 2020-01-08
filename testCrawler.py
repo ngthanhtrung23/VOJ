@@ -14,31 +14,39 @@ def login(username, password):
     }, allow_redirects=False)
 
 def getTestsDataInfo(problemId):
-    html = s.get(BASE_URL + 'problems/'+ problemId +'/edit/').text
+    while 1:
+        try:
+            html = s.get(BASE_URL + 'problems/'+ problemId +'/edit/').text
 
-    soup = BeautifulSoup(html, features='html.parser')
+            soup = BeautifulSoup(html, features='html.parser')
 
-    testDataElem = soup.find_all('tr', {'class': 'problemrow_'})
+            testDataElem = soup.find_all('tr', {'class': 'problemrow_'})
 
-    enabled = list(map(lambda elem: 'checked' in elem.find_all('td')[-1].find('input').attrs, testDataElem))
+            enabled = list(map(lambda elem: 'checked' in elem.find_all('td')[-1].find('input').attrs, testDataElem))
 
-    return enabled
+            return enabled
+        except Exception as e:
+            print(e)
 
 def downloadTestAsText(problemId, path, i):
-    i = str(i)
-    baseUrl = BASE_URL + 'problems/' + problemId
+    while 1:
+        try:
+            i = str(i)
+            baseUrl = BASE_URL + 'problems/' + problemId
 
-    input = s.get(baseUrl + '/' + i + '.in').text
+            input = s.get(baseUrl + '/' + i + '.in').text
 
-    output = s.get(baseUrl + '/' + i + '.out').text
+            output = s.get(baseUrl + '/' + i + '.out').text
 
-    if not (input and output):
-        return
+            if not (input and output):
+                return
 
-    if (input and output):
-        print('Downloaded test ' + i + ' for problem ' + problemId)
-        open(path + '/' + i + '.in', 'w').write(input)
-        open(path + '/' + i + '.out', 'w').write(output)
+            if (input and output):
+                print('Downloaded test ' + i + ' for problem ' + problemId)
+                open(path + '/' + i + '.in', 'w').write(input)
+                open(path + '/' + i + '.out', 'w').write(output)
+        except Exception as e:
+            print(e)
 
 def downloadAllTestsAsText(problemId, path ='./tests'):
     enabledInfo = getTestsDataInfo(problemId)
@@ -60,6 +68,9 @@ def downloadAllTestsAsText(problemId, path ='./tests'):
 def downloadAllTestsFromZip(problemId, tempFolder = './temp', testsFolder = './tests'):
     try:
         enabledInfo = getTestsDataInfo(problemId)
+
+        if not len(list(filter(lambda enabled: enabled, enabledInfo))):
+            return
 
         zipPath = tempFolder + '/' + problemId + '.zip'
         extractedProblemPath = tempFolder + '/' + problemId
