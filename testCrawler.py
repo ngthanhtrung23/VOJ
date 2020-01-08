@@ -45,6 +45,8 @@ def downloadTestAsText(problemId, path, i):
                 print('Downloaded test ' + i + ' for problem ' + problemId)
                 open(path + '/' + i + '.in', 'w').write(input)
                 open(path + '/' + i + '.out', 'w').write(output)
+
+            return
         except Exception as e:
             print(e)
 
