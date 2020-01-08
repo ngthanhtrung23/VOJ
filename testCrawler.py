@@ -117,6 +117,8 @@ def getEditableProblems(start = 0, sort = 5):
     return codes
 
 if __name__ == '__main__':
+    crawledTests = set(os.listdir('./tests'))
+
     s = requests.session()
 
     accounts = open('accounts.csv').read().strip().split('\n')
@@ -146,7 +148,12 @@ if __name__ == '__main__':
             threads = []
 
             for code in codes:
+                if code in crawledTests:
+                    print('Crawled ' + code + ' already, skipping')
+                    continue
+
                 print('Crawling tests for ' + code)
+                crawledTests.add(code)
 
                 t = threading.Thread(target=downloadAllTestsAsText, args=(code,))
                 threads.append(t)
