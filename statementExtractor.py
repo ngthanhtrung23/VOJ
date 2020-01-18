@@ -100,7 +100,7 @@ def extractNSections(n):
                 formattedSubsectionName = format(subsectionName)
                 subsectionContent = parts[i + 1].strip() + '\n'
 
-                content = subsectionName + '\n' + subsectionContent
+                content = subsectionContent
 
                 found = False
 
@@ -199,8 +199,8 @@ def extractSampleTests(notes):
         return False
 
     notes = notes.replace('}', '}\n').replace('\\', '\n\\')
-    while ('\n\n' in notes):
-        notes = notes.replace('\n\n', '\n')
+    while ('\n\n\n' in notes):
+        notes = notes.replace('\n\n\n', '\n\n')
     lines = notes.split('\n')
     pattern = '[.0-9 a-zA-Z-]+'
 
