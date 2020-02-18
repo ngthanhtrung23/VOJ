@@ -29,8 +29,12 @@ def getTestsDataInfo(problemId):
             print(e)
 
 def downloadTestAsText(problemId, path, i):
-    while 1:
+    retries = 0
+
+    while retries < 10:
         try:
+            retries += 1
+
             i = str(i)
             baseUrl = BASE_URL + 'problems/' + problemId
 
@@ -38,12 +42,14 @@ def downloadTestAsText(problemId, path, i):
 
             output = s.get(baseUrl + '/' + i + '.out').text
 
-            if not (input and output):
+            if not input:
                 return
 
-            if (input and output):
-                print('Downloaded test ' + i + ' for problem ' + problemId)
-                open(path + '/' + i + '.in', 'w').write(input)
+            print('Downloaded test ' + i + ' for problem ' + problemId)
+
+            open(path + '/' + i + '.in', 'w').write(input)
+
+            if output:
                 open(path + '/' + i + '.out', 'w').write(output)
 
             return
@@ -53,14 +59,16 @@ def downloadTestAsText(problemId, path, i):
 def downloadAllTestsAsText(problemId, path ='./tests'):
     enabledInfo = getTestsDataInfo(problemId)
 
+    if not enabledInfo:
+        return
+
     path = path + '/' + problemId
 
     os.makedirs(path, exist_ok=True)
 
-    for i in range(len(enabledInfo)):
-        if not enabledInfo[i]:
-            continue
+    open(path + '/status.txt', 'w').write(','.join(map(lambda status: '1' if status else '0', enabledInfo)))
 
+    for i in range(len(enabledInfo)):
         try:
             t = threading.Thread(downloadTestAsText(problemId, path, i))
             t.start()
