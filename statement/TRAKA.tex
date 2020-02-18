@@ -11,18 +11,14 @@ Production of a single car starts with worker \#1 (Mirko). After he had finished
 Mirko and his workers have to produce M cars and they must produce them in order 1 to M.
 
 
-
-
-For every worker i we know T[i] - time required for him to do his part of the job.
+\\For every worker i we know T[i] - time required for him to do his part of the job.
 
 For every car j we know factor of assembly complexity F[j].
 
 Time in minutes for worker i to finish his part of he job on the car j is computed as a product T[i]*F[j].
 
 
-
-
-After some worker has finished working on a car, he has to give it to the next worker instantly, without any delay (weird company policy).
+\\After some worker has finished working on a car, he has to give it to the next worker instantly, without any delay (weird company policy).
 
 For that reason, the worker receiving the car has to be free (he must not be working on some other car). In order to fulfill this condition, Mirko has to choose a good timing to start building a new car. To be efficient, he’ll wait minimum number of minutes until he is certain that all of the conditions described are met.
 
