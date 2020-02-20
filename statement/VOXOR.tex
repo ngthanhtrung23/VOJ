@@ -1,0 +1,105 @@
+
+
+Cho dãy \textbf{A} gồm \textbf{N} số nguyên không âm. Ta lần lượt thực hiện \textbf{Q} thao tác trên tập hợp này:
+\begin{itemize}
+	\item XOR \textbf{x}: Với mọi i, \textbf{A$_i$ = A$_i$ xor x}
+	\item FIND \textbf{k}: Tìm số lớn thứ \textbf{k} trong dãy \textbf{A}.
+\end{itemize}
+
+Yêu cầu: Thực hiện các truy vấn trên.
+
+\subsubsection{Input}
+
+Dòng đầu tiên ghi 2 số \textbf{N} và \textbf{Q}.
+
+Dòng thứ hai ghi \textbf{N} số là giá trị ban đầu của dãy \textbf{A}.
+
+Tiếp theo là \textbf{Q} dòng, mỗi dòng ghi 1 trong 2 loại truy vấn.
+
+\subsubsection{Output}
+
+Với mỗi truy vấn loại FIND, in ra kết quả tìm được.
+
+\subsubsection{Giới hạn}
+
+Subtask 1 (25\%)
+\begin{itemize}
+	\item \textbf{N}\textbf{, }\textbf{Q} ≤ 5000
+	\item 0 ≤ \textbf{A$_i$} ≤ 10$^9$
+	\item 0 ≤ \textbf{x} ≤ 10$^9$.
+\end{itemize}
+
+Các subtask 2, 3 và 4 tiếp theo đều có
+\begin{itemize}
+	\item \textbf{N} ≤ 10$^5$
+	\item \textbf{Q} ≤ 10$^5$
+	\item 0 ≤ \textbf{A$_i$} ≤ 10$^9$
+\end{itemize}
+
+Subtask 2 (40\%)
+\begin{itemize}
+	\item 0 ≤ \textbf{x} ≤ 100
+\end{itemize}
+
+Subtask 3 (10\%):
+\begin{itemize}
+	\item 0 ≤ \textbf{x} ≤ 10$^9$
+	\item \textbf{x} luôn có dạng \textbf{2$^k$}
+\end{itemize}
+
+Subtask 4 (25\%):
+\begin{itemize}
+	\item 0 ≤ \textbf{x} ≤ 10$^9$
+\end{itemize}
+
+\subsubsection{Ví dụ}
+\begin{verbatim}
+\textbf{Input:}
+
+4 9
+
+1 2 3 4
+
+FIND 1
+
+FIND 2
+
+FIND 3
+
+FIND 4
+
+XOR 6
+
+FIND 1
+
+FIND 2
+
+FIND 3
+
+FIND 4\end{verbatim}
+\begin{verbatim}
+\textbf{Output:}
+
+4
+
+3
+
+2
+
+1
+
+7
+
+5
+
+4
+
+2
+
+\end{verbatim}
+
+\subsubsection{Giải thích}
+
+Trước truy vấn XOR 6, dãy số là 1 2 3 4.
+
+Sau truy vấn XOR 6, dãy số là 7 4 5 2.

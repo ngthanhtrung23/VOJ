@@ -1,0 +1,40 @@
+
+\begin{verbatim}
+Bài 2. HÁI NẤMMột cháu gái hàng ngày được mẹ giao nhiệm vụ đến thăm bà nội. Từ nhà mình đến nhà bà nội cô bé phải đi qua một khu rừng có rất nhiều loại nấm. Trong số các loại nấm, có ba loại có thể ăn được. Cô bé đánh số ba loại nấm ăn được lần lượt là 1, 2 và 3. Là một người cháu  hiếu thảo cho nên cô bé quyết định mỗi lần đến thăm bà, cô sẽ hái ít nhất hai loại nấm ăn được để nấu súp cho bà. Khu rừng mà cô bé đi qua được chia thành lưới ô vuông gồm m hàng và n cột. Các hàng của lưới được đánh sốtừ trên xuống dưới bắt đầu từ 1, còn các cột – đánh số từ trái sang phải, bắt đầu từ 1. Ô nằm giao của hàng  i  và cột  j  có tọa độ (i,  j).  Trên mỗi ô vuông,  trừ ô (1,1) và ô (m,  n)  các ô còn lại  hoặc  có nấm độc và  cô bé không dám  đi vào (đánh dấu là  -1), hoặc  là có đúng một loại nấm có thể ăn được (đánh dấu bằng số hiệu của loại nấm đó). Khi cô bé đi vào một ô vuông có nấm ăn được thì cô bé sẽ hái loại nấm mọc trên ô đó. Xuất phát từ ô (1,1), để đến được nhà bà nội ở ô (m, n) một cách nhanh nhất cô bé luôn đi theo hướng sang phải hoặc xuống dưới.Việc đi thăm bà và hái nấm trong rừng sâu gặp nguy hiểm bởi có một con cho sói luôn theo dõi và muốn ăn thịt cô bé. Để phòng tránh chó sói theo dõi và ăn thịt, cô bé quyết định mỗi ngày sẽ đi theo một con đường khác nhau (hai con đường khác nhau nếu chúng khác nhau ở ít nhất một ô). Yêu cầu:  Cho bảng m×n  ô  vuông  mô tả trạng thái  khu rừng. Gọi k  là số con đường khác nhau để cô bé đến thăm bà nội theo cách chọn đường đi đã nêu ở trên. Hãy tính giá trị k  mod 107.Dữ liệu: Vào từ file văn bản MUSHROOM.INP:-  Dòng đầu chứa 2 số m, n (1 $<$ m, n $<$101),-  m  dòng tiếp tiếp theo, mỗi dòng chứa  n  số  nguyên cho biết thông tin về  các ô của khu rừng.(riêng giá trị ở hai ô (1,1) và ô (m, n) luôn luôn bằng 0 các ô còn lại có giá trị bằng -1, hoặc1, hoặc 2, hoặc 3).Hai số liên tiếp  trên một dòng cách nhau một dấu cách.Kết quả: Đưa ra file văn bản MUSHROOM.OUT chứa một dòng ghi một số nguyên k mod 107.Ví dụ: MUSHROOM.INP    MUSHROOM.OUT3 4   0 3 -1 23 3 3 33 1  3 03Lưu ý: Có 60% số test với M, N không quá 10. Giải đúng các test này, thí sinh được không ít hơn 60% số điểm tối đa cho toàn bộ bài t
+\begin{verbatim}
+\end{verbatim}
+\begin{verbatim}
+Một cháu gái hàng ngày được mẹ giao nhiệm vụ đến thăm bà nội. Từ nhà mình đến nhà bà nội cô bé phải đi qua một khu rừng có rất nhiều loại nấm. Trong số các loại nấm, có ba loại có thể ăn được. Cô bé đánh số ba loại nấm ăn được lần lượt là 1, 2 và 3. Là một người cháu  hiếu thảo cho nên cô bé quyết định mỗi lần đến thăm bà, cô sẽ hái ít nhất hai loại nấm ăn được để nấu súp cho bà. Khu rừng mà cô bé đi qua được chia thành lưới ô vuông gồm m hàng và n cột. Các hàng của lưới được đánh số từ trên xuống dưới bắt đầu từ 1, còn các cột – đánh số từ trái sang phải, bắt đầu từ 1. Ô nằm giao của hàng  i  và cột  j  có tọa độ (i,  j).  Trên mỗi ô vuông,  trừ ô (1,1) và ô (m,  n)  các ô còn lại  hoặc  có nấm độc và  cô bé không dám  đi vào (đánh dấu là  -1), hoặc  là có đúng một loại nấm có thể ăn được (đánh dấu bằng số hiệu của loại nấm đó). Khi cô bé đi vào một ô vuông có nấm ăn được thì cô bé sẽ hái loại nấm mọc trên ô đó. Xuất phát từ ô (1,1), để đến được nhà bà nội ở ô (m, n) một cách nhanh nhất cô bé luôn đi theo hướng sang phải hoặc xuống dưới.\end{verbatim}
+\begin{verbatim}
+Việc đi thăm bà và hái nấm trong rừng sâu gặp nguy hiểm bởi có một con cho sói luôn theo dõi và \end{verbatim}
+\begin{verbatim}
+muốn ăn thịt cô bé. Để phòng tránh chó sói theo dõi và ăn thịt, cô bé quyết định mỗi ngày sẽ đi theo một con đường khác nhau (hai con đường khác nhau nếu chúng khác nhau ở ít nhất một ô). \end{verbatim}
+\begin{verbatim}
+Yêu cầu:  Cho bảng m×n  ô  vuông  mô tả trạng thái  khu rừng. Gọi k  là số con đường khác nhau để cô bé đến thăm bà nội theo cách chọn đường đi đã nêu ở trên. Hãy tính giá trị k  mod 10^7.\end{verbatim}
+\includegraphics{http://i58.tinypic.com/b519qq.png}
+\begin{verbatim}
+Dữ liệu: Vào từ file văn bản MUSHROOM.INP:\end{verbatim}
+\begin{verbatim}
+-  Dòng đầu chứa 2 số m, n (1 $<$ m, n $<$101),\end{verbatim}
+\begin{verbatim}
+-  m  dòng tiếp tiếp theo, mỗi dòng chứa  n  số  nguyên cho biết thông tin về  các ô của khu rừng. (riêng giá trị ở hai ô (1,1) và ô (m, n) luôn luôn bằng 0 các ô còn lại có giá trị bằng -1, hoặc 1, hoặc 2, hoặc 3). Hai số liên tiếp  trên một dòng cách nhau một dấu cách.\end{verbatim}
+\begin{verbatim}
+Kết quả: Đưa ra file văn bản MUSHROOM.OUT chứa một dòng ghi một số nguyên k mod 10^7.\end{verbatim}
+\begin{verbatim}
+Ví dụ: \end{verbatim}
+\begin{verbatim}
+MUSHROOM.INP    \end{verbatim}
+\begin{verbatim}
+3 4   \end{verbatim}
+\begin{verbatim}
+0 3 -1 2\end{verbatim}
+\begin{verbatim}
+3 3 3 3\end{verbatim}
+\begin{verbatim}
+3 1  3 0\end{verbatim}
+\begin{verbatim}
+MUSHROOM.OUT\end{verbatim}
+\begin{verbatim}
+3\end{verbatim}
+\begin{verbatim}
+\end{verbatim}\end{verbatim}

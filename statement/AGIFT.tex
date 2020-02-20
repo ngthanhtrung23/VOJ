@@ -1,0 +1,61 @@
+
+
+
+
+In a gift box, we have a springs that stiffness from L to H, and 4 gift that is numbered 1,2,3,4. Each gift is value. A key is a string that have 4 characters of \{0,1\}. When you use a key, you’ll have some gift that have character 1 in string in number gift. Example: With key 0110, you’ll have gift 2 and gift 3.
+
+In courtyard we have N gift box that is numbered from 1 to n. When you are in gift box i, you’ll use a key to collect gift, that the key have no character 1 next to character 1, and have no character 1 match about last key you use. And then, you use springs to fly to other gift box. If you use springs with stiffness k, you are going to flying to gift box i+k, or you go out courtyard if i+k$>$n.
+
+You are in gift box 1, and you fly until go out courtyard. You collect gift and not empty. You’ll have total gift value. Let the maximum value you can collect.
+
+Input:
+
+The first line is a integer: N.
+
+In n line next, each line is 6 integers: L,H and value about 4 gift.
+
+
+Output: 
+
+Let the number is maximum value you can collect. (have no other characters).
+
+
+Example:
+
+
+
+
+Input:
+
+6
+
+1 1 3 2 -4 5
+
+1 2 2 -3 1 3
+
+2 2 1 1 -1 -1
+
+1 3 -10 10 30 33
+
+1 1 2 3 -5 4
+
+1 100 2 2 2 2
+
+
+
+
+Output: 67
+
+ 
+
+Note:
+
+0$<$N$<$100001.
+
+0$<$L≤H$<$1000000001.
+
+Value of gift is a integer that the absolute not more than 1000000000.
+
+50\% test n$<$1001.
+
+ 

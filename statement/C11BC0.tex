@@ -1,0 +1,34 @@
+
+
+Một đất nước có N thành phố, mỗi thành phố được đặc trưng bởi 2 con số: A[i] và B[i] (trong đó: A[i] là khả năng tăng trưởng của thành phố đó và B[i] là “chỉ số tôn giáo” của thành phố đó). Một “liên minh k thành phố” là 1 tập hợp gồm k thành phố trong N thành phố của đất nước (k $<$= N). “Khả năng liên minh” của k thành phố trong 1 liên minh k thành phố được tính bằng tích các khả năng tăng trưởng của k thành phố đó. Khả năng tăng trưởng của đất nước sẽ được tính bằng tổng tất cả các khả năng liên minh của các liên minh k thành phố, và tất cả các liên minh k thành phố này đều khác nhau.
+
+Hai liên minh k thành phố được gọi là khác nhau nếu tồn tại một thành phố có trong liên mình k thành phố này mà không có trong liên minh k thành phố kia.
+
+ 
+
+\subsubsection{Input}
+
+Dòng đầu gồm 2 số n và k (2$<$= n $<$= 10\textasciicircum5, 2 $<$= k $<$= 50)
+
+N dòng tiếp theo: mỗi dòng gồm 2 số A[i] và B[i] (A[i] $<$= 1000 và B[i] $<$= 10\textasciicircum9)
+
+\subsubsection{Output}
+
+Gồm 1 dòng duy nhất: Khả năng tăng trưởng của đất nước theo module 790792.
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+
+5 1
+
+4 1
+
+6 45 3
+
+
+2 23 5
+
+\textbf{Output:}
+580
+\end{verbatim}

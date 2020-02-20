@@ -1,0 +1,83 @@
+
+
+Cho một cái hộp có \textbf{N} viên bi đánh số từ 1 đến \textbf{N} có màu đỏ (màu \textbf{1}) hoặc màu đen (màu \textbf{0}). Màu của các viên bi được cho bởi dãy \textbf{A} gồm \textbf{D} số \textbf{0} hoặc \textbf{1}:
+\begin{itemize}
+	\item \textbf{\textbf{COLOR$_i$}} = \textbf{A$_i$} với 1 ≤ \textbf{i} ≤ D
+	\item \textbf{COLOR$_i$} = \textbf{COLOR$_i - 1$}  XOR  \textbf{COLOR$_i - 2 $} XOR  \textbf{COLOR$_i - 3 $} XOR  \textbf{... } XOR  \textbf{COLOR$_i - D$} với \textbf{i} $>$ D
+\end{itemize}
+
+Tuấn chơi một trò chơi như sau: Mỗi lượt Tuấn sẽ bốc ngẫu nhiên ra 2 viên bi bất kỳ từ hộp bi.
+\begin{itemize}
+	\item Nếu 2 viên bi \textbf{cùng màu} thi bỏ 2 viên đó đi và lấy từ một hộp khác một viên đen bỏ lại vào hộp.
+	\item Ngược lại, nếu 2 viên bi \textbf{khác màu} thì bỏ viên bi đen đi, giữ lại viên bi đỏ và cho lại vào hộp.
+\end{itemize}
+
+Bạn hãy giúp Tuấn tìm xem, liệu màu của viên bi cuối cùng còn trong hộp có phải là cố định hay không. Nếu cố định (đen hoặc đỏ), in ra màu đó. Còn nếu màu của viên bi cuối cùng không cố định in ra “\textbf{MANY}”.
+
+\subsubsection{Input}
+
+Dòng đầu tiên ghi số nguyên \textbf{T} là số lượng bộ dữ liệu. Mô tả của mỗi bộ dữ liệu như sau: 
+
+Dòng thứ nhất chỉ gồm hai số nguyên lần lượt là \textbf{N} và \textbf{D}
+
+Dòng tiếp theo ghi \textbf{D} số \textbf{0} hoặc \textbf{1} mô tả dãy \textbf{A$_1..D$}
+
+\subsubsection{Output}
+
+In ra \textbf{T} dòng là kết quả của \textbf{T} bộ dữ liệu.
+
+\subsubsection{Giới hạn}
+
+Trong tất cả các test, \textbf{T} ≤ 5.
+
+Subtask 1 (15\% số điểm)
+\begin{itemize}
+	\item 1 ≤ \textbf{D} = \textbf{N} ≤ 20
+\end{itemize}
+
+Subtask 2 (25\% số điểm)
+\begin{itemize}
+	\item 1 ≤ \textbf{D} = \textbf{N} ≤ 10$^5$
+\end{itemize}
+
+Subtask 3 (30\% số điểm)
+\begin{itemize}
+	\item 1 ≤ \textbf{D} ≤ 20
+	\item 10$^5$ $<$ \textbf{N} ≤ 10$^9$
+\end{itemize}
+
+Subtask 4 (30\% số điểm)
+\begin{itemize}
+	\item 1 ≤ \textbf{D} ≤ 10$^5$
+	\item 10$^5$ $<$ \textbf{N} ≤ 10$^9$
+\end{itemize}
+
+\subsubsection{Ví dụ}
+\begin{verbatim}
+\textbf{Input:}
+3
+2 2
+1 1
+2 2
+0 0
+2 2
+1 0\end{verbatim}
+\begin{verbatim}
+\textbf{Output:}
+0
+0
+1\end{verbatim}
+
+\subsubsection{Giải thích}
+
+Bộ dữ liệu đầu tiên
+
+Trong đó có \textbf{hai} viên bi \textbf{đỏ} thì khi Tuấn bốc hai viên bi này lên. Theo quy tắc vì chúng cùng màu nên Tuấn sẽ bỏ 2 viên bi đó đi và \textbf{cho lại vào} hộp viên bi \textbf{màu đen} (màu \textbf{0}).
+
+Bộ dữ liệu thứ hai
+
+Tương tự như bộ dữ liệu đầu tiên nhưng là \textbf{hai} viên bi màu \textbf{đen}. Tuấn cũng theo quy tắc và bỏ hai viên bi đen đó đi và sau đó \textbf{cho lại vào} hộp viên bi \textbf{màu đen} (màu \textbf{0}).
+
+Bộ dữ liệu thứ ba
+
+Tuấn bốc hai viên bi từ trong hộp ra thì trong đó có \textbf{một} viên bi \textbf{đỏ} và \textbf{một} viên bi \textbf{đen}. Tuấn bỏ viên bi đen đi và chỉ \textbf{giữ lại} viên bi \textbf{màu đỏ} (màu \textbf{1}) và cho viên đỏ lại vào hộp.

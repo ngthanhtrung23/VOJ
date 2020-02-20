@@ -1,0 +1,50 @@
+
+\begin{verbatim}
+Trên  một  khu  vực  chiến  trường  hình  chữ  nhật,  kích  thước     hàng,     cột;  Hiệp  CMUđược đại tướng Long khều giao nhiệm vụ  di chuyển từ vị trí hàng   , cột   đến vị trí hàng , cột   . Nhiệm vụ  rất khó khăn vì quân địch đã bố  trí     bẫy mìn và     tên lính gác tại các vị trí  (   ). Toàn bộ        vị trí này đôi một khác nhau đồng thời  khác vị trí (    )và (    ). May mắn thay,  quân ta có điệp viên Nhân siêu cúp  đã thâm nhập được vào địa bàn quân địch và chuyển về thông tin chi tiết các vị trí trên.Hiệp CMU  muốn chọn một con đường di chuyển sao cho an toàn nhất có thể. Con đường di chuyển phải là tập hợp các ô  kề  cạnh  và không đi qua các bẫy mìn hay vị  trí của các lính gác. Độ an toàn của một con đường bằng khoảng cách di chuyển nhỏ nhất để một tên lính gác bất kỳ có thể  di chuyển để chặn được con đường của Hiệp (lính gác cũng phải di chuyển tránh bẫy mìn).Dưới đây là 2 cách di chuyển. Cách thứ  nhất có độ  an toàn là 2, cách thứ  hai có độ  an toàn là 3.Hiệp không ngại gian khổ nên sẵn sàng chấp nhận di chuyển bằng con đường dài hơn nếu như độ an toàn cao hơn. Hãy giúp Hiệp CMU thực hiện nhiệm vụ.Input:  Dòng đầu tiên ghi số  nguyên  dương  T  là số  bộ  test  (T      ).  Mỗi  bộ  test theo định dạng như sau:o  Dòng đầu tiên ghi 4 số           ; trong đó                . Mọi thắc mắc về đề, vui lòng gọi: 0905.523.543 (Q.Long) hoặc đặt câu hỏi trên PC2Cliento  Tiếp theo là T dòng, mỗi dòng ghi tọa độ vị trí của các bẫy mìn.o  Cuối cùng là G dòng, mỗi dòng ghi tọa độ vị trí của các tên lính gác.Output:  In ra độ  an toàn cao nhất có thể  hoặc in ra  -1 nếu không thể  di chuyển. Nếu độ  an toàn là tuyệt đối thì in ra “OK”.Example:Input35 5 2 13 24 33 35 5 2 0 1 22 14 4 0 0
+\begin{verbatim}
+Trên  một  khu  vực  chiến  trường  hình  chữ  nhật,  kích  thước     hàng,     cột;  Hiệp  CMU được đại tướng Long khều giao nhiệm vụ  di chuyển từ vị trí hàng 1  , cột 1   đến vị trí hàng R, cột C   . Nhiệm vụ  rất khó khăn vì quân địch đã bố  trí     T bẫy mìn và  G    tên lính gác tại các vị trí  (X_i,Y_i   ). Toàn bộ   T+G    vị trí này đôi một khác nhau đồng thời  khác vị trí (1,1    )và (R,C    ). May mắn thay,  quân ta có điệp viên Nhân siêu cúp  đã thâm nhập được vào địa bàn quân địch và chuyển về thông tin chi tiết các vị trí trên.\end{verbatim}
+\begin{verbatim}
+Hiệp CMU  muốn chọn một con đường di chuyển sao cho an toàn nhất có thể. Con đường di chuyển phải là tập hợp các ô  kề  cạnh  và không đi qua các bẫy mìn hay vị  trí của các lính gác. Độ an toàn của một con đường bằng khoảng cách di chuyển nhỏ nhất để một tên lính gác bất kỳ có thể  di chuyển để chặn được con đường của Hiệp (lính gác cũng phải di chuyển tránh bẫy mìn).\end{verbatim}
+\begin{verbatim}
+Dưới đây là 2 cách di chuyển. Cách thứ  nhất có độ  an toàn là 2, cách thứ  hai có độ  an toàn là 3.\end{verbatim}
+\begin{verbatim}
+Hiệp không ngại gian khổ nên sẵn sàng chấp nhận di chuyển bằng con đường dài hơn nếu như độ an toàn cao hơn. Hãy giúp Hiệp CMU thực hiện nhiệm vụ.\end{verbatim}
+\begin{verbatim}
+
+\includegraphics{http://i58.tinypic.com/kejj7l.png}\end{verbatim}
+\begin{verbatim}
+Input:\end{verbatim}
+\begin{verbatim}
+  Dòng đầu tiên ghi số  nguyên  dương  T  là số  bộ  test  (T   $<$=25   ).  Mỗi  bộ  test theo định dạng như sau:\end{verbatim}
+\begin{verbatim}
+o  Dòng đầu tiên ghi 4 số   R, C,T,G        ; trong đó          1$<$R,C$<$=1000      . \end{verbatim}
+\begin{verbatim}
+o  Tiếp theo là T dòng, mỗi dòng ghi tọa độ vị trí của các bẫy mìn.\end{verbatim}
+\begin{verbatim}
+o  Cuối cùng là G dòng, mỗi dòng ghi tọa độ vị trí của các tên lính gác.\end{verbatim}
+\begin{verbatim}
+Output:\end{verbatim}
+\begin{verbatim}
+  In ra độ  an toàn cao nhất có thể  hoặc in ra  -1 nếu không thể  di chuyển. Nếu độ  an toàn là tuyệt đối thì in ra “OK”. (OK la truong hop ko co linh gac va co the den duoc o dich)\end{verbatim}
+\begin{verbatim}
+Example:\end{verbatim}
+\begin{verbatim}
+Input\end{verbatim}
+\begin{verbatim}
+3\end{verbatim}
+\begin{verbatim}
+5 5 2 1\end{verbatim}
+\begin{verbatim}
+3 2\end{verbatim}
+\begin{verbatim}
+4 3\end{verbatim}
+\begin{verbatim}
+3 3\end{verbatim}
+\begin{verbatim}
+5 5 2 0 \end{verbatim}
+\begin{verbatim}
+1 2\end{verbatim}
+\begin{verbatim}
+2 1\end{verbatim}
+\begin{verbatim}
+4 4 0 0\end{verbatim}\end{verbatim}

@@ -1,0 +1,66 @@
+
+
+Cho một bảng N*M chỉ gồm các số 0 và 1. Có Q mệnh lệnh có dạng: (i, j) có nghĩa là thay đổi số trong ô (i, j) nếu đang từ 0 sẽ chuyển thành 1, còn nếu đang là 1 thì sẽ chuyển thành 0. Sau mỗi lần thay đổi, bạn phải tìm số các số 1 \textbf{liên tiếp và}\textbf{lớn nhất} trong N \textbf{hàng} của bảng.
+
+\subsubsection{Input}
+
+Dòng 1: 3 số nguyên n, m and q (1 ≤ n, m ≤ 500 và 1 ≤ q ≤ 5000)
+
+Dòng thứ n tiếp theo, mỗi dòng gồm m số nguyên cách nhau bởi dấu cách. Mỗi số được gán là 0 hay 1 
+
+Dòng q tiếp theo, mỗi dòng gồm 2 số nguyên i và j (1 ≤ i ≤ n và 1 ≤ j ≤ m), chỉ số hàng và chỉ số cột của ô phải thay đổi trạng thái.
+
+\subsubsection{Output}
+
+Gồm Q dòng, gồm 1 số chứa kết quả sau mỗi lần thay đổi
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+\begin{verbatim}
+5 4 5
+
+0 1 1 0
+
+1 0 0 1
+
+0 1 1 0
+
+1 0 0 1
+
+0 0 0 0
+
+1 1
+
+1 4
+
+1 1
+
+4 2
+
+4 3\end{verbatim}\textbf{
+\begin{verbatim}
+\textbf{Output:}
+\begin{verbatim}
+3
+
+
+
+
+
+3
+
+4\end{verbatim}
+
+Giải thích:
+
+Lần 1: Thay đổi ô (1,1) từ 0 thành 1
+
+\textbf{1 1 1} 0
+\\1 0 0 1
+\\0 1 1 0
+\\1 0 0 1
+\\0 0 0 0
+\\Số các số 1 liên tiếp nhiều nhất là 3 ( ở hàng đầu tiên )
+
+ \end{verbatim}}\end{verbatim}

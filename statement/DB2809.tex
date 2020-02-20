@@ -1,0 +1,101 @@
+
+\begin{verbatim}
+
+
+
+\textbf{DIABLO}
+
+ 
+
+Diablo có một đội quân rất lớn. Cậu ấy sắp xếp các binh lính thành một hàng, và mỗi người được nhận một số nguyên \textbf{id}.
+
+ 
+
+Diablo sẽ thực hiện một loạt hiệu lệnh. Mỗi lệnh của cậu ấy sẽ hoặc là \textbf{thêm} một binh sỹ vào cuối hàng, hoặc là \textbf{gọi} một binh sỹ tại vị trí thứ \textbf{k} (tính từ trái sang) \textbf{ra khỏi} hàng.
+
+ 
+
+Nhiệm vụ của bạn là mỗi khi Diablo gọi binh sỹ tại vị trí thứ \textbf{k} ra khỏi hàng thì bạn phải tính được \textbf{id} của binh sỹ đó.
+
+ 
+
+\textbf{Input}
+
+Dòng đầu chứa số nguyên \textbf{T} là số bộ test.
+
+ 
+
+Mỗi bộ test bắt đầu bằng một dòng trống. Tiếp theo là một dòng chứa 2 số nguyên \textbf{N} (0 ≤ N ≤ 10$^5$) thể hiện số lượng binh lính ban đầu ở trong hàng, và số nguyên \textbf{Q} (1 ≤ Q ≤ 50000) thể hiện số lượng hiệu lệnh mà Diablo sẽ thực hiện.
+
+ 
+
+Dòng tiếp theo chứa \textbf{N} số nguyên thể hiện \textbf{id} của N người tương ứng theo thứ tự từ trái sang phải trong hàng. Các id đều dương và nằm trong khoảng số nguyên 32 bit có dấu.
+
+ 
+
+Mỗi dòng trong \textbf{Q} dòng tiếp theo sẽ chứa một hiệu lệnh, thuộc 1 trong 2 dạng sau :
+
+\textbf{a p} (thêm một binh sỹ vào cuối hàng với \textbf{id} là \textbf{p})
+
+\textbf{c k} (gọi binh sỹ thứ \textbf{k} ra khỏi hàng (tính từ bên trái), k nguyên dương 32 bit có dấu)
+
+ 
+
+\textbf{Output}
+
+Với mỗi bộ test, in ra chỉ số của bộ test (như trong ví dụ), sau đó là kết quả của các hiệu lệnh \textbf{‘c k’}, tức là in ra id của binh sỹ thứ \textbf{k}, hoặc in ra \textbf{‘none’} nếu không tồn tại.
+
+ 
+
+\textbf{Ví dụ}
+\begin{tabular}\hline 
+
+
+Input & 
+
+Output  
+\hline
+
+
+2
+
+ 
+
+5 5
+
+6 5 3 2 1
+
+c 1
+
+c 1
+
+a 20
+
+c 4
+
+c 4
+
+ 
+
+2 1
+
+18811 1991
+
+c 1 & 
+
+Case 1:
+
+6
+
+5
+
+20
+
+none
+
+Case 2:
+
+18811  
+\hline
+
+\end{tabular}\end{verbatim}

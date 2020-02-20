@@ -1,0 +1,52 @@
+
+
+Huhu. Nghĩ mãi không ra nên viết đề bài này như thế nào...
+
+Cho dãy số nguyên dương A$_1$, A$_2$,..., A$_N$ và một hằng số C. Với số nguyên dương X bất kì, ký hiệu S(X) = C$^K$, với K là số ước nguyên tố của X. Tính tổng của các giá trị S(X), trong đó X là ước chung lớn nhất của một dãy con khác rỗng bất kì của dãy A.
+
+\subsubsection{Input}
+
+Dòng đầu tiên chứa hai số nguyên dương N và C
+
+Dòng thứ hai chứa N số nguyên dương của dãy A.
+
+\subsubsection{Output}
+
+Ghi ra một số nguyên duy nhất là kết quả của bài toán theo Modulo 10$^9$+7.
+
+\subsubsection{Giới hạn}
+
+- Trong tất cả các test, N $<$= 10$^5$, C $<$= 10$^9$  và A$_i$ $<$= 3 * 10$^7$.
+
+- Trong 10\% số test đầu tiên, C = 1.
+
+- Trong 20\% số test tiếp theo, N $<$= 17 và A$_i$ $<$= 10$^6$.
+
+- Trong 25\% số test tiếp theo, N $<$= 1000 và A$_i$ $<$= 1000.
+
+- Trong 35\% số test tiếp theo, A$_i$ $<$= 10$^6$.
+
+- Trong 10\% số test cuối cùng, không có ràng buộc gì thêm.
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+
+3 7
+4 30 15\end{verbatim}
+\begin{verbatim}
+\textbf{Output:}
+
+457\end{verbatim}
+
+\subsubsection{Giải thích}
+
+Xét 2$^3 $- 1 tập con khác rỗng của dãy A:
+\{4\} -> GCD = 4 = 2$^2$ -> S(GCD) = 7$^1$ =  7
+\{30\} -> GCD = 30 = 2*3*5 -> S(GCD) =  7$^3$ =  343
+\{15\} -> GCD = 15 = 3*5 -> S(GCD) = 7$^2$ =  49
+\{4, 30\} -> GCD = 2 -> S(GCD) = 7$^1$ =  7
+\{4, 15\} -> GCD = 1 -> S(GCD) = 7$^0$ =  1
+\{30, 15\} -> GCD = 15 = 3*5 -> S(GCD) = 7$^2$ =  49
+\{4, 30, 15\} -> GCD = 1 -> S(GCD) = 7$^0$ =  1
+Đáp số: 7 + 343 + 49 + 7 + 1 + 49 + 1 = 457.

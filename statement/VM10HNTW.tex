@@ -1,0 +1,92 @@
+
+
+Để chào mừng đại lễ kỉ niệm 1000 năm Thăng Long Hà Nội, bạn bè trên khắp thế giới đã quyết định góp Q phiến đá quý (1 ≤ 30,000 ≤ Q) giúp thủ đô xây dựng một tòa tháp gồm K tầng (1 ≤ K ≤ Q), mỗi tầng làm từ một phiến đá quý. Những phiến đá này có hình dạng và kích thước giống hệt nhau, nhưng lại có “độ quý” C khác nhau (1 ≤ C ≤ 10,000).
+
+Đá quý được tập kết về thủ đô thành M chồng xếp liền nhau theo một hàng dài, chồng đá thứ i gồm H$_i$ phiến đá (H$_i$ $>$ 0, và do kích thước các phiến đá là như nhau nên cũng có thể coi H$_i$ là “chiều cao” của chồng đá thứ i).
+
+ 
+
+
+\includegraphics{../../../content/voj:VM10HNTW_01.png}
+
+ 
+
+Sau đó các phiến đá lần lượt được “gắp” vào công trường để xây dựng tòa tháp (xây từ dưới lên trên) bằng một chiếc cần cẩu chuyên dụng (chiếc loại I). Chiếc ngoàm của cần cẩu được thiết kế chỉ có thể gắp mỗi lượt một phiến đá đang nằm trên cùng của một chồng đá bất kì, với điều kiện hai chồng đá liền kề phải có chiều cao nhỏ hơn chiều cao của chồng đó (nếu phía bên nào không có đá thì coi như chồng bên đó có chiều cao bằng 0). Để khắc phục nhược điểm đó, có một chiếc cần cẩu khác (chiếc loại II) được thiết kế đặc biệt có thể gắp bất kì phiến đá nào (tất nhiên phải là phiến đá nằm trên cùng của một chồng, và cũng chỉ có thể gắp mỗi lượt một phiến); tuy nhiên chiếc cần cẩu này lại làm “xước” phiến đá mà nó gắp, nên độ quý của phiến đá đó chỉ còn là C x P\% (0 $<$ P $<$ 100).
+
+Mặt khác, do các phiến đá cùng loại nếu được đặt chồng lên nhau sẽ tạo ra “hiệu ứng ánh sáng” rất đẹp mắt nên khi đó độ quý của phiến đá nằm trên sẽ tăng so với độ quý của phiến đá nằm dưới là D\% (D $>$ 0), nếu phiến đá nằm trên bị xước (do sử dụng cần cẩu loại II) thì độ quý của phiến đá sau khi tăng D\% mới được nhân với P\% để nhận được độ quý cần tính.
+
+Tổng độ quý S của tòa tháp là tổng các độ quý của K phiến đá tạo nên tòa tháp theo cách tính nói trên. Vấn đề đặt ra là hãy lựa chọn một phương án xây tháp sao cho S càng lớn càng tốt!
+
+ 
+
+
+\includegraphics{../../../content/voj:VM10HNTW_02.png}
+
+ 
+
+\subsubsection{Dữ liệu}
+\begin{itemize}
+	\item Dòng đầu tiên chứa 5 số nguyên N, M, K, P, D trong đó N là số loại đá khác nhau (các loại đá được đánh số từ 1..N).
+	\item Dòng thứ hai chứa N số thực R$_i$ là độ quý của loại đá thứ i (i = 1..N).
+	\item M dòng cuối cùng, dòng thứ j (j = 1..M) có định dạng:                       
+
+ 
+\begin{itemize}
+	\item Bắt đầu bằng số nguyên H là số phiến đá ở chồng đá thứ j.
+	\item Tiếp theo là H số nguyên T$_v$ (v = 1..H) với ý nghĩa phiến đá thứ v (tính từ dưới lên) thuộc chồng đá thứ j là loại đá T$_v$ (T$_v$ = 1..N).
+\end{itemize}
+\end{itemize}
+
+\subsubsection{Kết quả}
+\begin{itemize}
+	\item Ghi ra trên K dòng, dòng thứ i (i = 1..K) ghi số nguyên L$_i$ (L$_i$ = 1..M) thể hiện: lần gắp thứ i (theo thứ tự thời gian) chọn gắp phiến đá trên cùng của chồng đá thứ L$_i$.
+\end{itemize}
+
+Các cần cẩu sẽ được sử dụng theo nguyên tắc: ưu tiên sử dụng cần cẩu loại I, trong trường hợp một trong các điều kiện để sử dụng cần cẩu loại I không được thỏa mãn thì sẽ sử dụng đến chiếc cần cẩu loại II.
+
+(Mỗi số trên cùng một dòng của input/output được/phải ghi cách nhau ít nhất một dấu cách trống)
+
+\subsubsection{Cách tính điểm}
+\begin{itemize}
+	\item Số điểm bạn nhận được sẽ tỉ lệ với tổng độ quý S của tòa tháp bạn xây được.
+\end{itemize}
+
+\subsubsection{Ví dụ}
+
+ 
+egin{verbatim}
+ liệu:
+13 7 7 70 30
+1.7 2.3 3.4 5.5 7.8 1.0 4.6 6.1 9.9 1.3 7.3 8.2 2.5
+2 1 1
+5 2 3 3 3 2
+4 4 4 4 5
+7 6 7 7 8 7 9 9
+6 10 10 11 11 11 10
+1 12
+3 13 13 13
+
+Kết quả:
+4
+4
+5
+4
+5
+5
+\\5
+\\\end{verbatim}
+
+ 
+
+\subsubsection{Giải thích}
+
+ 
+
+
+\includegraphics{../../../content/voj:VM10HNTW_03.png}
+
+ 
+
+Như vậy với phương án xây tháp này bạn sẽ nhận được \textbf{S = 43.41}
+
+Một phương án khác với thứ tự gắp lần lượt là \textbf{4, 4, 5, 4, 4, 5, 5} sẽ cho \textbf{S = 44.49}
