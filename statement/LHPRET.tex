@@ -1,0 +1,37 @@
+
+
+Để tránh mùa đông khắc nghiệt, nhiều động vật chọn giải pháp ngủ đông trong hang. Khi mùa xuân tới, chúng tỉnh dậy và ra khỏi hang kiếm ăn.
+
+Rết cũng thuộc loài ngủ đông. Hang của nó giống như một mê cung và có thể biểu diễn dưới dạng lưới M*N ô vuông ( M hàng, N cột, các hàng được đánh số từ trên xuống dưới, các cột được đánh số từ trái sang phải, bắt đầu từ 1). Một số ô có đá, những ô còn lại là ô trống và tạo thành một miền liên thông. Cửa ra của hang ở ô (1, 1). Rết chỉ có thể bò ở những ô trống. Rết có L đốt: B1, B2, . . ., BL, mỗi đốt có kích thước đúng bằng một ô. Vị trí ngủ của nó trong hang được đánh dấu bởi dãy ô (r1,c1), (r2, c2), . . ., (rL, cL), ô (ri, ci) là vị trí của đốt Bi. Đầu rết ở vị trí (r1, c1). Khi bò, đầu rết chuyển động tới ô trống ( không có đá hay một đốt nào đó của rết, đốt thứ i+1 sẽ chuyển tới vị trí của đốt i trước đó. Rết được coi là ra được khỏi hang, khi đầu của nó tới được ô (1, 1).
+\includegraphics{http://vn.spoj.com/content/centip1.gif}
+\includegraphics{http://vn.spoj.com/content/centip2.gif}
+
+Hình trên  nêu ví dụ vị trí của con rết độ dài 4 đốt khi ngủ và khi chuyển động một bước.
+
+Hãy xác định số bước tối thiểu để rết ra khỏi hang hay cho biết rết không ra được.
+\begin{verbatim}
+
+	Dữ liệu: 
+	Dòng đầu tiên chứa 3 số nguyên M  N  L ( 0 $<$ M, N ≤ 20, 2 ≤ L ≤ 8),
+	Dòng thứ i trong  L dòng tiếp theo chứa 2 số nguyên  xi  yi - toạ độ đốt thứ i của rết,
+	Dòng thứ L+2 chứa số nguyên K - số ô có đá,
+	K dòng tiếp theo mỗi dòng chứa 2 số nguyên uj  vj - toạ độ ô có đá.
+
+	Kết quả: Đưa ra số bước tối thiểu tìm được hoặc -1 nếu rết không thể ra được khỏi hang.
+
+\textbf{Ví dụ:}
+CENTIP.INP		
+5  6  4		
+4  1
+4  2
+3  2
+3  1
+3
+2  3
+3  3
+3  4		
+
+CENTIP.OUT
+9
+
+\end{verbatim}

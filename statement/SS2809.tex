@@ -1,0 +1,85 @@
+
+\begin{verbatim}
+
+
+
+\textbf{SỐ SERI}
+
+ 
+
+Số \textbf{seri} được sinh ra lần lượt theo thứ tự \textbf{tăng dần} (1, 2, 3, …). Tuy nhiên có một số xâu \textbf{không được} phép xuất hiện như \textbf{một chuỗi con liên tiếp} trong số seri. Do đó, dãy số seri sẽ không còn là các số nguyên liên tiếp tăng dần nữa.
+
+ 
+
+Ví dụ, nếu chuỗi con ‘23’ không được xuất hiện trong số seri thì dãy số seri sẽ có dạng như sau :
+
+1, 2, 3, …, 21, 22, 24, 25, …, 121, 122, 124, 125, … 228, 229, 240, 241, 242, …
+
+(thiếu các số 23, 123, 230, 231, …)
+
+ 
+
+Dãy số seri được đánh số lần lượt, bắt đầu từ 1. Cho một \textbf{tập các xâu} không được xuất hiện trong số seri, và chỉ số i, hãy \textbf{in ra số seri thứ i} trong dãy.
+
+ 
+
+\textbf{Input}
+
+Dòng đầu chứa số nguyên \textbf{T} (≤ 100) là số bộ test.
+
+ 
+
+Mỗi test bắt đầu bằng một  dòng chứa số nguyên \textbf{K} (1 ≤ K ≤ 10) thể hiện số lượng xâu không được xuất hiện. Theo sau là \textbf{K} xâu, mỗi xâu có \textbf{độ dài} trong khoảng từ \textbf{1 đến 10}, và chỉ chứa các chữ số từ \textbf{0-9} (có thể có các chữ số 0 ở đầu xâu).
+
+ 
+
+Dòng thứ hai của test chứa số nguyên \textbf{N} (1 ≤ N ≤ 100) là số lượng truy vấn. Theo sau là N truy vấn, mỗi truy vấn là một số nguyên \textbf{i} thể hiện vị trí của số seri cần tìm.
+
+ 
+
+\textbf{Output}
+
+Với mỗi bộ test, in ra \textbf{N số seri} tương ứng với các vị trí trong truy vấn. Các số seri đảm bảo nằm trong khoảng số nguyên \textbf{64 bit} có dấu.
+
+ 
+
+\textbf{Ví dụ}
+\begin{tabular}\hline 
+
+
+Input & 
+
+Output  
+\hline
+
+
+4
+
+1 4
+
+2 3 5
+
+1 2
+
+3 4 5 6
+
+2 4 13
+
+3 4 13 888
+
+3 012 345 6789
+
+2 12345 67890 & 
+
+3 6
+
+5 6 7
+
+5 16 1230
+
+12391 68273  
+\hline
+
+\end{tabular}
+
+ \end{verbatim}

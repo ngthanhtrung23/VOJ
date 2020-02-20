@@ -1,0 +1,79 @@
+
+
+Tèo được các admin VNOI đố  cho một trò chơi như sau :
+\begin{itemize}
+	\item Tèo có một bảng hình    chữ nhật N x M, mỗi ô có một màu nhất định và K lần    tô màu.
+	\item Trong mỗi lần tô màu,    Tèo chọn một vùng có số hiệu màu như nhau và tô một    màu khác. (Một vùng là một dãy các ô chung cạnh có cùng    màu với nhau).
+\end{itemize}
+\begin{itemize}
+
+Ví  dụ :
+\end{itemize}
+
+Ở hình bên trái nếu ta chọn  ô (3,3) màu xanh lá và tô thành màu vàng thì sẽ thu được  hình bên phải.\hypertarget{0.1_table01}{}
+\begin{tabular}\hline 
+\hypertarget{0.1_table02}{}
+\begin{tabular}\hline 
+ &   &   &   &    
+\hline
+  &   &   &    
+\hline
+  &   &   &    
+\hline
+
+\end{tabular}
+
+  
+\hypertarget{0.1_table03}{}
+\begin{tabular}\hline 
+ &   &   &   &    
+\hline
+  &   &   &    
+\hline
+  &   &   &    
+\hline
+
+\end{tabular}
+
+  
+
+\end{tabular}
+
+  
+
+
+Sau khi biến đổi, bảng màu sẽ  có Q vùng, mỗi vùng sẽ có c[i] ô (i=1->Q). Câu hỏi của  các admin VNOI cho Tèo là : Hãy chỉ ra cách tô màu sau K lần  sao cho c[1]\textasciicircum2 + .... + c[Q]\textasciicircum2 càng lớn càng tốt.
+
+\subsubsection{Dữ liệu}
+\begin{itemize}
+	\item Dòng đầu tiên chứa    3 số n, m, k. (n, m, k $<$= 50)
+	\item n dòng tiếp theo, mỗi    dòng chứa m số thể hiện màu được tô cho ô tương ứng    trên bảng (mỗi màu khác nhau được đánh một số hiệu    khác nhau và các ô có màu giống nhau thì được đánh cùng    một số). Số hiệu màu là số tự nhiên không vượt quá    3000.
+\end{itemize}
+
+\subsubsection{Kết quả}
+\begin{itemize}
+	\item Ghi ra trên k dòng, thể    hiện các bước tô màu theo thứ tự tăng dần của thời    gian, mỗi dòng có dạng: i, j, t tương ứng với việc tô    màu t cho ô (i, j).
+\end{itemize}
+
+\subsubsection{Ví dụ}
+
+Dữ liệu:
+
+3 4 2
+
+1 1 2 3
+
+1 2 2 3
+
+2 2 3 3
+
+Kết quả:
+
+3 3 2
+
+1 1 2
+
+\subsubsection{Cách tính điểm}
+
+Điểm cho mỗi output hợp lệ  sẽ tỷ lệ với tổng c[1]\textasciicircum2 + .... + c[Q]\textasciicircum2.
+

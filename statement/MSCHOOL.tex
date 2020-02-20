@@ -1,0 +1,39 @@
+
+\begin{verbatim}
+Gia đình Tuấn sống ở thành phố XYZ. Hàng ngày, mẹ đi ô tô đến cơ quan làm việc còn Tuấn đi bộđến trường học. Thành phố XYZ có N nút giao thông được đánh số từ 1 đến N. Nhà Tuấn nằm ở nútgiao thông 1, trường của Tuấn nằm ở nút giao thông K, cơ quan của mẹ nằm ở nút giao thông N. Từnút đến nút có không quá một đường đi một chiều, tất nhiên, có thể có đường đi một chiều khácđi từ nút đến nút . Nếu từ nút đến nút có đường đi thì thời gian đi bộ từ nút đến nút hếtphút, còn đi ô tô hết (0 $<$ ≤ ) phút.Hôm nay, mẹ và Tuấn xuất phát từ nhà lúc 7 giờ. Tuấn phải có mặt tại trường lúc 7 giờ 59 phút đểkịp vào lớp học lúc 8 giờ. Tuấn băn khoăn không biết có thể đến trường đúng giờ hay không, nếukhông Tuấn sẽ phải nhờ mẹ đưa đi từ nhà đến một nút giao thông nào đó.Yêu cầu: Cho biết thông tin về các đường đi của thành phố XYZ.  Hãy tìm cách đi để Tuấn đếntrường không bị muộn giờ còn mẹ đến cơ quan làm việc sớm nhất.Dữ liệu: Vào từ file văn bản SCHOOL.INP có dạng:- Dòng đầu ghi ba số nguyên dương N, M, K (3 ≤ N ≤ 10.000; M ≤ 10 ; 1 $<$ K $<$ N), trongđó N là số nút giao thông, M là số đường đi một chiều, K là nút giao thông - trường của Tuấn.- M dòng tiếp theo, mỗi dòng chứa 4 số nguyên dương , , , (1 ≤ , ≤ , ≤ ≤60) mô tả thông tin đường đi một chiều từ i đến j.Hai số liên tiếp trên một dòng cách nhau một dấu cách. Dữ liệu bảo đảm luôn có nghiệm.Kết quả: Đưa ra file văn bản SCHOOL.OUT gồm một dòng chứa một số nguyên là thời gian sớmnhất mẹ Tuấn đến được cơ quan còn Tuấn thì không bị muộn học
+\begin{verbatim}
+Gia đình Tuấn sống ở thành phố XYZ. Hàng ngày, mẹ đi ô tô đến cơ quan làm việc còn Tuấn đi bộ đến trường học. Thành phố XYZ có N nút giao thông được đánh số từ 1 đến N. Nhà Tuấn nằm ở nút giao thông 1, trường của Tuấn nằm ở nút giao thông K, cơ quan của mẹ nằm ở nút giao thông N. Từ nút đến nút có không quá một đường đi một chiều, tất nhiên, có thể có đường đi một chiều khác đi từ nút đến nút . Nếu từ nút đến nút có đường đi thì thời gian đi bộ từ nút i đến nút j hết a_ij phút, còn đi ô tô hết b_ij (0 $<$ b_ij ≤ a_ij ) phút.\end{verbatim}
+\begin{verbatim}
+Hôm nay, mẹ và Tuấn xuất phát từ nhà lúc 0 giờ. Tuấn phải có mặt tại trường lúc T phút để kịp vào lớp học lúc T+1 phu't. Tuấn băn khoăn không biết có thể đến trường đúng giờ hay không, nếu không Tuấn sẽ phải nhờ mẹ đưa đi từ nhà đến một nút giao thông nào đó. \end{verbatim}
+\begin{verbatim}
+Yêu cầu: Cho biết thông tin về các đường đi của thành phố XYZ.  Hãy tìm cách đi để Tuấn đến trường không bị muộn giờ còn mẹ đến cơ quan làm việc sớm nhất.\end{verbatim}
+\begin{verbatim}
+Dữ liệu: Vào từ file văn bản SCHOOL.INP có dạng:\end{verbatim}
+\begin{verbatim}
+- Dòng đầu ghi 4 số nguyên dương N, M, K, T (3 ≤ N ≤ 10.000; M ≤ 10^5 ; 1 $<$ K $<$ N; 0 $<$ T $<$ 10^9), trong đó N là số nút giao thông, M là số đường đi một chiều, K là nút giao thông - trường của Tuấn, T là thời điểm sắp vào học.\end{verbatim}
+\begin{verbatim}
+- M dòng tiếp theo, mỗi dòng chứa 4 số nguyên dương i, j , a_ịj , b_ij (1 ≤ i , j ≤ N, 0$<$ b_ij ≤a_ij ≤ 10^9) mô tả thông tin đường đi một chiều từ i đến j.\end{verbatim}
+\begin{verbatim}
+Hai số liên tiếp trên một dòng cách nhau một dấu cách. Dữ liệu bảo đảm luôn có nghiệm.\end{verbatim}
+\begin{verbatim}
+Kết quả: Đưa ra file văn bản SCHOOL.OUT gồm một dòng chứa một số nguyên là thời gian sớm nhất mẹ Tuấn đến được cơ quan còn Tuấn thì không bị muộn học\end{verbatim}
+SCHOOL.INP  \end{verbatim}
+\begin{verbatim}
+5 6 3 59 \end{verbatim}
+\begin{verbatim}
+1 4 60 40 \end{verbatim}
+\begin{verbatim}
+1 2 60 30 \end{verbatim}
+\begin{verbatim}
+2 3 60 30 \end{verbatim}
+\begin{verbatim}
+4 5 30 15 \end{verbatim}
+\begin{verbatim}
+4 3 19 10 \end{verbatim}
+\begin{verbatim}
+3 5 20 10\end{verbatim}
+\begin{verbatim}
+SCHOOL.OUT\end{verbatim}
+\begin{verbatim}
+55
+ \end{verbatim}

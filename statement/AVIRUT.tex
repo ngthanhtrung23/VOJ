@@ -1,0 +1,61 @@
+
+
+We have a matrix, size n*m. The point in line i and column j is point (i,j).
+
+Now, we pour water in point (x,y) at seconds 0.
+
+If at seconds k, point (i,j) have water, we say point (i,j) is degree k. And water'll pour to point (x-1,y),(x+1,y),(x,y-1),(x,y+1) at seconds k+1 if they are having no water. But if c[i,j]=w, point (i,j) never have water, and haven't degree of course.
+
+In point (i,j) (degree k) have some virut dying. But if have water, they live again. And they'll attack some point that degree ≥ k-b[i,j] and degree ≤ k; and total virut in them augment a[i,j].
+
+Finally, if total virut in point (i,j)$>$c[i,j], house in this point will be infection.
+
+Input
+
+The first line is 5 integer: n,m,x,y,w.
+
+In n group line next, group line i is m line, line j in m line is 3 integer: a[i,j],b[i,j],c[i,j].
+
+\subsubsection{Output}
+
+n Line. Line i is a integer: The number of house in line i that is infection.
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+
+ 3 3 1 2 5
+
+1 1 20
+
+1 3 40
+
+1 1 5
+
+2 0 29
+
+1 1 1
+
+2 2 2
+
+2 3 5
+
+1 4 4
+
+1 5 50
+
+\textbf{Output:}
+
+0\end{verbatim}
+\begin{verbatim}
+2 \end{verbatim}
+\begin{verbatim}
+1\end{verbatim}
+\begin{verbatim}
+
+Note:\end{verbatim}
+\begin{verbatim}
+0$<$n,m$<$501. 0$<$a[i,j]$<$1001. 0≤b[i,j]≤m*n. 0$<$c[i,j]≤1000000000.
+
+
+ 50% test: 0$<$n,m$<$101.\end{verbatim}

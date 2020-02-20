@@ -1,0 +1,45 @@
+
+\begin{verbatim}
+Các hệ thống lập trình đều cung cấp phương tiện để khởi tạo giá trị cho một mảng bộ nhớ tính theođơn vị byte. Tuy vậy byte là đơn vị quá lớn trong việc xử lý ảnh. Các chương trình xử lý ảnh đòi hỏicó công cụ khởi tạo giá trị cho một vùng bộ nhớ theo đơn vị tinh tế hơn là bít, xác lập giá trị 0 cho dãybít liên tiếp nhau từ trái sang phải . Có cầu ắt có cung. Một chương trình như vậy đã được xây dựng.Các byte trong vùng bộ nhớ cần khởi tạo được được đánh số từ 0 trở đi, ngoài địa chỉ đầu của vùngcần khởi tạo lời gọi chương trình còn chứa 4 số nguyên  a, pbvà qcho biết chương trình sẽ xác lậpgiá trị 0 cho các bít bắt đầu bít thứ pcủa byte acho đến bít thứ qcủa byte b(kể cả bít này). Lưu ýrằng trong một byte các bít được đánh số từ 0 đến 7 từ phải sang trái. Một thành viên của Facebookphát tán trên mạng vài hình ảnh không đẹp và bị các cư dân mạng “ném đá” tới tấp bằng cách hợp sứctạo lỗ hổng thông tin trên ảnh bắt đầu từ một vùng thông tin có địa chỉ đã thống nhất, kích thước  mbytes chứa các giá trị v0, v1, . . ., vm(0 ≤ vj≤ 255, j= 0 ÷ m-1). Đã có nngười tham gia tạo lỗ hổng,người thứ ikích hoạt chương trình khởi tạo với các tham số ci, pi, divà qi(0 ≤ ci$<$di$<$ m, hoặc ci=di$<$mvà qi$<$pi, i= 1 ÷ n). Hoạt động này đã lôi cuốn thêm kbạn trẻ nữa tham gia, đưa ra các lệnhtheo quy tắc trên, nhưng để tiết kiệm thời gian xử lý, một chương trình duyệt đã được cài đặt kiểm traxem mỗi yêu cầu mới có cần phải thực hiện hay không và chỉ thực hiện khi nó có xóa thêm ít nhất mộtbít giá trị 1 nếu áp dụng với các giá trị  vjđã được xử lý bởi nngười đầu tiên, khi đó người đưa ra yêucầu sẽ nhận được câu trả lời YES, trong trường hợp ngược lại – câu trả lời sẽ là PASS.Hãy xác định câu trả lời cho từng người trong số kngười tham gia sau.Dữ liệu:Vào từ file văn bản STONE.INP:• Dòng đầu tiên chứa 3 số nguyên m, nvà k(1 ≤ m≤ 106,1 ≤ n≤ 105, 1 ≤ k≤ 10),• Dòng thứ 2 chứa m số nguyên v0, v1, . . ., vm-1, (0 ≤ vj≤ 255),• Dòng thứ itrong ndòng tiếp theo chứa 4 số nguyên ci, pi, divà qi,• Mỗi dòng trong kdòng tiếp theo chứa 4 số nguyên xác định một yêu cầu xử lý mới theo quycách như đã nêu.Các số trên một dòng ghi cách nhau một dấu cách.Kết quả:Đưa ra file văn bản STONE.OUT câu trả lời YEShoặc PASScho mỗi yêu cầu mới, mỗi câutrả lời ghi trên một dòng.
+\begin{verbatim}
+Các hệ thống lập trình đều cung cấp phương tiện để khởi tạo giá trị cho một mảng bộ nhớ tính theo đơn vị byte. Tuy vậy byte là đơn vị quá lớn trong việc xử lý ảnh. Các chương trình xử lý ảnh đòi hỏi có công cụ khởi tạo giá trị cho một vùng bộ nhớ theo đơn vị tinh tế hơn là bít, xác lập giá trị 0 cho dãy bít liên tiếp nhau từ trái sang phải . Có cầu ắt có cung. Một chương trình như vậy đã được xây dựng.\end{verbatim}
+\begin{verbatim}
+Các byte trong vùng bộ nhớ cần khởi tạo được được đánh số từ 0 trở đi, ngoài địa chỉ đầu của vùng cần khởi tạo lời gọi chương trình còn chứa 4 số nguyên  a, pbvà qcho biết chương trình sẽ xác lập giá trị 0 cho các bít bắt đầu bít thứ pcủa byte acho đến bít thứ qcủa byte b(kể cả bít này). Lưu ý rằng trong một byte các bít được đánh số từ 0 đến 7 từ phải sang trái. Một thành viên của Facebook phát tán trên mạng vài hình ảnh không đẹp và bị các cư dân mạng “ném đá” tới tấp bằng cách hợp sức  tạo lỗ hổng thông tin trên ảnh bắt đầu từ một vùng thông tin có địa chỉ đã thống nhất, kích thước  m bytes chứa các giá trị v0, v1, . . ., vm, (0 ≤ vj ≤ 255, j= 0 ÷ m-1). Đã có n người tham gia tạo lỗ hổng, người thứ i kích hoạt chương trình khởi tạo với các tham số ci, pi, di và qi(0 ≤ ci$<$di$<$ m, hoặc ci= di$<$mvà qi$<$pi , i= 1 ÷ n). Hoạt động này đã lôi cuốn thêm  kbạn trẻ nữa tham gia, đưa ra các lệnh theo quy tắc trên, nhưng để tiết kiệm thời gian xử lý, một chương trình duyệt đã được cài đặt kiểm tra xem mỗi yêu cầu mới có cần phải thực hiện hay không và chỉ thực hiện khi nó có xóa thêm ít nhất một bít giá trị 1 nếu áp dụng với các giá trị  vj đã được xử lý bởi n người đầu tiên, khi đó người đưa ra yêu cầu sẽ nhận được câu trả lời YES, trong trường hợp ngược lại – câu trả lời sẽ là PASS.\end{verbatim}
+\includegraphics{../../../../../content/simes:MNEMDA.png}
+\begin{verbatim}
+Hãy xác định câu trả lời cho từng người trong số k người tham gia sau.\end{verbatim}
+\begin{verbatim}
+Dữ liệu:Vào từ file văn bản STONE.INP:\end{verbatim}
+\begin{verbatim}
+• Dòng đầu tiên chứa 3 số nguyên m, n và k(1 ≤ m≤ 10^6,1 ≤ n≤ 10^5, 1 ≤ k≤ 10),\end{verbatim}
+\begin{verbatim}
+• Dòng thứ 2 chứa m số nguyên v0, v1, . . ., vm-1, (0 ≤ vj ≤ 255),\end{verbatim}
+\begin{verbatim}
+• Dòng thứ i trong n dòng tiếp theo chứa 4 số nguyên ci, pi, di và qi,\end{verbatim}
+\begin{verbatim}
+• Mỗi dòng trong k dòng tiếp theo chứa 4 số nguyên xác định một yêu cầu xử lý mới theo quy cách như đã nêu.Các số trên một dòng ghi cách nhau một dấu cách.\end{verbatim}
+\begin{verbatim}
+Kết quả:Đưa ra file văn bản STONE.OUT câu trả lời YES hoặc PASS cho mỗi yêu cầu mới, mỗi câu trả lời ghi trên một dòng.\end{verbatim}
+\begin{verbatim}
+
+\begin{verbatim}
+STONE.INP \end{verbatim}
+\begin{verbatim}
+4 1 2\end{verbatim}
+\begin{verbatim}
+12 130 255 193\end{verbatim}
+\begin{verbatim}
+0 2 2 3\end{verbatim}
+\begin{verbatim}
+1 5 1 0\end{verbatim}
+\begin{verbatim}
+1 1 2 2\end{verbatim}
+\begin{verbatim}
+STONE.OUT\end{verbatim}
+\begin{verbatim}
+PASS\end{verbatim}
+\begin{verbatim}
+YES\end{verbatim}\end{verbatim}
+\begin{verbatim}
+
+\end{verbatim}\end{verbatim}

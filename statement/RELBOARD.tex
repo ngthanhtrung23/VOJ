@@ -1,0 +1,71 @@
+
+\begin{tabular}\href{/problems/RELBOARD/en/}{English} & \href{/problems/RELBOARD/vn/}{Vietnamese}
+\end{tabular}
+
+Cho một ma trận A với kích thước N*N (2 ≤ N ≤ 1000) chỉ chứa 6 loại giá trị:  \{-1, -2, 0, 1, 2, 3\}
+
+A được gọi là bảng quan hệ của một dãy số T = (T$_1$, T$_2$, ..., T$_n$), hay T có quan hệ với A nếu:
+\begin{itemize}
+	\item A$_ij$ = 0  : T$_i$ = T$_j$
+	\item A$_ij$ = 1  : T$_i$ $<$ T$_j$
+	\item A$_ij$ = -1 : T$_i$ $>$ T$_j$
+	\item A$_ij$ = 2  : T$_i$ ≤ T$_j$
+	\item A$_ij$ = -2 : T$_i$ ≥ T$_j$
+	\item A$_ij$ = 3  : T$_i$ khác T$_j$
+\end{itemize}
+
+Với mọi i, j: 1 $<$= i, j $<$= N
+
+Cho bảng quan hệ A, tìm dãy số nguyên dương T = (T$_1$, T$_2$, ..., T$_n$) có quan hệ với A sao cho Max(T) càng nhỏ càng tốt. Cho rằng dãy số T như vậy luôn tồn tại. 
+
+Định nghĩa Max(T) = Max(T$_1$, T$_2$, ..., T$_n$).
+
+\subsubsection{Input}
+
+Dòng đầu chứa số nguyên N. N dòng tiếp theo, mỗi dòng chứa N số nguyên mô tả bảng quan hệ A. 
+
+ 
+
+\subsubsection{Output}
+
+Dòng đầu chứa Max(T). Dòng thứ hai chứa N số nguyên dương T$_1$, T$_2$, .., T$_n$. 
+
+\subsubsection{Score}
+
+ Điểm của bạn = Max(T).
+
+ 
+
+ 
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+
+6
+
+ 0  1  1  1  2  2
+
+-2  0  1  0  2  2
+
+-2 -1  0  3  0  1
+
+-2 -2  3  0  1  1
+
+-1 -2  0 -1  0  1
+
+-1 -2 -1 -1 -1  0
+
+
+
+\textbf{Output:}
+
+4
+
+1 2 3 2 3 4 
+
+
+
+-> Điểm = 4
+
+\end{verbatim}

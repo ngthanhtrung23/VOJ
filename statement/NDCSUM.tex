@@ -1,0 +1,45 @@
+
+
+Cho dãy số nguyên dương A gồm n phần tử. Cho k truy vấn, với mỗi truy vấn là 1 trong 2 dạng:
+
+0 x y : Giá trị phần tử ở vị trí x thay đổi thành y (A[x] = y)
+
+1 x : Tính tổng các phần từ từ vị trí 1 đến vị trí x (A[1] + A[2] + ... + A[x])
+
+\subsubsection{Input}
+
+Dòng đầu: số nguyên n (1 $<$= n $<$= 10\textasciicircum5).
+
+Dòng kế tiếp gồm n số A[i] (1 $<$= A[i] $<$= 10\textasciicircum9).
+
+Dòng kế tiếp: số k (1 $<$= k $<$= 10\textasciicircum5).
+
+k dòng kế tiếp, mỗi dòng là một truy vấn tương ứng với 1 trong 2 dạng trên (1 $<$= x $<$= n; 1$<$= y $<$= 10\textasciicircum9).
+
+\_ 40\% số test có n $<$= 1000, k$<$= 1000.
+
+\_ 20\% số test: từ truy vấn 1 đến truy vấn i có dạng 0 x y, từ truy vấn i+1 đến truy vấn k có dạng 1 x.
+
+\subsubsection{Output}
+
+Với mỗi truy vấn có dạng 1 x, in ra kết quả tương ứng trên từng dòng.
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+
+5
+
+1 4 5 2 3
+
+3
+
+1 4
+
+0 2 5
+
+1 3\textbf{Output:}
+
+12
+
+11\end{verbatim}

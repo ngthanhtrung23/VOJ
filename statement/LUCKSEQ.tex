@@ -1,0 +1,99 @@
+
+
+
+
+Công ty XYZ có m nhân viên. Gần tết công ty quyết định tố chức trò chơi cho các nhân viên của mình. Trò chơi chuẩn bị trước 1 dãy số n số và m yêu cầu. Mỗi nhân viên tham gia trò đều được cho một yêu cầu là chọn tùy ý 1 dãy liên tiếp các số trong đoạn từ L tới R rồi sau đó đưa cho ban tổ chức để nhận thưởng. Với tiêu chí vui là chính nên ai cũng sẽ có mức thưởng ban đầu như nhau. Tuy nhiên những ai chọn được một dãy số may mắn thì sẽ được thưởng nhiều hơn. Phần thưởng cho nhân viên nào chọn trúng được dãy số may mắn có giá trị là X đơn vị tiền tệ trong đó X là độ dài dãy số may mắn mà nhân viên đó chọn được. Để chuẩn bị phần thưởng ban tổ chức muốn biết với mỗi yêu cầu thì phần thưởng có giá trị lớn nhất là bao nhiêu.
+
+
+
+
+Dãy số được gọi là may mắn nếu thỏa mãn tất cả các điều kiện sau:
+\begin{itemize}
+	\item Dãy số \{x, -x\} được gọi là dãy số may mắn.
+	\item Dãy số \{x, S, -x\} được gọi là dãy số may mắn nếu S là dãy số may mắn.
+	\item Dãy số \{S1, S2\} được gọi là dãy số may mắn nếu S1 và S2 là 2 dãy số may mắn.
+\end{itemize}
+
+
+
+\begin{itemize}
+\end{itemize}
+
+Vì quá bận cho khâu trang trí công ty cho dịp Tết sắp tới nên ban tổ chức đã nhờ đến các coder VNOI giúp đỡ :D.
+
+ 
+
+\textbf{Dữ liệu vào}
+
+ 
+\begin{itemize}
+	\item Dòng đầu tiên chứa 2 số nguyên dương N, M.
+	\item Dòng thứ 2 chừa N số niêu tả dãy số được chuẩn bị trước của trò chơi.
+	\item Dòng thứ i trong M dòng tiếp theo chứa 2 số L$_i$, R$_i$ miêu tả yêu cầu của nhân viên thứ i.
+\end{itemize}
+
+ 
+
+\textbf{Giới hạn}
+
+\textbf{
+}
+\begin{itemize}
+	\item Trong tất cả các test N, M $<$= 2*10\textasciicircum5.
+	\item Các số trong dãy số được chuẩn bị trước của trò chơi có trị tuyệt đối $<$= 2\textasciicircum16 và khác 0.
+	\item 1 $<$= L$_i$ $<$ R$_i$ $<$= N.
+	\item 25\% số test có N, M $<$= 50.
+	\item 50\% số test có N, M $<$= 1000.
+\end{itemize}
+
+ 
+
+\textbf{Dữ liệu ra}
+
+ 
+\begin{itemize}
+	\item Dòng thứ i trong M dòng là kết quả cho yêu cầu của nhân viên thứ i.
+\end{itemize}
+
+ 
+
+\textbf{Ví dụ}
+
+ 
+
+\textbf{Dữ liệu vào:}
+
+10 3
+
+2 1 -1 -2 5 1 -1 7 -7 5
+
+1 7
+
+7 10
+
+
+
+
+\textbf{Dữ liệu ra:}
+
+4
+
+2
+
+ 
+
+\textbf{Giải thích:}
+\begin{itemize}
+	\item Yêu cầu của nhân viên thứ nhất là chọn 1 dãy liên tiếp trong đoạn từ 1 tới 7. Để được phần thưởng lớn nhất thì nhân viên thứ nhất phải chọn dãy 2 1 -1 2.
+	\item Yêu cầu của nhân viên thứ hai thì phải chọn dãy 7 -7 để có được phần thưởng lớn nhất.
+\end{itemize}
+
+ 
+
+ 
+
+ 
+\begin{itemize}
+\end{itemize}
+\begin{itemize}
+\end{itemize}

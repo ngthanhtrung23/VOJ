@@ -1,0 +1,27 @@
+
+
+About N birds in a row, each bird i-th has power a[i]. If we shoot bird i-th, bird (i-1)-th, bird i-th and bird (i+1)-th will fight, so we lost a[i-1]+a[i]+a[i+1] energy (that a[0]=0, a[n+1]=0). And then, bird i+1 will stand near bird i-1.
+
+John will shoot the bird in descending order of power. If at the time, we have many birds that power is maximum, Jonh'll shoot the bird i-th such that i is smallest possible. Let me know total energy John lost to shoot all bird.
+
+\subsubsection{Input}
+
+The first line is a integer: N. (1≤N≤1000000).
+
+The next line is N integer: a[1],a[2],...,a[n]. (1≤a[i]≤1000000000).
+
+\subsubsection{Output}
+
+Only integer: Result.
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+6\end{verbatim}
+\begin{verbatim}
+1 4 2 3 6 5
+\textbf{
+\\}\end{verbatim}
+\begin{verbatim}
+\textbf{Output:}
+38\end{verbatim}

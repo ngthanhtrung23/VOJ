@@ -1,0 +1,65 @@
+
+
+
+
+Bé năm nay mới 1 tuổi, nhưng đã có thể nhận biết được hình tròn, hình vuông và hình tam giác. Bạn có làm được như bé không?
+
+Bạn được cho 1 số bức ảnh cấp độ xám (grayscale) của 1 trong 3 loại hình: hình tròn, hình vuông và hình tam giác.
+\begin{itemize}
+	\item Mỗi bức ảnh có kích thước 100 * 100 pixel và được biểu diễn bởi 1 ma trận kích thước 100 * 100.
+	\item Pixel (i, j) nhận giá trị trong khoảng [0, 255], trong đó 0 ứng với màu đen, 255 ứng với màu trắng, và các giá trị càng gần 0 thì càng đen.
+\end{itemize}
+
+Bài này gồm có 50 test:
+\begin{itemize}
+	\item Bạn được down về 10 test đầu \href{https://www.dropbox.com/s/rmiayackco34itk/Archive.zip?dl=0}{ở đây}. (chú ý 10 test này sẽ chỉ được dùng để chấm trong quá trình thi, và sẽ không được sử dụng khi tính kết quả cuối cùng).
+	\item 10 test tiếp theo không có hình tròn.
+	\item 10 test tiếp theo không có hình vuông.
+	\item 10 test tiếp theo không có hình tam giác.
+	\item 10 test cuối cùng có đủ cả 3 loại hình.
+\end{itemize}
+
+Dưới đây là thang sáng tối của điểm ảnh. Phần bên trong của hình cần nhận diện sẽ có màu sáng hơn (giá trị điểm ảnh lớn hơn) so với phần bên ngoài của hình. Tuy nhiên các ảnh sẽ bị làm nhiễu đi bởi các điểm ảnh có giá trị bất kì (tải các test ví dụ về để xem chi tiết).
+
+
+\includegraphics{http://cs.calvin.edu/activities/connect/CompRenew/03programming/01grayscale.png}
+
+ 
+
+\subsubsection{Input}
+
+Dòng đầu chứa số nguyên T:
+\begin{itemize}
+	\item Nếu T = 0, trong test không có hình tròn.
+	\item Nếu T = 1, trong test không có hình vuông.
+	\item Nếu T = 2, trong test không có hình tam giác.
+	\item Nếu T = -1, trong test có đủ cả 3 loại hình.
+\end{itemize}
+
+Dòng thứ 2 chứa số nguyên dương S - số hình trong file input (S $<$ 10). Tiếp theo là mô tả của S hình, mỗi mô tả gồm 101 dòng:
+\begin{itemize}
+	\item 100 dòng đầu, mỗi dòng chứa đúng 100 số nguyên trong khoảng [0, 255] mô tả bức ảnh.
+	\item Tiếp theo là 1 dòng trống.
+\end{itemize}
+
+\subsubsection{Output}
+
+Với mỗi test, in ra đúng S dòng, dòng thứ i là:
+\begin{itemize}
+	\item 0 nếu hình tương ứng là hình tròn
+	\item 1 nếu hình tương ứng là hình vuông
+	\item 2 nếu hình tương ứng là hình tam giác
+\end{itemize}
+
+\subsubsection{Cách tính điểm}
+\begin{itemize}
+	\item Trong quá trình thi, điểm của bạn sẽ bằng \% test mà bạn giải đúng.
+	\item Đến lúc kết thúc vòng thi, điểm của bạn trong bảng xếp hạng sẽ được chỉnh lại, sao cho người làm tốt nhất được 100, những người khác sẽ được chỉnh lại dựa theo độ tốt của kết quả.
+	\item Việc chấm bài này có 2 điểm đặc biệt:            
+\begin{itemize}
+	\item Chỉ kết quả của lần nộp cuối được tính.
+	\item Nếu bạn nộp quá 20 lần, bạn sẽ không được tính điểm bài này (chú ý rằng hiện nay SPOJ không hỗ trợ giới hạn số lần nộp bài, nhưng BTC sẽ kiểm tra số lần nộp bài của các bạn và cho 0 điểm bài này đối với nhũng trường hợp vi phạm. Ví thế, các bạn phải tự theo dõi số lần nộp bài của mình một cách cẩn thận).
+\end{itemize}
+\end{itemize}
+
+ 

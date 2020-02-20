@@ -1,0 +1,40 @@
+
+
+Cho một đa đồ thị vô hướng N đỉnh, M cạnh, mỗi cạnh có 1 trọng số nguyên dương.
+
+Yêu cầu: Hãy chọn ra một số cạnh sao cho đồ thị tạo bởi N đỉnh và các cạnh được chọn này đảm bảo liên thông giữa 3 đỉnh 1, 2, 3 và tổng trọng số của các cạnh được chọn là nhỏ nhất. Dữ liệu vào đảm bảo có phương án.
+
+\subsubsection{Giới hạn}
+\begin{itemize}
+	\item 3 ≤ N ≤ 100
+	\item 4 ≤ M ≤ 20000
+	\item Trọng số 1 cạnh ≤ 10000
+\end{itemize}
+
+\subsubsection{Input}
+\begin{itemize}
+	\item Dòng đầu tiên gồm 2 số nguyên: N, M.
+	\item M dòng tiếp theo: dòng thứ i gồm 3 số nguyên dương U V C tương ứng là cạnh này nối liền đỉnh U với đỉnh V, trọng số là C.
+\end{itemize}
+
+\subsubsection{Output}
+\begin{itemize}
+	\item Dòng 1: Chi phí nhỏ nhất.
+	\item Dòng 2: Số nguyên K là số cạnh chọn ra.
+	\item Ghi ra K số là chỉ số các cạnh đã chọn, các số ghi cách nhau ít nhất một dấu cách.
+\end{itemize}
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+3 4
+1 2 1
+2 3 4
+1 3 2
+1 2 3
+
+\textbf{Output:}
+3
+2
+1 3
+\end{verbatim}

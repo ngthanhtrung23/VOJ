@@ -1,0 +1,60 @@
+
+
+Cuộc thi lập trình đồng đội hàng năm có \textbf{n} đội tham gia, đánh số từ 1 đến \textbf{n}. Cuối mỗi đợt thi đều có bảng phân loại các đội theo kết quả đạt được. Bảng phân loại xếp hạng các đội năm trước đã được công bố. Năm nay Ban Giám khảo quyết định công bố kết quả phân loại một cách tế nhị hơn, không làm các độ đứng cuối quá buồn nản. Sau khi chấm điểm và sắp xếp các đội theo kết quả thi, Ban Giám khảo công bố danh sách tất cả các cặp đội có trình tự tương đối với nhau trong bảng mới khác với trình tự tương đối ở năm trước. Ví dụ, năm ngoái đội 13 đứng trên đội 6, nhưng năm nay đội 6 đứng trên đội 13, khi đó cặp số (6, 13) được thông báo. Thông tin này cho các đội biết họ đã tiến bộ như thế nào so với các đối thủ cũ, nhưng không xác định rõ thứ hạng của đội trong bảng tổng sắp.Tất nhiên, biết bảng tổng sắp năm ngoái, các đội đều cố gắng xây dựng bảng tổng sắp năm nay. Không loại trừ khả năng có sai sót trong thông tin được công bố. Điều này cũng có thể làm rõ được.
+
+\textbf{Yêu cầu:} Cho n (2 ≤ \textbf{n} ≤ 500), thứ tự \textbf{t$_i$} của đội \textbf{i} trong bảng tổng sắp năm ngoái (1 ≤ \textbf{t$_i$} ≤ \textbf{n}, i = 1 ÷ \textbf{n}), \textbf{m} – số cặp đội trong bảng thông báo (0 ≤ \textbf{m} ≤ 25 00) và m cặp giá trị (\textbf{a$_j$}, \textbf{b$_j$})  1 ≤\textbf{a$_j$}, \textbf{b$_j$} ≤ \textbf{n}, mỗi cặp xuất hiện một lần trong danh sách công bố. Hãy xác định bảng tổng sắp năm nay. Nếu ở vị trí nào đó không thể xác định đơn trị là vị trí của đội nào thì đưa ra dấu “\textbf{?}” ở vị trí tương ứng trong bảng. Nếu thông tin công bố có mâu thuẫn thì đưa ra thông báo “\textbf{IMPOSSIBLE}”.
+
+\subsubsection{Input}
+\begin{itemize}
+	\item Dòng đầu tiên chứa số nguyên \textbf{k} – số lượng tests (1 ≤ \textbf{k} ≤ 100),
+	\item Mỗi test cho trên một nhóm dòng: dòng đầu tiên trong nhóm chứa số nguyên \textbf{n}, dòng thứ 2 chứa \textbf{n} số nguyên \textbf{t$_1$}, \textbf{t$_2$}, . . ., \textbf{t$_n$}, dòng thứ 3 chứa số nguyên \textbf{m}, dòng thứ \textbf{j} trong \textbf{m} dòng tiếp theo chứa 2 số nguyên \textbf{a$_j$} và \textbf{b$_j$}.
+\end{itemize}
+
+\subsubsection{Output}
+
+Kết quả mỗi test đưa ra trên một dòng – bảng tổng sắp xác định được hoặc thông báo “\textbf{IMPOSSIBLE}”.
+
+\subsubsection{Example}
+\begin{tabular}\hline 
+\textbf{Input}\textbf{} & \textbf{Outp}\textbf{ut}  
+\hline
+
+
+3
+
+5
+
+5 4 3 2 1
+
+2
+
+2 4
+
+3 4
+
+3
+
+2 3 1
+
+0
+
+4
+
+1 2 3 4
+
+3
+
+1 2
+
+3 4
+
+ 2 3 & 
+
+5 3 2 4 1
+
+2 3 1
+
+ IMPOSSIBLE \\ 
+\hline
+
+\end{tabular}

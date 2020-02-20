@@ -1,0 +1,79 @@
+
+
+Chíp có sở thích ngắm sao vào mỗi buổi đêm. Đêm nay, trời đặc biệt đầy sao. Chíp đếm được có \textbf{N} ngôi sao trên trời, Chíp ghi nhớ mỗi ngôi sao và đánh số chúng từ 1 đến \textbf{N}. Mỗi ngôi sao được biểu diễn bằng một đường tròn trên mặt phẳng tọa độ, ngôi sao thứ \textbf{i} có tâm nằm ở tọa độ (\textbf{A$_i$}, \textbf{B$_i$}) và bán kính \textbf{R$_i$}. Những ngôi sao có thể đè lên nhau.
+
+Chíp đứng ở trên mặt đất, tức là trục hoành, và nhìn thẳng lên trời. Chíp muốn biết ngôi sao gần nhất mà mình nhìn thấy được là ngôi sao nào, để có thể chọn chỗ đứng thích hợp ngắm ngôi sao mình thích. Vì vậy, Chíp đặt ra \textbf{Q} câu hỏi, mỗi câu hỏi gồm một số \textbf{X$_i$}, hỏi rằng nếu đứng ở vị trí (\textbf{X$_i$}, 0) thì ngôi sao gần nhất Chíp nhìn thấy là ngôi sao nào.
+
+Tại vị trí (\textbf{X$_i$}, 0), vẽ một tia song song và cùng chiều với trục tung, đường tròn đầu tiên nó chạm vào thì ngôi sao tương ứng với đường tròn đó là ngôi sao đầu tiên Chíp nhìn thấy. Bạn hãy giúp Chíp trả lời \textbf{Q} câu hỏi này nhé.
+
+\subsubsection{Input}
+
+            Dòng đầu tiên gồm hai số nguyên \textbf{N}, \textbf{Q}.
+
+            \textbf{N} dòng tiếp theo, dòng thứ \textbf{i} gồm ba số nguyên \textbf{A$_i$}, \textbf{B$_i$}, \textbf{R$_i$} mô tả ngôi sao thứ \textbf{i}.
+
+            \textbf{Q} dòng tiếp theo, dòng thứ \textbf{i} gồm một số nguyên \textbf{X$_i$} mô tả truy vấn thứ \textbf{i}.
+
+\subsubsection{Output}
+
+            In ra \textbf{Q} dòng, mỗi dòng gồm một số nguyên là chỉ số ngôi sao gần nhất Chíp nhìn thấy nếu đứng ở (\textbf{X$_i$}, 0). Nếu nhìn thấy được nhiều ngôi sao gần nhất thì in ra chỉ số của ngôi sao có chỉ số nhỏ nhất. Nếu tại vị trí đó nhìn thẳng lên không có ngôi sao nào thì in ra '-1'.
+
+\subsubsection{Giới hạn}
+
+            1 ≤ \textbf{N} ≤ 50000.
+
+            1 ≤ \textbf{Q} ≤ 50000.
+
+            1 ≤ \textbf{A$_i$}, \textbf{B$_i$}, \textbf{R$_i$}, \textbf{X$_i$} ≤ 10$^5$.
+
+            \textbf{B$_i$} $>$ \textbf{R$_i$} (Những ngôi sao hoàn toàn cao hơn mặt đất).
+
+            40\% số điểm có 1 ≤ \textbf{N} ≤ 1000, 1 ≤ \textbf{Q} ≤ 1000.
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+
+4 5
+
+
+2 3 2
+
+
+6 9 2
+
+
+5 5 2
+
+
+4 7 3
+
+
+4
+
+
+7
+
+
+8
+
+
+1
+9
+
+\textbf{Output:}
+
+1
+
+
+3
+
+
+2
+
+
+1
+
+-1
+
+\includegraphics{http://i.imgur.com/01i6YCe.png?1}\end{verbatim}

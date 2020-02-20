@@ -1,0 +1,181 @@
+
+
+
+\begin{tabular}\href{/problems/FARMING/en/}{English} & \href{/problems/FARMING/vn/}{Vietnamese}
+\end{tabular}
+
+
+
+Nuga có\textbf{}\textbf{M thửa ruộng} rất rộng trên cánh đồng. Nhân dịp hè rảnh rỗi, Nuga quyết định sẽ trồng cây trên các thửa ruộng này để kiếm tiền đi du lịch.
+
+Nuga sẽ canh tác trên các thửa ruộng một cách \textbf{song song}. Mỗi thửa ruộng có thể dùng để canh tác \textbf{nhiều vụ}, nhưng mỗi vụ chỉ được phép trồng \textbf{một loại} cây nhất định trên ruộng đó. Khi thu hoạch xong một vụ, Nuga có thể bắt đầu trồng vụ mới vào ngay \textbf{ngày hôm sau}, hoặc cũng có thể \textbf{để không} ruộng một thời gian rồi mới trồng vụ mới.
+
+Có \textbf{N loại cây trồng} đánh số từ 1 đến N. Mỗi loại cây trồng có một đặc điểm riêng về giá hạt giống, thời gian canh tác, thu nhập hứa hẹn. Nuga dùng \textbf{tiền vốn} để mua hạt giống. Sau khi thu hoạch, thu nhập hứa hẹn sẽ được\textbf{ cộng vào} số vốn mà bạn ấy có. Ngoài ra còn có đòi hỏi về kinh nghiệm canh tác, do mỗi loại cây cần có phương pháp chăm sóc riêng. Kinh nghiệm thu được khi trồng mỗi loại cây cũng khác nhau. Trồng càng nhiều vụ thì càng có nhiều kinh nghiệm, tức là kinh nghiệm thu được sau mỗi vụ sẽ được \textbf{cộng vào} tổng kinh nghiệm. Chi tiết về các thông tin trên được cho trong bảng sau:
+\begin{tabular}\hline 
+\textbf{Loại cây} & \textbf{ Đòi hỏi kinh nghiệm } & \textbf{Thời gian canh tác (Ngày)} & \textbf{Giá hạt giống (Đồng)} & \textbf{Thu nhập hứa hẹn (Đồng)} & \textbf{Kinh nghiệm thu được}  
+\hline
+1 & R$_1$ & T$_1$ & S$_1$ & P$_1$ & E$_1$  
+\hline
+2 & R$_2$ & T$_2$ & S$_2$ & P$_2$ & E$_2$  
+\hline
+... & ... & ... & ... & ... & ...  
+\hline
+N & R$_N$ & T$_N$ & S$_N$ & P$_N$ & E$_N$  
+\hline
+
+\end{tabular}
+
+Ban đầu Nuga chỉ có \textbf{F đồng tiền vốn} và \textbf{G kinh nghiệm}. Do thời gian nghỉ hè của Nuga có hạn nên bạn ấy chỉ muốn canh tác \textbf{không quá D ngày} để còn dành thời gian đi du lịch. 
+
+Bạn hãy giúp Nuga lập lịch canh tác sao cho thu được \textbf{nhiều tiền nhất}nhé!
+
+\subsubsection{Dữ liệu}
+
+- Dòng đầu chứa 5 số nguyên M, N, D, F, G.
+
+- N dòng tiếp theo, dòng thứ i ghi 5 số nguyên R$_i$, T$_i$, S$_i$, P$_i$, E$_i$.
+
+\subsubsection{Kết quả}
+
+- Dòng đầu ghi \textbf{tổng số tiền lớn nhất} mà Nuga thu được sau không quá D ngày canh tác.
+
+- M nhóm dòng tiếp theo, mỗi nhóm dòng ghi mô tả về quá trình canh tác trên một ruộng:
+
+  + Dòng đầu tiên là một số nguyên X thể hiện \textbf{số vụ} cần canh tác trên ruộng đó.
+
+  + Theo theo là X dòng mô tả về các vụ \textbf{lần lượt} theo thứ tự canh tác: Dòng thứ i gồm 2 số nguyên j, k thể hiện rằng Nuga cần trồng \textbf{cây loại k} trong \textbf{vụ thứ i}, bắt đầu từ \textbf{ngày thứ j (tính từ lúc Nuga bắt đầu canh tác ruộng đầu tiên).}
+
+\subsubsection{Giới hạn}
+
+- 1 ≤ M ≤ 50
+
+- 1 ≤ N ≤ 50
+
+- 1 ≤ D, T$_i $≤ 100
+
+- 1 ≤ G, R$_i$, E$_i$ ≤ 1,000
+
+- 1 ≤ F, S$_i$, P$_i $≤ 100,000
+
+\subsubsection{Ví dụ}
+
+\textbf{Dữ liệu}
+\begin{verbatim}
+3 3 5 10000 5
+
+5 3 3000 5000 2
+
+10 2 7000 10000 3
+
+10 1 6000 8000 2
+
+\end{verbatim}
+
+\textbf{Kết quả 1}
+\begin{verbatim}
+22000
+
+2
+
+1 1
+
+4 2
+
+2
+
+1 1
+
+4 2
+
+1
+
+1 1
+
+\end{verbatim}
+
+\textbf{Kết quả 2}
+\begin{verbatim}
+24000
+
+3
+
+1 1
+
+4 3
+
+5 3
+
+3
+
+1 1
+
+4 3
+
+5 3
+
+1
+
+1 1
+
+\end{verbatim}
+
+\textbf{Kết quả 3}
+\begin{verbatim}
+000
+
+3
+
+1 1
+
+4 3
+
+5 3
+
+2
+
+1 1
+
+4 2
+
+1
+
+1 1\end{verbatim}
+
+\textbf{Giải thích kết quả 3}
+\begin{tabular}\hline 
+\textbf{Ngày canh tác thứ} & \textbf{Ruộng 1} & \textbf{Ruộng 2} & \textbf{Ruộng 3} & \textbf{Tổng tiền (Đồng)} & \textbf{Tổng kinh nghiệm} \\ 
+\hline
+Ban đầu & - & - & - & 10,000 & 5 \\ 
+\hline
+1 & Trồng cây 1 & Trồng cây 1 & Trồng cây 1 & 1,000 & 5 \\ 
+\hline
+2 & Chăm sóc & Chăm sóc & Chăm sóc & 1,000 & 5 \\ 
+\hline
+3 & Thu hoạch & Thu hoạch & Thu hoạch & 16,000 & 11 \\ 
+\hline
+4 & Trồng cây3
+\\ Thu hoạch & Trồng cây 2 & Để trống & 11,000 & 13 \\ 
+\hline
+5 & Trồng cây3 
+\\ Thu hoạch & Thu hoạch & Để trống & 23,000 & 18 \\ 
+\hline
+
+\end{tabular}
+
+\subsubsection{Tính điểm}
+
+- Với mỗi test, bạn chỉ được tính điểm nếu lịch gieo trồng hợp lí, đúng với số tiền kiếm được.
+
+- Điểm mỗi test đúng đắn được tính dựa trên kết quả tốt nhất của tất cả các thí sinh (và của cả BTC)
+
+  Cụ thể, nếu kết quả tốt nhất là best, và chương trình của bạn đưa ra result thì:
+
+  Điểm = result/best * hệ số điểm. (Trong đó hệ số điểm = 100/tổng số test)
+
+- Tổng điểm của bạn là tổng điểm các test đúng đắn.
+
+- Với test ví dụ, best = 24000. Nếu hệ số điểm = 5, kết quả 1 sẽ được 4.58 điểm, kết quả 2 sẽ được 5.00 điểm, và kết quả 3 sẽ được 4.79 điểm.
+
+
+
+ 

@@ -1,0 +1,76 @@
+
+
+Làng Đo Đo là một ngôi làng nhỏ nằm ven con sông Kiếp Bạc. Làng gồm\textbf{ N} xóm, các xóm được nối với nhau bởi\textbf{ N-1} con đường hai chiều, sao cho từ một xóm có thể đi tới một xóm khác bất kỳ.
+
+ 
+
+Có dịp về làng Đo Đo chơi vài ngày, Đông định cùng cô bạn Rùa của mình đi chơi khắp làng xóm để thỏa nỗi nhớ mong xa cách. Nhưng thật không may, một trận mưa lớn vừa xảy ra ở làng, và do hệ thống thoát nước chống ngập của làng Đo Đo không được trùng tu bảo dưỡng, một số con đường của làng có thể đã bị ngập.
+
+ 
+
+Đông muốn cùng cô bạn Rùa đi chơi càng xa càng tốt (để đỡ bị cô Út Huệ hay bà ngoại Rùa gọi về), vì vậy anh ta muốn biết khoảng cách trung bình từ nhà của Rùa (là địa điểm xuất phát), tới nơi xa nhất tới được. Biết nhà của rùa nằm ở xóm 1, và độ dài mỗi con đường đều là 1.
+
+ 
+
+Do đã sơ suất để quên Ipod, Itouch, Iphone, Ipad, Iwatch,... ở Sài Gòn, anh chàng Đông cần nhờ tới sự giúp đỡ của các thí sinh VM15.
+
+\subsubsection{Input}
+
+Dòng đầu tiên gồm 1 số nguyên dương N, là số xóm trong làng.
+
+N-1 dòng tiếp theo, mỗi dòng gồm 3 số nguyên u v p mô tả một con đường, bao gồm 2 xóm đầu cuối (u,v) và xác suất (p) con đường không bị ngập sau trận mưa (tính theo phần trăm).
+
+\subsubsection{Output}
+
+In ra khoảng cách trung bình từ nhà của Rùa (xóm 1) tới xóm xa nhất có thể tới được, \textbf{với ít nhất 6 chữ số sau dấu phẩy}.
+
+\subsubsection{Giới hạn}
+\begin{itemize}
+	\item Trong tất cả các test 0 ≤ p ≤ 100
+	\item Subtask1: N ≤ 15 (25\% số điểm)
+	\item Subtask2: N ≤ 2207 (31.25\% số điểm)
+	\item Subtask3: N ≤ 97722, p ≤ 97 (43.75\% số điểm)
+\end{itemize}
+
+Sau khi kết thúc kỳ thi, kết quả của bạn là kết quả lần nộp bài cuối cùng
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+4
+1 2 50
+2 3 50
+1 4 50\end{verbatim}
+\begin{verbatim}
+\textbf{Output:}
+1.00\end{verbatim}
+
+Giải thích:
+
+ 
+
+Nếu 2 con đường (1,2) và (2,3) đều không bị ngập (xác suất 25\%), độ dài đường đi là 2.
+
+Nếu 2 con đường (1,2) và (1,4) đều bị ngập (xác suất 25\%), độ dài đường đi là 0.
+
+Các trường hợp còn lại (xác suất 50\%), độ dài đường đi là 1.
+
+Vậy độ dài trung bình là (0.25*2+0.25*0+0.5*1)=1.
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+3
+1 2 33
+1 3 66\end{verbatim}
+\begin{verbatim}
+\textbf{Output:}
+0.7722\end{verbatim}
+
+Giải thích:
+
+ 
+
+Nếu 1 trong 2 con đường k bị ngập, độ dài đường đi là 1, ngược lại độ dài đường đi là 0.
+
+Xác suất để cả 2 con đường đều bị ngập là (100\%-33\%)*(100\%-66\%)=22.78\%

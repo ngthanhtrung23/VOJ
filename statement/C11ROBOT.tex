@@ -1,0 +1,54 @@
+
+
+RobotCam là cuộc thi lớn được tổ chức thường niên ở hành tinh C11. Sân chơi có thể mô tả như hệ trục tọa độ Oxy.
+
+Luật chơi đc mô tả như sao :
+
+Trên mặt đất đặt n phần quà tại các điểm phân biệt với nhau, các đội thi phải điều khiển các con robot của mình để thu nhặt tất cả các phần quà.
+
+Nhưng các con robot không đc di chuyển tùy ý của mình mà phải tuân thủ 4 quy tắc sau
+\begin{enumerate}
+	\item Đường đi của robot phải bắt đầu và kết      thúc ở các điểm trong n điểm đã cho
+	\item Trong quá trình di chuyển robot không được      đi tới điểm có hoành độ hay tung độ nhỏ hơn vị trí đang đứng
+	\item Hai đường đi của 2 robots khác nhau không      được có điểm chung
+	\item Đường đi chỉ gồm 1 điểm cũng đc coi là      đường đi hợp lệ
+\end{enumerate}
+
+Sau đây là một ví dụ ( sr vẽ tay :D )
+
+
+\includegraphics{http://ng6.upanh.com/b2.s23.d4/0e498d595ed6eb04ef3f176e205c6c63_38861876.untitled.bmp}
+
+YÊU CẦU : xác định số lượng robot ít nhất cần dùng để nhặt hết n món quà
+
+\subsubsection{Input}
+
+Dòng 1 : N ( n $<$= 10\textasciicircum5 )
+
+N dòng tiếp theo : ghi hoành độ và tung độ món quà thứ i, trị tuyệt đối $<$= 10\textasciicircum9
+
+ 
+
+\subsubsection{Output}
+
+Số lượng robot ít nhất cần dùng
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+
+6
+
+1 1
+
+2 1
+
+1 2
+
+4 2
+
+5 3
+
+4 4\textbf{Output:}
+2
+\end{verbatim}

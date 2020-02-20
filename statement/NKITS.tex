@@ -1,0 +1,41 @@
+
+
+Cho đồ thị vô hướng liên thông gồm N đỉnh đánh số từ 1 tới N và N-1 canh. Cho M truy vấn, mỗi truy vấn gồm bốn số u, v, x, y yêu cầu kiểm tra xem từ đường đi ngắn nhất từ u tới v có đi qua đỉnh nào nằm trên đường đi ngắn nhất từ x tới y hay không.
+
+\subsubsection{Input}
+
+Dòng đầu chứa số  T là số lượng bộ test.
+
+Tiếp theo gồm T nhóm dòng, mỗi nhóm dòng gồm:
+
+Dòng đầu tiên chứa 2 số nguyên dương N, M. (N, M $<$= 3*10\textasciicircum5)
+
+N-1 dòng tiếp theo chứa 2 số u v có ý nghĩa là có đường đi trực tiếp từ u tới v.
+
+M dòng tiếp theo,  dòng thứ i chứa 4 số nguyên dương u, v, x, y mô tả truy vấn thứ i
+
+\subsubsection{Output}
+
+Gồm T nhóm dòng, mỗi nhóm dòng gồm M dòng.
+
+Dòng thứ i trong nhóm dòng thứ j chứa kết quả của truy vấn thứ i trong bộ test thứ e. Nếu 2 đương đi giao nhau thì xuất ra "war again" ngược lại thì xuất ra "peace".
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}1\end{verbatim}
+\begin{verbatim}
+5 2\end{verbatim}
+\begin{verbatim}
+1 2\end{verbatim}
+\begin{verbatim}
+1 3\end{verbatim}
+\begin{verbatim}
+1 4\end{verbatim}
+\begin{verbatim}
+4 5\end{verbatim}
+\begin{verbatim}
+2 3 3 4\end{verbatim}
+\begin{verbatim}
+4 5 2 3\textbf{Output:}war again\end{verbatim}
+\begin{verbatim}
+peace\end{verbatim}

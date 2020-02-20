@@ -1,0 +1,44 @@
+
+
+Ai bảo chăn trâu là khổ ? Thật ra hoàn toàn không phải vậy, Đại Ca Đi Học có một dàn đệ tử “sửu nhi”, sẵn sàng code bất kỳ bài toán nào mà sư phụ giao phó. Chuẩn bị cho kỳ thi PreDuyenHai, Đại Ca Đi Học bắt đầu luyện tuyệt chiêu sinh chuỗi thần thánh: Đầu tiên  có một chuỗi P, tạo ra chuỗi S như sau:
+\begin{itemize}
+	\item Bước 1 : S ban đầu là chuỗi rỗng,
+	\item Bước 2 : Chèn P vào S.
+	\item …
+	\item Bước i: Chọn một vị trí nào đó trong chuỗi S (có thể ở ngay đầu hoặc ở cuối xâu S), chèn P vào đó.
+	\item … 
+\end{itemize}
+
+Ví dụ, nếu ban đầu P là hello, chuỗi S có thể sẽ như sau (chỗ chèn P được in đậm):
+
+1)
+
+2)    \textbf{hello}
+
+3)    h\textbf{hello}ello
+
+4)    h\textbf{hello}elhellolo
+
+5)    hhe\textbf{hello}lloelhellolo
+
+ 
+
+Sau 5 bước, chuỗi S có thể là hhehellolloelhellolo.
+
+Sau khi có chuỗi S, một “sửu nhi” hỏi sư phụ Đại Ca Đi Học, chuỗi P nào có thể sinh ra S?
+
+\textbf{Yêu Cầu : }Cho chuỗi S, tìm chuỗi P ngắn nhất mà từ P có thể tạo thành S theo cách trên. Nếu có nhiều P, in ra chuỗi có thứ tự từ điển bé nhất.
+
+\subsubsection{Input}
+
+Dòng 1 chứa một xâu ký tự S, gồm các ký tự thường trong bảng chữ cái tiếng Anh. Độ dài xâu ký tự từ 1 đến 200.
+
+\subsubsection{Output}
+
+Xâu P ngắn nhất và có thứ tự từ điển bé nhất mà có thể tạo ra xâu S theo cáchtrên.
+
+\textbf{Example}
+\begin{verbatim}
+\textbf{Input:}hhehellolloelhellolo\textbf{Output:}hello\end{verbatim}
+
+Xâu P ngắn nhất và có thứ tự từ điển bé nhất mà có thể tạo ra xâu S theo cáchtrên.

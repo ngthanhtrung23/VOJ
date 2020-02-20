@@ -1,0 +1,108 @@
+
+
+Công ty LEGO vừa sản xuất một loại đồ chơi giá rẻ mới nhằm hướng đến các đối tượng nghèo khó ham chơi. Bộ đồ chơi gồm n cục gạch lập phương. Mỗi cục gạch có chiều cao h$_i$ chỉ có thể xếp chồng lên các cục gạch khác. Chất lượng của các bộ đồ chơi bằng số T lớn nhất khi có thể dung một số trong
+
+n cục gạch xếp được các chiều cao liên tiếp từ 1 → T. Thường thường thì công ty sẽ phải thuê 100 nhà toán học tính toán siêu nhanh để tính số T. Do nhu cầu của đồ chơi càng ngày càng tăng, 100 nhà toán học không còn đủ sức để kiểm tra khối lượng đồ chơi khổng lồ. Công ty quyết định sa thải các anh để
+
+thuê Coder\_1340 1 chuyên viên tin học bậc cao (:D) để viết chương trình tính toán giúp công ty. Tuy nhiên nó có vẻ quá khó với anh ta , vì vậy Coder\_1340 muốn nhờ các bạn C11 tính dùm anh ta số T
+
+\textbf{Yêu cầu:}
+\begin{itemize}
+	\item 
+
+Nhập độ  cao của n cục gạch, tính số T
+\end{itemize}
+
+\textbf{Input:}
+\begin{itemize}
+	\item 
+
+Dòng 1 số  n (1$<$=n$<$=10\textasciicircum6)
+	\item 
+
+Các dòng  tiếp theo, dòng thứ I+1 chứa số h$_i $(1$<$=h$_i$ $<$= 10\textasciicircum6)
+\end{itemize}
+
+\textbf{Output:}
+\begin{itemize}
+	\item 
+
+Số T
+	\item 
+
+50\% số test  có n$<$=10\textasciicircum3 , T$<$=10\textasciicircum3
+\end{itemize}
+
+\textbf{Ví dụ:}
+\begin{tabular}\hline 
+
+
+\textbf{Input} & 
+
+\textbf{Output}  
+\hline
+
+
+3
+
+3
+
+1
+
+2 & 
+
+6  
+\hline
+
+\end{tabular}
+
+ 
+
+ 
+\begin{tabular}\hline 
+
+
+\textbf{Input} & 
+
+\textbf{Output}  
+\hline
+
+
+3
+
+5
+
+1
+
+2 & 
+
+3  
+\hline
+
+\end{tabular}
+
+\textbf{Giải thích:}
+\begin{itemize}
+	\item 
+
+Ví dụ  1:
+\begin{itemize}
+	\item 
+
+Với 3 cục   gạch , ta có thể xếp được   các tháp gạch
+\end{itemize}
+\end{itemize}
+
+Độ cao 1: 1
+
+Độ cao 2: 2
+
+Độ cao 3: 3
+
+Độ cao 4: 1+3
+
+Độ cao 5: 2+3
+
+Độ cao 6: 1+2+3
+
+→ Chất lượng bồ đồ chơi là 6

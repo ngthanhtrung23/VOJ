@@ -1,0 +1,177 @@
+
+
+
+%  		@page { margin: 0.79in } 		td p { margin-bottom: 0in; direction: ltr; color: #00000a; text-align: left; orphans: 2; widows: 2 } 		td p.western { font-family: "Liberation Serif", serif; font-size: 12pt; so-language: en-US } 		td p.cjk { font-family: "Droid Sans Fallback"; font-size: 12pt; so-language: zh-CN } 		td p.ctl { font-family: "FreeSans"; font-size: 12pt; so-language: hi-IN } 		p { margin-bottom: 0.1in; direction: ltr; color: #00000a; line-height: 120%; text-align: left; orphans: 2; widows: 2 } 		p.western { font-family: "Liberation Serif", serif; font-size: 12pt; so-language: en-US } 		p.cjk { font-family: "Droid Sans Fallback"; font-size: 12pt; so-language: zh-CN } 		p.ctl { font-family: "FreeSans"; font-size: 12pt; so-language: hi-IN } 	 
+
+
+\textbf{Yêu cầu}:
+
+Hãy quản lí một tập hợp các số nguyên không âm hỗ trợ các thao tác sau:
+
+ 1. Thêm một phân tử
+
+ 2. Xóa một phần tử
+
+ 3. Tìm trung vị của tập hợp
+
+
+
+
+Định nghĩa trung vị:
+
+Trung vị của dãy a[1..N] được sắp xếp không giảm là phần tử a[(N+1)/2].
+
+
+
+
+\textbf{Input}
+
+Dòng đầu tiên chứa Q là số truy vấn. (1 $<$= Q $<$= 10\textasciicircum6)
+
+Q dòng tiếp theo, mỗi dòng gồm một kí tự '+' hoặc '-' và một số nguyên không âm nhỏ hơn 10\textasciicircum9. Dấu '+' biểu thị thao tác thêm phần tử x vào tập hợp (có thể tập hợp đã có phần tử x nhưng thao tác này vẫn được thực hiện). Dấu '-' biểu thị thao tác xóa phần tử x khỏi tập hợp (bộ test đảm bảo tồn tại phần tử x trong tập hợp).
+
+
+
+
+\textbf{Output}
+
+Q dòng, mỗi dòng là trung vị của tập hợp sau mỗi thao tác thêm/xóa.
+
+
+
+
+\textbf{Sample}
+
+
+
+\begin{tabular}
+
+Input & 
+
+Output & 
+
+Explanation  
+
+
+20
+
++ 6
+
++ 2
+
++ 5
+
++ 3
+
++ 6
+
+- 3
+
++ 8
+
+- 6
+
+- 5
+
++ 5
+
++ 2
+
+- 8
+
++ 5
+
++ 5
+
+- 2
+
++ 1
+
+- 5
+
++ 4
+
++ 8
+
++ 7 & 
+
+6
+
+2
+
+5
+
+3
+
+5
+
+5
+
+6
+
+5
+
+6
+
+5
+
+5
+
+2
+
+5
+
+5
+
+5
+
+5
+
+5
+
+4
+
+5
+
+5 & 
+
+[6]
+
+[2, 6]
+
+[2, 5, 6]
+
+[2, 3, 5, 6]
+
+[2, 3, 5, 6, 6]
+
+[2, 5, 6, 6]
+
+[2, 5, 6, 6, 8]
+
+[2, 5, 6, 8]
+
+[2, 6, 8]
+
+[2, 5, 6, 8]
+
+[2, 2, 5, 6, 8]
+
+[2, 2, 5, 6]
+
+[2, 2, 5, 5, 6]
+
+[2, 2, 5, 5, 5,    6]
+
+[2, 5, 5, 5, 6]
+
+[1, 2, 5, 5, 5,    6]
+
+[1, 2, 5, 5, 6]
+
+[1, 2, 4, 5, 5,    6]
+
+[1, 2, 4, 5, 5,    6, 8]
+
+[1, 2, 4, 5, 5,    6, 7, 8]
+\end{tabular}

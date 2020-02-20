@@ -1,0 +1,65 @@
+
+\begin{verbatim}
+
+
+
+\textbf{DỊCH CHUYỂN TỨC THỜI}
+
+Bạn có một tour đi thăm \textbf{n} thành phố được đánh số từ \textbf{0} đến \textbf{n - 1}. Ban đầu bạn xuất phát từ thành phố \textbf{K}. Bạn có thể lái xe để đi lại giữa các thành phố, hoặc sử dụng một thiết bị dịch chuyển tức thời.
+
+Thiết bị này sẽ chuyển bạn từ nơi này đến nơi khác ngay lập tức (không tốn thời gian). Tuy nhiên, nó chỉ có thể đưa bạn đến những thành phố mà bạn đã đi qua trước đó. (Nó không thể xác định được toạ độ của một thành phố chưa đến bao giờ, nhưng khi bạn đến thăm một thành phố thì thiết bị sẽ lưu lại được toạ độ, và có thể giúp bạn dịch chuyển tức thời đến thành phố này từ một thành phố khác)
+
+Thiết bị rất mạnh, bạn có thể dùng nó để dịch chuyển cả chiếc xe của mình đi theo. Do trong thành phố rất hay kẹt xe, nên chính phủ chỉ cho sử dụng \textbf{m} đường một chiều.
+
+Bạn được cho bản đồ thành phố, và thời gian lái xe trên từng con đường. Hãy tính thời gian tối thiểu để bạn có thể đi thăm hết tất cả các thành phố.
+
+ 
+
+Ví dụ, với thành phố như trên hình, bạn xuất phát từ thành phố 0.Ban đầu bạn đi sang 1, mất 2 đơn vị thời gian, sau đó bạn có thể đi sang 2 từ thành phố 1, nhưng sẽ tốn mất 8 đơn vị thời gian. Bạn có thể dịch chuyển tức thời về 0, và đi sang 2, sẽ chỉ tốn 5. Do đó, để đi thăm 1 và 2 bạn chỉ mất 7 đơn vị thời gian. Và cuối cùng đi thăm 3, tổng thời gian để đi thăm tất cả thành phố sẽ là 8.
+
+\textbf{Input}
+
+Dữ liệu bắt đầu bằng số nguyên \textbf{T (≤ 100)}, thể hiện số lượng bộ test.
+
+Mỗi bộ test bắt đầu bằng một dòng trống. Dòng tiếp theo chứa 3 số nguyên: \textbf{n}\textbf{m K (1 ≤ n ≤ 1000, 0 ≤ m ≤ 10000, 0 ≤ K $<$ n)}. Mỗi dòng trong số \textbf{m} dòng tiếp theo chứa 3 số nguyên \textbf{u v w (0 ≤ u, v $<$ n, u ≠ v, 1 ≤ w ≤ 10000)} thể hiện một đường đi từ thành phố \textbf{u} đến thành phố \textbf{v} và tốn \textbf{w} đơn vị thời gian. Có tối đa 1 đường đi từ \textbf{u} đến \textbf{v}.
+
+\textbf{Output}
+
+Với mỗi bộ test, in ra thời gian nhỏ nhất để đi thăm tất cả các thành phố. Nếu không thể, in ra \textbf{"impossible"}.
+\begin{tabular}\hline 
+
+
+\textbf{Sample Input} & 
+
+\textbf{Output for Sample Input}  
+\hline
+
+
+2
+
+ 
+
+4 4 0
+
+0 1 2
+
+1 2 8
+
+0 2 5
+
+2 3 1
+
+ 
+
+2 1 1
+
+0 1 10 & 
+
+Case 1: 8
+
+Case 2: impossible  
+\hline
+
+\end{tabular}
+
+ \end{verbatim}
