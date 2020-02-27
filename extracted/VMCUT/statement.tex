@@ -1,0 +1,8 @@
+Cho một \textbf{đơn đồ thị}vô hướng \textbf{G} = \textbf{(V, E)} có \textbf{N} đỉnh và \textbf{M} cạnh. Với mỗi tập con \textbf{H} của \textbf{V}, gọi \textbf{G(H)} là đồ thị thu được từ việc xoá tất cả các đỉnh và các cạnh có ít nhất 1 đầu mút không thuộc \textbf{H}. Tập \textbf{H} được gọi là liên thông, nếu như \textbf{G(H)} liên thông. Gọi \textbf{D(H)} là giá trị lát cắt ứng với \textbf{H}: số lượng cạnh \textbf{(u, v)} thoả mãn 1 trong 2 đỉnh thuộc tập \textbf{H}, và đỉnh còn lại không thuộc tập \textbf{H} (\textbf{u} thuộc \textbf{H} và \textbf{v} không thuộc \textbf{H}, hoặc \textbf{v} thuộc \textbf{H} và \textbf{u} không thuộc \textbf{H}). Nói cách khác, \textbf{D(H)} là số cạnh tối thiểu cần xoá sao cho \textbf{H} và \textbf{(G - H) }không còn liên thông với nhau (\textbf{G - H}) là đồ thị nhận được khi xóa các đỉnh của \textbf{H} và các cạnh tương ứng ra khỏi \textbf{G}).
+
+Xác định tập \textbf{H} liên thông sao cho \textbf{D(H)} lớn nhất có thể.
+
+Cách tính điểm:
+\begin{itemize}
+	\item Với mỗi test: Nếu giá trị \textbf{D(H)} và tập \textbf{H} của bạn hợp lệ, điểm của bạn sẽ là \textbf{D(H)}$_bạn$ / \textbf{D(H)}$_ban tổ chức$. Ngược lại, bạn đuợc 0 điểm.
+\end{itemize}

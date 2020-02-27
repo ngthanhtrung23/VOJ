@@ -1,0 +1,83 @@
+Bài toán có 50 test, mỗi test tối đa 2 điểm. Điểm của mỗi test được làm tròn đến 6 chữ số sau dấu phẩy, điểm của cả bài là tổng điểm của các test sau đó làm tròn đến 2 chữ số sau dấu phẩy.
+
+Nếu có bất kì một sự không hợp lệ nào trong output (đường đi cắt nhau, hai ô kề nhau không khớp nhau, ô biên nối ra ngoài, có các cạnh nối nhưng không dùng để nối hai điểm…) bạn sẽ nhận 0 điểm. Nếu coi 
+\begin{itemize}
+	\item M là số lượng màu khác nhau
+	\item X là số lượng màu bạn nối được
+	\item N\textasciicircum2 là số lượng ô tối đa có thể phủ được.
+	\item Y là số ô mà bạn phủ được
+\end{itemize}
+
+Điểm của bạn được tính như sau:
+\begin{itemize}
+	\item Nếu M=X và N\textasciicircum2=Y bạn được 2 điểm (dữ liệu luôn đảm bảo có cách làm như vậy)
+	\item Nếu không điểm bạn sẽ được tối đa 1.5 điểm. Điểm của bạn bằng:
+\end{itemize}
+
+
+\includegraphics{../../../content/voj:VMFLOW_formula}
+\begin{itemize}
+	\item Trong tất cả các test, 2 ≤ N ≤ 50
+	\item Trong 10\% số test đầu tiên, chỉ có một cặp điểm phải nối, N ≤ 50.
+	\item Trong 20\% số test tiếp theo, chỉ có không quá 4 cặp điểm phải nối, N ≤ 50.
+	\item Trong 30\% số test tiếp theo, N ≤ 15.
+	\item Trong 40\% số test cuối cùng, không có thêm bất kì giới hạn nào.
+\end{itemize}
+\begin{verbatim}
+\textbf{Input:}4
+
+R...
+
+G.G.
+
+R...
+
+..BB
+\\\end{verbatim}
+\begin{verbatim}
+Dưới đây là 3 output cho ví dụ trên, mỗi output sẽ cho một số điểm nhất định:\end{verbatim}
+\begin{verbatim}
+\textbf{Output 1: (1.312500 điểm)}\end{verbatim}
+\begin{verbatim}
+2 10 10 12
+
+2 10 8 5
+
+2 10 10 9
+
+0 0 2 8\end{verbatim}
+\begin{verbatim}
+
+\includegraphics{../../../content/voj:VMFLOW_h3.PNG}\end{verbatim}
+\begin{verbatim}
+Output 2: (2.000000 điểm)\end{verbatim}
+\begin{verbatim}
+2 10 10 12
+
+10 8 5
+
+4 6 10 9
+
+3 9 2 8\end{verbatim}
+\begin{verbatim}
+
+\includegraphics{../../../content/voj:VMFLOW_h4.PNG}\end{verbatim}
+\begin{verbatim}
+
+\\\end{verbatim}
+\begin{verbatim}
+Output 3: (0.437500 điểm)\end{verbatim}
+egin{verbatim}
+2 12 0 0
+
+0 5 0 0
+
+2 9 0 0
+
+0 0 2 8\end{verbatim}
+\begin{verbatim}
+
+\includegraphics{../../../content/voj:VMFLOW_h5.PNG}\end{verbatim}
+\begin{verbatim}
+
+\\\end{verbatim}

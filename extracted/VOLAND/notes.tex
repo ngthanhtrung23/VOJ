@@ -1,0 +1,64 @@
+Trong tất cả các test, giá trị kinh tế của các thửa đất có \textbf{trị tuyệt đối} không vượt quá 10$^6$.
+
+Subtask 1 (30\% số điểm): \textbf{R}, \textbf{C} ≤ 50
+
+Subtask 2 (40\% số điểm): \textbf{R}, \textbf{C} ≤ 200
+
+Subtask 3 (30\% số điểm): \textbf{R}, \textbf{C} ≤ 1000
+\begin{verbatim}
+\textbf{Input 1:}
+
+5 5 2 2 1
+
+1 1 1 1 1
+
+1 2 2 2 1
+
+1 2 2 2 1
+
+1 2 2 2 1
+
+1 1 1 1 1
+
+\end{verbatim}
+\begin{verbatim}
+\textbf{Output 1:}
+
+16
+
+\end{verbatim}
+\begin{verbatim}
+\textbf{Input 2:}
+
+5 5 2 2 3
+
+1 1 1 1 1
+
+1 2 2 2 1
+
+1 2 2 2 1
+
+1 2 2 2 1
+
+1 1 1 1 12 2
+
+\end2 2
+\begin{verbatim}
+\textbf{Output 2:}
+
+no solution
+
+\end{verbatim}
+Ở bộ test đầu tiên Bờm sẽ hời nhất nếu chọn 2 khu đất như sau:
+
+1 \textbf{1} 1 1 1
+
+\textbf{1}\textbf{2}\textbf{2} 2 1
+
+1 \textbf{2}\emph{2 2} 1
+
+1 2 \emph{2 2} 1
+
+1 1 1 1 1
+
+Ở bộ test thứ hai Bờm không thể chọn khu đất "hình thoi" kích thước là 3 nào nằm hoàn toàn ở trong khu đất của Phú Ông.

@@ -1,0 +1,20 @@
+\begin{tabular}\href{/problems/RELBOARD/en/}{English} & \href{/problems/RELBOARD/vn/}{Vietnamese}
+\end{tabular}
+
+Cho một ma trận A với kích thước N*N (2 ≤ N ≤ 1000) chỉ chứa 6 loại giá trị:  \{-1, -2, 0, 1, 2, 3\}
+
+A được gọi là bảng quan hệ của một dãy số T = (T$_1$, T$_2$, ..., T$_n$), hay T có quan hệ với A nếu:
+\begin{itemize}
+	\item A$_ij$ = 0  : T$_i$ = T$_j$
+	\item A$_ij$ = 1  : T$_i$ $<$ T$_j$
+	\item A$_ij$ = -1 : T$_i$ $>$ T$_j$
+	\item A$_ij$ = 2  : T$_i$ ≤ T$_j$
+	\item A$_ij$ = -2 : T$_i$ ≥ T$_j$
+	\item A$_ij$ = 3  : T$_i$ khác T$_j$
+\end{itemize}
+
+Với mọi i, j: 1 $<$= i, j $<$= N
+
+Cho bảng quan hệ A, tìm dãy số nguyên dương T = (T$_1$, T$_2$, ..., T$_n$) có quan hệ với A sao cho Max(T) càng nhỏ càng tốt. Cho rằng dãy số T như vậy luôn tồn tại. 
+
+Định nghĩa Max(T) = Max(T$_1$, T$_2$, ..., T$_n$).

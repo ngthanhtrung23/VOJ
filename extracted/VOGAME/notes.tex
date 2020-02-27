@@ -1,0 +1,58 @@
+Trong tất cả các test, \textbf{T} ≤ 5.
+
+Subtask 1 (15\% số điểm)
+\begin{itemize}
+	\item 1 ≤ \textbf{D} = \textbf{N} ≤ 20
+\end{itemize}
+
+Subtask 2 (25\% số điểm)
+\begin{itemize}
+	\item 1 ≤ \textbf{D} = \textbf{N} ≤ 10$^5$
+\end{itemize}
+
+Subtask 3 (30\% số điểm)
+\begin{itemize}
+	\item 1 ≤ \textbf{D} ≤ 20
+	\item 10$^5$ $<$ \textbf{N} ≤ 10$^9$
+\end{itemize}
+
+Subtask 4 (30\% số điểm)
+\begin{itemize}
+	\item 1 ≤ \textbf{D} ≤ 10$^5$
+	\item 10$^5$ $<$ \textbf{N} ≤ 10$^9$
+\end{itemize}
+\begin{verbatim}
+\textbf{Input:}
+
+3
+
+2 2
+
+1 1
+
+2 2
+
+0 0
+
+2 2
+
+1 0\end{verbatim}
+\begin{verbatim}
+\textbf{Output:}
+
+0
+
+0
+
+1\end{verbatim}
+Bộ dữ liệu đầu tiên
+
+Trong đó có \textbf{hai} viên bi \textbf{đỏ} thì khi Tuấn bốc hai viên bi này lên. Theo quy tắc vì chúng cùng màu nên Tuấn sẽ bỏ 2 viên bi đó đi và \textbf{cho lại vào} hộp viên bi \textbf{màu đen} (màu \textbf{0}).
+
+Bộ dữ liệu thứ hai
+
+Tương tự như bộ dữ liệu đầu tiên nhưng là \textbf{hai} viên bi màu \textbf{đen}. Tuấn cũng theo quy tắc và bỏ hai viên bi đen đó đi và sau đó \textbf{cho lại vào} hộp viên bi \textbf{màu đen} (màu \textbf{0}).
+
+Bộ dữ liệu thứ ba
+
+Tuấn bốc hai viên bi từ trong hộp ra thì trong đó có \textbf{một} viên bi \textbf{đỏ} và \textbf{một} viên bi \textbf{đen}. Tuấn bỏ viên bi đen đi và chỉ \textbf{giữ lại} viên bi \textbf{màu đỏ} (màu \textbf{1}) và cho viên đỏ lại vào hộp.

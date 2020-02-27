@@ -1,0 +1,35 @@
+Consider the following algorithm:
+\begin{verbatim}
+\texttt{
+		1. input n
+}
+
+
+\texttt{		2. print n
+}
+
+
+\texttt{		3. 	if n = 1 then STOP
+}
+
+
+\texttt{		4. 	     if n is odd then  n $<$-- 3n+1 
+}
+
+
+\texttt{		5. 		else  n $<$-- n div 2 
+}
+
+
+\texttt{		6. GOTO 2
+}
+
+ \end{verbatim}
+
+Given the input 22, the following sequence of numbers will be printed 22 11  34 17 52 26 13 40 20 10 5 16 8 4 2 1
+
+It is conjectured that the algorithm above will terminate (when a 1 is printed) for any integral input value. Despite the simplicity of the algorithm, it is unknown whether this conjecture is true. It has been verified, however, for all integers n such that 0 $<$ n $<$ 1,000,000 (and, in  fact, for many more numbers than this.)
+
+Given an input n, it is possible to determine the number of numbers  printed (including the 1). For a given n this is called the  cycle-length of n. In the example above, the cycle length of 22  is 16.
+
+For any two numbers i and j you are to determine the maximum  cycle length over all numbers between i and j.

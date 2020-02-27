@@ -1,0 +1,24 @@
+- Trong 25\% số test đầu tiên, T $<$= 20, 2 $<$= N $<$= 15 và A$_i$ $<$= 10$^9$.
+
+- Trong 25\% số test tiếp theo, T $<$= 20, 2 $<$= N $<$= 100 và A$_i$ $<$= 270.
+
+- Trong 50\% số test còn lại, 2 $<$= N $<$= 50000, A$_i$ $<$= 10$^9$ và tổng giá trị của N trong các test của môt file input không quá 200000.
+\begin{verbatim}
+\textbf{Input:}
+
+
+5 
+4 9 8 6 20 
+10 
+2 2 2 3 3 3 3 3 3 3 
+14 
+\\44120320 584722489 449786530 269871918 944551713 764637101 1 719658448 714210560 293326080 629701142 502234240 207895680 713251840
+
+
+
+extbf{Output:}
+
+3
+\\2
+\\1 \end{verbatim}
+Trong test thứ nhất, cách chia tối ưu là ta chia thanh hai tập A = \{4, 8, 20\} và B =\{9, 6\}. Khi đó, GCD(A) = 4 và GCD(B) = 3. min(GCD(A), GCD(B)) = 3 là đáp số cần tìm.

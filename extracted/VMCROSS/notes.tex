@@ -1,0 +1,61 @@
+\begin{itemize}
+	\item Với mỗi test, nếu output của bạn không hợp lệ, bạn được 0 điểm. Nếu output hợp lệ:              
+
+ 
+\begin{itemize}
+	\item Gọi X là số từ nằm ngang mà bạn điền được lên bảng.
+	\item Gọi Y là số từ nằm dọc mà bạn điền được lên bảng.
+	\item Gọi Z là số ô thuộc 2 từ (1 từ nằm ngang và 1 từ nằm dọc).
+	\item Gọi T là số ô thuộc ít nhất 1 từ.
+	\item Điểm của bạn là (X * Y + Z\textasciicircum1.5 + T) / (M * N).
+\end{itemize}
+	\item Vì đây là bài challenge, nên điểm chung cuộc của bạn trong kỳ thi VM14 được tính theo công thức:                        
+
+
+\begin{itemize}
+item Giả sử bạn đứng thứ i trong bảng xếp hạng của bài (nghĩa là có i-1 người điểm cao hơn bạn).
+	\item Điểm mà bạn nhận được là  
+\\
+\includegraphics{../../../content/voj:VMSUDOKU3.png}
+\\ với log là log cơ số e.
+\end{itemize}
+	\item Bài này gồm 20 test. Trong quá trình thi, bài của bạn sẽ được chấm với 10 test.                 
+
+ 
+\begin{itemize}
+\end{itemize}
+\end{itemize}
+\begin{verbatim}
+\textbf{Input:}
+
+4 4 4\end{verbatim}
+\begin{verbatim}
+abcd\end{verbatim}
+\begin{verbatim}
+xyzt\end{verbatim}
+\begin{verbatim}
+buyv\end{verbatim}
+\begin{verbatim}
+dwtz
+
+
+
+\textbf{Output:}
+
+4\end{verbatim}
+\begin{verbatim}
+1 1 1 0\end{verbatim}
+\begin{verbatim}
+2 3 1 0\end{verbatim}
+\begin{verbatim}
+3 1 2 1\end{verbatim}
+\begin{verbatim}
+4 1 4 1\end{verbatim}
+
+Với output này:
+\begin{itemize}
+	\item X = 2
+	\item Y = 2
+	\item Z = 4
+	\item T = 12
+\end{itemize}

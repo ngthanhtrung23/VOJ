@@ -1,0 +1,34 @@
+\begin{itemize}
+	\item N ≤ 1000, M ≤ 10000.
+\end{itemize}
+Điểm tạm thời của thí sinh X (TP$_x$) được tính theo công thức sau: gọi R là tỉ số giữa đáp án của thí sinh X và đáp án của ban tổ chức,
+\begin{itemize}
+	\item Nếu R $<$ 0.8: TP$_x$ = 100$^R$;
+	\item Nếu 0.8 ≤ R ≤ 1: TP$_x$ = 40 + 60$^(R - 0.8) / 0.2$;
+	\item Nếu R $>$ 1: TP$_x$ = 100 + 100$^R / 3$.
+\end{itemize}
+
+Điểm chính thức của thí sinh X (OP$_x$) được tính theo công thức sau: gọi TP$_max$ là điểm tạm thời cao nhất trong điểm tạm thời của các thí sinh:
+\begin{itemize}
+	\item OP$_x$ = TP$_x$ / TP$_max$ * 100.
+\end{itemize}
+\begin{verbatim}
+\textbf{Input:}
+
+5
+1 2
+2 3
+3 4
+2 5
+5 6
+
+\\\textbf{Output:}
+
+
+4 3 2 5 6 
+
+Lời giải trên sẽ được 100.0 điểm (chính thức) vì đường đi đã tìm được là tối ưu. 
+\\
+\\\end{verbatim}
+
+Lưu ý: lời giải của bạn sẽ được chấm thử trên 10 test (không bao gồm test đề) trong suốt thời gian diễn ra vòng thi này. Bộ test chính thức sẽ có nhiều test hơn và bao gồm cả 10 test trên.

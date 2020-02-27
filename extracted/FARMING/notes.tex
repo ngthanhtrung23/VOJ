@@ -1,0 +1,122 @@
+- 1 ≤ M ≤ 50
+
+- 1 ≤ N ≤ 50
+
+- 1 ≤ D, T$_i $≤ 100
+
+- 1 ≤ G, R$_i$, E$_i$ ≤ 1,000
+
+- 1 ≤ F, S$_i$, P$_i $≤ 100,000
+\textbf{Dữ liệu}
+\begin{verbatim}
+3 3 5 10000 5
+
+5 3 3000 5000 2
+
+10 2 7000 10000 3
+
+10 1 6000 8000 2
+
+\end{verbatim}
+
+\textbf{Kết quả 1}
+\begin{verbatim}
+22000
+
+2
+
+1 1
+
+4 2
+
+2
+
+1 1
+
+4 2
+
+1
+
+1 1
+
+\end{verbatim}
+
+\textbf{Kết quả 2}
+\begin{verbatim}
+24000
+
+3
+
+1 1
+
+4 3
+
+5 3
+
+3
+
+1 1
+
+4 3
+
+5 3
+
+1
+
+1 1
+
+\end{verbatim}
+
+\textbf{Kết quả 3}
+\begin{verbatim}
+000
+
+3
+
+1 1
+
+4 3
+
+5 3
+
+2
+
+1 1
+
+4 2
+
+1
+
+1 1\end{verbatim}
+
+\textbf{Giải thích kết quả 3}
+\begin{tabular}\hline 
+\textbf{Ngày canh tác thứ} & \textbf{Ruộng 1} & \textbf{Ruộng 2} & \textbf{Ruộng 3} & \textbf{Tổng tiền (Đồng)} & \textbf{Tổng kinh nghiệm} \\ 
+\hline
+Ban đầu & - & - & - & 10,000 & 5 \\ 
+\hline
+1 & Trồng cây 1 & Trồng cây 1 & Trồng cây 1 & 1,000 & 5 \\ 
+\hline
+2 & Chăm sóc & Chăm sóc & Chăm sóc & 1,000 & 5 \\ 
+\hline
+3 & Thu hoạch & Thu hoạch & Thu hoạch & 16,000 & 11 \\ 
+\hline
+4 & Trồng cây3
+\\ Thu hoạch & Trồng cây 2 & Để trống & 11,000 & 13 \\ 
+\hline
+5 & Trồng cây3 
+\\ Thu hoạch & Thu hoạch & Để trống & 23,000 & 18 \\ 
+\hline
+
+\end{tabular}
+- Với mỗi test, bạn chỉ được tính điểm nếu lịch gieo trồng hợp lí, đúng với số tiền kiếm được.
+
+- Điểm mỗi test đúng đắn được tính dựa trên kết quả tốt nhất của tất cả các thí sinh (và của cả BTC)
+
+  Cụ thể, nếu kết quả tốt nhất là best, và chương trình của bạn đưa ra result thì:
+
+  Điểm = result/best * hệ số điểm. (Trong đó hệ số điểm = 100/tổng số test)
+
+- Tổng điểm của bạn là tổng điểm các test đúng đắn.
+
+- Với test ví dụ, best = 24000. Nếu hệ số điểm = 5, kết quả 1 sẽ được 4.58 điểm, kết quả 2 sẽ được 5.00 điểm, và kết quả 3 sẽ được 4.79 điểm.

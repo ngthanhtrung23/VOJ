@@ -1,0 +1,21 @@
+Bé năm nay mới 1 tuổi, nhưng đã có thể nhận biết được hình tròn, hình vuông và hình tam giác. Bạn có làm được như bé không?
+
+Bạn được cho 1 số bức ảnh cấp độ xám (grayscale) của 1 trong 3 loại hình: hình tròn, hình vuông và hình tam giác.
+\begin{itemize}
+	\item Mỗi bức ảnh có kích thước 100 * 100 pixel và được biểu diễn bởi 1 ma trận kích thước 100 * 100.
+	\item Pixel (i, j) nhận giá trị trong khoảng [0, 255], trong đó 0 ứng với màu đen, 255 ứng với màu trắng, và các giá trị càng gần 0 thì càng đen.
+\end{itemize}
+
+Bài này gồm có 50 test:
+\begin{itemize}
+	\item Bạn được down về 10 test đầu \href{https://www.dropbox.com/s/rmiayackco34itk/Archive.zip?dl=0}{ở đây}. (chú ý 10 test này sẽ chỉ được dùng để chấm trong quá trình thi, và sẽ không được sử dụng khi tính kết quả cuối cùng).
+	\item 10 test tiếp theo không có hình tròn.
+	\item 10 test tiếp theo không có hình vuông.
+	\item 10 test tiếp theo không có hình tam giác.
+	\item 10 test cuối cùng có đủ cả 3 loại hình.
+\end{itemize}
+
+Dưới đây là thang sáng tối của điểm ảnh. Phần bên trong của hình cần nhận diện sẽ có màu sáng hơn (giá trị điểm ảnh lớn hơn) so với phần bên ngoài của hình. Tuy nhiên các ảnh sẽ bị làm nhiễu đi bởi các điểm ảnh có giá trị bất kì (tải các test ví dụ về để xem chi tiết).
+
+
+\includegraphics{http://cs.calvin.edu/activities/connect/CompRenew/03programming/01grayscale.png}

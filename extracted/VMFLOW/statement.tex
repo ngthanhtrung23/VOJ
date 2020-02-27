@@ -1,0 +1,19 @@
+Với đồ họa và cách thức chơi vô cùng đơn giản, trò chơi \href{https://chrome.google.com/webstore/detail/flow-free/fkkkloddfalabncnhbhmbekpmkgjcgfl}{Flow} đang trở nên rất thịnh hành trong thời gian gần đây. Trong bài toán này, chúng ta sẽ cùng nhau thử tìm lời giải cho trò chơi này!Trên một bảng kích thước N * N, có một số cặp điểm cần được nối với nhau. Như hình vẽ dưới đây, hai ô cùng màu là hai ô cần được nối với nhau.
+
+Trên một bảng kích thước N * N, có một số cặp điểm cần được nối với nhau. Như hình vẽ dưới đây, hai ô cùng màu là hai ô cần được nối với nhau.
+
+
+\includegraphics{../../../content/voj:VMFLOW_h0.PNG}
+
+Việc nối hai ô bất kì với nhau được thực hiện bằng cách đi theo các ô kề cạnh tạo thành một \textbf{đường đi không tự cắt} (đường đi không được đi qua một ô hai lần) và tới ô đích. Hình 1 dưới đây môt tả một đường đi hợp lệ nối hai ô đỏ.
+
+
+\includegraphics{../../../content/voj:VMFLOW_h12.PNG}
+
+Các đường đi nối các cặp khác điểm khác nhau cũng không được phép có điểm chung với nhau. Hình 2 là một cách nối không hợp lệ. Vì vậy với cách nối cặp điểm màu đỏ như hình 1, chúng ta không có cách nối cặp điểm màu xanh lá.
+
+Nhiệm vụ của bạn là hãy tìm một phương pháp nối các cặp điểm sao cho:
+\begin{itemize}
+	\item Số lượng cặp điểm nối được là nhiều nhất có thể.
+	\item Số lượng ô có đường đi đi qua là nhiều nhất có thể.
+\end{itemize}

@@ -1,0 +1,19 @@
+Công ty XYZ là một công ty chuyên vận chuyển đồ chơi đến tận nhà cho các bé. Năm nay, nhân dịp Noel, công ty XYZ tổ chức một sự kiện phát quà trên diện rộng, huy động V xe tải để phát quà đến nhà của N-1 bé.
+
+Chúng ta sẽ mô phỏng địa điểm của công ty XYZ và nhà của N-1 bé bằng N điểm trên mặng phẳng tọa độ 2 chiều:
+\begin{itemize}
+	\item Công ty XYZ có tọa độ (x$_0$, y$_0$).
+	\item Nhà của bé thứ i có tọa độ (x$_i$, y$_i$) với i = 1..N-1.
+\end{itemize}
+
+Mỗi xe của công ty sẽ xuất phát từ công ty XYZ, đi qua nhà một số bé và quay trở về công ty XYZ.
+
+Yêu cầu:
+\begin{itemize}
+	\item Nhà của mỗi bé phải được đi qua đúng một lần (nói cách khác, không có 2 xe tải nào cùng đi qua nhà của một bé).
+	\item Món quà cần chuyển đến nhà của bé thứ i có khối lượng d(i). Xe tải chỉ được chở không quá C khối lượng hàng hóa.
+	\item Mỗi xe tải hoặc là không di chuyển, hoặc là xuất phát từ công ty XYZ, đi qua nhà của một số bé và quay trở về công ty XYZ. Sau đấy xe tải phải dừng lại, không được di chuyển tiếp nữa. (Nói cách khác, đường đi của xe tải sẽ tạo 1 đường gấp khúc khép kín, đi qua công ty XYZ đúng 2 lần: lúc xuất phát và lúc kết thúc. Chú ý rằng nếu xe tải không di chuyển có thể hiểu là đường gấp khúc độ dài bằng 0).
+	\item Chú ý rằng vì xe chỉ được di chuyển không quá 1 vòng, nên tất cả các món quà chở đến nhà các bé phải được chất lên xe tại thời điểm xe xuất phát.
+\end{itemize}
+
+Là người đứng đầu công ty XYZ, bạn cần phải tìm hành trình của các xe tải sao cho tổng độ dài tất cả V xe tải phải di chuyển là nhỏ nhất, và không có xe tải nào phải vận chuyển quá C khối lượng hàng hóa. Biết rằng các xe di chuyển từ điểm (x$_1$, y$_1$) đến điểm (x$_2$, y$_2$) theo con đường ngắn nhất với độ dài được tính theo \href{http://vi.wikipedia.org/wiki/Kho%E1%BA%A3ng_c%C3%A1ch_Euclid}{khoảng cách Euclid} giữa 2 điểm.

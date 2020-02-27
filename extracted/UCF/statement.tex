@@ -1,0 +1,68 @@
+UCF is now the nation’s second largest university in student population.  To meet the demands of a growing student body, the university is always constructing new buildings.  One of the issues is the campus needs many new buildings but has limited space.  To help make room for new buildings, a new restructuring method is being used!Each day (until the end of restructuring) a building is selected for “reconstruction”. During reconstruction, all buildings that are connected to the selected building and only to the selected building are combined into (torn down and then added as new parts to) the selected building. Every building has a given cost associated with applying this reconstruction operation; when a building is selected and other buildings are combined with it, the cost associated with the selected building is the cost for combining the selected group of buildings.For example, in the building layout below, the building with cost 5 is selected in Day 1. The building with cost 1 (crossed out in the picture in Day 1) is the only building connected to the selected building and this building is connected to no other building. These two buildings are combined and the cost of the operation is 5 (the cost of the selected building). In Day 2, the building with cost 4 is selected (hence the cost 4 for combining) and in Day 3, the building with cost 6 is selected. No more buildings can be selected after Day 3 since every building is connected to more than one building. The total cost for this sequence of combinations is therefore 5+4+6= 15.
+
+UCF is now the nation’s second largest university in student population.  To meet the demands 
+
+of a growing student body, the university is always constructing new buildings.  One of the 
+
+issues is the campus needs many new buildings but has limited space.  To help make room for 
+
+new buildings, a new restructuring method is being used!
+
+Each day (until the end of restructuring) a building is selected for “reconstruction”. During 
+
+reconstruction, all buildings that are connected to the selected building and only to the selected 
+
+building are combined into (torn down and then added as new parts to) the selected building. 
+
+Every building has a given cost associated with applying this reconstruction operation; when a 
+
+building is selected and other buildings are combined with it, the cost associated with the 
+
+selected building is the cost for combining the selected group of buildings.
+
+For example, in the building layout below, the building with cost 5 is selected in Day 1. The 
+
+building with cost 1 (crossed out in the picture in Day 1) is the only building connected to the 
+
+selected building and this building is connected to no other building. These two buildings are 
+
+combined and the cost of the operation is 5 (the cost of the selected building). In Day 2, the 
+
+building with cost 4 is selected (hence the cost 4 for combining) and in Day 3, the building with 
+
+cost 6 is selected. No more buildings can be selected after Day 3 since every building is 
+
+connected to more than one building. The total cost for this sequence of combinations is 
+
+therefore 5+4+6= 15.
+
+
+\includegraphics{http://i36.photobucket.com/albums/e11/pynhp9x1/Capture_zps97ece13e.png}
+
+ 
+
+\subsubsection{
+
+\textbf{The Problem:}
+
+ 
+
+Given the building connections and the costs associated with refactoring the buildings, determine 
+
+the minimum possible number of buildings that will be left when refactoring is complete, the 
+
+minimum cost of achieving this minimum size and the number of ways to achieve this minimum 
+
+cost with minimum size.  Two ways are considered different if on the i-th day the building being 
+
+reconstructed is different or the number of days to complete the reconstruction differs.  Since the 
+
+number of ways to reconstruct the university can be quite large, print the result modulo
+
+1,000,000,007.\textbf{ }
+
+ 
+
+ 
+
+ }
