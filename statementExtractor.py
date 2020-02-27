@@ -17,7 +17,7 @@ def analyze():
     wordCount = defaultdict(int)
 
     for i in range(1, 8):
-        lines = open(subsectionInfoFolderPath + '/' + str(i) + 'subsections.csv').read().strip().split('\n')
+        lines = open(subsectionInfoFolderPath + '/' + str(i) + 'subsections.csv', encoding='utf-8').read().strip().split('\n')
 
         words = []
 
@@ -44,7 +44,7 @@ def extractNSections(n):
 
     compiledPattern = re.compile(pattern)
 
-    lines = open(subsectionInfoFolderPath + '/' + str(n) + 'subsections.csv').read().strip().split('\n')
+    lines = open(subsectionInfoFolderPath + '/' + str(n) + 'subsections.csv', encoding='utf-8').read().strip().split('\n')
 
     statementKeywords = ['debai', 'yeucau', 'hanche', 'constraints', 'constraint', 'limit', 'phanbogioihantest']
     inputKeywords = ['input', 'dulieuvao', 'dulieu', 'quycachnhapdulieu']
@@ -53,7 +53,7 @@ def extractNSections(n):
     for line in lines:
         name = line.split(',')[0]
 
-        content = open(statementPath + '/' + name).read()
+        content = open(statementPath + '/' + name, encoding='utf-8').read()
 
         name = name.split('.')[0]
 
@@ -152,10 +152,10 @@ def extractNSections(n):
             # print(e)
             pass
 
-        open(extractedProblemFolder + '/statement.tex', 'w').write(statement.strip())
-        open(extractedProblemFolder + '/input.tex', 'w').write(input.strip())
-        open(extractedProblemFolder + '/output.tex', 'w').write(output.strip())
-        open(extractedProblemFolder + '/notes.tex', 'w').write(notes.strip())
+        open(extractedProblemFolder + '/statement.tex', 'w', encoding='utf-8').write(statement.strip())
+        open(extractedProblemFolder + '/input.tex', 'w', encoding='utf-8').write(input.strip())
+        open(extractedProblemFolder + '/output.tex', 'w', encoding='utf-8').write(output.strip())
+        open(extractedProblemFolder + '/notes.tex', 'w', encoding='utf-8').write(notes.strip())
 
         tests = extractSampleTests(notes)
 
@@ -163,8 +163,8 @@ def extractNSections(n):
             print("Can't extract sample tests for " + name)
         else:
             for i in range(len(tests)):
-                open(extractedProblemFolder + '/TEST' + str(i + 1) + '.INP', 'w').write(tests[i][0])
-                open(extractedProblemFolder + '/TEST' + str(i + 1) + '.OUT', 'w').write(tests[i][1])
+                open(extractedProblemFolder + '/TEST' + str(i + 1) + '.INP', 'w', encoding='utf-8').write(tests[i][0])
+                open(extractedProblemFolder + '/TEST' + str(i + 1) + '.OUT', 'w', encoding='utf-8').write(tests[i][1])
 
 def extractSampleTests(notes):
     statementKeywords = ['debai', 'yeucau', 'hanche', 'constraints', 'constraint', 'limit', 'phanbogioihantest']
