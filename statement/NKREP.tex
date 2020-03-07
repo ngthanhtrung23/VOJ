@@ -1,0 +1,63 @@
+
+
+Trung tâm của bạn vừa nhận được 1 bức ảnh chụp bề mặt sao Hỏa. Bức ảnh được mã hóa theo dạng hình chữ nhật được chia thành các ô vuông, trong đó mỗi ô có thể có màu đen hoặc trắng. Do nhiều lí do trên đường vận chuyển, có tối đa K ô bị mờ đi (đen thành trắng), nhưng do không thể xác định chính xác được ô nào bị mờ, nên bạn buộc phải giả sử rằng tất cả các khả năng mờ đi đều có thể xảy ra.
+
+ 
+
+Để xác định các vật thể lạ trên sao Hỏa, trung tâm của bạn căn cứ theo các ô đen được chụp trên tấm ảnh. Hai ô đen A và B được gọi là cùng thuộc một vật thể, nếu từ A, tồn tại một đường đi thỏa mãn chỉ đi qua các ô đen kề cạnh, có thể đến được B. Kích thước vật thể được tính bằng khoảng cách Euclid của 2 ô xa nhau nhất cùng thuộc vật thể đó.
+
+ 
+
+Yêu cầu: xác định kích thước lớn nhất có thể có được của 1 vật thể trên tấm ảnh.
+
+\subsubsection{Input}
+
+-          Dòng đầu tiên chứa 3 số nguyên M,N,K (0 $<$ M,N $<$= 50, 0 $<$= K $<$= M * N) là kích thước tấm ảnh và số ô tối đa đã bị mờ đi
+
+-          M dòng sau, mỗi dòng chứa N kí tự 0/1 tương ứng với ô đó có màu đen (0) hay trắng (1)
+
+-          Trong 20\% số test, 0 $<$ M,N $<$= 4
+
+-          Trong 60\% số test, 0 $<$ M,N $<$= 25
+
+\subsubsection{Output}
+
+-          Đưa ra 1 số nguyên duy nhất là bình phương kích thước của vật thể lớn nhất
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+
+4 4 0
+
+0\textbf{0}10
+
+1001
+
+0011
+
+\textbf{0}111
+
+\textbf{Output:}
+
+10\end{verbatim}
+
+(Không có ô nào được sửa. Có 2 vật thể, và kích thước của vật thể lớn hơn là khoảng cách giữa 2 ô được gạch chân)
+\begin{verbatim}
+\textbf{Input:}\end{verbatim}
+\begin{verbatim}
+4 4 4\end{verbatim}
+\begin{verbatim}
+001\textbf{0}\end{verbatim}
+\begin{verbatim}
+1001\end{verbatim}
+\begin{verbatim}
+0011\end{verbatim}
+\begin{verbatim}
+\textbf{0}111\end{verbatim}
+\begin{verbatim}
+\textbf{Output:}\end{verbatim}
+\begin{verbatim}
+18\end{verbatim}
+
+(Nếu tô đen ô 1 được gạch chân, kích thước của vật thể sẽ là khoảng cách của 2 ô được gạch chân. Có thể tô đen nhiều hơn 1 ô, nhưng khoảng cách không thay đổi)

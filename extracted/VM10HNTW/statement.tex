@@ -1,0 +1,21 @@
+Để chào mừng đại lễ kỉ niệm 1000 năm Thăng Long Hà Nội, bạn bè trên khắp thế giới đã quyết định góp Q phiến đá quý (1 ≤ 30,000 ≤ Q) giúp thủ đô xây dựng một tòa tháp gồm K tầng (1 ≤ K ≤ Q), mỗi tầng làm từ một phiến đá quý. Những phiến đá này có hình dạng và kích thước giống hệt nhau, nhưng lại có “độ quý” C khác nhau (1 ≤ C ≤ 10,000).
+
+Đá quý được tập kết về thủ đô thành M chồng xếp liền nhau theo một hàng dài, chồng đá thứ i gồm H$_i$ phiến đá (H$_i$ $>$ 0, và do kích thước các phiến đá là như nhau nên cũng có thể coi H$_i$ là “chiều cao” của chồng đá thứ i).
+
+ 
+
+
+\includegraphics{../../../content/voj:VM10HNTW_01.png}
+
+ 
+
+Sau đó các phiến đá lần lượt được “gắp” vào công trường để xây dựng tòa tháp (xây từ dưới lên trên) bằng một chiếc cần cẩu chuyên dụng (chiếc loại I). Chiếc ngoàm của cần cẩu được thiết kế chỉ có thể gắp mỗi lượt một phiến đá đang nằm trên cùng của một chồng đá bất kì, với điều kiện hai chồng đá liền kề phải có chiều cao nhỏ hơn chiều cao của chồng đó (nếu phía bên nào không có đá thì coi như chồng bên đó có chiều cao bằng 0). Để khắc phục nhược điểm đó, có một chiếc cần cẩu khác (chiếc loại II) được thiết kế đặc biệt có thể gắp bất kì phiến đá nào (tất nhiên phải là phiến đá nằm trên cùng của một chồng, và cũng chỉ có thể gắp mỗi lượt một phiến); tuy nhiên chiếc cần cẩu này lại làm “xước” phiến đá mà nó gắp, nên độ quý của phiến đá đó chỉ còn là C x P\% (0 $<$ P $<$ 100).
+
+Mặt khác, do các phiến đá cùng loại nếu được đặt chồng lên nhau sẽ tạo ra “hiệu ứng ánh sáng” rất đẹp mắt nên khi đó độ quý của phiến đá nằm trên sẽ tăng so với độ quý của phiến đá nằm dưới là D\% (D $>$ 0), nếu phiến đá nằm trên bị xước (do sử dụng cần cẩu loại II) thì độ quý của phiến đá sau khi tăng D\% mới được nhân với P\% để nhận được độ quý cần tính.
+
+Tổng độ quý S của tòa tháp là tổng các độ quý của K phiến đá tạo nên tòa tháp theo cách tính nói trên. Vấn đề đặt ra là hãy lựa chọn một phương án xây tháp sao cho S càng lớn càng tốt!
+
+ 
+
+
+\includegraphics{../../../content/voj:VM10HNTW_02.png}

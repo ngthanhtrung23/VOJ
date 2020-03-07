@@ -1,0 +1,6 @@
+NEW 4 0
+ADD 1 2
+ADD 2 3
+ANY
+EDG 1 2
+END

@@ -1,0 +1,64 @@
+
+
+Bạn được nhận xử lý một đồ thị. Đồ thị này được gọi là đơn đồ thị vô hướng, tức là giữa hai đỉnh u và v bất kì chỉ có tối đa một cung nối vô hướng.
+
+Một đường đi đơn trên đồ thị là một dãy các đỉnh x$_1$, x$_2$, ..., x$_k$ sao cho luôn có cung nối giữa đỉnh x$_i$ và đỉnh x$_i + 1$(1 ≤ i $<$ k). Đường đi đơn là đường đi mà không có hai đỉnh nào lặp lại.
+
+Độ dài đường đi là số đỉnh trên đường đi đó. Hãy tìm một đường đi đơn có độ dài lớn nhất có thể trên đồ thị đã cho.
+
+\subsubsection{Input}
+
+Input gồm nhiều dòng:
+\begin{itemize}
+	\item Dòng thứ nhất: 2 số nguyên N và M, số đỉnh và số cạnh của đồ thị. 
+	\item M dòng tiếp theo: mỗi dòng ghi hai số nguyên u và v (u khác v), thể hiện cạnh (u, v) vô hướng trong đồ thị.
+\end{itemize}
+
+\subsubsection{Output}
+
+Ouput gồm 2 dòng:
+\begin{itemize}
+	\item Dòng thứ nhất là một số nguyên, độ dài đường đi đơn tìm được. 
+	\item Dòng thứ hai là dãy các đỉnh thể hiện đường đi đó. 
+\end{itemize}
+
+\subsubsection{Giới hạn}
+\begin{itemize}
+	\item N ≤ 1000, M ≤ 10000.
+\end{itemize}
+
+\subsubsection{Cách tính điểm}
+
+Điểm tạm thời của thí sinh X (TP$_x$) được tính theo công thức sau: gọi R là tỉ số giữa đáp án của thí sinh X và đáp án của ban tổ chức,
+\begin{itemize}
+	\item Nếu R $<$ 0.8: TP$_x$ = 100$^R$;
+	\item Nếu 0.8 ≤ R ≤ 1: TP$_x$ = 40 + 60$^(R - 0.8) / 0.2$;
+	\item Nếu R $>$ 1: TP$_x$ = 100 + 100$^R / 3$.
+\end{itemize}
+
+Điểm chính thức của thí sinh X (OP$_x$) được tính theo công thức sau: gọi TP$_max$ là điểm tạm thời cao nhất trong điểm tạm thời của các thí sinh:
+\begin{itemize}
+	\item OP$_x$ = TP$_x$ / TP$_max$ * 100.
+\end{itemize}
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+
+5
+1 2
+2 3
+3 4
+2 5
+5 6
+
+\\\textbf{Output:}
+
+
+4 3 2 5 6 
+
+Lời giải trên sẽ được 100.0 điểm (chính thức) vì đường đi đã tìm được là tối ưu. 
+\\
+\\\end{verbatim}
+
+Lưu ý: lời giải của bạn sẽ được chấm thử trên 10 test (không bao gồm test đề) trong suốt thời gian diễn ra vòng thi này. Bộ test chính thức sẽ có nhiều test hơn và bao gồm cả 10 test trên.

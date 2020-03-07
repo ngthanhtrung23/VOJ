@@ -1,0 +1,83 @@
+
+
+Một hãng phần mềm thực hiện một dự án gồm N công đoạn đánh số từ 1…N, một số công đoạn có thể thực hiện song song nhưng cũng có một số công đoạn chỉ có thể thực hiện khi công đoạn khác đã thực hiện xong.
+
+Cần biết:
+\begin{itemize}
+	\item     Thời gian tối thiểu T cần để hoàn thành dự án.
+\end{itemize}
+\begin{itemize}
+	\item     Với mỗi công đoạn k, 1$<$k$<$N, thời điểm c$_k$ là thời điểm sớm nhất có thể thực hiện công đoạn, thời điểm d$_k$ là thời điểm muộn nhất cần tiến hành công đoạn k để đảm bảo cho thời gian hoàn thành dự án bằng T.
+\end{itemize}
+
+\textbf{Input}
+
+
+Dòng thứ nhất ghi số n.
+
+Dòng thứ 2 ghi n số nguyên dương mà số thứ k là thời gian cầnđể hoàn thành công đoạn k.
+
+Trong nhóm n dòng tiếp theo, dòng thứ k bắt đầu bằng số m$_k$ là số công đoạn cần hoàn thành trước trước khi bắt đầu bằng công đoạn k, tiếp theo là các số hiệu của m$_k$ công đoạn đó.
+
+\textbf{Output}
+
+
+Ghi ra dòng thứ nhất giá tri T
+
+Trong N dòng tiếp theo, dòng thứ k ghi số c$_k$ và d$_k$.
+
+Các hạn chế và chính xác hóa:
+\begin{itemize}
+	\item 0$<$n$<$100
+\end{itemize}
+\begin{itemize}
+	\item T không lớn hơn 1.000.000
+\end{itemize}
+\begin{itemize}
+	\item Thời điêm bắt đầu dự án là 0
+\end{itemize}
+\begin{itemize}
+	\item Không có tình trạng bế tắc có nghĩa là có một vòng kín các công đoạn phụ thuộc nhau:
+\end{itemize}
+
+Ví dụ
+
+ 
+\begin{tabular}
+
+Input
+
+7
+
+2 3 5 3 3 3 2
+
+0
+
+0
+
+1 2
+
+1 1
+
+1 1
+
+3 3 4 5
+
+1 3 & 
+
+Output
+
+11
+
+0 3
+
+0 0
+
+3 3
+
+2 5
+
+8 8
+
+8 9
+\end{tabular}

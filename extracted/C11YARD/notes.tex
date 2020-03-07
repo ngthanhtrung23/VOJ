@@ -1,96 +1,46 @@
-Giới hạn:
 \begin{itemize}
 	\item     Trong 20\% số test có 1  $\le$  m,n  $\le$  100   
 	\item     Trong tất cả các test có 1  $\le$  m,n  $\le$  2000   
 \end{itemize}
-Ví dụ:
 \begin{verbatim}
 \textbf{Input 1:}
 4 5 2
-
-
-.....
-
-
-...#.
-
-
-.....
-
-
-..#..
+\\.....
+\\...#.
+\\.....
+\\..#..
 
 \textbf{Output 1:}
 11
-
-
-
-
-
-Ta có thể đặt máy cắt cỏ vào ô (2,2), thì có 11 ô có có thể cắt được bằng máy cắt cỏ
-
-
-(kí tự 'x' đại diện cho vùng cỏ cắt được, kí tự '@' đại diện cho vị trí đặt máy cắt cỏ ban đầu
-
-
- và tất nhiên cũng là vùng cỏ cắt được)
-
-
-xxx..
-
-
-x@@#.
-
-
-x@@..
-
-
-xx#..\end{verbatim}
+\\
+\\Ta có thể đặt máy cắt cỏ vào ô (2,2), thì có 11 ô có có thể cắt được bằng máy cắt cỏ
+\\(kí tự 'x' đại diện cho vùng cỏ cắt được, kí tự '@' đại diện cho vị trí đặt máy cắt cỏ ban đầu
+\\ và tất nhiên cũng là vùng cỏ cắt được)
+\\xxx..
+\\x@@#.
+\\x@@..
+\\xx#..\end{verbatim}
 \begin{verbatim}
 \textbf{Input 2:}
 4 4 3
-
-
-....
-
-
-....
-
-
-....
-
-
-....
+\\....
+\\....
+\\....
+\\....
 
 \textbf{Output 2:}
 16
-
-
-
-
-
-Ta có thể đặt máy cắt cỏ ở bất kì vị trí nào trong sân để cắt được toàn bộ cỏ trong sân.\end{verbatim}
+\\
+\\Ta có thể đặt máy cắt cỏ ở bất kì vị trí nào trong sân để cắt được toàn bộ cỏ trong sân.\end{verbatim}
 \begin{verbatim}
 \textbf{Input 3:}
 4 5 3
-
-
-#....
-
-
-..#..
-
-
-.....
-
-
-....#
+\\#....
+\\..#..
+\\.....
+\\....#
 
 \textbf{Output 3:}
 -1
-
-
-
-
-
-Không có vị trí nào hợp lệ để đặt được máy cắt cỏ vào sân.\end{verbatim}
+\\
+\\Không có vị trí nào hợp lệ để đặt được máy cắt cỏ vào sân.\end{verbatim}

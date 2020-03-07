@@ -1,3 +1,5 @@
 # IDE / editor
 .idea
 *.swp
+tests
+data

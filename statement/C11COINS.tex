@@ -1,0 +1,39 @@
+
+
+Lion\_IT rất thích sưu tập các đồng xu cổ. Trong bộ sưu tập của mình lion\_IT có 12 đồng xu cổ bề ngoài giống hệt nhau của quốc gia GOLDLAND xa xưa. Trong đó có 11 đồng xu bằng vàng được làm cùng thời điểm. Đồng xu còn lại do không cùng thời với các đồng xu kia nên ngoài vàng nó còn lẫn 1 trong 2 kim loại là bạc hoặc bạch kim. Lion\_IT quyết định dùng chiếc cân đĩa mới mua để tìm ra đồng tiền khác biệt.
+
+Trong mỗi lần cân dùng 8 đồng xu trong 12 đồng xu mỗi bên cân để 4 đồng.
+
+ 
+
+
+\includegraphics{http://media.baodatviet.vn/Uploaded_CDCA/bichdiep/20100526/kt_26.5_gold3.jpg}
+
+\textbf{Yêu cầu} : Cho biết kết quả 3 lần cân, hãy xác định quả cân khác loại( biết khối lượng riêng Bạc $<$ khối lượng riêng Vàng $<$ khối lượng riêng Bạc Kim).
+
+\subsubsection{Input}
+\begin{itemize}
+	\item Gồm 3 dòng có dạng A B C D r E F G H  (1 $<$= A, B, C, D, E, F, G , H $<$= 12 ; r là 1 trong 3 kí tự ‘=’ , ‘$<$’ , hoặc  ‘$>$’  cho biết đĩa cân (A,B,C,D) là bằng, nhỏ hơn hoặc lớn hơn đĩa (E,F,G,H)), mỗi phần tử cách nhau đúng 1 dấu trắng;
+\end{itemize}
+
+\subsubsection{Output}
+\begin{itemize}
+	\item Nếu kết quả cân mâu thuẫn thì in ra “\textbf{impossible}”. Nếu sau 3 lần cân vẫn không thể xác định được quả cân khác loại thì in ra “\textbf{indifinite}”. Nếu quả cân \textbf{T} là quả cân khác loại thì in ra “\textbf{T Ag}“ nếu quả cân lẫn bạc hoặc “\textbf{T Pt}” nếu quả cân lẫn bạch kim.
+\end{itemize}
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+\begin{verbatim}
+1 4 6 10 $<$ 5 7 9 12\end{verbatim}
+\begin{verbatim}
+2 5 4 11 $>$ 6 8 7 10\end{verbatim}
+\begin{verbatim}
+3 6 5 12 $<$ 4 9 8 11\end{verbatim}
+\end{verbatim}
+\begin{verbatim}
+\textbf{Output:
+}\end{verbatim}
+\begin{verbatim}
+6 Ag\textbf{
+}\end{verbatim}

@@ -1,0 +1,122 @@
+
+
+\textbf{SẮP XẾP CHÈN}
+
+ 
+
+ 
+
+Heo mập vừa được học về các thuật toán sắp xếp. Trong số đó, cậu hứng thú nhất với thuật toán sắp xếp chèn vì sự đơn giản và đẹp đẽ của nó.
+
+ 
+
+Thuật toán sắp xếp chèn để sắp xếp một dãy số a[1..N] thành một dãy không giảm được thực hiện qua N bước. Tại bước thứ i (1 ≤ i ≤ N), ta sẽ tìm vị trí thích hợp trong khoảng từ 1 đến i để chèn a[i] vào, sao cho dãy số a[1..i] là một dãy không giảm.
+
+ 
+
+Ví dụ:
+
+Sắp xếp dãy a = [3, 1, 2, 5, 4] thành dãy không giảm
+
+  - Bước 1: a = [\textbf{3}, 1, 2, 5, 4]   (Xét phần tử đầu tiên là 3 =$>$ chèn vào vị trí \textbf{1})
+
+  - Bước 2: a = [\textbf{1, 3}, 2, 5, 4]   (Xét phần tử thứ hai là 1 =$>$ chèn vào vị trí \textbf{1})
+
+  - Bước 3: a = [\textbf{1, 2, 3,} 5, 4]   (Xét phần tử thứ ba là 2 =$>$ chèn vào vị trí \textbf{2})
+
+  - Bước 4: a = [\textbf{1, 2, 3, 5,} 4]   (Xét phần tử thứ tư là 5 =$>$ chèn vào vị trí \textbf{4})
+
+  - Bước 5: a = \textbf{[1, 2, 3, 4, 5]}   (Xét phần tử thứ năm là 4 =$>$ chèn vào vị trí \textbf{4})
+
+ 
+
+Như vậy, việc tìm được vị trí chèn thích hợp cho mỗi phần tử a[i] tại mỗi bước là chính là chìa khoá của thuật toán này.
+
+ 
+
+Tại mỗi bước của thuật toán, Heo mập muốn tìm ra vị trí chèn thích hợp một cách nhanh nhất. Bạn hãy giúp cậu ấy giải quyết bài toán này nhé!
+
+ 
+
+\textbf{Yêu cầu}
+
+Cho một dãy số nguyên a[] có N phần tử, đánh số từ 1 đến N.
+
+ 
+
+Hãy in ra N số nguyên b[1..N], lần lượt theo thứ tự, số thứ i thể hiện vị trí chèn thích hợp cho a[i] tại bước thứ i trong thuật toán sắp xếp chèn, để đảm bảo rằng dãy a[1..i] là một dãy không giảm.
+
+ 
+
+Nếu có nhiều vị trí chèn đều thoả mãn a[1..i] là dãy không giảm thì in ra vị trí lớn nhất.
+
+ 
+
+Nếu dãy a = [3, 1, 2, 5, 4] như ví dụ thì bạn cần in ra dãy b = [1, 1, 2, 4, 4].
+
+Nếu dãy a = [2, 3, 1, 1, 2] thì bạn cần in ra dãy [1, 2, 1, 2, 4].
+
+ 
+
+\textbf{Lưu ý}
+
+Để tránh xử lý trước dữ liệu, dãy số nguyên a[] sẽ được sinh ra trong quá trình bạn tính toán kết quả.
+
+ 
+
+Bạn sẽ được cho trước N, a[1], và dãy số nguyên d[1..N-1.] Sau khi bạn tính được b[i] là kết quả cho bước thứ i (1 ≤ i ≤ N-1) thì a[i+1] sẽ được tính theo công thức: a[i+1] = b[i] + d[i].
+
+ 
+
+\textbf{Input}
+
+Dòng đầu chứa số nguyên T là số bộ test.
+
+Tiếp theo là T dòng. Mỗi dòng gồm các số nguyên theo thứ tự như sau: Bắt đầu là N thể hiện số phần tử của dãy a[]. Tiếp theo là giá trị của a[1]. Cuối cùng là N-1 số nguyên thể hiện dãy d[1..N-1].
+
+ 
+
+\textbf{Output}
+
+In ra T dòng, mỗi dòng gồm N số nguyên là kết quả của bộ test tương ứng.
+
+ 
+
+\textbf{Constraints}
+
+T ≤ 10
+
+N ≤ 100000
+
+-10$^9$ ≤ a[i], d[i] ≤ 10$^9$
+
+Time limit: \textbf{5s}
+
+\textbf{ }
+
+\textbf{Example}
+
+ 
+\begin{tabular}\hline 
+
+
+Input & 
+
+Output  
+\hline
+
+
+2
+
+5 3 0 1 3 0
+
+5 2 2 -1   0 0 & 
+
+1 1 2 4 4
+
+1   2 1 2 4  
+\hline
+
+\end{tabular}
+
+ 

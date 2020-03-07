@@ -1,0 +1,102 @@
+
+
+Công ty XYZ là một công ty chuyên vận chuyển đồ chơi đến tận nhà cho các bé. Năm nay, nhân dịp Noel, công ty XYZ tổ chức một sự kiện phát quà trên diện rộng, huy động V xe tải để phát quà đến nhà của N-1 bé.
+
+Chúng ta sẽ mô phỏng địa điểm của công ty XYZ và nhà của N-1 bé bằng N điểm trên mặng phẳng tọa độ 2 chiều:
+\begin{itemize}
+	\item Công ty XYZ có tọa độ (x$_0$, y$_0$).
+	\item Nhà của bé thứ i có tọa độ (x$_i$, y$_i$) với i = 1..N-1.
+\end{itemize}
+
+Mỗi xe của công ty sẽ xuất phát từ công ty XYZ, đi qua nhà một số bé và quay trở về công ty XYZ.
+
+Yêu cầu:
+\begin{itemize}
+	\item Nhà của mỗi bé phải được đi qua đúng một lần (nói cách khác, không có 2 xe tải nào cùng đi qua nhà của một bé).
+	\item Món quà cần chuyển đến nhà của bé thứ i có khối lượng d(i). Xe tải chỉ được chở không quá C khối lượng hàng hóa.
+	\item Mỗi xe tải hoặc là không di chuyển, hoặc là xuất phát từ công ty XYZ, đi qua nhà của một số bé và quay trở về công ty XYZ. Sau đấy xe tải phải dừng lại, không được di chuyển tiếp nữa. (Nói cách khác, đường đi của xe tải sẽ tạo 1 đường gấp khúc khép kín, đi qua công ty XYZ đúng 2 lần: lúc xuất phát và lúc kết thúc. Chú ý rằng nếu xe tải không di chuyển có thể hiểu là đường gấp khúc độ dài bằng 0).
+	\item Chú ý rằng vì xe chỉ được di chuyển không quá 1 vòng, nên tất cả các món quà chở đến nhà các bé phải được chất lên xe tại thời điểm xe xuất phát.
+\end{itemize}
+
+Là người đứng đầu công ty XYZ, bạn cần phải tìm hành trình của các xe tải sao cho tổng độ dài tất cả V xe tải phải di chuyển là nhỏ nhất, và không có xe tải nào phải vận chuyển quá C khối lượng hàng hóa. Biết rằng các xe di chuyển từ điểm (x$_1$, y$_1$) đến điểm (x$_2$, y$_2$) theo con đường ngắn nhất với độ dài được tính theo \href{http://vi.wikipedia.org/wiki/Kho%E1%BA%A3ng_c%C3%A1ch_Euclid}{khoảng cách Euclid} giữa 2 điểm.
+
+\subsubsection{Input}
+
+Dòng 1: 3 số nguyên dương N, V, C
+
+N dòng tiếp theo, dòng thứ i (i đánh số từ 0 đến N-1) chứa số nguyên di và 2 số thực x$_i$, y$_i$:
+\begin{itemize}
+	\item Với i = 0, d$_i$ = 0, (x$_i$, y$_i$) là tọa độ công ty XYZ
+	\item Với i $>$ 0, d$_i$ là khối lượng món quà cần chuyển đến nhà bé thứ i, (x$_i$, y$_i$) là tọa độ nhà bé thứ i.
+\end{itemize}
+
+\subsubsection{Output}
+
+Gồm đúng V dòng, dòng thứ i gồm các số nguyên - thể hiện trình tự nhà các bé mà xe tải đi qua. Điểm đầu tiên và điểm cuối cùng của hành trình phải bằng 0. Các điểm còn lại phải lớn hơn 0.
+
+\subsubsection{Giới hạn:}
+\begin{itemize}
+	\item N ≤ 500
+	\item V ≤ 50
+	\item d$_i$, C ≤ 40,000
+	\item |x$_i$|, |y$_i$| ≤ 10,000
+\end{itemize}
+
+\subsubsection{Cách tính điểm:}
+\begin{itemize}
+	\item Nếu một xe của bạn chở quá C kg hàng hóa, bạn nhận được 0 điểm.
+	\item Nếu có một điểm không được chở hàng đến, bạn nhận được 0 điểm.
+	\item Trong trường hợp còn lại                                 
+
+ 
+\begin{itemize}
+	\item Đặt X = tổng độ dài các xe bạn di chuyển
+	\item Đặt Y = độ dài mà ban tổ chức đưa ra.
+	\item Điểm của bạn nhận được bằng min(Y/X, 3).
+\end{itemize}
+	\item Vì bài này thuộc dạng challenge, nên điểm chung cuộc của bạn trong kỳ thi VM14 sẽ được tính theo công thức:                             
+
+
+\begin{itemize}
+item Giả sử điểm của bạn đứng thứ i (nghĩa là có i-1 người điểm cao hơn bạn).
+	\item Điểm của bạn nhận được là  
+\\
+\includegraphics{../../../content/voj:VMSUDOKU3.png}
+\\ với log là log cơ số e.
+\end{itemize}
+	\item Bài này gồm có đúng 64 test. Trong quá trình thi, bạn được chấm với 16 test.                  
+
+ 
+\begin{itemize}
+\end{itemize}
+\end{itemize}
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+
+5 4 10\end{verbatim}
+\begin{verbatim}
+0 0.0 0.0\end{verbatim}
+\begin{verbatim}
+3 0.0 10.0\end{verbatim}
+\begin{verbatim}
+3 -10.0 10.0\end{verbatim}
+\begin{verbatim}
+3 0.0 -10.0\end{verbatim}
+\begin{verbatim}
+3 10.0 -10.0
+
+
+
+\textbf{Output:}
+
+0 1 2 3 0\end{verbatim}
+\begin{verbatim}
+0 4 0\end{verbatim}
+\begin{verbatim}
+0 0\end{verbatim}
+\begin{verbatim}
+0 0\end{verbatim}
+
+Với output này, tổng độ dài các xe của bạn di chuyển là 80.6 (X = 80.6). Giả sử độ dài mà ban tổ chức đưa ra cũng là 80.6 (Y = 80.6), thì điểm bạn nhận được cho test này là 1

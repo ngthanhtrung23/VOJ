@@ -1,0 +1,41 @@
+
+\begin{verbatim}
+
+
+Trung tâm XYZ có nhiệm vụ khảo sát mức độ phóng xạ của một khu vực nhiễm xạ gồm n địa điểm. Các địa điểm  nằm trên một đường thẳng,  được đánh số từ 1 đến n từ trái qua phải. Trung tâm sử dụng một robot  để đo mức độ nhiễm xạ. Robot  có khả năng nhận  hai  loại  lệnh  để  di chuyển:  Loại  1,  di chuyển sang phải a bước;  Loại 2,  di chuyển sang trái  b bước. Cụ thể, nếu  robot  đang đứng ở địa điểm  v ,  robot  có thể thực hiện lệnh  loại 1  để v di chuyển đến địa điểm  v+a    nếu  v+a$<$=n , hoặc  robot  có thể thực hiện lệnh  loại 2  để di chuyển đến địa điểm  v-b nếu v-b$>$=1 . Khi  robot  dừng lại  tại một địa điểm,  robot  có  thể  bật máy đo mức độ nhiễm xạ và gửi kết quả  đo được  về trung tâm.  Tuy nhiên, do pin  của  robot  có hạn,  robot  chỉ có thể thực hiện được không quá   k  lệnh di chuyển.  Ban đầu robot được đặt ở địa điểm 1.
+
+Ví dụ, với  n=6, a=2,b=3, và k=3 có thể sử dụng  robot  để đo được  mức độ nhiễm xạ tại các địa điểm 1, 2, 3, 5 (bao gồm cả địa điểm ban  đầu của nó). Như vậy, robot  không thể đo được mức độ nhi m xạ tại các địa điểm 4 và  6.
+
+Yêu  cầu:  Cho  n,a,b và  k ,  hãy  đếm  số  địa  điểm  mà  robot  không  thể  đo  được  mức  độ nhiễm xạ.
+
+Dữ liệu: Vào từ file văn bản ROBOT.INP:
+
+  Dòng đầu ghi số   T (T$<$=10) là số bộ dữ liệu có trong file;
+
+   T  dòng sau, mỗi dòng chứa  bốn số nguyên  dương  n,a,b,k       (1$<$=n,a,b$<$=10^9, 1$<$=k$<$=1000     ).
+
+Kết quả:  Đưa ra file văn bản  ROBOT.OUT  gồm T    dòng, mỗi dòng là số lượng  địa điểm mà robot không thể đo được mức độ nhi m xạ của bộ dữ liệu vào tương ứng.
+
+ 
+
+ROBOT.INP 
+
+4
+
+6 2 3 3
+
+100 99 1 100
+
+361273679 232 4324 1000
+
+100 99 98 100
+
+ROBOT.OUT
+
+2
+
+0
+
+361247691
+
+97\end{verbatim}

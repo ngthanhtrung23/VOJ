@@ -1,0 +1,56 @@
+
+
+Hẳn là các bạn không còn xa lạ với nhân vật Mario, anh chàng thợ sửa ống nước nổi tiếng ở vương quốc những cây nấm (Mushroom Kingdom). Một ngày, công chúa Peach quyết định chiêu đãi Mario một bữa buffet nấm thịnh soạn, tuy nhiên để làm cho bữa ăn thú vị hơn nàng đã quyết định biến nó thành một trò chơi dành cho Mario. Trò chơi diễn ra trong \textbf{N} lượt, mỗi lượt một cây nấm sẽ xuất hiện tại một vị trí nào đó trên trục tọa độ, có một chỉ số cân nặng và cung cấp một lượng năng lượng nhất định cho Mario. Mục tiêu của Mario là tìm cách di chuyển để ăn nấm sao cho đạt được năng lượng lớn nhất.
+
+Mario hiện đang đứng ở gốc tọa độ 0 trên trục tọa độ, có cân nặng bằng 0, năng lượng bằng 0 và có thể di chuyển sang trái hoặc sang phải. Có \textbf{N} lượt chơi, mỗi lượt sẽ có một cây nấm xuất hiện. Ở lượt \textbf{i}, cây nấm sẽ xuất hiện ở tọa độ \textbf{x$_i$}, có chỉ số cân nặng là \textbf{w$_i$} và chỉ số năng lượng là \textbf{e$_i$}. Mario có 2 lựa chọn: một là đứng im tại chỗ, cân nặng và năng lượng sẽ không đổi, cây nấm \textbf{i} sẽ biến mất và tiếp tục với lượt \textbf{i + 1}; hai là Mario sẽ di chuyển đến vị trí \textbf{x$_i$} để ăn cây nấm \textbf{i}, qua đó cân nặng của Mario sẽ trở thành \textbf{w$_i$} còn năng lượng được cộng thêm \textbf{e$_i$}. Khi di chuyển, với mỗi bước đi Mario sẽ bị trừ đi một lượng năng lượng bằng với cân nặng hiện tại của mình, nói cách khác nếu Mario di chuyển từ cây nấm thứ \textbf{j} sang cây nấm thứ \textbf{i} thì năng lượng sẽ bị trừ đi \textbf{w * |x$_i$ - x[j]|} (với \textbf{w} là cân nặng hiện tại). Mario không thể di chuyển đến cây nấm thứ \textbf{i} nếu việc di chuyển làm cho năng lượng bị âm (tính đến trước khi ăn cây nấm thứ \textbf{i}).
+
+Bạn hãy giúp Mario tìm một chiến thuật chơi để nhận được nhiều năng lượng nhất nhé.
+
+\subsubsection{Input}
+
+Dòng đầu tiên gồm số nguyên \textbf{N}, số lượt chơi.
+
+\textbf{N} dòng tiếp theo, mỗi dòng gồm 3 số nguyên \textbf{x$_i$}, \textbf{w$_i$}, \textbf{e$_i$}.
+
+\subsubsection{Output}
+
+In ra một số nguyên duy nhất là mức năng lượng lớn nhất có thể đạt được.
+
+\subsubsection{Giới hạn}
+
+Trong tất cả các test, -10$^9$ ≤ \textbf{x$_i$} ≤ 10$^9$, 0 ≤ \textbf{w$_i$} ≤ 1000, 0 ≤ \textbf{e$_i$} ≤ 10$^12$
+
+Subtask 1 (15\%): \textbf{N} ≤ 20
+
+Subtask 2 (15\%): \textbf{N} ≤ 1000
+
+Subtask 3 (30\%): \textbf{N} ≤ 100000, tất cả các giá trị \textbf{w$_i$} đều bằng nhau
+
+Subtask 4 (40\%): \textbf{N} ≤ 100000
+
+\subsubsection{Ví dụ}
+\begin{verbatim}
+\textbf{Input:}
+5
+-5 1 4
+4 4 10
+-3 0 0
+-4 4 6
+-3 5 10
+\end{verbatim}
+\begin{verbatim}
+\textbf{Output:}
+15
+\end{verbatim}
+
+\subsubsection{Giải thích}
+
+Lượt 1: Di chuyển từ 0 đến -5 để ăn nấm, năng lượng bằng 0 - 0 * 5 + 4 = 4.
+
+Lượt 2: Bỏ qua.
+
+Lượt 3: Bỏ qua.
+
+Lượt 4: Di chuyển từ -5 đến -4 để ăn nấm, năng lượng bằng 4 - 1 * 1 + 6 = 9.
+
+Lượt 5: Di chuyển từ -4 đến -3 để ăn nấm, năng lượng bằng 9 - 4 * 1 + 10 = 15.

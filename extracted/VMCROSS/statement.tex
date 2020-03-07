@@ -1,0 +1,25 @@
+Trò chơi ô chữ là một trong những trò chơi lâu đời nhất được con người phát minh ra. Ở trò chơi này, bạn được cho một bảng chữ nhật kích thước N*M (N hàng M cột), được chia thành cách hình vuông nhỏ kích thước 1*1. Ô ở hàng u, cột v được ký hiệu là ô (u, v). Có một số ô trống tạo thành các từ hàng ngang và hàng dọc. Bạn được cho một số gợi ý, và cần phải điền các chữ cái vào bảng dựa theo những gợi ý được cho.
+
+
+\includegraphics{http://upload.wikimedia.org/wikipedia/commons/thumb/8/86/CrosswordUK.svg/1092px-CrosswordUK.svg.png}
+
+Ở trong hình minh họa, bạn có một bảng kích thước 15*15 (M = N = 15). Bạn cần điền những chữ cái vào các ô màu trắng. Chú ý rằng mỗi ô trắng thuộc ít nhất một từ hàng ngang hoặc một từ hàng dọc. Mỗi gợi ý có dạng:
+\begin{itemize}
+	\item Từ hàng ngang bắt đầu từ ô đánh số 1 là tên 1 quốc gia
+	\item Từ hàng dọc bắt đầu từ ô đánh số 2 là tên một thành phố
+	\item ...
+\end{itemize}
+
+Một vài chú ý:
+\begin{itemize}
+	\item Ô 23 là điểm bắt đầu của 2 từ: một từ nằm dọc, 1 từ nằm ngang. Trong bài này, một ô có thể là điểm bắt đầu của 2 từ (2 từ đó phải có hướng khác nhau).
+	\item Từ ngắn nhất bắt đầu từ ô 1, và có độ dài 4. Trong bài này, từ ngắn nhất hợp lệ có thể xuất hiện trên bảng cũng có độ dài là 4.
+\end{itemize}
+
+Trong bài toán này, nhiệm vụ của bạn là tạo ra một bảng ô chữ. Bạn được cho một bảng trống kích thước N*M và một danh sách gồm K từ (các từ đôi một khác nhau). Nhiệm vụ của bạn là điền các từ này lên bảng sao cho:
+\begin{itemize}
+	\item Mỗi từ được điền vào một dãy các ô liên tiếp theo chiều ngang từ trái sang phải hoặc chiều dọc từ trên xuống dưới.
+	\item Các từ có cùng hướng với nhau và nằm trên cùng một hàng (hoặc cùng một cột) không được có ô chung hay chạm nhau (2 ô được gọi là chạm nhau khi có chung một cạnh).
+	\item Nếu một từ hàng ngang và một từ hàng dọc giao nhau, thì ô giao nhau phải có cùng chữ cái.
+	\item Mỗi từ trong danh sách chỉ được điền đúng một lần lên bảng.
+\end{itemize}

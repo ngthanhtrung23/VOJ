@@ -1,0 +1,61 @@
+\begin{itemize}
+	\item N ≤ 500
+	\item V ≤ 50
+	\item d$_i$, C ≤ 40,000
+	\item |x$_i$|, |y$_i$| ≤ 10,000
+\end{itemize}
+\begin{itemize}
+	\item Nếu một xe của bạn chở quá C kg hàng hóa, bạn nhận được 0 điểm.
+	\item Nếu có một điểm không được chở hàng đến, bạn nhận được 0 điểm.
+	\item Trong trường hợp còn lại                                 
+
+ 
+\begin{itemize}
+	\item Đặt X = tổng độ dài các xe bạn di chuyển
+	\item Đặt Y = độ dài mà ban tổ chức đưa ra.
+	\item Điểm của bạn nhận được bằng min(Y/X, 3).
+\end{itemize}
+	\item Vì bài này thuộc dạng challenge, nên điểm chung cuộc của bạn trong kỳ thi VM14 sẽ được tính theo công thức:                             
+
+
+\begin{itemize}
+item Giả sử điểm của bạn đứng thứ i (nghĩa là có i-1 người điểm cao hơn bạn).
+	\item Điểm của bạn nhận được là  
+\\
+\includegraphics{../../../content/voj:VMSUDOKU3.png}
+\\ với log là log cơ số e.
+\end{itemize}
+	\item Bài này gồm có đúng 64 test. Trong quá trình thi, bạn được chấm với 16 test.                  
+
+ 
+\begin{itemize}
+\end{itemize}
+\end{itemize}
+\begin{verbatim}
+\textbf{Input:}
+
+5 4 10\end{verbatim}
+\begin{verbatim}
+0 0.0 0.0\end{verbatim}
+\begin{verbatim}
+3 0.0 10.0\end{verbatim}
+\begin{verbatim}
+3 -10.0 10.0\end{verbatim}
+\begin{verbatim}
+3 0.0 -10.0\end{verbatim}
+\begin{verbatim}
+3 10.0 -10.0
+
+
+
+\textbf{Output:}
+
+0 1 2 3 0\end{verbatim}
+\begin{verbatim}
+0 4 0\end{verbatim}
+\begin{verbatim}
+0 0\end{verbatim}
+\begin{verbatim}
+0 0\end{verbatim}
+
+Với output này, tổng độ dài các xe của bạn di chuyển là 80.6 (X = 80.6). Giả sử độ dài mà ban tổ chức đưa ra cũng là 80.6 (Y = 80.6), thì điểm bạn nhận được cho test này là 1

@@ -1,0 +1,53 @@
+
+
+Để chuẩn bị cho kì thi VOI 2017, hai đội tuyển Hải Phòng và Hải Dương dắt tay nhau ra Hà Nội học Giáo Sư.
+
+Saker vốn từ trước đến nay bị Lũ bạn sống lỗi ghét bỏ, nên khi cả đội ra Hà Nội, không ai cho Saker ở cùng phòng. Bí quá, Saker chẳng còn cách nào ngoài cách cầu xin hai bạn nữ đội Hải Phòng cho ở nhờ.
+
+Để việc "xin xỏ tỏ tình" dễ bề thành công, trước khi đi, Saker hái một bó gồm N bông hoa Ngọc Lan. N bông hoa này có độ hấp dẫn là A$_1$, A$_2$, ..., A$_N$. Saker cần phải chia bó hoa trên làm hai phần tặng cho hai bạn nữ.
+
+Độ hấp dẫn của một phần được tính bằng ước số chung lớn nhất của độ hấp dẫn các bông hoa trong phần đó. Saker muốn chia số hoa hiện tại sao cho độ hấp dẫn của phần hoa kém hấp dẫn hơn là lớn nhất có thể. Tất nhiên, nếu Saker dành toàn bộ số hoa chỉ cho một người, chiến tranh thế giới sẽ nổ ra và hắn sẽ bị đuổi khỏi phòng đầu tiên.
+
+Hãy giúp Saker thực hiện trót lọt ý đồ ám muội này.
+
+\subsubsection{Input}
+
+Dòng đầu tiên chứa một số nguyên T, là số bộ dữ liệu
+
+Các dòng tiếp theo lần lượt mô tả các bộ dữ liệu. Mỗi bộ dữ liệu được mô tả trên hai dòng: Dòng đầu tiên chứa số N là số bông hoa, dòng thứ hai chứa N số nguyên dương A$_1$, A$_2$, ..., A$_N$ lần lượt là độ hấp dẫn của các bông hoa.
+
+\subsubsection{Output}
+
+Với mỗi bộ dữ liệu, in ra trên một dòng một số nguyên duy nhất là độ hấp dẫn tối đa của phần hoa kém hấp dẫn hơn.
+
+\subsubsection{Giới hạn}
+
+- Trong 25\% số test đầu tiên, T $<$= 20, 2 $<$= N $<$= 15 và A$_i$ $<$= 10$^9$.
+
+- Trong 25\% số test tiếp theo, T $<$= 20, 2 $<$= N $<$= 100 và A$_i$ $<$= 270.
+
+- Trong 50\% số test còn lại, 2 $<$= N $<$= 50000, A$_i$ $<$= 10$^9$ và tổng giá trị của N trong các test của môt file input không quá 200000.
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+
+
+5 
+4 9 8 6 20 
+10 
+2 2 2 3 3 3 3 3 3 3 
+14 
+\\44120320 584722489 449786530 269871918 944551713 764637101 1 719658448 714210560 293326080 629701142 502234240 207895680 713251840
+
+
+
+extbf{Output:}
+
+3
+\\2
+\\1 \end{verbatim}
+
+\subsubsection{Giải thích}
+
+Trong test thứ nhất, cách chia tối ưu là ta chia thanh hai tập A = \{4, 8, 20\} và B =\{9, 6\}. Khi đó, GCD(A) = 4 và GCD(B) = 3. min(GCD(A), GCD(B)) = 3 là đáp số cần tìm.

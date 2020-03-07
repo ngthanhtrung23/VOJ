@@ -1,0 +1,107 @@
+
+
+
+\includegraphics{http://a5.sphotos.ak.fbcdn.net/hphotos-ak-snc6/247200_10150192401168029_590918028_7014809_137233_n.jpg}
+
+Hè đã về!! ConanKudo đã tự hứa sẽ làm một việc gì đó có ích trong hè này, và bây giờ là lúc anh bắt đầu.
+
+ConanKudo đi thuyền tới một hòn đảo giấu vàng. Sau nhiều ngày tìm kiếm, anh phát hiện ra một chiếc hòm đã bị khóa. Hiển nhiên ConanKudo không thể phá khóa vì hệ thống kích nổ sẽ hoạt động, và cái mà anh nhận được sẽ chỉ là một đống tro. Do đó, việc tìm ra chìa khóa để mở chiếc hòm là rất cần thiết.
+
+Chìa khóa này là một bảng kích thước MxN chỉ chứa các số 0 hoặc 1 (0 $<$ \textbf{M}, \textbf{N} ≤ 30). Các hàng được đánh số từ 1 đến \textbf{M}, và các cột được đánh số từ 1 đến \textbf{N}. Từ những người đến trước (và thất bại trong việc mở khóa), ConanKudo đã thu thập được \textbf{M}+\textbf{N} thông tin. Mỗi thông tin tương ứng với một hàng hoặc một cột của bảng, và có 1 trong 2 dạng:
+
+Dạng 1: K$_i$ A(i,1) A(i,2) ... A(i,K$_i$), có ý nghĩa là: Trên hàng i, có K$_i$ đoạn được tạo bởi 'dãy dài nhất các số 1 liên tiếp', và độ dài các đoạn lần lượt (từ trái sang phải) là A(i,1) A(i,2) ... A(i,K$_i$). ('Dãy dài nhất các số 1 liên tiếp' là dãy gồm các số 1 liên tiếp và không là một dãy con của dãy các số 1 liên tiếp khác).
+
+Dạng 2: K$_j$ B(j,1) B(j,2) ... B(j,K$_j$), có ý nghĩa là: Trên cột j, có K$_j$ đoạn được tạo bởi 'dãy dài nhất các số 1 liên tiếp', và độ dài các đoạn lần lượt (từ trên xuống dưới) là B(j,1) B(j,2) ... B(j,K$_j$).
+
+Có \textbf{M} thông tin dạng 1 tương ứng với \textbf{M} hàng, và \textbf{N} thông tin dạng 2 tương ứng với \textbf{N} cột.
+
+Cho kích thước bảng mã khóa, và các thông tin, hãy giúp ConanKudo xác định mã khóa.
+
+Trong ít nhất 50\% test, bài toán chỉ có 1 nghiệm duy nhất.
+
+\subsubsection{Input}
+\begin{itemize}
+	\item Dòng 1: 2 số nguyên \textbf{M}, \textbf{N} cách nhau bởi dấu cách.
+	\item \textbf{M} dòng tiếp, dòng thứ i là K$_i$ A(i,1) A(i,2) ... A(i,K$_i$) cho biết thông tin ứng với hàng i.
+	\item \textbf{N} dòng tiếp, dòng thứ j là K$_j$ B(j,1) B(j,2) ... B(j,K$_j$) cho biết thông tin ứng với cột j.
+\end{itemize}
+
+Chú ý:
+
+- Các dòng trắng thừa có thể xuất hiện ở bất kỳ vị trí nào trong file.
+
+- Nếu một hàng không có số 1 nào, thì ràng buộc tương ứng sẽ gồm duy nhất 1 số 0.
+
+\subsubsection{Output}
+\begin{itemize}
+	\item Gồm \textbf{M} dòng, mỗi dòng \textbf{N} ký tự 0 hoặc 1, thể hiện mã khóa.
+\end{itemize}
+
+Điểm của bạn được cho như sau:
+
+Gọi D là số hàng và cột thỏa mãn điều kiện. Điểm lớn nhất có thể đạt được của một test là 2.5 điểm.
+
+- Nếu D $<$= max(\textbf{M},\textbf{N}), bạn được 0 điểm.
+
+- Nếu D = \textbf{M} + \textbf{N} bạn được 2.5 điểm.
+
+- Trường hợp còn lại, bạn được
+
+
+\includegraphics{http://i259.photobucket.com/albums/hh288/phongtinptnk0710/makhoa2-diem.png}
+
+\subsubsection{Example}
+\begin{tabular}\hline 
+
+\begin{verbatim}
+\textbf{Input}\end{verbatim} & 
+\begin{verbatim}
+\textbf{Output}\end{verbatim} &    
+\hline
+
+
+10 10
+ 3 1 2 1
+ 3 1 3 2
+ 4 1 2 1 1
+ 4 1 1 1 1
+ 3 1 1 1
+
+ 2 1 1
+ 2 2 2
+ 2 1 1
+ 2 1 1
+ 2 1 1
+
+ 1 3
+ 1 1
+ 2 1 1
+ 2 1 5
+ 1 3
+
+ 2 5 1
+ 2 1 5
+ 1 1
+ 1 1
+ 1 5 & 
+
+1000110001
+ 1000111011
+ 1000110101
+ 0101010001
+ 0010010001
+ 0001001000
+ 0011011000
+ 0001001000
+ 0001001000
+ 0001001000 & 
+\includegraphics{../../../content/voj:MAKHOA2.png}  
+\hline
+
+\end{tabular}
+
+ 
+\begin{verbatim}
+Với output như trên, bạn sẽ được 2.5 điểm cho test này.\end{verbatim}
+\begin{verbatim}
+Trong lúc thi, bài của bạn sẽ được chấm với 50% số test của bài. Điểm tối đa bạn có thể đạt được là 50.\end{verbatim}

@@ -1,0 +1,64 @@
+
+
+Ngày xửa ngày xưa, có một tên sợ vợ tên là Pirate. Hắn sợ vợ nhất làng nhưng lại muốn ra oai trước mọi người. Thế là hắn bèn xây cho nhà mình một cái giếng. Mỗi lần vợ bị rượt chạy trối chết, hắn đều nhằm thẳng cái giếng rồi chạy vòng vòng quanh nó. Người ngoài nhìn vào thấy hai vợ chồng đang chạy quanh cái giếng, chẳng biết ai đang đuổi đánh ai cả, cứ tưởng tên này đang “dạy vợ”. Muốn mình càng nổi tiếng hơn nữa, hắn quyết định là cái giếng của nhà mình phải thật là đặc biệt. Vậy là hắn bắt tay vào thiết kế...
+
+Giếng nhà Pirate là một khối hình trụ tròn rỗng. Giếng gồm nhiều vòng, vòng này chồng lên vòng kia. Mỗi vòng được xây bằng các viên đá ong bằng nhau. Viên đá ở vòng trên phải được đặt thẳng hàng với viên đá ở vòng dưới làm cho khi nhìn ngang từ bên ngoài, cái giếng trong giống như một bảng hình chữ nhật gồm các ô vuông. 
+
+Mỗi viên đá ong có thể được sơn mặt ngoài bằng một trong hai màu: trắng hoặc đen. Sơn giếng xong rồi, Pirate bèn khắc lên đó một câu đố nhằm lưu danh thiên cổ. Câu đố như sau: “Có bao nhiêu cách sơn giếng khác nhau? Trong đó, có bao nhiêu cách để nhìn từ ngoài vào không thấy bất cứ hình vuông 2x2 nào được sơn hoàn toàn bằng một màu?”.
+
+Hai cách sơn gọi là khác nhau nếu không thể "xoay" một số lần để cách này trùng với cách kia. Nếu hình dung cái giếng như một bảng hai chiều, phép "xoay" ở đây là việc dời cột bên trái nhất (cột 1) sang phía ngoài cùng bên phải.
+
+Cái giếng đúng là tầm thường nhưng câu đố đúng là bất hủ đấy, các bạn thử giải xem!
+
+\subsubsection{Input}
+\begin{itemize}
+	\item Dòng thứ nhất là số nguyên T - số bộ test.
+	\item T dòng tiếp theo: mỗi dòng gồm 3 số nguyên: K - loại câu hỏi; M - số vòng của giếng; và N - số viên đá trên mỗi vòng.   
++ Nếu K = 1, bạn phải trả lời câu hỏi có bao nhiêu cách sơn khác nhau.  
+ + Nếu K = 2, bạn phải trả lời câu hỏi trong tất cả các cách sơn khác nhau, có bao nhiêu cách mà không có hình vuông 2x2 nào được sơn bằng một màu.  
+\end{itemize}
+
+\subsubsection{Output}
+\begin{itemize}
+	\item Gồm T dòng: mỗi dòng là số cách sơn giếng ở test tương ứng. 
+\end{itemize}
+
+\subsubsection{Giới hạn}
+\begin{itemize}
+	\item 1 ≤ T ≤ 15.
+	\item Với K = 1, 1 ≤ M ≤ 10$^3$, 1 ≤ N ≤ 20. 
+	\item Với K = 2, 1 ≤ N ≤ 8, 1 ≤ M * N ≤ 64.
+	\item 40\% số test có 1 ≤ M * N ≤ 20.
+\end{itemize}
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}\end{verbatim}
+\begin{verbatim}
+1
+2 2 2\end{verbatim}
+\begin{verbatim}
+\textbf{Output:}\end{verbatim}
+\begin{verbatim}
+8\end{verbatim}
+
+Giải thích: ta có 8 cách sơn như sau:
+
+
+\includegraphics{http://i797.photobucket.com/albums/yy253/khanhptnk/well-2.jpg}
+
+ 
+
+Lưu ý rằng các cách sơn như sau được xem là như nhau:
+
+(BW, WW) = (WB, WW)
+
+(WW, BW) = (WW, WB)
+
+(BW, BW) = (WB, WB)
+
+(BW, WB) = (WB, BW)
+
+(BB, BW) = (BB, WB)
+
+(BW, BB) = (WB, BB)

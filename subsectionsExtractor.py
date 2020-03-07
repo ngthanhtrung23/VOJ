@@ -8,7 +8,7 @@ filenames = os.listdir(statementPath)
 c = defaultdict(list)
 
 for name in filenames:
-    content = open(statementPath + '/' + name).read()
+    content = open(statementPath + '/' + name, encoding='utf-8').read()
 
     c[content.count('subsubsection')].append(name)
 
@@ -31,8 +31,8 @@ for k in c.keys():
     open(subsectionInfoPath, 'w').close()
 
     for name in c[k]:
-        content = open(statementPath + '/' + name).read()
+        content = open(statementPath + '/' + name, encoding='utf-8').read()
 
         matches = list(map(lambda text: text.strip(), re.findall(pattern, content)))
 
-        open(subsectionInfoPath, 'a').write(name + ',' + ','.join(matches) + '\n')
+        open(subsectionInfoPath, 'a', encoding='utf-8').write(name + ',' + ','.join(matches) + '\n')

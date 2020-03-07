@@ -1,0 +1,26 @@
+
+
+Thiếu niên thì thích chụp ảnh và xử lý ảnh - Nam cũng vậy. Nhưng Nam học tin học nên
+cô giáo chỉ cho nam xử lý ảnh đen trắng hai màu thôi (tại cô thích bit). Cô giao cho Nam
+một bảng hình chữ nhật kích thước N x M chỉ gồm hai số 0 và 1, mỗi ô của bảng là 1
+pixel của ảnh. 0 ứng với màu đen và 1 ứng với màu trắng, bảng có ít nhất một ô màu
+trắng. Khoảng cách giữa hai pixel ở ô (i,j) và ô (p,q) là |i-p| + |j-q|. Cô muốn Nam cho cô
+biết, với mỗi ô màu đen, khoảng cách từ nó đến ô màu trắng gần nhất là bao nhiêu.
+Giới hạn : 1 ≤ N, M ≤ 200.
+Dữ liệu vào ghi trong file BITMAP.INP, dòng đầu ghi hai số N và M. N dòng tiếp theo,
+mỗi dòng ghi M số chỉ nhận hai giá trị 0 và 1.
+Dữ liệu ra ghi trong file BITMAP.OUT gồm N dòng, mỗi dòng M số. Mỗi số ở hàng i cột
+j là khoảng cách từ đó đến ô trắng gần nhất.
+Ví dụ:
+
+BITMAP.INP 
+3 4
+0 0 0 1
+0 0 1 1
+0 1 1 0
+
+BITMAP.OUT
+
+3 2 1 0
+2 1 0 0
+1 0 0 1

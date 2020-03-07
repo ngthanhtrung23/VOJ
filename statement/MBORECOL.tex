@@ -1,0 +1,34 @@
+
+\begin{verbatim}
+Để  kiểm tra hiệu quả  của sản phẩm mới X-Probiotics và máy thu hoạch MHarvest, kỹ  thuật viên phòng thí nghiệm (KTV) quyết định thử nghiệm trên một luống rau cải trong m ngày. Luống rau chỉcó 1 hàng gồm n cây và các cây trong hàng cao thấp không đều nhau. X-Probiotics là một loại chế  phẩm sinh học có tác  dụng  thúc đẩy sự  tăng trưởng của rau cải,  buổi sáng, khi được bón vào cây ở vị trí p thì đén trưa ngày hôm đó các cây nằm trong bán kính r kể từp (cây ở vị trí v thỏa mãn |p-v| ≤ r) đều tăng trưởng chiều cao thêm 1 đơn vị.MHarvest là loại máy thu hoạch, khi chỉ  định vị  trí làm việc là p thì các cây trong bán kính  r  kể  từ  p  đều sẽ  được thu hoạch và máy sẽ  tự  động dọn đất để  chuẩn bị  cho lần trồng kế tiếp.Vào mỗi buổi sáng, KTV sẽ chọn một cây có chiều cao thấp nhất trong dãy để  bón vào đó một lượng X-Probiotics. Nếu có nhiều cây cùng chiều cao thấp nhất, cây đầu tiên gặp được kể từ đầu hàng sẽ được chọn.Cuối buổi chiều cùng ngày, KTV thu hoạch bằng cách chọn cây có chiều cao cao nhất trong hàng và dùng MHarvest. Nếu có nhiều cây cùng chiều cao cao nhất, cây đầu tiên gặp được kể từ đầu hàng sẽ được chọn.Ví dụ: với bán kính r  = 1, luống rau có 5 cây cải, độ  cao của các cây cải lần lượt là 3, 5, 4, 7, 9. Đến sáng sớm ngày thứ 2 luống rau chỉ còn lại 3 cây với độ cao lần lượt là 4, 6, 4 (xem hình).Yêu cầu: xác định chiều cao của cây cải cao nhất trong luống vào lúc sáng sớm ngày thứ m+1.Dữ liệu được cho trong tập tin BORECOLE.INP gồm:-  Dòng thứ nhất ghi 3 số nguyên n, r, m (0 $<$ m ≤ 103, 0 ≤ r ≤ 103, 0$<$ n ≤ 106)-  Các dòng tiếp theo ghi n số nguyên dương lần lượt là chiều cao các cây cải trong luống được liệt kê theo thứ tự từ đầu hàng đến cuối hàng, giá trị mỗi số không vượt quá 3x104.Kết quả ghi vào tập tin BORECOLE.OUT gồm 1 số nguyên là chiều cao của cây cải cao nhất trong luống vào lúc sáng sớm ngày thứ m+1. Trường hợp không còn cây nào thì trong luống thì đưa ra số0.Các tập tin dữ liệu mẫu:BORECOLE.INP    BORECOLE.OUT5 1 13 5 4 7 9 6
+\begin{verbatim}
+Để  kiểm tra hiệu quả  của sản phẩm mới X-Probiotics và máy thu hoạch MHarvest, kỹ  thuật viên phòng thí nghiệm (KTV) quyết định thử nghiệm trên một luống rau cải trong m ngày. Luống rau chỉ có 1 hàng gồm n cây và các cây trong hàng cao thấp không đều nhau. \end{verbatim}
+\begin{verbatim}
+X-Probiotics là một loại chế  phẩm sinh học có tác  dụng  thúc đẩy sự  tăng trưởng của rau cải,  buổi sáng, khi được bón vào cây ở vị trí p thì đén trưa ngày hôm đó các cây nằm trong bán kính r kể từ p (cây ở vị trí v thỏa mãn |p-v| ≤ r) đều tăng trưởng chiều cao thêm 1 đơn vị.\end{verbatim}
+\begin{verbatim}
+MHarvest là loại máy thu hoạch, khi chỉ  định vị  trí làm việc là p thì các cây trong bán kính  r  kể  từ  p  đều sẽ  được thu hoạch và máy sẽ  tự  động dọn đất để  chuẩn bị  cho lần trồng kế tiếp. Vào mỗi buổi sáng, KTV sẽ chọn một cây có chiều cao thấp nhất trong dãy để  bón vào đó một lượng X-Probiotics. Nếu có nhiều cây cùng chiều cao thấp nhất, cây đầu tiên gặp được kể từ đầu hàng sẽ được chọn. Cuối buổi chiều cùng ngày, KTV thu hoạch bằng cách chọn cây có chiều cao cao nhất trong hàng và dùng MHarvest. Nếu có nhiều cây cùng chiều cao cao nhất, cây đầu tiên gặp được kể từ đầu hàng sẽ được chọn.\end{verbatim}
+\includegraphics{../../../../../content/simes:MBORECOL.jpg}
+\begin{verbatim}
+Ví dụ: với bán kính r  = 1, luống rau có 5 cây cải, độ  cao của các cây cải lần lượt là 3, 5, 4, 7, 9. Đến sáng sớm ngày thứ 2 luống rau chỉ còn lại 3 cây với độ cao lần lượt là 4, 6, 4 (xem hình). \end{verbatim}
+\begin{verbatim}
+Yêu cầu: xác định chiều cao của cây cải cao nhất trong luống vào lúc sáng sớm ngày thứ m+1.\end{verbatim}
+\begin{verbatim}
+Dữ liệu được cho trong tập tin BORECOLE.INP gồm:\end{verbatim}
+\begin{verbatim}
+-  Dòng thứ nhất ghi 3 số nguyên n, r, m (0 $<$ m ≤ 10^3, 0 ≤ r ≤ 10^3, 0$<$ n ≤ 10^6)\end{verbatim}
+\begin{verbatim}
+-  Các dòng tiếp theo ghi n số nguyên dương lần lượt là chiều cao các cây cải trong luống được liệt kê theo thứ tự từ đầu hàng đến cuối hàng, giá trị mỗi số không vượt quá 3x10^4.\end{verbatim}
+\begin{verbatim}
+Kết quả ghi vào tập tin BORECOLE.OUT gồm 1 số nguyên là chiều cao của cây cải cao nhất trong luống vào lúc sáng sớm ngày thứ m+1. Trường hợp không còn cây nào thì trong luống thì đưa ra số 0.\end{verbatim}
+\begin{verbatim}
+Các tập tin dữ liệu mẫu:\end{verbatim}
+\begin{verbatim}
+BORECOLE.INP    \end{verbatim}
+\begin{verbatim}
+5 1 1\end{verbatim}
+\begin{verbatim}
+3 5 4 7 9 \end{verbatim}
+\begin{verbatim}
+BORECOLE.OUT\end{verbatim}
+\begin{verbatim}
+6\end{verbatim}\end{verbatim}

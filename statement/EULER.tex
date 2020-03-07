@@ -1,0 +1,37 @@
+
+
+Một đường đi trong đồ thị G = (X, E) được gọi là đường đi Euler nếu nó đi qua tất cả các cạnh của đồ thị, mỗi cạnh đúng một lần. Đường đi Euler có đỉnh cuối cùng trùng với đỉnh xuất phát gọi là chu trình Euler. Khái niệm chu trình Euler xuất phát từ bài toán bảy cây cầu do Euler giải quyết vào năm 1837. 
+
+\textbf{Bài toán:}
+
+Cho đơn đồ thị vô hướng liên thông G = (V, E) gồm n đỉnh và m cạnh, các đỉnh được đánh số từ 1 đến n và các cạnh được đánh số từ 1 đến m. Hãy tìm 1 đường đi Euler trên G.
+
+
+\includegraphics{../../../KSTN/content/euler.JPEG}
+
+\subsubsection{Đầu vào}
+
+Dòng 1: Chứa hai chữ số n, m.
+
+m dòng tiếp theo: Dòng thứ i gồm 2 số nguyên u, v. Trong đó u, v là chỉ số hai đỉnh đầu mút của cạnh thứ i.
+
+\subsubsection{Đầu ra}
+
+Gồm: 1 dòng duy nhất là dãy các số mô tả các đỉnh trên đường đi Euler.
+
+\subsubsection{Ví dụ:}
+\begin{verbatim}
+\textbf{Đầu vào:}
+8 9
+1 2
+1 3
+4 2
+4 3
+4 5
+4 6
+5 7
+6 8
+7 8\textbf{Đầu ra:}
+1 2 4 5 7 8 6 4 3 1\textbf{Giới hạn:}
+1 $<$= n $<$= 100
+1 $<$= m $<$= n (n-1) / 2\end{verbatim}

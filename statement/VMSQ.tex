@@ -1,0 +1,89 @@
+
+
+\subsubsection{Đề bài}
+
+Cho một bảng vuông kích thước \textbf{N x N }(0 $<$ N ≤ 50). Bảng này có tính chất đặc biệt như sau:
+\begin{itemize}
+	\item Mỗi ô của bảng chứa một số nguyên dương không vượt quá \textbf{N}.
+	\item Trên một hàng hoặc một cột của bảng không chứa hai số bằng nhau. 
+\end{itemize}
+
+Ban đầu, một số ô của bảng đã được điền sẵn. Nhiệm vụ của bạn là điền thêm các số vào các ô chưa được điền sao cho tính chất của bảng vẫn được bảo tồn. Bạn có quyền không điền số vào một số ô trống nếu cảm thấy điều đó là không cần thiết.
+
+\subsubsection{Cách tính điểm}
+\begin{itemize}
+	\item Với mỗi test, nếu cách điền mà bạn đưa ra không thỏa mãn yêu cầu đề bài (có hai số giống nhau trên một hàng hoặc một cột, giá trị đã được điền sẵn bị thay đổi, giá trị bạn điền thêm không nằm trong khoảng [1, N]) bạn được 0 điểm cho test đó.
+	\item Nếu cách điền của bạn thỏa mãn yêu cầu đề bài: 
+
+\begin{itemize}
+	\item Gọi Sumdist(i) là tổng khoảng cách Manhattan giữa các cặp ô có giá trị bằng i. Khoảng cách Manhattan giữa 2 ô (i$_1$,j$_1$) và (i$_2$, j$_2$) được định nghĩa là |i$_1$ - i$_2$| + |j$_1$ - j$_2$|. 
+	\item Đặt S = tổng( Sumdist(i) ) (với i = 1..N). Gọi E là số ô chưa được điền ở trạng thái ban đầu của bảng, C là số ô mà bạn điền thêm được. Với mỗi test, điểm của bạn được cho theo công thức: 100 * (C/E)$^6$ * (S/N$^4$)$^3$;
+	\item Điểm tạm thời của chương trình của bạn (TP$_x$) bằng tổng điểm tất cả các test. Điểm này chỉ có ý nghĩa là cho biết độ tốt của chương trình bạn; 
+	\item Điểm chính thức của bạn (OP$_x$) được tính bằng công thức: OP$_x$ = TP$_x$ * 100 / TP$_max $, với TP$_max$ là điểm tạm thời cao nhất của các thí sinh. 
+\end{itemize}
+	\item Trong thời gian diễn ra vòng thi, bài của bạn sẽ được chấm với 40\% test của bài, và bạn sẽ được biết kết quả của bài làm của mình cũng như bài làm của các thí sinh khác. Sau khi vòng thi kết thúc, bài của bạn sẽ được chấm với bộ test hoàn chỉnh. 
+\end{itemize}
+
+\subsubsection{Input}
+
+Dòng đầu ghi số nguyên \textbf{N} - kích thước bảng.
+
+Trong N dòng tiếp theo, dòng thứ i gồm N số nguyên mô tả trạng thái ban đầu của bảng: số nguyên thứ j bằng số đã được điền ở ô (i,j), hoặc bằng -1 nếu ô đó chưa được điền. Dữ liệu vào đảm bảo những số được điền sẵn không vi phạm tính chất của bảng.
+
+\subsubsection{Output}
+
+Bạn cần in ra N dòng, mỗi dòng gồm \textbf{N} số nguyên mô tả trạng thái của bảng sau khi bạn đã điền thêm các số.
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+
+5
+
+   -1   -1   -1    2   -1
+
+    4    5    2    1    3
+
+    3    4   -1    5    2
+
+   -1   -1   -1   -1   -1
+
+    1   -1   -1   -1   -1
+
+
+
+\textbf{Output 1:}
+
+    5    1    3    2    4
+
+    4    5    2    1    3
+
+    3    4    1    5    2
+
+    2   -1    5    3    1
+
+    1    3   -1    4    5
+
+
+
+Với output này, bạn được \textbf{0.798040} điểm
+
+
+
+\textbf{Output 2:}
+
+    5    3    4    2    1
+
+    4    5    2    1    3
+
+    3    4    1    5    2
+
+    2    1    3    4    5
+
+    1    2    5    3    4
+
+Với output này, bạn được \textbf{3.276800} điểm
+
+\end{verbatim}
+
+\textbf{Chú ý: Trong vòng thi này, thời gian làm bài đối với riêng bài này là \textbf{48 tiếng}, bắt đầu từ 7h tối ngày 16/06 đến 7h tối ngày 18/06. Sau 24h đầu tiên của vòng thi, bạn không được submit các bài khác, nhưng vẫn được submit bài này. }

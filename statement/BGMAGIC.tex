@@ -1,0 +1,74 @@
+
+
+Đại Ca Đi Học rất thích chơi với các bảng số. Lần này, Đại Ca có một bảng kích thước  n×m. Mỗi ô của bảng có 1 số nguyên dương. Bảng là \textbf{đẹp }nếu các số trong mỗi cột sắp xếp theo thứ tự tăng nghiêm ngặt từ trên xuống dưới, và các số trong mỗi hàng phải xếp theo thứ tự tăng nghiêm ngặt từ trái qua phải. Ví dụ
+
+1 2 3 4
+
+3 4 5 6
+
+5 6 7 8
+
+7 8 9 10
+
+Bảng Siêu đẹp là bảng đẹp, nhưng các số ở 2 ô chéo nhau bất kỳ (2 ô có chung nhau đúng 1 đỉnh) phải khác tính chẵn lẻ. Bảng sau là bảng đẹp, nhưng không phải bảng siêu đẹp
+
+1 2
+
+4 6
+
+Chú ý bảng 4x4 bên trên là bảng Siêu Đẹp.
+
+Cho một bảng số khuyết 1 số ô, hãy giúp Đại Ca Đi Học điền các số vào tất cả các ô khuyết, để bảng trở thành bảng Siêu Đẹp và tổng tất các số trong bảng là nhỏ nhất có  thể.
+
+\subsubsection{Input}
+\begin{itemize}
+	\item Dòng đầu ghi 2 số n và m (1 ≤ n, m ≤ 2000) là kích thước bảng.
+	\item Sau đó là n dòng, mỗi dòng ghi m số nguyên c (0 ≤ c ≤ 2000). Ô có số 0 là ô trống cần điền số vào. Số được điền có thể giống nhau, không bị giới hạn ≤ 2000.
+\end{itemize}
+
+\subsubsection{Output}
+\begin{itemize}
+	\item In ra tổng các ô bé nhất sau khi điền vào các ô trống để tạo ra bảng siêu đẹp. In ra -1 nếu không thể điền để tạo thành bảng siêu đẹp
+\end{itemize}
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+
+4 4
+
+1 2 3 0
+
+0 0 5 6
+
+0 4 7 8
+
+7 0 0 10
+
+
+
+\textbf{Output:}
+
+-1
+
+\end{verbatim}
+\begin{verbatim}
+\textbf{Input:}
+
+4 4
+
+1 2 3 0
+
+0 0 5 6
+
+0 0 7 8
+
+7 0 0 10
+
+
+
+\textbf{Output:}
+
+88
+
+\end{verbatim}

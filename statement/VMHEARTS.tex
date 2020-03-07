@@ -1,0 +1,44 @@
+
+
+Mỗi lần có một tâm hồn bị tổn thương bởi những chiếc gai của bông hoa ái tình, thần tình yêu liền ghi lại khoảnh khắc ấy. Thần lưu giữ những bức ảnh trắng đen về những "trái tim bên lề" ấy để tìm cách chữa trị chúng bằng liều thuốc tình yêu. Lâu dần, thần nhận ra rằng trên đời này có chỉ có bốn loại tim bị tổn thương:
+\begin{itemize}
+	\item Trái tim đơn phương luôn cho đi nhưng không bao giờ được nhận lại. 
+	\item Trái tim bị phản bội đầy sự phẫn nộ và hoài nghi.
+	\item Trái tim vô cảm đã vì chịu quá nhiều sóng gió.
+	\item Trái tim đố kỵ luôn mưu toan và ganh ghét.  
+\end{itemize}
+
+Năm tháng qua đi, bộ sưu tầm những bức hình của thần tình yêu đã không còn giữ được nguyên trạng. Trong các bức ảnh, một số điểm ảnh đã bị đổi màu từ trắng sang đen và ngược lại. Nhiệm vụ của bạn là phải phân loại trong đống ảnh được giao ảnh nào thuộc loại tim nào để giúp thần tình yêu tìm được liều thuốc tình yêu hiệu quả để cứu rỗi những con người bất hạnh ấy. 
+\begin{itemize}
+	\item Easy test: \href{https://dl.dropboxusercontent.com/u/62662276/vmhearts_test_easy.zip}{https://dl.dropboxusercontent.com/u/62662276/vmhearts\_test\_easy.zip}
+	\item Hard test: \href{https://dl.dropboxusercontent.com/u/62662276/vmhearts_test_hard.zip}{https://dl.dropboxusercontent.com/u/62662276/vmhearts\_test\_hard.zip}
+\end{itemize}
+
+\subsubsection{Input}
+
+Có hai file .zip bạn cần download về. Mỗi file chứa 10,000 tấm ảnh của thần tình yêu. Mỗi tấm ảnh có hai phiên bản là một file ảnh (đuôi .png) và một file ma trận 0/1 (đuôi .txt).
+\begin{itemize}
+	\item Mỗi bức ảnh trong 'vmhearts\_test\_easy.zip' sẽ có 100 điểm ảnh bị đổi màu. 
+	\item Mỗi bức ảnh trong 'vmhearts\_test\_hard.zip' sẽ có 1000 điểm ảnh bị đổi màu.  
+	\item Các bức ảnh được đánh số từ 0. 
+\end{itemize}
+
+\subsubsection{Output}
+
+Bạn cần nộp một file gồm một chuỗi dài 20,000 ký tự, mỗi ký tự là số thứ tự loại tim của một bức hình ('1', '2', '3' hoặc '4').
+\begin{itemize}
+	\item 10,000 ký tự đầu tiên chứa số thứ tự loại tim của các bức hình trong 'vmhearts\_test\_easy.zip'. Ký tự thứ i chứa số thứ tự của bức hình thứ i - 1. 
+	\item 10,000 ký tự tiếp theo chứa số thứ tự loại tim của các bức hình trong 'vmhearts\_test\_hard.zip'. Ký tự thứ i + 10,000 chứ số thứ tự của bức hình thứ i - 1. 
+	\item Lưu ý rằng bạn bắt buộc phân loại TẤT CẢ các bức hình, bất kỳ output nào không hợp lệ (xâu không đúng độ dài 20,000, ký tự không phải từ '1' đến '4',...) đều không được tính điểm. 
+\end{itemize}
+
+\subsubsection{Cách tính điểm}
+\begin{itemize}
+	\item Điểm của các bạn sẽ được tình bằng \% số hình các bạn phân loại đúng. 
+	\item Trong quá trình thi, chỉ 20 ký tự đầu tiên của bài của bạn được so sánh với đáp án. Điểm tối đa mà bạn nhận được trong kỳ thi và sau kỳ thi đều là 100.
+\end{itemize}
+
+\subsubsection{Hướng dẫn}
+\begin{verbatim}
+\textbf{10 ký tự đầu tiên của đáp án:}
+2134334333\end{verbatim}

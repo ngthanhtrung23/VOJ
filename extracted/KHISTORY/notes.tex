@@ -1,118 +1,50 @@
-Giới hạn
 \begin{itemize}
 	\item     1 ≤ N, M ≤ $10^{5}$    .   
 	\item     30\% số test có 1 ≤ N, M ≤ 20.   
 	\item     Giữa một cặp hòn đảo chỉ có tối đa một cây cầu dừa nối chúng.   
 \end{itemize}
-Example
 \begin{verbatim}
 \textbf{Input:}
 6 7
-
-
-1 2
-
-
-2 3
-
-
-3 1
-
-
-4 5
-
-
-5 6
-
-
-6 4
-
-
-1 4
-
-
-
-
-
-\textbf{Output:}
+\\1 2
+\\2 3
+\\3 1
+\\4 5
+\\5 6
+\\6 4
+\\1 4
+\\
+\\\textbf{Output:}
 1
-
-
-\end{verbatim}
+\\\end{verbatim}
 
 Giải thích: có hai quốc gia là (1, 2, 3) và (4, 5, 6). Chúng có đường nối trực tiếp với nhau, vì vậy siêu cường có thể là một trong hai.
 \begin{verbatim}
 \textbf{
-
-
-Input:}
+\\Input:}
 15 19
-
-
-1 2
-
-
-2 3
-
-
-3 1
-
-
-4 5
-
-
-5 6
-
-
-6 4
-
-
-7 8
-
-
-8 9
-
-
-9 7
-
-
-10 11
-
-
-11 12
-
-
-12 10
-
-
-13 14
-
-
-14 15
-
-
-15 13
-
-
-1 4
-
-
-1 7
-
-
-1 10
-
-
-1 13
-
-
-
-
-
-\textbf{Output:}
+\\1 2
+\\2 3
+\\3 1
+\\4 5
+\\5 6
+\\6 4
+\\7 8
+\\8 9
+\\9 7
+\\10 11
+\\11 12
+\\12 10
+\\13 14
+\\14 15
+\\15 13
+\\1 4
+\\1 7
+\\1 10
+\\1 13
+\\
+\\\textbf{Output:}
 1
-
-
-\end{verbatim}
+\\\end{verbatim}
 
 Giải thích: có năm quốc gia là (1, 2, 3), (4, 5, 6), (7, 8, 9), (10, 11, 12), (13, 14, 15). Để số siêu cường là ít nhất thì chỉ có thể có một siêu cường là (1, 2, 3) vì mọi quốc gia khác điều có cầu dừa nối trực tiếp đến nó.

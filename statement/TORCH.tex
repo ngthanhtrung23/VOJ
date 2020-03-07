@@ -1,0 +1,54 @@
+
+
+Olympic Bắc Kinh 2008 đang diễn ra vô cùng sôi nổi và quyết liệt. Ngay từ lúc này, những nhà tổ chức của Olympic London 2012 đã tính đến kế hoạch cho lễ rước đuốc của Olympic lần tới. Họ dự định sẽ đi qua N thành phố. Mỗi thành phố có tọa độ (x, y) trên mặt phẳng. Kế hoạch của lễ rước đuốc là ngọn đuốc sẽ bắt đầu từ thành phố 1, đi lần lượt giữa các thành phố khác mỗi thành phố đúng 1 lần rồi quay trở lại thành phố 1. Bạn hãy tìm một hành trình để tổng đường đi là nhỏ nhất.
+
+\subsubsection{Dữ liệu}
+\begin{itemize}
+	\item Dòng thứ nhất ghi số N.
+	\item N dòng tiếp theo, mỗi dòng ghi một cặp số (x, y) là tọa độ của các thành phố
+\end{itemize}
+
+\subsubsection{Kết quả}
+\begin{itemize}
+	\item Dòng đầu tiên ghi độ dài của hành trình có đường đi ngắn nhất mà bạn tìm được với ít nhất 3 chữ số sau dấu phẩy.
+	\item Dòng thứ hai ghi N số bắt đầu bằng số 1 và tiếp theo là lần lượt các thành phố trên hành trình.
+\end{itemize}
+
+\subsubsection{Giới hạn}
+\begin{itemize}
+	\item 1 ≤ N ≤ 100
+	\item Tọa độ các thành phố có trị tuyệt đối không quá 10$^5$.
+\end{itemize}
+
+\subsubsection{Ví dụ}
+\begin{verbatim}
+\textbf{Dữ liệu}
+4
+0 0
+1 0
+0 5
+1 5
+
+\textbf{Kết quả 1}
+12.0000
+1 2 4 3	
+
+\textbf{Kết quả 2}
+20.1980
+1 4 2 3	
+
+\textbf{Kết quả 3}
+12.1980
+1 2 3 4
+\end{verbatim}
+
+\subsubsection{Cách tính điểm}
+
+Với mỗi test, ban tổ chức có đưa ra một đáp số ExpectedResult. Gọi kết quả của bạn là Result.
+\begin{itemize}
+	\item Nếu Result ≤ ExpectedResult bạn sẽ được 10 điểm.
+	\item Nếu ExpectedResult $<$ Result $<$ 1.5 × ExpectedResult bạn sẽ được 9 – 1.5$^(Result – ExpectedResult) / 25$
+	\item Ngoài ra, bạn sẽ không được điểm.
+\end{itemize}
+
+Với test ví dụ ở trên, với ExpectedResult = 12, output 1 sẽ được 10 điểm, output 2 sẽ được 0 điểm, output 3 sẽ được 7.997 điểm.

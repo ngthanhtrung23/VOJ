@@ -1,0 +1,71 @@
+
+
+Cho một \textbf{đơn đồ thị}vô hướng \textbf{G} = \textbf{(V, E)} có \textbf{N} đỉnh và \textbf{M} cạnh. Với mỗi tập con \textbf{H} của \textbf{V}, gọi \textbf{G(H)} là đồ thị thu được từ việc xoá tất cả các đỉnh và các cạnh có ít nhất 1 đầu mút không thuộc \textbf{H}. Tập \textbf{H} được gọi là liên thông, nếu như \textbf{G(H)} liên thông. Gọi \textbf{D(H)} là giá trị lát cắt ứng với \textbf{H}: số lượng cạnh \textbf{(u, v)} thoả mãn 1 trong 2 đỉnh thuộc tập \textbf{H}, và đỉnh còn lại không thuộc tập \textbf{H} (\textbf{u} thuộc \textbf{H} và \textbf{v} không thuộc \textbf{H}, hoặc \textbf{v} thuộc \textbf{H} và \textbf{u} không thuộc \textbf{H}). Nói cách khác, \textbf{D(H)} là số cạnh tối thiểu cần xoá sao cho \textbf{H} và \textbf{(G - H) }không còn liên thông với nhau (\textbf{G - H}) là đồ thị nhận được khi xóa các đỉnh của \textbf{H} và các cạnh tương ứng ra khỏi \textbf{G}).
+
+Xác định tập \textbf{H} liên thông sao cho \textbf{D(H)} lớn nhất có thể.
+
+Cách tính điểm:
+\begin{itemize}
+	\item Với mỗi test: Nếu giá trị \textbf{D(H)} và tập \textbf{H} của bạn hợp lệ, điểm của bạn sẽ là \textbf{D(H)}$_bạn$ / \textbf{D(H)}$_ban tổ chức$. Ngược lại, bạn đuợc 0 điểm.
+\end{itemize}
+
+\subsubsection{Input}
+\begin{itemize}
+	\item Dòng 1: chứa 2 số nguyên dương \textbf{N} và \textbf{M} (1 ≤ \textbf{N} ≤ 200, 0 ≤ \textbf{M} ≤ \textbf{N} * (\textbf{N} - 1) / 2).
+	\item \textbf{M} dòng tiếp theo, mỗi dòng chứa 2 số nguyên \textbf{u} và \textbf{v} thể hiện đồ thị có cạnh nối trực tiếp giữa \textbf{u} và \textbf{v}\textbf{.}
+	\item Dữ liệu đảm bảo không có cạnh nào xuất hiện 2 lần trong input\textbf{
+}
+\end{itemize}
+
+\subsubsection{Output}
+\begin{itemize}
+	\item Dòng 1: Giá trị của \textbf{D(H)}\textbf{.}
+	\item Dòng 2: Kích thước tập \textbf{H}\textbf{.}
+	\item Dòng 3: Những đỉnh thuộc tập \textbf{H}, mỗi số cách nhau bởi một khoảng trắng.
+\end{itemize}
+
+\subsubsection{Chấm điểm}
+\begin{itemize}
+	\item Trong quá trình thi, bài của bạn được chấm với 20\% test. Sau khi kỳ thi kết thúc, bài của bạn sẽ được chấm lại với toàn bộ 100\% test.
+	\item Chú ý, test ví dụ phía dưới không nằm trong 20\% test.
+\end{itemize}
+
+\subsubsection{Ví dụ}
+
+\paragraph{Input}
+\begin{verbatim}
+5 6
+
+1 2
+
+2 3
+
+3 1
+
+2 4
+
+3 5
+
+4 5
+
+\end{verbatim}
+
+\paragraph{Output 1}
+\begin{verbatim}
+4
+
+2
+
+2 3
+
+\end{verbatim}
+
+\paragraph{Output 2}
+\begin{verbatim}
+2
+
+3
+
+1 2 3
+
+\end{verbatim}

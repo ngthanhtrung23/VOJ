@@ -1,0 +1,37 @@
+
+
+ You are to find all pairs of integers such that their sum is equal to the given integer number N and the second number results from the first one by striking out one of its digits. The first integer always has at least two digits and starts with a non-zero digit. The second integer always has one digit less than the first integer and may start with a zero digit. 
+
+\subsubsection{Input}
+
+ The first line of the input file is the integer number t ( 1 ≤ t ≤ 20 ), the number of test cases. Then t lines follow, each test case in one line; the line consists of a single integer N (10 ≤ N ≤ 10\textasciicircum9). 
+
+\subsubsection{Output}
+
+ For each test case: 
+
+ On the first line write the total number of different pairs of integers that satisfy the problem statement. On the following lines write all those pairs. Write one pair on a line in ascending order of the first integer in the pair. Each pair must be written in the following format
+
+
+
+X + Y = N
+
+  Here X, Y, and N, must be replaced with the corresponding integer numbers. There should be exactly one space on both sides of '+' and '=' characters.   
+
+\subsubsection{Example}
+\begin{verbatim}
+\textbf{Input:}
+2
+302
+11
+
+\textbf{Output:}
+5
+251 + 51 = 302
+275 + 27 = 302
+276 + 26 = 302
+281 + 21 = 302
+301 + 01 = 302
+1
+10 + 1 = 11
+\end{verbatim}

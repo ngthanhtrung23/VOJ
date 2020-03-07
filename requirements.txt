@@ -1,0 +1,5 @@
+bs4==0.0.1
+certifi==2019.6.16
+chardet==3.0.4
+requests==2.22.0
+Unidecode==1.1.1
